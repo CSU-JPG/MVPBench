@@ -30,6 +30,7 @@ This repo contains the evaluation code for the paper [**"TextAtlas5M: A Large-sc
 conda create -n TextAtlasEval python=3.9
 conda activate TextAtlasEval
 pip install -r requirements.txt
+```bash
 
 ## ⚙️ Accessing Datasets
 
