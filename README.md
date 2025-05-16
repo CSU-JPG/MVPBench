@@ -4,7 +4,7 @@
 
 ![logo](https://github.com/naver-ai/TextAtlas5M/raw/main/assets/logo.png)
 
-📘 [Homepage](https://github.com/naver-ai/TextAtlas5M) | 🏆 Leaderboard | 🧑‍🔬 [TextAtlas5M](https://huggingface.co/datasets/naver-ai/TextAtlas5M) | 🧑‍🔬 [TextAtlasEval](https://huggingface.co/datasets/naver-ai/TextAtlasEval) | 📄 [TextAtlas arXiv](https://arxiv.org/abs/2402.12345)
+📘 [Homepage](https://github.com/naver-ai/TextAtlas5M) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/naver-ai/TextAtlas5M) | 🧑‍🔬 [MVPBenchEval](https://huggingface.co/datasets/naver-ai/TextAtlasEval) | 📄 [MVPBench arXiv](https://arxiv.org/abs/2402.12345)
 
 This repo contains the evaluation code for the paper:  
 ["TextAtlas5M: A Large-scale Dataset for Dense Text Image Generation"](https://arxiv.org/abs/2402.12345)
@@ -13,8 +13,8 @@ This repo contains the evaluation code for the paper:
 
 ## 🔔 Updates
 
-- **[2025-2-18]**: Our evaluation code is now available! 🌟  
-- **[2025-2-13]**: Released TextAtlasEval & TextAtlas5M version 1.0 🔥
+- **[2025-5-22]**: Our evaluation code is now available! 🌟  
+- **[2025-5-22]**: Released MVPBench version 1.0 🔥
 
 ---
 
