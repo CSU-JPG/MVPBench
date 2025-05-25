@@ -100,7 +100,6 @@ If you find our work useful, please cite us:
 @article{dong2025mvpbench,
   title={Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT},
   author={Dong, Zhuobai and Yi, Junchao and Zheng, Ziyuan and Han, haochen and Zheng, Xiangxi and Wang, Alex Jinpeng and Liu, Fangming and Li, Linjie and others},
-  journal={arXiv preprint arXiv:2502.07870},
   year={2025}
 }
 ```
