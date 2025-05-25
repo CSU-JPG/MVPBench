@@ -4,7 +4,7 @@
 
 ![logo](https://github.com/naver-ai/TextAtlas5M/raw/main/assets/logo.png)
 
-📘 [Homepage](https://github.com/naver-ai/TextAtlas5M) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/naver-ai/TextAtlas5M) | 🧑‍🔬 [MVPBenchEval](https://huggingface.co/datasets/naver-ai/TextAtlasEval) | 📄 [MVPBench arXiv](https://arxiv.org/abs/2402.12345)
+📘 [Homepage](https://csu-jpg.github.io/MVPBench/) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/CSU-JPG/MVPBench) | 🧑‍🔬 [MVPBenchEval](https://huggingface.co/datasets/naver-ai/TextAtlasEval) | 📄 [MVPBench arXiv](https://arxiv.org/abs/2402.12345)
 
 This repo contains the evaluation code for the paper:  
 ["TextAtlas5M: A Large-scale Dataset for Dense Text Image Generation"](https://arxiv.org/abs/2402.12345)
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 TextAtlas was meticulously designed to challenge and evaluate text-rich image generation.  
 For more detailed information and accessing our dataset, please refer to our Huggingface page:
 
-- 🧑‍🔬 [TextAtlas5M](https://huggingface.co/datasets/naver-ai/TextAtlas5M)
+- 🧑‍🔬 [MVPBench](https://huggingface.co/datasets/CSU-JPG/MVPBench)
 - 🧑‍🔬 [TextAtlasEval](https://huggingface.co/datasets/naver-ai/TextAtlasEval)
 
 ---
@@ -97,9 +97,9 @@ For more information, see the full [Detailed Annotation Guide](detialed_annotati
 If you find our work useful, please cite us:
 
 ```bibtex
-@article{wang2025textatlas5m,
-  title={TextAtlas5M: A Large-scale Dataset for Dense Text Image Generation},
-  author={Wang, Alex Jinpeng and Mao, Dongxing and Zhang, Jiawei and Han, Weiming and Dong, Zhuobai and Li, Linjie and Lin, Yiqi and Yang, Zhengyuan and Qin, Libo and Zhang, Fuwei and others},
+@article{dong2025mvpbench,
+  title={Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT},
+  author={Dong, Zhuobai and Yi, Junchao and Zheng, Ziyuan and Han, haochen and Zheng, Xiangxi and Wang, Alex Jinpeng and Liu, Fangming and Li, Linjie and others},
   journal={arXiv preprint arXiv:2502.07870},
   year={2025}
 }
@@ -109,7 +109,7 @@ If you find our work useful, please cite us:
 
 ## 📬 Contact
 
-For questions, suggestions or issues, feel free to open an [issue](https://github.com/naver-ai/TextAtlas5M/issues) on GitHub.
+For questions, suggestions or issues, feel free to open an [issue](https://github.com/CSU-JPG/MVPBench/issues) on GitHub.
 
 ---
 
