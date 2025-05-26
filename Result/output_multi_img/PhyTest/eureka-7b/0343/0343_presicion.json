@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves an ideal gas undergoing changes as shown in the figure. The segment BC represents a hyperbola with the vertical and horizontal axes as asymptotes.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "State A: p_A = 4 atm, V_A = 10 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "State B: p_B = ? atm, V_B = 20 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "State C: p_C = 2 atm, V_C = 40 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The temperature of the gas in state A is given as T_A = 300 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The segment BC is a hyperbola with the vertical and horizontal axes as asymptotes.",
+    "conclusion": "The process from B to C is an isothermal process (constant temperature).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ideal gas law is pV = nRT, and the temperature of state A is T_A = 300 K.",
+    "conclusion": "The product of pressure and volume for state A is p_A * V_A = 4 atm * 10 L = 40 atm·L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the isothermal process BC, the product of pressure and volume is constant.",
+    "conclusion": "p_B * V_B = p_C * V_C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p_C = 2 atm, V_C = 40 L, and p_B * V_B = p_C * V_C.",
+    "conclusion": "p_B * 20 = 2 * 40, so p_B = 4 atm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state A is T_A = 300 K, and the ideal gas law relates pressure, volume, and temperature.",
+    "conclusion": "The temperature at state B can be determined using the relationship derived from the isothermal process.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The segment BC is isothermal, and T_C = 600 K (from the ideal gas law and the figure).",
+    "conclusion": "The temperature at state B is the same as the temperature at state C, so T_B = 600 K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

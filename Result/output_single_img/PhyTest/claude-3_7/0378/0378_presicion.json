@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block A (mass m) starts from rest at height h.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block B (mass 2m) is initially at rest on the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Inclined plane C (mass 3m) is initially at rest on the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After collision, blocks A and B stick together (perfectly inelastic collision).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using conservation of energy from A's initial position to point O: Initial energy of A = mgh (potential energy), Final energy of A before collision = ½mv₁²",
+    "conclusion": "v₁ = √(2gh)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Before collision: Momentum of A = mv₁ = m√(2gh), Momentum of B = 0 (at rest), Total momentum = m√(2gh)",
+    "conclusion": "Total momentum before collision = m√(2gh)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After collision: A and B stick together, so their combined mass is (m + 2m) = 3m, Momentum after collision = 3mv₂",
+    "conclusion": "Momentum after collision = 3mv₂",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By conservation of momentum: m√(2gh) = 3mv₂",
+    "conclusion": "v₂ = √(2gh)/3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Heat generated = Energy lost during collision = Initial KE - Final KE, Initial KE before collision: KE of A = ½mv₁² = ½m(2gh) = mgh, KE of B = 0, Total initial KE = mgh",
+    "conclusion": "Total initial KE = mgh",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final KE immediately after collision: KE of combined A+B = ½(3m)v₂² = ½(3m)(√(2gh)/3)² = ½(3m)(2gh/9) = mgh/3",
+    "conclusion": "Final KE after collision = mgh/3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Heat generated = mgh - mgh/3",
+    "conclusion": "Heat generated = (2/3)mgh",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

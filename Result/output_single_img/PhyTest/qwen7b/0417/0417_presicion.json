@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the refractive index of the liquid, we need to analyze the geometry and the refraction of light as it passes through the liquid.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The tank has a height H. The light source is at a height h from the bottom of the tank. The light spot falls at point a on the left wall of the tank. The distance from the bottom of the tank to point a is h.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When the tank is filled with liquid, the light spot moves to the outlet, which is at the top right corner of the tank. The distance from the left wall to the outlet is L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Snell's law, the relationship between the angles of incidence and refraction is given by: n1 sin θ1 = n2 sin θ2, where n1 is the refractive index of air (n1 = 1), n2 is the refractive index of the liquid, θ1 is the angle of incidence in air, and θ2 is the angle of refraction in the liquid.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence can be found using the tangent function: tan θ1 = h/L",
+    "conclusion": "The angle of incidence in air (θ1) is determined by tan θ1 = h/L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of refraction can be found using the tangent function: tan θ2 = (H-h)/L",
+    "conclusion": "The angle of refraction in liquid (θ2) is determined by tan θ2 = (H-h)/L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: sin θ1 = n2 sin θ2",
+    "conclusion": "Substitute n1 = 1 to get sin θ1 = n2 sin θ2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the identity sin θ = tan θ / sqrt(1 + tan^2 θ)",
+    "conclusion": "Express sin θ1 and sin θ2 in terms of tangents: sin θ1 = tan θ1 / sqrt(1 + tan^2 θ1) and sin θ2 = tan θ2 / sqrt(1 + tan^2 θ2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute these into Snell's law: sin θ1 = n2 sin θ2",
+    "conclusion": "Substitute the expressions for sin θ1 and sin θ2 into Snell's law.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Square both sides to eliminate the square roots",
+    "conclusion": "Square both sides: (tan θ1 / sqrt(1 + tan^2 θ1))^2 = (n2 tan θ2 / sqrt(1 + tan^2 θ2))^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since tan θ1 = h/L and tan θ2 = (H-h)/L",
+    "conclusion": "Substitute tan θ1 and tan θ2 into the equation: (h/L)^2 / (1 + (h/L)^2) = n2^2 ((H-h)/L)^2 / (1 + ((H-h)/L)^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the equation",
+    "conclusion": "Simplify to: h^2 / (L^2 + h^2) = n2^2 (H-h)^2 / (L^2 + (H-h)^2).",
+    "judgment": "Reasonable"
+  }]

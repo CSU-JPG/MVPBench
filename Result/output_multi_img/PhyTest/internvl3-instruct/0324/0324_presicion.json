@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the pressure of the gas when the temperature is 600 K, we'll follow these steps.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The p-T graph plots pressure (p) against temperature (T). It provides the relationship between pressure and temperature at different points.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The V-T graph plots volume (V) against temperature (T). It provides the relationship between volume and temperature at different points.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the p-T graph: At 200 K, the pressure is 0.5 x 10⁵ Pa. At 600 K, the pressure is 1.5 x 10⁵ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the V-T graph: At 200 K, the volume is 2 m³. At 400 K, the volume is 2 m³. At 600 K, the volume is 3 m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by: PV = nRT, where P = Pressure, V = Volume, n = Number of moles, R = Universal gas constant, T = Temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We can use the ratio form of the ideal gas law to find the pressure at 600 K: (P1 V1) / T1 = (P2 V2) / T2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the data from the graphs: P1 = 0.5 x 10⁵ Pa (at 200 K), V1 = 2 m³ (at 200 K), T1 = 200 K, V2 = 3 m³ (at 600 K), T2 = 600 K.",
+    "conclusion": "Plug these values into the ratio form of the ideal gas law: (0.5 x 10⁵ x 2) / 200 = (P2 x 3) / 600.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(0.5 x 10⁵ x 2) / 200 = (P2 x 3) / 600.",
+    "conclusion": "Simplify and solve for P2: (1 x 10⁵) / 200 = 3P2 / 600.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(1 x 10⁵) / 200 = 3P2 / 600.",
+    "conclusion": "500 = 3P2 / 600. Multiply both sides by 600: 300,000 = 3P2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "300,000 = 3P2.",
+    "conclusion": "Divide by 3: P2 = 100,000.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

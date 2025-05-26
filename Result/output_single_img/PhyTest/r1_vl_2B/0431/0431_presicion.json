@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square ABCD has a side length of A. M is the midpoint of AB. The incident angle at M is 60°. The ray of light reflects at point N on BC, and the reflected ray exits from point P on CD.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "M is the midpoint of AB.",
+    "conclusion": "AM = MB. Therefore, triangle AMB is an isosceles triangle with AM = MB.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident angle at M is 60°.",
+    "conclusion": "The angle of incidence equals the angle of reflection. Since the incident angle at M is 60°, the angle of incidence at M is also 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence equals the angle of reflection.",
+    "conclusion": "The angle of reflection at N is also 60°. This means that the angle between the incident ray and the normal is 30°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In a right triangle, the angle between the incident ray and the normal is 30°.",
+    "conclusion": "The angle between the normal and the refracted ray is 90° - 30° = 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray is parallel to the incident ray.",
+    "conclusion": "The refractive index \\( n \\) is given by the ratio of the speed of light in the prism to the speed in vacuum. The angle of incidence equals the angle of refraction, so \\( n = \\frac{\\sin 60°}{\\sin 30°} = \\frac{\\sqrt{3}}{1} = \\sqrt{3} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence equals the angle of refraction.",
+    "conclusion": "The angle between the refracted ray and the normal is 60°. Therefore, the distance \\( PC = \\frac{AB}{\\sin 60°} = \\frac{A}{\\sin 60°} = \\frac{A}{\\sqrt{3}/2} = \\frac{2A}{\\sqrt{3}} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index \\( n = \\sqrt{3} \\).",
+    "conclusion": "Substitute the value of the refractive index \\( n = \\sqrt{3} \\) into the distance formula to find \\( PC = \\frac{2A}{\\sqrt{3}} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side length of the square is A.",
+    "conclusion": "The distance \\( PC = \\frac{2A}{\\sqrt{3}} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side length of the square is A, and the angle at M is 60°.",
+    "conclusion": "The side length A can be found using the properties of a 30-60-90 triangle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The properties of a 30-60-90 triangle.",
+    "conclusion": "The side length A can be calculated using the formula for a 30-60-90 triangle: \\( a = \\frac{AB}{2} = \\frac{A}{2} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side length A.",
+    "conclusion": "Substitute the value of A into the distance formula to find the distance \\( PC = \\frac{2A}{\\sqrt{3}} \\).",
+    "judgment": "Wrong"
+  }]

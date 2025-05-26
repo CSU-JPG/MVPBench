@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil ABCO is a planar figure with an area of 0.4 m^2. The magnetic field B has a magnitude of 0.1 T and is directed along the positive x-axis. The coil rotates 60° downward around the z-axis from its initial position. Magnetic flux Φ through the coil is given by Φ = B · A, where A is the area vector of the coil (magnitude equal to the area, direction perpendicular to the plane of the coil). We need to calculate the change in flux ΔΦ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The figure shows the coil ABCO in the xy-plane initially, with AB and OC parallel to the x-axis, and BC and AO forming a parallelogram.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil lies in the xy-plane initially, so the area vector A is along the z-axis.",
+    "conclusion": "Initial A = 0.4 k m^2 (assuming positive z).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic field B = 0.1 i T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial A = 0.4 k m^2 and B = 0.1 i T.",
+    "conclusion": "Initial flux Φ_initial = B · A = (0.1 i) · (0.4 k) = 0 (since i · k = 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil rotates 60° downward around the z-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil rotates 60° downward around the z-axis, affecting the orientation of A in the xy-plane.",
+    "conclusion": "After a 60° rotation downward around z, the new normal A' will have components in y and z.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using rotation matrix for 60° around z: A vector (0, 0, 1) (initial k) rotates by angle θ = 60°.",
+    "conclusion": "New A' = (0, 0.5, 0.866).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After 60° rotation downward around z, the normal rotates in the yz-plane toward -j.",
+    "conclusion": "A_y' = -0.4 sin 60° = -0.346 m^2, A_z' = 0.4 cos 60° = 0.2 m^2. So, A' ≈ (-0.346 j + 0.2 k) m^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "New A' ≈ (-0.346 j + 0.2 k) m^2 and B = 0.1 i T.",
+    "conclusion": "New flux Φ_final = B · A' = (0.1 i) · (-0.346 j + 0.2 k) = 0 (since i · j = 0, i · k = 0).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial angle between B = 0.1 i and A = 0.4 k is 90°, so Φ_initial = 0.",
+    "conclusion": "After 60° rotation, the normal tilts. The angle between B and the new A' needs to be found.",
+    "judgment": "Reasonable"
+  }]

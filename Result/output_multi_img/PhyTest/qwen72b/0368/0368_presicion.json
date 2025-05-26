@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude of the electric force experienced by the small ball at point B, we need to analyze the forces due to the charges +Q and -Q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that points M, N, and B form an equilateral triangle with side length L.",
+    "conclusion": "The distances from point B to both M and N are equal to L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force F_1 exerted by the charge +Q on the small ball at point B is given by Coulomb's law.",
+    "conclusion": "F_1 = k * (Q * q) / L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Similarly, the electric force F_2 exerted by the charge -Q on the small ball at point B is given by Coulomb's law.",
+    "conclusion": "F_2 = k * (Q * q) / L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since M and N are symmetrically placed relative to point B in an equilateral triangle, the forces F_1 and F_2 will have the same magnitude but different directions.",
+    "conclusion": "F_1 points towards M and F_2 points towards N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since F_1 and F_2 form an angle of 120° (since ∠MBN = 120° in an equilateral triangle), we use vector addition to find the resultant force F.",
+    "conclusion": "The resultant force F can be found using the formula for the resultant of two equal vectors with an angle θ between them.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given F_1 = F_2 = k * (Q * q) / L^2 and cos(120°) = -1/2.",
+    "conclusion": "F = sqrt((k * (Q * q) / L^2)^2 + (k * (Q * q) / L^2)^2 + 2 * (k * (Q * q) / L^2) * (k * (Q * q) / L^2) * (-1/2))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = sqrt(2 * (k * (Q * q) / L^2)^2 - (k * (Q * q) / L^2)^2)",
+    "conclusion": "F = sqrt((k * (Q * q) / L^2)^2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = sqrt((k * (Q * q) / L^2)^2)",
+    "conclusion": "F = k * (Q * q) / L^2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

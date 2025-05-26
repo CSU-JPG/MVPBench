@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cube has a side length of a, the refractive index of the glass brick is n = 1.5, and a bubble is located at the center of the cube. We need to find the minimum area of paper required on each face to ensure the bubble is not visible from outside.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is the angle of incidence above which total internal reflection occurs. The critical angle is given by sin θc = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = 1.5",
+    "conclusion": "sin θc = 1/1.5 = 2/3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θc = 2/3",
+    "conclusion": "θc = sin⁻¹(2/3)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The bubble is at the center of the cube, so the distance from the bubble to any face is a/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To ensure the bubble is not visible, the paper must cover the area on each face such that light rays from the bubble do not exit the cube.",
+    "conclusion": "The area to be covered by the paper is a circle with radius r such that the light rays hitting the edge of this circle are at the critical angle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using trigonometry, r = a/2 tan θc.",
+    "conclusion": "tan θc = sin θc / cos θc",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos θc = √(1 - sin² θc) = √(1 - (2/3)²) = √(5/9) = √5/3",
+    "conclusion": "tan θc = (2/3) / (√5/3) = 2/√5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = a/2 * 2/√5",
+    "conclusion": "r = a/√5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area A of the circle is given by A = πr².",
+    "conclusion": "A = π(a/√5)² = πa²/5",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

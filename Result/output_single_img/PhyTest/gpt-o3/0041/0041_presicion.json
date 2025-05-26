@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Interpret the graph",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Vertical axis: acceleration a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Horizontal axis: time t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Object A: horizontal line → constant acceleration a₀ (the value of that horizontal line).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Object B: oblique line through the origin → acceleration grows linearly with time, a_B(t)=k t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two lines cross at t = t₁",
+    "conclusion": "a_B(t₁)=a₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The graph also states t₂ = 2 t₁; that will not be needed for the question asked.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a_B(t₁)=k t₁=a₀",
+    "conclusion": "k = a₀ / t₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial conditions",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Both objects start “from rest” at t = 0",
+    "conclusion": "v_A(0)=v_B(0)=0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Because its acceleration is constant",
+    "conclusion": "v_A(t₁)= a₀ t₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_B(t₁)=∫₀^{t₁} a_B(t) dt =∫₀^{t₁} k t dt = k t²/2 |₀^{t₁} = k t₁²/2",
+    "conclusion": "v_B(t₁)= k t₁²/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Insert k = a₀ / t₁",
+    "conclusion": "v_B(t₁)= (a₀/t₁)·t₁²/2 = (a₀ t₁)/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_A(t₁)= a₀ t₁ and v_B(t₁)= ½ a₀ t₁",
+    "conclusion": "v_A(t₁)=2 v_B(t₁); the velocities are not equal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At time t₁ object A is moving twice as fast as object B (v_A = 2 v_B)",
+    "conclusion": "Final answer: NO.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

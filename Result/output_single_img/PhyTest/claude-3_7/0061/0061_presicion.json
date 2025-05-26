@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two sliders A and B, each with mass m, are placed on an inclined plane with an angle θ = 37°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Horizontal force F is applied to slider B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Coefficient of friction μ = 0.5 and gravitational acceleration g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Both sliders are just on the verge of not sliding upwards.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "sin 37° = 0.6 and cos 37° = 0.8.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Slider A is positioned lower on the incline than slider B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Slider B is connected to slider A by a rope.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A horizontal force F is applied to slider B to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Weight of slider A: mg (downward), Normal force: N₁ (perpendicular to incline), Tension force T in the rope (pulling up the incline), Friction force f₁ = μN₁ (opposing motion, pointing down the incline)",
+    "conclusion": "For slider A to be on the verge of not sliding upwards, T - mg·sin θ - μN₁ = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Normal force calculation for slider A: N₁ = mg·cos θ",
+    "conclusion": "Substituting N₁ into the force balance equation for slider A: T = mg·sin θ + μmg·cos θ",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T = mg·sin θ + μmg·cos θ",
+    "conclusion": "T = mg(sin θ + μcos θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T = mg(sin θ + μcos θ)",
+    "conclusion": "T = mg(0.6 + 0.5×0.8)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T = mg(0.6 + 0.4)",
+    "conclusion": "T = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Weight of slider B: mg (downward), Normal force: N₂ (perpendicular to incline), Tension force T in the rope (pulling down the incline), Friction force f₂ = μN₂ (opposing motion, pointing up the incline), Horizontal force F (to the right)",
+    "conclusion": "Component of F parallel to the incline: F·cos θ",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Force balance parallel to the incline for slider B: F·cos θ - T - mg·sin θ + μN₂ = 0",
+    "conclusion": "Normal force calculation for slider B: N₂ = mg·cos θ",
+    "judgment": "Match"
+  }]

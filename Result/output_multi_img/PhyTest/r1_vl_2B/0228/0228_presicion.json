@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To solve this problem, we need to calculate the induced electromotive force (EMF) in a square coil with n turns and side length a, given that the magnetic induction intensity increases from B to 2B over a time interval Δt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": null,
+    "conclusion": "The number of turns in the coil is n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": null,
+    "conclusion": "The area of the square coil is a^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux is given by the product of the area A and the magnetic induction B.",
+    "conclusion": "The magnetic flux through the square coil is B × a^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Half of the coil is in the magnetic field.",
+    "conclusion": "The flux through the coil is (1/2) × B × a^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is given by Faraday's law: EMF = dΦ/dt.",
+    "conclusion": "The induced EMF is d/dt [(1/2) × B × a^2].",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic induction intensity increases uniformly from B to 2B over Δt.",
+    "conclusion": "The rate of change of magnetic flux is (1/2) × a^2 × dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of magnetic induction is dB/dt = (2B - B)/Δt.",
+    "conclusion": "The rate of change of magnetic flux is (1/2) × a^2 × (B/Δt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is proportional to the rate of change of magnetic flux.",
+    "conclusion": "The induced EMF is (1/2) × a^2 × (B/Δt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil has n turns.",
+    "conclusion": "The total induced EMF is n × (1/2) × a^2 × (B/Δt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for the total induced EMF.",
+    "conclusion": "The induced electromotive force in the coil is (n × B × a^2) / (2Δt).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

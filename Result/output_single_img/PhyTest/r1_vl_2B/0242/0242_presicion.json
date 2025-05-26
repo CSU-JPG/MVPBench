@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The metal rod has a resistance R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rod slides uniformly from position a to position a'.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed ratio v1:v2 = 1:2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance R is constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod slides uniformly.",
+    "conclusion": "The power loss in the rod is constant.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power loss P is given by: P = I^2 R where I is the current.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The current I is related to the speed v by: I = v/R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v1:v2 = 1:2 and I = v/R.",
+    "conclusion": "The ratio of the current I1:I2 is 1:2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I1:I2 = 1:2 and P = I^2 R.",
+    "conclusion": "The power P1:P2 is 1:4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power loss is proportional to the square of the current.",
+    "conclusion": "The ratio of the external forces F1:F2 is 1:4.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I1:I2 = 1:2 and F1:F2 = 1:4.",
+    "conclusion": "The ratio of the loop currents I1:I2 is 1:2, and the ratio of the powers of the external forces F1:F2 is 1:4.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

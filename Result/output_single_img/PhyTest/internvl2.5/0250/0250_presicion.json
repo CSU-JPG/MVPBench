@@ -1,0 +1,64 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the instantaneous value of the induced current and the average value of the induced electromotive force (EMF) as the rectangular wire frame rotates in a uniform magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF in a rotating loop in a magnetic field is given by: \\( \\mathcal{E} = B \\cdot S \\cdot \\omega \\cdot \\sin(\\theta) \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "\\( B \\) is the magnetic field strength, \\( S \\) is the area of the loop, \\( \\omega \\) is the angular velocity, \\( \\theta \\) is the angle between the normal to the loop and the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the loop rotates through an angle of 60°, \\( \\theta = 60^\\circ = \\frac{\\pi}{3} \\text{ radians} \\).",
+    "conclusion": "The instantaneous induced EMF is \\( \\mathcal{E} = B \\cdot S \\cdot \\omega \\cdot \\sin\\left(\\frac{\\pi}{3}\\right) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2} \\).",
+    "conclusion": "\\( \\mathcal{E} = B \\cdot S \\cdot \\omega \\cdot \\frac{\\sqrt{3}}{2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced current \\( I \\) is given by Ohm's law: \\( I = \\frac{\\mathcal{E}}{R} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the expression for \\( \\mathcal{E} \\): \\( I = \\frac{B \\cdot S \\cdot \\omega \\cdot \\frac{\\sqrt{3}}{2}}{R} \\).",
+    "conclusion": "\\( I = \\frac{B \\cdot S \\cdot \\omega \\cdot \\sqrt{3}}{2R} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The average induced EMF over one complete cycle (360°) is zero because the EMF is sinusoidal and symmetric about the axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a 60° rotation, the time taken \\( t \\) is: \\( t = \\frac{\\theta}{\\omega} = \\frac{\\pi/3}{\\omega} = \\frac{\\pi}{3\\omega} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The average EMF over this interval is: \\( \\mathcal{E}_{\\text{avg}} = \\frac{1}{t} \\int_0^{\\pi/3} B \\cdot S \\cdot \\omega \\cdot \\sin(\\theta) \\, d\\theta \\).",
+    "conclusion": "Evaluating the integral: \\( \\int_0^{\\pi/3} \\sin(\\theta) \\, d\\theta = \\left[ -\\cos(\\theta) \\right]_0^{\\pi/3} = -\\frac{1}{2} + 1 = \\frac{1}{2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\mathcal{E}_{\\text{avg}} = \\frac{1}{\\frac{\\pi}{3\\omega}}]\\)"}]

@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the length of the arc AC where light rays do not exit through AB or BC due to total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cross-section of the cylindrical element is a square ABCO with side length R, and AC is a quarter-circle arc with radius R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle for total internal reflection (TIR) is given by sin θ_c = 1/n = 1/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ_c = 1/2",
+    "conclusion": "The critical angle θ_c is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Critical angle θ_c is 30°.",
+    "conclusion": "For a light ray to exit through AB or BC without TIR, it must make an angle ≤ 30° with the normal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A is at distance R along the x-axis, and point B is at distance R along the y-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Geometry of the situation and critical angle",
+    "conclusion": "Light rays that do not exit through AB or BC must be incident at points on arc AC such that the angle of incidence is greater than 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle of incidence greater than 60°",
+    "conclusion": "The angle subtended by the arc where light does not exit is 120°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle subtended by the arc is 120°",
+    "conclusion": "Length of the arc is (120°/360°) × 2πR = (2πR)/3.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

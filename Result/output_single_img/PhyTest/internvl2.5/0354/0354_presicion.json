@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the velocities of blocks P and Q immediately after the first collision, we need to apply the principles of conservation of momentum and conservation of kinetic energy, as the collision is elastic.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block P has mass m and initial velocity v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block Q has mass 4m and is initially at rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total momentum before the collision must equal the total momentum after the collision.",
+    "conclusion": "m v_0 = m v_{P_1} + 4m v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m v_0 = m v_{P_1} + 4m v_{Q_1}",
+    "conclusion": "v_0 = v_{P_1} + 4 v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the collision is elastic, the total kinetic energy before and after the collision is conserved.",
+    "conclusion": "1/2 m v_0^2 = 1/2 m v_{P_1}^2 + 1/2 (4m) v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/2 m v_0^2 = 1/2 m v_{P_1}^2 + 1/2 (4m) v_{Q_1}^2",
+    "conclusion": "v_0^2 = v_{P_1}^2 + 4 v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0 = v_{P_1} + 4 v_{Q_1}",
+    "conclusion": "v_{P_1} = v_0 - 4 v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_{P_1} = v_0 - 4 v_{Q_1} and v_0^2 = v_{P_1}^2 + 4 v_{Q_1}^2",
+    "conclusion": "v_0^2 = (v_0 - 4 v_{Q_1})^2 + 4 v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0^2 = (v_0 - 4 v_{Q_1})^2 + 4 v_{Q_1}^2",
+    "conclusion": "v_0^2 = v_0^2 - 8 v_0 v_{Q_1} + 16 v_{Q_1}^2 + 4 v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0^2 = v_0^2 - 8 v_0 v_{Q_1} + 16 v_{Q_1}^2 + 4 v_{Q_1}^2",
+    "conclusion": "v_0^2 = v_0^2 - 8 v_0 v_{Q_1} + 20 v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0^2 = v_0^2 - 8 v_0 v_{Q_1} + 20 v_{Q_1}^2",
+    "conclusion": "0 = -8 v_0 v_{Q_1} + 20 v_{Q_1}^2",
+    "judgment": "Match"
+  }]

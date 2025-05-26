@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the number of molecules in an ideal gas using the p-V diagram and the ideal gas law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state A: p = 3×10⁵ Pa, V = 1×10⁻³ m³, T = -73°C = 200 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process A→B: isobaric expansion (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process B→C: isochoric cooling (constant volume).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state C: p = 1×10⁵ Pa, V = 4×10⁻³ m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "ΔU(A→C) = 200 J (change in internal energy).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For ideal gas at STP: 1 mol occupies 22.4 L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Avogadro's number: N₁ = 6.0×10²³ mol⁻¹.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law PV = nRT at state A.",
+    "conclusion": "n = PV/(RT) = (3×10⁵ Pa)(1×10⁻³ m³)/(8.314 J/(mol·K))(200 K) = 0.018 mol.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using PV = nRT at state B.",
+    "conclusion": "T_B = PV/(nR) = (3×10⁵)(4×10⁻³)/(0.018×8.314) = 800 K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using PV = nRT at state C.",
+    "conclusion": "T_C = PV/(nR) = (1×10⁵)(4×10⁻³)/(0.018×8.314) = 267 K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculating ΔT.",
+    "conclusion": "ΔT = T_C - T_A = 267 K - 200 K = 67 K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For monatomic gas using ΔU = nCᵥΔT.",
+    "conclusion": "ΔU = 0.018×(3×8.314/2)×67 = 15.0 J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For diatomic gas using ΔU = nCᵥΔT.",
+    "conclusion": "ΔU = 0.018×(5×8.314/2)×67 = 25.0 J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For polyatomic gas using ΔU = nCᵥΔT.",
+    "conclusion": "ΔU = 0.018×(3×8.314)×67 = 30.1 J.",
+    "judgment": "Reasonable"
+  }]

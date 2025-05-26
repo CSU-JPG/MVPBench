@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process A→B→C→D→A. Temperature at state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a pressure-volume (p-V) diagram with transitions A to B, B to C, C to D, and D to A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from A to B is isobaric.",
+    "conclusion": "Pressure remains constant at 1 × 10^5 Pa from A to B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Work done by the gas during an isobaric process is given by W = p × ΔV.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pressure is constant.",
+    "conclusion": "Work done is calculated as the product of pressure and change in volume.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature at state A is 27°C.",
+    "conclusion": "Temperature at state A is 300 K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using the ideal gas law pV = nRT, we can find the initial volume V_A at state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done from A to B is W = p × (V_A - V_B).",
+    "conclusion": "Given that the temperature is constant, the work done from A to B is zero.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume at state A is 3L and at state B is 4L.",
+    "conclusion": "The work done externally by the gas from state A to state B is 100 joules.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

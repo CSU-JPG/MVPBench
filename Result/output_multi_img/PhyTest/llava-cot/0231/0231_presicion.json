@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A uniform-thickness resistance wire with resistivity ρ and cross-sectional area S is bent into a planar trapezoidal frame with sides AB and CD forming 60° angles with side AD, and ab = bc = cd = L. The frame is connected to a power source with electromotive force E and negligible internal resistance. There is a uniform magnetic field with magnetic induction intensity B perpendicular to the vertical plane of the frame, directed horizontally inward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem requires finding the magnitude and direction of the resultant Ampere force acting on the frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a trapezoidal frame bent into a planar shape. It is a resistance wire with sides AB, BC, and CD forming 60° angles with side AD. The frame is connected to a power source with electromotive force E. There is a uniform magnetic field B perpendicular to the plane of the frame.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frame is connected to a power source with electromotive force E. The resistance wire has resistivity ρ and cross-sectional area S.",
+    "conclusion": "The current I can be calculated using Ohm's law: I = E / (ρ/S) = E * S / ρ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Ampere force on a side of the wire is given by F = I * B * L, where L is the length of the side.",
+    "conclusion": "The lengths of sides AB, BC, and CD are each L, and side AD is twice L, so AD = 2L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The lengths of sides AB, BC, CD, and AD are known.",
+    "conclusion": "The force on each side is calculated as follows: F_AB = I * B * L, F_BC = I * B * L, F_CD = I * B * L, F_AD = I * B * 2L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces on each side are known.",
+    "conclusion": "The total force F_total is the sum of the forces on each side: F_total = F_AB + F_BC + F_CD + F_AD = I * B * 4L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the expression for I into the total force equation.",
+    "conclusion": "F_total = (E * S / ρ) * B * 4L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force equation is known.",
+    "conclusion": "The resultant Ampere force acting on the frame is 4E * S * B * L / ρ.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

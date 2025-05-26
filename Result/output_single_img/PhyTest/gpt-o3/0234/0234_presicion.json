@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Put the boundary MN on the y-axis (x = 0). The magnetic field exists in the half–plane x ≥ 0, is uniform (B) and perpendicular to the paper. The equilateral triangle (side a) keeps its orientation while its whole figure translates to the right with a constant velocity v. At t = 0 the vertex D is on the boundary (D: x = 0). Let the horizontal shift of the triangle be s = vt (0 ≤ s ≤ a); then C: (s − a, 0) D: (s, 0) E: (s − a/2, −h), h = √3 a /2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use Faraday’s law ε = |dΦ / dt| = B |dA_in / dt|, where A_in is the part of the triangular area that has already entered the field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During an infinitesimal shift ds the only new area that enters the field is the vertical strip of width ds situated just at the boundary x = 0. Hence dA_in = L(s) ds, where L(s) is the total length of the cross-section of the triangle by the line x = 0. Therefore dA_in/dt = v L(s). So, from ε = B v L(s).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For 0 ≤ s ≤ a/2 (apex E is still on the left of the boundary), the line x = 0 cuts the edges CD (at y = 0) and DE. For DE: x = s − a/2 t, y = -h t (0 ≤ t ≤ 1) → set x = 0 gives t = 2s/a, y = − 2h s / a. Thus the two intersection points are (0, 0) and (0, − 2h s / a).",
+    "conclusion": "L(s) = 2h s / a for 0 ≤ s ≤ a/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a/2 ≤ s ≤ a (apex E is already inside the field), now x = 0 cuts the edges CD (still at y = 0) and CE. For CE: x = s − a + (a/2) t, y = −h t → x = 0 gives t = 2(a − s) / a, y = −2h (a − s) / a. So the intersection points are (0, 0) and (0, − 2h (a − s)/a).",
+    "conclusion": "L(s) = 2h (a − s) / a for a/2 ≤ s ≤ a.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Combining L(s) = 2h s / a for 0 ≤ s ≤ a/2 and L(s) = 2h (a − s) / a for a/2 ≤ s ≤ a.",
+    "conclusion": "L(s) is a triangle-shaped curve with its peak at s = a/2, L_max = h = √3 a /2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε_max = B v L_max = B v (√3 a /2).",
+    "conclusion": "The largest induced electromotive force that appears while the triangle moves from “D just touches” to “C just enters” is ε_max = (√3 / 2) B a v.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

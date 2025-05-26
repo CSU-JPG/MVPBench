@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit consists of a supercapacitor, a resistor R, and a charger.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During the constant voltage stage, the charger maintains a constant voltage U.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current flowing through the resistor R is I_2.",
+    "conclusion": "The voltage drop across the resistor can be calculated using Ohm's Law: V_R = I_2 × R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total voltage U is the sum of the voltage across the capacitor and the voltage drop across the resistor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total voltage U is the sum of the voltage across the capacitor and the voltage drop across the resistor.",
+    "conclusion": "The voltage across the capacitor U_2 is given by: U_2 = U - V_R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute V_R with I_2 × R.",
+    "conclusion": "U_2 = U - I_2 × R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_2 = U - I_2 × R.",
+    "conclusion": "The voltage U_2 across the capacitor is U - I_2 R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

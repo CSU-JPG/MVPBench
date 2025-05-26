@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves two hemispheres A and B with masses m and 2m respectively. Hemisphere B is smooth, and there is friction between hemisphere A and the left wall. The line between the two ball centers forms a 30° angle with the horizontal direction into A. The goal is to determine the dynamic friction factor between hemisphere A and the left wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The static friction force is given by the equation F_s = μN, where μ is the static friction factor and N is the normal force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force N is equal to the weight of the hemisphere, which is 2mg.",
+    "conclusion": "The normal force N = 2mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the static friction equation F_s = μN and substituting N = 2mg.",
+    "conclusion": "The static friction force F_s = 2μmg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The balls do not slide, so the friction force F_f must equal the normal force N.",
+    "conclusion": "The friction force F_f = 2mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The dynamic friction force F_d is given by F_d = F_f cos(30°). Substituting F_f = 2mg.",
+    "conclusion": "The dynamic friction force F_d = 2mg × cos(30°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The value of cos(30°) is √3/2.",
+    "conclusion": "cos(30°) = √3/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting cos(30°) = √3/2 into F_d = 2mg × cos(30°).",
+    "conclusion": "The dynamic friction force F_d = mg√3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The dynamic friction factor μ is the ratio of the dynamic friction force to the normal force: μ = F_d / N. Substituting F_d = mg√3 and N = 2mg.",
+    "conclusion": "The dynamic friction factor μ = mg√3 / 2mg = √3/2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a right-angle wire with sides AC and CD, where AC is L and CD is 2L, making the total length 3L. It's placed in a uniform magnetic field perpendicular to the plane, with magnetic induction intensity B. There's a current I flowing through the wire, and we need to find the magnitude of the Ampere force acting on this current-carrying wire.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Recall the formula for the force on a current-carrying conductor in a magnetic field: F = BIL, where F is the force, B is the magnetic field, I is the current, and L is the length of the conductor in the field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire is bent at a right angle, so consider each segment separately and then sum up the forces acting on each part.",
+    "conclusion": "Consider each segment separately and then sum up the forces acting on each part.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire segment AC has a length L and carries a current I.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is perpendicular to the plane of the wire, and the current is flowing in a certain direction.",
+    "conclusion": "The force on segment AC is F_ac = B * I * L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire segment CD has a length of 2L and carries the same current I.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The direction of the current in CD is different from that in AC because of the right angle bend. The magnetic field is uniform and perpendicular to the plane.",
+    "conclusion": "The force on segment CD is F_cd = B * I * 2L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces on AC and CD are perpendicular to each other.",
+    "conclusion": "Add these two forces vectorially to find the net force on the entire wire.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces are perpendicular.",
+    "conclusion": "Use the Pythagorean theorem to find the magnitude of the resultant force.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_total = sqrt( F_ac^2 + F_cd^2 )",
+    "conclusion": "F_total = sqrt( (B * I * L)^2 + (B * I * 2L)^2 )",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify inside the square root.",
+    "conclusion": "F_total = sqrt( B^2 * I^2 * L^2 + B^2 * I^2 * (2L)^2 )",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Factor out common terms.",
+    "conclusion": "F_total = sqrt( B^2 * I^2 * L^2 * (1 + 4) )",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Continue simplification.",
+    "conclusion": "F_total = sqrt( B^2 * I^2 * L^2 * 5 )",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Complete the calculation.",
+    "conclusion": "F_total = B * I * L * sqrt(5)",
+    "judgment": "Match"
+  }]

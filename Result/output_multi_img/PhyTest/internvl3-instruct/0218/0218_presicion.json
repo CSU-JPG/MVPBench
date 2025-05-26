@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the magnitude of the Ampere force received by the wire ABC in the given magnetic fields, we need to consider the forces on segments AB and BC separately and then find the resultant force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment AB: Length = L, Current = I, Magnetic field = B (perpendicular to the plane, inward).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment AB: Length = L, Current = I, Magnetic field = B (perpendicular to the plane, inward).",
+    "conclusion": "The force on segment AB is given by F_{AB} = I * L * B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on segment AB is given by F_{AB} = I * L * B.",
+    "conclusion": "The force will be directed upward using the right-hand rule.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment BC: Length = L, Current = I, Magnetic field = B (perpendicular to the plane, outward).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment BC: Length = L, Current = I, Magnetic field = B (perpendicular to the plane, outward).",
+    "conclusion": "The force on segment BC is given by F_{BC} = I * L * B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on segment BC is given by F_{BC} = I * L * B.",
+    "conclusion": "The force direction will be downward using the right-hand rule.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since ∠ABC = 120°, the angle between the two force vectors (one upward and one downward) is 120°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "∠ABC = 120°",
+    "conclusion": "Resolve these forces into their horizontal and vertical components.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_{AB} = I * L * B",
+    "conclusion": "Vertical component: F_{AB} * sin(60°), Horizontal component: F_{AB} * cos(60°)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_{BC} = I * L * B",
+    "conclusion": "Vertical component: F_{BC} * sin(60°), Horizontal component: -F_{BC} * cos(60°)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical components: F_{AB} * sin(60°) + F_{BC} * sin(60°)",
+    "conclusion": "F_{vertical} = 2I * L * B * sin(60°)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_{vertical} = 2I * L * B * sin(60°)",
+    "conclusion": "F_{vertical} = I * L * B * sqrt(3)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal components: F_{AB} * cos(60°) - F_{BC} * cos(60°)",
+    "conclusion": "F_{horizontal} = 0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_{horizontal} = 0, F_{vertical} = I * L * B * sqrt(3)",
+    "conclusion": "The resultant force is purely vertical: F_{resultant} = I * L * B * sqrt(3)",
+    "judgment": "Reasonable"
+  }]

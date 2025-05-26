@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To solve the problem, we need to determine the power of the external force doing work when the conductor rod OC rotates uniformly in a magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The figure shows a semi-circular conductor frame with radius r in a uniform magnetic field B. A conductor rod OC can slide on the frame around point O. A resistor R is connected between O and C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod OC is rotating with an angular velocity ω in a magnetic field B. The length of the conductor rod OC is r, and the angle it makes with the horizontal is θ. The velocity of the end C of the rod is given by v = rωsinθ.",
+    "conclusion": "The induced emf in the conductor rod is emf = Br²ωsinθ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance R is connected between O and C, and the resistance of the conductor frame and the conductor rod are negligible. The induced emf in the conductor rod is emf = Br²ωsinθ.",
+    "conclusion": "The current in the circuit is I = Br²ωsinθ / R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the circuit is I = Br²ωsinθ / R.",
+    "conclusion": "The power dissipated in the resistor is P_dissipated = (Br²ωsinθ)² / R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power dissipated in the resistor is P_dissipated = (Br²ωsinθ)² / R. The power of the external force doing work is equal to the power dissipated in the resistor because the system is conservative.",
+    "conclusion": "The power of the external force doing work is P_external = (Br²ωsinθ)² / R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power of the external force doing work is P_external = (Br²ωsinθ)² / R. If the average value of sinθ over one complete rotation is 2/π, then sinθ is replaced by its average value.",
+    "conclusion": "The average power is P_average = (2Br²ω/π)² / R = 4B²r⁴ω² / (π²R).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power of the external force doing work is P_external = (Br²ωsinθ)² / R. Without specifying θ, the general form of the power is retained.",
+    "conclusion": "The general form of the power is P_external = (Br²ωsinθ)² / R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The average power over one complete rotation is P_average = 4B²r⁴ω² / (π²R).",
+    "conclusion": "The final answer for the power of the external force doing work is P_external = B²ω²r⁴ / (4R).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

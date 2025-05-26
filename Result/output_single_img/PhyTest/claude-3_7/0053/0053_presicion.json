@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the known values: Horizontal distance L = 60 m, Initial velocity v0 = 50 m/s, Launch angle θ = 53°, sin(53°) = 0.8, Gravity g = 10 m/s²",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial velocity v0 = 50 m/s, Launch angle θ = 53°, sin(53°) = 0.8",
+    "conclusion": "Determine the horizontal and vertical components of the initial velocity: Horizontal component v0x = v0 cosθ, Vertical component v0y = v0 sinθ",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(53°) = 0.8",
+    "conclusion": "Calculate cos(53°): cos(53°) = sqrt(1 - sin²(53°)) = sqrt(1 - 0.8²) = sqrt(0.36) = 0.6",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v0 = 50 m/s, cos(53°) = 0.6",
+    "conclusion": "Calculate horizontal component v0x: v0x = 50 × 0.6 = 30 m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v0 = 50 m/s, sin(53°) = 0.8",
+    "conclusion": "Calculate vertical component v0y: v0y = 50 × 0.8 = 40 m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal distance L = 60 m, Horizontal velocity v0x = 30 m/s",
+    "conclusion": "Calculate the time taken for the projectile to reach the building: t = L / v0x = 60 m / 30 m/s = 2 s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical component v0y = 40 m/s, Time t = 2 s, Gravity g = 10 m/s²",
+    "conclusion": "Calculate the height H using the vertical motion equation: H = v0y × t - (1/2) × g × t²",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v0y = 40 m/s, t = 2 s, g = 10 m/s²",
+    "conclusion": "Substitute values into the vertical motion equation: H = 40 m/s × 2 s - 5 × 4 m = 80 m - 20 m = 60 m",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

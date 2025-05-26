@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the system is released from rest. Object A moves downward, and object B moves upward along the inclined plane. The motion is governed by the forces acting on both objects.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The only force acting on object A is its weight mg, which causes it to accelerate downward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The forces acting on object B are the tension T in the string (upward along the incline) and the component of its weight mg sin θ acting downward along the incline.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Newton's second law for both objects: For object A: mg - T = ma. For object B: T - mg sin θ = ma.",
+    "conclusion": "Adding these two equations eliminates T: mg - mg sin θ = 2ma.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg - mg sin θ = 2ma.",
+    "conclusion": "Simplify: g(1 - sin θ) = 2a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "g(1 - sin θ) = 2a. Substitute g = 10 m/s² and sin 37° = 0.6.",
+    "conclusion": "10(1 - 0.6) = 2a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "10(1 - 0.6) = 2a.",
+    "conclusion": "a = 2 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A falls a distance h = 1 m under constant acceleration a = 2 m/s². Using the kinematic equation: v² = u² + 2ah.",
+    "conclusion": "v² = 0 + 2(2)(1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v² = 4.",
+    "conclusion": "v = 2 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At the moment object A hits the ground, the string breaks, and object B is no longer influenced by the tension T. The only force acting on object B is the component of its weight along the incline, mg sin θ, which causes it to accelerate downward along the incline.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the string breaks, object B has the same velocity as object A, which is v = 2 m/s upward along the incline.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the string breaks, the acceleration of object B is: a_B = g sin θ.",
+    "conclusion": "Substitute g = 10 m/s² and sin 37° = 0.6: a_B = 10 × 0.6 = 6 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object B initially moves upward with velocity v = 2 m/s, then decelerates under a_B = 6 m/s², reverses direction, and accelerates downward. Using the equation v_f = v_i - a_B t, where v_f = 0 (final velocity at the highest point): 0 = 2 - 6t_1.",
+    "conclusion": "Solve for t_1: t_1 = 2/6 = 1/3 s.",
+    "judgment": "Match"
+  }]

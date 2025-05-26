@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Square region abcd with side length 2L, uniform magnetic field B perpendicular to the plane (into the paper), electric field between parallel plates MN and PQ, MN is on the left half of side ad, plates have length L and are separated by distance L, particle with mass m and charge q enters at point S",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle follows a specific path: initially moves in a straight line through the electric field region, then travels through the magnetic field only, must just reach side cd without exiting",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the particle is between the plates MN and PQ: Electric force: F₁ = qE, Magnetic force: F₂ = qvB (perpendicular to velocity)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After exiting the electric field region, only the magnetic force acts on the particle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the particle leaves the electric field region, it experiences only a magnetic force which causes it to move in a circular path.",
+    "conclusion": "For a negatively charged particle (q < 0) moving in a magnetic field directed into the page, the circular motion will be clockwise.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius of this circular path is: r = mv/|q|B",
+    "conclusion": "The radius of the circular path is r = mv/|q|B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the particle to just reach side cd without exiting, it must travel exactly 2L vertically from its position after leaving the electric field.",
+    "conclusion": "The condition for the particle to just reach side cd is that it must travel a half-circle with radius r, where r = 2L",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The center of the circular path is located at a distance r to the right of the point where the particle exits the electric field region.",
+    "conclusion": "The condition for the particle to just reach side cd is that it must travel a half-circle with radius r, where r = 2L",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = 2L",
+    "conclusion": "mv'/|q|B = 2L",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Within the electric field region, the particle experiences both electric and magnetic forces. The electric field accelerates the particle, while the magnetic field causes a deflection.",
+    "conclusion": "Since the particle moves along the central line SO (and is stated to move in a straight line through the electric field region), we can infer that the electric field is adjusted precisely to counteract the magnetic deflection for this initial velocity.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a particle to move in a straight line while experiencing both electric and magnetic fields, we need: qE = qv₀B",
+    "conclusion": "E = v₀B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = v₀B",
+    "conclusion": "The particle's velocity remains constant while in the electric field region, so v' = v₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mv'/|q|B = 2L and v' = v₀",
+    "conclusion": "mv₀/|q|B = 2L",
+    "judgment": "Wrong"
+  }]

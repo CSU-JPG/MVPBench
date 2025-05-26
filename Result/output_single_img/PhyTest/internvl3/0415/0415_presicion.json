@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the refractive index of the glass, we need to analyze the path of the light ray as it enters and exits the semicircular glass brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray enters the glass brick at point O making an angle θ = 30° with the normal OO'. The radius of the semicircular glass brick is R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray enters the glass brick at point O making an angle θ = 30° with the normal OO'.",
+    "conclusion": "At the entry point O, the light ray refracts according to Snell's Law: n1 sin θ1 = n2 sin θ2 where n1 is the refractive index of air (approximately 1), θ1 = 30°, n2 is the refractive index of the glass, and θ2 is the angle of refraction inside the glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n1 sin θ1 = n2 sin θ2 where n1 is the refractive index of air (approximately 1), θ1 = 30°.",
+    "conclusion": "Let θ2 be the angle of refraction inside the glass. Using Snell's Law: sin θ2 = 1/(2n2), θ2 = sin^(-1)(1/(2n2)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray travels inside the glass and hits the curved surface at point P. The angle of incidence at P is 90° - θ2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at P is 90° - θ2.",
+    "conclusion": "If the angle of incidence at P is greater than the critical angle, total internal reflection occurs. Otherwise, the light refracts out of the glass.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assume the light refracts out of the glass at P.",
+    "conclusion": "At the exit point P, the light ray refracts again according to Snell's Law: n2 sin θ3 = n1 sin θ4 where θ3 is the angle of incidence inside the glass, and θ4 is the angle of refraction in air.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle θ3 is the same as the angle of incidence at P, which is 90° - θ2.",
+    "conclusion": "Using Snell's Law again: sin θ4 = n2 sin (90° - θ2) = n2 cos θ2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between the two bright spots on the screen CD is given as (√3 + 1)R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the two bright spots on the screen CD is given as (√3 + 1)R.",
+    "conclusion": "This distance is the result of the light ray traveling along two different paths due to refraction and reflection.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the given distance and the geometry of the problem.",
+    "conclusion": "Set up the equation: (√3 + 1)R = 2R cos θ2, cos θ2 = (√3 + 1)/2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the earlier relation sin θ2 = 1/(2n2), use the identity sin^2 θ2 + cos^2 θ2 = 1.",
+    "conclusion": "(1/(2n2))^2 + ((√3 + 1)/2)^2 = 1.",
+    "judgment": "Wrong"
+  }]

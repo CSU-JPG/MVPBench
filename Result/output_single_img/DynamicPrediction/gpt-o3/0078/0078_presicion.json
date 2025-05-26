@@ -1,0 +1,78 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Four different objects stand on a flat slab floor: a vertical glove-shaped object, a low ticket-punch/stapler, a tall thin bird/leaf figure, and a small peach.",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The red arrows A, B, C, D point to the ground shadows of the four objects.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light source is behind the line of objects (farther away from the camera) and somewhat above them, casting shadows toward the camera (toward the bottom of the image).",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Treat every object as standing on the ground with top height h. The ground is z = 0, the light is a point (xL, yL, zL) where zL ≫ 0, and the center of an object is (x0, y0, 0) with height h.",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray through the object’s top hits the floor at xS = x0 + (x0 – xL) · (zL / (zL – h)) and yS = y0 + (y0 – yL) · (zL / (zL – h)).",
+    "conclusion": "If the light moves only in the +y direction (toward the camera) while staying at the same height zL, then ΔyL < 0, and the term (y0 – yL) passes from positive, through zero, to negative.",
+    "judgment": "Reasonable",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When yL is behind the object (y0 > yL), the product (y0 – yL) is positive, and the shadow lies in front of the object (toward the camera).",
+    "conclusion": "When the light is exactly above the object (y0 = yL), the product is zero, and the shadow shrinks to a point directly under the object.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the light passes in front of the object (y0 < yL), the product (y0 – yL) is negative, and the shadow jumps to the back side of the object (away from the camera).",
+    "conclusion": "The shadow shifts backward as the light moves forward.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "|shadow| = h · zL / (zL – h) · |y0 – yL| / zL ∝ h · |y0 – yL|.",
+    "conclusion": "While the light approaches, |y0 – yL| gets smaller, and the shadow shortens.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the light is overhead, |y0 – yL| = 0, and the shadow length is zero.",
+    "conclusion": "The shadow disappears momentarily when the light is directly above the object.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After passing overhead, |y0 – yL| grows again, and the shadow lengthens on the opposite side.",
+    "conclusion": "The shadow reappears on the opposite side of the object and starts to grow again.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a given light position, a taller object (larger h) always keeps the longer shadow.",
+    "conclusion": "The taller the object, the longer its shadow at any given light position.",
+    "judgment": "Match",
+    "final_answer": ""
+  }]

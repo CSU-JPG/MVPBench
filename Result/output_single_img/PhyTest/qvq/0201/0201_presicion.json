@@ -1,0 +1,92 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a graph with two lines: one for a power source and one for a resistor. The x-axis is current in amperes (A), and the y-axis is voltage in volts (V).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Line I represents the relationship between the terminal voltage and current for the power source, and line II is the volt-ampere characteristic curve for a resistor R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Line I starts at (0, 3) and ends at (6, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Line I starts at (0, 3) and ends at (6, 0).",
+    "conclusion": "When there's no current (I=0), the voltage is 3 V, which should be the open-circuit voltage of the power source.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Line I starts at (0, 3) and ends at (6, 0).",
+    "conclusion": "When the current is 6 A, the voltage drops to 0 V, which would be the short-circuit current.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V = ε - I r; When I = 0, V = 3 V, so ε = 3 V; When V = 0, I = 6 A",
+    "conclusion": "The internal resistance (r) of the power source is 0.5 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Line II starts at (0, 0) and passes through the point (2 A, 2 V).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Line II passes through the point (2 A, 2 V).",
+    "conclusion": "The resistance R can be calculated as 1 Ω using Ohm's law.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In a closed circuit, the terminal voltage of the power source will be equal to the voltage across the resistor.",
+    "conclusion": "V = IR; V = ε - I r; Therefore, IR = ε - I r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I * 1 Ω = 3 V - I * 0.5 Ω",
+    "conclusion": "I = 2 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 2 A; R = 1 Ω",
+    "conclusion": "The output power (P_out) is (2 A)^2 * 1 Ω = 4 W",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At I = 2 A, V = 2 V (from line I)",
+    "conclusion": "P_out = 2 V * 2 A = 4 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R = 1 Ω and r = 0.5 Ω; R ≠ r",
+    "conclusion": "It's not the maximum power transfer condition.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_total = I^2 (R + r) = 2^2 * (1 + 0.5)",
+    "conclusion": "P_total = 6 W",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_out = I^2 R = 4 * 1",
+    "conclusion": "P_out = 4 W",
+    "judgment": "Match"
+  }]

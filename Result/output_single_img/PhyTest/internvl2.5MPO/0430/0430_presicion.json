@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the maximum width of the incident light beam on AB, consider the critical angle for total internal reflection in the glass brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The critical angle C is given as 15°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use Snell's Law for total internal reflection: n1 sin(i) = n2 sin(r).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection, the angle of incidence i must be greater than or equal to the critical angle C.",
+    "conclusion": "At the critical angle, sin(C) = 1/n1.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given C = 15°, we have sin(15°) = 1/n1.",
+    "conclusion": "n1 = 1/sin(15°).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light beam reaches the upper surface at an angle such that it just grazes the surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum width of the beam corresponds to the diameter of the circle where the light exits.",
+    "conclusion": "The maximum width w is the chord length of the circle at the angle 2C.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use the formula for the chord length: w = 2R sin(C).",
+    "conclusion": "w = 2R sin(15°).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(15°) ≈ 0.2588.",
+    "conclusion": "w = 2R × 0.2588.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "w = 2R × 0.2588.",
+    "conclusion": "w ≈ 0.5176R.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

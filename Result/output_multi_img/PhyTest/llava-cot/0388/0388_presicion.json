@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a television entertainment program, there is a two-person game involving pulling a plank, which tests the coordination between the two participants. As shown in the figure, a plank of length L = 0.60 m and mass M = 0.40 kg is leaning against a smooth vertical wall. At the lower right of the plank, there is a small block (which can be considered a point mass) of mass m = 0.80 kg. The coefficient of kinetic friction between the block and the plank is μ = 0.20, and the maximum static friction between the block and the plank is equal to the kinetic friction. Take g = 10 m/s². One person applies a horizontal constant force F₁ to the left on the block, while another person applies a vertical constant force F₂ upward to pull the block, causing the block to start moving upward from rest. To make the wooden board move upward, what condition must F₁ satisfy?",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a plank leaning against a smooth vertical wall, with a block at its base. The block is subject to horizontal and vertical forces: F₁ is applied horizontally to the left, and F₂ is applied vertically upward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The block's motion is influenced by the horizontal and vertical forces, as well as friction. The forces acting on the block are: 1. The horizontal force F₁ applied to the left. 2. The vertical force F₂ applied upward. 3. The normal force N from the plank. 4. The frictional force f opposing the motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force f is given by μN = μmg, where μ = 0.20 is the coefficient of kinetic friction.",
+    "conclusion": "The frictional force f is 1.6 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To determine the condition for F₁, we apply Newton's second law for horizontal motion: F₁ = f.",
+    "conclusion": "F₁ = 1.6 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To determine the condition for F₂, we apply Newton's second law for vertical motion: F₂ = mg - f.",
+    "conclusion": "F₂ = 7.2 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the plank to move upward, the vertical component of the force on the plank must be positive: F₂ - f > 0.",
+    "conclusion": "5.6 > 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Thus, the condition for F₁ to make the plank move upward is: F₁ ≥ μmg.",
+    "conclusion": "F₁ ≥ 1.6 N.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The sliding friction between the slider and the board is: f = μF₁. To make the wooden board move upward, it is required that f > Mg.",
+    "conclusion": "F₁ > 20 N.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

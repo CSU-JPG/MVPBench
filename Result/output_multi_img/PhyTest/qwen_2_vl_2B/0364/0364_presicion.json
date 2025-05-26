@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves calculating the displacement of a car during the process of deceleration, constant velocity, and acceleration while passing through an ETC lane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The car initially travels at a velocity of v0 = 30 m/s, decelerates uniformly to v1 = 5 m/s over a distance of d = 10 m before the toll station centerline, passes through the centerline at constant velocity, and then accelerates uniformly back to v0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The magnitude of acceleration and deceleration is 1 m/s², and the length of the car body is neglected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car decelerates uniformly from v0 = 30 m/s to v1 = 5 m/s with acceleration a = -1 m/s².",
+    "conclusion": "The displacement during deceleration is calculated using the formula d = (v0² - v1²) / (2a).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting v0 = 30 m/s, v1 = 5 m/s, and a = -1 m/s² into the formula d = (v0² - v1²) / (2a).",
+    "conclusion": "The displacement during deceleration is d = (30² - 5²) / (2 × 1) = (900 - 25) / 2 = 437.5 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car accelerates uniformly from v1 = 5 m/s to v0 = 30 m/s with acceleration a = 1 m/s².",
+    "conclusion": "The displacement during acceleration is calculated using the formula d = (v1² - v0²) / (2a).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting v1 = 5 m/s, v0 = 30 m/s, and a = 1 m/s² into the formula d = (v1² - v0²) / (2a).",
+    "conclusion": "The displacement during acceleration is d = (5² - 30²) / (2 × 1) = (25 - 900) / 2 = -437.5 m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total displacement is the sum of the displacements during deceleration and acceleration.",
+    "conclusion": "The total displacement is d_total = 437.5 + (-437.5) = 0 m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The correct displacement during deceleration is d1 = 437.5 m, and the displacement during acceleration is equal to the same magnitude, d2 = 437.5 m.",
+    "conclusion": "The total displacement from the start of deceleration to the restoration of normal driving speed includes the constant speed zone of 10 m: x1 = 2d1 + 10 = 2 × 437.5 + 10 = 885 m.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

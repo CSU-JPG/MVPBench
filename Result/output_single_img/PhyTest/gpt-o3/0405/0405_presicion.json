@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Index of refraction of the semi-cylinder: n = 2. Outside medium (air): n₀ = 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Index of refraction of the semi-cylinder: n = 2. Outside medium (air): n₀ = 1.",
+    "conclusion": "sin θ_c = n₀ / n = 1 / 2. θ_c = arcsin(½) = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ_c = 30°.",
+    "conclusion": "A ray that reaches the curved surface from inside will escape (refract out) only if its angle of incidence i does not exceed θ_c = 30°; otherwise it is totally internally reflected.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Choose a Cartesian cross-section. Origin O at the centre of the circular cross-section, radius R. The flat entrance surface is the diameter AB (y = 0, –R ≤ x ≤ +R). The curved surface is the half-circle x² + y² = R², y ≤ 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Parallel light enters vertically downward; inside the glass every ray travels along the vector v = (0, –1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Take the ray that enters at the point (x, 0); it intersects the circular boundary at P: P( x , –√(R² – x²) ).",
+    "conclusion": "The inward normal at P is the radius OP: n = ( x , –√(R² – x²) ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = (0, –1) and n = ( x , –√(R² – x²) ).",
+    "conclusion": "cos i = ( v · n ) / |n| = [ (0)(x) + (–1)(–√(R² – x²)) ] / R = √(R² – x²) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos i = √(R² – x²) / R.",
+    "conclusion": "sin i = √(1 – cos² i) = x / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin i = x / R.",
+    "conclusion": "i = arcsin( x / R ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "i = arcsin( x / R ) and θ_c = 30°.",
+    "conclusion": "i ≤ θ_c ⇔ arcsin( x / R ) ≤ 30° ⇔ x / R ≤ ½ ⇔ |x| ≤ R/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "|x| ≤ R/2.",
+    "conclusion": "Thus only the rays that entered through the central strip |x| ≤ R/2 reach the curved surface with i ≤ 30° and can exit; the rest undergo total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "|x| ≤ R/2.",
+    "conclusion": "Convert the coordinate limit |x| = R/2 to the corresponding angular limit on the circle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = R sin φ.",
+    "conclusion": "sin φ = x / R.",
+    "judgment": "Match"
+  }]

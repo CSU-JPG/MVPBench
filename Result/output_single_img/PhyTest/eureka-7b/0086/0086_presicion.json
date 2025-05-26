@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the time taken for the small ball to move from point B to point C. We will use the properties of projectile motion and the geometry of the semicylinder.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The ball just grazes past point C, so the vertical component of the velocity at C is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle ∠COB = 53°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle ∠COB = 53°.",
+    "conclusion": "The horizontal distance traveled is R cos 53° and the vertical distance traveled is R sin 53°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R = 0.75 m, cos 53° = 0.6",
+    "conclusion": "The horizontal distance traveled is R cos 53° = 0.75 × 0.6 = 0.45 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R = 0.75 m, sin 53° = 0.8",
+    "conclusion": "The vertical distance traveled is R sin 53° = 0.75 × 0.8 = 0.6 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The vertical motion is under gravity, so the vertical displacement y is given by y = v_{0y} t - (1/2) g t^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At the highest point (point C), the vertical component of the velocity is zero, so v_{0y} = v_0 sin θ and the time to reach the highest point is t_{up} = v_{0y}/g = v_0 sin θ/g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total time of flight is t = 2 t_{up} = 2 v_0 sin θ/g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_{0y} = v_0 sin θ, y = -0.6 m",
+    "conclusion": "-0.6 = v_0 sin θ * (2 v_0 sin θ/g) - (1/2) g (2 v_0 sin θ/g)^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-0.6 = v_0 sin θ * (2 v_0 sin θ/g) - (1/2) g (2 v_0 sin θ/g)^2",
+    "conclusion": "-0.6 = (2 v_0^2 sin^2 θ/g) - (2 v_0^2 sin^2 θ/g) = 0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This is not possible, so we need to use the horizontal motion to find v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The horizontal distance is x = v_0 t.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal distance is 0.45 m.",
+    "conclusion": "v_0 t = 0.45",
+    "judgment": "Match"
+  }]

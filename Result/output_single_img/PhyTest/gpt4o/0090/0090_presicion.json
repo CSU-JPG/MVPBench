@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a uniformly dense sphere of mass M and radius R. A point mass m is located at a distance of 2R from the center O of the sphere. A smaller sphere of radius R/2 is removed from the original sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The original sphere has a uniform density. Let the density be rho.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume of the original sphere is V = (4/3)πR^3.",
+    "conclusion": "The mass of the original sphere is M = rho * (4/3)πR^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume of the removed sphere (radius R/2) is V_removed = (4/3)π(R/2)^3 = (1/6)πR^3.",
+    "conclusion": "The mass of the removed sphere is M_removed = rho * (1/6)πR^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass of the original sphere is M = rho * (4/3)πR^3 and the mass of the removed sphere is M_removed = rho * (1/6)πR^3.",
+    "conclusion": "The mass of the remaining sphere is M_remaining = M - M_removed = rho * (7/6)πR^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gravitational force exerted by a sphere on a point mass outside the sphere can be calculated as if all the mass of the sphere were concentrated at its center.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass of the remaining sphere is M_remaining = rho * (7/6)πR^3.",
+    "conclusion": "The gravitational force F exerted by the remaining sphere on the point mass m is F = GM_remaining * m / (2R)^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute M_remaining = rho * (7/6)πR^3 into the equation F = GM_remaining * m / (2R)^2.",
+    "conclusion": "F = G(rho * (7/6)πR^3) * m / 4R^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Recall that rho = M / ((4/3)πR^3).",
+    "conclusion": "Substitute rho into the expression for F: F = G((M / ((4/3)πR^3)) * (7/6)πR^3) * m / 4R^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression F = G((M / ((4/3)πR^3)) * (7/6)πR^3) * m / 4R^2.",
+    "conclusion": "F = (7/8) * GMm / 4R^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify F = (7/8) * GMm / 4R^2.",
+    "conclusion": "F = (7/32) * GMm / R^2.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

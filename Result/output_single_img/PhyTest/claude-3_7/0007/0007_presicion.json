@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Both vehicles start braking at the same time. Initially, they are 30 meters apart (with the bus ahead). The truck starts at 40 m/s and the bus at 30 m/s. Both decelerate linearly but at different rates. I need to find the maximum distance between them during braking.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The truck's initial velocity is 40 m/s and it reaches 0 m/s at t = 20 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck's initial velocity is 40 m/s and it reaches 0 m/s at t = 20 s.",
+    "conclusion": "The truck's deceleration is 2 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The bus's initial velocity is 30 m/s and it reaches 0 m/s at t = 30 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus's initial velocity is 30 m/s and it reaches 0 m/s at t = 30 s.",
+    "conclusion": "The bus's deceleration is 1 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck's initial velocity is 40 m/s and deceleration is 2 m/s².",
+    "conclusion": "The truck's position equation is x₁(t) = 40t - t².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus's initial velocity is 30 m/s and deceleration is 1 m/s².",
+    "conclusion": "The bus's position equation is x₂(t) = 30 + 30t - 0.5t².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck's position equation is x₁(t) = 40t - t² and the bus's position equation is x₂(t) = 30 + 30t - 0.5t².",
+    "conclusion": "The distance between the vehicles at time t is D(t) = 30 - 10t + 0.5t².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance function is D(t) = 30 - 10t + 0.5t².",
+    "conclusion": "The derivative of the distance function is D'(t) = -10 + t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The derivative of the distance function is D'(t) = -10 + t.",
+    "conclusion": "Setting the derivative equal to zero gives t = 10 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The second derivative of the distance function is D''(t) = 1.",
+    "conclusion": "The second derivative is positive, confirming t = 10 seconds is a minimum distance, not a maximum.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The truck is initially faster (40 m/s vs 30 m/s) but decelerates more quickly (2 m/s² vs 1 m/s²). The truck and bus speeds are equal at t = 10s (both at 20 m/s).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck and bus speeds are equal at t = 10s (both at 20 m/s).",
+    "conclusion": "The maximum distance will occur either at t = 0 or at the time when both vehicles stop.",
+    "judgment": "Reasonable"
+  }]

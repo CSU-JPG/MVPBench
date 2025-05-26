@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analyze the current shadows to determine the location of the light source.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In the original image, the shadows A, B, C, and D are cast on the ground. For each object, its shadow is located behind and to the right of the object.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Shadows are cast in the direction opposite to the direction of the light source relative to the object.",
+    "conclusion": "Therefore, the current light source is located in front and to the left of the objects.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the change in the position of the shadows when the light source moves.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The question states that the light source moves to the back right.",
+    "conclusion": "If the light source is in the back right relative to the objects, then the shadows will be cast in the opposite direction, which is the front left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the light source moves to the back right, the position of the shadows A, B, C, and D will shift to the front left of their respective objects.",
+    "conclusion": "The shadows A, B, C, and D will move to the front left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the change in the size of the shadows when the light source moves.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assuming the light source is a point source, the size of the shadow cast by an object on a surface is inversely proportional to the distance between the light source and the object.",
+    "conclusion": "When the light source moves further away from the objects, the shadows it casts become smaller.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Based on the analysis, when the light source moves to the back right, each of the shadows A, B, C, and D will move to a position in front and to the left of its corresponding object, and its size will become smaller.",
+    "conclusion": "The shadows A, B, C and D will move to the front left of the objects and will become smaller in size.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

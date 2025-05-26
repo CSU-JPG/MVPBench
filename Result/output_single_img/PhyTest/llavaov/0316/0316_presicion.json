@@ -1,0 +1,76 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature of the gas in state A is known to be 27 °C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Pressure in state A, \\( P_A = 3 \\times 10^5 \\, \\text{Pa} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Volume in state A, \\( V_A = 1 \\times 10^{-3} \\, \\text{m}^3 \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Pressure in state B, \\( P_B = 2 \\times 10^5 \\, \\text{Pa} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Volume in state B, \\( V_B = 2 \\times 10^{-3} \\, \\text{m}^3 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Convert \\( T_A \\) to Kelvin: \\( T_A = 27 + 273.15 = 300.15 K \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by \\( PV = nRT \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the mass of the gas is constant, we can use the equation \\( \\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2} \\).",
+    "conclusion": "Use the equation \\( \\frac{P_A \\cdot V_A}{T_A} = \\frac{P_B \\cdot V_B}{T_B} \\) to find the temperature in state B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the given values into the equation \\( \\frac{P_A \\cdot V_A}{T_A} = \\frac{P_B \\cdot V_B}{T_B} \\).",
+    "conclusion": "Solve for \\( T_B \\): \\( T_B = \\frac{P_B \\cdot V_B \\cdot T_A}{P_A \\cdot V_A} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate \\( T_B = \\frac{2 \\times 10^5 \\cdot 2 \\times 10^{-3} \\cdot 300.15}{3 \\times 10^5 \\cdot 1 \\times 10^{-3}} \\).",
+    "conclusion": "Simplify the equation: \\( T_B = \\frac{2 \\cdot 2 \\cdot 300.15}{3} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the equation: \\( T_B = \\frac{2 \\cdot 2 \\cdot 300.15}{3} \\).",
+    "conclusion": "Calculate the final value: \\( T_B = \\frac{4 \\cdot 300.15}{3} = 400.2 \\, \\text{K} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate the final value: \\( T_B = \\frac{4 \\cdot 300.15}{3} = 400.2 \\, \\text{K} \\).",
+    "conclusion": "Convert \\( T_B \\) back to Celsius: \\( T_B = 400.2 - 273.15 = 127.05^\\circ C \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the ideal gas equation of state \\( \\frac{P_A V_A}{T_A} = \\frac{P_B V_B}\\)"}]

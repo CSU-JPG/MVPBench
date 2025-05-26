@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a rectangular optical element ABCD with length 2L and width L. A light beam enters at point P on side AB at angle α = 37° to AB. The refractive index of the element is n = 4/3. We need to find the length of PM, where M is the exit point on side CD.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rectangle is placed in a coordinate system where A is at (0, L), B is at (2L, L), C is at (2L, 0), D is at (0, 0). P is at the middle point of AB.",
+    "conclusion": "P is at (L, L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n₁ sin(θ₁) = n₂ sin(θ₂) with n₁ = 1, n₂ = 4/3, θ₁ = 90° - α = 53°.",
+    "conclusion": "sin(θ₂) = 0.6, therefore θ₂ = arcsin(0.6) ≈ 36.87°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters at point P(L, L) and travels at angle θ = 36.87° with the vertical.",
+    "conclusion": "The equation of the light path inside the optical element is y = 1.75L - 0.75x.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Side CD is the line y = 0. Substituting y = 0 into the light path equation y = 1.75L - 0.75x.",
+    "conclusion": "x = 2.33L, which is outside the range 0 ≤ x ≤ 2L for points on CD.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Side BC is the line x = 2L. Substituting x = 2L into the light path equation y = 1.75L - 0.75x.",
+    "conclusion": "The intersection point M is at (2L, 0.25L).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the distance formula: PM = √[(xₘ - xₚ)² + (yₘ - yₚ)²] with M at (2L, 0.25L) and P at (L, L).",
+    "conclusion": "PM = 1.25L.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

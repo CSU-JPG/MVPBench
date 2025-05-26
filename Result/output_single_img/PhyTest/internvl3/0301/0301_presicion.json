@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at state A, \\( T_A = -73^\\circ C = 200 \\, \\text{K} \\), Internal energy change from A to C, \\( \\Delta U = 200 \\, \\text{J} \\), Standard conditions: 1 mole of an ideal gas occupies 22.4 L at 1 atm and 273 K, Avogadro's number, \\( N_A = 6.0 \\times 10^{23} \\, \\text{mol}^{-1} \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: \\( p_A = 3 \\times 10^5 \\, \\text{Pa}, V_A = 1 \\times 10^{-3} \\, \\text{m}^3 \\), State B: \\( p_B = 3 \\times 10^5 \\, \\text{Pa}, V_B = 4 \\times 10^{-3} \\, \\text{m}^3 \\), State C: \\( p_C = 1 \\times 10^5 \\, \\text{Pa}, V_C = 4 \\times 10^{-3} \\, \\text{m}^3 \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using ideal gas law for state A: \\( p_A V_A = nRT_A \\)",
+    "conclusion": "nR = 1.5",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using standard condition: \\( 1 \\, \\text{mole} = 22.4 \\times 10^{-3} \\, \\text{m}^3 \\, \\text{at} \\, 1 \\, \\text{atm} \\, \\text{and} \\, 273 \\, \\text{K} \\)",
+    "conclusion": "n \\approx 0.0625 \\, \\text{moles}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using ideal gas law for state C: \\( p_C V_C = nRT_C \\)",
+    "conclusion": "T_C = \\frac{400}{0.0625R}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\( nR = 1.5 \\)",
+    "conclusion": "T_C = \\frac{400}{0.09375}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using internal energy change: \\( \\Delta U = nC_v \\Delta T \\)",
+    "conclusion": "T_C \\approx 450 \\, \\text{K}",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "image description",
+    "conclusion": "0 s to 1 s: velocity is +2 m/s (horizontal line)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "1 s to 3 s: velocity falls linearly from +2 m/s to -2 m/s (straight-line segment)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Piece-wise velocity function: v(t) = 2 for 0 ≤ t ≤ 1 s; v(t) = 2 - 2(t-1) for 1 ≤ t ≤ 3 s",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "0 ≤ t ≤ 1 s: dv/dt = 0, acceleration a = 0 (uniform motion)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "1 ≤ t ≤ 3 s: dv/dt = -2 m/s², acceleration a = -2 m/s² (uniformly accelerated motion)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Variable linear motion means motion in a straight line with changing velocity (non-zero acceleration at some time)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "During the first second, velocity is constant, not variable",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "During the next two seconds, velocity changes continuously, indicating variable motion",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since the 0-3 s interval contains a portion where velocity is changing, the motion is partly uniform, partly variable",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final answer: Yes, the particle undergoes variable linear motion over the whole 3-second span",
+    "relevant": "Yes"
+  }
+]

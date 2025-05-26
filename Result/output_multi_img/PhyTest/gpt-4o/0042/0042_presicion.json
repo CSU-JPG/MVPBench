@@ -1,0 +1,59 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The car starts moving from rest on a straight highway, and the graph shows the change in its acceleration over time within 0 to 60 seconds. The task is to calculate the distance traveled by the car within these 60 seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The acceleration graph is piecewise constant: From t = 0 to t = 10, a = 2 m/s^2; From t = 10 to t = 30, a = 1 m/s^2; From t = 30 to t = 50, a = 0 m/s^2; From t = 50 to t = 60, a = -1 m/s^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car starts from rest, so the initial velocity v0 = 0. Acceleration from t = 0 to t = 10 is a = 2 m/s^2.",
+    "conclusion": "The velocity at t = 10 is v = 2 * 10 = 20 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration from t = 10 to t = 30 is a = 1 m/s^2. The velocity at t = 10 is 20 m/s.",
+    "conclusion": "The velocity at t = 30 is v = 20 + (1 * 20) = 40 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration from t = 30 to t = 50 is a = 0 m/s^2. The velocity at t = 30 is 40 m/s.",
+    "conclusion": "The velocity remains constant at v = 40 m/s from t = 30 to t = 50.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration from t = 50 to t = 60 is a = -1 m/s^2. The velocity at t = 50 is 40 m/s.",
+    "conclusion": "The velocity at t = 60 is v = 40 + (-1 * 10) = 30 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity from t = 0 to t = 10 is v = 2t.",
+    "conclusion": "The displacement from t = 0 to t = 10 is s = ∫(2t) dt from 0 to 10 = [t^2] from 0 to 10 = 10^2 - 0^2 = 100 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity from t = 10 to t = 30 is v = 20 + t.",
+    "conclusion": "The displacement from t = 10 to t = 30 is s = ∫(20 + t) dt from 10 to 30 = [20t + t^2/2] from 10 to 30 = (20(30) + 30^2/2) - (20(10) + 10^2/2) = (600 + 450) - (200 + 50) = 1050 - 250 = 800 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity from t = 30 to t = 50 is constant at v = 40 m/s.",
+    "conclusion": "The displacement from t = 30 to t = 50 is s = ∫(40) dt from 30 to 50 = 40 * (50 - 30) = 40 * 20 = 800 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity from t = 50 to t = 60 is v = 40 - t.",
+    "conclusion": "The displacement from t = 50 to t = 60 is s = ∫(40 - t) dt from 50 to 60 = [40t - t^2/2]"}]

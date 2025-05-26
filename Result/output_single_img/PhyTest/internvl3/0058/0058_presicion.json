@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit consists of a supercapacitor, a resistor R, and a charger.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During the second stage, the charger maintains a constant voltage U.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total voltage U provided by the charger is divided between the resistor R and the supercapacitor.",
+    "conclusion": "Let U_2 be the voltage across the supercapacitor.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across the resistor R is given by Ohm's Law: V_R = I_2 * R, where I_2 is the current through the resistor.",
+    "conclusion": "The voltage across the resistor R is V_R = I_2 * R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to KVL, the sum of the voltages around the loop must equal zero.",
+    "conclusion": "Therefore, U = U_2 + V_R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = U_2 + V_R.",
+    "conclusion": "Substitute the expression for V_R: U = U_2 + I_2 * R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = U_2 + I_2 * R.",
+    "conclusion": "Rearrange the equation to solve for U_2: U_2 = U - I_2 * R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_2 = U - I_2 * R.",
+    "conclusion": "The voltage across the capacitor U_2 is U_2 = U - I_2 * R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

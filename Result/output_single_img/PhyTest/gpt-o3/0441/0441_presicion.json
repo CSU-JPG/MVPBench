@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The fibre core is homogeneous glass (refractive index n) surrounded by air (n_air=1).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Its circular cross-section has diameter D. When the fibre is bent its centre-line ('axis') becomes an arc of a circle of radius r (the bend-radius we have to keep large enough).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Because the fibre is bent, every meridional ray that propagates parallel to the axis is no longer everywhere parallel to the local outer surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When such a ray meets the outer wall the angle it makes with the outward normal is slightly smaller than the axial angle it had in the straight fibre; the reduction equals the small geometric angle δ=arcsin(D/2r) ≈ D/2r, which is the angle subtended by the core radius at the bend centre.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Before bending, the largest axial angle a ray can have and still remain totally internally reflected is the critical angle θ_c=arcsin(1/n).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After bending, that same ray meets the outer wall with an incidence angle reduced by δ; to avoid radiating out we must still have θ_inc=θ_c−δ ≥ θ_c(crit), i.e. it must not fall below the original critical angle.",
+    "conclusion": "The limiting (loss-free) case is therefore θ_c−δ=θ_c(crit)⟹δ=0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Any non-zero reduction must still leave the incidence angle at least θ_c(crit); hence we require δ ≤ θ_c ⟹ D/2r ≤ arcsin(1/n).",
+    "conclusion": "For the modest bends used in practice arcsin(1/n) is a small angle so we can drop the 'arc sin' and write θ_c≈1/n. The inequality then becomes D/2r ≤ 1/n.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for r, D/2r ≤ 1/n.",
+    "conclusion": "r_min = nD/2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r_min = nD/2.",
+    "conclusion": "The turning radius of the fibre’s centre-line must be at least nD/2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

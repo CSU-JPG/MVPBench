@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel metal rails are on a horizontal surface, with a distance between them. The left-hand ends are connected to a resistor R. The system is placed in a uniform magnetic field with a magnetic induction intensity of magnitude B and the direction vertically downward. A conductor rod MN with a mass of m is placed on the rails. Under the action of a horizontal external force, it slides uniformly to the right along the rails at a speed of v. During the sliding process, it remains perpendicular to the rails and in good contact with them. The coefficient of kinetic friction between the conductor rod and the rails is μ, the resistance of the conductor rod is r, and the magnitude of the acceleration due to gravity is g. The resistance of the rails is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows two parallel metal rails on a horizontal surface. A conductor rod MN with mass m slides uniformly to the right along the rails due to a horizontal external force. The rod remains perpendicular to the rails and is in contact with them. A uniform magnetic field with magnitude B acts vertically downward, and there is a resistor R connected to the left-hand ends of the rails. The system also includes a magnetic force F, frictional force μmg, and resistance r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod experiences a horizontal magnetic force F due to the magnetic field B, a frictional force μmg opposing its motion, and a resistance force r from the rod's own resistance.",
+    "conclusion": "The magnetic force F is calculated as F = Bvl, where v is the velocity of the rod, and l is the length of the rod.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the rod to move at constant velocity, the magnetic force must balance the frictional and resistance forces.",
+    "conclusion": "Bvl = μmg + rv",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Bvl = μmg + rv",
+    "conclusion": "v = μmg / (Bl - r)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power dissipated in the resistor R is given by P = I^2R.",
+    "conclusion": "P = (μmg / (Bl - r))^2R",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Plug in the given values B = 0.5 T, l = 1 m, μ = 0.2, m = 5 kg, g = 9.81 m/s^2, r = 0.1, and R = 10 Ω.",
+    "conclusion": "P = (0.2 * 5 * 9.81 / (0.5 * 1 - 0.1))^2 * 10 = 12.25",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's law of electromagnetic induction, the induced electromotive force generated is E = Blv. According to Ohm's law for closed circuits, the current I in the closed circuit is I = E / (R + r). Substituting E = Blv into it, we get I = Blv / (R + r).",
+    "conclusion": "The power dissipated in the resistor R is P_R = I^2R. Substituting I = Blv / (R + r) into P_R = I^2R, we obtain P_R = (Blv / (R + r))^2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_R = (Blv / (R + r))^2R",
+    "conclusion": "P_R = R B^2l^2v^2 / (R + r)^2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the area of the light-emitting area of a light bulb, we need to consider the refraction of light as it exits the water and enters the air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light bulb emits light in all directions, but only the light that refracts at the water surface will form a circular area on the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We can use Snell's Law to determine the angle of refraction and subsequently the radius of the circular area.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states that \\( n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2 \\), where \\( n_1 \\) is the refractive index of water for the light (either red or yellow), \\( n_2 \\) is the refractive index of air (approximately 1), \\( \\theta_1 \\) is the angle of incidence in water, and \\( \\theta_2 \\) is the angle of refraction in air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law",
+    "conclusion": "The maximum angle of incidence in water that still refracts into the air is the critical angle, given by \\( \\sin \\theta_c = \\frac{n_2}{n_1} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Critical angle formula",
+    "conclusion": "For red light, \\( \\theta_{c1} = \\sin^{-1} \\left( \\frac{1}{n_1} \\right) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Critical angle formula",
+    "conclusion": "For yellow light, \\( \\theta_{c2} = \\sin^{-1} \\left( \\frac{1}{n_2} \\right) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Geometry of the situation",
+    "conclusion": "The radius \\( r \\) of the circular area on the water surface can be found using \\( \\tan \\theta_c = \\frac{r}{h} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Radius formula",
+    "conclusion": "The radius \\( r \\) is \\( r = h \\tan \\theta_c \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Radius formula",
+    "conclusion": "The area \\( A \\) of the circular region on the water surface is \\( A = \\pi r^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute \\( r \\)",
+    "conclusion": "Using the expression for \\( r \\), \\( A = \\pi (h \\tan \\theta_c)^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute \\( r \\)",
+    "conclusion": "The area \\( A = \\pi h^2 \\tan^2 \\theta_c \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate for each light bulb",
+    "conclusion": "For the red light bulb at depth \\( h_1 \\), \\( A_1 = \\pi h_1^2 \\tan^2 \\left( \\sin^{-1} \\left( \\frac{1}{n_1} \\right) \\right) \\).",
+    "judgment": "Match"
+  }]

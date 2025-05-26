@@ -1,0 +1,86 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid will flow out from A, B, and C and must be predicted to flow into containers D or E after passing through baffles.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid starts flowing from points A, B, and C.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The liquid from A flows downward and encounters a purple baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from A flows downward and encounters a purple baffle.",
+    "conclusion": "The liquid from A flows around the purple baffle and heads towards the orange structure labeled D.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The liquid from B flows downward, bypassing the white baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from B flows downward, bypassing the white baffle.",
+    "conclusion": "The liquid from B continues straight down towards the orange structure labeled D.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The liquid from C flows downward and encounters the cyan baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from C flows downward and encounters the cyan baffle.",
+    "conclusion": "The liquid from C flows around the cyan baffle towards the brown structure labeled E.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from A and B flows downward and encounters the green baffle.",
+    "conclusion": "The streams from A and B merge on the green baffle and flow to the left.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The streams from A and B merge on the green baffle and flow to the left.",
+    "conclusion": "The combined flow from A and B splits at the bottom, with part entering container D on the left and part entering container E on the right.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from C flows downward and encounters the cyan baffle.",
+    "conclusion": "The stream from C continues along its own baffle and falls into container E.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The combined flow from A and B splits at the bottom, with part entering container D on the left and part entering container E on the right. The stream from C continues along its own baffle and falls into container E.",
+    "conclusion": "Most of the combined flow from A and B ends up in container D with a small portion of C joining; conversely, container E receives most of the flow from C with a small portion from A and B.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

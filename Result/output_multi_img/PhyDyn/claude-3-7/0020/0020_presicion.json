@@ -1,0 +1,103 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The task is to predict which container (E or F) liquid from A, B, C, and D will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The first image shows the initial setup with colored markers labeling various positions (A, B, C, D, E, and F) and slanted baffles of different colors.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The second image shows liquid flowing from the top containers (A, B, C, and D) toward the bottom containers (E and F).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Container A is green, Container B is yellow, Container C is blue, and Container D is white.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Container E is on the left, and Container F is on the right at the bottom of the setup.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "There is a green baffle angled toward the left below Container A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "There is a teal baffle angled toward the right below Container B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "There is no baffle directly below Container D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid starts at Container A and encounters the green baffle angled toward the left.",
+    "conclusion": "Liquid from Container A is deflected toward the left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from Container A is deflected toward the left.",
+    "conclusion": "Liquid from Container A flows toward Container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid starts at Container B and encounters the teal baffle angled toward the right.",
+    "conclusion": "Liquid from Container B is deflected toward the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from Container B is deflected toward the right.",
+    "conclusion": "Liquid from Container B flows toward Container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid starts at Container C and flows downward in a nearly straight line.",
+    "conclusion": "Liquid from Container C flows toward the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from Container C flows toward the right.",
+    "conclusion": "Liquid from Container C flows toward Container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid starts at Container D and flows straight downward without encountering any baffles.",
+    "conclusion": "Liquid from Container D flows straight downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from Container D flows straight downward.",
+    "conclusion": "Liquid from Container D flows toward Container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from Container A is deflected toward the left, but some droplets may deviate.",
+    "conclusion": "Some droplets from Container A may reach Container E.",
+    "judgment": "Reasonable"
+  }]

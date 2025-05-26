@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a PV diagram showing a cyclic process for an ideal gas with points A, B, C, and D forming a rectangle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at point A is 27°C, and the goal is to find the heat exchanged with the surroundings per cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle goes from A to B to C to D and back to A. The axes are pressure (p) on the y-axis and volume (V) on the x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure at point A is 1 × 10^5 Pa, and at point D, it's 0.75 × 10^5 Pa. The volumes at points C and D are 4 L and 3 L, respectively.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since it's a cyclic process, the net change in internal energy over the cycle is zero.",
+    "conclusion": "The net heat absorbed by the gas in one cycle is equal to the net work done by the gas in that cycle: Q = W.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The goal is to calculate the net work done by the gas during one complete cycle, which will give the heat exchanged with the surroundings.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the net work done in a cyclic process, calculate the area enclosed by the cycle in the PV diagram.",
+    "conclusion": "The work done by the gas is positive when the cycle proceeds in a clockwise direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle proceeds from A to B (isobaric expansion), B to C (isochoric cooling), C to D (isobaric compression), and D to A (isochoric heating).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point A: p_A = 1 × 10^5 Pa, V_A = 3 L. At point B: p_B = 1 × 10^5 Pa, V_B = 4 L. At point C: p_C = 0.75 × 10^5 Pa, V_C = 4 L. At point D: p_D = 0.75 × 10^5 Pa, V_D = 3 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A to B: isobaric expansion. Work done by the gas during an isobaric process is W = p ΔV.",
+    "conclusion": "W_{A to B} = 1 × 10^5 N/m² × 1 × 10^{-3} m³ = 100 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B to C: isochoric cooling. Work done during an isochoric process is zero because there's no change in volume.",
+    "conclusion": "W_{B to C} = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C to D: isobaric compression. Work done by the gas is W = p ΔV, but this time the volume decreases, so ΔV is negative.",
+    "conclusion": "W_{C to D} = -75 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D to A: isochoric heating. No work is done since the volume doesn't change.",
+    "conclusion": "W_{D to A} = 0.",
+    "judgment": "Match"
+  }]

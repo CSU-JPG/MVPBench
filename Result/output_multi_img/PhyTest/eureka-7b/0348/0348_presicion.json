@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The Stirling cycle consists of four processes: A→B (isothermal expansion), B→C (adiabatic compression), C→D (isothermal compression), and D→A (adiabatic expansion).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "For an isothermal process, the temperature remains constant. Therefore, for processes A→B and C→D, the temperature is the same at the start and end of each process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "In an isothermal process, the product of pressure and volume is constant. Mathematically, P1 * V1 = P2 * V2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The number of molecules colliding with the unit area of the wall per unit time is proportional to the product of the pressure and the number of molecules per unit volume. This is given by n * (P * NA / V), where n is the number of moles, NA is Avogadro's number, and V is the volume.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The P-V diagram shows a closed loop with processes A→B (expansion), B→C (compression), C→D (compression), and D→A (expansion).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The volume at state D is less than the volume at state C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The processes A→B and C→D are isothermal, so the temperature at state C is the same as the temperature at state D.",
+    "conclusion": "The temperature at state C is the same as the temperature at state D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume at state D is less than the volume at state C, and the temperature is constant during the isothermal process.",
+    "conclusion": "The pressure at state D is greater than the pressure at state C to satisfy the isothermal condition P1 * V1 = P2 * V2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The number of molecules colliding with the unit area of the wall per unit time is proportional to the pressure.",
+    "conclusion": "The number of molecules colliding with the unit area of the wall per unit time at state D is greater than the number of molecules colliding with the unit area of the wall per unit time at state C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The number of molecules colliding with the unit area of the wall per unit time at state D is greater than at state C.",
+    "conclusion": "The number of molecules colliding with the unit area of the wall per unit time from state C to state D increases.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

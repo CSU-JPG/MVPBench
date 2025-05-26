@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine how far the point light source S must be moved vertically upward such that the light emitted from S is just not visible above the water surface. This involves understanding the geometry of the situation and applying Snell's Law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circular wooden board has a radius r and is stationary on the surface of the liquid. The point light source S is located directly below the center O of the board at a depth of H = sqrt(3)r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n1 sin θ1 = n2 sin θ2 where n1 and n2 are the refractive indices of the two media, and θ1 and θ2 are the angles of incidence and refraction respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In our case: n1 = 1 (air), n2 = sqrt(2) (liquid)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 1, n2 = sqrt(2)",
+    "conclusion": "We need to find the critical angle θc where total internal reflection occurs. At this angle, the light ray just grazes the boundary between the liquid and air without being refracted into the air.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θc = n1/n2 = 1/sqrt(2)",
+    "conclusion": "sin θc = sqrt(2)/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θc = sqrt(2)/2",
+    "conclusion": "θc = arcsin(sqrt(2)/2) = 45 degrees",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the light source is moved vertically upward by a distance h, the new depth of the light source below the surface of the liquid will be H - h.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light to be just not visible above the surface, the angle of incidence in the liquid must be exactly 45 degrees.",
+    "conclusion": "Using the right triangle formed by the depth of the light source, the horizontal distance from the center of the board to the point where the light exits the liquid, and the line of sight: Let d be the horizontal distance from the center of the board to the point where the light exits the liquid.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θc = 45 degrees",
+    "conclusion": "tan 45 degrees = d/(H - h)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan 45 degrees = 1",
+    "conclusion": "1 = d/(H - h)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 = d/(H - h)",
+    "conclusion": "d = H - h",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry of the circle, the horizontal distance d is also equal to r.",
+    "conclusion": "r = H - h",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = H - h",
+    "conclusion": "h = H - r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "H = sqrt(3)r",
+    "conclusion": "h = sqrt(3)r - r",
+    "judgment": "Match"
+  }]

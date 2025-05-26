@@ -1,0 +1,59 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the radius \\( r_{\\text{max}} \\) of a droplet just before it separates from the nozzle. The droplet separates when the gravitational force on the droplet is equal to the surface tension force at the neck of the droplet.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The volume \\( V \\) of the droplet is given by the formula for the volume of a sphere: \\( V = \\frac{4}{3} \\pi r^3 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume of the droplet is \\( V = \\frac{4}{3} \\pi r^3 \\).",
+    "conclusion": "The mass \\( m \\) of the droplet is the product of its volume and the density \\( \\rho \\) of the water: \\( m = \\rho V = \\rho \\frac{4}{3} \\pi r^3 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass of the droplet is \\( m = \\rho \\frac{4}{3} \\pi r^3 \\).",
+    "conclusion": "The gravitational force \\( F_{\\text{g}} \\) on the droplet is given by: \\( F_{\\text{g}} = mg = \\rho \\frac{4}{3} \\pi r^3 g \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The surface area \\( A \\) of the droplet is the surface area of a sphere: \\( A = 4 \\pi r^2 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The circumference of the neck is \\( 2 \\pi r \\).",
+    "conclusion": "The surface tension force \\( F_{\\text{σ}} \\) at the neck of the droplet is the product of the surface tension \\( \\sigma \\) and the circumference of the neck: \\( F_{\\text{σ}} = \\sigma \\cdot 2 \\pi r \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force is \\( F_{\\text{g}} = \\rho \\frac{4}{3} \\pi r^3 g \\) and the surface tension force is \\( F_{\\text{σ}} = \\sigma \\cdot 2 \\pi r \\).",
+    "conclusion": "The droplet separates when the gravitational force is equal to the surface tension force: \\( \\rho \\frac{4}{3} \\pi r^3 g = \\sigma \\cdot 2 \\pi r \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation is \\( \\rho \\frac{4}{3} \\pi r^3 g = \\sigma \\cdot 2 \\pi r \\).",
+    "conclusion": "Simplify the equation by canceling out \\( \\pi \\) and solving for \\( r \\): \\( \\rho \\frac{4}{3} r^3 g = 2 \\sigma r \\implies \\rho \\frac{4}{3} r^2 g = 2 \\sigma \\implies r^2 = \\frac{3 \\sigma}{2 \\rho g} \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation is \\( r^2 = \\frac{3 \\sigma}{2 \\rho g} \\).",
+    "conclusion": "Take the square root of both sides to solve for \\( r \\): \\( r = \\sqrt{\\frac{3 \\sigma}{2 \\rho g}} \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The derived radius is \\( r = \\sqrt{\\frac{3 \\sigma}{2 \\rho g}} \\).",
+    "conclusion": "The radius \\( r_{\\text{max}} \\) of the droplet just before it separates from the nozzle is: \\( \\boxed{\\sqrt{\\frac{3 \\sigma}{2 \\rho g}}}"}]

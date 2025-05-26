@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light beam enters the prism at point P on the AB side with an angle of incidence α = 37° and refractive index n = 4/3. The dimensions of the prism are AB = 2L and AD = L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin θ1 = n2 sin θ2, where n1 = 1 (air), n2 = 4/3, and θ1 = 37°.",
+    "conclusion": "1 * sin 37° = 4/3 * sin θ2, so sin θ2 = 0.45 and θ2 = sin⁻¹(0.45) ≈ 26.74°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point P is at the midpoint of AB, so its coordinates are (L, L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope of the line inside the prism is tan(90° - θ2) = cot 26.74° ≈ 1.97.",
+    "conclusion": "The equation of the line is y - L = 1.97(x - L).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the CD side, y = 0, so 0 - L = 1.97(x - L).",
+    "conclusion": "Solving for x gives x = 0.49L. Therefore, the coordinates of point M are (0.49L, 0).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the distance formula: PM = √((L - 0.49L)² + (L - 0)²).",
+    "conclusion": "PM = √(0.51L)² + L² = √1.2601L² = 1.12L.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

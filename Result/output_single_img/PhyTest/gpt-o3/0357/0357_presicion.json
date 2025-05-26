@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a radial conductor of length r that rotates with constant angular speed ω in a uniform field B1 perpendicular to the plane of rotation, the motional emf between its inner end (on the shaft) and its outer end (on the ring) is ε = 1/2 B1 ω r^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε = 1/2 B1 ω r^2",
+    "conclusion": "Substituting the data B1 = 1 T, ω = 600 rad/s, r = 0.20 m gives ε = 1/2 (1)(600)(0.20)^2 = 12 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Both diametrically opposite rods generate the same emf with the same polarity, so the open-circuit voltage between the ring (connected to the upper rail) and the rotating shaft (connected to the lower rail) is still 12 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "With the switch S on contact 1 the capacitor C is simply connected across those two rails; after a sufficiently long charging time the current through the internal resistance of the generator becomes zero, so the capacitor voltage equals the emf.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitor voltage equals the emf: VC = ε = 12 V.",
+    "conclusion": "Hence the magnitude of the stored charge is Q = CVC = (0.09 F)(12 V) = 1.08 C.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Take the magnetic field B1 as upward (+z) and the rods to rotate counter-clockwise when viewed from above (so ω is also +z).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a positive charge in a radial rod the magnetic force is q v × B1 = q (ω × r) × B1 which points radially outward.",
+    "conclusion": "Therefore positive charges accumulate at the rim while negative charges remain on the shaft. The rail that is permanently connected to the rim (the one that also carries plate M) is at the higher potential.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitor carries Q = 1.08 C and the plate marked M is the positively charged plate (plate N is negative).",
+    "conclusion": "The final answer is Q = 1.08 C, plate M becomes positively charged.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

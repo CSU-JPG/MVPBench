@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A spherical ice droplet falls through an atmosphere with varying temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The droplet starts as ice at height hₐ (4 km).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "It partially melts between hₐ and hᵦ (between 4 km and 1.5 km approximately).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "It then partially freezes again between hᵦ and the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to determine what fraction of the droplet refreezes before reaching the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Specific heat of water: c_water = 4.2 kJ kg⁻¹ K⁻¹.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Specific heat of ice: c_ice = 2.1 kJ kg⁻¹ K⁻¹.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Specific latent heat of melting: L = 334 kJ kg⁻¹.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Area in melting region: A = 5.0 km·°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Area in freezing region: A' = 4.0 km·°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The amount of heat absorbed by the ice droplet is proportional to the area between the temperature curve and the vertical axis in the melting region (where temperature > 0°C). This area A = 5.0 km·°C.",
+    "conclusion": "The heat required to melt a fraction x of the droplet is x·m·L = k·A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The heat released when refreezing occurs is proportional to the area A' = 4.0 km·°C in the freezing region (where temperature < 0°C).",
+    "conclusion": "The heat released when fraction y refreezes is y·m·L = k·A'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the equations: x·m·L = k·A and y·m·L = k·A'.",
+    "conclusion": "Dividing these equations: y/x = A'/A = 4.0/5.0 = 0.8.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since x represents the fraction of ice that melted in the first place, and only this melted portion can refreeze, we know that y ≤ x. Given that y/x = 0.8.",
+    "conclusion": "y = 0.8x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, the entire droplet is ice, so the ice fraction is 1.0. After melting, the ice fraction becomes 1 - x. After refreezing, the ice fraction becomes (1 - x) + y = (1 - x) + 0.8x = 1 - 0.2x.",
+    "conclusion": "The mass fraction that freezes before reaching the ground is y = 0.8x.",
+    "judgment": "Match"
+  }]

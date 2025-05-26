@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This problem involves electromagnetic induction. When a conductor moves through a magnetic field, an EMF (electromotive force) is induced. The potential difference between points a and b will be determined by the changing magnetic flux through the portion of the ring that has entered the field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A circular ring with radius R moves at constant velocity v. It's entering a uniform magnetic field B (pointing upward). Points a and b are located 90° apart (∠aOb = 90°). Point a has just entered the magnetic field. Point b is further into the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The EMF induced around a closed loop is: \\( \\mathcal{E} = -\\frac{d\\Phi_B}{dt} \\) where \\( \\Phi_B \\) is the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through a surface is: \\( \\Phi_B = \\int \\vec{B} \\cdot d\\vec{A} \\). For a uniform field, as the ring enters, the area inside the field increases at a rate of: \\( \\frac{dA}{dt} = v \\cdot 2\\sqrt{R^2 - x^2} \\). At the moment shown, the center of the ring is at the edge of the field, so x = 0, and \\( \\frac{dA}{dt} = v \\cdot 2R \\).",
+    "conclusion": "\\( \\frac{d\\Phi_B}{dt} = B \\cdot \\frac{dA}{dt} = B \\cdot v \\cdot 2R \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total EMF around the full loop would be: \\( \\mathcal{E}_{total} = -\\frac{d\\Phi_B}{dt} = -B \\cdot v \\cdot 2R \\).",
+    "conclusion": "The potential difference between points a and b is \\( V_{ab} = \\frac{1}{4} \\cdot \\mathcal{E}_{total} = \\frac{1}{4} \\cdot (-B \\cdot v \\cdot 2R) = -\\frac{1}{2} B \\cdot v \\cdot R \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates that the induced EMF opposes the change in flux (Lenz's law). Since point a is just entering the field and point b is already in the field, the potential at a is higher than at b.",
+    "conclusion": "\\( V_a - V_b = \\frac{1}{2} B \\cdot v \\cdot R \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The potential difference between points a and b is: \\( V_{ab} = \\frac{1}{2} B \\cdot v \\cdot R \\)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

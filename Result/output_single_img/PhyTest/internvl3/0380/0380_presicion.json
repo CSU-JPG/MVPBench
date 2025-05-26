@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ball P has mass M = 4m and initial velocity v_0 = mg/(qB). Ball Q has mass m and is initially at rest. The collision is elastic, meaning both momentum and kinetic energy are conserved.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball P has mass M = 4m and initial velocity v_0 = mg/(qB). Ball Q has mass m and is initially at rest.",
+    "conclusion": "The total momentum before the collision is Mv_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The collision is elastic, meaning both momentum and kinetic energy are conserved.",
+    "conclusion": "The total momentum after the collision is Mv_P + mv_Q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total momentum before the collision is Mv_0. The total momentum after the collision is Mv_P + mv_Q.",
+    "conclusion": "Mv_0 = Mv_P + mv_Q",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball P has mass M = 4m and initial velocity v_0 = mg/(qB). Ball Q has mass m and is initially at rest.",
+    "conclusion": "The total kinetic energy before the collision is (1/2)Mv_0^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The collision is elastic, meaning both momentum and kinetic energy are conserved.",
+    "conclusion": "The total kinetic energy after the collision is (1/2)Mv_P^2 + (1/2)mv_Q^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total kinetic energy before the collision is (1/2)Mv_0^2. The total kinetic energy after the collision is (1/2)Mv_P^2 + (1/2)mv_Q^2.",
+    "conclusion": "(1/2)Mv_0^2 = (1/2)Mv_P^2 + (1/2)mv_Q^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mv_0 = Mv_P + mv_Q. (1/2)Mv_0^2 = (1/2)Mv_P^2 + (1/2)mv_Q^2.",
+    "conclusion": "Substitute M = 4m and v_0 = mg/(qB) into the equations.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute M = 4m and v_0 = mg/(qB) into the equations.",
+    "conclusion": "4m(mg/(qB)) = 4m v_P + m v_Q",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute M = 4m and v_0 = mg/(qB) into the equations.",
+    "conclusion": "4m(mg/(qB))^2 = 4m v_P^2 + m v_Q^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4m(mg/(qB)) = 4m v_P + m v_Q",
+    "conclusion": "4mg/(qB) = 4 v_P + v_Q",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4m(mg/(qB))^2 = 4m v_P^2 + m v_Q^2",
+    "conclusion": "4m^3g^2/(q^2B^2) = 4m v_P^2 + m v_Q^2",
+    "judgment": "Match"
+  }]

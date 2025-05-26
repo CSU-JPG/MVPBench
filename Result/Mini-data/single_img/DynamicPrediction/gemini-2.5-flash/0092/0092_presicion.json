@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The image shows four objects (paper, mirror, ring, and avocado) and their shadows (A, B, C, and D) on the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The shadows are cast behind and generally to the left of the objects relative to the viewer's perspective in the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The shadows are cast behind and generally to the left of the objects.",
+    "conclusion": "This indicates that the current light source is located in front of and to the right of the objects, and above them.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light source moves to the back left above the objects.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light source moves to the back left above the objects.",
+    "conclusion": "From the viewer's perspective, this means the light source is now located behind and to the left of the objects, and still above them.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Shadows are formed when objects block light, and they are cast in the direction opposite to the direction of the light source.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the initial setup, the light source is in the front right, so the shadows are cast in the back left.",
+    "conclusion": "In the new setup, the light source is in the back left, so the shadows will be cast in the front right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the light source moves from the front right to the back left, the shadows will move from being in the back left of the objects to being in the front right of the objects.",
+    "conclusion": "All shadows A, B, C, and D will move to the front right of their respective objects.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

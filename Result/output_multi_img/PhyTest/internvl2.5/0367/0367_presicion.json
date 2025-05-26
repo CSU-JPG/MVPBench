@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the basketball is dropped from height H with initial velocity v1 = sqrt(2gH).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After the first collision, it rebounds to a height h, and the post-collision velocity v2 = sqrt(2gh).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The air resistance is lambda mg, where lambda is a constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This resistance affects both the descent and ascent phases of the motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision is inelastic, meaning kinetic energy is not conserved, but the ratio of post-collision to pre-collision velocities is constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let this ratio be k. Therefore, v2 = k v1.",
+    "conclusion": "From the kinetic energy relation: v1^2 = 2gH and v2^2 = 2gh.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting v2 = k v1, we get: (k v1)^2 = 2gh implies k^2 v1^2 = 2gh.",
+    "conclusion": "Substitute v1^2 = 2gH: k^2 (2gH) = 2gh implies k^2 = h/H.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for k: k = sqrt(h/H).",
+    "conclusion": "Considering the air resistance, the air resistance factor lambda modifies the effective gravitational acceleration.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During descent: a1 = g - lambda g = g(1 - lambda).",
+    "conclusion": "During ascent: a2 = g + lambda g = g(1 + lambda).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The collision factor k must also account for energy loss due to air resistance: k^2 = h/H = 1/((1 + lambda)(1 - lambda)).",
+    "conclusion": "Simplify the expression: 1/((1 + lambda)(1 - lambda)) = 1/(1 - lambda^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Therefore, k = 1/sqrt(1 - lambda^2).",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity of the basketball is: k = 1/sqrt(1 - lambda^2).",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

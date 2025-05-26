@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, I will analyze the image and use the principles of electromagnetic flowmeters to determine the flow rate of the conductive liquid.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a schematic diagram of an electromagnetic flowmeter. It shows a circular pipe made of non-magnetic material placed within a uniform magnetic field. The pipe has points labeled M and N on its wall, and there is a velocity vector labeled v inside the pipe. The magnetic induction is labeled B, and the distance from the center of the pipe to the wall is labeled d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromagnetic flowmeter works by measuring the electromotive force (EMF) generated in a conductive liquid as it flows through a magnetic field. The EMF is proportional to the flow rate of the liquid.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The flow rate Q of the liquid is related to the velocity v of the liquid and the cross-sectional area A of the pipe.",
+    "conclusion": "The formula for flow rate is Q = v × A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity v of the liquid can be determined using the equation for the EMF generated in the liquid.",
+    "conclusion": "E = B × v × d, where B is the magnetic induction and d is the diameter of the pipe.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = B × v × d",
+    "conclusion": "v = E / (B × d)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the expression for v into the flow rate equation Q = v × A.",
+    "conclusion": "Q = (E / (B × d)) × π × (d/2)^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q = (E / (B × d)) × π × (d/2)^2",
+    "conclusion": "Q = (π × E × d^2) / (4 × B × d) = (π × E × d) / (4 × B)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

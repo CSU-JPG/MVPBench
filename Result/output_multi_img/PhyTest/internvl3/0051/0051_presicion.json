@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block C starts with an initial velocity v_0 and moves a distance s_0 before colliding with block B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frictional force acts on block C over the distance s_0, doing work and changing its kinetic energy.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by friction on block C is W = -μmg s_0.",
+    "conclusion": "Apply the work-energy principle: 1/2 m v_0^2 + W = 1/2 m v_1^2 where v_1 is the velocity of block C just before the collision.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/2 m v_0^2 - μmg s_0 = 1/2 m v_1^2",
+    "conclusion": "v_1^2 = v_0^2 - 2μg s_0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_1^2 = v_0^2 - 2μg s_0",
+    "conclusion": "v_1 = sqrt(v_0^2 - 2μg s_0)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision is perfectly inelastic, meaning C and B stick together.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial momentum: m v_1, Final momentum: (m + m) v_2 = 2m v_2",
+    "conclusion": "Apply conservation of momentum: m v_1 = 2m v_2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m v_1 = 2m v_2",
+    "conclusion": "v_2 = v_1 / 2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_2 = v_1 / 2",
+    "conclusion": "v_2 = sqrt(v_0^2 - 2μg s_0) / 2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial kinetic energy of C before collision: 1/2 m v_1^2, Final kinetic energy of C and B after collision: 1/2 (2m) v_2^2",
+    "conclusion": "Energy loss ΔE: ΔE = 1/2 m v_1^2 - 1/2 (2m) v_2^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔE = 1/2 m v_1^2 - 1/2 (2m) v_2^2",
+    "conclusion": "ΔE = 1/2 m (v_0^2 - 2μg s_0) - m (sqrt(v_0^2 - 2μg s_0)/2)^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔE = 1/2 m (v_0^2 - 2μg s_0) - m (sqrt(v_0^2 - 2μg s_0)/2)^2",
+    "conclusion": "ΔE = 1/2 m (v_0^2 - 2μg s_0) - 1/4 m (v_0^2 - 2μg s_0)",
+    "judgment": "Reasonable"
+  }

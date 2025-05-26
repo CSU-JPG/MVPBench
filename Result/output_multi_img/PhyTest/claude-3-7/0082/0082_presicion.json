@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identical steel balls are released from the same position every 0.1 seconds with zero initial velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The photograph shows the positions of several balls labeled from bottom to top.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Measured distances are AB = 15 cm and BC = 20 cm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The photograph has a 1:1 scale with the actual setup.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves uniformly accelerated motion due to gravity on the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Balls are released at regular intervals and experience constant acceleration.",
+    "conclusion": "Their positions follow a pattern of uniformly accelerated motion.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Time between releases is 0.1 seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a body under constant acceleration starting from rest: s = (1/2)at^2",
+    "conclusion": "This equation can be used to relate distance traveled, acceleration, and time elapsed.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC = (1/2)a(T_C)^2 - (1/2)a(T_B)^2 = 20 cm and AB = (1/2)a(T_B)^2 - (1/2)a(T_A)^2 = 15 cm",
+    "conclusion": "These equations can be used to solve for acceleration.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "T_B = T_A + 0.1 and T_C = T_B + 0.1 = T_A + 0.2",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC = (1/2)a[(T_A + 0.2)^2 - (T_A + 0.1)^2] = 20 cm",
+    "conclusion": "Expanding gives a[0.2T_A + 0.03] = 40",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = (1/2)a[(T_A + 0.1)^2 - T_A^2] = 15 cm",
+    "conclusion": "Expanding gives a[0.2T_A + 0.01] = 30",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From BC: a[0.2T_A + 0.03] = 40 and from AB: a[0.2T_A + 0.01] = 30",
+    "conclusion": "Dividing gives (0.2T_A + 0.03)/(0.2T_A + 0.01) = 4/3",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.6T_A + 0.09 = 0.8T_A + 0.04",
+    "conclusion": "Solving gives T_A = 0.25 seconds",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the equation from AB: a[0.2T_A + 0.01] = 30",
+    "conclusion": "Solving gives a = 500 cm/s²",
+    "judgment": "Reasonable"
+  }]

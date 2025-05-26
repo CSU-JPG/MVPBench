@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the maximum distance from the optical axis for the incident ray that can emerge from the spherical surface of the glass hemisphere. This involves understanding the concept of total internal reflection and applying Snell's Law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the glass is n = 1.5. The refractive index of air is n_0 = 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θ_c is the angle of incidence in the glass for which the angle of refraction in air is 90°.",
+    "conclusion": "Using Snell's Law: n sin θ_c = n_0 sin 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since sin 90° = 1, we have 1.5 sin θ_c = 1.",
+    "conclusion": "Solving for θ_c: sin θ_c = 1/1.5 = 2/3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ_c = 2/3",
+    "conclusion": "Therefore, θ_c = sin⁻¹(2/3).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum distance from the optical axis corresponds to the point where the incident ray makes the critical angle with the normal to the spherical surface.",
+    "conclusion": "At the critical angle, the incident ray will be tangent to the spherical surface.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry of the hemisphere tells us that the distance from the optical axis to the point of tangency is the radius R times the sine of the critical angle.",
+    "conclusion": "Therefore, the maximum distance d is given by d = R sin θ_c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We already found sin θ_c = 2/3.",
+    "conclusion": "Thus, d = R × 2/3 = 2R/3.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

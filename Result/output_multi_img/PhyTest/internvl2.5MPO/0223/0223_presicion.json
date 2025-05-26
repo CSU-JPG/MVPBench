@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the potential difference between points a and b in the wire frame, we need to use Faraday's law of electromagnetic induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame is a square with a side length of 0.2 meters. Half of this square is in the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is a square with a side length of 0.2 meters. Half of this square is in the magnetic field.",
+    "conclusion": "The area A of the frame within the magnetic field is A = 0.02 m^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's law, the induced electromotive force (EMF) is given by EMF = -dΦ/dt, where Φ is the magnetic flux.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux Φ through the area A is Φ = B × A.",
+    "conclusion": "Given that the magnetic field B is changing at a rate of 10 T/s, dΦ/dt = 0.02 m^2 × 10 T/s = 0.2 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is distributed across the entire loop.",
+    "conclusion": "The potential difference V between points a and b is half of the total induced EMF, V = 0.1 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "By Lenz's law, the induced EMF will oppose the change in magnetic flux.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the magnetic field is increasing, the induced current will try to create a magnetic field opposing this increase.",
+    "conclusion": "The potential at point a is higher than at point b.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between points a and b is 0.1 V, with a being at a higher potential than b.",
+    "conclusion": "The potential difference between points a and b is -0.1 V.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

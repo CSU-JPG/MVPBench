@@ -1,0 +1,55 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To solve this problem, we need to use the ideal gas law and the properties of the gas at states A and B. The key is to understand how the volume changes and how the temperature changes with pressure and volume.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The initial state is at state A, with a volume of 1.0 × 10⁻³ m³ and a pressure of 3.0 × 10⁵ Pa. The final state is at state B, with a volume of 2.0 × 10⁻³ m³ and a pressure of 2.0 × 10⁵ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The ideal gas law relates the volume, pressure, and temperature using the formula PV = nRT, where P is the pressure, V is the volume, n is the number of moles, R is the gas constant, and T is the temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass m of the gas is constant, and the number of moles n is proportional to the mass divided by the volume.",
+    "conclusion": "The number of moles n_A at state A equals the number of moles n_B at state B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ideal gas law PV = nRT and the known values for state A (P_A = 3 × 10⁵ Pa, V_A = 1.0 × 10⁻³ m³, T_A = 27°C = 300 K).",
+    "conclusion": "At state A, P_A × V_A / T_A = n × R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ideal gas law PV = nRT and the known values for state B (P_B = 2 × 10⁵ Pa, V_B = 2.0 × 10⁻³ m³).",
+    "conclusion": "At state B, P_B × V_B / T_B = n × R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equations P_A × V_A / T_A = n × R and P_B × V_B / T_B = n × R, and the fact that n and R are constant.",
+    "conclusion": "P_A × V_A / T_A = P_B × V_B / T_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation P_A × V_A / T_A = P_B × V_B / T_B and the known values P_A = 3 × 10⁵ Pa, V_A = 1.0 × 10⁻³ m³, T_A = 300 K, P_B = 2 × 10⁵ Pa, V_B = 2.0 × 10⁻³ m³.",
+    "conclusion": "T_B = (P_B × V_B × T_A) / (P_A × V_A).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation T_B = (P_B × V_B × T_A) / (P_A × V_A) and the known values P_B = 2 × 10⁵ Pa, V_B = 2.0 × 10⁻³ m³, T_A = 300 K, P_A = 3 × 10⁵ Pa, V_A = 1.0 × 10⁻³ m³.",
+    "conclusion": "T_B = (2 × 10⁵ × 2.0 × 10⁻³ × 300) / (3 × 10⁵ × 1.0 × 10⁻³).",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves calculating the electric field strength between two parallel metal plates and the electric potential at point M.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The voltage between the plates is 4V, and the distance between the plates is 10 mm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage between plates (V) = 4 V, Distance between plates (d) = 10 mm = 0.01 m",
+    "conclusion": "The electric field strength between the plates is E = V/d = 4 V/0.01 m = 400 V/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The positive terminal of the 4V source is connected to plate A, and the negative terminal (ground) is connected to plate B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The positive terminal is connected to plate A and the negative terminal to plate B.",
+    "conclusion": "The electric field is directed from plate A to plate B (from higher potential to lower potential).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric potential varies linearly between the plates in a uniform electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point M is 2 mm from plate A, and the total distance between plates is 10 mm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point M is 2 mm from plate A, so M is (10-2) = 8 mm from plate B.",
+    "conclusion": "The distance from point M to plate B is 8 mm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_B = 0 V (ground), V_A = 4 V, d_MB = 8 mm, d_AB = 10 mm",
+    "conclusion": "The potential at point M is V_M = V_B + (d_MB/d_AB) * (V_A - V_B) = 0 + (8 mm/10 mm) * 4 V = 3.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential at point M is calculated as 3.2 V.",
+    "conclusion": "The electric potential at point M is -3.2 V.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

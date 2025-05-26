@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the magnetic induction intensity B using the given information, we need to analyze the forces acting on the coil in both scenarios (with and without the additional weight).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the coil is balanced by adjusting the weights on the right arm. This means that the torque due to the magnetic force on the coil must be equal to the torque due to the weight difference between the two pans.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force on each side of the coil is given by: F = n I L B",
+    "conclusion": "Since the coil is rectangular and the magnetic field is uniform, the net magnetic force on the coil will be zero because the forces on opposite sides of the coil cancel each other out.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque due to the magnetic force on one side of the coil is: τ_magnetic = n I L B ⋅ L/2 = n I L^2 B/2",
+    "conclusion": "The torque due to these forces will cause the coil to rotate if not balanced properly.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque due to the weight difference is: τ_weight = (m_R - m_L) g ⋅ L/2",
+    "conclusion": "Since the coil is balanced initially, the torque due to the magnetic force must be balanced by the torque due to the weight difference between the two pans.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Setting the torques equal gives: n I L^2 B/2 = (m_R - m_L) g ⋅ L/2",
+    "conclusion": "n I L B = (m_R - m_L) g",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n I L B = (m_R - m_L) g",
+    "conclusion": "B = (m_R - m_L) g / (n I L)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the current is reversed, the direction of the magnetic force on the coil reverses.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The new torque due to the magnetic force is: τ_magnetic' = n I L B ⋅ L/2 = n I L^2 B/2",
+    "conclusion": "The net magnetic force on the coil now acts in such a way that it causes the coil to rotate in the opposite direction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The new torque due to the weight difference is: τ_weight' = (m_R - m_L + m) g ⋅ L/2",
+    "conclusion": "To balance this new torque, an additional weight m must be added to the left pan.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Setting the new torques equal gives: n I L^2 B/2 = (m_R - m_L + m) g ⋅ L/2",
+    "conclusion": "n I L B = (m_R - m_L + m) g",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n I L B = (m_R - m_L + m) g",
+    "conclusion": "B = (m_R - m_L + m) g / (n I L)",
+    "judgment": "Reasonable"
+  }]

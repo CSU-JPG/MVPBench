@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At state A: V_A = V_0, T_A = T_0, P_A = P_0. At state B: V_B = 2V_0, P_B = P_0. Line segment AB is parallel to the V-axis, meaning the pressure remains constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_B = P_A and the volume doubles",
+    "conclusion": "T_B = 2T_0",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "BC is a straight line extending to the origin, indicating a direct proportionality between V and T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC is a straight line extending to the origin",
+    "conclusion": "The gas is undergoing an isobaric process (constant pressure).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use the ideal gas relationship: V_C/T_C = V_B/T_B",
+    "conclusion": "Since V_C = V_A = V_0, we get V_0/T_C = 2V_0/2T_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_0/T_C = 2V_0/2T_0",
+    "conclusion": "T_C = T_0",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final calculation",
+    "conclusion": "T_C = 3/2 T_0",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

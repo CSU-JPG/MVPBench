@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a hemispherical transparent medium with cross-section ABC and radius R. A light beam enters at point D, refracts at point E, and exits to hit point F. Distance from D to AC is \\(\\frac{\\sqrt{3}}{2}R\\). DE = \\(\\sqrt{2}R\\). We need to find the refractive index of the medium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The center of the hemisphere O is at the origin, with AC along the x-axis.",
+    "conclusion": "O is at (0,0), A is at (-R,0), C is at (R,0).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D is on the hemispherical surface and its distance from AC is \\(\\frac{\\sqrt{3}}{2}R\\).",
+    "conclusion": "D is at a height of \\(\\frac{\\sqrt{3}}{2}R\\) from the x-axis.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D is on the hemisphere, its coordinates must satisfy \\(x^2 + y^2 = R^2\\). With \\(y = \\frac{\\sqrt{3}}{2}R\\), we get \\(x^2 + (\\frac{\\sqrt{3}}{2}R)^2 = R^2\\).",
+    "conclusion": "\\(x^2 + \\frac{3R^2}{4} = R^2\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(x^2 + \\frac{3R^2}{4} = R^2\\).",
+    "conclusion": "\\(x^2 = R^2 - \\frac{3R^2}{4} = \\frac{R^2}{4}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(x^2 = \\frac{R^2}{4}\\).",
+    "conclusion": "\\(x = \\pm\\frac{R}{2}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the light is entering from the left, D is at \\((-\\frac{R}{2}, \\frac{\\sqrt{3}R}{2})\\).",
+    "conclusion": "Coordinates of D are \\((-\\frac{R}{2}, \\frac{\\sqrt{3}R}{2})\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "DE = \\(\\sqrt{2}R\\) and E is on the hemisphere. E must satisfy \\(x^2 + y^2 = R^2\\) (on the hemisphere).",
+    "conclusion": "The distance from D to E is \\(\\sqrt{2}R\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If E is at \\((x_E, y_E)\\), then \\((x_E - (-\\frac{R}{2}))^2 + (y_E - \\frac{\\sqrt{3}R}{2})^2 = 2R^2\\).",
+    "conclusion": "\\((x_E + \\frac{R}{2})^2 + (y_E - \\frac{\\sqrt{3}R}{2})^2 = 2R^2\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving \\((x_E + \\frac{R}{2})^2 + (y_E - \\frac{\\sqrt{3}R}{2})^2 = 2R^2\\) alongside \\(x_E^2 + y_E^2 = R^2\\) would give us E's coordinates.",
+    "conclusion": "Coordinates of E can be found by solving these equations.",
+    "judgment": "Reasonable"
+  }]

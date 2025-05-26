@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel guide rails (ab and cd) separated by distance l, fixed resistor R connects points b and d, conductor rod MN placed perpendicular to the rails with resistance R, uniform magnetic field B perpendicular to the plane (pointing into the paper), rod MN moves uniformly along the rails with speed v",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When a conductor moves through a magnetic field, an EMF is induced according to Faraday's law.",
+    "conclusion": "EMF induced in rod MN = Blv",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The system forms a closed loop with moving rod MN (resistance R), the guide rails (negligible resistance), and fixed resistor R between points b and d.",
+    "conclusion": "This creates a circuit with EMF source (the moving rod) = Blv and total resistance = R + R = 2R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's law: I = EMF / Total resistance",
+    "conclusion": "I = Blv / 2R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across MN will be the product of the current through MN and its resistance: U = I × R",
+    "conclusion": "U = Blv / 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the right-hand rule, the EMF in the rod points from N to M (right to left), creating a current flowing in the counterclockwise direction in the circuit.",
+    "conclusion": "The current through the fixed resistor R flows from d to b (upward)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of voltage U across MN is Blv/2 and the induced current through the fixed resistor R flows from d to b (bottom to top)",
+    "conclusion": "The magnitude of the voltage U across MN is Blv/2 and the induced current through the fixed resistor R flows from d to b (bottom to top)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

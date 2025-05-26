@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The length of the sides AB, BC, and CD is: L. The angle between the sides AB and AD is: 60°. The angle between the sides BC and AD is: 60°. The angle between the sides CD and AD is: 60°. The resistivity of the wire is: ρ. The cross-sectional area of the wire is: S. The electromotive force of the power source is: E. The magnetic induction intensity is: B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = BC = CD = L",
+    "conclusion": "The length of each side is L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side AD is the base of an equilateral triangle formed by the sides AB, BC, and CD.",
+    "conclusion": "The length of AD is also L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total length of the wire is the sum of the lengths of all the sides: L + L + L + L",
+    "conclusion": "The total length of the wire is 4L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of the wire is given by the formula: R = ρL/S",
+    "conclusion": "The resistance of the wire is R = ρL/S.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current flowing through the wire is given by the formula: I = E/R",
+    "conclusion": "The current flowing through the wire is I = E/R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force acting on each side of the frame is given by the formula: F = BIL",
+    "conclusion": "The force acting on each side of the frame is F = BIL.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force acting on side AB is: F_AB = BIL. The force acting on side BC is: F_BC = BIL. The force acting on side CD is: F_CD = BIL. The force acting on side AD is: F_AD = BIL.",
+    "conclusion": "The resultant force acting on the frame is F_resultant = F_AB + F_BC + F_CD + F_AD = 4BIL.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The direction of the resultant force is perpendicular to the plane of the frame, and it is directed towards the left.",
+    "conclusion": "The magnitude of the resultant force acting on the frame is 4BIL, and its direction is perpendicular to the plane of the frame, directed towards the left.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

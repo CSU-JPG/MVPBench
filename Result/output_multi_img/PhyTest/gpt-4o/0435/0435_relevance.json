@@ -1,0 +1,47 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "The tank wall has a refractive index of sqrt(3). The largest range of external angles visible through the material is 120 degrees. We need to find the distance between the people inside the tank.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Snell's Law relates the angles of incidence and refraction to the refractive indices of the two media.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Snell's Law is given by n1 sin(theta1) = n2 sin(theta2), where n1 = 1 (refractive index of air), n2 = sqrt(3) (refractive index of the tank wall), theta1 is the angle of incidence, and theta2 is the angle of refraction.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The critical angle theta_c is the angle of incidence for which the angle of refraction is 90 degrees. It is given by sin(theta_c) = n2/n1 = sqrt(3). However, sin(theta_c) cannot exceed 1, indicating that total internal reflection occurs when theta1 is greater than the critical angle. Thus, theta_c is not directly applicable here.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The range of external angles visible is 120 degrees, which means the light can enter the tank at angles from -60 degrees to 60 degrees relative to the normal. For maximum visibility, theta1 should be 60 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For theta1 = 60 degrees, sin(theta2) = sin(60 degrees)/sqrt(3) = (sqrt(3)/2)/sqrt(3) = 1/2, therefore, theta2 = 30 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The geometry of the problem suggests that the distance between the people inside the tank corresponds to the horizontal distance covered by the refracted light ray. Using trigonometry, the horizontal distance d can be calculated as d = 18 cm * tan(theta2) = 18 cm * tan(30 degrees) = 18 cm * 1/sqrt(3).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplifying the expression for distance, d = 18/sqrt(3) approximately equals 10.39 cm.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The distance between the people inside the tank is approximately 10.39 cm.",
+    "relevant": "Yes"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the heat exchange Q in the cyclic process A → B → C → D → A, we need to analyze each segment of the cycle and apply the first law of thermodynamics: ΔU = Q - W.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A to B is an isothermal expansion (constant temperature).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B to C is an isobaric compression (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C to D is an isothermal compression (constant temperature).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D to A is an isobaric expansion (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isothermal process, the work done is given by: W_AB = nRT ln(V_B/V_A).",
+    "conclusion": "Work done from A to B is calculated using the isothermal process formula.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isobaric process, the work done is: W_BC = P ΔV = P (V_C - V_B).",
+    "conclusion": "Work done from B to C is calculated using the isobaric process formula.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isothermal process, the work done is given by: W_CD = nRT ln(V_D/V_C).",
+    "conclusion": "Work done from C to D is calculated using the isothermal process formula.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isobaric process, the work done is: W_DA = P ΔV = P (V_A - V_D).",
+    "conclusion": "Work done from D to A is calculated using the isobaric process formula.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net work done in a cyclic process is the area enclosed by the cycle on the P-V diagram.",
+    "conclusion": "Net work done W_net is calculated as P ΔV = P (V_B - V_A).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the process is cyclic, the change in internal energy ΔU over one complete cycle is zero.",
+    "conclusion": "ΔU = 0 for the cyclic process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the first law of thermodynamics: Q = W_net.",
+    "conclusion": "Heat exchange Q is equal to the net work done W_net.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, the pressure P is constant at 1 × 10^5 Pa, and the volume change ΔV is 1 L (from 3 L to 4 L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q = P ΔV = (1 × 10^5 Pa) × (1 × 10^-3 m^3).",
+    "conclusion": "Q = 100 J.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

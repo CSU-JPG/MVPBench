@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a conductor rod moving in a magnetic field, generating an electromotive force (EMF) that powers two lamps, L1 and L2, connected in a circuit.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The specifications of the lamps are: L1 (3V, 3W) and L2 (6V, 6W). The resistance of the conductor rod is r = 1 Ω, and the magnetic field strength is B = 1 T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The conductor rod moves at a constant speed under an external force, and L1 just lights up normally.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The resistance of the rails is negligible, and the distance between the rails is l = 0.6 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power formula for a lamp is P = I^2 R, and the power of L1 is given as 3 W with a resistance of 1 Ω.",
+    "conclusion": "The current in the circuit is I = √3 A.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through the area swept by the conductor rod is given by φ = B × l × v.",
+    "conclusion": "The magnetic flux is φ = 1 × 0.6 × v.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power formula for L2 is P2 = I × R2, and the current I is √3 A.",
+    "conclusion": "The power of L2 is P2 = √3 W.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power of L2 is given as 6 W, and the calculated power is √3 W.",
+    "conclusion": "The actual power of L2 is 6 W.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio of the actual power of L1 to L2 is P1 : P2 = R2 : R1 = 2 : 1, and the external voltage is 3 V.",
+    "conclusion": "The actual power of L2 is P2 = 1.5 W.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

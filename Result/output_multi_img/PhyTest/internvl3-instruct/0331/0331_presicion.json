@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the work done by the gas on the surroundings during the cyclic process, we need to analyze the area enclosed by the cycle on the \\( pV \\)-diagram.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The work done by the gas during a cyclic process is equal to the area enclosed by the process on the \\( pV \\)-diagram.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process A→B is an isochoric process (constant volume).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process B→C is an isobaric process (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process C→A is an isochoric process (constant volume).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area enclosed by the cycle can be divided into two parts: Triangle ABC and Rectangle ABDC.",
+    "conclusion": "Calculate the area enclosed by the cycle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: \\( (V_A, p_A) = (2L, 1 \\times 10^5 Pa) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B: \\( (V_B, p_B) = (2L, 4 \\times 10^5 Pa) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point C: \\( (V_C, p_C) = (5L, 1 \\times 10^5 Pa) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The base of the triangle is the change in volume from B to C, \\( \\Delta V = 5L - 2L = 3L \\). The height of the triangle is the change in pressure from B to A, \\( \\Delta p = 4 \\times 10^5 Pa - 1 \\times 10^5 Pa = 3 \\times 10^5 Pa \\).",
+    "conclusion": "Area of Triangle ABC = \\( \\frac{1}{2} \\times 3L \\times 3 \\times 10^5 Pa = 4.5 \\times 10^5 L \\cdot Pa \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The width of the rectangle is the change in volume from A to B, \\( \\Delta V = 2L - 2L = 0L \\) (since it's isochoric). The height of the rectangle is the change in pressure from A to C, \\( \\Delta p = 1 \\times 10^5 Pa - 1 \\times 10^5 Pa = 0 Pa \\) (since it's isochoric).",
+    "conclusion": "Area of Rectangle ABDC = \\( 0L \\times 0 Pa = 0 L \\cdot Pa \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total work done by the gas during the cyclic process is the sum of the areas of Triangle ABC and Rectangle ABDC.",
+    "conclusion": "W = \\( 4.5 \\times 10^5 L \\cdot Pa + 0 L \\cdot Pa = 4.5 \\times 10^5 L \\cdot Pa \\)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

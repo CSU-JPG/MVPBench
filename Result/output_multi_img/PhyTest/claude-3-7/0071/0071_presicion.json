@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Primary coil: n1 = 100 turns, U1 = 220 V",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "First appliance: 6 V, 20 W (connected to first secondary coil with n2 turns)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Second appliance: 110 V, 60 W (connected to second secondary coil with n3 turns)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the input current I1 in the primary coil",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage ratio: U2/U1 = n2/n1",
+    "conclusion": "n2 = 100 * (6/220) = 2.73 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P2 = U2 * I2",
+    "conclusion": "I2 = 20 W / 6 V = 3.33 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage ratio: U3/U1 = n3/n1",
+    "conclusion": "n3 = 100 * (110/220) = 50 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P3 = U3 * I3",
+    "conclusion": "I3 = 60 W / 110 V = 0.545 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In an ideal transformer, P1 = P2 + P3",
+    "conclusion": "P1 = 20 W + 60 W = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1 = U1 * I1",
+    "conclusion": "I1 = 80 W / 220 V = 0.364 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current ratio: I1/I2 = n2/n1 and I1/I3 = n3/n1",
+    "conclusion": "I1 = I2 * (n2/n1) + I3 * (n3/n1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I1 = 3.33 A * (2.73/100) + 0.545 A * (50/100)",
+    "conclusion": "I1 = 0.091 A + 0.273 A = 0.364 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The input current in the primary coil is I1 = 0.364 A or approximately 0.36 A.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

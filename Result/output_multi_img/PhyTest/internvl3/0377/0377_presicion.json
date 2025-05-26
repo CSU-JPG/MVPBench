@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Radius of the hemisphere, R",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Distance between point D and line AC is \\( \\frac{\\sqrt{3}}{2}R \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Distance DE = \\( \\sqrt{2}R \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Speed of light in a vacuum is c",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "O is the center of the hemisphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D is at a vertical distance \\( \\frac{\\sqrt{3}}{2}R \\) from AC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "OD = R (radius of the hemisphere).",
+    "conclusion": "Vertical component from O to D is \\( \\frac{\\sqrt{3}}{2}R \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "OD = R and vertical component from O to D is \\( \\frac{\\sqrt{3}}{2}R \\).",
+    "conclusion": "Horizontal component from O to the projection of D on AC is \\( \\frac{1}{2}R \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal component from O to the projection of D on AC is \\( \\frac{1}{2}R \\).",
+    "conclusion": "Cosine of angle of incidence i is \\( \\frac{1}{2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cosine of angle of incidence i is \\( \\frac{1}{2} \\).",
+    "conclusion": "Angle of incidence i is \\( 60^\\circ \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law at point D: \\( n_1 \\sin i = n_2 \\sin r \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "n_1 = 1 (refractive index of air), i = 60^\\circ, and n_2 is the refractive index of the medium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the Law of Cosines in triangle ODE: \\( DE^2 = OD^2 + OE^2 - 2 \\cdot OD \\cdot OE \\cdot \\cos(\\angle DOE) \\)",
+    "conclusion": "Cosine of angle DOE is 0, implying angle DOE is \\( 90^\\circ \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle DOE is \\( 90^\\circ \\).",
+    "conclusion": "Refracted angle r is \\( 30^\\circ \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: \\( 1 \\cdot \\sin 60^\\circ = n_2 \\cdot \\sin 30^\\circ \\)",
+    "conclusion": "Refractive index n_2 is \\( \\sqrt{3} \\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

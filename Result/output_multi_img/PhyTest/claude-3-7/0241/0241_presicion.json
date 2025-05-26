@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A particle with charge +q and mass m enters at point O. There are two magnetic fields: B₁ above the MN line and B₂ below. B₁ = 2B₂ (the upper field is twice as strong as the lower field). The particle initially moves perpendicular to MN, entering B₁ region first. We need to find the time until it returns to point O moving downward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a charged particle enters a uniform magnetic field, it experiences a force: F = qv × B (Lorentz force). This force is always perpendicular to both velocity and magnetic field. The particle follows a circular path with radius r = mv/(qB).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle follows a circular path with radius r = mv/(qB).",
+    "conclusion": "In the B₁ region, the particle will move in a semicircular path. The radius is r₁ = mv/(qB₁).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius in the B₁ region is r₁ = mv/(qB₁).",
+    "conclusion": "The time to complete a semicircle (half a period) in the B₁ region is t₁ = πr₁/v = πm/(qB₁).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After completing the semicircle in the B₁ region, the particle returns to the MN line (point O), now moving downward.",
+    "conclusion": "When the particle enters the B₂ region, it will again move in a circular path, but with a different radius: r₂ = mv/(qB₂).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since B₁ = 2B₂, the radius in the B₂ region is r₂ = mv/(qB₂) = mv/(q(B₁/2)) = 2mv/(qB₁) = 2r₁.",
+    "conclusion": "The particle will move in a semicircle in the B₂ region as well. The time to complete this semicircle is t₂ = πr₂/v = π(2r₁)/v = 2πr₁/v = 2πm/(qB₁).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time to complete a semicircle in the B₁ region is t₁ = πm/(qB₁) and in the B₂ region is t₂ = 2πm/(qB₁).",
+    "conclusion": "The total time for the particle to return to point O moving downward is T = t₁ + t₂ = πm/(qB₁) + 2πm/(qB₁) = 3πm/(qB₁).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

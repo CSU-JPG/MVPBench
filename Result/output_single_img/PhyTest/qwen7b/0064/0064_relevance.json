@@ -1,0 +1,82 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine how far the point light source S must be moved vertically upward so that the light emitted from S is just not visible above the water surface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Involves understanding the geometry of the situation and applying Snell's Law.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The circular wooden board has a radius r and is stationary on the surface of the liquid. The point light source S is located directly below the center O of the board at a depth of H = sqrt(3)r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Snell's Law states: n1 sin(theta1) = n2 sin(theta2), where n1 and n2 are the refractive indices of the two media, and theta1 and theta2 are the angles of incidence and refraction respectively.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "In our case: n1 = 1 (air), n2 = sqrt(2) (liquid).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Find the critical angle theta_c where total internal reflection occurs using sin(theta_c) = n1/n2 = 1/sqrt(2) = sqrt(2)/2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate theta_c = arcsin(sqrt(2)/2) = 45 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "When the light source is moved vertically upward by a distance h, the new depth of the light source below the surface of the liquid will be H - h.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For the light to be just not visible above the surface, the angle of incidence in the liquid must be exactly 45 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using the right triangle formed by the depth of the light source, the horizontal distance from the center of the board to the point where the light exits the liquid, and the line of sight, tan(45 degrees) = d/(H - h).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since tan(45 degrees) = 1, 1 = d/(H - h), so d = H - h.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From the geometry of the circle, the horizontal distance d is also equal to r, so r = H - h.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solve for h: h = H - r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute H = sqrt(3)r into the equation: h = sqrt(3)r - r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate h = (sqrt(3) - 1)r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The point source S should be moved vertically upward by a distance of (sqrt(3) - 1)r.",
+    "relevant": "Yes"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a conductor rod MN moving vertically between two rails AB and CD in a uniform magnetic field B directed perpendicularly into the plane of the rails. The rod reaches a constant speed during its descent.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The conductor rod MN has a mass m, resistance per unit length r, and length l. The height difference between MN and BD is also l. The resistance and friction of the rails are negligible, and the acceleration due to gravity is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The diagram shows two vertical rails AB and CD connected at the bottom by DE, forming a triangular region BDE. The conductor rod MN is horizontal and moves vertically along the rails.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor MN moves perpendicularly to the magnetic field B, and its length is l.",
+    "conclusion": "The induced emf in the conductor is given by 𝓔 = B * l * v, where v is the velocity of the conductor.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance per unit length of the conductor is r, and its total length is l.",
+    "conclusion": "The total resistance of the conductor is R = r * l.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf is 𝓔 = B * l * v, and the total resistance is R = r * l.",
+    "conclusion": "The current in the conductor is I = 𝓔 / R = (B * l * v) / (r * l) = B * v / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the conductor is I = B * v / r, and the length of the conductor is l.",
+    "conclusion": "The force on the conductor due to the magnetic field is F = B * I * l = B * (B * v / r) * l = (B^2 * l * v) / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force due to the magnetic field is F = (B^2 * l * v) / r, and the gravitational force on the conductor is mg.",
+    "conclusion": "When the conductor is moving at a constant speed, the net force is zero, so (B^2 * l * v) / r = m * g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(B^2 * l * v) / r = m * g.",
+    "conclusion": "The velocity of the conductor is v = (m * g * r) / (B^2 * l).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

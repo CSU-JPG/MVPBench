@@ -1,0 +1,25 @@
+[Input Format]
+The question involves a physics problem about a basketball's motion after being dropped from rest. It requires calculating the ratio of the post-collision velocity to the pre-collision velocity. The problem involves understanding the forces acting on the basketball, the motion of the basketball, and the relationship between the initial and final velocities.
+
+[Output Format]
+The output is a JSON array containing the reasoning steps in the order they should be executed to solve the problem.
+
+[JSON Array]
+[
+  ["Consider the object on the elevator floor as the object of study, and perform a force analysis on the object. According to Newton's third law, the pressure exerted by the object on the floor is equal to the normal force exerted by the floor on the object, i.e., F = F_N."],
+  ["According to Newton's second law, we have F_N - mg = ma_1." We can derive: a_1 = F_N - mg = 5.0 m/s^2. Therefore, the displacement of the object is x_1 = 1/2 a_1 t_1^2 = 10.0 m."],
+  ["The velocity of the object at the end of 2 seconds is v = a_1 t_1 = 5.0 * 2.0 m/s = 10.0 m/s." During the time interval of 2 to 6 seconds, F_N = mg, the net force acting on the object is zero, thus the object undergoes uniform linear motion upwards. The displacement of the object is x_2 = v t_2 = 10.0 * 4.0 m = 40.0 m."],
+  ["During the time interval of 6 to 8 seconds, F_N < mg, the net force acting on the object is vertically downward, thus the object undergoes uniform deceleration motion upwards. The initial velocity of the object is v = 10.0 m/s. According to Newton's second law, we have F_3 - mg = ma_3." We can derive: a_3 = F_3 - mg = -5.0 m/s^2. Therefore, the displacement of the object is x_3 = v t_3 + 1/2 a_3 t_3^2 = 10.0 * 2.0 m - 1/2 * (-5.0) * 2.0^2 m = 10.0 m."],
+  ["The total displacement of the object during the entire process is x = x_1 + x_2 + x_3 = 10.0 m + 40.0 m + 10.0 m = 60.0 m." Therefore, the height the elevator rises in 8 seconds is 60.0 m."]
+]
+
+The reasoning steps are organized in a logical order that follows the problem's description, starting from the initial conditions and ending with the final calculation of the post-collision velocity relative to the pre-collision velocity. Each step is clearly defined and follows logically from the previous one, ensuring the solution is complete and accurate.
+
+[JSON Array]
+[
+  ["key_step_1", "Consider the object on the elevator floor as the object of study, and perform a force analysis on the object. According to Newton's third law, the pressure exerted by the object on the floor is equal to the normal force exerted by the floor on the object, i.e., F = F_N."],
+  ["According to Newton's second law, we have F_N - mg = ma_1." We can derive: a_1 = F_N - mg = 5.0 m/s^2. Therefore, the displacement of the object is x_1 = 1/2 a_1 t_1^2 = 10.0 m."],
+  ["The velocity of the object at the end of 2 seconds is v = a_1 t_1 = 5.0 * 2.0 m/s = 10.0 m/s." During the time interval of 2 to 6 seconds, F_N = mg, the net force acting on the object is zero, thus the object undergoes uniform linear motion upwards. The displacement of the object is x_2 = v t_2 = 10.0 * 4.0 m = 40.0 m."],
+  ["During the time interval of 6 to 8 seconds, F_N < mg, the net force acting on the object is vertically downward, thus the object undergoes uniform deceleration motion upwards. The initial velocity of the object is v = 10.0 m/s. According to Newton's second law, we have F_3 - mg = ma_3." We can derive: a_3 = F_3 - mg = -5.0 m/s^2. Therefore, the displacement of the object is x_3 = v t_3 + 1/2 a_3 t_3^2 = 10.0 * 2.0 m - 1/2 * (-5.0) * 2.0^2 m = 10.0 m."],
+  ["The total displacement of the object during the entire process is x = x_1 + x_2 + x_3 = 10.0 m + 40.0 m + 10.0 m = 60.0 m." Therefore, the height the elevator rises in 8 seconds is 60.0 m."]
+]

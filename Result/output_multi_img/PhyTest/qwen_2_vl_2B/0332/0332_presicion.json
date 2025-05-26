@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The internal energy U of an ideal gas is related to the temperature T by the equation U = aT, where a is a positive constant. This shows that the internal energy of an ideal gas is directly proportional to its temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "State A is the initial state, and state B is the final state. The temperature at state A is T_0, and the internal energy at state A is U_A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "From the figure, state C is the midpoint between states A and B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State C is the midpoint between states A and B.",
+    "conclusion": "The temperature at state C is the average of the temperatures at states A and B, which is (T_0 + T_B)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal energy U of an ideal gas is directly proportional to its temperature T, and the temperature at state C is (T_0 + T_B)/2.",
+    "conclusion": "The internal energy at state C is U_C = a * (T_0 + T_B)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal energy U of an ideal gas is directly proportional to its temperature T, and the temperature at state A is T_0.",
+    "conclusion": "The internal energy at state A is U_A = a * T_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal energy at state A is U_A = a * T_0, and the internal energy at state C is U_C = a * (T_0 + T_B)/2.",
+    "conclusion": "Since U_A = U_C, we can set a * T_0 = a * (T_0 + T_B)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a * T_0 = a * (T_0 + T_B)/2.",
+    "conclusion": "Simplifying, we get T_0 = (T_0 + T_B)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_0 = (T_0 + T_B)/2.",
+    "conclusion": "Solving for T_B, we get T_B = T_0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "From the figure, at state B, P_B = 0.6P_0 and V_B = V_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "From the figure, at state A, P_A = P_0 and V_A = V_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state A, P_A = P_0, V_A = V_0, and T_A = T_0. At state B, P_B = 0.6P_0 and V_B = V_0.",
+    "conclusion": "Using the ideal gas law, P_A * V_A / T_A = P_B * V_B / T_B.",
+    "judgment": "Match"
+  }]

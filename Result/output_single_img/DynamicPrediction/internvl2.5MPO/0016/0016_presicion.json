@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid will flow out from A, B, C and D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Predict which container (E or F) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "A is connected to a red baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A is connected to a red baffle.",
+    "conclusion": "The red baffle directs the liquid downward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The red baffle directs the liquid downward.",
+    "conclusion": "The liquid will flow into the container on the left, which is E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "B is connected to a green baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B is connected to a green baffle.",
+    "conclusion": "The green baffle directs the liquid downward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The green baffle directs the liquid downward.",
+    "conclusion": "The liquid will flow into the container on the left, which is E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "C is connected to a blue baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C is connected to a blue baffle.",
+    "conclusion": "The blue baffle directs the liquid downward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The blue baffle directs the liquid downward.",
+    "conclusion": "The liquid will flow into the container on the right, which is F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "D is connected to a yellow baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D is connected to a yellow baffle.",
+    "conclusion": "The yellow baffle directs the liquid downward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The yellow baffle directs the liquid downward.",
+    "conclusion": "The liquid will flow into the container on the right, which is F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquids from A and B will flow into container E. Liquids from C and D will flow into container F.",
+    "conclusion": "The liquid from A and B will flow into container E, and the liquid from C and D will flow into container F.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

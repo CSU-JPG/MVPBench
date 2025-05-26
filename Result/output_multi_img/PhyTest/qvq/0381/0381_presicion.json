@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a rotating-armature AC generator with a rectangular coil rotating uniformly around an axis perpendicular to a uniform magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil has 100 turns and a resistance of 10 ohms. It's connected to a resistor R, which is 90 ohms, via slip rings, and there's an ideal voltmeter connected in parallel with R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux Φ through each turn of the coil varies sinusoidally with time t.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows the magnetic flux oscillating sinusoidally between -2.0 × 10^-2 Wb and 2.0 × 10^-2 Wb, with periods marked at 3.14 × 10^-2 s, 6.28 × 10^-2 s, and so on.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At time t=0, the plane of the coil is parallel to the direction of the magnetic field, which corresponds to the position where the flux is maximum.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The EMF induced in a coil rotating in a magnetic field is given by the rate of change of the magnetic flux through the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The general formula for the induced EMF in a rotating coil is ε = -N * dΦ/dt, where ε is the induced EMF, N is the number of turns in the coil, and dΦ/dt is the rate of change of magnetic flux.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil is rotating uniformly, and the magnetic flux through it varies sinusoidally with time.",
+    "conclusion": "The EMF should be the derivative of this flux with respect to time.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the graph, the amplitude of the flux is 2.0 × 10^-2 Wb, and the period T is 6.28 × 10^-2 s.",
+    "conclusion": "The angular frequency ω is 2π/T = 100 rad/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t=0, Φ = Φ_max = 2.0×10^-2 Wb, and it decreases to zero at t=3.14×10^-2 s.",
+    "conclusion": "The flux can be expressed as Φ(t) = Φ_max * cos(ωt).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ(t) = 2.0×10^-2 * cos(100t) Wb.",
+    "conclusion": "The derivative dΦ/dt = -2.0×10^-2 * 100 * sin(100t) V = -20 * sin(100t) V.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε = -N * dΦ/dt = -100 * (-20 * sin(100t)) V.",
+    "conclusion": "ε = 2000 * sin(100t) V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum value of sin(100t) is 1.",
+    "conclusion": "The maximum value of ε is 2000 V.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

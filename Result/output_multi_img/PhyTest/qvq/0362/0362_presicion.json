@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A charged particle moves in a uniform electric field inside a cylindrical region. The cross-section is a circle with center O and radius R. There's a diameter AB, and point C is another point on the circumference such that angle θ between AC and AB is 60 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A particle with mass m and positive charge q enters the electric field at point A with different velocities, and when it enters with zero initial velocity, it exits at point C with speed v₀.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle is only subjected to the electric force during its motion. The task is to find the magnitude of the electric field strength E.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There's a circle with center O and radius R. Points A and B are ends of a diameter, so AB passes through O. Point C is on the circumference such that angle θ = 60° between AC and AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle enters with zero initial velocity, so its motion is solely due to the electric force. The electric field is uniform, so the force on the particle is constant and given by F = qE, where q is positive.",
+    "conclusion": "The direction of the electric field will determine the direction of the force.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle moves from A to C under the influence of this electric force.",
+    "conclusion": "The distance from A to C can be found using the geometry of the circle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In triangle ABC, since AB is a diameter, angle at C is 90° (by Thales' theorem).",
+    "conclusion": "Angle ACB is 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In triangle ABC, angle at A is 60°, and angle at C is 90°.",
+    "conclusion": "Angle at B is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using trigonometry in right triangle ABC: AC = AB * cos(30°) = 2R * (√3/2).",
+    "conclusion": "AC = R√3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle moves from A to C, a distance of R√3, under the influence of the electric field.",
+    "conclusion": "The work done by the electric field must equal the kinetic energy gained by the particle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the work-energy theorem, the work done by the electric field is q E x_{AC}.",
+    "conclusion": "The kinetic energy gained by the particle is (1/2)mv₀².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the electric field is q E x_{AC} and the kinetic energy gained is (1/2)mv₀².",
+    "conclusion": "q E x_{AC} = (1/2)mv₀².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_{AC} = R.",
+    "conclusion": "E = (mv₀²)/(2qR).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

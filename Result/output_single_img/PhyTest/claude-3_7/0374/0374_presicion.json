@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The early warning radar detects an enemy aircraft flying horizontally at a constant speed at an altitude of 20000m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An anti-aircraft missile with a mass of m=100kg is launched.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The missile's rocket engine expels gas vertically downward, causing the missile to accelerate uniformly upward from rest with an acceleration of a=10g until it reaches an altitude of 5000m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At 5000m, the direction of the gas expulsion changes to an angle θ (cosθ=1/11) downward and to the right, causing the missile to follow a curved trajectory.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rocket thrust remains constant during the missile's flight, and the missile's mass change and air resistance are negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The missile can be treated as a point mass, and g=10m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a missile undergoes curvilinear motion, the magnitudes of the horizontal and vertical accelerations are ax and ay respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial position: ground level (h = 0 m)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial velocity: 0 m/s (starts from rest)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Acceleration: a = 10g = 10 × 10 m/s² = 100 m/s²",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Final height: 5000 m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the kinematic equation: h = v₀t + (1/2)at², and v₀ = 0",
+    "conclusion": "5000 = 50t², t² = 100, t = 10 seconds",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity at h = 5000 m is: v = v₀ + at = 0 + 100 × 10",
+    "conclusion": "v = 1000 m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Gravitational force: F_g = mg = 100 kg × 10 m/s² = 1000 N downward",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During vertical motion, the net force was: F_net = ma = m(a-g) = m × 9g = 100 × 9 × 10",
+    "conclusion": "F_net = 9000 N upward",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "So the thrust force magnitude is 10,000 N (to produce net upward acceleration of 9g when fighting gravity).",
+    "conclusion": "Thrust force magnitude is 10,000 N",
+    "judgment": "Wrong"
+  }]

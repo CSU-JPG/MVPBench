@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "The two cars collide before 20 seconds of braking.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Car A starts at a velocity of 25 m/s, and Car B starts at a velocity of 15 m/s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Car A decelerates to 0 m/s at 25 seconds, and Car B decelerates to 0 m/s at 30 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate deceleration rates: Car A's deceleration is -1 m/s^2, Car B's deceleration is -0.5 m/s^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate distance traveled by each car using d = v_i * t + 0.5 * a * t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Set distance traveled by Car A equal to distance traveled by Car B plus initial distance.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify equation to -0.25 * t^2 + 10 * t = d_initial.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Determine time of collision by solving -0.25 * t^2 + 10 * t = d_initial.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate when Car A reaches the same velocity as Car B: t = 20 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since Car A decelerates faster, collision occurs before 20 seconds.",
+    "relevant": "Yes"
+  }
+]

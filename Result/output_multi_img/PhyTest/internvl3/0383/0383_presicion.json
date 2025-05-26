@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the velocity v of the conductor rod MN when it is moving at a constant speed, we need to analyze the forces acting on the rod and the induced electromotive force (EMF) due to its motion in the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Gravitational Force (Fg): This force acts downward and is given by Fg = mg, where m is the mass of the rod and g is the acceleration due to gravity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic Force (FB): This force is due to the interaction of the induced current in the rod with the magnetic field and acts upward, opposing the motion of the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the rod moves downward with velocity v, an EMF is induced across it.",
+    "conclusion": "The magnitude of the induced EMF (E) is given by E = B l v where B is the magnetic field strength, and l is the length of the rod between the rails.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced current I in the rod depends on the total resistance of the circuit. Since the resistance per unit length of the rod is r, the total resistance R for the length l is R = r l.",
+    "conclusion": "Using Ohm's Law, the induced current is I = E/R = Blv/rl = Bv/r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force acting on the rod is given by FB = I l B.",
+    "conclusion": "FB = (Bv/r) l B = B^2 l v/r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At constant velocity, the net force on the rod is zero. Therefore, the gravitational force is balanced by the magnetic force: Fg = FB.",
+    "conclusion": "mg = B^2 l v/r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = B^2 l v/r.",
+    "conclusion": "Rearranging the equation to solve for v: v = mgr/B^2 l.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial state A: T₁ = 27°C = 300 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The p-V diagram shows: Process A→B: Isobaric decrease in volume (vertical line down)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The p-V diagram shows: Process B→C: Isothermal expansion (horizontal line)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: p = 3×10⁵ Pa, V = 1×10⁻³ m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: p = 1×10⁵ Pa, V = 1×10⁻³ m³",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: p = 1×10⁵ Pa, V = 3×10⁻³ m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal gas, we know that PV = nRT. Since we don't know the number of moles n, we can use the relation: T₂/T₁ = (P₂V₂)/(P₁V₁)",
+    "conclusion": "T₂/300 K = (1×10⁵ Pa × 1×10⁻³ m³)/(3×10⁵ Pa × 1×10⁻³ m³)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂/300 K = 1/3",
+    "conclusion": "T₂ = 100 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isochoric process (constant volume), the heat transfer is: Q₁ = nCᵥ(T₂ - T₁)",
+    "conclusion": "Q₁ = nCᵥ(100 K - 300 K) = nCᵥ(-200 K) = -200nCᵥ",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "This negative value indicates heat is being released from the gas.",
+    "conclusion": "Heat is being released from the gas during A→B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For process B→C (isothermal process):",
+    "conclusion": "T₃ = T₂ = 100 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isothermal process, the heat transfer equals the work done: Q₂ = W = nRT₂ln(V₃/V₂)",
+    "conclusion": "Q₂ = nR × 100 K × ln(3×10⁻³/1×10⁻³)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q₂ = nR × 100 K × ln(3)",
+    "conclusion": "Q₂ = nR × 100 K × 1.0986",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q₂ = nR × 100 K × 1.0986",
+    "conclusion": "Q₂ ≈ 109.86nR",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Qtotal = Q₁ + Q₂",
+    "conclusion": "Qtotal = -200nCᵥ + 109.86nR",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves finding the temperature at point D in a thermodynamic cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows P (pressure) vs V (volume) with points A, B, C, and D forming a cycle: A → B → C → D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The vertical axis is pressure in atm (atmospheres) and the horizontal axis is volume in liters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment BC is a hyperbola with the axes as asymptotes, meaning it follows PV = constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at point A is 300K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: (10L, 4 atm)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B: (20L, 4 atm)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point C: (40L, 2 atm)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point D: (20L, 2 atm)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The processes are identified as: A→B: Constant pressure (isobaric), B→C: Hyperbolic (isothermal), C→D: Constant pressure (isobaric), D→A: Constant volume (isochoric).",
+    "conclusion": "The process A→B is isobaric at P = 4 atm, B→C is isothermal, C→D is isobaric at P = 2 atm.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas: PV = nRT, where n is constant for this fixed mass of gas.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since we're tracking the same amount of gas throughout, temperature is proportional to PV/nR.",
+    "conclusion": "For any state: T ∝ PV/nR.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process A→B is isobaric (constant pressure), VA = 10L, VB = 20L, PA = PB = 4 atm, TA = 300K.",
+    "conclusion": "For an isobaric process: T₂/T₁ = V₂/V₁, TB/TA = VB/VA = 20L/10L = 2, Therefore: TB = 300K × 2 = 600K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process B→C is isothermal (constant temperature), TB = TC = 600K.",
+    "conclusion": "Temperature at point C is 600K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process C→D is isobaric (constant pressure), VC = 40L, VD = 20L, PC = PD = 2 atm, TC = 600K.",
+    "conclusion": "For an isobaric process: T₂/T₁ = V₂/V₁, TD/TC = VD/VC = 20L/40L = 0.5, Therefore: TD = 600K × 0.5 = 300K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

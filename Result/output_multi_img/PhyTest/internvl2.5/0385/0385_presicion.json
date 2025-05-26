@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Mass of rod a, m_a = 0.3 kg",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The constant force applied on rod a, F = 2 N",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mass of rod a, m_a = 0.3 kg; Gravitational acceleration, g = 10 m/s^2; Inclination angle, θ = 30°",
+    "conclusion": "Gravitational force on rod a, F_{ga} = 1.5 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic induction strength, B = 0.2 T; Distance between rails, L = 0.5 m; Velocity of rod a, v_a = 1.0 m/s; Resistance, R = 0.1 Ω",
+    "conclusion": "Induced current in rod a, I_a = 0.5 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic induction strength, B = 0.2 T; Induced current in rod a, I_a = 0.5 A; Distance between rails, L = 0.5 m",
+    "conclusion": "Magnetic force on rod a, F_{Ba} = 0.05 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Constant force on rod a, F = 2 N; Gravitational force on rod a, F_{ga} = 1.5 N; Magnetic force on rod a, F_{Ba} = 0.05 N",
+    "conclusion": "Net force on rod a, F_{net} = 0.45 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force on rod a, F_{net} = 0.45 N; Mass of rod a, m_a = 0.3 kg",
+    "conclusion": "Acceleration of rod a, a_a = 1.5 m/s²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Mass of rod b, m_b = 0.1 kg",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mass of rod b, m_b = 0.1 kg; Gravitational acceleration, g = 10 m/s²; Inclination angle, θ = 30°",
+    "conclusion": "Gravitational force on rod b, F_{gb} = 0.5 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic induction strength, B = 0.2 T; Distance between rails, L = 0.5 m; Resistance, R = 0.1 Ω; Gravitational force on rod b, F_{gb} = 0.5 N",
+    "conclusion": "Net force on rod b, F_{net} = F_{Bb} - F_{gb}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic induction strength, B = 0.2 T; Distance between rails, L = 0.5 m; Resistance, R = 0.1 Ω; Net force on rod b, F_{net} = F_{Bb} - F_{gb}",
+    "conclusion": "Magnetic force on rod b, F_{Bb} = B I_b L = (B² L² v_b)/(2R)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic force on rod b, F_{Bb} = (B² L² v_b)/(2R); Gravitational force on rod b, F_{gb} = 0.5 N",
+    "conclusion": "(B² L² v_b)/(2R) = m_b g sin θ",
+    "judgment": "Reasonable"
+  }

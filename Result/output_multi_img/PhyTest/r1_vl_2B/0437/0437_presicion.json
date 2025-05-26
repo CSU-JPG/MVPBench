@@ -1,0 +1,58 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves calculating the refractive index of the glass based on the given distances and angles using the properties of optics, specifically the law of refraction and the geometry of the semi-circular glass brick.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The semi-cylindrical glass brick has a reflective film at the bottom, with M as the highest point, O as the center of the circle, and R as the radius. A beam of parallel light enters the glass brick, with the lower side of the beam just along the bottom side. Light enters at point A, refracts, and exits at point B.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The given values are: radius R, distance AB = (sqrt(2)R)/2, and distance BO = 0.26R.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = (sqrt(2)R)/2 and BO = 0.26R",
+    "conclusion": "Using geometry, the angle ∠AOB = 45° + 15° = 60°.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = (sqrt(2)R)/2 and R",
+    "conclusion": "cos(α) = (sqrt(2)R/2) / R = sqrt(2)/2, so α = 45°.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BO = 0.26R and R",
+    "conclusion": "sin(∠BOQ) = 0.26R / R = 0.26, so ∠BOQ = 15°.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "α = 45° and ∠BOQ = 15°",
+    "conclusion": "The refraction angle r = 30° because OA = OB.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "α = 45° and r = 30°",
+    "conclusion": "Using the law of refraction, n = sin(α) / sin(r) = sqrt(2).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to ensure that all light rays emitted from the point light source S inside the glass sphere can pass through the sphere without being totally internally reflected at the glass-air interface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This requires understanding the conditions for total internal reflection (TIR).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when the angle of incidence at the glass-air interface is greater than or equal to the critical angle θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is given by Snell's Law: sin(θc) = 1/n where n is the refractive index of the glass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "For a light ray emitted from point S to reach the surface of the sphere and not undergo TIR, the maximum angle of incidence at the surface must be less than θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Consider a light ray emitted from S that strikes the surface of the sphere at a point P.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider a light ray emitted from S that strikes the surface of the sphere at a point P.",
+    "conclusion": "The angle of incidence θi at point P must satisfy: θi < θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Let O be the center of the sphere, and let the distance from O to S be d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let O be the center of the sphere, and let the distance from O to S be d.",
+    "conclusion": "The angle θi depends on the geometry of the triangle formed by O, S, and P.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle θi depends on the geometry of the triangle formed by O, S, and P.",
+    "conclusion": "The maximum value of θi occurs when P is on the circumference of the sphere directly opposite S along a line passing through O.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum value of θi occurs when P is on the circumference of the sphere directly opposite S along a line passing through O.",
+    "conclusion": "When P is on the circumference directly opposite S, the angle θi is related to d and R by: sin(θi) = sqrt(R^2 - d^2)/R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θi) = sqrt(R^2 - d^2)/R.",
+    "conclusion": "To avoid TIR, we need: sin(θi) < sin(θc).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Substituting sin(θc) = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θi) < sin(θc) and sin(θc) = 1/n.",
+    "conclusion": "sqrt(R^2 - d^2)/R < 1/n.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sqrt(R^2 - d^2)/R < 1/n.",
+    "conclusion": "Solving for d: sqrt(R^2 - d^2) < R/n.",
+    "judgment": "Reasonable"
+  }]

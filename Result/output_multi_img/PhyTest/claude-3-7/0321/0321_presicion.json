@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The p-V image of an ideal gas changes from state A to state B and then to state C. The temperature of the gas in state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A: Temperature T₁ = 27°C = 300 K (converting to Kelvin)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The p-V diagram shows the pressure (p) in units of 10⁵ Pa and the volume (V) in units of 10⁻³ m³.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: (7, 1) × (10⁻³ m³, 10⁵ Pa)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: (7, 2) × (10⁻³ m³, 10⁵ Pa)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: (3, 3) × (10⁻³ m³, 10⁵ Pa)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, PV = nRT, where P is pressure, V is volume, n is number of moles (constant for this problem), R is the ideal gas constant, and T is temperature in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a fixed amount of gas (constant n), P₁V₁/T₁ = P₂V₂/T₂ = nR (constant)",
+    "conclusion": "T₂ = (P₂V₂/P₁V₁) × T₁",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P₁ = 1 × 10⁵ Pa, V₁ = 7 × 10⁻³ m³, T₁ = 300 K, P₂ = 2 × 10⁵ Pa, V₂ = 7 × 10⁻³ m³",
+    "conclusion": "T₂ = (2×10⁵ Pa × 7×10⁻³ m³) / (1×10⁵ Pa × 7×10⁻³ m³) × 300 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = (2×10⁵ Pa × 7×10⁻³ m³) / (1×10⁵ Pa × 7×10⁻³ m³) × 300 K",
+    "conclusion": "T₂ = (2/1) × 300 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = (2/1) × 300 K",
+    "conclusion": "T₂ = 600 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

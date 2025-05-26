@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the direction of the light ray when it first exits the prism, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray enters the prism perpendicularly at point O on face AD.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray enters the prism perpendicularly at point O on face AD.",
+    "conclusion": "The angle of incidence at O is 0°, and the light ray travels straight into the prism along OA.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "OA = 2 cm and ∠OAB = 60°.",
+    "conclusion": "Using trigonometry, x_A = OA cos(60°) = 1 cm and y_A = OA sin(60°) = √3 cm. So, A is at (1, √3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = 8 cm and ∠OAB = 60°.",
+    "conclusion": "Using the coordinates of A, x_B = x_A + AB cos(60°) = 5 cm and y_B = y_A + AB sin(60°) = 5√3 cm. So, B is at (5, 5√3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC = 8 cm and BC is vertical.",
+    "conclusion": "x_C = x_B = 5 cm and y_C = y_B - 8 = 5√3 - 8 cm. So, C is at (5, 5√3 - 8).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray travels from O to A and then to B.",
+    "conclusion": "At B, it will hit face BC and reflect or refract. The angle of incidence at B is 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law, n_1 sin θ_1 = n_2 sin θ_2, where n_1 = 1 (air), n_2 = √2 (prism), θ_1 = 60°.",
+    "conclusion": "sin θ_2 = √6/4, θ_2 = sin⁻¹(√6/4).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray will exit the prism at an angle equal to the angle of incidence due to symmetry and the properties of the prism.",
+    "conclusion": "The angle of incidence at C will be the same as the angle of refraction at B, which is θ_2 = sin⁻¹(√6/4).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at C is θ_2 = sin⁻¹(√6/4).",
+    "conclusion": "Therefore, the direction of the light ray when it first exits the prism is 60°.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

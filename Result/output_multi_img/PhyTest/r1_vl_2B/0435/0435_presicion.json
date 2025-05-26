@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves determining the distance between two people inside a tank based on the refractive index of the tank material and the given angle of light refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the tank material is given as √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The largest range of external angles visible through the material is 120°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index \\(n = \\sqrt{3}\\) and the law of refraction applies.",
+    "conclusion": "The angle of incidence \\(\\theta_1\\) is 120°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence \\(\\theta_1 = 120^\\circ\\).",
+    "conclusion": "The angle of refraction \\(\\theta_2 = 60^\\circ\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The law of refraction states \\(n = \\frac{\\sin{\\theta_1}}{\\sin{\\theta_2}}\\).",
+    "conclusion": "Using \\(\\theta_1 = 60^\\circ\\) and \\(n = \\sqrt{3}\\), \\(\\theta_2 = 30^\\circ\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From geometric relations, \\(\\tan{\\theta_2} = \\frac{AB}{BC}\\).",
+    "conclusion": "Using \\(\\theta_2 = 30^\\circ\\) and \\(BC = 18\\), \\(AB = 6\\sqrt{3}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The derived value of \\(AB = 6\\sqrt{3}\\).",
+    "conclusion": "The distance between the people is \\(6\\sqrt{3}\\) cm.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

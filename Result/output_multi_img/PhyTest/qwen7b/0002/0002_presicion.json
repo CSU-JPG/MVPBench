@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to understand the relationship between the position of the small ball and its shadow on the wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The point light source is located at a distance d away from the vertical wall.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The small ball is thrown vertically upwards from the midpoint, which is also at a distance d from the wall.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The shadow of the small ball will be projected onto the wall such that the angle of incidence equals the angle of refraction as light travels from the ball to the wall.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let's denote h(t) as the height of the ball at time t and s(t) as the horizontal distance of the shadow from the wall at time t.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial height when the ball is thrown is y_0 = d/2.",
+    "conclusion": "From the diagram, we know that the height of the ball h(t) decreases as it moves upwards.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the triangles formed by the ball, the light source, and the wall are similar.",
+    "conclusion": "We can use the property of similar triangles: s/d = (d - h)/y_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that y_0 = d/2, substitute this into the equation: s/d = (d - h)/(d/2).",
+    "conclusion": "Simplify the equation: s/d = 2(d - h)/d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "s/d = 2(d - h)/d.",
+    "conclusion": "s = 2(d - h).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball's vertical motion is described by the kinematic equation for free fall under gravity: h(t) = v_0 t - (1/2) g t^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since h(t) is the vertical distance of the ball from its highest point.",
+    "conclusion": "s(t) = 2(d - v_0 t + (1/2) g t^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t = 0, the ball is at its initial height y_0 = d/2, and the shadow is at s(0).",
+    "conclusion": "Using the formula for s(t) at t = 0: s(0) = 2(d - d/2) = d.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "This implies that the shadow starts at a distance equal to the distance from the light source to the wall initially.",
+    "conclusion": "The initial velocity v_0 of the small ball can be determined from the kinematic equations and the geometric similarity.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the shadow starts at d and the height of the ball is given by the kinematic equation.",
+    "conclusion": "At t = 0, the height h(0) = y_0 = d/2: s(0) = 2(d - d/2) = d.",
+    "judgment": "Reasonable"
+  }]

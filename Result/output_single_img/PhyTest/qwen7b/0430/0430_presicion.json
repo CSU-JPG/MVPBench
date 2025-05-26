@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the maximum width of the incident light beam on the lower surface (AB) such that the light can be emitted from the upper surface of the hemispherical glass brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The hemispherical glass brick has a radius R. The center of the hemisphere is O, and the diameter AB lies in the plane of symmetry. The light beam is directed vertically downward from the upper surface to the lower surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle for total internal reflection (TIR) at the interface between the glass and air is given by θc = sin⁻¹(n_air / n_glass). For air (n_air = 1) and glass (n_glass > 1), the critical angle θc is less than 90°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the light beam is incident normally on the upper surface, it will travel straight down to the lower surface.",
+    "conclusion": "At the lower surface, the light beam will hit the interface at an angle θ relative to the normal.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light to be emitted from the upper surface, the angle of incidence at the lower surface must be less than or equal to the critical angle θc.",
+    "conclusion": "The angle of incidence at the lower surface must be less than or equal to θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's law states that n1 sin(θ1) = n2 sin(θ2). Here, n1 = n_glass and n2 = n_air = 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence θ1 at the lower surface is related to the angle of refraction θ2 at the upper surface by the critical angle condition.",
+    "conclusion": "The maximum width of the incident light beam corresponds to the point where the angle of incidence just equals the critical angle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Consider the right triangle formed by the radius R, the height of the point of incidence on the lower surface, and the line connecting the center O to the point of incidence.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle subtended by the maximum width at the center O is 2 × 15° = 30° because the light beam makes a 15° angle with the vertical at the upper surface.",
+    "conclusion": "The angle subtended by the maximum width at the center O is 30°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum width d of the incident light beam can be found using the cosine function in the right triangle: cos(15°) = R/(d/2).",
+    "conclusion": "Solving for d: d = 2R cos(15°).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using the known value cos(15°) = √((3 + √3)/4).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = 2R · √((3 + √3)/4) = R √(3 + √3).",
+    "conclusion": "The maximum width of the incident light beam on AB is R √(3 + √3).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

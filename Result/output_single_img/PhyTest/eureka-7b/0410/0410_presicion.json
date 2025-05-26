@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The bubble is located at the center of the cube, and we need to ensure that no light from the bubble can escape the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the cube is n = 1.5.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle for total internal reflection is given by sin θc = 1/n.",
+    "conclusion": "For n = 1.5, the critical angle is sin θc = 2/3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If the angle of incidence is greater than the critical angle, the light will be reflected back into the cube.",
+    "conclusion": "Light must either reflect off the faces or be refracted in such a way that it does not escape.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The shortest path for the light to travel from the center of the cube to the surface and back is along the diagonal of the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The length of the diagonal of the cube is a√3.",
+    "conclusion": "The light must travel this distance in such a way that it does not exceed the critical angle when it hits the surface.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of each face of the cube is a^2.",
+    "conclusion": "The minimum area of each piece of paper is the area that ensures the light does not escape.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The minimum area of each piece of paper is the area of the face of the cube.",
+    "conclusion": "The minimum area of each piece of paper is 3a^2/4.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

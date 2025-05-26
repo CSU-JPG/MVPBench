@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cyclic process is A→B→C→A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The work done by the gas during a process is given by the area under the curve on the P-V diagram.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a cyclic process, the net work done is the area enclosed by the cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle A→B→C→A forms a triangle on the P-V diagram.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The work done by the gas is the area enclosed by the triangle, and its sign depends on the direction of the cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A clockwise cycle means positive work done by the gas, and a counterclockwise cycle means negative work done by the gas (positive work done on the gas).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The arrows in the diagram indicate a clockwise cycle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We can calculate the work done in each process and sum them up.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process A→B: This is an isochoric process with constant volume V_A = V_B = 2 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process A→B is isochoric with constant volume V_A = V_B = 2 L.",
+    "conclusion": "The work done is W_AB = ∫_{V_A}^{V_B} p dV = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process B→C: This process is a straight line from (V_B, p_B) = (2 L, 4 × 10^5 Pa) to (V_C, p_C) = (5 L, 1 × 10^5 Pa).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process B→C is a straight line from (V_B, p_B) = (2 L, 4 × 10^5 Pa) to (V_C, p_C) = (5 L, 1 × 10^5 Pa).",
+    "conclusion": "The work done is the area under the curve BC, which is a trapezoid with parallel sides of lengths p_B and p_C and height V_C - V_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to convert units to SI. 1 L = 10^{-3} m^3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_{BC} = Area of trapezoid = (p_B + p_C)/2 * (V_C - V_B).",
+    "conclusion": "W_{BC} = (4 × 10^5 Pa + 1 × 10^5 Pa)/2 * (5 × 10^{-3} m^3 - 2 × 10^{-3} m^3) = 750 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process C→A: This is an isobaric process with constant pressure p_C = p_A = 1 × 10^5 Pa.",
+    "judgment": "Match"
+  }]

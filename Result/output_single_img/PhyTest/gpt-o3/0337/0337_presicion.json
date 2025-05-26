@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, any state satisfies the ideal-gas relation P V = n R T, where n R is constant for the fixed mass of gas in this cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P₁V₁ = n R T₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C lies directly above D on the diagram, so the pressure at C is P₂ and the volume is V₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State C: P₂V₂ = n R T_C.",
+    "conclusion": "Applying the ideal-gas relation at C: P₂V₂ = n R T_C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A: P₁V₁ = n R T₀ and State C: P₂V₂ = n R T_C.",
+    "conclusion": "Divide the equation for state C by that for state A to eliminate n R: (P₂V₂) / (P₁V₁) = T_C / T₀.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(P₂V₂) / (P₁V₁) = T_C / T₀.",
+    "conclusion": "Solve for T_C: T_C = T₀ • (P₂ / P₁) • (V₂ / V₁).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

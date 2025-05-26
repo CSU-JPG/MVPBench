@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes the ABCDA cycle",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "P_1, P_2, V_1, and V_2 are known quantities",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at state A is T_0",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A → B: Isochoric process (constant volume V_1) with pressure increasing from P_1 to P_2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B → C: Isobaric process (constant pressure P_2) with volume increasing from V_1 to V_2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C → D: Isochoric process (constant volume V_2) with pressure decreasing from P_2 to P_1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D → A: Isobaric process (constant pressure P_1) with volume decreasing from V_2 to V_1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, we can use the ideal gas law: PV = nRT, where n is the number of moles and R is the gas constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since we have a definite quantity of gas, n and R are constant. So we can write: PV = kT where k = nR is constant throughout the cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_A = T_0, P_A = P_1, V_A = V_1",
+    "conclusion": "P_1 V_1 = kT_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_1 V_1 = kT_0",
+    "conclusion": "k = P_1 V_1 / T_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state B: P_B = P_2 and V_B = V_1",
+    "conclusion": "P_2 V_1 = kT_B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_2 V_1 = kT_B and k = P_1 V_1 / T_0",
+    "conclusion": "P_2 V_1 = (P_1 V_1 / T_0) * T_B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_2 V_1 = (P_1 V_1 / T_0) * T_B",
+    "conclusion": "T_B = (P_2 V_1 * T_0) / (P_1 V_1) = (P_2 / P_1) * T_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state C: P_C = P_2 and V_C = V_2",
+    "conclusion": "P_2 V_2 = kT_C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_2 V_2 = kT_C and k = P_1 V_1 / T_0",
+    "conclusion": "P_2 V_2 = (P_1 V_1 / T_0) * T_C",
+    "judgment": "Match"
+  }]

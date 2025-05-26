@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the velocity v of the conductor rod MN when it is moving at a constant speed, we need to consider the forces and induced electromotive forces (EMFs) acting on the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rod MN moves through a magnetic field B with a velocity v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The length of the rod in the magnetic field is l.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod MN moves through a magnetic field B with a velocity v. The length of the rod in the magnetic field is l.",
+    "conclusion": "The induced EMF in the rod is given by E = B * l * v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance per unit length of the rod is r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance per unit length of the rod is r.",
+    "conclusion": "The total resistance R of the rod is r * l.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF in the rod is E = B * l * v. The total resistance R of the rod is r * l.",
+    "conclusion": "Using Ohm's Law, the current I induced in the rod is I = (B * l * v) / (r * l) = B * v / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I induced in the rod is I = B * v / r.",
+    "conclusion": "The magnetic force F_B on the rod is F_B = B * I * l = B * (B * v / r) * l = B^2 * l * v / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rod is moving at constant speed, so the gravitational force F_g is balanced by the magnetic force F_B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gravitational force is F_g = m * g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force is F_g = m * g. The magnetic force F_B on the rod is F_B = B^2 * l * v / r.",
+    "conclusion": "Set the gravitational force equal to the magnetic force: m * g = B^2 * l * v / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m * g = B^2 * l * v / r.",
+    "conclusion": "Rearrange the equation to solve for v: v = (m * g * r) / (B^2 * l).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

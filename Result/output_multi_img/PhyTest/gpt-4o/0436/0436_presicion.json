@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A beam of light enters the rectangle at point P, refracts, and exits at point M.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rectangle has dimensions: length 2L and width L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle of incidence α = 37°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index n = 4/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(α) = n2 sin(θ), n1 = 1 (air), n2 = 4/3",
+    "conclusion": "sin(θ) = (3/4) × sin(37°) ≈ 0.45135",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ) ≈ 0.45135",
+    "conclusion": "θ ≈ arcsin(0.45135) ≈ 26.74°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels from P to M inside the rectangle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The vertical distance traveled is L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical distance is L, and the horizontal distance is unknown.",
+    "conclusion": "The horizontal distance is the unknown we need to find.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the triangle formed by the path of light, the opposite side is L, and the adjacent side is the horizontal distance.",
+    "conclusion": "tan(θ) = L / horizontal distance",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ) = L / horizontal distance",
+    "conclusion": "horizontal distance = L / tan(θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ ≈ 26.74°",
+    "conclusion": "tan(26.74°) ≈ 0.504",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "horizontal distance = L / 0.504",
+    "conclusion": "horizontal distance ≈ 1.984L",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Pythagorean theorem: PM = √(L² + (1.984L)²)",
+    "conclusion": "PM = √(L² + 3.936L²)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "PM = √(4.936L²)",
+    "conclusion": "PM = √4.936 × L",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "PM = √4.936 × L",
+    "conclusion": "PM ≈ 2.22L",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

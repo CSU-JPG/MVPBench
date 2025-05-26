@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The person at point O on the cruise ship just saw the submarine passing slowly under the water in front of it, and regarded both the person and the submarine as particles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The height of the person to the water surface is h1 = 15m, and the underwater depth of the submarine is h2 = 23m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of water is n = 4/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "sin(53°) = 0.8, cos(53°) = 0.6.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height of the person to the water surface is h1 = 15m, and the underwater depth of the submarine is h2 = 23m.",
+    "conclusion": "The total vertical distance from the person to the submarine is d_vertical = h2 - h1 = 23m - 15m = 8m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total vertical distance from the person to the submarine is d_vertical = 8m.",
+    "conclusion": "The angle of incidence θ1 can be found using the tangent function: tan(θ1) = d_vertical / d_horizontal.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of water is n = 4/3.",
+    "conclusion": "Snell's law states: n1 sin(θ1) = n2 sin(θ2), where n1 is the refractive index of air (approximately 1), and n2 is the refractive index of water (n = 4/3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height is 8m and the angle of elevation is 53°.",
+    "conclusion": "Using the sine function: sin(53°) = 8m / d_horizontal.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(53°) = 0.8.",
+    "conclusion": "Solving for d_horizontal: d_horizontal = 8m / 0.8 = 10m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n sin(θ2) = sin(θ1).",
+    "conclusion": "We need to find θ1: θ1 = tan^(-1)(8m / 10m) = tan^(-1)(0.8).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ1 = tan^(-1)(0.8).",
+    "conclusion": "Using the value of θ1: sin(θ1) = 8 / sqrt(10^2 + 8^2) = 8 / sqrt(164) = 4 / sqrt(41).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n sin(θ2) = sin(θ1).",
+    "conclusion": "4/3 sin(θ2) = 4/sqrt(41).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4/3 sin(θ2) = 4/sqrt(41).",
+    "conclusion": "Solving for sin(θ2): sin(θ2) = 3/sqrt(41).",
+    "judgment": "Wrong"
+  }]

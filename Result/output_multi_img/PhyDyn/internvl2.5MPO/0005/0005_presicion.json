@@ -1,0 +1,107 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid will flow out from A, B, C, and D and pass through baffles to reach containers E or F.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid A (Yellow) starts from the top left.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid B (Cyan) begins at the top next to A.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid C (Pink) starts from the top middle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid D (Blue) begins at the top right.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid A starts from the top left and flows toward the center, diverting around the red baffle.",
+    "conclusion": "Liquid A flows downward between the green and gray baffles.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid A flows downward between the green and gray baffles.",
+    "conclusion": "Liquid A eventually flows into container F.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid B begins at the top next to A and flows directly downward between the red and gray baffles.",
+    "conclusion": "Liquid B eventually merges with the path of liquid A.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid B merges with the path of liquid A.",
+    "conclusion": "Liquid B flows into container F.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid C starts from the top middle and flows directly downward, passing between the gray and pink baffles.",
+    "conclusion": "Liquid C merges with the path of liquid B.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid C merges with the path of liquid B.",
+    "conclusion": "Liquid C flows into container F.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid D begins at the top right and flows downward, diverting around the pink baffle.",
+    "conclusion": "Liquid D merges with the path of liquid C.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid D merges with the path of liquid C.",
+    "conclusion": "Liquid D flows into container F.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Streams A, B, and C strike the white slanted baffle, mix up, and are deflected to the right; the front part of the mixed stream is caught by stream D and deflected to the left.",
+    "conclusion": "The mixture of streams A, B, and C flows into container E, while stream D flows into container F.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mixture of streams A, B, and C flows into container E, while stream D flows into container F.",
+    "conclusion": "Container E and F almost share the same amount of mixture liquid from A, B, and C, but the liquid from D is more likely to flow into container F.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

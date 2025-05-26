@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromotive force of the power supply is E = 10V, with negligible internal resistance. The capacitors C1 = C2 = 30μF, resistors R1 = 4.0Ω and R2 = 6.0Ω, and the switch S is closed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a series-parallel circuit with two resistors (R1 = 4.0Ω and R2 = 6.0Ω), two capacitors (C1 = C2 = 30μF), an electromotive force E = 10V, and a switch S. Initially, the switch is closed, and then it is opened.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The switch S is closed, connecting the two paths in series.",
+    "conclusion": "The equivalent resistance Req of the two resistors in series is Req = R1 + R2 = 4.0Ω + 6.0Ω = 10.0Ω.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitors C1 and C2 are in parallel.",
+    "conclusion": "The equivalent capacitance Ceq of the two capacitors in parallel is Ceq = C1 + C2 = 30μF + 30μF = 60μF.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The switch is closed and the entire electromotive force E = 10V is across Ceq.",
+    "conclusion": "The charge Q stored in the equivalent capacitor is Q = Ceq × E = 60μF × 10V = 600μC.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The switch is opened, and the equivalent capacitance Ceq is in series with Req.",
+    "conclusion": "The time constant τ of the circuit is τ = Req × Ceq = 10.0Ω × 60μF = 600μs.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge Q passing through R1 can be calculated using the formula Q = C × E × (1 - e^(-t/τ)), where t is the time when the switch is opened.",
+    "conclusion": "Since the question doesn't provide specific time t, we consider the time constant τ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using τ as the time, the charge passing through R1 is Q = Ceq × E × (1 - e^(-τ/τ)) = 600μC.",
+    "conclusion": "The charge passing through R1 is 0.6 C.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

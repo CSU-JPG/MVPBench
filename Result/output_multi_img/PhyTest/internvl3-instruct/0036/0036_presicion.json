@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine whether the puppy is safe, we need to calculate the stopping distance of the coach bus.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The stopping distance is the sum of the distance covered during the reaction time and the braking distance after the brakes are applied.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reaction time is given as Δt = 0.5 seconds, and the bus is traveling at a constant speed of v = 20 meters per second (m/s) during this time.",
+    "conclusion": "Distance covered during reaction time = v × Δt = 20 m/s × 0.5 s = 10 meters",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, the bus decelerates uniformly from 20 m/s to 0 m/s over a time interval of 4 seconds (from t = 0.5 s to t = 4.5 s).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus decelerates uniformly from 20 m/s to 0 m/s over a time interval of 4 seconds.",
+    "conclusion": "a = (0 m/s - 20 m/s) / 4 s = -5 m/s²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the kinematic equation v² = u² + 2as, where v = 0 m/s, u = 20 m/s, a = -5 m/s².",
+    "conclusion": "0 = (20)² + 2(-5)s, solving gives s = 40 meters",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total stopping distance = Distance during reaction time + Braking distance = 10 meters + 40 meters",
+    "conclusion": "Total stopping distance = 50 meters",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The puppy is 45 meters ahead of the bus when the driver spots it. The total stopping distance of the bus is 50 meters.",
+    "conclusion": "The puppy is not safe because the bus will not stop in time to avoid hitting it.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

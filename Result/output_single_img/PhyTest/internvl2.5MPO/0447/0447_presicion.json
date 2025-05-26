@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semicircle brick with radius R is made of a transparent material. A laser beam containing red and green light is injected perpendicularly at the center point O of the diameter MN. The laser beam shifts to the left, and only monochromatic light is emitted from the semicircle surface at an angle of 30° with respect to the incident direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n1 sin θ1 = n2 sin θ2, where n1 is the refractive index of the first medium (air, n1 = 1), n2 is the refractive index of the second medium (the transparent material), θ1 is the angle of incidence, and θ2 is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For total internal reflection to occur, the angle of incidence must be greater than the critical angle θc, where sin θc = 1/n2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle between the emitted light and the incident direction is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: 1 * sin 90° = n2 * sin 30°",
+    "conclusion": "Since sin 90° = 1 and sin 30° = 1/2, 1 = n2 * 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 = n2 * 1/2",
+    "conclusion": "n2 = 2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem states that only monochromatic light is emitted, indicating that one of the colors undergoes total internal reflection while the other refracts. The refractive index calculated (2) applies to the light that refracts.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light that undergoes total internal reflection: sin θc = 1/n2",
+    "conclusion": "If n2 = 2, sin θc = 1/2, θc = 30°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index for the light that refracts is n2 = 2. The refractive index for the light that undergoes total internal reflection must be greater than 2.",
+    "conclusion": "The refractive index of the transparent material for the two kinds of monochromatic light is: For the refracted light: n = 2, For the light undergoing total internal reflection: n > 2",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

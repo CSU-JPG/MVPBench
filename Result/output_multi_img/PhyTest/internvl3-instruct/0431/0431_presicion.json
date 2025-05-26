@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Side length of the square ABCD is a. M is the midpoint of side AB. Angle of incidence at point M is 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident angle (i) at point M is 60°. Let θ be the angle of refraction inside the prism at point M. According to Snell's Law: n1 sin i = n2 sin θ. Assuming the incident medium is air with n1 = 1.",
+    "conclusion": "sin 60° = n sin θ, √3/2 = n sin θ, sin θ = √3/(2n)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ray travels from M to N and then reflects internally at point N.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection to occur at point N on side BC, the angle of incidence at N should be greater than or equal to the critical angle (θc). The critical angle (θc) is given by: sin θc = 1/n.",
+    "conclusion": "The critical angle condition is established.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the prism is made of a material with refractive index n, and the angles at M must add up to 90° (due to the square angle).",
+    "conclusion": "θ = 30°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since sin 30° = 1/2, we can solve for n: √3/(2n) = 1/2.",
+    "conclusion": "n = √3",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray reflects at N and exits the prism at point P. The geometry of the square tells us that the distance PC is: PC = a - a/2.",
+    "conclusion": "PC = a/2",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

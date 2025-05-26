@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rails AB and CD are placed vertically, and the conductor rod MN is moving downwards with a constant velocity v. A uniform magnetic field of magnitude B is directed perpendicularly into the plane of the rails. The length of the rod MN is equal to the distance between the rails, which is l.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the rod is moving at a constant velocity, the net force acting on it is zero.",
+    "conclusion": "The forces acting on the rod are the gravitational force acting downwards and the magnetic force acting upwards. The gravitational force is F_g = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the rod moves downwards with velocity v perpendicular to the magnetic field B, an electromotive force (EMF) is induced in the rod.",
+    "conclusion": "The magnitude of the induced EMF is ε = Blv. The direction of the induced EMF is from M to N as determined by the right-hand rule or the formula E = v × B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of the rod per unit length is r, and the length of the rod is l.",
+    "conclusion": "The resistance of the rod is R_MN = rl. The resistance of the rails is negligible. Thus, the total resistance of the circuit is R = R_MN = rl.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Ohm's law, the current I flowing through the circuit is given by I = ε/R.",
+    "conclusion": "I = Blv/rl = Bv/r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force on the rod is given by F_m = IlB.",
+    "conclusion": "The direction of the magnetic force is upwards, opposing the motion. As determined in the thought process, with current from M to N and magnetic field into the plane, the force is upwards.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the rod is moving at a constant speed, the net force is zero.",
+    "conclusion": "Therefore, the upward magnetic force is equal to the downward gravitational force: F_m = F_g. IlB = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the expression for the current I from Step 4 into the force balance equation: (Bv/r)lB = mg.",
+    "conclusion": "B^2lv/r = mg. Now, solve for v: v = mgr/B^2l.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity v of the conductor rod MN when it is moving at a constant speed is mgr/B^2l.",
+    "conclusion": "The final answer is boxed{mgr/B^2l}.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

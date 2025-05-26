@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the induced electromotive force (EMF) and the current in the loop due to the changing magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF in a conductor due to a changing magnetic field is given by Faraday's law of induction: \\( \\mathcal{E} = -\\frac{d\\Phi_B}{dt} \\) where \\( \\Phi_B \\) is the magnetic flux through the area of the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux \\( \\Phi_B \\) through the loop is given by \\( \\Phi_B = B \\cdot A \\) where \\( B \\) is the magnetic field and \\( A \\) is the area of the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Half of the square wire frame is in the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Half of the square wire frame is in the magnetic field.",
+    "conclusion": "The area \\( A \\) is \\( \\frac{1}{2} L^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area \\( A \\) is \\( \\frac{1}{2} L^2 \\).",
+    "conclusion": "The magnetic flux is \\( \\Phi_B = B \\cdot \\frac{1}{2} L^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field is changing at a rate of \\( k \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is changing at a rate of \\( k \\).",
+    "conclusion": "\\( \\frac{dB}{dt} = -k \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\frac{dB}{dt} = -k \\).",
+    "conclusion": "\\( \\frac{d\\Phi_B}{dt} = \\frac{1}{2} L^2 (-k) = -\\frac{1}{2} k L^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\frac{d\\Phi_B}{dt} = -\\frac{1}{2} k L^2 \\).",
+    "conclusion": "The induced EMF is \\( \\mathcal{E} = \\frac{1}{2} k L^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF is also equal to the voltage across the capacitor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The current \\( I \\) in the loop is given by Ohm's law: \\( I = \\frac{\\mathcal{E}}{R} \\) where \\( R \\) is the resistance of the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem does not provide the resistance \\( R \\).",
+    "conclusion": "The current is \\( I = \\frac{k L^2}{2R} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the capacitor is fully charged, there is no current in the circuit.",
+    "conclusion": "The current in the loop is 0.",
+    "judgment": "Match"
+  }]

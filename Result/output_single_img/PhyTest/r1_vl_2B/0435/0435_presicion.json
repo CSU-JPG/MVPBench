@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the material is given as sqrt(3), and the angle of incidence is 120 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the material is sqrt(3), and the angle of incidence is 120 degrees.",
+    "conclusion": "The angle of reflection is 60 degrees because the angles of incidence and reflection are complementary.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index is sqrt(3).",
+    "conclusion": "The ratio of the refracted light to the incident light is sqrt(3).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between the people in the tank is 18 cm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the people in the tank is 18 cm.",
+    "conclusion": "The distance from the surface to the point where the light hits the material is the sum of the thickness of the tank wall and the distance between the people.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The thickness of the tank wall is 18 cm, and the distance between the people is 18 cm.",
+    "conclusion": "The total distance is 18 + 18 = 36 cm.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence is 120 degrees.",
+    "conclusion": "The angle of reflection is 60 degrees.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance between the people is 36 cm, and the distance from the surface to the point where the light hits the material is 18 * sqrt(3) cm.",
+    "conclusion": "The distance between the people is 36 - 18 * sqrt(3) cm.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "36 - 18 * sqrt(3) cm simplifies to 36 - 18 * 1.732 cm.",
+    "conclusion": "This equals 36 - 30.192 cm.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "36 - 30.192 cm.",
+    "conclusion": "The final distance between the people is approximately 5.808 cm.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

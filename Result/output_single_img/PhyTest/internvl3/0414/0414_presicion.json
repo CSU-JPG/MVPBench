@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the maximum distance from the optical axis for the incident ray that can emerge from the spherical surface of the hemisphere. This involves understanding the principles of refraction and the critical angle for total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Radius of the hemisphere, R. Refractive index of the glass, n = 1.5. The light is incident vertically on the base of the hemisphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc is the angle of incidence in the glass at which the refracted angle is 90°. Beyond this angle, total internal reflection occurs.",
+    "conclusion": "The critical angle can be calculated using Snell's Law: n sin θc = sin 90°",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n sin θc = sin 90°",
+    "conclusion": "sin θc = 1/n = 1/1.5 = 2/3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θc = 2/3",
+    "conclusion": "θc = sin⁻¹(2/3)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum distance from the optical axis corresponds to the point where the light ray hits the spherical surface at the critical angle.",
+    "conclusion": "Consider a light ray that strikes the spherical surface at a distance d from the optical axis. This forms a right triangle with the radius R and the distance d.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the radius and the normal at the point of incidence is θc.",
+    "conclusion": "Using trigonometry in the right triangle: sin θc = d/R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θc = d/R",
+    "conclusion": "d = R sin θc",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = R sin θc and sin θc = 2/3",
+    "conclusion": "d = R × 2/3 = 2R/3",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

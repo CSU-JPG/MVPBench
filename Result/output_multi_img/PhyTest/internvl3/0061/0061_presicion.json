@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the magnitude of the external force F applied to slider B, we need to analyze the forces acting on both sliders A and B along the inclined plane. We'll consider the conditions at the verge of motion, where the maximum static friction is equal to the kinetic friction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Two sliders A and B are connected by a rope and placed on an inclined plane with an angle of 37 degrees. A constant horizontal force F is applied to slider B to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coefficient of kinetic friction between the sliders and the inclined plane is 0.5, and the maximum static friction is equal to the kinetic friction. It is known that sin 37 degrees = 0.6, and the gravitational acceleration is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravitational force component down the incline: mg sin theta, Normal force: N_A, Frictional force up the incline: f_A = mu N_A, Tension in the rope up the incline: T",
+    "conclusion": "For equilibrium along the incline: T = mg sin theta + f_A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute f_A = mu N_A",
+    "conclusion": "T = mg sin theta + mu N_A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For equilibrium perpendicular to the incline: N_A = mg cos theta",
+    "conclusion": "Substitute mu = 0.5 and sin 37 degrees = 0.6: N_A = mg cos 37 degrees = mg * 0.8",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute N_A = mg * 0.8 into T = mg sin theta + mu N_A",
+    "conclusion": "T = mg * 0.6 + 0.5 * mg * 0.8",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T = mg * 0.6 + 0.5 * mg * 0.8",
+    "conclusion": "T = mg (0.6 + 0.4) = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravitational force component down the incline: mg sin theta, Normal force: N_B, Frictional force down the incline: f_B = mu N_B, Tension in the rope down the incline: T' = T, External horizontal force: F",
+    "conclusion": "For equilibrium along the incline: F cos theta = mg sin theta + T + f_B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute f_B = mu N_B",
+    "conclusion": "F cos theta = mg sin theta + T + mu N_B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For equilibrium perpendicular to the incline: N_B = mg cos theta + F sin theta",
+    "conclusion": "Substitute mu = 0.5, sin 37 degrees = 0.6, and cos 37 degrees = 0.8: N_B = mg * 0.8 + F * 0.6",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute N_B = mg * 0.8 + F * 0.6 into F cos theta = mg sin theta + T + mu N_B",
+    "conclusion": "F * 0.8 = mg * 0.6 + mg + 0.5 (mg * 0.8 + F * 0.6)",
+    "judgment": "Match"
+  }

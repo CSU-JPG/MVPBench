@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to calculate the instantaneous induced current when the wire frame rotates through an angle of 60° and the average induced electromotive force (emf) during this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux ΦB through the wire frame is given by: ΦB = B ⋅ S ⋅ cosθ, where B is the magnetic induction intensity, S is the area of the wire frame, θ is the angle between the normal to the plane of the wire frame and the direction of the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initially, when the wire frame is in the position shown in the figure, the normal to the plane of the wire frame is parallel to the magnetic field. Thus, θ = 0°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 0°",
+    "conclusion": "The initial flux is: ΦB,initial = B ⋅ S ⋅ cos(0°) = B ⋅ S",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When the wire frame rotates through an angle of 60°, the normal to the plane of the wire frame makes an angle of 60° with the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 60°",
+    "conclusion": "The flux at this position is: ΦB,final = B ⋅ S ⋅ cos(60°) = B ⋅ S ⋅ 1/2 = B ⋅ S/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's law of electromagnetic induction states that the induced emf (ℰ) is equal to the negative rate of change of magnetic flux: ℰ = -dΦB/dt",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle θ changes with time as: θ = ωt, where ω is the angular velocity of the wire frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = ωt",
+    "conclusion": "Substituting θ = ωt into the expression for flux: ΦB = B ⋅ S ⋅ cos(ωt)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΦB = B ⋅ S ⋅ cos(ωt)",
+    "conclusion": "The rate of change of flux is: dΦB/dt = d/dt (B ⋅ S ⋅ cos(ωt)) = -B ⋅ S ⋅ ω ⋅ sin(ωt)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦB/dt = -B ⋅ S ⋅ ω ⋅ sin(ωt)",
+    "conclusion": "Thus, the induced emf is: ℰ = B ⋅ S ⋅ ω ⋅ sin(ωt)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced current I is related to the induced emf by Ohm's law: I = ℰ/R, where R is the resistance of the wire frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ℰ = B ⋅ S ⋅ ω ⋅ sin(ωt)",
+    "conclusion": "Substituting the expression for ℰ: I = (B ⋅ S ⋅ ω ⋅ sin(ωt))/R",
+    "judgment": "Match"
+  }]

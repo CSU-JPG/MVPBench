@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a ray of light entering a prism shaped like a square, and the task is to find the refractive index of the prism and the distance between points P and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The prism is a square ABCD with side length A. Point M is the midpoint of side AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A ray enters the prism at point M with an incident angle of 60 degrees, undergoes total reflection at point N on side BC, and exits the prism at point P on side CD.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states that n1 * sin(theta1) = n2 * sin(theta2), where n1 is the refractive index of the first medium, theta1 is the incident angle, n2 is the refractive index of the prism, and theta2 is the refracted angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 * sin(theta1) = n2 * sin(theta2)",
+    "conclusion": "At point M: 1 * sin(60) = n2 * sin(theta2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(60) = √3/2",
+    "conclusion": "√3/2 = n2 * sin(theta2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For total internal reflection, the angle of incidence must be greater than or equal to the critical angle, where sin(theta_c) = n1 / n2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total internal reflection condition",
+    "conclusion": "At point N, the angle of incidence must be greater than theta_c for total internal reflection to occur.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Coordinate system setup: A at (0, A), B at (A, A), C at (A, 0), D at (0, 0), M at (A/2, A).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law and coordinate setup",
+    "conclusion": "The ray enters at M with an incident angle of 60 degrees, refracts into the prism, and then reflects totally at N.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Path of the ray and total reflection",
+    "conclusion": "The ray inside the prism goes from M (A/2, A) to N (x, A).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total reflection and refracted path",
+    "conclusion": "The refractive index n2 can be found using the condition for total internal reflection.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Geometric relationship and total reflection",
+    "conclusion": "PC = (√3 - 1)/2 * A",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

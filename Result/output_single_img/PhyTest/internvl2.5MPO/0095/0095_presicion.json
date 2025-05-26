@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A uniform electric field is formed between two parallel metal plates A and B carrying opposite charges. An electron is injected into the electric field along the central line perpendicular to the direction of the electric field with an initial velocity v0 = 4 × 10^6 m/s from point O. When the electron exits the electric field at point C on the right edge, its velocity direction forms a 30° angle with the direction of v0. The charge of the electron is e = 1.6 × 10^-19 C, and the mass of the electron is m = 0.91 × 10^-30 kg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electron's velocity at point C forms a 30° angle with the initial velocity v0.",
+    "conclusion": "The horizontal component of the velocity at point C is vx = v0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electron's velocity at point C forms a 30° angle with the initial velocity v0.",
+    "conclusion": "The vertical component of the velocity at point C is vy = v0 tan(30°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given v0 = 4 × 10^6 m/s and tan(30°) = 1/√3.",
+    "conclusion": "vy = 4 × 10^6 × 1/√3 ≈ 2.31 × 10^6 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal component of the velocity at point C is vx = v0 and the vertical component is vy ≈ 2.31 × 10^6 m/s.",
+    "conclusion": "The magnitude of the velocity at point C is vC = √(vx^2 + vy^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "vx = 4 × 10^6 m/s and vy ≈ 2.31 × 10^6 m/s.",
+    "conclusion": "vC = √((4 × 10^6)^2 + (2.31 × 10^6)^2) ≈ 4.62 × 10^6 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the velocity at point C is vC ≈ 4.62 × 10^6 m/s.",
+    "conclusion": "The kinetic energy K at point C is given by K = 1/2 m vC^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m = 0.91 × 10^-30 kg and vC ≈ 4.62 × 10^6 m/s.",
+    "conclusion": "K = 1/2 × 0.91 × 10^-30 × (4.62 × 10^6)^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "K = 1/2 × 0.91 × 10^-30 × 21.3444 × 10^12.",
+    "conclusion": "K = 0.455 × 21.3444 × 10^-18.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "K = 0.455 × 21.3444 × 10^-18.",
+    "conclusion": "K ≈ 9.72 × 10^-18 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

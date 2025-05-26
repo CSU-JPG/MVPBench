@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the maximum distance from the optical axis for the incident ray corresponding to the emerging light, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light will emerge from the surface if the angle of incidence \\( \\theta_i \\) inside the glass is less than the critical angle for total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle \\( \\theta_c \\) is given by: \\( \\sin \\theta_c = \\frac{1}{n} \\) where \\( n \\) is the refractive index of the glass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\( \\theta_c \\) is given by: \\( \\sin \\theta_c = \\frac{1}{n} \\) where \\( n \\) is the refractive index of the glass.",
+    "conclusion": "Given \\( n = 1.5 \\), \\( \\sin \\theta_c = \\frac{1}{1.5} = \\frac{2}{3} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\sin \\theta_c = \\frac{2}{3} \\)",
+    "conclusion": "\\( \\theta_c = \\arcsin\\left(\\frac{2}{3}\\right) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the given geometry, the angle \\( \\theta_i \\) is related to the angle \\( \\theta_c \\) by the equation: \\( \\theta_i + \\theta_c = 90^\\circ \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\theta_i + \\theta_c = 90^\\circ \\)",
+    "conclusion": "\\( \\theta_i = 90^\\circ - \\theta_c \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance \\( d \\) from the optical axis to the point of incidence on the spherical surface can be found using the right triangle formed by the radius \\( R \\), the distance \\( d \\), and the angle \\( \\theta_i \\): \\( \\sin \\theta_i = \\frac{d}{R} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\sin \\theta_i = \\frac{d}{R} \\)",
+    "conclusion": "\\( \\sin(90^\\circ - \\theta_c) = \\cos \\theta_c = \\frac{d}{R} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\cos \\theta_c = \\sqrt{1 - \\sin^2 \\theta_c} \\)",
+    "conclusion": "\\( \\cos \\theta_c = \\sqrt{1 - \\left(\\frac{2}{3}\\right)^2} = \\sqrt{1 - \\frac{4}{9}} = \\sqrt{\\frac{5}{9}} = \\frac{\\sqrt{5}}{3} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\frac{d}{R} = \\frac{\\sqrt{5}}{3} \\)",
+    "conclusion": "Solving for \\( d \\), \\( d = \\frac{\\sqrt{5}}{3} R \\)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to calculate the area of the light-emitting region on the water surface for the two light bulbs. The key is to use the principles of refraction and geometry.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light emitted by the bulbs undergoes refraction at the water surface. According to Snell's law: n sin θ = n_air sin φ",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "n is the refractive index of water for the specific wavelength of light, θ is the angle of incidence inside the water, n_air is the refractive index of air (approximately 1), φ is the angle of refraction in air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light emitted by the bulbs forms a cone of light inside the water, and the refracted light forms a circular area on the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a light bulb at depth h, the radius r of the circular area on the water surface is determined by the geometry of the cone of light and the refraction.",
+    "conclusion": "r = h tan φ",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From Snell's law, sin φ = n sin θ / n_air. Since n_air ≈ 1, this simplifies to sin φ = n sin θ.",
+    "conclusion": "For small angles, sin φ ≈ tan φ. Thus, tan φ ≈ n sin θ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting tan φ ≈ n sin θ into the expression for r.",
+    "conclusion": "r ≈ h n sin θ",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area A of the circular region on the water surface is given by A = π r^2.",
+    "conclusion": "A = π (h n sin θ)^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the red light bulb at depth h_1, the refractive index is n_1. The area of the circular region formed on the water surface is A_red = π (h_1 n_1 sin θ)^2.",
+    "conclusion": "For the yellow light bulb at depth h_2, the refractive index is n_2. The area of the circular region formed on the water surface is A_yellow = π (h_2 n_2 sin θ)^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem states that the areas formed by the two light bulbs are equal: A_red = A_yellow.",
+    "conclusion": "π (h_1 n_1 sin θ)^2 = π (h_2 n_2 sin θ)^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cancel π and (sin θ)^2 (since θ is the same for both bulbs).",
+    "conclusion": "(h_1 n_1)^2 = (h_2 n_2)^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Taking the square root of both sides.",
+    "conclusion": "h_1 n_1 = h_2 n_2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry, the area of the circular region formed on the water surface is A = π r^2 = π (h n sin θ)^2.",
+    "conclusion": "Using the relationship h_1 n_1 = h_2 n_2, the area is the same for both bulbs.",
+    "judgment": "Reasonable"
+  }]

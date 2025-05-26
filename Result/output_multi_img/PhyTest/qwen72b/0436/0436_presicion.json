@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the length of PM after the light beam enters the rectangular prism and refracts according to Snell's Law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cross section ABCD of a transparent homogeneous optical element is a rectangle with a length of 2L and a width of L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle of incidence α = 37° and the refractive index n = 4/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin θ1 = n2 sin θ2, where n1 = 1 (air), n2 = 4/3 (the medium), θ1 = 90° - α, and θ2 = θ.",
+    "conclusion": "Calculate θ1: θ1 = 90° - 37° = 53°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: 1 * sin 53° = (4/3) * sin θ.",
+    "conclusion": "sin θ = (3/4) * sin 53°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Knowing sin 53° = 0.8.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ = (3/4) * 0.8.",
+    "conclusion": "sin θ = 0.6, therefore θ = sin⁻¹(0.6) ≈ 36.87°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray travels from P to M inside the prism. The vertical distance from P to M is L (the height of the rectangle).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry: tan θ = L / horizontal distance.",
+    "conclusion": "horizontal distance = L / tan 36.87°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Knowing tan 36.87° = 0.75.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "horizontal distance = L / 0.75.",
+    "conclusion": "horizontal distance = 4L/3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since P is at the midpoint of AB, the initial horizontal position of P from D is L.",
+    "conclusion": "The total horizontal distance from D to M is L + 4L/3 = 7L/3.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "PM is the hypotenuse of a right triangle with vertical distance L and horizontal distance 4L/3.",
+    "conclusion": "PM = √((4L/3)² + L²) = √(16L²/9 + 9L²/9) = √(25L²/9) = 5L/3.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the unknowns: Tension in AC, CD and DB. Horizontal force F applied at D (toward the right). Angle θ that ropes AC and BD make with the ceiling when CD is horizontal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "All three ropes have the same length L, so the projections on the ceiling of AC and BD must each be length L cos θ. The ceiling points A and B are 2 L apart.",
+    "conclusion": "2 L cos θ + L = 2 L (centre horizontal span CD = L) giving cos θ = ½ and therefore θ = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equilibrium of point C: Vertical forces: T_AC sin θ = m g.",
+    "conclusion": "T_AC sin θ = m g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equilibrium of point C: Horizontal forces: T_AC cos θ = T_CD.",
+    "conclusion": "T_AC cos θ = T_CD.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equilibrium of point D: Horizontal forces: F = T_DB cos θ − T_CD.",
+    "conclusion": "F = T_DB cos θ − T_CD.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equilibrium of point D: Vertical forces: T_DB sin θ = 0 → T_DB acts purely horizontally through D (because CD is horizontal).",
+    "conclusion": "T_DB acts purely horizontally through D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_DB = T_CD /cos θ from geometry of the joint D. Using T_AC cos θ = T_CD: T_DB = (T_AC cos θ)/cos θ = T_AC.",
+    "conclusion": "T_DB = T_AC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From T_AC sin θ = m g: T_AC = m g /sin θ = m g /(√3/2) = 2m g/√3.",
+    "conclusion": "T_AC = 2m g/√3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_CD = T_AC cos θ = (2m g/√3)(½) = m g/√3.",
+    "conclusion": "T_CD = m g/√3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using F = T_DB cos θ − T_CD and T_DB = T_AC: F = T_CD − T_CD = 0.",
+    "conclusion": "F = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry dictated by equal-length ropes forces T_DB to supply exactly the horizontal component required to balance T_CD, so no additional external horizontal force is necessary at D.",
+    "conclusion": "Therefore the minimum force that must be externally applied at D is 0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

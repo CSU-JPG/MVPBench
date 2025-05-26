@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Understanding the problem involves a coil rotating in a magnetic field to find the change in magnetic flux.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil has an area of 0.4 m² and is in a uniform magnetic field of 0.1 Tesla directed along the positive x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil rotates 60 degrees around the z-axis from its initial position.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic flux (Φ) is given by the formula: Φ = B · A · cos θ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "B is the magnetic field strength, A is the area of the loop, θ is the angle between the magnetic field and the normal to the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil is initially positioned with its normal vector at an angle of 90 degrees from the x-axis.",
+    "conclusion": "The initial angle θ_i between the normal and the magnetic field is 90 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil rotates 60 degrees around the z-axis.",
+    "conclusion": "The normal vector rotates by 60 degrees around the z-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial normal vector is along the z-axis: (0, 0, 1).",
+    "conclusion": "Rotating by 60 degrees around the z-axis affects the x and y components.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The new normal vector after rotation is calculated using vector transformation.",
+    "conclusion": "The new normal vector is (sin 60°, cos 60°, 1).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial magnetic flux Φ_1 is 0 because the plane of the coil is parallel to the magnetic field.",
+    "conclusion": "Φ_1 = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After rotating 60° downward, the magnetic flux is calculated using Φ_2 = B · A · sin 60°.",
+    "conclusion": "Φ_2 = 0.1 × 0.4 × (√3/2) Wb ≈ 3.46 × 10^{-2} Wb",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in magnetic flux is ΔΦ = Φ_2 - Φ_1.",
+    "conclusion": "ΔΦ = 3.46 × 10^{-2} Wb",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

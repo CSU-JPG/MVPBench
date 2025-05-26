@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine when particles A and B are the farthest apart, we need to analyze the positions of both particles as functions of time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The position of each particle can be found by integrating the velocity with respect to time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For particle A, from t = 0 to t = t_0: v_A(t) = 2v_0 t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For particle A, from t = t_0 to t = 3t_0: v_A(t) = 4v_0 t_0 - 2v_0 t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For particle A, from t = 3t_0 to t = 6t_0: v_A(t) = 8v_0 t_0 - 2v_0 t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For particle B, from t = 0 to t = 5t_0: v_B(t) = (v_0/5) t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For particle B, from t = 5t_0 to t = 6t_0: v_B(t) = v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity functions for particles A and B.",
+    "conclusion": "Integrate the velocity functions to find the position functions for particle A from t = 0 to t = t_0: s_A(t) = v_0 t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity functions for particles A and B.",
+    "conclusion": "Integrate the velocity functions to find the position functions for particle A from t = t_0 to t = 3t_0: s_A(t) = v_0 t_0^2 + 6v_0 t_0 t - v_0 t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity functions for particles A and B.",
+    "conclusion": "Integrate the velocity functions to find the position functions for particle A from t = 3t_0 to t = 6t_0: s_A(t) = v_0 9t_0^2 + 14v_0 t_0 t - v_0 t^2 + 10v_0 t_0^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity functions for particles A and B.",
+    "conclusion": "Integrate the velocity functions to find the position functions for particle B from t = 0 to t = 5t_0: s_B(t) = (v_0/10) t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity functions for particles A and B.",
+    "conclusion": "Integrate the velocity functions to find the position functions for particle B from t = 5t_0 to t = 6t_0: s_B(t) = (5v_0 t_0^2)/2 + v_0 t - 5v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Position functions for particles A and B.",
+    "conclusion": "The distance between A and B at any time t is given by |s_A(t) - s_B(t)|.",
+    "judgment": "Reasonable"
+  }]

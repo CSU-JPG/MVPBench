@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the exit velocity of the bullet, we can use the principles of conservation of momentum and kinematics.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Before the collision, the bullet has a velocity v_b and the ping-pong ball is at rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After the collision, the bullet and the ping-pong ball move together with a common velocity v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of momentum",
+    "conclusion": "m v_b = (m + M) v",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m v_b = (m + M) v",
+    "conclusion": "v = m v_b / (m + M)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ping-pong ball and bullet combination falls from a height h and travels a horizontal distance s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation for free fall",
+    "conclusion": "h = (1/2) g t^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = (1/2) g t^2",
+    "conclusion": "t = sqrt(2h/g)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "s = v t",
+    "conclusion": "s = (m v_b / (m + M)) sqrt(2h/g)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "s = (m v_b / (m + M)) sqrt(2h/g)",
+    "conclusion": "v_b = s (m + M) / m sqrt(g/(2h))",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

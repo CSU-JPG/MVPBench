@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A metal rod slides along horizontal rails from position ab to position a'b'. The rod has resistance R. The rails have negligible resistance. The rod moves at speed v₁ in one case and v₂ in another, with v₁:v₂ = 1:2. The crossed (×) symbols indicate a uniform magnetic field pointing into the page.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When a conducting rod moves through a magnetic field, an EMF is induced according to Faraday's law. For a rod of length L moving with velocity v perpendicular to a magnetic field B: EMF = BLv.",
+    "conclusion": "EMF₁ = BLv₁ and EMF₂ = BLv₂",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the circuit will be determined by the induced EMF and the total resistance (which is just R since the rails have negligible resistance): I = EMF/R.",
+    "conclusion": "I₁ = BLv₁/R and I₂ = BLv₂/R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I₁ = BLv₁/R and I₂ = BLv₂/R",
+    "conclusion": "I₁/I₂ = (BLv₁/R)/(BLv₂/R) = v₁/v₂ = 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The external force needed to maintain the uniform motion must balance the magnetic force on the rod. The magnetic force is: F = BIL. The power of this external force is: P = Fv = BILv.",
+    "conclusion": "P₁ = BLI₁v₁ = BL(BLv₁/R)v₁ = B²L²v₁²/R and P₂ = BLI₂v₂ = BL(BLv₂/R)v₂ = B²L²v₂²/R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P₁ = B²L²v₁²/R and P₂ = B²L²v₂²/R",
+    "conclusion": "P₁/P₂ = (B²L²v₁²/R)/(B²L²v₂²/R) = v₁²/v₂² = (1/2)² = 1/4",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I₁/I₂ = 1/2 and P₁/P₂ = 1/4",
+    "conclusion": "Ratio of loop currents: I₁:I₂ = 1:2. Ratio of powers of the external forces: P₁:P₂ = 1:4",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

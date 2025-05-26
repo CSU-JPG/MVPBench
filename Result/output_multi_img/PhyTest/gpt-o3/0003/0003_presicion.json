@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Velocity inversely proportional to displacement means v = k / x, where k is a constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use data at B (x = 2 m, v = 2 m/s)",
+    "conclusion": "k = v * x = 2 * 2 = 4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "k = 4",
+    "conclusion": "Therefore v = 4 / x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At A the velocity is 4 m/s, so 4 = 4 / xₐ",
+    "conclusion": "xₐ = 1 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "xₐ = 1 m, x_B = 2 m",
+    "conclusion": "Hence A is 1 m from O, B is 2 m from O.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Travel time from A to B: t = ∫₁² (dx / v) = ∫₁² (dx / (4 / x)) = (1/4)∫₁² x dx",
+    "conclusion": "(1/4)·½(2² − 1²) = (1/8)·3 = 3/8 s = 0.375 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The calculated travel time is 3/8 s",
+    "conclusion": "Therefore, the detector takes 0.375 seconds to move from A to B.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

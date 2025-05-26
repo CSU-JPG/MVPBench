@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to calculate the electromotive force (EMF) induced in the wire frame due to the changing magnetic field. The EMF is related to the rate of change of magnetic flux through the loop. We will use Faraday's law of electromagnetic induction, which states: EMF = -dΦ/dt where Φ is the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame is a square with a side length of 0.2 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is a square with a side length of 0.2 m.",
+    "conclusion": "Half of the square is in the magnetic field, so the area A of the loop in the magnetic field is half the area of the square: A = 1/2 × (0.2 m)^2 = 1/2 × 0.04 m^2 = 0.02 m^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux Φ through the loop is given by: Φ = B × A where B is the magnetic field strength.",
+    "conclusion": "The rate of change of magnetic flux is: dΦ/dt = A × dB/dt",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ/dt = A × dB/dt and Given that dB/dt = 10 T/s",
+    "conclusion": "dΦ/dt = 0.02 m^2 × 10 T/s = 0.2 Wb/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's law, the magnitude of the EMF is: EMF = |dΦ/dt| = 0.2 V",
+    "conclusion": "The EMF induced in the wire frame is 0.2 V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is directed into the paper, and it is increasing. According to Lenz's law, the induced EMF will act in such a way as to oppose the change in magnetic flux.",
+    "conclusion": "The induced current will create a magnetic field out of the paper in the region within the wire frame.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced current will create a magnetic field out of the paper in the region within the wire frame.",
+    "conclusion": "The induced EMF will cause a current to flow from point a to point b along the wire frame.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between points a and b is equal to the magnitude of the induced EMF, which is 0.2 V.",
+    "conclusion": "The potential at point a is higher than at point b due to the direction of the induced current.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between points a and b is equal to the magnitude of the induced EMF, which is 0.2 V.",
+    "conclusion": "The potential difference between points a and b is 0.2 V, with point a being at a higher potential than point b.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

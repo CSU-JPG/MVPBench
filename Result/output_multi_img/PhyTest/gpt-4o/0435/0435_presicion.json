@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The tank wall has a refractive index of \\(\\sqrt{3}\\). The largest range of external angles visible through the material is \\(120^\\circ\\). We need to find the distance between the people inside the tank.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law relates the angles of incidence and refraction to the refractive indices of the two media.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law is given by: \\(n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2\\). Here, \\(n_1 = 1\\) (refractive index of air), \\(n_2 = \\sqrt{3}\\) (refractive index of the tank wall), \\(\\theta_1\\) is the angle of incidence, and \\(\\theta_2\\) is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\(\\theta_c\\) is the angle of incidence for which the angle of refraction is \\(90^\\circ\\). It is given by: \\(\\sin \\theta_c = \\frac{n_2}{n_1} = \\sqrt{3}\\).",
+    "conclusion": "However, \\(\\sin \\theta_c\\) cannot exceed 1, indicating that total internal reflection occurs when \\(\\theta_1\\) is greater than the critical angle. Thus, \\(\\theta_c\\) is not directly applicable here.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The range of external angles visible is \\(120^\\circ\\), which means the light can enter the tank at angles from \\(-60^\\circ\\) to \\(60^\\circ\\) relative to the normal.",
+    "conclusion": "For maximum visibility, \\(\\theta_1\\) should be \\(60^\\circ\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For \\(\\theta_1 = 60^\\circ\\), use Snell's Law: \\(\\sin \\theta_2 = \\frac{\\sin 60^\\circ}{\\sqrt{3}} = \\frac{\\sqrt{3}/2}{\\sqrt{3}} = \\frac{1}{2}\\).",
+    "conclusion": "Therefore, \\(\\theta_2 = 30^\\circ\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry of the problem suggests that the distance between the people inside the tank corresponds to the horizontal distance covered by the refracted light ray.",
+    "conclusion": "Using trigonometry, the horizontal distance \\(d\\) can be calculated as: \\(d = 18 \\, \\text{cm} \\times \\tan \\theta_2 = 18 \\, \\text{cm} \\times \\tan 30^\\circ = 18 \\, \\text{cm} \\times \\frac{1}{\\sqrt{3}}\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying \\(d = \\frac{18}{\\sqrt{3}}\\).",
+    "conclusion": "The distance between the people inside the tank is approximately \\(10.39 \\, \\text{cm}\\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

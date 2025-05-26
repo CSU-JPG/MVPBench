@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid will flow out from A, B, C, and D and pass through baffles to reach containers E, F, or G.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "There are four streams of liquid: cyan (A), orange (B), yellow (C), and pink (D).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "There are slanted baffles in the image: grey, green, pink, and black.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "There are three containers at the bottom labeled E (red), F (grey), and G (orange).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each colored stream meets the first baffle it touches and follows the slope of that baffle.",
+    "conclusion": "Streams will be deflected by baffles until they drop into one of the containers E, F, or G.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The cyan stream from A rides the long grey baffle down to the green one, which sends it leftward.",
+    "conclusion": "The cyan stream from A falls into the gap above container E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The orange stream from B lands on the long grey baffle, continues downward along the long pink baffle and then the short black baffle.",
+    "conclusion": "The orange stream from B falls into the gap above container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The yellow stream from C lands on the grey baffle and merges with the orange stream from B.",
+    "conclusion": "The yellow stream from C follows the same route as the orange stream and falls into container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pink stream from D reaches no baffle until it hits the bottom and falls straight down.",
+    "conclusion": "The pink stream from D falls into the gap above container G.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Streams A, B, C, and D have been traced to their respective containers.",
+    "conclusion": "The lower containers that receive fluid are: E from A, F from both B and C, and G from D.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A uniform electric field with a horizontal direction is present. A small positively charged ball with mass m starts from point O with an initial velocity of magnitude v₀. Under the action of the electric force and gravity, it moves along a straight line at an angle θ to the opposite direction of the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem asks for the difference in electric potential energy of the small ball when it reaches the highest point compared to its electric potential energy at point O.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The electric field is directed horizontally to the left in the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The initial velocity v₀ of the ball is directed at an angle θ above the horizontal to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Electric force on the ball is F⃗_e = q E⃗, directed opposite to the particle’s trajectory.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Gravitational force on the ball is mg downward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of velocity becomes zero at the highest point, but the horizontal component continues.",
+    "conclusion": "At the highest point, there are no vertical forces acting on the ball other than gravity.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Energy conservation between O and the highest point gives ½ m v₀² = ½ m v_h² + m g h + (U_h – U_O).",
+    "conclusion": "The energy conservation equation relates initial kinetic energy, kinetic energy at the highest point, gravitational potential energy, and electric potential energy difference.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the electric force equals the change in the kinetic energy of the horizontal motion: q E Δx = ½ m v_h² – ½ m (v₀ cos θ)².",
+    "conclusion": "The work-energy principle relates the work done by the electric force to the change in horizontal kinetic energy.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using v₀ sin θ as the initial vertical speed and the vertical acceleration –g, 0 = (v₀ sin θ)² – 2 g h ⟹ h = (v₀² sin² θ)/(2 g).",
+    "conclusion": "The vertical rise h is determined using kinematic equations.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Insert h from step 4 and eliminate v_h using step 3 inside step 2.",
+    "conclusion": "Substituting h and eliminating v_h simplifies the energy conservation equation.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After cancellation, the gravitational terms drop out and we find U_h – U_O = –q E (v₀ cos θ)² /(2 E) + q E Δx = –q E Δx = –q E (v₀² cos² θ)/(2 m a_e), where a_e = qE/m.",
+    "conclusion": "The difference in electric potential energy is expressed in terms of q, E, v₀, θ, and m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Difference in electric potential energy (highest point minus at O): ΔU = – qE · (v₀² cos² θ) / (2 g + 2 qE/m sin² θ).",
+    "conclusion": "The expression for ΔU is derived using the previous steps.",
+    "judgment": "Match"
+  }]

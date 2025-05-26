@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the work done by the gas on the surroundings during the cyclic process A→B→C→A, we need to calculate the work done in each segment of the cycle and then sum these values.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Process A→B is isochoric (constant volume) with V_A = V_B = 2 L, P_A = 1 × 10^5 Pa, P_B = 4 × 10^5 Pa.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isochoric process, the work done W is given by W_{A→B} = ∫ P dV. Since dV = 0, W_{A→B} = 0.",
+    "conclusion": "W_{A→B} = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Process B→C is isobaric (constant pressure) with P_B = P_C = 4 × 10^5 Pa, V_B = 2 L, V_C = 5 L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isobaric process, the work done W is given by W_{B→C} = P ΔV = P (V_C - V_B).",
+    "conclusion": "W_{B→C} = 4 × 10^5 Pa × 3 L = 1.2 × 10^6 J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Process C→A is isobaric (constant pressure) with P_C = P_A = 1 × 10^5 Pa, V_C = 5 L, V_A = 2 L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isobaric process, the work done W is given by W_{C→A} = P ΔV = P (V_A - V_C).",
+    "conclusion": "W_{C→A} = 1 × 10^5 Pa × (-3 L) = -0.3 × 10^6 J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total work done W_total is the sum of the work done in each segment: W_total = W_{A→B} + W_{B→C} + W_{C→A}.",
+    "conclusion": "W_total = 0 + 1.2 × 10^6 J - 0.3 × 10^6 J = 0.9 × 10^6 J",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

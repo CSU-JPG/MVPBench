@@ -1,0 +1,72 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the instantaneous value of the induced current and the average value of the induced EMF as the wire frame rotates through 60 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The induced EMF in a rotating loop can be found using Faraday's law: \\( \\mathcal{E} = B \\cdot A \\cdot \\omega \\cdot \\sin(\\theta) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Given: \\( \\omega = \\omega \\), \\( \\theta = 60^\\circ \\), \\( A = S \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate induced EMF: \\( \\mathcal{E} = B \\cdot S \\cdot \\omega \\cdot \\sin(60^\\circ) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since \\( \\sin(60^\\circ) = \\frac{\\sqrt{3}}{2} \\), \\( \\mathcal{E} = \\frac{\\sqrt{3}}{2} B S \\omega \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The induced current \\( I \\) in the loop can be found using Ohm's law: \\( I = \\frac{\\mathcal{E}}{R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute \\( \\mathcal{E} \\) to find \\( I = \\frac{\\sqrt{3} B S \\omega}{2 R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The instantaneous value of the induced current is \\( \\boxed{\\frac{\\sqrt{3} B S \\omega}{2 R}} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The average value of the induced EMF over one complete cycle is zero.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Consider the average EMF over the interval from 0 to 60 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The average EMF \\( \\overline{\\mathcal{E}} \\) is given by: \\( \\overline{\\mathcal{E}} = \\frac{1}{\\theta_{\\text{max}}} \\int_{0}^{\\theta_{\\text{max}}} \\mathcal{E}(\\theta) \\, d\\theta \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate \\( \\int_{0}^{60^\\circ} \\sin(\\theta) \\, d\\theta = \\frac{1}{2} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate \\( \\overline{\\mathcal{E}} = \\frac{1}{60^\\circ} \\cdot B \\cdot S \\cdot \\omega \\cdot \\left( \\frac{1}{2} \\right) = \\frac{\\sqrt{3}}{12} B S \\omega \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The average value of the induced EMF is \\( \\boxed{\\frac{\\sqrt{3}}{12} B S \\omega} \\).",
+    "relevant": "Yes"
+  }
+]

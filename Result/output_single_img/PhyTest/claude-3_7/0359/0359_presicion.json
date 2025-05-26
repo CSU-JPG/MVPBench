@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A charged particle (mass m, charge q > 0) is launched horizontally with velocity v₀. It travels through a uniform downward electric field E. The particle enters a magnetic field at point P. The angle between the particle's velocity and PQ at point P is 60°. The particle exits between points Q and N without hitting the baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the particle with charge q moves in the electric field E, it experiences a force: F = qE.",
+    "conclusion": "The particle experiences a downward force causing it to accelerate downward with a = qE/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle's initial velocity is horizontal (v₀).",
+    "conclusion": "The particle's motion follows a parabolic path, similar to projectile motion.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal velocity remains constant at v₀.",
+    "conclusion": "The time taken to reach point P is t = x/v₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical acceleration is a = qE/m and time taken is t = x/v₀.",
+    "conclusion": "The vertical displacement after time t is y = qEx²/(2mv₀²).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical acceleration is a = qE/m and time taken is t = x/v₀.",
+    "conclusion": "The vertical velocity component at time t is v_y = qEx/(mv₀).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point P, the particle's velocity has components: Horizontal: v₀, Vertical: v_y = qEx/(mv₀).",
+    "conclusion": "The magnitude of the velocity at P is v_P = √(v₀² + (qEx/(mv₀))²).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the velocity vector at P and the vertical line PQ is 60°.",
+    "conclusion": "The angle between the velocity and the horizontal is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the velocity and the horizontal is 30°.",
+    "conclusion": "tan(30°) = v_y/v₀ = qEx/(mv₀²).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(30°) = 1/√3.",
+    "conclusion": "qEx/(mv₀²) = 1/√3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "qEx/(mv₀²) = 1/√3.",
+    "conclusion": "x = mv₀²/(qE√3).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from the particle's launch position to point P is x = mv₀²/(qE√3).",
+    "conclusion": "The distance from the particle's launch position to point P is x = mv₀²/(qE√3).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

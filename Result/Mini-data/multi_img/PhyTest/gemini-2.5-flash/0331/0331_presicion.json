@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The work done by the gas during a cyclic process in a p-V diagram is equal to the area enclosed by the cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In this case, the cycle is a triangle ABC.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The vertices are A, B, and C with coordinates $(V_A, p_A)$, $(V_B, p_B)$, and $(V_C, p_C)$ respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, $V_A = 2$ L, $p_A = 1 \\times 10^5$ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, $V_B = 2$ L, $p_B = 4 \\times 10^5$ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, $V_C = 5$ L, $p_C = 1 \\times 10^5$ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volumes in liters: $V_A = 2$ L, $V_B = 2$ L, $V_C = 5$ L.",
+    "conclusion": "Convert volumes to cubic meters: $V_A = 2 \\times 10^{-3} \\text{ m}^3$, $V_B = 2 \\times 10^{-3} \\text{ m}^3$, $V_C = 5 \\times 10^{-3} \\text{ m}^3$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cycle is A→B→C→A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The work done is the area of the triangle ABC.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Base is the segment CA. Line segment CA is horizontal at pressure $p = 1 \\times 10^5$ Pa.",
+    "conclusion": "Length of base CA is $|V_C - V_A| = |5 \\times 10^{-3} - 2 \\times 10^{-3}| = 3 \\times 10^{-3}$ m$^3$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Height is the perpendicular distance from point B to line segment CA. Pressure at point B is $p_B = 4 \\times 10^5$ Pa.",
+    "conclusion": "Height is $|p_B - p_A| = |4 \\times 10^5 - 1 \\times 10^5| = 3 \\times 10^5$ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Base of triangle is $3 \\times 10^{-3}$ m$^3$ and height is $3 \\times 10^5$ Pa.",
+    "conclusion": "Area of the triangle is $\\frac{1}{2} \\times (3 \\times 10^{-3} \\text{ m}^3) \\times (3 \\times 10^5 \\text{ Pa}) = 450$ J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cycle is traversed in the clockwise direction (A→B→C→A).",
+    "conclusion": "Net work done by the gas is positive.",
+    "judgment": "Reasonable"
+  }]

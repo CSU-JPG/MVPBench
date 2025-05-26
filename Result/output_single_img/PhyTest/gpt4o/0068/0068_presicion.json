@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a circular coil with N = 200 turns and an area S = 1 m^2. The coil has a resistance r = 10 Ω and is connected to an external resistor R = 50 Ω. The coil is placed in a magnetic field that changes over time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, the magnetic induction B changes linearly with time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At t = 0, B = 0.2 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At t = 4 s, B = 0.4 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B changes linearly with time. At t = 0, B = 0.2 T. At t = 4 s, B = 0.4 T.",
+    "conclusion": "The rate of change of magnetic induction is dB/dt = (0.4 - 0.2) / (4 - 0) = 0.05 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N = 200, S = 1 m^2, dB/dt = 0.05 T/s.",
+    "conclusion": "The induced EMF in the coil is E = -N * S * dB/dt = -200 * 1 * 0.05 = -10 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = 10 Ω, R = 50 Ω.",
+    "conclusion": "The total resistance R_total is r + R = 10 + 50 = 60 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = -10 V, R_total = 60 Ω.",
+    "conclusion": "The current I in the circuit is I = E / R_total = 10 / 60 = 1/6 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 1/6 A, R = 50 Ω.",
+    "conclusion": "The power P consumed by the external resistor R is P = I^2 * R = (1/6)^2 * 50 = 25/18 W.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

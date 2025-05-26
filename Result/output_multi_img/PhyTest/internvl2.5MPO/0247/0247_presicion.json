@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine how much the magnetic flux passing through the coil changes as the coil rotates 60° around the z-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil is initially in the plane perpendicular to the x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic induction intensity B = 0.1 T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The area of the coil S = 0.4 m².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the plane of the coil is perpendicular to the magnetic field.",
+    "conclusion": "The magnetic flux Φ₁ = B × S = 0.1 × 0.4 = 0.04 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil is rotated 60° around the z-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the normal to the coil and the magnetic field direction is 60°.",
+    "conclusion": "The magnetic flux through the coil in this position is Φ₂ = B × S × cos(60°).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "cos(60°) = 1/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ₂ = 0.1 × 0.4 × 1/2.",
+    "conclusion": "Φ₂ = 0.02 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in magnetic flux is ΔΦ = Φ₁ - Φ₂.",
+    "conclusion": "ΔΦ = 0.04 Wb - 0.02 Wb = 0.02 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The change in the magnetic flux passing through the coil is 0.02 Wb.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

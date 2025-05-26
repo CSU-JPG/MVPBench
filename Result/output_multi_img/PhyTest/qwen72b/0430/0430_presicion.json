@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a hemispherical glass brick with radius R, where O is the center of the circle, AB is the diameter, and OO' is the perpendicular to AB. A beam of parallel light is directed vertically to the lower surface of the glass brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle for total internal reflection (TIR) in the glass-air interface is 45 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the glass brick perpendicularly to the lower surface.",
+    "conclusion": "The angle of incidence inside the glass before TIR occurs is 45 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Snell's Law: n sin(theta) = sin(alpha), where n is the refractive index of the glass.",
+    "conclusion": "Assume the refractive index n ≈ √2, then sin(alpha) = 1, which implies alpha = 90 degrees, but this is not possible.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light enters perpendicularly and travels in a straight line until it reaches the upper surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence on the upper surface is related to the distance of the point of entry from the center O.",
+    "conclusion": "The maximum distance x from the center O on AB such that the light can still exit without TIR is determined by the geometry of the hemisphere.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using trigonometry: tan(15 degrees) = x/R.",
+    "conclusion": "x = R tan(15 degrees).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum width of the incident light beam on AB is twice the distance x.",
+    "conclusion": "Width = 2x = 2R tan(15 degrees).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the value of tan(15 degrees) ≈ 0.2679.",
+    "conclusion": "Width ≈ 2R × 0.2679 = 0.5358R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The largest width of AB is L = 2d = 2Rsin(45 degrees) = 2 × (√2/2)R = √2R.",
+    "conclusion": "The maximum width of the incident light beam on AB is √2R.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

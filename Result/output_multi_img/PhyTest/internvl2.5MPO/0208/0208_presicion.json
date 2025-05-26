@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the electric field strength \\( E \\) in a uniform electric field where a small ball with mass \\( m \\) and charge \\( q \\) is suspended at an angle \\( \\theta \\) with respect to the vertical, we can follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There are three forces acting on the ball: Gravity (\\( mg \\)) acts downward, Tension (\\( T \\)) acts along the string, and Electric Force (\\( qE \\)) acts horizontally in the direction of the electric field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The tension in the string has components in both the horizontal and vertical directions.",
+    "conclusion": "Vertical component: \\( T \\cos(\\theta) \\), Horizontal component: \\( T \\sin(\\theta) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the ball to be in equilibrium, the vertical components of forces must cancel.",
+    "conclusion": "Vertical equilibrium: \\( T \\cos(\\theta) = mg \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the ball to be in equilibrium, the horizontal components of forces must cancel.",
+    "conclusion": "Horizontal equilibrium: \\( T \\sin(\\theta) = qE \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the vertical equilibrium equation \\( T \\cos(\\theta) = mg \\).",
+    "conclusion": "Tension \\( T = \\frac{mg}{\\cos(\\theta)} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute \\( T = \\frac{mg}{\\cos(\\theta)} \\) into the horizontal equilibrium equation \\( T \\sin(\\theta) = qE \\).",
+    "conclusion": "\\(\\frac{mg}{\\cos(\\theta)} \\sin(\\theta) = qE\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the equation \\(\\frac{mg}{\\cos(\\theta)} \\sin(\\theta) = qE\\) to solve for \\( E \\).",
+    "conclusion": "E = \\frac{mg \\sin(\\theta)}{q \\cos(\\theta)}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the trigonometric identity \\( \\tan(\\theta) = \\frac{\\sin(\\theta)}{\\cos(\\theta)} \\).",
+    "conclusion": "E = \\frac{mg \\tan(\\theta)}{q}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final calculation using the given angle \\( \\theta = 30^\\circ \\).",
+    "conclusion": "E = \\frac{\\sqrt{3}mg}{3q}",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

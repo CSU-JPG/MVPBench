@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the minimum velocity v_1 required for the negatively charged particles emitted from the source S to reach the collection device on the positive x-axis, we need to analyze the motion of the particles under the influence of the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Negatively charged particles will move in circular paths due to the magnetic force.",
+    "conclusion": "The radius R of the circular path can be calculated using the formula: R = mv/qB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: q/m = 2 x 10^6 C/kg, B = 5 x 10^-3 T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R = mv/qB, q/m = 2 x 10^6 C/kg, B = 5 x 10^-3 T.",
+    "conclusion": "R = v/(2 x 10^6 x 5 x 10^-3) = v/10^4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Particles are emitted in all directions within the first quadrant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the minimum velocity v_1, consider the particle emitted at an angle θ such that its path intersects the x-axis at the closest point possible.",
+    "conclusion": "The particle will travel in a circular arc and intersect the x-axis if the distance from the source S to the intersection point is equal to the radius R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance from the source S to the x-axis is d = 1.2 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle must travel a distance d along the y-axis before reaching the x-axis.",
+    "conclusion": "Using the geometry of the circle: d = R sin(θ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = R sin(θ), R = v/10^4, d = 1.2 m.",
+    "conclusion": "1.2 = v/10^4 sin(θ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given sin(48.5°) = 0.75.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1.2 = v/10^4 sin(θ), sin(48.5°) = 0.75.",
+    "conclusion": "v = (1.2 x 10^4)/0.75.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = (1.2 x 10^4)/0.75.",
+    "conclusion": "v = 16000 m/s.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

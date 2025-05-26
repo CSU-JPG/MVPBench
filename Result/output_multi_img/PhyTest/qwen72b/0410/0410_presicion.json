@@ -1,0 +1,65 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the minimum area of the piece of paper that needs to be pasted on each face of the cube to ensure that the bubble at the center is not visible from any direction outside the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This involves understanding the concept of total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When light travels from a medium with a higher refractive index to a medium with a lower refractive index (e.g., from glass to air), it can undergo total internal reflection if the angle of incidence exceeds the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle \\(\\theta_c\\) is given by \\(\\sin \\theta_c = \\frac{1}{n}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the given glass with a refractive index \\( n = 1.5 \\): \\(\\sin \\theta_c = \\frac{1}{1.5} = \\frac{2}{3}\\).",
+    "conclusion": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{2}{3}\\right)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Consider the cube with side length \\( a \\) and the bubble at the center.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the bubble to be invisible from outside, the light rays emanating from the bubble must undergo total internal reflection at the surface of the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We need to find the distance \\( r \\) from the center of the cube to the point where the light ray just grazes the edge of the cube before undergoing total internal reflection.",
+    "conclusion": "From the right triangle formed by the radius \\( r \\), half the side length \\( \\frac{a}{2} \\), and the hypotenuse \\( \\frac{a}{2} \\): \\(\\tan \\theta_c = \\frac{\\frac{a}{2}}{r}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute \\(\\theta_c\\): \\(\\tan \\left( \\sin^{-1} \\left( \\frac{2}{3} \\right) \\right) = \\frac{\\frac{a}{2}}{r}\\).",
+    "conclusion": "Using the identity \\(\\tan(\\sin^{-1}(x)) = \\frac{x}{\\sqrt{1 - x^2}}\\): \\(\\tan \\left( \\sin^{-1} \\left( \\frac{2}{3} \\right) \\right) = \\frac{\\frac{2}{3}}{\\sqrt{1 - \\left( \\frac{2}{3} \\right)^2}} = \\frac{2}{\\sqrt{5}}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\frac{2}{\\sqrt{5}} = \\frac{\\frac{a}{2}}{r}\\).",
+    "conclusion": "\\(r = \\frac{a}{2} \\cdot \\frac{\\sqrt{5}}{2} = \\frac{a \\sqrt{5}}{4}\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The required area of the piece of paper on each face is a square with side length \\( 2r \\): \\(2r = 2 \\cdot \\frac{a \\sqrt{5}}{4} = \\frac{a \\sqrt{5}}{2}\\).",
+    "conclusion": "The area of this square is \\(\\left(\right) \\frac{a \\sqrt{5}}\\)"}]

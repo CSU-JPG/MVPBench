@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There's a rectangular coil with sides AB and BC of lengths 0.2 m and 0.5 m, respectively. It has 100 turns and is rotating with an angular velocity of 100π rad/s around an axis OO'. The magnetic field is uniform with a magnetic induction intensity of 0.1 T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a coil rotates in a magnetic field, an alternating EMF is induced in it. The maximum value of this induced EMF occurs when the plane of the coil is perpendicular to the magnetic field lines, which is called the neutral position.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The formula for the maximum induced EMF in a coil rotating in a magnetic field is: ε_max = n * B * A * ω",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula for the maximum induced EMF in a coil rotating in a magnetic field is: ε_max = n * B * A * ω",
+    "conclusion": "Since the timing starts when the coil passes through the neutral plane, at that instant, the EMF should be at its maximum value.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula for the maximum induced EMF in a coil rotating in a magnetic field is: ε_max = n * B * A * ω",
+    "conclusion": "Calculate ε_max using the given values.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A = l_AB * l_BC = 0.2 m * 0.5 m",
+    "conclusion": "A = 0.1 m²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε_max = n * B * A * ω",
+    "conclusion": "ε_max = 100 * 0.1 T * 0.1 m² * 100π rad/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "100 * 0.1 = 10",
+    "conclusion": "10 * 0.1 = 1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 * 100π = 100π",
+    "conclusion": "ε_max = 100π",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "100π is approximately 100 * 3.1416",
+    "conclusion": "100π ≈ 314.16",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε_max = 100π",
+    "conclusion": "The magnitude of the induced electromotive force in the coil is 100π volts, or approximately 314.16 volts.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula is ε_max = n * B * A * ω",
+    "conclusion": "The units check out: [n] * [B] * [A] * [ω] = 1 * kg/(A s²) * m² * 1/s = kg m²/(A s³), which matches volts (V).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε_max = 100π",
+    "conclusion": "The magnitude of the induced EMF is indeed 100π volts.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

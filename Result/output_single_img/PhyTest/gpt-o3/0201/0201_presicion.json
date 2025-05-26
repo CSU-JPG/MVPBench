@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Extract the two straight-line equations from the graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Source line I passes through (I = 0 A, U = 3 V) and (I = 6 A, U = 0 V).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Source line I passes through (I = 0 A, U = 3 V) and (I = 6 A, U = 0 V).",
+    "conclusion": "U = 3 V − 0.5 Ω · I.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = 3 V − 0.5 Ω · I.",
+    "conclusion": "The source has emf E = 3 V and internal resistance r = 0.5 Ω.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Resistor line II passes through the origin and the point (I = 2 A, U = 2 V).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Resistor line II passes through the origin and the point (I = 2 A, U = 2 V).",
+    "conclusion": "U = (2 V / 2 A) I = 1 Ω · I, i.e. the resistor is R = 1 Ω.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Find the operating (intersection) point of the two lines.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "3 V − 0.5 I = 1 I",
+    "conclusion": "1.5 I = 3 V",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1.5 I = 3 V",
+    "conclusion": "I = 2 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 2 A",
+    "conclusion": "Substituting back gives the terminal voltage U = 2 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Compute the power actually delivered by the source to the external circuit.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = 2 V, I = 2 A",
+    "conclusion": "P_out = U I = 2 V × 2 A = 4 W.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

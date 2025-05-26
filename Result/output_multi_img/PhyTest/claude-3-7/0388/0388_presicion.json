@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have: - A plank of length L = 0.60 m and mass M = 0.40 kg leaning against a smooth vertical wall - A block (point mass) of mass m = 0.80 kg at the lower right of the plank - Force F1 applied horizontally to the left on the block - Force F2 applied vertically upward on the plank - Coefficient of friction (both static and kinetic) between block and plank: μ = 0.20 - Gravity: g = 10 m/s² The goal is to find the condition on F1 that makes the plank move upward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A plank is leaning against a smooth vertical wall with a block at the lower right of the plank. Force F1 is applied horizontally to the left on the block, and force F2 is applied vertically upward on the plank.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Weight of the plank: M × g = 0.40 × 10 = 4 N downward",
+    "conclusion": "The weight of the plank is 4 N downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Weight of the block: m × g = 0.80 × 10 = 8 N downward",
+    "conclusion": "The weight of the block is 8 N downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the plank is leaning against the wall, let's use a coordinate system aligned with the plank: - x-axis along the plank (positive upward along the plank) - y-axis perpendicular to the plank (positive toward the plank)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Normal force on block: N_block = m g cosθ + F1 sinθ",
+    "conclusion": "The normal force on the block is N_block = m g cosθ + F1 sinθ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Friction force: f = μ N_block = μ(m g cosθ + F1 sinθ)",
+    "conclusion": "The friction force is f = μ(m g cosθ + F1 sinθ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "From the problem description, the plank is leaning against a vertical wall. The length of the plank is L = 0.60 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the block to move upward along the plank, the sum of forces along the plank must be positive: F1 cosθ - m g sinθ - f > 0",
+    "conclusion": "The condition for upward motion is F1 cosθ - m g sinθ - f > 0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the friction force: F1 cosθ - m g sinθ - μ(m g cosθ + F1 sinθ) > 0",
+    "conclusion": "The condition becomes F1 cosθ - m g sinθ - μ(m g cosθ + F1 sinθ) > 0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging: F1 (cosθ - μ sinθ) > m g (sinθ + μ cosθ)",
+    "conclusion": "The rearranged condition is F1 (cosθ - μ sinθ) > m g (sinθ + μ cosθ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Therefore: F1 > m g (sinθ + μ cosθ) / (cosθ - μ sinθ)",
+    "conclusion": "The condition for F1 is F1 > m g (sinθ + μ cosθ) / (cosθ - μ sinθ).",
+    "judgment": "Reasonable"
+  }]

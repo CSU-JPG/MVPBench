@@ -1,0 +1,103 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two objects, A and B, start from the same location and move in the same direction. The task is to determine when they meet again based on a velocity-time graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The graph has time on the x-axis and velocity on the y-axis, with curves labeled A and B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two objects meet when their positions are equal at some time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The area under each curve up to a certain time represents the distance each object has traveled.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under each curve up to a certain time represents the distance each object has traveled.",
+    "conclusion": "To find when they meet, find a time where the area under curve A equals the area under curve B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Object A starts with a high velocity and decreases over time, eventually reaching zero velocity at time t2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Object B starts with a low velocity, increases to a peak, and then decreases again.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There are marked points on the graph: t1, t2, t3, and t4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Both curves are above the time axis, meaning both are moving in the same positive direction at all times.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At time t1, curve A crosses the horizontal axis, meaning object A's velocity becomes zero at that time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At time t2, object B reaches its peak velocity.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From t=0 to t=t1, Object A starts with a high velocity and decreases to zero at t1. Object B is starting from a lower velocity and increasing.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From t=t1 to t=t2, Object A's velocity is zero, so it's not moving. Object B is still moving.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From t=t2 to t=t4, Object A starts moving again, increasing its velocity. Object B's velocity decreases after t2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The positions are the integral of their velocities over time.",
+    "conclusion": "They meet when ∫ from 0 to t of velocity A dt = ∫ from 0 to t of velocity B dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At time t1, Object A has covered some distance, and Object B has covered some smaller distance.",
+    "conclusion": "Object A is likely ahead at t1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At time t2, Object A is stationary, and Object B has continued to move.",
+    "conclusion": "Object B is closing the gap between t1 and t2.",
+    "judgment": "Match"
+  }]

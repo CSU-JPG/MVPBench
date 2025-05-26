@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the minimal angular velocity \\(\\omega_{0} = \\omega_{\\text{min}}\\) necessary for the dipole to reverse its orientation, we need to consider the dynamics of the dipole in the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole experiences a torque due to the magnetic field. The torque \\(\\tau\\) on a magnetic dipole in a magnetic field is given by \\(\\tau = \\vec{\\mu} \\times \\vec{B}\\) where \\(\\vec{\\mu}\\) is the magnetic moment of the dipole.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a dipole with charges \\(+q\\) and \\(-q\\) separated by a distance \\(d\\), the magnetic moment \\(\\vec{\\mu}\\) is \\(\\vec{\\mu} = q \\vec{d}\\) where \\(\\vec{d}\\) is the vector from the negative charge to the positive charge.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic moment \\(\\vec{\\mu}\\) is \\(\\vec{\\mu} = q \\vec{d}\\).",
+    "conclusion": "The magnitude of the magnetic moment is \\(\\mu = qd\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque \\(\\tau\\) on a magnetic dipole in a magnetic field is given by \\(\\tau = \\vec{\\mu} \\times \\vec{B}\\). The magnitude of the magnetic moment is \\(\\mu = qd\\).",
+    "conclusion": "The torque \\(\\tau\\) is \\(\\tau = \\mu B \\sin \\theta\\) where \\(\\theta\\) is the angle between \\(\\vec{\\mu}\\) and \\(\\vec{B}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, \\(\\theta = 90^\\circ\\), so \\(\\sin \\theta = 1\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque \\(\\tau\\) is \\(\\tau = \\mu B \\sin \\theta\\) and initially \\(\\theta = 90^\\circ\\), so \\(\\sin \\theta = 1\\).",
+    "conclusion": "The torque \\(\\tau\\) is \\(\\tau = qdB\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The torque causes angular acceleration \\(\\alpha\\), which is related to the moment of inertia \\(I\\) of the dipole: \\(\\tau = I \\alpha\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The moment of inertia \\(I\\) of the dipole about its center of mass is \\(I = 2m \\left(\\frac{d}{2}\\right)^2\\).",
+    "conclusion": "The moment of inertia \\(I\\) is \\(I = \\frac{1}{2}md^2\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque \\(\\tau\\) is \\(\\tau = qdB\\) and \\(\\tau = I \\alpha\\) with \\(I = \\frac{1}{2}md^2\\).",
+    "conclusion": "The angular acceleration \\(\\alpha\\) is \\(\\alpha = \\frac{qd B}{\\frac{1}{2}md^2} = \\frac{2qB}{md}\\).",
+    "judgment": "Match"
+  }]

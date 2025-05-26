@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There are several identical small steel balls released from a certain position on an inclined plane every 0.1 seconds without initial velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A photograph is taken of the several small steel balls rolling on the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "It is measured that AB = 15 cm and BC = 20 cm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The photograph has a 1:1 scale relationship with the actual object.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There are several small steel balls rolling on top of ball A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The time interval between releases is t = 0.1 s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = 15 cm, u = 0, t = 0.1 s",
+    "conclusion": "Using the equation s = ut + (1/2)at^2, for AB: 15 cm = (1/2)a(0.1)^2, a = 3000 cm/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC = 20 cm, u = 0, t = 0.2 s",
+    "conclusion": "Using the equation s = ut + (1/2)at^2, for BC: 20 cm = (1/2)a(0.2)^2, a = 1000 cm/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a for AB = 3000 cm/s^2, a for BC = 1000 cm/s^2",
+    "conclusion": "Average acceleration a = (3000 + 1000)/2 = 2000 cm/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC = 20 cm, a = 2000 cm/s^2",
+    "conclusion": "Using the equation s = (1/2)at^2, for BC: 20 cm = (1/2)(2000)(t_B)^2, t_B = sqrt(0.02) ≈ 0.1414 s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a = 2000 cm/s^2, t_B = 0.1414 s",
+    "conclusion": "Using the equation v = at, for ball B: v_B = 2000 cm/s^2 * 0.1414 s ≈ 282.8 cm/s",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

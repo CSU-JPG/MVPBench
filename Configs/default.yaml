@@ -1,0 +1,16 @@
+Strategy_Instruction:
+  CoT: "\nYou are an AI assistant and will help me answer questions step by step to reach the final answer."
+  Directly: "\nPlease ensure that your output only contains the final answer without any additional content (such as intermediate reasoning steps)."
+
+
+Prompt_Instruction: "The format of the response is as follows:
+  Please use Key_step_n to represent the nth step of reasoning, and use Conclusion to represent the final answer.
+  
+  Example:
+  Key_step_1: First, pay attention to the red dots and the red lines passing through the dots in the key step illustration 1.From the U - I graph of the power source, the electromotive force of the power source $E = 3V$ can be obtained, and the internal resistance $r=\\frac{\\Delta U}{\\Delta I}=\\frac{3 - 0}{6 - 0}=0.5\\Omega$.
+  
+  Key_step_2: Then, pay attention to the two red lines in the key step illustration 2.From the U - I graph of $R_1$, we can get $R_1=\\frac{U_1}{I_1}=\\frac{1}{2}=0.5\\Omega$. From the U - I graph of $R_2$, we can get $R_2=\\frac{U_2}{I_2}=\\frac{2}{2}=1\\Omega$.
+  
+  Key_step_3: Next, we know that when the external resistance $R = r$, the output power of the power source reaches its maximum.
+  
+  Conclusion: Since $R_1 = 0.5\\Omega = r$, when $R_1$ is connected to the two ends of the power source alone, the output power of the power source is the maximum."

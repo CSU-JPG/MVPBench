@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Car A is positioned to the right of the image, moving towards a collection of stacked blocks of different colors, including red, blue, green, and yellow.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The goal is to predict which blocks Car A will collide with and where it will stop after the collisions.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A first collides with an orange block that is part of a small stack.",
+    "conclusion": "The collision causes the block to scatter and partially disassemble.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After striking the orange block, Car A is deflected and moves towards a taller stack of red blocks.",
+    "conclusion": "The car hits these blocks, causing them to topple.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The red blocks disperse upon impact, further redirecting Car A.",
+    "conclusion": "Car A moves towards a stack of blue blocks.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A collides with the blue blocks.",
+    "conclusion": "The blue blocks scatter.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After colliding with the blue blocks, Car A continues moving forward.",
+    "conclusion": "Car A eventually comes to a stop near the top edge of the image, away from the initial stacks of blocks.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A collides with orange, red, and blue blocks in sequence, causing each stack to disperse.",
+    "conclusion": "The car is deflected at each collision, eventually stopping near the top left corner of the image, away from the original stacks of blocks.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

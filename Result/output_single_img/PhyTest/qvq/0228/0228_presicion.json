@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a square coil with n turns and side length a, placed perpendicular to a uniform magnetic field. Only half of the coil is in the magnetic field, and the magnetic field's magnitude increases uniformly from B to 2B in a time interval Δt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the electromotive force (EMF) induced in the coil during this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's law of induction relates the induced EMF to the change in magnetic flux through a coil: ε = -n * (ΔΦ)/Δt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux Φ through one turn is given by Φ = B * A, where B is the magnetic field magnitude and A is the area of the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil is square with side length a, so its area is a².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only half of the coil is in the magnetic field.",
+    "conclusion": "The effective area experiencing the magnetic field is (1/2) a².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through the coil is Φ = B * (1/2 a²).",
+    "conclusion": "The change in magnetic flux ΔΦ is (2B - B) * (1/2 a²) = (1/2) B a².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Faraday's law: ε = -n * (ΔΦ)/Δt.",
+    "conclusion": "ε = -n * [(1/2) B a²]/Δt = -n * (B a²)/(2 Δt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The negative sign indicates the direction of the induced EMF, but often in problems, we consider the magnitude unless specified otherwise.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is ε = n * (B a²)/(2 Δt).",
+    "conclusion": "The problem states that the magnetic field increases uniformly from B to 2B in time Δt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of B is constant, which is (2B - B)/Δt = B/Δt.",
+    "conclusion": "The rate of change of magnetic flux is dΦ/dt = (1/2 a²) * (B/Δt) = (1/2) B a² / Δt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's law: ε = -n * dΦ/dt.",
+    "conclusion": "ε = -n * [(1/2) B a² / Δt] = -n * (B a²)/(2 Δt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the induced EMF is n * (B a²)/(2 Δt).",
+    "conclusion": "The electromotive force induced in the coil is n * (B a²)/(2 Δt).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

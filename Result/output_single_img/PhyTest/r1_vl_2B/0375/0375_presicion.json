@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the electrical and magnetic interactions between the conductor rod, the lamps, and the magnetic field. The key is to use the given power and resistance of the lamps, as well as the magnetic field, to calculate the actual power of lamp L2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the given values: Power of lamp L1: P1 = 3 W, Power of lamp L2: P2 = 6 W, Resistance of the rails: r = 1 Ω, Distance between the rails: l = 0.6 m, Magnetic induction: B = 1 T",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Power of lamp L1: P1 = 3 W, Voltage of lamp L1: V1 = 3 V",
+    "conclusion": "Calculate the current in lamp L1: I1 = P1/V1 = 3/3 = 1 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Power of lamp L2: P2 = 6 W, Voltage of lamp L2: V2 = 6 V",
+    "conclusion": "Calculate the current in lamp L2: I2 = P2/V2 = 6/6 = 1 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current in lamp L1: I1 = 1 A, Current in lamp L2: I2 = 1 A",
+    "conclusion": "Since the current in both lamps is the same, the magnetic force on each lamp is the same. The magnetic force F is given by F = BIL",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic induction: B = 1 T, Current: I = 1 A, Distance between the rails: l = 0.6 m",
+    "conclusion": "Since the magnetic force is the same for both lamps, the magnetic force on L1 is equal to the magnetic force on L2: F = BIL = 1 T × 1 A × 0.6 m = 0.6 N",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic force: F = 0.6 N, Resistance of the conductor rod: r = 1 Ω",
+    "conclusion": "The magnetic force F is equal to the work done on the conductor rod per unit length: F = P2/r = 6/1 = 6 N",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done on the conductor rod per unit length: F = 6 N",
+    "conclusion": "The work done on the conductor rod per unit length is equal to the change in its kinetic energy: Work = Kinetic Energy = 1/2 m v^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic force is constant: F = 6 N, Distance between the rails: l = 0.6 m",
+    "conclusion": "Since the magnetic force is constant, the kinetic energy is also constant: 1/2 m v^2 = 6 N × 0.6 m = 3.6 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Kinetic energy: 1/2 m v^2 = 3.6 J",
+    "conclusion": "Solve for v: m v^2 = 3.6, v^2 = 3.6/m, v = sqrt(3.6/m)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conductor rod moves at constant speed v, Magnetic force: F = 6 N",
+    "conclusion": "Since the conductor rod moves at constant speed v, the power P2 is given by: P2 = F × v = 6 × sqrt(3.6/m)",
+    "judgment": "Wrong"
+  }]

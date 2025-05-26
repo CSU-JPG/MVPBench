@@ -1,0 +1,83 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the resistance R_L of the coil L, we need to analyze the circuit behavior when the switch S is opened.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance of the lamp in the circuit is R_1=6.0Ω, the fixed resistor R=2.0Ω, and the voltage between A and B is U=6.0V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The switch S was originally closed, and the circuit was in a steady state.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At the moment t_1=1.0×10^{-3}s, the switch S was opened.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The current I displayed by the current sensor before and after this moment, as a function of time t, is shown in Figure B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch S is closed, the circuit is in a steady state. The total resistance in the circuit is R_total = R_1 + R = 6.0Ω + 2.0Ω = 8.0Ω.",
+    "conclusion": "The total resistance in the circuit is 8.0Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I_0 in the circuit can be calculated using Ohm's law: I_0 = U / R_total = 6.0V / 8.0Ω = 0.75A.",
+    "conclusion": "The initial current I_0 in the circuit is 0.75A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch S is opened, the current I_0 through the coil L cannot change instantaneously because of the inductance of the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current through the coil L will decay exponentially with time according to the equation: I(t) = I_0 e^{-t/τ}, where τ is the time constant of the circuit.",
+    "conclusion": "The current through the coil L decays exponentially with time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The time constant τ is given by: τ = L / (R_L + R).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph in Figure B, the current decreases to approximately 0.3A at t = 3.0 × 10^{-3}s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the information from the graph, we can write: 0.3A = 0.75A e^{-3.0 × 10^{-3}s/τ}.",
+    "conclusion": "The equation 0.3A = 0.75A e^{-3.0 × 10^{-3}s/τ} is derived from the graph.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Taking the natural logarithm on both sides, we get: ln(0.3/0.75) = -3.0 × 10^{-3}s/τ.",
+    "conclusion": "The equation ln(0.3/0.75) = -3.0 × 10^{-3}s/τ is derived.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ln(2/5) = -3.0 × 10^{-3}s/τ.",
+    "conclusion": "The equation ln(2/5) = -3.0 × 10^{-3}

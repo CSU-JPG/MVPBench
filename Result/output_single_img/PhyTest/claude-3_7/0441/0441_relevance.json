@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Optical fiber bent into a semicircle with diameter D and refractive index N; light enters perpendicular to face A and exits from face B; outside is vacuum.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Need to find minimum turning radius R for total internal reflection.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For total internal reflection, angle of incidence must be greater than critical angle: θc = arcsin(1/N).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Angle of incidence decreases as light gets closer to the outer edge of the fiber.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Minimum angle of incidence occurs at the outermost edge of the fiber, at distance R + D/2 from center.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Ray traveling along centerline moves in a straight line; ray near outer edge changes direction.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Angle of incidence at outer boundary: ray direction perpendicular to radius from center; boundary tangent to circle of radius R + D/2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For small angular displacement dθ, ray at centerline moves R·dθ; at outer edge moves (R + D/2)·dθ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Incident angle at boundary: θi = arcsin(R/(R + D/2)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For total internal reflection, θi ≥ θc, thus arcsin(R/(R + D/2)) ≥ arcsin(1/N).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "R/(R + D/2) ≥ 1/N.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solving for R: R·N ≥ R + D/2, R(N - 1) ≥ D/2, R ≥ D/(2(N - 1)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final answer: Turning radius R should be not less than D/(2(N - 1)) for total internal reflection.",
+    "relevant": "Yes"
+  }
+]

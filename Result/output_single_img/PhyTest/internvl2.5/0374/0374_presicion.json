@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves analyzing the motion of a missile in two phases: the vertical ascent and the subsequent curved trajectory.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial conditions for the vertical ascent: Initial velocity v0 = 0, Initial height h0 = 0, Final height h1 = 5000 m, Acceleration a = 10g = 100 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h1 = 1/2 a t1^2, 5000 = 1/2 * 100 * t1^2",
+    "conclusion": "t1^2 = 100, t1 = 10 s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v1 = a t1, a = 100 m/s^2, t1 = 10 s",
+    "conclusion": "v1 = 1000 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Phase 2 involves a curved trajectory with a new direction where the angle θ is given by cos θ = 1/11.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos θ = 1/11",
+    "conclusion": "sin θ = sqrt(1 - (1/11)^2) = sqrt(120/121)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a = 100 m/s^2, cos θ = 1/11",
+    "conclusion": "Vertical component of acceleration ay = a cos θ = 100 * 1/11 = 100/11 m/s^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a = 100 m/s^2, sin θ = sqrt(120/121)",
+    "conclusion": "Horizontal component of acceleration ax = a sin θ = 100 * sqrt(120/121)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Vertical motion involves initial vertical velocity vy0 = 1000 m/s and vertical displacement to reach the aircraft h2 = 20000 - 5000 = 15000 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h2 = vy0 t2 + 1/2 ay t2^2, vy0 = 1000 m/s, ay = 100/11 m/s^2",
+    "conclusion": "15000 = 1000 t2 + 50/11 t2^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "15000 = 1000 t2 + 50/11 t2^2",
+    "conclusion": "11 * 15000 = 11000 t2 + 50 t2^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "11 * 15000 = 11000 t2 + 50 t2^2",
+    "conclusion": "165000 = 11000 t2 + 50 t2^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "165000 = 11000 t2 + 50 t2^2",
+    "conclusion": "50 t2^2 + 11000 t2 - 165000 = 0",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the quadratic formula t2 = (-b ± sqrt(b^2 - 4ac))/(2a), b = 11000, a = 50, c = -165000",
+    "conclusion": "t2 = (-11000 ± sqrt(451000000))/100",
+    "judgment": "Wrong"
+  }]

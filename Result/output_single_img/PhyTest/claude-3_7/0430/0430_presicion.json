@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a hemispherical glass brick with radius R, O is the center of the circular base, AB is the diameter of the base, OO' is perpendicular to AB, representing the vertical axis, Light enters vertically from the flat base (AB), The light ray in the diagram makes a 15° angle after refraction at the upper surface",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This problem involves Snell's law of refraction and total internal reflection: When light passes from one medium to another, it follows Snell's law: n₁sin(θ₁) = n₂sin(θ₂), Total internal reflection occurs when light tries to pass from a medium with higher refractive index to one with lower refractive index at an angle greater than the critical angle",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light to exit the upper surface, the angle of incidence at the upper surface must be less than the critical angle. If n is the refractive index of the glass and n_air = 1, the critical angle θc is: sin(θc) = 1/n",
+    "conclusion": "The critical angle θc is determined by sin(θc) = 1/n",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light enters vertically from the bottom surface and refracts at the upper hemispherical surface. The angle shown in the diagram is 15°, which appears to be the refracted angle in air after exiting the glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the upper surface: n·sin(θ) = 1·sin(15°)",
+    "conclusion": "θ = arcsin(sin(15°)/n)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a point on the hemispherical surface, if we denote its horizontal distance from O as x, then: The angle between OO' and the radius to that point is arctan(x/√(R²-x²))",
+    "conclusion": "For light to exit, this angle must be less than or equal to θ",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "arctan(x/√(R²-x²)) ≤ arcsin(sin(15°)/n)",
+    "conclusion": "arctan(x/√(R²-x²)) = arcsin(sin(15°)/n)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x/√(R²-x²) = sin(15°)/n",
+    "conclusion": "x² = R²(sin(15°)/n)²/(1 + (sin(15°)/n)²)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x² = R²(sin(15°)/n)²/(1 + (sin(15°)/n)²)",
+    "conclusion": "x² = R²·sin²(15°)/(n² + sin²(15°))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum width of the incident light beam is 2x, since the beam is symmetric around OO'.",
+    "conclusion": "Maximum width = 2x = 2R·sin(15°)/√(n² + sin²(15°))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that n is typically around 1.5 for glass, and sin(15°) ≈ 0.2588, we can compute a numerical value if needed.",
+    "conclusion": "The maximum width of the incident light beam on AB is: 2R·sin(15°)/√(n² + sin²(15°))",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

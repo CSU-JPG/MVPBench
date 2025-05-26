@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a square wire frame with side length L, half of which is placed in a uniform magnetic field that weakens uniformly at a rate k. The goal is to find the current in the loop and the magnitude of the induced electromotive force (EMF).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The square wire frame has side length L, and half of it is placed in a uniform magnetic field perpendicular to the plane of the paper and directed into it. A capacitor is connected in the circuit.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Faraday's law of induction states that the induced EMF is given by E = -dΦ/dt, where Φ is the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the square wire frame is A = L^2, and only half of the loop is in the magnetic field.",
+    "conclusion": "The effective area of the loop in the magnetic field is A_eff = 1/2 * L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through the loop is Φ = B * A_eff, and the magnetic field is changing uniformly at a rate k.",
+    "conclusion": "The induced EMF is E = -d(B * A_eff)/dt = -k * (1/2 * L^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is E = -k * (1/2 * L^2).",
+    "conclusion": "The magnitude of the induced EMF is |E| = 1/2 * k * L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The voltage across the capacitor is equal to the induced EMF. The charge on the capacitor is Q = C * V, where V is the voltage across the capacitor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the loop is the rate of change of charge on the capacitor, I = dQ/dt = d(C * V)/dt.",
+    "conclusion": "The current in the loop is I = C * dV/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is constant, so dV/dt = 0.",
+    "conclusion": "The current in the loop is I = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the induced EMF is |E| = 1/2 * k * L^2, and the current in the loop is I = 0.",
+    "conclusion": "The current in the loop and the induced EMF are 0 and 1/2 * k * L^2, respectively.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

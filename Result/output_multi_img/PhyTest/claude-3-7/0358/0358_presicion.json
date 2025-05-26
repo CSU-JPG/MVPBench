@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Points A, B, M, and N are all at distance sqrt(2)L from O. A and B have positive charges Q. Ball S₁ has charge Q and falls from M. The acceleration of S₁ along ON is shown in figure (c). The electric potential along ON is shown in figure (b).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "O is at origin (0,0). A and B are on a horizontal line with O as midpoint, and at distance sqrt(2)L from O.",
+    "conclusion": "A coordinates: (-sqrt(2)L, 0), B coordinates: (sqrt(2)L, 0)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "M and N are on the perpendicular bisector of AB, at distance sqrt(2)L from O.",
+    "conclusion": "M coordinates: (0, -sqrt(2)L), N coordinates: (0, sqrt(2)L)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force on S₁ at point M will be due to the two charges at points A and B.",
+    "conclusion": "Force from charge at A: Distance AM = 2L, Direction: from A to M (repulsive)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force on S₁ at point M will be due to the two charges at points A and B.",
+    "conclusion": "Force from charge at B: Distance BM = 2L, Direction: from B to M (repulsive)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a point charge, the magnitude of the electric force is F = k(Q^2)/(r^2).",
+    "conclusion": "The force from charge A on S₁ at M: F_A = k(Q^2)/(4L^2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a point charge, the magnitude of the electric force is F = k(Q^2)/(r^2).",
+    "conclusion": "The force from charge B on S₁ at M: F_B = k(Q^2)/(4L^2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Due to the symmetric arrangement, the horizontal components of these forces cancel out, and only the vertical components remain.",
+    "conclusion": "The vertical component of each force: Force A: F_{A,vertical} = k(Q^2 sqrt(2))/(8L^3), Force B: F_{B,vertical} = k(Q^2 sqrt(2))/(8L^3)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total vertical force: F_{total,vertical} = F_{A,vertical} + F_{B,vertical}",
+    "conclusion": "F_{total,vertical} = k(Q^2 sqrt(2))/(4L^3)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From figure (c), at x = 0 (point O), the acceleration is g. At x = L/2, the acceleration is 2g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From figure (c), at x = 0 (point O), the acceleration is g. At x = L/2, the acceleration is 2g.",
+    "conclusion": "This means the resultant acceleration at O comes from gravity (g) plus the electric force.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At point M, the acceleration will be different from what's shown in the graph (since M is not on the ON line), but we can use the information to verify our approach.",
+    "judgment": "N/A"
+  }]

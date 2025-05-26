@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit consists of a supercapacitor, a resistor R, and a charger.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During the constant voltage charging stage, the charger maintains a constant voltage U.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total voltage U provided by the charger is divided between the resistor R and the supercapacitor.",
+    "conclusion": "Let U_2 be the voltage across the supercapacitor.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across the resistor R is I_2 * R, where I_2 is the current flowing through the resistor.",
+    "conclusion": "According to KVL, the sum of the voltages around the loop must equal the total voltage provided by the charger.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = U_2 + I_2 * R",
+    "conclusion": "Rearrange the equation to solve for U_2: U_2 = U - I_2 * R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_2 = U - I_2 * R",
+    "conclusion": "The voltage U_2 across the supercapacitor is: U_2 = U - I_2 * R",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

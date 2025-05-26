@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the maximum radius r_max of a drop just before it separates from the nozzle, we need to balance the gravitational force acting on the droplet with the surface tension force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force F_g acting on the droplet is given by the weight of the droplet: F_g = mass x g = rho x volume x g",
+    "conclusion": "The volume V of a spherical droplet is V = (4/3) pi r^3",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume V of a spherical droplet is V = (4/3) pi r^3",
+    "conclusion": "Thus, the gravitational force is F_g = rho x (4/3) pi r^3 x g",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The surface tension force F_surface is given by F_surface = sigma x l",
+    "conclusion": "Here, l is the length of the separation, which is approximately the circumference of the nozzle: l ≈ pi d",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Here, l is the length of the separation, which is approximately the circumference of the nozzle: l ≈ pi d",
+    "conclusion": "Thus, the surface tension force is F_surface = sigma x pi d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The droplet separates when the gravitational force overcomes the surface tension force: F_g = F_surface",
+    "conclusion": "Substitute the expressions for F_g and F_surface: rho x (4/3) pi r^3 x g = sigma x pi d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the expressions for F_g and F_surface: rho x (4/3) pi r^3 x g = sigma x pi d",
+    "conclusion": "Cancel out pi from both sides: rho x (4/3) r^3 x g = sigma x d",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cancel out pi from both sides: rho x (4/3) r^3 x g = sigma x d",
+    "conclusion": "Rearrange to solve for r^3: r^3 = (3 sigma d)/(4 rho g)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange to solve for r^3: r^3 = (3 sigma d)/(4 rho g)",
+    "conclusion": "Take the cube root of both sides to find r: r_max = ((3 sigma d)/(4 rho g))^(1/3)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

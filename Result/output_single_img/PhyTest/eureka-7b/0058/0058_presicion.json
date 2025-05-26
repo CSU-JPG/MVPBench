@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to understand the charging process of the supercapacitor and the relationship between the voltage and current in the circuit.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the first stage of charging, the current is constant and is denoted as I_1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the second stage of charging, the voltage is constant and is denoted as U.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The current flowing through the resistor R in the second stage is given as I_2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current flowing through the resistor R in the second stage is given as I_2.",
+    "conclusion": "The voltage across the resistor R is given by Ohm's law: V_R = I_2 * R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the second stage of charging, the total voltage supplied by the charger is U. This voltage is the sum of the voltage across the resistor and the voltage across the supercapacitor.",
+    "conclusion": "U = V_R + V_C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting V_R = I_2 * R into the equation U = V_R + V_C",
+    "conclusion": "U = I_2 * R + V_C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = I_2 * R + V_C",
+    "conclusion": "V_C = U - I_2 * R",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

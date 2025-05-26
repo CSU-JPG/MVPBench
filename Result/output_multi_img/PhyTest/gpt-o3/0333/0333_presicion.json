@@ -1,0 +1,76 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the thermodynamic states from the P-V diagram",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P = P0 , V = V0 , T = T0 (given).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: Vertical line down from A to the horizontal line at 0.6 P0 while V stays V0 ⇒ P = 0.6 P0 , V = V0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: Horizontal line left from B to 0.5 V0 while P stays 0.6 P0 ⇒ P = 0.6 P0 , V = 0.5 V0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the ideal-gas equation for the same amount of gas PV = nRT (with nR constant for this fixed mass of gas).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P0 V0 = nR T0",
+    "conclusion": "At state A: P0 V0 = nR T0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(0.6 P0)(0.5 V0) = nR TC",
+    "conclusion": "At state C: (0.6 P0)(0.5 V0) = nR TC",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.6 × 0.5 P0 V0 = 0.3 P0 V0 = nR TC",
+    "conclusion": "From (2): 0.6 × 0.5 P0 V0 = 0.3 P0 V0 = nR TC",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nR = P0 V0 / T0",
+    "conclusion": "Divide by nR using (1): nR = P0 V0 / T0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "TC = (0.3 P0 V0) / (P0 V0 / T0)",
+    "conclusion": "TC = (0.3 P0 V0) / (P0 V0 / T0) = 0.3 T0",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State the result",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "TC = 0.3 T0",
+    "conclusion": "The temperature at state C is TC = 0.3 T0 (or 30 % of the temperature at state A).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

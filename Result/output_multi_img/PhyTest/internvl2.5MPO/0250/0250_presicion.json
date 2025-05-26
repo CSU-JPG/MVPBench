@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem of finding the instantaneous value of the induced current and the average value of the induced electromotive force (emf) in a rotating rectangular wire frame, let's break it down step by step.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux through the loop is given by Φ = B ⋅ A ⋅ cos(θ), where B is the magnetic field, A is the area of the loop, and θ is the angle between the magnetic field and the normal to the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Here, the area A = S.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The loop is rotating with angular velocity ω. Therefore, θ(t) = ωt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced emf is given by Faraday's Law: E = -dΦ/dt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute Φ = B S cos(ωt)",
+    "conclusion": "E = -d/dt (B S cos(ωt)) = B S ω sin(ωt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the loop rotates through 60°: θ = 60° = π/3 radians.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = B S ω sin(π/3)",
+    "conclusion": "E = B S ω ⋅ √3/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using Ohm's Law, I = E/R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the induced emf: I = B S ω √3/2 / R",
+    "conclusion": "I = √3 B S ω / 2 R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The average emf over a time interval Δt is given by: Ē = ΔΦ/Δt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The change in flux ΔΦ is: ΔΦ = B S (cos(θ1) - cos(θ2)), where θ1 = 0 and θ2 = π/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔΦ = B S (cos(0) - cos(π/3))",
+    "conclusion": "ΔΦ = B S (1 - 1/2) = B S/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Δt = θ/ω = π/3ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute into the average emf formula: Ē = (B S/2) / (π/3ω)",
+    "conclusion": "Ē = 3 B S ω / 2π.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final calculations",
+    "conclusion": "The instantaneous value of the induced current is I = √3 B S ω / 2 R, and the average value of the induced electromotive force is Ē = 3 B S ω / 2π.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

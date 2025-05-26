@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a light rod of length 3L with two balls A and B, each of mass m, fixed at the ends. Point O is located at a distance L from ball A and is mounted on a smooth horizontal rotating shaft. The system rotates in a vertical plane, and air resistance is neglected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When ball A reaches the highest point, it exerts no force on the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball A exerts no force on the rod at the highest point.",
+    "conclusion": "The tension in the rod at the highest point is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The only force acting on ball A is the gravitational force.",
+    "conclusion": "The gravitational force provides the centripetal force required for ball A's circular motion.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The centripetal force required for ball A is given by F_centripetal, A = m * v_A^2 / r_A, where r_A = 2L.",
+    "conclusion": "The equation for ball A's motion is mg = m * v_A^2 / 2L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = m * v_A^2 / 2L",
+    "conclusion": "v_A = sqrt(2gL)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angular velocity ω of the system is the same for both balls.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_A = ω * 2L",
+    "conclusion": "ω = v_A / 2L = sqrt(2gL) / 2L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ω = sqrt(2gL) / 2L",
+    "conclusion": "ω = sqrt(2) / 2L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_B = ω * L",
+    "conclusion": "v_B = sqrt(2) / 2L * L = sqrt(2) / 2 * sqrt(2gL) = sqrt(gL)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The centripetal force required for ball B is F_centripetal, B = m * v_B^2 / r_B, where r_B = L.",
+    "conclusion": "F_centripetal, B = m * (sqrt(gL))^2 / L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_centripetal, B = m * gL / L",
+    "conclusion": "F_centripetal, B = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force on ball B is F_grav, B = mg.",
+    "conclusion": "The total force on ball B is F_total, B = mg + mg = 2mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force on ball B is F_total, B = 2mg.",
+    "conclusion": "The force exerted by ball B on the rod is 2mg.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

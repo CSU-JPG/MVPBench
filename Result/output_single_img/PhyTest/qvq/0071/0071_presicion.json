@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a transformer with two secondary coils. The primary coil has 100 turns and is connected to a 220V supply. Two appliances are connected to the secondary coils: one is a 6V, 20W device, and the other is a 110V, 60W device. The task is to find the input current in the primary coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In an ideal transformer, the ratio of the secondary voltage to the primary voltage is equal to the ratio of the number of turns in the secondary coil to the number of turns in the primary coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The primary coil has 100 turns and is connected to a 220V supply. The secondary coils have voltages of 6V and 110V.",
+    "conclusion": "The voltage ratios for the secondary coils are U2/U1 = n2/n1 and U3/U1 = n3/n1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The secondary coils are connected to loads with specific voltages and powers: 6V, 20W and 110V, 60W.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The 6V, 20W device is connected to a secondary coil.",
+    "conclusion": "The current in the secondary coil for the 6V, 20W device is I = P/U = 20/6 ≈ 3.333 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The 110V, 60W device is connected to a secondary coil.",
+    "conclusion": "The current in the secondary coil for the 110V, 60W device is I = P/U = 60/110 ≈ 0.545 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In an ideal transformer, the power in the primary equals the power in the secondary, assuming no losses.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The secondary coils have powers of 20W and 60W.",
+    "conclusion": "The total secondary power is P_total = P2 + P3 = 20W + 60W = 80W.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The primary power should equal the total secondary power, which is 80W.",
+    "conclusion": "The primary current I1 is calculated as P1 = U1 × I1, thus I1 = P1/U1 = 80/220 ≈ 0.364 A.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

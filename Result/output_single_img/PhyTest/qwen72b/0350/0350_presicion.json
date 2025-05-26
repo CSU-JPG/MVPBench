@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The average kinetic energy of gas molecules is directly proportional to the temperature of the gas.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The processes A→B and C→D are isothermal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an isothermal process, PV = constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The processes A→B and C→D are isothermal.",
+    "conclusion": "The temperature at state A is the same as at state B, and the temperature at state C is the same as at state D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State D is at a lower pressure and higher volume compared to state A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ideal gas law is given by PV = nRT.",
+    "conclusion": "Temperature can be expressed as T = PV/nR.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State D is at a lower pressure and higher volume compared to state A.",
+    "conclusion": "P_A > P_D and V_A < V_D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A > P_D and V_A < V_D.",
+    "conclusion": "T_A = (P_A V_A)/nR is greater than T_D = (P_D V_D)/nR.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_A > T_D.",
+    "conclusion": "The average kinetic energy of gas molecules increases when transitioning from state D to state A.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analysis of Ideal Gas Temperature Increase: Analyze the graphs showing the pressure and volume changes as a function of temperature for an ideal gas, and determine the pressure at 600 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the p-T graph: At T = 200 K, p = 0.5 × 10³ Pa = 500 Pa",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the p-T graph: At T = 400 K, p = 1.0 × 10³ Pa = 1000 Pa",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the V-T graph: At T = 400 K, V = 2.5 m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the V-T graph: At T = 500 K, V = 2.7 m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the V-T graph: At T = 600 K, V = 3.0 m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, PV = nRT where P = pressure, V = volume, n = number of moles (constant), R = gas constant, T = temperature. For a fixed amount of gas, PV/T = nR = constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using T = 400 K, p = 1000 Pa, V = 2.5 m³",
+    "conclusion": "Calculate nR: nR = PV/T = (1000 Pa × 2.5 m³)/400 K = 6.25 Pa·m³/K",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using nR = 6.25 Pa·m³/K, T = 600 K, V = 3.0 m³",
+    "conclusion": "Calculate pressure at 600 K: P = (6.25 Pa·m³/K × 600 K)/3.0 m³ = 1250 Pa = 1.25 × 10³ Pa",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using nR = 6.25 Pa·m³/K, T = 500 K, V = 2.7 m³",
+    "conclusion": "Verification: P = (6.25 Pa·m³/K × 500 K)/2.7 m³ ≈ 1157 Pa",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The pressure of the gas when the temperature is 600 K is 1.25 × 10³ Pa or 1250 Pa.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

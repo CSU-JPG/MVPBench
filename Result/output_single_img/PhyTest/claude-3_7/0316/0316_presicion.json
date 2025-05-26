@@ -1,0 +1,86 @@
+[
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: p = 3 × 10³ Pa, V = 2 × 10⁻³ m³, T = 27°C",
+    "judgment": "Wrong",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: p = 2 × 10³ Pa, V = 2 × 10⁻³ m³",
+    "judgment": "Wrong",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: p = 2 × 10³ Pa, V = 3 × 10⁻³ m³",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature of gas in state A is 27°C",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature of gas in state A is 27°C",
+    "conclusion": "Convert the given temperature to Kelvin: T₁ = 27°C + 273.15 = 300.15 K ≈ 300 K",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, PV = nRT",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal gas, PV = nRT",
+    "conclusion": "P₁V₁/T₁ = P₂V₂/T₂",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P₁V₁/T₁ = P₂V₂/T₂",
+    "conclusion": "Rearranging to solve for T₂: T₂ = (P₂V₂/P₁V₁) × T₁",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = (P₂V₂/P₁V₁) × T₁",
+    "conclusion": "Substitute the values: T₂ = (2×10³ Pa × 2×10⁻³ m³) / (3×10³ Pa × 2×10⁻³ m³) × 300 K",
+    "judgment": "Wrong",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = (2×10³ Pa × 2×10⁻³ m³) / (3×10³ Pa × 2×10⁻³ m³) × 300 K",
+    "conclusion": "Simplifying: T₂ = (2/3) × 300 K = 200 K",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = 200 K",
+    "conclusion": "Convert back to Celsius: T₂ = 200 K - 273.15 = -73.15°C",
+    "judgment": "Reasonable",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = 200 K",
+    "conclusion": "The temperature of the gas in state B is 200 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

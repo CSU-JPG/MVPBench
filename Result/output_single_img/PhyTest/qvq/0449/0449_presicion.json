@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a circular light hole with a thickness of \\(d = 20\\sqrt{3}\\) cm and a diameter of \\(L = 40\\) cm on a horizontal roof. A glass brick with the same shape and thickness is embedded in this light hole, and the refractive index of the glass brick is \\(n = \\sqrt{3}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find out by how many degrees the range of light incident on the central point at the bottom of the light-transmitting hole is increased after embedding the glass brick compared to before.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The central point at the bottom is directly below the center of the light hole.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light rays coming through the hole would hit this central point. After adding the glass brick, the light rays pass through the glass, which refracts them.",
+    "conclusion": "The light rays potentially increase the angle at which they reach the central point.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We have a circular hole with diameter \\(L = 40\\) cm and thickness \\(d = 20\\sqrt{3}\\) cm. The glass brick has the same shape and thickness, so it fills the entire hole.",
+    "conclusion": "The maximum angle of incidence at the central point would be determined by the geometry of the hole.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The hole is circular, and the central point is directly below the center of the hole. The maximum angle would correspond to light rays coming from the edge of the hole.",
+    "conclusion": "The maximum angle \\(\\theta_{\\text{air}}\\) without the glass brick can be found using trigonometry.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider a right triangle formed by half the diameter, the depth, and the hypotenuse being the path of the light ray. Half the diameter is \\(r = 20\\) cm, and the depth is \\(d = 20\\sqrt{3}\\) cm.",
+    "conclusion": "\\(\\tan(\\theta_{\\text{air}}) = r / d = 1/\\sqrt{3}\\). Therefore, \\(\\theta_{\\text{air}} = \\arctan(1/\\sqrt{3}) = 30^\\circ\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "With the glass brick in place, the light rays pass through the glass before reaching the central point. The glass has a refractive index \\(n = \\sqrt{3}\\), which means it bends the light rays.",
+    "conclusion": "I need to find the new maximum angle \\(\\theta_{\\text{glass}}\\) at which the light rays reach the central point.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law states that \\(n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)\\). In this case, the light is passing from air (refractive index approximately 1) into the glass (refractive index \\(\\sqrt{3}\\)).",
+    "conclusion": "At the air-glass interface, Snell's Law gives: \\(1 \\cdot \\sin(\\theta_{\\text{air}}) = \\sqrt{3} \\cdot \\sin(\\theta_{\\text{glass}})\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin(\\theta_{\\text{glass}}) = \\sin(30^\\circ) / \\sqrt{3}\\).",
+    "conclusion": "The angle of refraction \\(i = 60^\\circ\\).",
+    "judgment": "Match"
+  }]

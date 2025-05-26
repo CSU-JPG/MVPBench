@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conductor rod MN is moving in a uniform magnetic field B with a velocity v. The rod has a length L and is connected to a resistor R. The rod is moving in the horizontal direction and has an initial velocity v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod MN is moving in a uniform magnetic field B with a velocity v.",
+    "conclusion": "The induced electromotive force (EMF) in the rod is given by Faraday's law: E = B * L * v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is E = B * L * v.",
+    "conclusion": "The current I produced in the circuit due to the EMF is determined by Ohm's law: I = E / R = (B * L * v) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I is (B * L * v) / R.",
+    "conclusion": "The Ampere force F on the rod due to the current and the magnetic field is given by: F = I * B * L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = I * B * L and I = (B * L * v) / R.",
+    "conclusion": "F = ((B * L * v) / R) * B * L = (B^2 * L^2 * v) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = (B^2 * L^2 * v) / R.",
+    "conclusion": "The magnitude of the Ampere force on the rod at the initial moment is F = (B^2 * L^2 * v) / R.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

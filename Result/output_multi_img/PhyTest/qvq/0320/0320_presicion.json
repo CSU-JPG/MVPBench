@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves an ideal gas changing states from A to B to C, and the temperature at state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A is at a volume of 6 x 10^-3 m^3 and pressure of 1 x 10^5 Pa. State C is at a volume of 2 x 10^-3 m^3 and pressure of 3 x 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is PV = nRT, where P is pressure, V is volume, n is the number of moles, R is the ideal gas constant, and T is temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a fixed amount of gas, n remains constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The combined gas law is P1V1/T1 = P2V2/T2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A is at (6, 1), state B at (6, 2), and state C at (2, 3) on the grid.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The x-axis is volume in 10^-3 m^3 and the y-axis is pressure in 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A: V_A = 6 x 10^-3 m^3, P_A = 1 x 10^5 Pa",
+    "conclusion": "T_A = 27°C + 273.15 = 300.15 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state A to state B, volume is constant (isochoric process). P1/T1 = P2/T2.",
+    "conclusion": "T_B = (P_B / P_A) * T_A = 600.3 K",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state B to state C, use P_B * V_B = n * R * T_B and P_C * V_C = n * R * T_C.",
+    "conclusion": "T_C = (P_C * V_C * T_B) / (P_B * V_B)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_C = (3 x 10^5 * 2 x 10^-3 * 600.3) / (2 x 10^5 * 6 x 10^-3)",
+    "conclusion": "T_C ≈ 300.15 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

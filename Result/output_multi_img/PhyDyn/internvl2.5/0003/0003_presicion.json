@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, C, and D. Predict which container (E, F, or G) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid A (Cyan) starts from the top left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid A flows down through the green baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid A continues straight down past the grey baffle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid A flows down through the green baffle.",
+    "conclusion": "Liquid A ends up in container E (Red).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid B (Yellow) starts from the second position from the top left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid B flows down through the grey baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid B turns right and flows past the pink and black baffles.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid B flows down through the grey baffle.",
+    "conclusion": "Liquid B ends up in container G (Orange).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid C (Orange) starts from the middle top position.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid C flows down through the purple baffle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid C starts from the middle top position.",
+    "conclusion": "Liquid C ends up in container F (Grey).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid D (Pink) starts from the top right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid D flows down directly through the pink baffle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid D starts from the top right.",
+    "conclusion": "Liquid D ends up in container G (Orange).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Based on this analysis: Liquid A flows into container E, Liquid B flows into container G, Liquid C flows into container F, Liquid D flows into container G.",
+    "conclusion": "Final Answer: Liquid A: Container E, Liquid B: Container G, Liquid C: Container F, Liquid D: Container G",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

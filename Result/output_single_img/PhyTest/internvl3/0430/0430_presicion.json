@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The glass brick is hemispherical with radius R. O is the center of the hemisphere. AB is the diameter of the hemisphere. OO' is perpendicular to AB. The angle of incidence at the top surface is 15°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A beam of parallel light is directed vertically to the lower surface of the glass brick.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light enters the glass brick vertically from below, travels through the glass, and reaches the upper surface where it refracts out into the air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is the angle of incidence above which total internal reflection occurs. For glass with a refractive index n and air (refractive index ≈ 1), the critical angle is given by: sin(θc) = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For typical glass, n ≈ 1.5.",
+    "conclusion": "sin(θc) = 1/1.5 ≈ 0.6667, θc ≈ sin⁻¹(0.6667) ≈ 41.81°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light must refract out at an angle less than the critical angle to avoid total internal reflection.",
+    "conclusion": "The maximum angle of incidence at the top surface that allows refraction is 41.81°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light beam enters vertically, so the maximum width corresponds to the chord of the circle subtended by the critical angle.",
+    "conclusion": "The angle subtended at the center by this chord is 2 × 41.81° = 83.62°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The length of the chord AB can be calculated using the formula for the chord length: Chord length = 2R sin(θ/2) where θ = 83.62°.",
+    "conclusion": "Chord length = 2R sin(41.81°) ≈ 2R × 0.6667 = 1.3334R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum width of the incident light beam on AB that can be emitted from the upper surface is approximately 1.3334R.",
+    "conclusion": "The maximum width of the incident light beam on AB is approximately 1.3334R.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

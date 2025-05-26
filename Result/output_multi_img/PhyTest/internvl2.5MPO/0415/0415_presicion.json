@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A light ray enters the semicircular glass brick at an angle θ = 30° with OO', where OO' is perpendicular to the diameter AB.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two bright spots appear on the screen CD at a distance of (√3 + 1)R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray splits into two paths: reflected ray l1 and refracted ray l2.",
+    "conclusion": "The ray splits into two paths.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the right triangle △AOC, l1 = AO · tan(30°) = R · √3/3 = √3/3 R.",
+    "conclusion": "l1 is the vertical distance from point A to the screen CD.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray undergoes refraction at point O. Using Snell's Law: n1 sin θ = n2 sin β. Since the incident angle θ = 30°: sin(30°) = 1/2.",
+    "conclusion": "For the refracted angle β: sin β = 1/2n.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the right triangle property again: l2 = AO · tan(β + 30°).",
+    "conclusion": "l2 is calculated using the right triangle property.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the tangent addition formula: tan(β + 30°) = (tan β + tan(30°))/(1 - tan β tan(30°)). With tan(30°) = √3/3.",
+    "conclusion": "tan β = 1/√(4n² - 1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance between the two bright spots on the screen: l1 + l2 = (√3 + 1)R.",
+    "conclusion": "The total distance between the two bright spots is calculated.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the values of l1 and l2: √3/3 R + R · tan(β + 30°) = (√3 + 1)R.",
+    "conclusion": "Equation for the distance between bright spots is set up.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange and simplify the equation to solve for n: √3/3 + tan(β + 30°) = √3 + 1.",
+    "conclusion": "Using trigonometric identities and solving algebraically, find the refractive index n.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After solving the equations, the refractive index n is found to be √2.",
+    "conclusion": "n = √2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

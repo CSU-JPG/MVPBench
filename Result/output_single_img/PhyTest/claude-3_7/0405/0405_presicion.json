@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a semi-cylindrical transparent body with refractive index n = 2, radius R, and length L. Parallel light beams enter vertically from the top (flat rectangular surface). We need to find the area S where light exits through the curved surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When light passes from one medium to another, we need to apply Snell's law: n1 sin(theta1) = n2 sin(theta2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light enters from air (n1 = 1) to the medium (n2 = 2). Initial angle of incidence is 0° (vertical entry). When exiting through the curved surface, we need to check if the light undergoes total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light to exit the medium, the angle of incidence at the curved surface must be less than the critical angle.",
+    "conclusion": "The critical angle θc is given by sin(theta_c) = 1/2, theta_c = arcsin(1/2) = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since light enters vertically, it travels straight through the medium until it hits the curved surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At the curved surface, the angle of incidence varies depending on the position. The angle of incidence equals the angle between the radius to the point of impact and the vertical.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let's establish a coordinate system where the center of the semi-circle is at (0,0), the flat surface is along the x-axis, and the curved surface is in the upper half-plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a point (x,y) on the curved surface, the radius vector makes an angle θ with the vertical.",
+    "conclusion": "Light exits if θ < 30° (the critical angle).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a point (R·sinθ, R·cosθ) on the curved surface, the angle with the vertical is θ.",
+    "conclusion": "Light exits if θ < 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light exits through the curved surface where -30° < θ < 30°.",
+    "conclusion": "This corresponds to a 60° arc of the semi-circle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of this part of the cylindrical surface is calculated based on the arc.",
+    "conclusion": "S = (60°/180°) * π * R * L = (1/3) * π * R * L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only light that strikes the curved surface at an angle less than the critical angle (30°) will exit, which corresponds to a 60° portion of the semi-circular cross-section.",
+    "conclusion": "The area S of the part of the cylindrical surface through which light exits is S = π * R * L / 3.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

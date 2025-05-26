@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, P V = n R T at every state.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A has coordinates (P₁, V₁).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A has coordinates (P₁, V₁). For an ideal gas, P V = n R T at every state.",
+    "conclusion": "P₁ V₁ = n R T₀ → n R = P₁ V₁ ⁄ T₀.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State D has coordinates (P₁, V₂).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State D has coordinates (P₁, V₂). For an ideal gas, P V = n R T at every state.",
+    "conclusion": "P₁ V₂ = n R T_D",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P₁ V₂ = n R T_D",
+    "conclusion": "T_D = P₁ V₂ ⁄ (n R)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_D = P₁ V₂ ⁄ (n R), n R = P₁ V₁ ⁄ T₀",
+    "conclusion": "T_D = P₁ V₂ ⁄ (P₁ V₁ ⁄ T₀) = T₀ (V₂ ⁄ V₁)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

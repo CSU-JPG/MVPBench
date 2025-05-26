@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The tank wall has a thickness of 18 cm, the refractive index of the material is √3, and the maximum angle of view for light is 120°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θ_c for total internal reflection is given by sin θ_c = 1/n where n is the refractive index.",
+    "conclusion": "For n = √3, sin θ_c = 1/√3 = √3/3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ_c = √3/3",
+    "conclusion": "θ_c = arcsin(√3/3) ≈ 35.26°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray inside the tank strikes the boundary at θ_i = 60° (since the total angle is 120°).",
+    "conclusion": "Using Snell's Law: n_1 sin θ_i = n_2 sin θ_r with n_1 = 1 (air), n_2 = √3 (material), and θ_i = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging Snell's Law gives sin θ_r = (n_1 sin θ_i)/n_2 = (sin 60°)/√3 = (√3/2)/√3 = 1/2.",
+    "conclusion": "θ_r = arcsin(1/2) = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The external angle θ_2 is the angle of refraction, which is 30°.",
+    "conclusion": "Using trigonometric relations, relate the distance between points A and B with the height and angles.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the right triangle formed, the height is 18 cm, and θ_2 = 30°.",
+    "conclusion": "The horizontal distance between the points of incidence on the tank wall is AB = 18 cm / tan 30° = 18/ (1/√3) = 18√3 cm.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using geometric relations tan θ_2 = AB/BC and solving for AB.",
+    "conclusion": "AB = 6√3 cm",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

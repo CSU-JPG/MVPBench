@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit consists of a power supply with electromotive force E = 6 V and internal resistance r = 2 Ω. The resistors R1 = 2 Ω, R2 = 3 Ω, and R3 = 6 Ω are connected as shown in the diagram. The capacitor C = 10 μF is connected in parallel with R2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R2 = 3 Ω and R3 = 6 Ω are connected in parallel.",
+    "conclusion": "The equivalent resistance of R2 and R3 (R23) is calculated as 2 Ω using the formula: 1/R23 = 1/R2 + 1/R3 = 1/3 + 1/6 = 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R23 = 2 Ω and R1 = 2 Ω are in series.",
+    "conclusion": "The total resistance in the circuit (Rtotal) is 4 Ω, calculated as Rtotal = R1 + R23 = 2 Ω + 2 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance in the circuit is Rtotal = 4 Ω, and the internal resistance of the power supply is r = 2 Ω. The electromotive force is E = 6 V.",
+    "conclusion": "The current in the circuit (I) is 1 A, calculated using Ohm's Law: I = E / (Rtotal + r) = 6 V / (4 Ω + 2 Ω) = 6 / 6 = 1 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the circuit is I = 1 A, and the resistance of R1 is 2 Ω.",
+    "conclusion": "The voltage across R1 (U1) is 2 V, calculated as U1 = I × R1 = 1 A × 2 Ω = 2 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total voltage supplied by the power source is E = 6 V, and the voltage across R1 is U1 = 2 V.",
+    "conclusion": "The voltage across the capacitor (UC) is 4 V, calculated as UC = E - U1 = 6 V - 2 V = 4 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitance of the capacitor is C = 10 μF, and the voltage across the capacitor is UC = 4 V.",
+    "conclusion": "The charge on the capacitor (Q) is 40 μC, calculated as Q = C × UC = 10 × 10^-6 F × 4 V = 40 × 10^-6 C = 40 μC.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The car initially travels at 30 m/s, and the truck travels at a constant speed of 10 m/s. The initial distance between them is 30 meters, with the truck ahead. The car applies emergency brakes, but they fail during the process. The car's velocity-time graph is represented by line a, showing deceleration, and the truck's velocity-time graph is represented by line b, showing constant velocity.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The v-t graph shows line a (car) decreasing linearly from 30 m/s to 10 m/s over 5 seconds, and line b (truck) is a horizontal line at 10 m/s.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car's velocity decreases linearly from 30 m/s to 10 m/s over 5 seconds.",
+    "conclusion": "The car is decelerating at a constant rate until it reaches the same speed as the truck.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial velocity u = 30 m/s, final velocity v = 10 m/s, time taken t = 5 s.",
+    "conclusion": "The car's deceleration is (u - v)/t = (30 - 10)/5 = 4 m/s².",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car's deceleration is 4 m/s², and the area under the v-t graph represents distance.",
+    "conclusion": "The distance traveled by the car in 5 seconds is (1/2) × 5 × (30 + 10) = 100 meters.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck moves at a constant speed of 10 m/s for 5 seconds.",
+    "conclusion": "The distance traveled by the truck in 5 seconds is 10 × 5 = 50 meters.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial separation = 30 meters, distance traveled by car = 100 meters, distance traveled by truck = 50 meters.",
+    "conclusion": "The car's final position is 100 meters, and the truck's final position is 80 meters. Since the car's final position is greater than the truck's final position, the car will overtake the truck, meaning a collision will occur.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car's velocity decreases linearly as v_car = 30 - 4t, and the truck's velocity is constant at v_truck = 10 m/s.",
+    "conclusion": "The relative velocity between the car and the truck is v_car - v_truck = 20 - 4t.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car's displacement is s_car = 30t - 2t², and the truck's displacement is s_truck = 10t. For collision, s_car + 30 = s_truck.",
+    "conclusion": "The equation for collision is -2t² + 20t + 30 = 0, which simplifies to t² - 10t - 15 = 0.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The quadratic equation for collision is t² - 10t - 15 = 0.",
+    "conclusion": "Using the quadratic formula, t = (10 ± √160)/2. The valid solution is t ≈ 11.32 seconds.",
+    "judgment": "Wrong",
+    "final_answer": null
+  }]

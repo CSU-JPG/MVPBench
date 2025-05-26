@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a circuit with a voltage source U, resistance R1, an ammeter, a motor M, and a switch that can be opened or closed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The resistance R1 is 20 ohms, and the internal resistance of the motor is R2 = 10 ohms.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch is open, the ammeter reads I0 = 0.5 A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch is closed, the motor starts rotating, and the voltage across the circuit remains unchanged.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R1 = 20 ohms, I0 = 0.5 A",
+    "conclusion": "U = I0 * R1 = 10 volts",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When the switch is closed, the motor is connected in parallel with R1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R1 and motor are in parallel, voltage U = 10 volts",
+    "conclusion": "The current through R1 is U / R1 = 0.5 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Motor has internal resistance R2 = 10 ohms, generates back EMF E",
+    "conclusion": "I_motor = (10 - E) / 10 A",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across motor = 10 volts, I_motor = (10 - E) / 10 A",
+    "conclusion": "P_motor = (10 - E) watts",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across R1 = 10 volts, current through R1 = 0.5 A",
+    "conclusion": "P_R1 = 5 watts",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_R1 = 5 watts, P_motor = (10 - E) watts",
+    "conclusion": "Total power P = 15 - E watts",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E > 0",
+    "conclusion": "P < 15 watts",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

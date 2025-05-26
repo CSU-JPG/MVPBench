@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square ABCD with side length A is the cross section of a prism, and M is the midpoint of the AB side. A ray enters the prism from point M with an incident angle of 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After refraction, total reflection happens at point N on the BC side, and the reflected ray exits the prism from point P on the CD side.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "MN is perpendicular to AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Angle AMP = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Angle MNP = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle AMP = 60°, MN is perpendicular to AB.",
+    "conclusion": "Angle PMN = 30°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle PMN = 30°, Angle MNP = 90°.",
+    "conclusion": "Angle NMP = 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total reflection happens at point N.",
+    "conclusion": "Angle NCP = 45°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle NCP = 45°.",
+    "conclusion": "Angle CPN = 45°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle AMP = 60°.",
+    "conclusion": "Angle MPD = 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle PMN = 30°.",
+    "conclusion": "Angle MND = 30°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle MND = 30°.",
+    "conclusion": "Angle NDC = 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle NDC = 60°.",
+    "conclusion": "Angle MDC = 90°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Analytically, if the refraction angle of light on the AB plane is θ, then sin(60°) = n sin(θ).",
+    "conclusion": "From the topic, it is known that when the light is refracted, it happens to be totally reflected at N point on the BC side, then sin(C) = 1/n, C = 90° - θ, tan(θ) = √3/2, n = √7/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "NC = a - BN = a - a/√3.",
+    "conclusion": "According to the geometric relationship, tan(θ) = MB/BN = a/2BN.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ) = PC/NC.",
+    "conclusion": "PC = (√3 - 1)/2 a.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

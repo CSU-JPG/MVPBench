@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Objects A and B move along the same straight line from the same starting position. Their v-t (velocity vs. time) graphs are shown in the figure.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The separation Δx between the two objects at any instant equals the time–integral of their relative velocity Δx(t)=∫₀ᵗ[ v_A(τ) – v_B(τ) ] dτ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The separation Δx between the two objects at any instant equals the time–integral of their relative velocity Δx(t)=∫₀ᵗ[ v_A(τ) – v_B(τ) ] dτ.",
+    "conclusion": "The separation is an extremum when the derivative d(Δx)/dt is zero: d(Δx)/dt = v_A(t) – v_B(t) = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The separation is an extremum when the derivative d(Δx)/dt is zero: d(Δx)/dt = v_A(t) – v_B(t) = 0.",
+    "conclusion": "The two objects must have the same instantaneous velocity.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Inspecting the graph, the two curves cross only once after the start, at the instant labelled t₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Before t₂, v_A > v_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Before t₂, v_A > v_B.",
+    "conclusion": "Δx is increasing.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Immediately after t₂, v_A < v_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Immediately after t₂, v_A < v_B.",
+    "conclusion": "Δx begins to decrease.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two objects must have the same instantaneous velocity. Inspecting the graph, the two curves cross only once after the start, at the instant labelled t₂. Before t₂, v_A > v_B, so Δx is increasing. Immediately after t₂, v_A < v_B, so Δx begins to decrease.",
+    "conclusion": "Therefore t₂ is the moment when Δx reaches its maximum value.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

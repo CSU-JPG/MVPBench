@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the voltage U_{1} between the two metal plates, we need to analyze the motion of the negatively charged dust particles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the charged particles move with a constant velocity v_0 along the direction of the plates (length L),",
+    "conclusion": "The time t it takes for the particles to travel this distance is given by t = L/v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particles experience an electric field E in the vertical direction due to the voltage applied across the plates.",
+    "conclusion": "The force on a charged particle is given by F = qE = -αE.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on a charged particle is F = -αE.",
+    "conclusion": "The acceleration a imparted to the particles by this force is a = F/m = -αE/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The displacement y in the vertical direction when the particles hit the plates can be found using the kinematic equation for uniformly accelerated motion.",
+    "conclusion": "y = 1/2 a t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the particles just reach the edge of the plates, this displacement y is equal to half the distance between the plates d/2.",
+    "conclusion": "d/2 = 1/2 a t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute a = -αE/m and t = L/v_0 into the displacement equation d/2 = 1/2 a t^2.",
+    "conclusion": "d = -αE L^2 / (m v_0^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = -αE L^2 / (m v_0^2).",
+    "conclusion": "Rearrange to solve for E: E = m v_0^2 d / (-α L^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field E is related to the voltage U_{1} across the plates by E = U_{1}/d.",
+    "conclusion": "Substitute E = m v_0^2 d / (-α L^2) into the voltage equation.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = U_{1}/d and E = m v_0^2 d / (-α L^2).",
+    "conclusion": "Solve for U_{1}: U_{1} = m v_0^2 d^2 / (-α L^2).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas the equation of state is PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P = P₁, V = V₁, T = T₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A: P = P₁, V = V₁, T = T₀ and PV = nRT.",
+    "conclusion": "nR = P₁V₁ / T₀.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: P = P₂, V = V₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State B: P = P₂, V = V₁ and nR = P₁V₁ / T₀.",
+    "conclusion": "T_B = (P₂V₁)/(nR).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = (P₂V₁)/(nR) and nR = P₁V₁ / T₀.",
+    "conclusion": "T_B = (P₂V₁) / (P₁V₁ / T₀).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = (P₂V₁) / (P₁V₁ / T₀).",
+    "conclusion": "T_B = T₀ (P₂ / P₁).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = T₀ (P₂ / P₁).",
+    "conclusion": "T_B = T₀ · (P₂ ⁄ P₁).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

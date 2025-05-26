@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A particle is moving in a straight line along the x-axis, and its v-t graph is shown in the figure. The particle is located at x = 5 m at t = 0 and starts moving in the positive direction of the x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a velocity-time graph with a trapezoidal shape. The velocity starts at 0 m/s, increases linearly from 0 to 2 m/s over 3 seconds, remains constant at 2 m/s for 2 seconds, decreases linearly back to 0 m/s over 2 seconds, and then remains at 0 m/s for the final 1 second.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle is initially at x = 5 meters at t = 0.",
+    "conclusion": "The initial position of the particle is 5 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From t = 0 to t = 3, the velocity increases linearly from 0 to 2 m/s.",
+    "conclusion": "The average velocity during this period is 1 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From t = 3 to t = 5, the velocity is constant at 2 m/s.",
+    "conclusion": "The displacement during this period is 4 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From t = 5 to t = 7, the velocity decreases linearly from 2 to 0 m/s.",
+    "conclusion": "The average velocity is 1 m/s, resulting in a displacement of 2 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total displacement from t = 0 to t = 7 is 5 + 4 + 2 = 11 meters.",
+    "conclusion": "The total displacement is 11 meters.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From t = 7 to t = 8, the velocity is 0 m/s.",
+    "conclusion": "There is no displacement during this period.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total displacement is 11 meters and the initial position is 5 meters.",
+    "conclusion": "The position of the particle at t = 8 seconds is 16 meters.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

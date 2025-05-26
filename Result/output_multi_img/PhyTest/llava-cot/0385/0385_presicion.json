@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two sufficiently long parallel metal rails are spaced at a distance of L=0.5m, with an inclination angle of θ=30° to the horizontal plane. They are placed in a uniform magnetic field with a magnetic induction strength of B=0.2T, directed vertically upward relative to the plane of the rails.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conductor rods a and b on the rails have masses of ma=0.3kg and mb=0.1kg, respectively, and each has a resistance of R=0.1Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rods a and b are released from rest, and a constant force F of magnitude 2N is applied to rod a along the direction parallel to the rails, pulling it upward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rails are smooth, and their resistance is negligible. During the motion, the two rods remain perpendicular to the rails and maintain good contact.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gravitational acceleration is taken as g=10m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "It is known that when the Joule heat generated in rod a is Qa=0.12J, its velocity is va=1.0m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem asks for the speed magnitude of rod b.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows two parallel metal rails inclined at an angle θ = 30° to the horizontal. Two conductor rods, a and b, are placed on these rails, perpendicular to them. A uniform magnetic field is directed vertically upwards. A force F = 2N is applied to rod a to pull it upward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 2N, ma = 0.3kg, g = 10m/s²",
+    "conclusion": "Calculate the net force acting on rod a: F_net = F - ma * g = 2N - 0.3kg * 10m/s² = 1.7N",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_net = 1.7N, ma = 0.3kg",
+    "conclusion": "Find the acceleration of rod a using Newton's second law: aa = F_net / ma = 1.7N / 0.3kg = 5.67m/s²",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Qa = 0.12J, ma = 0.3kg",
+    "conclusion": "Determine the velocity of rod a when the Joule heat generated is Qa = 0.12J: va = sqrt(2Qa/ma) = sqrt(2 * 0.12J / 0.3kg) = 1.0m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ma = 0.3kg, mb = 0.1kg, va = 1.0m/s",
+    "conclusion": "Apply the principle of conservation of momentum: ma * va + mb * vb = 0. Solving for vb, we get: vb = -(ma/mb) * va = -(0.3kg/0.1kg) * 1.0m/s = -3.0m/s",
+    "judgment": "Wrong"
+  }

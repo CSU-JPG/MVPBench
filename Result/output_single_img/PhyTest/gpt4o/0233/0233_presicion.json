@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the electromotive force (EMF) induced in the wire frame due to the changing magnetic field, calculate the current flowing through the wire, and then find the force acting on the wire due to this current. Finally, we will determine the frictional force required to keep the wire frame stationary.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame is a square with a side length of 0.2 m. Half of the frame is in the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is a square with a side length of 0.2 m. Half of the frame is in the magnetic field.",
+    "conclusion": "The area A of the part of the wire frame in the magnetic field is A = 0.02 m^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic induction intensity B is given by B = (3 + 2t) T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A = 0.02 m^2, B = (3 + 2t) T",
+    "conclusion": "The magnetic flux Φ = B × A = 0.06 + 0.04t Wb.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ = 0.06 + 0.04t Wb",
+    "conclusion": "Differentiate Φ with respect to t to find dΦ/dt = 0.04 Wb/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ/dt = 0.04 Wb/s",
+    "conclusion": "The induced EMF is E = -dΦ/dt = -0.04 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance R of the wire frame is 4 Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = -0.04 V, R = 4 Ω",
+    "conclusion": "The current I in the wire frame is I = E/R = -0.01 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic force F on a current-carrying wire in a magnetic field is given by F = I × L × B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B = 3 + 2 × 2.5 = 8 T",
+    "conclusion": "At t = 2.5 s, the magnetic induction intensity is B = 8 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The length of the wire in the magnetic field is half the perimeter of the square, L = 0.2 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 0.01 A, L = 0.2 m, B = 8 T",
+    "conclusion": "The force is F = 0.01 A × 0.2 m × 8 T = 0.016 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force acts to push the wire frame in the direction of the current flow, which is clockwise.",
+    "conclusion": "The direction of the frictional force is opposite to the direction of the magnetic force to keep the wire frame stationary. Therefore, the frictional force acts counterclockwise.",
+    "judgment": "Wrong"
+  }

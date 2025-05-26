@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light source is at the focus F of the parabolic surface. The light source emits light that reflects off the parabolic surface and then passes through the hemispherical lens at an angle perpendicular to the vertical diameter MN. The refractive index n = 4/3 of the hemispherical lens.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the lens perpendicular to MN.",
+    "conclusion": "It travels along the vertical diameter MN of the hemispherical lens.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When light enters a medium of higher refractive index, the angle of refraction is less than the angle of incidence (Snell's Law).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence is θ1 = 0°.",
+    "conclusion": "According to Snell's Law, n1 sin θ1 = n2 sin θ2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 1 (air) and n2 = 4/3 (hemispherical lens).",
+    "conclusion": "sin θ2 = (1 * sin 0°) / (4/3) = 0, implying θ2 = 0°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ2 = 0°.",
+    "conclusion": "The light travels along the vertical diameter MN without being refracted.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light travels along the vertical diameter MN.",
+    "conclusion": "The length of the transparent part of the light entering perpendicular to MN on the lens spherical surface is equal to the diameter of the hemispherical lens.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem does not provide the radius R of the hemispherical lens.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assume the radius R of the hemispherical lens is given or can be derived from the problem context.",
+    "conclusion": "Assume R = 10 cm (hypothetical value).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The length of the transparent part is 2R.",
+    "conclusion": "If R = 10 cm, then the length of the transparent part is 20 cm.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

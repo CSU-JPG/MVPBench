@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves two parallel guide-rails ab and cd, separated by a distance l, with a fixed resistor R connected between b and d. A conductor rod MN is placed perpendicular to ab, and the setup is in a uniform magnetic field B perpendicular to the guide-rails, pointing into the paper. A force is applied to MN to move it uniformly at speed v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Faraday's law, when a conductor moves through a magnetic field, an emf is induced.",
+    "conclusion": "The induced emf is given by the formula: \\( \\mathcal{E} = B \\times l \\times v \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor MN with length l moves at speed v perpendicular to the magnetic field B.",
+    "conclusion": "The induced emf in MN is \\( \\mathcal{E} = B \\times l \\times v \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Lenz's law, the induced current will flow to oppose the change in magnetic flux.",
+    "conclusion": "The flux through the loop is increasing, so the induced current should flow to produce a magnetic field out of the paper.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the right-hand rule for currents producing magnetic fields.",
+    "conclusion": "If the current flows from M to N, it produces a magnetic field out of the paper.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Fleming's right-hand rule with B into the paper and v to the right.",
+    "conclusion": "The induced current flows from N to M in the rod.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Both Lenz's law and Fleming's right-hand rule suggest the same direction for the current.",
+    "conclusion": "The current flows from N to M in the rod and then through the resistor R from b to d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf is \\( \\mathcal{E} = B \\times l \\times v \\), and MN and R are in series.",
+    "conclusion": "The total resistance is 2R, and the current I is \\( I = \\frac{B \\times l \\times v}{2R} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across MN is the same as the voltage across the resistor R.",
+    "conclusion": "The magnitude of the voltage U across MN is \\( \\frac{1}{2}BLv \\), and the direction of the induced current is from b to d.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the farthest vertical distance from the wellhead water surface that the frog can see when it looks up from the bottom of the well.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The frog is at the bottom of the well, which is filled with water. The well has a depth of 8 meters and a radius of 0.5 meters. The refractive index of water is given as n = 4/3.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The critical angle (C) is the angle of incidence above which total internal reflection occurs. It can be calculated using Snell's Law.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate the critical angle using Snell's Law: sin C = 1/n = 3/4, therefore C = arcsin(3/4).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The frog can see the scenery outside the well up to the angle C from the vertical. The light rays that reach the frog from the edge of the wellhead make an angle C with the vertical.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate the maximum horizontal distance x from the center of the well to the edge of the visible area using trigonometry: tan C = x/8, therefore x = 8 tan C.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate tan C using the identity tan C = sin C/sqrt(1 - sin^2 C): tan C = 3/sqrt(7).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute tan C into the equation for x: x = 8 * (3/sqrt(7)) = 24/sqrt(7).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate the farthest vertical distance from the wellhead water surface that the frog can see: Farthest distance = 24/sqrt(7) + 0.5.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The farthest vertical distance from the wellhead water surface that the frog can see is approximately 9.56 meters.",
+    "relevant": "Yes"
+  }
+]

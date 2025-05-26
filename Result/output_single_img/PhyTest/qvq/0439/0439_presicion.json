@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two identical thin-walled glasses, A and B, filled with sucrose water of different concentrations. Two identical monochromatic light beams are shining on them at the same incident angle θ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Refraction angle β1 is greater than β2 for glass A and B, respectively.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Higher concentration of sucrose water corresponds to a higher refractive index.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law: n1 sin θ1 = n2 sin θ2, where n1 and n2 are the refractive indices and θ1 and θ2 are the angles of incidence and refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law and n1 ≈ 1 for air.",
+    "conclusion": "For glass A: 1 * sin θ = nA * sin β1; For glass B: 1 * sin θ = nB * sin β2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ is the same for both glasses.",
+    "conclusion": "nA * sin β1 = nB * sin β2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "β1 > β2 implies sin β1 > sin β2.",
+    "conclusion": "nA * (larger number) = nB * (smaller number)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nA * (larger number) = nB * (smaller number)",
+    "conclusion": "nA must be smaller than nB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nA < nB and higher concentration leads to a higher refractive index.",
+    "conclusion": "Concentration in A is lower than in B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Concentration in A is lower than in B.",
+    "conclusion": "The concentration of sucrose water in cup A is not higher.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

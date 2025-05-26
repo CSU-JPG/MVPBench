@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A: P_A = 4 atm, V_A = 10 L, T_A = 300 K; State B: P_B = 4 atm, V_B is unknown; State C: P_C = 2 atm, V_C = 40 L",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is PV = nRT",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process from A to B is isobaric",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Isobaric process: V/T = constant",
+    "conclusion": "V_A/T_A = V_B/T_B",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B is vertically aligned with state A, implying the same pressure",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC is a hyperbolic path, P_B x V_B = P_C x V_C",
+    "conclusion": "4 x V_B = 2 x 40, V_B = 20 L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_A/T_A = V_B/T_B, V_A = 10 L, T_A = 300 K, V_B = 20 L",
+    "conclusion": "T_B = (20 x 300)/10 = 600 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

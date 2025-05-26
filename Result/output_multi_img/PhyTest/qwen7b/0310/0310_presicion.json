@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the temperature at point C, we need to analyze the given information and use the ideal gas law PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point A, V_A = V_0 and T_A = T_0. The pressure at point A, P_A = P_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point B, V_B = 2V_0. Since AB is parallel to the V-axis, this implies that the volume remains constant as the temperature increases from T_0 to some temperature T_B > T_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The extension line of BC passes through the origin O.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The extension line of BC passes through the origin O.",
+    "conclusion": "The volume-pressure relationship for points on this line can be described by PV = k, where k is a constant.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "PV = k for the line through origin.",
+    "conclusion": "P_A V_A = k, therefore P_0 V_0 = k.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A V_A = k and P_B V_B = P_C V_C.",
+    "conclusion": "P_B = P_C · (V_C / V_0).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_B = P_C · (V_C / V_0) and P_0 V_0 = P_C · 2V_0.",
+    "conclusion": "P_C = P_0 / 2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_C = P_0 / 2 and V_C = V_0.",
+    "conclusion": "Using the ideal gas law at point C: (P_0 / 2) V_0 = n R T_C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_0 V_0 = n R T_0 from point A.",
+    "conclusion": "Equating n R: (P_0 V_0) / 2 = n R T_C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(P_0 V_0) / 2 = n R T_C and n R T_0 = n R T_C.",
+    "conclusion": "T_C = T_0 / 2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

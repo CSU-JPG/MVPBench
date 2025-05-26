@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a right triangular prism with: Angle A = 90°, Angle B = 60°, A light beam travels path D → E → F and then exits, Point D is the midpoint of segment CG, EG is perpendicular to AC and intersects BC at G. We need to find the angle of deviation, which is the angle between the incident ray at D and the final exit ray.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Looking at the diagrams, we can see: i₁: angle of incidence at point D, r₁: angle of reflection at point D, i₂: angle of incidence at point E, r₂: angle of reflection at point E, i₃: angle of incidence at point F, r₃: angle of reflection at point F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By the law of reflection, for each reflection: i = r",
+    "conclusion": "i₁ = r₁, i₂ = r₂, and i₃ = r₃.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since angle B = 60°, angle C = 30° (as angles in a triangle sum to 180°).",
+    "conclusion": "Angle C = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since D is the midpoint of CG and EG is perpendicular to AC, we can establish some important relationships: Triangle CEG has a right angle at E, The angle GCE = 30° (same as angle C).",
+    "conclusion": "Triangle CEG has a right angle at E and angle GCE = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since D is the midpoint of CG, angle CDG = 90°.",
+    "conclusion": "The light ray enters perpendicularly to side BC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray enters perpendicularly to side BC.",
+    "conclusion": "i₁ = 0° (perpendicular incidence)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since i₁ = 0°, the ray DE makes an angle of 30° with AC (complementary to angle C). By the law of reflection, i₂ = r₂ = 30°",
+    "conclusion": "i₂ = r₂ = 30°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point F, total internal reflection occurs. The path from E to F makes an angle of 30° with AC. Given that angle A = 90°, the angle between AC and AB is 90°.",
+    "conclusion": "The angle of incidence at F relative to the normal of AB is i₃ = 60°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By the law of reflection, r₃ = i₃ = 60°",
+    "conclusion": "r₃ = i₃ = 60°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial ray at D: perpendicular to BC (i₁ = 0°), Final ray after F: makes an angle of 60° with the normal to AB, which means it makes an angle of 30° with the horizontal.",
+    "conclusion": "The angle of deviation = 90° + 30° = 120°",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

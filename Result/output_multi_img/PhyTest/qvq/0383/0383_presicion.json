@@ -1,0 +1,86 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rails AB and CD are placed vertically, connected at one end with DE, forming an isosceles right triangle BDE. A uniform magnetic field of magnitude B exists in the space, directed perpendicularly into the plane of the rails. The distance between AB and CD is l. The conductor rod MN has a mass of m and a resistance per unit length of r. The height difference between MN and BD is also l. The conductor rod MN is released from rest and reaches a constant speed before it arrives at BD. During its descent, the rod remains horizontal and maintains good contact with the rails. The resistance and friction of the rails are negligible, and the acceleration due to gravity is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I need to find the velocity v of the conductor rod MN when it's moving at a constant speed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At constant speed, the net force on the rod is zero.",
+    "conclusion": "The forces must be balanced.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The weight of the rod is mg, where g is the acceleration due to gravity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod is moving downward and cutting the magnetic field lines.",
+    "conclusion": "It will generate an emf (electromotive force), which will induce a current in the rod.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced current in the rod experiences a magnetic force that opposes the motion of the rod, according to Lenz's law.",
+    "conclusion": "The magnetic force will be acting upward, opposing the weight of the rod.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At constant speed, the magnetic force equals the weight.",
+    "conclusion": "The magnetic force equals mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The emf induced in the rod when it moves through the magnetic field is given by ε = B * l * v.",
+    "conclusion": "This emf will cause a current to flow through the rod and the rails.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance R of the rod can be expressed as R = r * l.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I in the circuit is I = ε / R = (B * l * v) / (r * l).",
+    "conclusion": "I = (B * v) / r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force on the rod is F = B * I * l.",
+    "conclusion": "F = (B^2 * l^2 * v) / r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At constant velocity, the magnetic force equals the weight of the rod: F = mg.",
+    "conclusion": "(B^2 * l^2 * v) / r = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(B^2 * l^2 * v) / r = mg",
+    "conclusion": "v = (mg * r) / (B^2 * l^2)",
+    "judgment": "Match",
+    "final_answer": "0"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem states that the resistance and friction of the rails are negligible.",
+    "conclusion": "No need to consider any frictional forces.",
+    "judgment": "Reasonable"
+  }

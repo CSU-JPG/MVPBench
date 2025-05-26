@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "On a heavily foggy day, a car was traveling at a speed of 30 m/s on the highway when it suddenly noticed a large truck traveling in the same direction at a constant speed of 10 m/s, 30 meters ahead.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The car applied emergency brakes, but the brakes failed during the braking process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "a and b represent the v-t graphs of the car and the truck, respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The v-t graph shows the car's speed decreasing linearly from 30 m/s to 10 m/s over 5 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The v-t graph shows the truck's speed remaining constant at 10 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The automobile slows linearly from 30 m/s to 10 m/s in 5 s.",
+    "conclusion": "The car's average speed during that interval is 20 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car's average speed during the 5 s interval is 20 m/s.",
+    "conclusion": "In those 5 s, the car covers 100 m.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck keeps a constant speed of 10 m/s for 5 s.",
+    "conclusion": "In those 5 s, the truck covers 50 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car covers 100 m and the truck covers 50 m in the same 5 s interval.",
+    "conclusion": "The car closes the gap of 50 m, which is greater than the original 30 m gap, before the 5 s are up.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car closes the gap of 50 m, which is greater than the original 30 m gap, before the 5 s are up.",
+    "conclusion": "The car will indeed collide with the truck.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

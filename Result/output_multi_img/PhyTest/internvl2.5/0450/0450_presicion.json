@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light bulbs A and B are located at different depths h1 and h2 respectively. The refractive index for red light is n1. The refractive index for yellow light is n2. The emitted light forms the same area on the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When light exits from water to air, it refracts according to Snell's Law: n1 sin θ1 = n2 sin θ2, where θ1 is the angle of incidence in water and θ2 is the angle of refraction in air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc occurs when θ2 = 90°, giving sin θc = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc occurs when θ2 = 90°, giving sin θc = 1/n.",
+    "conclusion": "For red light: sin θc1 = 1/n1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc occurs when θ2 = 90°, giving sin θc = 1/n.",
+    "conclusion": "For yellow light: sin θc2 = 1/n2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius r of the circle formed on the water surface is related to the depth h and the critical angle θc.",
+    "conclusion": "For red light: r1 = h1 tan θc1",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius r of the circle formed on the water surface is related to the depth h and the critical angle θc.",
+    "conclusion": "For yellow light: r2 = h2 tan θc2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area A of the circle on the water surface is A = π r^2.",
+    "conclusion": "The area for red light: A1 = π r1^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area A of the circle on the water surface is A = π r^2.",
+    "conclusion": "The area for yellow light: A2 = π r2^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the areas are the same: π r1^2 = π r2^2",
+    "conclusion": "h1^2 tan^2 θc1 = h2^2 tan^2 θc2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use tan^2 θc = 1/cos^2 θc - 1",
+    "conclusion": "tan^2 θc1 = 1/cos^2 (1/n1) - 1",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use tan^2 θc = 1/cos^2 θc - 1",
+    "conclusion": "tan^2 θc2 = 1/cos^2 (1/n2) - 1",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate the radius r using the known depth and refractive index, then find the area A = π r^2.",
+    "conclusion": "A = π h^2 (1/cos^2 (1/n) - 1)",
+    "judgment": "Reasonable"
+  }]

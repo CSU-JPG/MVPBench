@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves finding the electric field strength between two parallel plates and the electric potential at point M.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The voltage between the plates is 4V and the distance between the plates is 10 mm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance from point M to plate A is 2 mm, and the distance from point N to plate B is 2 mm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For parallel plates with a uniform electric field, the formula for electric field strength is: E = V/d, where V is the voltage and d is the distance between the plates.",
+    "conclusion": "The electric field strength between the plates is E = 4 V / 0.01 m = 400 V/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric potential varies linearly between the plates. If we set the potential of plate B to be 0 V, then plate A would be at 4 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point M is 2 mm from plate A, and the total distance between plates is 10 mm. So M is located at a distance of 8 mm from plate B.",
+    "conclusion": "The potential drop per unit distance is 0.4 V/mm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential at M is calculated as 0 V + (8 mm) × (0.4 V/mm) = 3.2 V.",
+    "conclusion": "The potential at point M is 3.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Alternatively, the potential at M can be calculated from plate A as 4 V - (2 mm × 0.4 V/mm) = 4 V - 0.8 V = 3.2 V.",
+    "conclusion": "The potential at point M is 3.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the potential at plate B is 0 V, the potential at point M is calculated as -3.2 V using U_{BM} = Ed_{MB}.",
+    "conclusion": "The electric potential at point M is -3.2 V.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel metal plates, A and B, are 10 mm apart with a voltage of 4 V between them. Plate B is grounded, meaning its potential is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field (E) between two parallel plates is uniform and can be calculated using the formula: E = V / d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the voltage V is 4 V and the distance d is 10 mm.",
+    "conclusion": "Convert 10 mm to meters: 10 mm = 0.01 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = V / d with V = 4 V and d = 0.01 m.",
+    "conclusion": "E = 4 V / 0.01 m = 400 V/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The potential decreases linearly from plate A to plate B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance between A and B is 10 mm, and the potential drops by 4 V from A to B.",
+    "conclusion": "For every millimeter you move from A towards B, the potential decreases by 0.4 V/mm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point M is 2 mm from plate A, so it's 8 mm from plate B.",
+    "conclusion": "The potential at point M should be higher than the potential at B (which is 0 V).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field E = (V_A - 0 V) / d = V_A / d with V_A - 0 V = 4 V.",
+    "conclusion": "E = 4 V / 0.01 m = 400 V/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the potential at point M, which is 2 mm from A.",
+    "conclusion": "V_M = 4 V - (400 V/m) * (0.002 m) = 4 V - 0.8 V = 3.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential drop from A to M is E * d_M = 400 V/m * 0.002 m = 0.8 V.",
+    "conclusion": "V_M = V_A - 0.8 V = 4 V - 0.8 V = 3.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential varies linearly from A to B.",
+    "conclusion": "V_M = 4 V - (400 V/m)(0.002 m) = 4 V - 0.8 V = 3.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the potential at B is 0 V and M is 8 mm from B.",
+    "conclusion": "The potential at M is -3.2 V.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

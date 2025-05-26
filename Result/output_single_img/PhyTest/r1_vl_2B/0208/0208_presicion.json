@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball is suspended in a uniform electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball is at rest, meaning its velocity is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle between the string and the vertical direction is θ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The length of the string is L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The mass of the ball is m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The charge on the ball is q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball is at rest, meaning its velocity is zero.",
+    "conclusion": "The net force on the ball is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force is the sum of the gravitational force and the electric force.",
+    "conclusion": "The gravitational force is mg sin θ, and the electric force is qE cos θ.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force on the ball is zero.",
+    "conclusion": "Set up the equation for equilibrium: mg sin θ = qE cos θ",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Set up the equation for equilibrium: mg sin θ = qE cos θ",
+    "conclusion": "Solve for E: E = mg sin θ / q cos θ",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve for E: E = mg sin θ / q cos θ",
+    "conclusion": "Substitute the given values: E = m × 9.8 × sin θ / q × cos θ",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball is at rest.",
+    "conclusion": "sin θ = 0 and cos θ = 1",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the given values: E = m × 9.8 × sin θ / q × cos θ",
+    "conclusion": "E = m × 9.8 / q",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute m = 1 and q = 1",
+    "conclusion": "E = 9.8 / 1 = 9.8",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 9.8 / 1 = 9.8",
+    "conclusion": "The electric field strength is 9.8 N/C.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

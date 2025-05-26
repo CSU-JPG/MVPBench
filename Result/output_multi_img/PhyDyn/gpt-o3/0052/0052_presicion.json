@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The initial scene contains two objects, A and B, which are two pieces of cloth in different colors.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Objects C, D, E, and F are building blocks of different colors: C is orange, D is pink, E is green and small, and F is green and tall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Objects A and B move towards objects C, D, E, and F to make contact with them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Cloth A is draped over the left side of the table, covering objects C (orange) and D (pink).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Cloth B is draped over the right side of the table, covering objects E (green small) and F (green tall).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cloth A is draped over objects C and D, and cloth B is draped over objects E and F.",
+    "conclusion": "Gravity pulls each cloth downward until it touches the upper surfaces of the tallest objects directly underneath it.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cloth A is draped over objects C and D, and gravity pulls it downward.",
+    "conclusion": "Cloth A rests first on the top of C (orange) and then on the shorter D (pink) next to it.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cloth B is draped over objects E and F, and gravity pulls it downward.",
+    "conclusion": "Cloth B rests on the higher F (green tall) and also touches the shorter E (green small).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pinned corners of the cloths prevent them from sliding off the table.",
+    "conclusion": "Both cloths come to a stop in a stable, tent-like shape around the blocks.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cloth A and B drape over and make contact with objects C, D, E, and F due to gravity.",
+    "conclusion": "Objects C, D, E, and F all fell down.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

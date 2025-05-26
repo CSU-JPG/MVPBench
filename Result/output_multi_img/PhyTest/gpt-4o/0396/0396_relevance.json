@@ -1,0 +1,94 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "The cylinder is divided into two chambers by an insulating diaphragm of mass m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Initially, both chambers have identical pressure p, volume V, and temperature T.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The piston is pushed upwards slowly, compressing the gas in the lower chamber and expanding the gas in the upper chamber.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The diaphragm rests on a circular ledge, and gas starts to leak when the pressure difference across the diaphragm equals the weight of the diaphragm.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The gas starts to leak when the pressure difference between the lower chamber and the upper chamber equals the force due to the weight of the diaphragm: Δp = mg/A.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The process is adiabatic because the cylinder is insulated.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For an adiabatic process, the pressure p and volume V of an ideal gas satisfy: pV^γ = constant, where γ = 5/3 for helium (a monoatomic gas).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Let the volume of the lower chamber be V_0 and the pressure in the lower chamber be p + Δp. The upper chamber will have volume 2V - V_0 and pressure p - Δp.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using the adiabatic relation: pV^γ = (p + Δp)V_0^γ, pV^γ = (p - Δp)(2V - V_0)^γ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "From the problem, x = mgH/pV.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using Δp = mg/A, we can write: Δp = xp.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute Δp = xp into the adiabatic relation for the lower chamber: pV^γ = (p + xp)V_0^γ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Factor out p: V^γ = (1 + x)V_0^γ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Similarly, for the upper chamber: pV^γ = (p - xp)(2V - V_0)^γ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Factor out p: V^γ = (1 - x)(2V - V_0)^γ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "We now have two equations: 1. V^γ = (1 + x)V_0^γ, 2. V^γ = (1 - x)(2V - V_0)^γ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From the first equation: V_0 = V/(1 + x)^(1/γ).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute V_0 into the second equation: V^γ = (1 - x)[2V - V/(1 + x)^(1/γ)]^γ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify: [2V - V/(1 + x)^(1/γ)]"}]

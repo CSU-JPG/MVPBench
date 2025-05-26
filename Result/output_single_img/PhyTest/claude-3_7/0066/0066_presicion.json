@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Hemispherical hollow shell with inner radius R and outer radius R' = √2R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Refractive index of glass n = √2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light beams are parallel to the central symmetry axis OO'.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Need to find radius d of circular light-blocking plate.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the radius of the light-blocking plate, determine how far from the symmetry axis a light ray can be incident and still exit through the inner surface.",
+    "conclusion": "Consider Snell's Law at the air-glass interface: n1 sin θ1 = n2 sin θ2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "n1 = 1 (air), n2 = √2 (glass), θ1 is the angle of incidence (from normal), θ2 is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a ray to not exit the inner surface, it must undergo total internal reflection at the glass-air interface.",
+    "conclusion": "The critical angle θc is: sin θc = n1/n2 = 1/√2 = √2/2, therefore θc = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider a ray incident at distance d from the central axis.",
+    "conclusion": "Trace its path: The ray enters the glass at the outer surface, refracts according to Snell's law, then reaches the inner surface.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To prevent exit, the angle of incidence at the inner surface must be greater than the critical angle (45°).",
+    "conclusion": "For a parallel ray incident at distance d from the axis, at the point of entry on the outer surface, the normal makes an angle α with the central axis: sin α = d/R'.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the outer surface is equal to α.",
+    "conclusion": "The angle of refraction β can be found using Snell's law: sin β = sin α/√2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray continues until it hits the inner surface.",
+    "conclusion": "For total internal reflection to occur, the angle of incidence must be at least 45°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Due to the geometric properties of spheres, a ray passing through a spherical shell will make an angle of incidence at the inner surface that equals α - β.",
+    "conclusion": "For total internal reflection: α - β ≥ 45°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From our constraint: α - β ≥ 45°.",
+    "conclusion": "Using Snell's law and the given values: sin α = d/R', sin β = sin α/√2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the critical case where a ray just meets the total internal reflection condition: α - β = 45°, β = α - 45°.",
+    "conclusion": "This gives us: sin(α - 45°) = sin α/√2.",
+    "judgment": "Reasonable"
+  }]

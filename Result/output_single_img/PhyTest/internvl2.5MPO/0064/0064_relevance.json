@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine how much the point light source S should be moved vertically upward so that the light emitted from S is just not visible above the water surface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The light source S is initially at a depth H = sqrt(3)r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The refractive index of the liquid is n = sqrt(2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The light must be refracted at the critical angle to be just not visible above the water surface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate the critical angle theta_c using sin(theta_c) = 1/n = 1/sqrt(2) = sqrt(2)/2, therefore theta_c = 45 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "When the light is refracted at the critical angle, it travels along the edge of the circle of radius r on the surface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The light path forms a right triangle with the vertical distance from S to the surface and the radius r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The vertical distance from S to the surface is H - x, where x is the distance S is moved upward, and the horizontal distance is r. Using tan(45 degrees) = 1 = r/(H - x), therefore r = H - x.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute H = sqrt(3)r into r = sqrt(3)r - x, rearrange to solve for x: x = sqrt(3)r - r = (sqrt(3) - 1)r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The point source S should be moved vertically upward by a distance of (sqrt(3) - 1)r.",
+    "relevant": "Yes"
+  }
+]

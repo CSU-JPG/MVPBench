@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball of mass m is dropped from rest at a height H above the ground and rebounds to a maximum height h above the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the air resistance experienced by the basketball during its motion is λ times the magnitude of the gravitational force acting on the basketball.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity is the same for each collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the gravitational acceleration is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the ratio of the post-collision velocity to the pre-collision velocity of the basketball during its collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let's denote v_i as the velocity just before collision (pre-collision) and v_f as the velocity just after collision (post-collision). The ratio we're seeking is r = v_f/v_i.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net acceleration during the fall is a_net = g - λg = g(1-λ).",
+    "conclusion": "Using the kinematic equation for velocity, v_i^2 = 0 + 2g(1-λ)H, we find v_i = √(2g(1-λ)H).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net acceleration during the rise is a_net = g + λg = g(1+λ).",
+    "conclusion": "Using kinematics from the ground to height h, 0 = v_f^2 - 2g(1+λ)h, we find v_f = √(2g(1+λ)h).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_f = √(2g(1+λ)h) and v_i = √(2g(1-λ)H).",
+    "conclusion": "The ratio r = v_f/v_i = √((1+λ)h/(1-λ)H).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem states that 0 < λ < (H-h)/(H+h).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a perfectly elastic collision without air resistance, h = H and r = 1. However, here we have h < H due to energy loss in the collision and air resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Looking at the diagram, we can see that the force due to air resistance creates a linear relationship with height.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When falling from H, energy is lost due to air resistance. During the collision, energy is lost due to inelasticity (captured by r). When rising to h, energy is lost due to air resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The condition 0 < λ < (H-h)/(H+h) ensures a physically meaningful solution.",
+    "judgment": "N/A"
+  }]

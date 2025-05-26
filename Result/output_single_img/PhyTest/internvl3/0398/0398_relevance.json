@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze energy exchanges during melting and freezing processes as droplet falls through atmospheric layers.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Droplet melts in warmer layer between heights h_A and h_B; energy absorbed given by area A under temperature curve.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Droplet partially freezes in cooler layer below h_B; energy released given by area A' under temperature curve.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Energy absorbed during melting is used to change phase of ice to water.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Energy absorbed during melting is Q_melt = A * c_ice + m_melt * L.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Energy released during freezing is used to change phase of water back to ice.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Energy released during freezing is Q_freeze = A' * c_water + m_freeze * L.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Energy absorbed during melting equals energy released during freezing: Q_melt = Q_freeze.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute expressions for Q_melt and Q_freeze: A * c_ice + m_melt * L = A' * c_water + m_freeze * L.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Rearrange equation to solve for m_freeze: m_freeze = (A * c_ice + m_melt * L - A' * c_water) / L.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Substitute given values: A = 5.0 km°C, A' = 4.0 km°C, c_ice = 2.1 kJ kg^-1 K^-1, c_water = 4.2 kJ kg^-1 K^-1, L = 334 kJ kg^-1.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute values into equation: m_freeze = (5.0 * 2.1 + m_melt * 334 - 4.0 * 4.2) / 334.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate constants: 5.0 * 2.1 = 10.5 and 4.0 * 4.2 = 16.8.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute constants into equation: m_freeze = (10.5 + m_melt * 334 - 16.8) / 334.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify equation: m_freeze = (m_melt * 334 - 6.3) / 334.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Determine m_melt by energy balance in melting region: m_melt = (A * c_ice) / L.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate m_melt: m_melt = (5.0 * 2.1) / 334 = 10.5 / 334 ≈ 0.0314.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute m_melt back into equation: m_freeze = (0.0314 * 334 - 6.3) / 334.",
+    "relevant": "Yes"
+  }]

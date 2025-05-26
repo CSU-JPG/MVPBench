@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the initial velocity of the shadow cast by the small ball on the right wall using principles of projectile motion and similar triangles.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Define coordinates and variables: height of light source h, initial position of ball at midpoint between light source and wall, initial velocity of ball v_0, acceleration due to gravity g.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Time to reach maximum height is t_up = v_0/g, total time of flight is T = 2t_up = 2v_0/g.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Height of the ball as a function of time is y(t) = v_0 t - (1/2) g t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Height of the shadow y_shadow can be found using similar triangles: y_shadow/h = d/sqrt((d/2)^2 + (v_0 t - (1/2) g t^2)^2), solving for y_shadow gives y_shadow = h d/sqrt((d/2)^2 + (v_0 t - (1/2) g t^2)^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Velocity of the shadow is the derivative of the height of the shadow with respect to time: v_shadow = d y_shadow/d t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Use properties of similar triangles: ratio of velocities is same as ratio of heights at the same time.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Velocity of the ball is v_b(t) = v_0 - g t, velocity of the shadow is v_s(t) = (2 v_0/sqrt((d/2)^2 + (v_0 t - (1/2) g t^2)^2)) * (v_0 - g t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Initial velocity of the shadow at t = 0 is v_s(0) = (2 v_0/sqrt((d/2)^2)) * v_0 = (4 v_0^2/d).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The initial velocity of the shadow is v_0/2.",
+    "relevant": "Yes"
+  }
+]

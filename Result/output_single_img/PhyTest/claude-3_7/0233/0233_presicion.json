@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a square wire frame with side length 0.2 m and total resistance 4 Ω. The frame is stationary on a horizontal surface. Half of the frame is in a magnetic field that points inward (perpendicular to the paper). The magnetic field strength varies with time: B = (3 + 2t) T. We need to find the frictional force at t = 2.5 s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is changing with time.",
+    "conclusion": "An EMF is induced, causing current to flow in the wire frame.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only half of the square frame is in the magnetic field. Area in the field = (0.2 m)² / 2 = 0.02 m². At t = 2.5 s: B = (3 + 2×2.5) T = (3 + 5) T = 8 T.",
+    "conclusion": "Magnetic flux Φ = 8 T × 0.02 m² = 0.16 Wb.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B = (3 + 2t) T. dB/dt = 2 T/s. Area = 0.02 m².",
+    "conclusion": "Rate of change of magnetic flux dΦ/dt = (dB/dt) × Area = 2 T/s × 0.02 m² = 0.04 Wb/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From Faraday's law: EMF = -dΦ/dt = -0.04 V. Total resistance = 4 Ω.",
+    "conclusion": "Induced current I = EMF/R = 0.04 V / 4 Ω = 0.01 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Lenz's law, the induced current will create a magnetic field that opposes the change in the external field.",
+    "conclusion": "Since the external field is increasing inward, the induced current creates a field outward, so the current flows clockwise around the square when viewed from the side with the magnetic field pointing inward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Lorentz force on a current-carrying wire in a magnetic field is F = I × L × B × sin(θ), where θ is the angle between the current and field directions.",
+    "conclusion": "Only the segments in the magnetic field experience a force. Segments CF and AD are partly in the field. Effective length = 0.1 m for each. The force is perpendicular to both the current and the field (i.e., sin(θ) = 1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For segment CF (half in field): Force magnitude = I × L × B = 0.01 A × 0.1 m × 8 T = 0.008 N. Direction: The current flows from C toward F, and with field inward, the force is to the right.",
+    "conclusion": "Force on segment CF is 0.008 N to the right.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For segment AD (half in field): Force magnitude = I × L × B = 0.01 A × 0.1 m × 8 T = 0.008 N. Direction: The current flows from A toward D, and with field inward, the force is to the left.",
+    "conclusion": "Force on segment AD is 0.008 N to the left.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces on CF and AD are equal in magnitude but opposite in direction.",
+    "conclusion": "Net magnetic force = 0 N.",
+    "judgment": "Wrong"
+  }]

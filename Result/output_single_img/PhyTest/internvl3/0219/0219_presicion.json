@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the change in magnetic flux passing through the coil, we need to calculate the initial and final magnetic fluxes and then find their difference.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The initial orientation of the coil is such that the normal to the coil is along the positive y-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field B is along the positive x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal to the coil is along the positive y-axis and the magnetic field is along the positive x-axis.",
+    "conclusion": "The angle between the magnetic field and the normal to the coil is 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the magnetic field and the normal to the coil is 90°.",
+    "conclusion": "The initial magnetic flux Φ_i is given by Φ_i = B · A · cos(θ) where θ = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos(90°) = 0",
+    "conclusion": "The initial magnetic flux is Φ_i = 0.1 T × 0.4 m² × 0 = 0 Wb.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "After rotating the coil by 60° downward around the z-axis, the normal to the coil makes an angle of 60° with the positive y-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal to the coil makes an angle of 60° with the positive y-axis.",
+    "conclusion": "The angle between the magnetic field (along the x-axis) and the new normal to the coil is 30° (since 90° - 60° = 30°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the magnetic field and the new normal to the coil is 30°.",
+    "conclusion": "The final magnetic flux Φ_f is given by Φ_f = B · A · cos(θ') where θ' = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos(30°) = √3/2",
+    "conclusion": "The final magnetic flux is Φ_f = 0.1 T × 0.4 m² × √3/2 = 0.02√3 Wb.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ_f = 0.02√3 Wb and Φ_i = 0 Wb",
+    "conclusion": "The change in magnetic flux ΔΦ is ΔΦ = Φ_f - Φ_i = 0.02√3 Wb - 0 Wb = 0.02√3 Wb.",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

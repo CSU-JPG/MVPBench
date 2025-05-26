@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the elements in the loop: Constant-voltage charger with fixed output voltage U, series resistor with resistance R, super-capacitor with instantaneous voltage U₂, and loop current I₂.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Elements in the loop: Constant-voltage charger with fixed output voltage U, series resistor with resistance R, super-capacitor with instantaneous voltage U₂, and loop current I₂.",
+    "conclusion": "Apply Kirchhoff’s Voltage Law to the one-loop circuit: (+U) − (voltage drop across R) − (voltage on the capacitor) = 0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Apply Kirchhoff’s Voltage Law: (+U) − (voltage drop across R) − (voltage on the capacitor) = 0",
+    "conclusion": "U − (I₂·R) − U₂ = 0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation: U − (I₂·R) − U₂ = 0",
+    "conclusion": "Solve for U₂: U₂ = U − I₂·R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solved equation: U₂ = U − I₂·R",
+    "conclusion": "The instantaneous voltage across the super-capacitor during the constant-voltage stage, when the loop current is I₂, is U₂ = U − I₂ R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

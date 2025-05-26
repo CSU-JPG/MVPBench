@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The number of turns of a circular coil is N=200, the area of the coil is S=1m^2, the resistance of the coil is r=10Ω, and the coil is connected to an external resistor with a resistance of R=50Ω. The coil is placed in a uniform magnetic field perpendicular to the plane of the coil and directed inward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The variation of the magnetic induction over time is shown in Figure B, which indicates a linear increase from 0 to 0.4 T over 6 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of the coil is r=10Ω and the external resistor is R=50Ω.",
+    "conclusion": "The total resistance of the circuit is R_total = r + R = 10Ω + 50Ω = 60Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic induction changes linearly from 0 to 0.4 T in 6 seconds.",
+    "conclusion": "The rate of change of magnetic induction is d(BS)/dt = (0.4 T * 1 m^2)/6 s = 0.0667 T*m^2/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N=200 and d(BS)/dt = 0.0667 T*m^2/s.",
+    "conclusion": "The maximum electromotive force (ε) is ε = N * d(BS)/dt = 200 * 0.0667 T*m^2/s = 13.33 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε = 13.33 V and R_total = 60Ω.",
+    "conclusion": "The maximum current (I) can be calculated using Ohm's Law: I = ε/R_total = 13.33 V/60Ω = 0.2222 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 0.2222 A and R = 50Ω.",
+    "conclusion": "The maximum power (P) consumed by R can be calculated using the formula: P = I^2 * R = (0.2222 A)^2 * 50Ω = 2.4685 W.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Define velocities of Car A and Car B as v_A(t) and v_B(t) respectively.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "For Car A, the line passes through (0, 25) and (25, 0).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate slope for Car A as a_A = -1 m/s^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Velocity function for Car A is v_A(t) = 25 - t for 0 <= t <= 25.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "For Car B, the line passes through (0, 15) and (30, 0).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate slope for Car B as a_B = -0.5 m/s^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Velocity function for Car B is v_B(t) = 15 - 0.5t for 0 <= t <= 30.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Define initial positions x_A(0) and x_B(0) with x_B(0) > x_A(0) and separation d = x_B(0) - x_A(0) > 0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Position of Car A at time t is x_A(t) = x_A(0) + 25t - 0.5t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Position of Car B at time t is x_B(t) = x_B(0) + 15t - 0.25t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Collision occurs at time t_c if x_A(t_c) = x_B(t_c).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Equation for collision is 10t_c - 0.25t_c^2 = d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Relative velocity of Car A with respect to Car B is v_rel(t) = 10 - 0.5t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Relative displacement of Car A with respect to Car B is Δx_rel(t) = 10t - 0.25t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Collision condition is Δx_A(t) - Δx_B(t) = d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Graph shows v-t graph for the two cars just before they would have avoided colliding.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Minimum separation occurs when relative velocity is zero, giving t=20 s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At t=20 s, separation is S(20) = d - 100.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For cars to avoid colliding, minimum separation must be non-negative, so d >= 100 m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "If d=100 m, minimum separation is zero at t=20 s, indicating collision.",
+    "relevant": "Yes"
+  }]

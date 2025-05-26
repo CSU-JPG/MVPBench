@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Place a horizontal axis along the floor. Let the point light source be the origin, x = 0. The right-hand vertical wall is at x = 2a. The ball is projected straight up from the midpoint, x = a.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball is projected straight up from the midpoint, x = a.",
+    "conclusion": "At any instant t the ball’s height above the floor is y(t) = v₀ t − ½ g t².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Draw the ray of light that goes from the source (0,0) through the ball (a, y). The same ray meets the wall at x = 2a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using similar triangles (rise : run = y : a = Y : 2a), the height of the shadow on the wall is Y(t) = 2 y(t).",
+    "conclusion": "Y(t) = 2v₀ t − g t².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height of the shadow on the wall is Y(t) = 2v₀ t − g t².",
+    "conclusion": "The instantaneous (vertical) velocity of the shadow is the time derivative of Y(t): V_shadow(t) = dY/dt = 2v₀ − 2g t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_shadow(t) = 2v₀ − 2g t.",
+    "conclusion": "Hence the initial velocity of the shadow (t = 0) is V_shadow(0) = 2v₀.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

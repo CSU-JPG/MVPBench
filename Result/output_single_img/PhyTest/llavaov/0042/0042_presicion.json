@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance traveled by the car can be calculated by finding the area under the velocity-time graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From 0 to 10 seconds, the acceleration is 2 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration is 2 m/s² from 0 to 10 seconds.",
+    "conclusion": "The velocity at 10 seconds is 20 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From 10 to 30 seconds, the acceleration is 0 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration is 0 m/s² from 10 to 30 seconds.",
+    "conclusion": "The velocity remains constant at 20 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From 30 to 60 seconds, the acceleration is -1 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration is -1 m/s² from 30 to 60 seconds.",
+    "conclusion": "The velocity at 60 seconds is -10 m/s.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity at 10 seconds is 20 m/s.",
+    "conclusion": "Distance from 0 to 10 seconds is 100 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity is constant at 20 m/s from 10 to 30 seconds.",
+    "conclusion": "Distance from 10 to 30 seconds is 400 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity at 30 seconds is 20 m/s and acceleration is -1 m/s².",
+    "conclusion": "Distance from 30 to 60 seconds is 150 m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distances: 100 m (0-10s), 400 m (10-30s), 150 m (30-60s).",
+    "conclusion": "The total distance traveled is 650 m.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

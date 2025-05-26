@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The diagram shows a V-T (volume-temperature) graph with three states: State A: V = 0.4 m³, T = T_A (unknown), State B: V = 0.6 m³, T = 300 K, State C: V = 0.6 m³, T = 400 K. We're given that the pressure at state A is 1.5 × 10⁵ Pa, and we need to find T_A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I'll use the ideal gas law to solve this: PV = nRT, where P is pressure, V is volume, n is number of moles, R is the gas constant, T is temperature. Since we're dealing with a gas of a certain mass transitioning between states, the amount of gas (n) remains constant throughout.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For state A: P_A = 1.5 × 10⁵ Pa, V_A = 0.4 m³, T_A = ?",
+    "conclusion": "P_A × V_A = nRT_A",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For state B: P_B = ?, V_B = 0.6 m³, T_B = 300 K",
+    "conclusion": "P_B × V_B = nRT_B",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since n and R are constants, I can relate states A and B: P_A × V_A / T_A = P_B × V_B / T_B = nR",
+    "conclusion": "P_A × V_A / T_A = P_B × V_B / T_B",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Looking at the V-T diagram, states A and B lie on a straight line from the origin.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In a V-T diagram, a straight line through the origin indicates that V/T = constant (Charles' Law when pressure is constant).",
+    "conclusion": "V_A/T_A = V_B/T_B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_A/T_A = V_B/T_B",
+    "conclusion": "0.4/T_A = 0.6/300",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.4/T_A = 0.6/300",
+    "conclusion": "T_A = 0.4 × 300 / 0.6 = 200 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

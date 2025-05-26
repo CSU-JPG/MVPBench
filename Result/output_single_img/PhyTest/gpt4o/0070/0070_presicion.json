@@ -1,0 +1,64 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude of the induced electromotive force (EMF) in the coil, we can use Faraday's law of electromagnetic induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's law, the induced EMF (\\(\\mathcal{E}\\)) in a coil is given by the rate of change of magnetic flux (\\(\\Phi\\)) through the coil: \\(\\mathcal{E} = -\\frac{d\\Phi}{dt}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a coil with \\(n\\) turns, the total induced EMF is: \\(\\mathcal{E} = -n \\frac{d\\Phi}{dt}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux \\(\\Phi\\) through the coil is given by: \\(\\Phi = B \\cdot A \\cdot \\cos(\\theta)\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "\\(B\\) is the magnetic induction intensity, \\(A\\) is the area of the coil, \\(\\theta\\) is the angle between the magnetic field and the normal to the coil's plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area \\(A\\) of the rectangular coil is: \\(A = l_{AB} \\times l_{BC} = 0.2 \\, \\mathrm{m} \\times 0.5 \\, \\mathrm{m}\\).",
+    "conclusion": "The area \\(A\\) of the rectangular coil is \\(0.1 \\, \\mathrm{m}^2\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil rotates with an angular velocity \\(\\omega\\), so the angle \\(\\theta\\) changes with time as \\(\\theta = \\omega t\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux \\(\\Phi(t) = B \\cdot A \\cdot \\cos(\\omega t)\\).",
+    "conclusion": "The magnetic flux becomes \\(\\Phi(t) = 0.1 \\, \\mathrm{T} \\times 0.1 \\, \\mathrm{m}^2 \\times \\cos(100\\pi t)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the values, \\(\\Phi(t) = 0.1 \\, \\mathrm{T} \\times 0.1 \\, \\mathrm{m}^2 \\times \\cos(100\\pi t)\\).",
+    "conclusion": "\\(\\Phi(t) = 0.01 \\, \\mathrm{Wb} \\cdot \\cos(100\\pi t)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Now, we find the rate of change of magnetic flux: \\(\\frac{d\\Phi}{dt} = \\frac{d}{dt} [0.01 \\, \\mathrm{Wb} \\cdot \\cos(100\\pi t)]\\).",
+    "conclusion": "Using the derivative of \\(\\cos(\\omega t)\\), which is \\(-\\omega \\sin(\\omega t)\\), we get \\(\\frac{d\\Phi}{dt} = -0.01 \\, \\mathrm{Wb} \\cdot 100\\pi \\cdot \\sin(100\\pi t)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\frac{d\\Phi}{dt} = -0.01 \\, \\mathrm{Wb}

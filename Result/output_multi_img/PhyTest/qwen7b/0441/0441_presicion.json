@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to understand the condition for total internal reflection at the interface between the optical fiber and the vacuum.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Snell's law, if the incident angle \\(\\theta_i\\) exceeds the critical angle \\(\\theta_c\\), then the light will undergo total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\(\\theta_c\\) occurs when the refracted angle \\(\\theta_r\\) equals \\(90^\\circ\\). According to Snell’s law, \\(n_1 \\sin \\theta_i = n_2 \\sin \\theta_r\\), where \\(n_1\\) is the refractive index of the optical fiber (N in our case) and \\(n_2\\) is the refractive index of the vacuum (which is approximately 1).",
+    "conclusion": "At the critical angle: \\(n_1 \\sin \\theta_c = 1\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the critical angle: \\(n_1 \\sin \\theta_c = 1\\).",
+    "conclusion": "Therefore, \\(\\sin \\theta_c = \\frac{1}{n_1} = \\frac{1}{N}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin \\theta_c = \\frac{1}{N}\\).",
+    "conclusion": "Thus, \\(\\theta_c = \\arcsin \\left( \\frac{1}{N} \\right)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Let \\(R\\) be the radius of the circular cross-section of the optical fiber and \\(d\\) be the horizontal distance between the ends \\(A\\) and \\(B\\). The central axis of the optical fiber forms a semicircle of radius \\(R\\) and subtends an angle of \\(2 \\theta\\) at point \\(C\\), where \\(\\tan \\theta = \\frac{d}{R}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light to exit the fiber without being lost due to refraction, the angle \\(\\theta\\) must satisfy: \\(\\tan \\theta \\leq \\frac{1}{N}\\). Since \\(\\tan \\theta = \\frac{d}{R}\\),",
+    "conclusion": "\\(\\frac{d}{R} \\leq \\frac{1}{N}\\), which simplifies to \\(R \\geq dN\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We want to find the minimum value of \\(r\\) such that the light ray, after bending along a part of the fiber, exits the other end \\(B\\) without losing any light.",
+    "conclusion": "From the geometry of the bending, the turning radius \\(r\\) of the central axis of the optical fiber ensures that the light can bend back to the original path and exit through the other end.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given the relation derived earlier, the minimum value of \\(r\\) is simply the radius \\(R\\) of the fiber, because for the smallest possible \\(r\\), the fiber must be large enough so that its bending path allows light exiting the fiber at the desired points.",
+    "conclusion": "Thus, the turning radius \\(r\\) of the central axis of the optical fiber should be not less than: \\(\\boxed{dN}\\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

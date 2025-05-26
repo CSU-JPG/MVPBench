@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the direction of the light ray when it first exits the prism, we need to follow these steps.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray enters perpendicularly from point O along AD.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Angle OAB is 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray enters perpendicularly from point O along AD. Angle OAB is 60 degrees.",
+    "conclusion": "The light ray will travel along AD and hit the hypotenuse AB at point B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index n = sqrt(2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index n = sqrt(2). Use Snell's Law: n1 sin(theta1) = n2 sin(theta2). Here, n1 = 1 (air), n2 = sqrt(2) (prism), and theta1 = 60 degrees.",
+    "conclusion": "sin(theta2) = sqrt(6)/4",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(theta2) = sqrt(6)/4",
+    "conclusion": "theta2 = arcsin(sqrt(6)/4)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray travels from B to C inside the prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "AB = BC = 8 cm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray travels from B to C inside the prism. AB = BC = 8 cm.",
+    "conclusion": "The light ray travels along the hypotenuse BC.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray exits the prism at point C. Use Snell's Law again: n2 sin(theta2) = n1 sin(theta3). Here, n2 = sqrt(2), n1 = 1, and theta2 is the angle calculated above.",
+    "conclusion": "sin(theta3) = sqrt(3)/2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(theta3) = sqrt(3)/2",
+    "conclusion": "theta3 = arcsin(sqrt(3)/2) = 60 degrees",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray exits the prism at C with an angle of 60 degrees relative to the normal at C.",
+    "conclusion": "The light ray exits the prism parallel to AD but in the opposite direction, making an angle of 60 degrees with the normal at point C.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

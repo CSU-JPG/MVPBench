@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we will calculate the induced electromotive force (emf) in the square wire frame due to the changing magnetic field and then determine the current in the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux (Φ_B) through the loop is given by Φ_B = B ⋅ A where B is the magnetic field strength, A is the area of the loop in the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Half of the square wire frame is in the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Half of the square wire frame is in the magnetic field.",
+    "conclusion": "The effective area is A = L^2/2 where L is the side length of the square wire frame.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective area is A = L^2/2.",
+    "conclusion": "The magnetic flux becomes Φ_B = B ⋅ L^2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field weakens uniformly at a rate of k, so dB/dt = -k.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux is Φ_B = B ⋅ L^2/2.",
+    "conclusion": "The rate of change of magnetic flux (dΦ_B/dt) is dΦ_B/dt = d/dt (B ⋅ L^2/2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "L^2/2 is constant.",
+    "conclusion": "dΦ_B/dt = L^2/2 ⋅ dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dB/dt = -k.",
+    "conclusion": "dΦ_B/dt = L^2/2 ⋅ (-k) = -kL^2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ_B/dt = -kL^2/2.",
+    "conclusion": "The magnitude of the induced emf (𝓔) is given by Faraday's law: 𝓔 = |dΦ_B/dt| = kL^2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The loop contains a capacitor of capacitance C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The current in the loop is related to the induced emf and the capacitor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The charge q on the capacitor is related to the voltage V across it by q = C ⋅ V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The current I is the rate of change of charge: I = dq/dt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since V = 𝓔, we have q = C ⋅ 𝓔.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "q = C ⋅ 𝓔.",
+    "conclusion": "Differentiating with respect to time: I = dq/dt = C ⋅ d𝓔/dt.",
+    "judgment": "Match"
+  }]

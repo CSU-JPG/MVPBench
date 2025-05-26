@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Number of turns m = 100, Resistance of the coil r = 10 Ω, Resistance of the resistor R = 90 Ω, Magnetic flux through each turn of the coil as a function of time: Φ(t) = 2 × 10^{-2} sin(ωt) Wb",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Angular frequency ω can be determined from the period T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, the period T of the sinusoidal variation in magnetic flux is: T = 6.28 × 10^{-2} s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T = 6.28 × 10^{-2} s",
+    "conclusion": "The relationship between angular frequency ω and period T is: ω = 2π/T",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ω = 2π/T, T = 6.28 × 10^{-2} s",
+    "conclusion": "ω = 100 rad/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Express the magnetic flux Φ(t): Φ(t) = 2 × 10^{-2} sin(100t) Wb",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ(t) = 2 × 10^{-2} sin(100t) Wb",
+    "conclusion": "Calculate the induced EMF using Faraday's law of induction: E = -N dΦ/dt",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ(t) = 2 × 10^{-2} sin(100t) Wb",
+    "conclusion": "dΦ/dt = 2 × 10^{-2} × 100 cos(100t) = 2 Wb/s × cos(100t)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N = 100, dΦ/dt = 2 Wb/s × cos(100t)",
+    "conclusion": "E = -100 × 2 cos(100t) = -200 cos(100t) V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = -200 cos(100t) V",
+    "conclusion": "The maximum value of the cosine function cos(100t) is 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = -200 cos(100t) V, max(cos(100t)) = 1",
+    "conclusion": "E_max = 200 V",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

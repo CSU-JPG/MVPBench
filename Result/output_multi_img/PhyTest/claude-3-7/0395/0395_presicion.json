@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We're dealing with a water droplet forming at the end of a metal pipe. The droplet separates when the gravitational force overcomes the surface tension force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Key parameters: Pipe internal diameter: $d$ (with $d \\ll r$), Water density: $\\rho$, Surface tension: $\\sigma$, Droplet radius: $r$, Pipe potential: $\\varphi$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravity pulls the droplet down: $F_g = mg = \\frac{4}{3}\\pi r^3 \\rho g$",
+    "conclusion": "Gravitational force on the droplet is $F_g = \\frac{4}{3}\\pi r^3 \\rho g$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Surface tension holds the droplet up: $F_\\sigma = \\sigma \\cdot l$",
+    "conclusion": "Surface tension force is $F_\\sigma = \\sigma \\cdot l$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The length $l$ is the circumference of the contact line between the droplet and the pipe, so $l = \\pi d$. Since $d \\ll r$, the contact is approximately equal to the pipe diameter.",
+    "conclusion": "The length $l$ is $\\pi d$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Therefore: $F_\\sigma = \\sigma \\pi d$",
+    "conclusion": "Surface tension force is $F_\\sigma = \\sigma \\pi d$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the point of separation, these forces are exactly balanced: $F_g = F_\\sigma$",
+    "conclusion": "Equilibrium condition: $F_g = F_\\sigma$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$\\frac{4}{3}\\pi r^3 \\rho g = \\sigma \\pi d$",
+    "conclusion": "Equating forces: $\\frac{4}{3}\\pi r^3 \\rho g = \\sigma \\pi d$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$\\frac{4}{3} r^3 \\rho g = \\sigma d$",
+    "conclusion": "Simplified equation: $\\frac{4}{3} r^3 \\rho g = \\sigma d$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$r^3 = \\frac{3\\sigma d}{4\\rho g}$",
+    "conclusion": "Solving for $r$: $r^3 = \\frac{3\\sigma d}{4\\rho g}$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "$r_{max} = \\sqrt[3]{\\frac{3\\sigma d}{4\\rho g}}$",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem mentions that the pipe is at potential $\\varphi$ relative to surroundings and that two such pipes are used in a Kelvin water dropper arrangement.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "This information doesn't affect the mechanical equilibrium calculation for a single droplet.",
+    "conclusion": "Electrical potential is not relevant for determining the maximum radius at separation.",
+    "judgment": "Reasonable"
+  }
+]

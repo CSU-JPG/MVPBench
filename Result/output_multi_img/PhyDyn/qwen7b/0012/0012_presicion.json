@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine which container (D, E, or F) each colored liquid will flow into after passing through the baffles, we need to follow the flow of each liquid individually and see where they end up.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A (pink): Flows downward initially but is intercepted by the yellow baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B (green): Flows horizontally but is intercepted by the blue baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C (blue): Flows downward without interception.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A (pink): Flows downward initially but is intercepted by the yellow baffle.",
+    "conclusion": "After hitting the yellow baffle, the pink liquid will flow to the right and reach container D.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B (green): Flows horizontally but is intercepted by the blue baffle.",
+    "conclusion": "After hitting the blue baffle, the green liquid will flow downward and reach container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C (blue): Flows downward without interception.",
+    "conclusion": "The blue liquid continues straight down and reaches container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D (cyan): Receives pink liquid.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "E (dark green): Receives blue liquid.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "F (light green): Receives green liquid.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A flows into D. B flows into F. C flows into E.",
+    "conclusion": "All the liquid from A, B and C flows into container G, leaving D, E and F empty.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

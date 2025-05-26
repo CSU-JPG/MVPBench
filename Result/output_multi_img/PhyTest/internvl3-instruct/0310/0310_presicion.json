@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The relationship between volume V, temperature T, and pressure p for an ideal gas is given by the ideal gas law, pV = nRT, where n and R are constants for a given mass of gas.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure of the gas in state A is pA = p0, and the temperature TA = T0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "pA = p0 and TA = T0",
+    "conclusion": "From the ideal gas law, p0 V0 = nRT0 (Equation 1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The line segment AB is parallel to the V-axis, meaning temperature TB = T0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "VB = 2V0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The line segment BC extends to the origin.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The line segment BC extends to the origin.",
+    "conclusion": "C has coordinates (TC, VC) such that VC = kTC for some constant k.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B has VB = 2V0 at T0.",
+    "conclusion": "k = VB/TB = 2V0/T0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "VC = kTC and p0 V0 = nRT0.",
+    "conclusion": "From the linearity of the graph, VC = V0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "VC = V0 and k = 2V0/T0.",
+    "conclusion": "TC = (VC T0)/(2V0) = T0/2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

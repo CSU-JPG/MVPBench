@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The triangle △ABC is equilateral with side length L. A beam of light parallel to BC is incident on AB. The light enters the hemisphere only in the BD area, where BD = L/4.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light enters the hemisphere at point D and travels to the center O of the hemisphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the hemisphere at point D and travels to the center O of the hemisphere.",
+    "conclusion": "The distance DO is the radius of the hemisphere, which is L/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light in the hemisphere is c/n, where n is the refractive index of the hemisphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the refractive index is not given, we assume it to be n = 1.5 (a typical value for glass).",
+    "conclusion": "The speed of light in the hemisphere is c/1.5.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance DO is L/2 and the speed of light in the hemisphere is c/1.5.",
+    "conclusion": "The time t taken for the light to travel from D to O is t = (L/2) / (c/1.5) = 1.5L/2c = 3L/4c.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The longest propagation time of the refracted light in the hemisphere is t = 3L/4c.",
+    "conclusion": "The longest propagation time of the refracted light in the hemisphere is t = 3L/4c.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

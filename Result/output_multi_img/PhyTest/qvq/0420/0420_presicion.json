@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves light being obliquely incident from air to a transparent medium ball at point A, and determining if the light will be totally reflected when emitted from inside the sphere, given a large incident angle i.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There's a transparent sphere with center O, and a beam of light hits it at point A, making an incident angle i with the normal to the surface at that point. The normal at point A passes through the center O of the sphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states that n1 sin i = n2 sin r, where n1 is the refractive index of the first medium (air), n2 is the refractive index of the second medium (the sphere), i is the incident angle, and r is the refracted angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin i = n2 sin r",
+    "conclusion": "In this case, light is going from air (n1 = 1) to the sphere (n2), so Snell's Law becomes sin i = n2 sin r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Once the light is inside the sphere, it can reach another point, say B, and try to exit the sphere. At point B, it will be going from the sphere (n2) to air (n1).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law at point B would be n2 sin i' = n1 sin r', where i' is the incident angle at point B, and r' is the refracted angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection happens when the incident angle i' is greater than the critical angle c, which is given by sin c = n1 / n2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total internal reflection condition: i' > c",
+    "conclusion": "The goal is to find out if i' > c, which would mean total internal reflection occurs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In the diagram, there are points A, O, and B connected by lines, and angles i, r, and i'' labeled.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Geometry of the sphere and Snell's Law",
+    "conclusion": "Since OA is the radius and OB is also a radius, all equal to R, the angles i' and r are related.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law at point A: sin i = n2 sin r",
+    "conclusion": "From Snell's Law at point A, sin i = n2 sin r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law at point B: n2 sin i' = n1 sin r'",
+    "conclusion": "At point B, if the light is trying to exit, n2 sin i' = n1 sin r'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Geometry and Snell's Law",
+    "conclusion": "i' = r, because they are the two base angles of an isosceles triangle formed by the radii OA and OB.",
+    "judgment": "Match"
+  }]

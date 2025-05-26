@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light source is at the focal point F of a paraboloid. Light is reflected by the paraboloid and enters the hemispherical lens perpendicular to its vertical diameter MN. The refractive index n of the lens is 4/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light enters perpendicular to the vertical diameter MN.",
+    "conclusion": "The angle of incidence θ with respect to the normal is 0 degrees.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law with θ = 0 degrees and n1 = 1 (air), n2 = 4/3 (lens).",
+    "conclusion": "The angle of refraction θ' at the surface of the lens is 0 degrees.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 0 degrees, light enters the lens without bending.",
+    "conclusion": "Consider the critical angle for total internal reflection inside the lens.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc inside the lens is given by sin θc = 1/n = 3/4.",
+    "conclusion": "θc = sin^(-1)(3/4).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light-blocking plate MN divides the lens into transparent and non-transparent parts.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The transparent part corresponds to the region where light does not undergo total internal reflection.",
+    "conclusion": "The transparent part on the lens surface forms a circular segment.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle subtended by this segment at the center of the lens is 2θc.",
+    "conclusion": "Calculate the length of the transparent part using the chord length formula for a circle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the chord length formula L = 2R sin(θc) where R is the radius of the lens.",
+    "conclusion": "Substitute θc = sin^(-1)(3/4) to get L = 2R × 3/4 = 3R/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate the arc length corresponding to the critical angle.",
+    "conclusion": "The arc length is l = (48Rπ)/180 = (4π/15)R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

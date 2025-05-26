@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A particle is moving in a straight line along the x-axis. At the moment t=0, the particle is at rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The graph shows the relationship between the particle's coordinate x and the square of time t².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The vertical axis represents position x in meters (x/m) and the horizontal axis represents t² in s² (t²/s²).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph is a straight line from (0, 6) to (2, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph is a straight line from (0, 6) to (2, 0).",
+    "conclusion": "The equation of the line can be written as x = mx(t²) + b.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When t² = 0, x = 6 m, so b = 6.",
+    "conclusion": "The y-intercept of the equation is b = 6.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When t² = 2 s², x = 0 m.",
+    "conclusion": "The slope m can be calculated as m = (0 - 6)/(2 - 0) = -6/2 = -3 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope m is -3 m/s² and the y-intercept b is 6.",
+    "conclusion": "The equation relating position and t² is x = -3t² + 6.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The standard kinematic equation for constant acceleration is x = x₀ + v₀t + ½at².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle is at rest at t = 0, so v₀ = 0 and x₀ = 6 m.",
+    "conclusion": "The kinematic equation simplifies to x = 6 + ½a·t².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The kinematic equation is x = 6 + ½a·t² and the graph equation is x = -3t² + 6.",
+    "conclusion": "Comparing the coefficients of t² gives ½a = -3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "½a = -3.",
+    "conclusion": "Solving for a gives a = -6 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The acceleration is a = -6 m/s².",
+    "conclusion": "The magnitude of acceleration is |a| = 6 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The acceleration is negative, indicating the particle is accelerating in the negative x-direction.",
+    "conclusion": "This makes sense physically - the particle starts at x = 6 m while at rest, and moves toward the origin under constant acceleration.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of acceleration is |a| = 6 m/s².",
+    "conclusion": "The magnitude of the particle's acceleration is 6 m/s².",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

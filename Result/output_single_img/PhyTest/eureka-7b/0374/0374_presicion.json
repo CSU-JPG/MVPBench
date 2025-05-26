@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The early warning radar detects an enemy aircraft flying horizontally at a constant speed at an altitude of 20000m. An anti-aircraft missile with a mass of m=100kg is launched. The missile accelerates uniformly upward from rest with an acceleration of a=10g until it reaches an altitude of 5000m. The direction of the gas expulsion changes to an angle θ (cosθ=1/11) downward and to the right, causing the missile to follow a curved trajectory until it hits the enemy aircraft.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rocket thrust remains constant during the missile's flight, and the missile's mass change and air resistance are negligible. The missile can be treated as a point mass, and g=10m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The missile starts from rest and accelerates vertically upward with an acceleration of a = 10g = 100 m/s² until it reaches an altitude of 5000 m.",
+    "conclusion": "Using the kinematic equation for vertical motion: h = (1/2) a t², where h = 5000 m and a = 100 m/s², we can solve for t: 5000 = (1/2) * 100 * t² implies t² = 100 implies t = 10 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical velocity at t = 10 s is: v_y = a t = 100 * 10 = 1000 m/s.",
+    "conclusion": "The vertical velocity at t = 10 s is 1000 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal velocity at t = 10 s is: v_x = v_0 cos θ = v_0 * (1/11), where v_0 is the horizontal component of the velocity at t = 10 s.",
+    "conclusion": "The horizontal velocity at t = 10 s is v_0 * (1/11).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total velocity at t = 10 s is the vector sum of the vertical and horizontal components, and the vertical component is 1000 m/s.",
+    "conclusion": "We can find v_0 using the Pythagorean theorem: v = sqrt(v_x² + v_y²) implies v_0 = sqrt((1000 m/s)² - (v_x)²).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal distance traveled in the first 10 seconds is: d_x = v_0 * t = v_0 * 10.",
+    "conclusion": "The horizontal distance traveled in the first 10 seconds is v_0 * 10.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical distance traveled in the first 10 seconds is: d_y = (1/2) a t² = (1/2) * 100 * 10² = 5000 m.",
+    "conclusion": "The vertical distance traveled in the first 10 seconds is 5000 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total altitude is 20000 m, so the remaining altitude is 20000 - 5000 = 15000 m.",
+    "conclusion": "The remaining altitude is 15000 m.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time to travel the remaining altitude is: t' = sqrt((2 * 15000)/100) = sqrt(300) = 10sqrt(3) s.",
+    "conclusion": "The time to travel the remaining altitude is 10sqrt(3) s.",
+    "judgment": "Wrong"
+  }]

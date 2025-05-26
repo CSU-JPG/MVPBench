@@ -1,0 +1,77 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to ensure that light rays emanating from the bubble at the center of the cube are totally internally reflected at the faces of the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This means that the critical angle for total internal reflection must be exceeded for all rays hitting the faces of the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\(\\theta_c\\) for total internal reflection is given by \\(\\sin \\theta_c = \\frac{1}{n}\\) where \\(n = 1.5\\) is the refractive index of the glass.",
+    "conclusion": "\\(\\sin \\theta_c = \\frac{1}{1.5} = \\frac{2}{3}\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin \\theta_c = \\frac{2}{3}\\)",
+    "conclusion": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{2}{3}\\right)\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{2}{3}\\right)\\)",
+    "conclusion": "\\(\\theta_c \\approx 41.81^\\circ\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The bubble is at the center of the cube, so the light rays emanating from the bubble will hit the faces of the cube at various angles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To ensure total internal reflection, the light rays must hit the faces at angles greater than the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light rays that hit the faces at angles less than the critical angle will exit the cube. These rays form a cone with a vertex angle of \\(2\\theta_c\\).",
+    "conclusion": "The radius \\(r\\) of the base of this cone on each face of the cube can be found using trigonometry.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from the center of the cube to the center of a face is \\(a/2\\), and the height of the cone is also \\(a/2\\). Using the tangent of the critical angle: \\(\\tan \\theta_c = \\frac{r}{a/2}\\)",
+    "conclusion": "\\(r = \\frac{a}{2} \\tan \\theta_c\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(r = \\frac{a}{2} \\tan \\theta_c\\)",
+    "conclusion": "\\(r = \\frac{a}{2} \\tan(41.81^\\circ)\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\tan(41.81^\\circ) \\approx 0.9\\)",
+    "conclusion": "\\(r \\approx \\frac{a}{2} \\times 0.9 = 0.45a\\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the paper needed to cover the base of the cone on each face is the area of a circle with radius \\(r\\): \\(\\text{Area} = \\pi r^2\\)",
+    "conclusion": "\\(\\text{Area} = \\pi (0.45a)^2\\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\text{Area} = \\pi (0.45a)^2\\)",
+    "conclusion": "\\(\\text{Area}]\\)"}]

@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square wire frame has a side length L. Half of the square wire frame is placed in a uniform magnetic field B that is perpendicular to the plane of the paper and directed into it. The magnetic field weakens uniformly at a rate of change k (i.e., dB/dt = -k).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Half of the square wire frame is in the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Half of the square wire frame is in the magnetic field.",
+    "conclusion": "The area A of the wire frame in the magnetic field is A = 1/2 L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's Law states that the induced EMF E in a closed loop is equal to the negative rate of change of the magnetic flux Φ through the loop: E = -dΦ/dt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux Φ through the area in the magnetic field is Φ = B ⋅ A = B ⋅ 1/2 L^2.",
+    "conclusion": "The rate of change of the magnetic flux dΦ/dt is dΦ/dt = 1/2 L^2 ⋅ dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dB/dt = -k",
+    "conclusion": "dΦ/dt = 1/2 L^2 ⋅ (-k) = -1/2 k L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Faraday's Law: E = -dΦ/dt",
+    "conclusion": "E = -(-1/2 k L^2) = 1/2 k L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem does not provide the resistance R.",
+    "conclusion": "The current I in the loop is I = E/R = (1/2 k L^2)/R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the capacitor is fully charged, there is no current in the circuit.",
+    "conclusion": "The current in the loop is 0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

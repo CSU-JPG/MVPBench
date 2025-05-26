@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have two hemispheres, A and B. Hemisphere B has a mass of 2m and its surface is smooth. Hemisphere A has a mass of m. The contact point between A and B forms an angle of 30° with the horizontal. The two hemispheres are in equilibrium without sliding on each other or their surroundings. We need to find the coefficient of friction (μ) between hemisphere A and the left vertical wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For Hemisphere B: Weight: WB = 2mg, direction vertically downward. Reaction force from A: FN (normal force applied by A on B).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For Hemisphere A: Weight: WA = mg, direction vertically downward. Reaction force from B: FN1 (normal force applied by B on A). Reaction force from the left wall: Fs (static friction force).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since B does not slide horizontally, the sum of the forces in the horizontal direction must be zero.",
+    "conclusion": "Fs = FN sin(30°)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For hemisphere A to remain stationary: Sum of forces in the horizontal direction: Fs + FN1 sin(30°) = 0. Given that Fs = FN sin(30°), we can substitute to get: FN sin(30°) + FN1 sin(30°) = 0.",
+    "conclusion": "FN = FN1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Sum of forces in the vertical direction: FN1 cos(30°) + FN cos(30°) = mg",
+    "conclusion": "2FN cos(30°) = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2FN cos(30°) = mg",
+    "conclusion": "FN = mg / (2 cos(30°)) = mg / (2 * √3/2) = mg / √3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum static friction force Fs is given by: Fs = μ FN. From the equilibrium condition, we know: Fs = FN sin(30°) = mg / √3 * 1/2 = mg / (2√3)",
+    "conclusion": "μ FN = mg / (2√3)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "μ FN = mg / (2√3)",
+    "conclusion": "μ = 1 / (2√3) = 1 / (2√3) * √3/√3 = √3/6",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

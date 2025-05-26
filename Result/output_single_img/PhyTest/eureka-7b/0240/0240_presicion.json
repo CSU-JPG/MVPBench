@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to understand the forces acting on the coil in the magnetic field and how they affect the balance of the current balance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The initial balance condition is given by the equality of the torques on the two arms of the balance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque due to the magnetic force on the coil is \\( \\tau_{\\text{magnetic}} = n B I L^2 \\sin(\\theta) \\), where \\( \\theta \\) is the angle between the magnetic field and the normal to the plane of the coil.",
+    "conclusion": "Since the magnetic field is perpendicular to the plane of the coil, \\( \\sin(\\theta) = 1 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque due to the gravitational force on the weights is \\( \\tau_{\\text{gravitational}} = m_1 g L_1 = m_2 g L_2 \\), where \\( m_1 \\) and \\( m_2 \\) are the masses on the two pans, and \\( L_1 \\) and \\( L_2 \\) are the distances from the fulcrum to the centers of the weights on the two pans.",
+    "conclusion": "For the initial balance, the torques are equal: \\( n B I L^2 = m_1 g L_1 = m_2 g L_2 \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the current is reversed, the direction of the magnetic force on the coil is also reversed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque due to the magnetic force becomes \\( \\tau_{\\text{magnetic}}' = -n B I L^2 \\).",
+    "conclusion": "To balance the new torque, an additional weight \\( m \\) needs to be added to the left pan.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The new torque due to the gravitational force on the weights is \\( \\tau_{\\text{gravitational}}' = (m_1 + m) g L_1 = m_2 g L_2 \\).",
+    "conclusion": "For the new balance, the torques are equal: \\( -n B I L^2 = (m_1 + m) g L_1 = m_2 g L_2 \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the initial balance condition, we have \\( n B I L^2 = m_1 g L_1 \\).",
+    "conclusion": "From the new balance condition, we have \\( -n B I L^2 = (m_1 + m) g L_1 \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By equating the magnitudes of the torques, we get \\( n B I L^2 = (m_1 + m) g L_1 \\).",
+    "conclusion": "Since \\( n B I L^2 = m_1 g L_1 \\), we substitute \\( m_1 g L_1 = n B I L^2 \\) into the equation: \\( n B I L^2 = (m_1 + m) g L_1 \\) becomes \\( m_1 g L_1 = (m_1 + m) g L_1 \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying, we get \\( m_1 = m_1 + m \\), which is not possible unless \\( m = 0 \\).",
+    "conclusion": "This is a contradiction, so we need to use the ratio of the torques: \\[ \\frac{n B I L^2}{m_1 g L_1} = \\frac{(m_1 + m) g L_1}{-n B I L^2} \\]"
+  }
+]

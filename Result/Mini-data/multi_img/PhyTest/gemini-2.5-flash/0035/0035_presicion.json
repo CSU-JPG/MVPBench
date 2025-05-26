@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let v_A(t) and v_B(t) be the velocities of Car A and Car B at time t respectively, starting from t=0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For Car A, the line passes through (0, 25) and (25, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For Car A, the line passes through (0, 25) and (25, 0).",
+    "conclusion": "The slope is a_A = (0-25)/(25-0) = -1 m/s^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope is a_A = -1 m/s^2.",
+    "conclusion": "v_A(t) = v_A(0) + a_A t = 25 - t for 0 ≤ t ≤ 25.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For Car B, the line passes through (0, 15) and (30, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For Car B, the line passes through (0, 15) and (30, 0).",
+    "conclusion": "The slope is a_B = (0-15)/(30-0) = -0.5 m/s^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope is a_B = -0.5 m/s^2.",
+    "conclusion": "v_B(t) = v_B(0) + a_B t = 15 - 0.5t for 0 ≤ t ≤ 30.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let x_A(0) and x_B(0) be the initial positions of Car A and Car B at t=0. Since Car B is in front of Car A, x_B(0) > x_A(0). Let the initial separation be d = x_B(0) - x_A(0) > 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_A(t) = 25 - t",
+    "conclusion": "The position of Car A at time t is x_A(t) = x_A(0) + ∫_0^t v_A(t') dt' = x_A(0) + ∫_0^t (25-t') dt' = x_A(0) + 25t - 0.5t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_B(t) = 15 - 0.5t",
+    "conclusion": "The position of Car B at time t is x_B(t) = x_B(0) + ∫_0^t v_B(t') dt' = x_B(0) + ∫_0^t (15-0.5t') dt' = x_B(0) + 15t - 0.25t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_A(t) = x_B(t)",
+    "conclusion": "A collision occurs at time t_c if x_A(t_c) = x_B(t_c). Substituting the position expressions, we get x_A(0) + 25t_c - 0.5t_c^2 = x_B(0) + 15t_c - 0.25t_c^2.",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to calculate the gravitational force exerted by the remaining part of the sphere (after removing the smaller sphere of radius R/2) on the point mass m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The original sphere has mass M and radius R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The point mass m is located at a distance 2R from the center of the sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The original sphere has mass M and radius R. The point mass m is located at a distance 2R from the center of the sphere.",
+    "conclusion": "The gravitational force exerted by the sphere on the point mass m is given by F_original = G M m / (2R)^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_original = G M m / (2R)^2.",
+    "conclusion": "F_original = G M m / 4R^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The smaller sphere that is removed has radius R/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The original sphere is uniformly dense.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The smaller sphere that is removed has radius R/2. The original sphere is uniformly dense.",
+    "conclusion": "The mass of the smaller sphere can be calculated using the ratio of volumes.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The volume of a sphere is proportional to the cube of its radius (V = 4/3 π R^3).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume of a sphere is proportional to the cube of its radius (V = 4/3 π R^3).",
+    "conclusion": "M' = M * ((R/2)^3 / R^3) = M * 1/8.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "M' = M * 1/8.",
+    "conclusion": "The mass of the removed sphere is M' = M/8.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The removed sphere has mass M' = M/8 and radius R/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The center of the removed sphere is located at the center of the original sphere, which is a distance 2R from the point mass m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The removed sphere has mass M' = M/8 and radius R/2. The center of the removed sphere is located at the center of the original sphere, which is a distance 2R from the point mass m.",
+    "conclusion": "The gravitational force exerted by the removed sphere on m is F_removed = G M' m / (2R)^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_removed = G M' m / (2R)^2. M' = M/8.",
+    "conclusion": "F_removed = G (M/8) m / (2R)^2 = G M m / 32R^2.",
+    "judgment": "Match"
+  }]

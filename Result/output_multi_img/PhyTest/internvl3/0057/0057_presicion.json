@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromotive force of the power supply is E=6V, the internal resistance is r=2Ω, the fixed resistors are R1=2Ω, R2=3Ω, R3=6Ω, and the capacitance of the capacitor is C=10μF.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After closing switch S, the circuit stabilizes.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Find the charge Q carried by the capacitor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Resistors R2 and R3 are in parallel.",
+    "conclusion": "Calculate their equivalent resistance Req.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Req = (R2 * R3) / (R2 + R3) = (3 * 6) / (3 + 6) = 18 / 9",
+    "conclusion": "Req = 2Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Add the internal resistance r and the resistor R1 to Req.",
+    "conclusion": "Rtotal = R1 + Req + r = 2 + 2 + 2 = 6Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's Law, find the total current I from the power source.",
+    "conclusion": "I = E / Rtotal = 6V / 6Ω = 1A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across R1 is given by U1 = I * R1.",
+    "conclusion": "U1 = 1A * 2Ω = 2V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the capacitor is in parallel with Req, the voltage across the capacitor UC is equal to U1.",
+    "conclusion": "UC = U1 = 2V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge Q on the capacitor is given by Q = C * UC.",
+    "conclusion": "Q = 10 * 10^-6 F * 2V = 20 * 10^-6 C = 20μC",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The charge Q carried by the capacitor is 20μC.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

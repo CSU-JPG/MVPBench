@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point charge +q is at A(0,0,h) in vacuum (z > 0). Region z ≤ 0 is an infinite conductor. The conductor is in electrostatic equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When a point charge is placed near a conducting plane, we can replace the conducting plane with an image charge to solve for the field.",
+    "conclusion": "The image charge has equal but opposite charge: -q and is located at the mirror position across the boundary: (0,0,-h).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field at any point will be the sum of fields from the original charge +q at (0,0,h) and the image charge -q at (0,0,-h).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance from original charge to point (h,h,-h): r1 = sqrt((h-0)^2 + (h-0)^2 + (-h-h)^2) = sqrt(h^2 + h^2 + 4h^2) = sqrt(6h^2) = h*sqrt(6).",
+    "conclusion": "Distance from original charge to point (h,h,-h) is h*sqrt(6).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance from image charge to point (h,h,-h): r2 = sqrt((h-0)^2 + (h-0)^2 + (-h-(-h))^2) = sqrt(h^2 + h^2 + 0) = sqrt(2h^2) = h*sqrt(2).",
+    "conclusion": "Distance from image charge to point (h,h,-h) is h*sqrt(2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From original charge +q: E1 = k*q/r1^2*r1 = k*q/6h^2*r1.",
+    "conclusion": "Electric field from original charge +q is k*q/6h^2*r1.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From image charge -q: E2 = k*(-q)/r2^2*r2 = -k*q/2h^2*r2.",
+    "conclusion": "Electric field from image charge -q is -k*q/2h^2*r2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since we're asked for the field due to induced charges only, we only need to consider E2 from the image charge, which represents the effect of all induced charges in the conductor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E2 = k*q/2h^2",
+    "conclusion": "The magnitude of the electric field formed by the induced charges at the point (h,h,-h) is k*q/2h^2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A beam of light is obliquely incident from the air to point A on the transparent medium ball, and the incident angle is I.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of air is approximately n₀≈1 and the refractive index of the sphere is n>1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₀ sin i = n sin r",
+    "conclusion": "When the ray from air enters the sphere at point A, it bends toward the normal according to Snell’s law.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Inside the sphere, the light travels in a straight line until it reaches the opposite inner surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle θ it makes with the normal equals r (by simple geometry in a sphere).",
+    "conclusion": "At the opposite point, the angle θ it makes with the normal equals r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ ≥ n₀ / n",
+    "conclusion": "Total internal reflection at the second surface requires sin θ ≥ n₀ / n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = r",
+    "conclusion": "Since θ = r, the condition for total internal reflection becomes sin r ≥ 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin i = n sin r",
+    "conclusion": "Combine this with Snell’s law: sin i = n sin r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin i = n sin r and sin r ≥ 1/n",
+    "conclusion": "A sufficient condition for total internal reflection is sin i ≥ 1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin i ≤ 1",
+    "conclusion": "The condition sin i ≥ 1 can never be satisfied because sin i ≤ 1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin i ≤ 1",
+    "conclusion": "No matter how large the external incident angle i is, the ray that has entered the sphere cannot satisfy the total-internal-reflection requirement at the opposite side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray cannot satisfy the total-internal-reflection requirement at the opposite side.",
+    "conclusion": "Even when the incident angle i in air is made as large as physically possible, the refracted ray inside the transparent sphere will never meet the total-internal-reflection condition on the far surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray inside the transparent sphere will never meet the total-internal-reflection condition on the far surface.",
+    "conclusion": "The light will always emerge from the sphere; it will not undergo total reflection.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

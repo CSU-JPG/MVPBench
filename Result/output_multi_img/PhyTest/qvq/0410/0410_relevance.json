@@ -1,0 +1,77 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Need to find minimum area of paper to cover each face of the cube to hide the bubble.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Cube has side length \\(a\\) and refractive index 1.5; bubble is at the center.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Light bending due to refractive index might affect visibility of the bubble.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Paper must block view of bubble from outside.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Light rays from bubble towards cube edges could make it visible.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Consider critical angle and total internal reflection.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate critical angle using Snell's law: \\(\\theta_c = \\arcsin\\left(\\frac{1}{1.5}\\right) \\approx 41.8^\\circ\\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Critical angle applies at glass-air interface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Find regions on each face where light rays hit surface at angle ≤ critical angle.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Bubble coordinates are \\(\\left(\\frac{a}{2}, \\frac{a}{2}, \\frac{a}{2}\\right)\\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Consider face at \\(z = 0\\) and find points where light rays make angle ≤ critical angle with normal.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Normal to surface at \\(z = 0\\) is in \\(+z\\) direction.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Direction of light ray from bubble to point \\(P(x, y, 0)\\) is \\(\\vec{d} = (x - \\frac{a}{2}, y - \\frac{a}{2}, -\\frac{a}{2})\\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Dot product \\(\\vec{d} \\cdot \\hat{k} = -\\frac{a}{2}\\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Magnitude of \\(\\vec{d}\\) is \\(\\sqrt{\\left(x - \\frac{a}{2}\\right)^2 + \\left(y - \\frac{a}{2}\\right)^2 + \\frac{a^2}{4}}\\).",
+    "relevant": "Yes"
+  }
+]

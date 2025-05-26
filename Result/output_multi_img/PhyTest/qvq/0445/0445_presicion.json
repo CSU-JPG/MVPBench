@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves light bending when it enters water, and the task is to find the speed of light in water based on given information.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A diver in the water sees all the scenery above the water in an inverted cone with vertex angle α.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light in vacuum is c, and the task is to find the speed of light in water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light rays from the air enter the water and bend according to Snell's Law.",
+    "conclusion": "The angle at which light enters the water determines how much it bends, related to angle α in the cone.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A horizontal line represents the water surface, and a dashed blue line forms an angle α with the vertical.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "An arrow represents incident light hitting the water surface at an angle and bending downward into the water.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law: n1 * sin(θ1) = n2 * sin(θ2), where n1 and n2 are refractive indices, and θ1 and θ2 are angles of incidence and refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light is going from air (n1 ≈ 1) to water (n2 ≈ 1.33).",
+    "conclusion": "1 * sin(θ1) = 1.33 * sin(θ2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light in a medium is related to the refractive index by n = c / v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Incident angle is α/2, and refracted angle is α.",
+    "conclusion": "1 * sin(α/2) = 1.33 * sin(α).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertex angle of the cone is α.",
+    "conclusion": "This corresponds to the maximum angle at which light can enter the water and still be visible to the diver.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle of total reflection of light in water is C = α/2, and sin(C) = 1/n.",
+    "conclusion": "The speed of light in water is v = c * sin(α/2).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The metal shaft OO' rotates with angular velocity ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The metal rod M is fixed perpendicularly to OO' and rotates with it.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The other end of M slides along the fixed metal ring N, maintaining good electrical contact.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The entire system is in a uniform magnetic field B, which is parallel to the OO'-axis, with magnetic induction intensity B0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A voltmeter V measures the potential difference between the shaft OO' and the ring N.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motion of the metal rod M in the magnetic field induces an electromotive force (EMF) due to electromagnetic induction.",
+    "conclusion": "The induced EMF is given by: E = (1/2) B ω L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltmeter reading U is equal to the induced EMF E.",
+    "conclusion": "U = (1/2) B ω L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "From the problem, when magnetic field B = B0 and angular velocity ω = ω0, the voltmeter reading is U0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting initial conditions into the formula for U.",
+    "conclusion": "U0 = (1/2) B0 ω0 L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Now, the magnetic field is changed to B = nB0, and the voltmeter reading is required to be U = mU0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting new conditions into the formula for U.",
+    "conclusion": "mU0 = (1/2) (nB0) ω L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the initial condition, U0 = (1/2) B0 ω0 L^2. Substituting this into the equation for mU0.",
+    "conclusion": "m (1/2) B0 ω0 L^2 = (1/2) (nB0) ω L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cancel out common terms (1/2) B0 L^2 on both sides.",
+    "conclusion": "m ω0 = n ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve for ω.",
+    "conclusion": "ω = (m ω0) / n",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

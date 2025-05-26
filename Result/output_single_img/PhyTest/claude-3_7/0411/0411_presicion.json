@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Glass sphere with right side silvered, light source S on the axis of symmetry, two light paths to analyze: 1. Light reflects off the surface and goes vertically upward 2. Light enters the sphere, reflects off silvered surface, returns along original path. Given: radius = R, refractive index = √3. Need to find: distance SM",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light to reflect vertically upward, it must hit the sphere at a point where the incident angle equals the reflection angle (law of reflection).",
+    "conclusion": "The incident angle θ equals the reflection angle θ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reflection angle is 90° - α, where α is the angle the radius to P makes with the horizontal.",
+    "conclusion": "Since the reflected ray is vertical, the normal at point P must make an angle of 45° with the horizontal.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Incident angle = reflection angle = θ. The reflected ray is vertical, so it's at 90° from horizontal. The normal and reflected ray make angle θ = 45°.",
+    "conclusion": "Thus, the normal is at 45° from horizontal.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the normal at P makes a 45° angle with the horizontal, and the normal points from P to the center O.",
+    "conclusion": "The point P must be located at coordinates (0, R) relative to the center of the sphere. This is the topmost point of the sphere, which is actually point M in the diagram.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the second path, the light enters the sphere at point M, travels through the sphere, reflects off the silvered right side, returns along the same path back to S.",
+    "conclusion": "For this to happen, the light must hit the silvered surface normally (perpendicular to it).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident ray from S to M and the refracted ray inside the sphere must satisfy Snell's law: n₁ × sin(θ₁) = n₂ × sin(θ₂), where n₁ = 1 (air), n₂ = √3 (glass), θ₁ = angle of incidence from S to M, θ₂ = angle of refraction inside the sphere.",
+    "conclusion": "For the light to hit the silvered surface normally, the refracted ray must pass through the center of the sphere. This means θ₂ = 0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 × sin(θ₁) = √3 × sin(0).",
+    "conclusion": "sin(θ₁) = 0, which means θ₁ = 0, which means the incident ray must be perpendicular to the surface at M.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the incident ray to be perpendicular to the surface at M, the light source S must be positioned along the axis passing through the center of the sphere and point M.",
+    "conclusion": "Since M is the topmost point of the sphere, S must be directly to the left of M, at some distance from M.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The only way both conditions (reflection upward and returning along same path) can be satisfied is if S is positioned at the center of curvature of the sphere's surface at M.",
+    "conclusion": "For a sphere, the center of curvature for any point on the surface is at a distance 2R from that point along the normal.",
+    "judgment": "Reasonable"
+  }]

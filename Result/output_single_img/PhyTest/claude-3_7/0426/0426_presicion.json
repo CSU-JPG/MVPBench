@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The person is at point O, height h_1 = 15 m above water surface. The submarine is at depth h_2 = 23 m below water surface. The angle of incidence is 53° (angle between line of sight and vertical). The refractive index of water is n = 4/3. We need to find the horizontal distance between them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law: n_1 sin(theta_1) = n_2 sin(theta_2), where n_1 = 1 (air), n_2 = 4/3 (water), theta_1 = 53° (angle of incidence in air), theta_2 = angle of refraction in water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 * sin(53°) = 4/3 * sin(theta_2)",
+    "conclusion": "sin(theta_2) = 0.6",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(theta_2) = 0.6",
+    "conclusion": "theta_2 = arcsin(0.6) ≈ 36.87°",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let x be the horizontal distance. Break it down into two parts: distance in air (x_1) and distance in water (x_2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(53°) = x_1 / h_1",
+    "conclusion": "x_1 = 15 * tan(53°) = 20 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(theta_2) = x_2 / h_2",
+    "conclusion": "x_2 = 23 * tan(theta_2) = 17.25 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = x_1 + x_2",
+    "conclusion": "x = 20 + 17.25 = 37.25 m",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

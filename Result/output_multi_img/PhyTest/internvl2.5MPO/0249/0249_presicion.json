@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil is a square with side length L and N turns. It rotates with a constant angular velocity ω about an axis perpendicular to a uniform magnetic field B. The axis is coplanar with the coil and the ab side is L/4 from the axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through the coil is Φ = B ⋅ A ⋅ cos(θ), where A = L^2 is the area of the coil and θ is the angle between the normal to the coil and the magnetic field.",
+    "conclusion": "The induced EMF is given by 𝓔 = -N dΦ/dt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the coil rotates with angular velocity ω, θ = ωt.",
+    "conclusion": "Φ = B L^2 cos(ωt).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Differentiating flux with respect to time, dΦ/dt = -B L^2 ω sin(ωt).",
+    "conclusion": "The induced EMF is then 𝓔 = N B L^2 ω sin(ωt).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum value of 𝓔 occurs when sin(ωt) = 1.",
+    "conclusion": "𝓔_max = N B L^2 ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective (rms) value of the EMF is given by 𝓔_rms = 𝓔_max/√2.",
+    "conclusion": "𝓔_rms = N B L^2 ω/√2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective value is E = E_m/√2 = √2/2 NBωL^2.",
+    "conclusion": "The effective value of the induced EMF in the coil is √2/2 NBωL^2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

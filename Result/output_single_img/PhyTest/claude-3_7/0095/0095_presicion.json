@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel plates A and B create a uniform electric field. An electron is injected from point O with initial velocity v₀ = 4 × 10⁶ m/s perpendicular to the electric field. At point C, the electron's velocity makes a 30° angle with its initial direction. e = 1.6 × 10⁻¹⁹ C (electron charge). m = 0.91 × 10⁻³⁰ kg (electron mass).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The x-component of velocity remains constant since the electric field only acts in the y-direction.",
+    "conclusion": "vₓ = v₀ = 4 × 10⁶ m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The x-component of velocity remains constant.",
+    "conclusion": "Time to reach point C: t = L/vₓ",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point C, the electron's velocity makes a 30° angle with the x-axis.",
+    "conclusion": "vᵧ = vₓ × tan(30°) = 4 × 10⁶ × (1/√3) = 2.31 × 10⁶ m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The acceleration in y-direction is constant: aᵧ = F/m = eE/m",
+    "conclusion": "vᵧ = aᵧt = (eE/m)(L/vₓ)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation vᵧ = aᵧt = (eE/m)(L/vₓ)",
+    "conclusion": "E = (vᵧm·vₓ)/(eL)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The final velocity at point C has two components: vₓ = 4 × 10⁶ m/s (unchanged), vᵧ = 2.31 × 10⁶ m/s (calculated above)",
+    "conclusion": "v = √(vₓ² + vᵧ²) = √((4 × 10⁶)² + (2.31 × 10⁶)²) = √(21.34 × 10¹²) = 4.62 × 10⁶ m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = 4.62 × 10⁶ m/s",
+    "conclusion": "KE = ½mv² = ½ × 0.91 × 10⁻³⁰ × (4.62 × 10⁶)² = 9.71 × 10⁻¹⁸ J",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

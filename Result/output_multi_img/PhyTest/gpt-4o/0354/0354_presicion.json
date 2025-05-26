@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block P has mass m and initial velocity v_0 upward along the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block Q has mass 4m and is initially at rest (v_Q = 0).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision is elastic.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There is no friction between P and the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coefficient of kinetic friction between Q and the inclined plane is tan θ, which implies that the frictional force acting on Q is F_friction = 4m g sin θ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The inclined plane is sufficiently long, and P will not collide with Q again before Q's velocity reduces to zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m v_0 = m v_{P_1} + 4m v_{Q_1}",
+    "conclusion": "v_0 = v_{P_1} + 4 v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "KE_initial = 1/2 m v_0^2 = KE_final = 1/2 m v_{P_1}^2 + 1/2 * 4m * v_{Q_1}^2",
+    "conclusion": "v_0^2 = v_{P_1}^2 + 4 v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0 = v_{P_1} + 4 v_{Q_1}",
+    "conclusion": "v_{P_1} = v_0 - 4 v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0^2 = (v_0 - 4 v_{Q_1})^2 + 4 v_{Q_1}^2",
+    "conclusion": "v_0^2 = v_0^2 - 8 v_0 v_{Q_1} + 20 v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0^2 = v_0^2 - 8 v_0 v_{Q_1} + 20 v_{Q_1}^2",
+    "conclusion": "0 = -8 v_0 v_{Q_1} + 20 v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0 = -8 v_0 v_{Q_1} + 20 v_{Q_1}^2",
+    "conclusion": "v_{Q_1} = 2/5 v_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_{P_1} = v_0 - 4 v_{Q_1}, v_{Q_1} = 2/5 v_0",
+    "conclusion": "v_{P_1} = 3/5 v_0",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

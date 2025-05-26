@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The number of turns of a circular coil is N=200, the area of the coil is S=1m^2, the resistance of the coil is r=10Ω, and the coil is connected to an external resistor with a resistance of R=50Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil is placed in a uniform magnetic field perpendicular to the plane of the coil and directed inward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The variation of the magnetic induction over time is shown in Figure B, where the magnetic field B varies linearly from 0.2 T to 0.4 T over a time interval of 4 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Faraday's law of electromagnetic induction, the induced EMF (𝓔) in the coil is given by 𝓔 = -N dΦ/dt, where N is the number of turns in the coil, and Φ is the magnetic flux through the coil.",
+    "conclusion": "The magnetic flux Φ is given by Φ = B ⋅ S, where B is the magnetic field and S is the area of the coil.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the given graph, the magnetic field B varies linearly from 0.2 T to 0.4 T over a time interval of 4 seconds.",
+    "conclusion": "The rate of change of the magnetic field dB/dt is 0.05 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting into the expression for the induced EMF: 𝓔 = -N d(B ⋅ S)/dt = -N S dB/dt",
+    "conclusion": "𝓔 = -200 × 1 m^2 × 0.05 T/s = -10 V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the induced EMF is |𝓔| = 10 V.",
+    "conclusion": "The total resistance in the circuit is the sum of the internal resistance of the coil r and the external resistance R: R_total = R + r = 50 Ω + 10 Ω = 60 Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I in the circuit is given by Ohm's law: I = 𝓔/R_total = 10 V/60 Ω",
+    "conclusion": "I = 1/6 A ≈ 0.167 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power P consumed by the resistor R is given by P = I^2 R",
+    "conclusion": "P = (1/6)^2 × 50 Ω = 50/36 W ≈ 1.39 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum power consumed by the resistor R is calculated.",
+    "conclusion": "The maximum power consumed by the resistor R is 1.39 W.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

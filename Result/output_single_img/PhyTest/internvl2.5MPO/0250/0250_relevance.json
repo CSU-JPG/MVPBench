@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the instantaneous value of the induced current and the average value of the induced EMF as the wire frame rotates.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The induced EMF in a rotating loop is given by Faraday's Law: \\( \\mathcal{E} = -\\frac{d\\Phi}{dt} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Magnetic flux \\( \\Phi \\) through the loop is \\( \\Phi = B \\cdot S \\cdot \\cos(\\theta) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The angle \\( \\theta \\) changes with time as \\( \\theta = \\omega t \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Differentiating \\( \\Phi \\) with respect to time gives \\( \\mathcal{E} = B \\cdot S \\cdot \\omega \\cdot \\sin(\\omega t) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The induced current \\( I \\) is given by \\( I = \\frac{B \\cdot S \\cdot \\omega \\cdot \\sin(\\omega t)}{R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At 60°, \\( I = \\frac{\\sqrt{3} B \\cdot S \\cdot \\omega}{2R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The average EMF over a time interval \\( \\Delta t \\) is \\( \\langle \\mathcal{E} \\rangle = \\frac{1}{\\Delta t} \\int_{0}^{\\Delta t} \\mathcal{E}(t) \\, dt \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The time interval for a 60° rotation is \\( \\Delta t = \\frac{\\pi}{3\\omega} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Evaluate the integral \\( \\int_{0}^{\\Delta t} \\sin(\\omega t) \\, dt = \\frac{1/2}{\\omega} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The average EMF is \\( \\langle \\mathcal{E} \\rangle = \\frac{3B \\cdot S \\cdot \\omega}{2\\pi} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Instantaneous value of the induced current: \\( I = \\frac{\\sqrt{3} B \\cdot S \\cdot \\omega}{2R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Average value of the induced EMF: \\( \\langle \\mathcal{E} \\rangle = \\frac{3B \\cdot S \\cdot \\omega}{2\\pi} \\).",
+    "relevant": "Yes"
+  }
+]

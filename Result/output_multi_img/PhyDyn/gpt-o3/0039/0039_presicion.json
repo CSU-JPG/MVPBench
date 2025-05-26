@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "A drives in from the lower-right direction toward a scene with several clusters of blocks and a small yellow car.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The scene contains several clusters of blocks: a group of yellow blocks, a group of green and blue blocks, a group of orange blocks, and a group of red blocks. A yellow toy car is also present.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Car A is positioned at the lower-right corner of the image and is aimed toward the group of green and blue blocks.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A is aimed toward the group of green and blue blocks.",
+    "conclusion": "Car A will not collide with the yellow toy car or the orange and red blocks because they are not in its path.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A is aimed toward the group of green and blue blocks.",
+    "conclusion": "Car A will collide with the green square first as it is the frontmost block in the group.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A collides with the green square first.",
+    "conclusion": "The collision causes the green square to be knocked forward and Car A to deflect slightly to its left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The green square is knocked forward and Car A deflects slightly to its left.",
+    "conclusion": "Car A loses most of its kinetic energy due to the collision with the green square.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A loses most of its kinetic energy due to the collision with the green square.",
+    "conclusion": "Car A rolls only a short additional distance and stops beside the displaced green square.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A stops beside the displaced green square.",
+    "conclusion": "Car A stops just in front of the remaining blue and green blocks in the pile.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

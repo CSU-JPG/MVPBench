@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the area S of the part of the cylindrical surface through which light exits, we need to determine the critical angle for total internal reflection and the corresponding area on the curved surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index n = 2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θ_c is given by the equation sin θ_c = 1/n.",
+    "conclusion": "sin θ_c = 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ_c = 1/2.",
+    "conclusion": "θ_c = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the critical angle, the light rays exiting the curved surface will refract at an angle of 90° to the normal.",
+    "conclusion": "The angle between the refracted light and the horizontal plane is 90° - θ_c = 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the light exits at an angle of 60°, the central angle α subtended by the arc is 2 × 60° = 120°.",
+    "conclusion": "The portion of the cylinder where light exits corresponds to the angle α from the top of the cylinder.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total area of the semi-cylindrical surface is πR^2 + 2πR × L/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area S of the curved surface is (α/360°) × 2πR × L.",
+    "conclusion": "S = (120°/360°) × 2πR × L = (1/3) × 2πR × L = (2/3)πRL.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area S of the part of the cylindrical surface through which light exits is (2/3)πRL.",
+    "conclusion": "The area S is (2/3)πRL.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

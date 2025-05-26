@@ -1,0 +1,58 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves determining the current \\( I \\) of the constant current source in an electromagnetic aircraft launch system. The mover is accelerated by the magnetic force and undergoes motion as described in the problem statement.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Figure (1) shows a coil located in a radial magnetic field between horizontal rails. The coil is connected to a constant current source via switch S, which can connect to position 1 or 2. The mover is insulated and fixed to the coil, sliding without friction on the rails.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Figure (2) shows a velocity-time (v-t) graph for the mover. The mover starts from rest, accelerates to a takeoff speed \\( v_1 = 80 \\, \\mathrm{m/s} \\) at \\( t_1 = 1.5 \\, \\mathrm{s} \\), then decelerates and returns to its initial position.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The magnetic force \\( F_1 \\) acting on the mover is given by \\( F_1 = n B I l \\), where \\( n \\) is the number of turns of the coil, \\( B \\) is the magnetic flux density, \\( I \\) is the current, and \\( l \\) is the circumference of each turn.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "During the time interval \\( 0 \\sim t_1 \\), the mover undergoes uniformly accelerated linear motion with an acceleration \\( a = \\frac{v_1}{t_1} \\).",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mover undergoes uniformly accelerated motion with \\( a = \\frac{v_1}{t_1} \\), and \\( v_1 = 80 \\, \\mathrm{m/s}, t_1 = 1.5 \\, \\mathrm{s} \\).",
+    "conclusion": "The acceleration \\( a = \\frac{80}{1.5} = 53.33 \\, \\mathrm{m/s^2} \\).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force \\( F_1 = n B I l \\) and Newton's second law \\( F_1 = (M + m)a \\).",
+    "conclusion": "Equating \\( n B I l = (M + m)a \\), we get \\( I = \\frac{(M + m)a}{n B l} \\).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation \\( I = \\frac{(M + m)a}{n B l} \\) and the given values \\( M = 10 \\, \\mathrm{kg}, m = 5 \\, \\mathrm{kg}, a = 53.33 \\, \\mathrm{m/s^2}, n = 100, B = 0.1 \\, \\mathrm{T}, l = 1 \\, \\mathrm{m} \\).",
+    "conclusion": "Substituting the values, \\( I = \\frac{(10 + 5)(53.33)}{100 \\cdot 0.1 \\cdot 1} = 80 \\, \\mathrm{A} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

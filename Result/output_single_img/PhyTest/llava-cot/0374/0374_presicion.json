@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The early warning radar detects an enemy aircraft flying horizontally at a constant speed at an altitude of 20000m. Immediately, an anti-aircraft missile with a mass of m=100kg is launched.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The missile's rocket engine, controlled by the guidance system, expels gas vertically downward, causing the missile to accelerate uniformly upward from rest with an acceleration of a=10g until it reaches an altitude of 5000m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At this point, the direction of the gas expulsion immediately changes to an angle θ (cosθ=1/11) downward and to the right, causing the missile to follow a curved trajectory until it hits the enemy aircraft.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "It is assumed that the rocket thrust remains constant during the missile's flight, and the missile's mass change and air resistance are negligible. The missile can be treated as a point mass, and g=10m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a missile undergoes curvilinear motion, the magnitudes of the horizontal and vertical accelerations are ax and ay respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a missile launched vertically from the ground, reaching an altitude of 20000 meters. It then ascends to 5000 meters with a uniform upward acceleration. After reaching this altitude, the missile follows a curved trajectory to intercept an enemy aircraft flying horizontally.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The missile accelerates uniformly upward from rest with an acceleration of 10g = 100 m/s².",
+    "conclusion": "Using the equation v² = u² + 2as, where v is the final velocity, u = 0, a = 100 m/s², and s = 5000 m, we find: v² = 0 + 2 × 100 × 5000 = 1000000. Thus, v = √1000000 = 1000 m/s.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the horizontal velocity remains constant during the ascent, it is 0.",
+    "conclusion": "Horizontal Velocity at End of Ascent is 0 m/s.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The missile follows a curved trajectory with a constant horizontal acceleration ax. The vertical component of the velocity at the end of the ascent is 1000 m/s. The vertical acceleration is 10g = 100 m/s².",
+    "conclusion": "Curvilinear Motion Phase begins.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal acceleration ax can be found using the equation for the change in horizontal velocity: ax = v² / 2s = 1000² / (2 × 5000) = 1000000 / 10000 = 100 m/s².",
+    "conclusion": "Horizontal acceleration ax is 100 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal velocity at the time of impact is: vx = √(2 × ax × s) = √(2 × 100 × 15000) = √3000000 = 1732.05 m/s.",
+    "conclusion": "Horizontal velocity at time of impact is 1732.05 m/s.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

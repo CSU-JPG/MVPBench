@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves an ideal gas changing from state A to state C. The temperature at state A is T₀, and the internal energy U is related to temperature T by U = aT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The diagram shows points A, B, and C on a P-V graph, with pressures and volumes labeled.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point A, the pressure is P₀ and the volume is V₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point B, the pressure is 0.6P₀ and the volume is V₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point C, the pressure is 0.6P₀ and the volume is 0.5V₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state A to state B: Pressure decreases from P₀ to 0.6P₀, Volume remains constant at V₀.",
+    "conclusion": "The process A to B is an isochoric process. For an isochoric process, temperature and pressure are directly proportional.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_B = 0.6P₀, P_A = P₀, T_A = T₀.",
+    "conclusion": "T_B = T₀ * (0.6P₀ / P₀) = 0.6T₀.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state B to state C: Pressure remains constant at 0.6P₀, Volume decreases from V₀ to 0.5V₀.",
+    "conclusion": "The process B to C is an isobaric process. For an isobaric process, temperature and volume are directly proportional.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_C = P_B = 0.6P₀, V_C = 0.5V₀, V_B = V₀, T_B = 0.6T₀.",
+    "conclusion": "T_C = 0.6T₀ * (0.5V₀ / V₀) = 0.3T₀.",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at both states: At state A: P₀ * V₀ = nRT₀, At state C: 0.6P₀ * 0.5V₀ = nRT_C.",
+    "conclusion": "T_C = 0.3T₀ confirms the previous result.",
+    "judgment": "Match"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Two particles, A and B, start moving simultaneously from rest, from the same position, and in the same direction. Their motion is represented on a v-t graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "For particle A: The velocity increases linearly from 0 to 2v₀ during the time interval 0 to t₀. The velocity decreases linearly from 2v₀ to 0 during the time interval t₀ to 3t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "For particle B: The velocity increases linearly from 0 to v₀ during the time interval 0 to 5t₀. The velocity decreases linearly from v₀ to 0 during the time interval 5t₀ to 6t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "In a v-t graph, the slope of the line represents acceleration. Acceleration is calculated as the change in velocity divided by the change in time (Δv/Δt).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle A: The velocity increases linearly from 0 to 2v₀ during the time interval 0 to t₀.",
+    "conclusion": "The acceleration of particle A during the time interval 0 to t₀ is a_A1 = (2v₀ - 0)/(t₀ - 0) = 2v₀/t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle A: The velocity decreases linearly from 2v₀ to 0 during the time interval t₀ to 3t₀.",
+    "conclusion": "The deceleration of particle A during the time interval t₀ to 3t₀ is a_A2 = (0 - 2v₀)/(3t₀ - t₀) = -2v₀/2t₀ = -v₀/t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle B: The velocity increases linearly from 0 to v₀ during the time interval 0 to 5t₀.",
+    "conclusion": "The acceleration of particle B during the time interval 0 to 5t₀ is a_B1 = (v₀ - 0)/(5t₀ - 0) = v₀/5t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle B: The velocity decreases linearly from v₀ to 0 during the time interval 5t₀ to 6t₀.",
+    "conclusion": "The deceleration of particle B during the time interval 5t₀ to 6t₀ is a_B2 = (0 - v₀)/(6t₀ - 5t₀) = -v₀/t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitudes of deceleration for particle A and particle B are |a_A2| = v₀/t₀ and |a_B2| = v₀/t₀, respectively.",
+    "conclusion": "The ratio of the magnitudes of deceleration for particle A and particle B is |a_A2|/|a_B2| = (v₀/t₀)/(v₀/t₀) = 1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio of the magnitudes of deceleration for particle A and particle B is 1.",
+    "conclusion": "The ratio of the magnitudes of acceleration for A and B during their deceleration phases is 1:1.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

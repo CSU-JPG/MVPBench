@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves two objects, A and B, each with a mass of 1 kg, connected by a massless string over a pulley on an inclined plane with angle 37 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Object A is initially at a height of 1 m above the ground, and object B is at the bottom of the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The inclined plane is sufficiently long, and friction between B and the inclined plane, as well as between the string and the pulley, is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The system is released from rest and allowed to move.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The connection between object B and the string breaks when object A hits the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on object A are its weight mg and the tension in the string T.",
+    "conclusion": "The equation of motion for object A is mg - T = ma_A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on object B are its weight mg sin theta and the normal force N from the inclined plane.",
+    "conclusion": "The equation of motion for object B is mg sin theta - T = ma_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force N is balanced by the component of the weight of B perpendicular to the plane, so N = mg cos theta.",
+    "conclusion": "The tension T is the same on both sides of the pulley.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The accelerations of A and B are related by the length of the string.",
+    "conclusion": "The acceleration of B is a_B = a_A sin theta.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time t it takes for A to hit the ground is the time it takes for the string to be fully unwound.",
+    "conclusion": "h = 1/2 a_A t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for t, we get h = 1/2 a_A t^2.",
+    "conclusion": "t = sqrt(2h/a_A).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance traveled by B is s_B = 1/2 a_B t^2.",
+    "conclusion": "s_B = 2h^2 sin theta/a_A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When A hits the ground, the string is fully unwound, so the distance traveled by B is (L - h)/sin theta.",
+    "conclusion": "2h^2 sin theta/a_A = (L - h)/sin theta.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for a_A, we get 2h^2 sin theta/a_A = (L - h)/sin theta.",
+    "conclusion": "a_A = 2h^2 sin^2 theta/(L - h).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time t_A for A to hit the ground is t_A = sqrt(2h/a_A).",
+    "conclusion": "t_A = sqrt((L - h)/sin^2 theta).",
+    "judgment": "Match"
+  }]

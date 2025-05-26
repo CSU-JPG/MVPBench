@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The negatively charged particles enter the collector with an initial horizontal velocity v_0. As they move through the collector, they experience a vertical force due to the uniform electric field E between the plates. This force causes vertical acceleration a, which deflects the particles toward the positively charged plate. The particles are just completely collected when they travel the horizontal distance L (the length of the plates) and are deflected vertically by a distance d (the spacing between the plates).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal velocity v_0 remains constant because there is no horizontal force acting on the particles.",
+    "conclusion": "The time t it takes for the particles to travel the horizontal distance L is: t = L/v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical acceleration a is caused by the electric field E, which exerts a force F on the particle. Using Newton's second law: F = ma and F = qE, where q = -α is the charge of the particle.",
+    "conclusion": "a = -αE/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical displacement y of the particle after time t is given by the kinematic equation: y = 1/2 a t^2. Substituting a = -αE/m and t = L/v_0.",
+    "conclusion": "y = 1/2 (-αE/m) (L/v_0)^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the particles to be just completely collected, their vertical displacement y must equal the spacing d between the plates: y = d.",
+    "conclusion": "d = 1/2 (-αE/m) (L/v_0)^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the equation d = 1/2 (-αE/m) (L/v_0)^2.",
+    "conclusion": "d = αE/2m (L^2/v_0^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange the equation d = αE/2m (L^2/v_0^2) to solve for E.",
+    "conclusion": "E = 2m d v_0^2/α L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relationship between the electric field E and the voltage U_1 is: E = U_1/d.",
+    "conclusion": "U_1/d = 2m d v_0^2/α L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve for U_1 from the equation U_1/d = 2m d v_0^2/α L^2.",
+    "conclusion": "U_1 = 2m d^2 v_0^2/α L^2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

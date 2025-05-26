@@ -1,0 +1,46 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The balls are released without initial velocity (v_0 = 0) and roll down the inclined plane under the influence of gravity. This is a case of uniformly accelerated motion, where the acceleration a is constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The position of a ball at time t is given by the equation: s = (1/2) a t^2, where s is the displacement, a is the acceleration along the inclined plane, and t is the time elapsed since the ball was released.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The balls are released at intervals of 0.1 s. Let us denote the time of release for ball A, B, and C as follows: Ball A was released at t_A = 0.3 s, Ball B was released at t_B = 0.2 s, Ball C was released at t_C = 0.1 s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distances between the balls correspond to their positions at the time the photograph was taken. Let the time elapsed since the release of the first ball be t_photo.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball A has been rolling for t_photo - t_A = t_photo - 0.3 s, Ball B has been rolling for t_photo - t_B = t_photo - 0.2 s, Ball C has been rolling for t_photo - t_C = t_photo - 0.1 s.",
+    "conclusion": "The distances between the balls are given as: AB = 15 cm, BC = 20 cm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the displacement formula s = (1/2) a t^2, the positions of the balls are: Position of ball A: s_A = (1/2) a (t_photo - 0.3)^2, Position of ball B: s_B = (1/2) a (t_photo - 0.2)^2, Position of ball C: s_C = (1/2) a (t_photo - 0.1)^2.",
+    "conclusion": "The distances between the balls are: AB = s_A - s_B = 15 cm, BC = s_B - s_C = 20 cm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the expressions for s_A, s_B, and s_C: AB = (1/2) a (t_photo - 0.3)^2 - (1/2) a (t_photo - 0.2)^2 = 15 cm, BC = (1/2) a (t_photo - 0.2)^2 - (1/2) a (t_photo - 0.1)^2 = 20 cm.",
+    "conclusion": "Factor out (1/2) a in both equations: (1/2) a [(t_photo - 0.3)^2 - (t_photo - 0.2)^2] = 15 cm, (1/2) a [(t_photo - 0.2)^2 - (t_photo - 0.1)^2] = 20 cm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the squared terms: (t_photo - 0.3)^2 - (t_photo - 0.2)^2 = [(t_photo - 0.3) - (t_photo - 0.2)][(t_photo - 0.3) + (t_photo - 0.2)] = 0.1(2t_photo - 0.5), (t_photo - 0.2)^2 - (t_photo - 0.1)^2 = [(t_photo - 0.2) - (t_photo - 0.1)][(t_photo - 0.2) + (t_photo - 0.1)]"}]

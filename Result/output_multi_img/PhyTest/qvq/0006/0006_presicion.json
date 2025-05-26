@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two cars, A and B, are traveling in the same direction on a straight road. Their velocities over time are plotted in a graph. The task is to find the maximum distance between them when they are side by side at t=30 seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car A has a constant velocity after a certain time, initially accelerating and then maintaining a steady speed. Car B accelerates linearly from the start.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At t=20 seconds, both cars have the same velocity of 40 m/s. Car A reaches this velocity before t=20 seconds, while car B reaches it at t=20 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car A accelerates to 40 m/s before t=10 seconds and then maintains that speed. Car B starts from rest and has a constant acceleration, reaching 40 m/s at t=20 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem states they are side by side at t=30 seconds.",
+    "conclusion": "At t=30 seconds, the positions of car A and car B are equal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find their positions, calculate the area under each velocity-time graph up to t=30 seconds.",
+    "conclusion": "The position of car A at any time t can be found by integrating its velocity function.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For car A: From t=0 to t=10 seconds, it accelerates to 40 m/s. From t=10 seconds onwards, it maintains a constant velocity of 40 m/s.",
+    "conclusion": "For t ≤ 10 s: velocity va = 4t m/s, position xa = 2t². For t > 10 s: velocity va = 40 m/s, position xa = 40t - 200 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For car B: It starts from rest and accelerates at a constant rate, reaching 40 m/s at t=20 s.",
+    "conclusion": "Velocity vb = 2t m/s, position xb = t² m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t=30 s, they are side by side, so xa = xb.",
+    "conclusion": "At t=30 s: xa = 1000 m, xb = 900 m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The farthest distance between them occurs when their speeds are equal, which is at 20 s.",
+    "conclusion": "From 10 s to 20 s, the displacement of Car A is 400 m, and Car B is 300 m. The maximum distance between the two cars is 100 m.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

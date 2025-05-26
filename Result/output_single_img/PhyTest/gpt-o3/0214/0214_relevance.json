@@ -1,0 +1,42 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Known data: R₁ = 20 Ω, R₂ = 10 Ω, I₀ = 0.50 A",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate supply voltage U = I₀ · R₁ = 10 V",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Close the switch, motor branch connected in parallel with R₁",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate I_calc for parallel combination: I_calc ≈ 1.5 A",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate P_calc for purely resistive case: P_calc ≈ 15 W",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Real motor behavior involves back-emf",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Back-emf causes I_real < 1.5 A, thus P_real < 15 W",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Actual electric power consumed P < 15 W",
+    "relevant": "Yes"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the distance between the point where the red light hits the screen and point A. We'll use the given information and apply the principles of refraction and geometry.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The incident angle θ_i is given as 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n_1 sin θ_i = n_2 sin θ_r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_1 = 1 (refractive index of air), n_2 = √3 (refractive index of the brick), and θ_i = 60°.",
+    "conclusion": "Solve for θ_r: sin θ_r = (sin 60°)/√3 = (√3/2)/√3 = 1/2. Therefore, θ_r = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels through the semicircle and exits at point C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ_r = 30°.",
+    "conclusion": "The light travels straight through the semicircle to point C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The triangle △ABC is a right triangle with ∠A = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The hypotenuse AC can be found using the radius R of the semicircle.",
+    "conclusion": "Since ∠BAC = 30°, AC = 2R (hypotenuse of a 30-60-90 triangle).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light exits the brick at point C and travels in a straight line to the screen.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the refracted light and the horizontal is 30°.",
+    "conclusion": "The distance from point A to the point where the light hits the screen is the horizontal component of the path from C to the screen.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "∠CAN = 30°.",
+    "conclusion": "The horizontal distance is: Distance = AC · cos 30° = 2R · √3/2 = R√3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The correct calculation for the distance using the geometric relationship.",
+    "conclusion": "The distance between the position where the red light hits the screen and point A is PA = 3/2 R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

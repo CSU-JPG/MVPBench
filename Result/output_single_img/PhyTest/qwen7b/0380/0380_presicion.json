@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze both the collision between the balls and the subsequent motion of each ball under the influence of gravity and the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Mass of ball P: M = 4m, Mass of ball Q: m, Initial velocity of ball P: v_0 = mg/(qB), Initial velocity of ball Q: 0 (since it's at rest)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the collision is perfectly elastic and there is no charge transfer, we can use the principles of conservation of momentum and kinetic energy.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of Momentum: Mv_P + mv_Q = Mv_Pf + mv_Qf",
+    "conclusion": "4mv_P + mv_Q = 4mv_Pf + mv_Qf",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of Kinetic Energy: (1/2)Mv_P^2 + (1/2)mv_Q^2 = (1/2)Mv_Pf^2 + (1/2)mv_Qf^2",
+    "conclusion": "2mv_P^2 = 2mv_Pf^2 + (1/2)m(v_Qf)^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial velocity of ball P: v_P = v_0 = mg/(qB)",
+    "conclusion": "Substitute v_P into the momentum equation: 4m(mg/(qB)) + m(0) = 4m v_Pf + m v_Qf",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_P into the kinetic energy equation: 4(mg/(qB))^2 = 4v_Pf^2 + v_Qf^2",
+    "conclusion": "4(m^2g^2/(q^2B^2)) = 4v_Pf^2 + v_Qf^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation 1: 4mg/(qB) = 4v_Pf + v_Qf",
+    "conclusion": "v_Qf = 4mg/(qB) - 4v_Pf",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_Qf into Equation 2: 4m^2g^2/(q^2B^2) = 4v_Pf^2 + (4mg/(qB) - 4v_Pf)^2",
+    "conclusion": "Expand and simplify: 4m^2g^2/(q^2B^2) = 4v_Pf^2 + (16m^2g^2/(q^2B^2) - 32mg^2/(qB^2)v_Pf + 16v_Pf^2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Combine like terms: 0 = 20v_Pf^2 - 32mg^2/(qB^2)v_Pf + 12m^2g^2/(q^2B^2)",
+    "conclusion": "Solve the quadratic equation for v_Pf: 20v_Pf^2 - 32mg^2/(qB^2)v_Pf + 12m^2g^2/(q^2B^2) = 0",
+    "judgment": "Reasonable"
+  }]

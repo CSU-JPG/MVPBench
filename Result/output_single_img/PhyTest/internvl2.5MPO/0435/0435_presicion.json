@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the distance between points A and B inside the tank, given the largest range of external angles visible is 120°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The tank wall has a thickness of 18 cm and the refractive index of the tank material is √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc for total internal reflection is given by sin θc = 1/n.",
+    "conclusion": "For n = √3, sin θc = 1/√3 = √3/3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θc = √3/3",
+    "conclusion": "θc = 35.26°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The external angle θ is related to the critical angle by θ = 90° - θc.",
+    "conclusion": "Given the maximum external angle is 120°, the angle of incidence inside the tank is 120° = 90° + θc.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "120° = 90° + θc",
+    "conclusion": "θc = 30°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle ∠DCA is 30° because the external angle is 120°.",
+    "conclusion": "The triangle △DCA is a right triangle with ∠DCA = 30°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In △DCA, DC is the opposite side to ∠DCA, and DA is the hypotenuse.",
+    "conclusion": "Using the sine function: sin 30° = DC/DA, 1/2 = 18/DA, DA = 36 cm.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "DA = DB = 36 cm",
+    "conclusion": "The distance between A and B is AB = 2 × 18 = 36 cm.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light path diagram is as shown in the figure, which can be obtained by the refraction law of light: n = sin θ1 / sin θ2.",
+    "conclusion": "From the question, θ1 = 60°, so θ2 = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Derived from geometric relations: tan θ2 = AB/BC.",
+    "conclusion": "Solve AB = 6√3 cm.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

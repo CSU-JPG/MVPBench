@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There are three objects: A, B, and C. Object A has a mass of 2m, object B has a mass of 3m, and object C has a mass of m. Object A is connected to object B via a light spring with spring constant k. Object A is also connected to object C via an inextensible light rope that passes over a fixed pulley. All objects are initially at rest. The gravitational acceleration is g. There's no friction anywhere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem states that the mass of object C is changed to 5m. After this change, C slowly descends, and the system reaches a new equilibrium state. We need to find how high object A rises during this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the initial equilibrium positions of all objects.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the new equilibrium positions after changing the mass of C to 5m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Calculate the displacement of object A from its initial position to its new position.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the initial state, all objects are at rest.",
+    "conclusion": "For object A (2m): Weight is 2mg downward, tension from the rope connected to C is T_c, and spring force from the spring connected to B is F_spring. Since A is at rest, the sum of these forces is zero: ∑F_A = T_c - 2mg - F_spring = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For object B (3m): Weight is 3mg downward, spring force from the spring connected to A is F_spring upward, and normal force from the ground is N. Since B is at rest, ∑F_B = N - 3mg + F_spring = 0.",
+    "conclusion": "For object B (3m): N - 3mg + F_spring = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For object C (m): Weight is mg downward, tension from the rope is T_c upward. At rest, so ∑F_C = T_c - mg = 0.",
+    "conclusion": "From object C: T_c = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From object C: T_c = mg. Plug this into object A's equation: mg - 2mg - F_spring = 0.",
+    "conclusion": "F_spring = -mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For object B: N - 3mg + F_spring = 0. We know F_spring = -mg from above.",
+    "conclusion": "N - 3mg - mg = 0 ⇒ N = 4mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The spring force is given by Hooke's Law: F_spring = k * x_initial. Since F_spring = -mg, we have: k * x_initial = mg.",
+    "conclusion": "x_initial = mg / k.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Now, the mass of C is changed to 5m. For object C (5m): Weight is 5mg downward, tension from the rope is T_c'. At rest, so ∑F_C' = T_c' - 5mg = 0.",
+    "conclusion": "T_c' = 5mg.",
+    "judgment": "Match"
+  }]

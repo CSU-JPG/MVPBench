@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analyze the forces acting on block A in both configurations (Figure A and Figure B) to determine the frictional force when θ = 30°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Figure A shows block A on an inclined plane at θ = 37°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Figure B shows block A on an inclined plane at θ = 30° with a smooth cylinder B between A and the plane.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When θ = 37°, block A is on the verge of sliding down the plane.",
+    "conclusion": "The forces acting on block A are gravitational force, normal force, and frictional force.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The components of gravitational force Mg are Mg sin θ (down the slope) and Mg cos θ (perpendicular to the slope).",
+    "conclusion": "The frictional force f at θ = 37° is f = Mg sin 37° = 0.6Mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For equilibrium at θ = 37°, the frictional force f equals the component of gravitational force parallel to the slope.",
+    "conclusion": "f = Mg sin 37° = 0.6Mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At θ = 30°, a smooth cylinder B with mass m is placed between block A and the inclined plane.",
+    "conclusion": "The gravitational force on block A is still Mg, but the angle changes to 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The cylinder B applies a normal force on block A, but since the cylinder is smooth, it does not contribute to friction.",
+    "conclusion": "The frictional force is only due to the inclined plane.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Components of gravitational force Mg at θ = 30° are parallel to the slope: Mg sin 30° = 0.5Mg and perpendicular to the slope: Mg cos 30° = Mg (√3/2).",
+    "conclusion": "Normal force N acting on A is N = Mg cos 30° = (√3/2)Mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since M = 4m, substitute M with 4m.",
+    "conclusion": "N = (√3/2) × 4mg = 2√3mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force f' on block A is given by f' = μN.",
+    "conclusion": "Given the block can just rest when θ = 37°, the coefficient of friction μ is μ = f/N = 0.6/0.8 = 0.75.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute μ and N into the equation for frictional force f'.",
+    "conclusion": "f' = 0.75 × 2√3mg = (3√3/2)mg.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given M = 4m, calculate the friction force of A on the slope.",
+    "conclusion": "The frictional force of block A on the slope when θ = 30° is 5/2 mg.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Semi-circular glass brick with center O and radius R",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light is incident at point P on the vertical interface",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Incident angle θ = 60°",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light undergoes total internal reflection at the circular surface",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After exiting the circular surface, the light is parallel to the incident light",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Speed of light in vacuum is c",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the distance OP",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_air · sin(θ_i) = n_glass · sin(θ_r) and n_air = 1",
+    "conclusion": "sin(θ_r) = √3/(2n)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection, sin(θ_c) = 1/n",
+    "conclusion": "θ_inc ≥ θ_c",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The line OQ is a radius of the circle. The normal to the surface at Q is along OQ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the exiting ray to be parallel to the incident ray, 180° = (180° - θ_r) + 2(90° - α)",
+    "conclusion": "θ_r = 180° - 2α",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection, sin(α) ≥ 1/n",
+    "conclusion": "sin(α) = 1/n",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ_r = 180° - 2α and sin(α) = 1/n",
+    "conclusion": "α = arcsin(1/n)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ_r) = √3/(2n) and θ_r = 180° - 2·arcsin(1/n)",
+    "conclusion": "sin(2·arcsin(1/n)) = √3/(2n)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the double angle formula sin(2x) = 2sin(x)cos(x)",
+    "conclusion": "2·(1/n)·√(1-1/n²) = √3/2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4·(1-1/n²) = 3/4",
+    "conclusion": "n² = 16/13",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let OP = d. When the light refracts at P, it travels at angle θ_r = arcsin(√3/(2n))",
+    "conclusion": "d = R·√3/4",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

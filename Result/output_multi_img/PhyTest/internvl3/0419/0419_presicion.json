@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cross-section of the prism is an equilateral triangle, meaning all internal angles are 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The incident angle α = 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index for red light, n = √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the prism at point M with an incident angle α = 60°.",
+    "conclusion": "Apply Snell's Law: n1 sin(θ1) = n2 sin(θ2). Here, n1 = 1 (air) and n2 = √3 (prism material). θ1 = 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 · sin(60°) = √3 · sin(θ2)",
+    "conclusion": "sin(θ2) = 1/2, so θ2 = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light refracts at 30° inside the prism.",
+    "conclusion": "Inside the prism, the light travels towards the second surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the second surface is determined by the geometry of the equilateral triangle.",
+    "conclusion": "The angle of incidence at the second surface is 30° (internal angle).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Apply Snell's Law at the second surface: √3 · sin(30°) = 1 · sin(θ3)",
+    "conclusion": "sin(θ3) = √3/2, so θ3 = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The deviation angle δ is the angle between the incident light and the emergent light.",
+    "conclusion": "δ = (60° - 30°) + (60° - 30°) = 60°",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

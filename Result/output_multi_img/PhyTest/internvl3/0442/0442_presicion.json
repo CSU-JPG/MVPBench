@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The laser beam is injected at point O with an incident angle α = 45°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The beam reflects at point A on the side of the optical fiber.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle between the incident ray and the normal to the surface at O is α = 45°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle between the transmitted ray inside the fiber and the normal inside the fiber at A is θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law relates the angles in different media.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law and total internal reflection condition",
+    "conclusion": "Total internal reflection happens when the angle of incidence inside the fiber is greater than the critical angle θ_c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θ_c is given by sin θ_c = n2/n1, where n1 is the refractive index of the core and n2 is that of the cladding (n1 > n2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Geometry of the problem",
+    "conclusion": "The incident angle at A is 90° - θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total internal reflection condition",
+    "conclusion": "For total internal reflection, 90° - θ ≥ θ_c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Incident angle and total internal reflection",
+    "conclusion": "Since the beam enters at 45°, and total internal reflection occurs at the side, θ = 45°.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

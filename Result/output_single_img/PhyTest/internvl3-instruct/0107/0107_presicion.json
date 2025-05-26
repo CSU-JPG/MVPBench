@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the dynamic friction coefficient (μ) between the ground and the logs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Three logs A, B, and C of uniform thickness are stacked on the horizontal ground.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The top angle of the isosceles triangle formed by the three section center lines is ∠O1 = 120°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The mass of each log is m, the radius of the section is R, and the acceleration of gravity is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Log A is in equilibrium, so the forces acting on it must balance.",
+    "conclusion": "The weight of Log A is mg acting downward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal forces from Logs B and C, NB and NC, act at an angle of 60° from the vertical.",
+    "conclusion": "The angle at O1 is 120°, so the angle between the normal and the vertical is half of that.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of the normal forces must balance the weight of Log A.",
+    "conclusion": "NB cos(60°) + NC cos(60°) = mg",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since NB = NC (symmetry), we have 2NB cos(60°) = mg.",
+    "conclusion": "NB = mg",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Log B is also in equilibrium.",
+    "conclusion": "The weight of Log B is mg acting downward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force from the ground, Nground, acts upward.",
+    "conclusion": "The normal force from Log A, NB, acts at an angle of 60° from the vertical.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of the normal force from Log A and the normal force from the ground must balance the weight of Log B.",
+    "conclusion": "Nground + NB cos(60°) = mg",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting NB = mg.",
+    "conclusion": "Nground + mg cos(60°) = mg",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Nground + mg cos(60°) = mg.",
+    "conclusion": "Nground = mg/2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force f is given by f = μ Nground.",
+    "conclusion": "The horizontal component of the normal force from Log A must be balanced by the frictional force.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "NB sin(60°) = f.",
+    "conclusion": "Substituting NB = mg and Nground = mg/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg sin(60°) = μ mg/2.",
+    "conclusion": "μ = 2 sin(60°)",
+    "judgment": "Reasonable"
+  }]

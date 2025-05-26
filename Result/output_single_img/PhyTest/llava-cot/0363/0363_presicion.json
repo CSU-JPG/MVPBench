@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves determining the voltage U_1 between the metal plates such that all particles are just completely collected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a setup for collecting negatively charged dust particles using a pair of parallel metal plates. A mixed airflow containing air and charged particles enters the collector. The plates have a length L and a spacing d. The velocity of the particles is v_0, and the particles have a mass m and charge -α.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particles are subject to a uniform electric field between the plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on a charged particle due to the electric field is given by F = qE, where q is the charge and E is the electric field strength.",
+    "conclusion": "The electric field strength is related to the voltage U_1 by E = U_1/d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the particles to be just collected, the force due to the electric field must balance the particle's weight, mg.",
+    "conclusion": "qE = mg",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting E = U_1/d and q = -α into qE = mg",
+    "conclusion": "-αU_1/d = mg",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for U_1 in -αU_1/d = mg",
+    "conclusion": "U_1 = mgd/α",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

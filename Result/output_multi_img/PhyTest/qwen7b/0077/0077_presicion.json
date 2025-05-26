@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The U-shaped tube has unequal diameters on the left and right sides. The left tube A is open upward, and the cross-sectional area of the closed right tube B is 3 times that of tube A. The tube is filled with mercury, the atmospheric pressure is p0=76cmHg, and the ambient temperature is 27°C. The distance from the mercury surface in tube A to the opening is h1=24cm, and the mercury surface is Δh=4cm higher than that in tube B. The length of the air column in tube B is h2=12cm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To make the liquid levels in both tubes equal, a small piston is used to seal the open end, and the gas in tube A is heated while the temperature in tube B remains constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the liquid levels in both tubes are equal, determine the temperature of the gas in tube A at that moment.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a U-shaped tube with tube A on the left and tube B on the right. Tube A is open at the top, and tube B is closed. The mercury level in tube A is higher than in tube B by Δh.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume of gas in tube A (V1) can be calculated as V1 = S × h1 where S is the cross-sectional area of tube A and h1 is the height of the gas column in tube A.",
+    "conclusion": "V1 = S × 24 cm",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume of gas in tube B (V2) can be calculated as V2 = 3S × h2 where h2 is the height of the gas column in tube B.",
+    "conclusion": "V2 = 3S × 12 cm = 36S cm²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the atmospheric pressure p0 = 76 cmHg, we can find the initial pressures pA and pB.",
+    "conclusion": "For tube A: pA = p0 + Δp = p0 + ρgΔh where Δh = 4 cm is the difference in heights between the mercury surfaces in tube A and B, and ρ is the density of mercury.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "pA = 76 cmHg + 13.6 × 10³ kg/m³ × 9.8 m/s² × 0.04 m",
+    "conclusion": "pA ≈ 76 cmHg + 54.4 cmHg = 130.4 cmHg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For tube B: pB = p0",
+    "conclusion": "pB = 76 cmHg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the liquid levels in both tubes are equal, let’s denote the new height of the gas columns as H. For tube B, the volume will be V2' = 3S × (12 - Δh') where Δh' is the difference in heights between the final positions of the mercury surfaces in tubes A and B.",
+    "conclusion": "V2' = 3S × (12 - Δh')",
+    "judgment": "Reasonable"
+  }

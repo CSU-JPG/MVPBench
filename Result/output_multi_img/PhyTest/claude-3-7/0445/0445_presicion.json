@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This is a problem about light refraction when moving from air to water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The images show a diver looking up from water and seeing everything compressed into a cone with angle α.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a diver is underwater looking up, they see the above-water world compressed into a cone with vertex angle α due to refraction at the water-air interface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The second figure shows that light rays striking the water surface at angle α/2 refract to travel horizontally along the water's surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's law relates the angles of incidence and refraction to the refractive indices of the two media: n1 sinθ1 = n2 sinθ2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "n1 is the refractive index of medium 1 (water in our case), n2 is the refractive index of medium 2 (air in our case), θ1 is the angle of incidence (from the normal), θ2 is the angle of refraction (from the normal).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The second figure shows a critical case where a light ray is refracted exactly along the water surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This is called the critical angle phenomenon.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident angle in water is α/2, and the refracted angle in air is 90°.",
+    "conclusion": "For this critical angle case, Snell's law gives us: n_water sin(α/2) = n_air sin(90°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since sin(90°) = 1 and n_air ≈ 1 (for air), n_water sin(α/2) = 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_water sin(α/2) = 1",
+    "conclusion": "n_water = 1/sin(α/2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index is related to the speed of light by: n = c/v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = c/v",
+    "conclusion": "v_water = c/n_water",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_water = c/n_water and n_water = 1/sin(α/2)",
+    "conclusion": "v_water = c * sin(α/2)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

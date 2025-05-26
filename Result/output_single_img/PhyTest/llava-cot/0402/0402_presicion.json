@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, I will analyze the geometric properties of the triangular prism and the light beam's path. I will calculate the angles involved in the reflection and total internal reflection, and then determine the angle of deviation of the incident light relative to point D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a right triangular prism with a cross-section where ∠A = 90° and ∠B = 60°. A light beam starts at point D on side BC, reflects at point E on side AC, and undergoes total internal reflection at point F on side AB. Line EG is perpendicular to AC, intersecting BC at G. Point D is the midpoint of CG.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EG is perpendicular to AC and intersects BC at G.",
+    "conclusion": "∠GEC = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D is the midpoint of CG.",
+    "conclusion": "∠GDC = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light beam reflects at point E.",
+    "conclusion": "∠DEC = 90°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total internal reflection at point F implies that the angle of incidence equals the angle of reflection.",
+    "conclusion": "∠FED = ∠DEF.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "∠B = 60°.",
+    "conclusion": "∠FED = 60°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of deviation of the incident light relative to point D is the sum of the angles from the incident point to the exit point: ∠DEF + ∠FED.",
+    "conclusion": "The angle of deviation is 60° + 60° = 120°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The correct calculation for the angle of deviation involves the angles of incidence and refraction.",
+    "conclusion": "The angle of deviation is 60°.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

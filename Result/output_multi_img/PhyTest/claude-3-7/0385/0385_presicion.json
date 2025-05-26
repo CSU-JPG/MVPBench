@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel rails with distance L = 0.5 m, inclined at θ = 30° to horizontal",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Uniform magnetic field B = 0.2 T, directed vertically upward",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod a: mass ma = 0.3 kg, resistance R = 0.1 Ω",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod b: mass mb = 0.1 kg, resistance R = 0.1 Ω",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Constant force F = 2 N applied to rod a upward along the rails",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When rod a's Joule heat Qa = 0.12 J, its velocity va = 1.0 m/s",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rails are smooth with negligible resistance",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Gravitational acceleration g = 10 m/s²",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravitational force (mg sin θ down the rails), Applied force (only for rod a), Electromagnetic force due to the current in the circuit",
+    "conclusion": "Determine the forces on each rod",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF in rod a: ε₁ = BLva, EMF in rod b: ε₂ = BLvb",
+    "conclusion": "The total EMF in the circuit is: ε = ε₁ - ε₂ = BL(va - vb)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε = BL(va - vb), R = 0.1 Ω",
+    "conclusion": "The current in the circuit is: I = ε/(2R) = BL(va - vb)/(2R)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Fa = ILB, Fb = ILB",
+    "conclusion": "The electromagnetic force on each rod is: Fa = B²L²(va - vb)/(2R), Fb = B²L²(va - vb)/(2R)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F - ma·g·sin θ - Fa = 0, Fa = B²L²(va - vb)/(2R)",
+    "conclusion": "F - ma·g·sin θ - B²L²(va - vb)/(2R) = 0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Qa = I²R·t",
+    "conclusion": "Relate the Joule heat to the current",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Qa = I²R·t, va = 1.0 m/s",
+    "conclusion": "The power dissipated in rod a is P = I²R. The work done against electromagnetic force is P = Fa·va.",
+    "judgment": "Reasonable"
+  }]

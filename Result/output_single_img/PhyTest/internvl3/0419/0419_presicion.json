@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism is an equilateral triangle, so each internal angle is 60 degrees. The incident angle alpha is 60 degrees. The refractive index for red light n is sqrt(3).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(theta1) = n2 sin(theta2), where n1 = 1 (air), theta1 = 60 degrees, and n2 = sqrt(3).",
+    "conclusion": "Solve for theta2: sin(theta2) = (1 * sin 60 degrees) / sqrt(3) = (sqrt(3)/2) / sqrt(3) = 1/2, therefore, theta2 = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the prism at 30 degrees to the normal. Inside the prism, the light travels towards the opposite side. The internal angle at the second surface is 60 degrees, and the light hits this surface at an angle of 60 degrees - 30 degrees = 30 degrees.",
+    "conclusion": "The angle of incidence at the second surface is 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law at the second surface: n2 sin(theta3) = n1 sin(theta4), where theta3 = 30 degrees, n2 = sqrt(3), and n1 = 1.",
+    "conclusion": "Solve for theta4: sin(theta4) = sqrt(3) * sin 30 degrees = sqrt(3) * 1/2 = sqrt(3)/2, therefore, theta4 = 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The emergent light makes an angle of 60 degrees with the normal at the second surface. The total deviation delta is the angle between the emergent light and the incident light.",
+    "conclusion": "Since the incident light was at 60 degrees and the emergent light is also at 60 degrees but on the opposite side, the total deviation is delta = 60 degrees + 60 degrees = 120 degrees.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

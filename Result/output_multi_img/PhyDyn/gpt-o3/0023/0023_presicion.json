@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream A hits the blue baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream A hits the blue baffle.",
+    "conclusion": "Stream A is deflected left-downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream A is deflected left-downward.",
+    "conclusion": "Stream A reaches the left-most exit (D).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream B falls on the black baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream B falls on the black baffle.",
+    "conclusion": "Stream B is deflected rightward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream B is deflected rightward.",
+    "conclusion": "Stream B is deflected leftward again.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream B is deflected leftward again.",
+    "conclusion": "Stream B lands in the left exit (D).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream C falls straight down the right side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream C falls straight down the right side.",
+    "conclusion": "Stream C ends in the right-most outlet (E).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream A reaches the left-most exit (D). Stream B lands in the left exit (D). Stream C ends in the right-most outlet (E).",
+    "conclusion": "Outflow A ⟶ container D; Outflow B ⟶ container D; Outflow C ⟶ container E.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

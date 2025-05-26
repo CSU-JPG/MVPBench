@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a glass hemisphere with radius R and a beam of parallel light hitting it perpendicularly. The goal is to find the maximum distance d from the optical axis OO' for which the incident rays can emerge from the spherical surface without undergoing total internal reflection. The refractive index of the glass is 1.5.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light is incident perpendicular to the base of the hemisphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light is incident perpendicular to the base.",
+    "conclusion": "The light enters the glass without bending at the base-air interface because the incidence angle is 0 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels towards the curved surface of the hemisphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The optical axis is the line OO', which is perpendicular to the base of the hemisphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The optical axis is perpendicular to the base.",
+    "conclusion": "The distance d from this axis represents how far off-center the ray is incident on the base.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θ_c for total internal reflection at the glass-air interface is given by: sin θ_c = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index n = 1.5.",
+    "conclusion": "sin θ_c = 1/1.5 = 2/3 ≈ 0.6667.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ_c = 2/3.",
+    "conclusion": "θ_c ≈ arcsin(0.6667) ≈ 41.8 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Any ray inside the glass that approaches the glass-air interface at an angle greater than θ_c will undergo total internal reflection.",
+    "conclusion": "To refract out, the angle must be less than θ_c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A ray enters the base at a distance d from the center O and travels straight towards the curved surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal to the curved surface at any point is along the radius of the hemisphere.",
+    "conclusion": "The angle of incidence at the curved surface is the angle between the ray and the normal there.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray enters the base at a distance d from O and travels straight to the curved surface.",
+    "conclusion": "The angle of incidence at Q is the angle between PQ and OQ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To refract out, θ must be less than θ_c.",
+    "conclusion": "θ ≤ θ_c for the ray to refract out.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From geometric relationships, sin i = d/R.",
+    "conclusion": "d = (2/3)R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A circular wooden board of radius r floats on a liquid.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light source S is initially at depth H = √3r below center O of the board.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Refractive index of liquid n = √2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find how far S must move upward to make light just not visible above water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law and the concept of total internal reflection (TIR) are used. TIR occurs when the incident angle exceeds the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When light travels from water (n = √2) to air (n = 1), the critical angle θc is: sin θc = 1/√2 = √2/2.",
+    "conclusion": "θc = sin⁻¹(√2/2) = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For light to be just invisible above water, the rays that just graze the edge of the wooden board must be at the critical angle when they reach the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let's denote the distance that S needs to move upward as x. After moving, S will be at depth (H-x) = (√3r-x).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the light ray travels from S to the edge of the board, it forms an angle θ with the vertical. For this ray to be at the critical angle when it reaches the surface: tan θ = r/(√3r-x).",
+    "conclusion": "Angle θ must equal the critical angle θc = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since θ = θc = 45°, and tan(45°) = 1: tan θ = 1 = r/(√3r-x).",
+    "conclusion": "Rearranging gives √3r-x = r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "√3r-x = r.",
+    "conclusion": "x = √3r - r = (√3-1)r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If the light source moves up by x = (√3-1)r, then the depth becomes: H-x = √3r - (√3-1)r = r.",
+    "conclusion": "At this depth, the angle between the vertical and the ray reaching the edge of the board is exactly 45°, which is precisely the critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = (√3-1)r ≈ 0.732r.",
+    "conclusion": "The point source S should be moved vertically upward by a distance of x = (√3-1)r ≈ 0.732r.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

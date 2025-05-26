@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the flow rate Q of the liquid in the pipe, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the Induced Electromotive Force (EMF): According to Faraday's Law of Electromagnetic Induction, the EMF E induced across the pipe is given by: E = B * v * d where B is the magnetic induction intensity, v is the velocity of the liquid, and d is the diameter of the pipe.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Relate Velocity and Flow Rate: The flow rate Q is the volume of liquid flowing per unit time through the pipe's cross-sectional area. It is given by: Q = A * v where A is the cross-sectional area of the pipe, and v is the velocity of the liquid.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Calculate the Cross-Sectional Area: The cross-sectional area A of the pipe is: A = π(d/2)^2 = πd^2/4",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the induced EMF equation, E = B * v * d",
+    "conclusion": "Solve for v: v = E / (B * d)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v = E / (B * d) into the flow rate equation Q = A * v",
+    "conclusion": "Q = (πd^2/4) * (E / (B * d))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the equation Q = (πd^2/4) * (E / (B * d))",
+    "conclusion": "Q = πdE / (4B)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

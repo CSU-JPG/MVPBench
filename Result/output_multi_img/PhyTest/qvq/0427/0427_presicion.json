@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves finding the longest propagation time of refracted light in a hemisphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There is a triangle ABC with vertices A, B, and C, and side length L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A beam of light parallel to side BC is incident on side AB at point D, which is L/4 away from B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light enters a hemisphere with center O.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light is refracting from the triangle into the hemisphere.",
+    "conclusion": "Snell's law is applicable at the interface between the triangle and the hemisphere.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive indices are denoted as n1 for the triangle and n2 for the hemisphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem doesn't specify refractive indices.",
+    "conclusion": "Work in terms of n1 and n2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There is a ray diagram with angles theta and 30 degrees minus theta.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Time inside the hemisphere is path length divided by speed of light in the hemisphere material.",
+    "conclusion": "t = (n2/c) * path length.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To maximize time, maximize the path length inside the hemisphere.",
+    "conclusion": "Find the path of the ray inside the hemisphere.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n1 * sin(i) = n2 * sin(r).",
+    "conclusion": "Find expressions for i and r in terms of the geometry.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The hemisphere is centered at O, and BC is the base.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The hemisphere is adjacent to the triangle with base BC.",
+    "conclusion": "The light enters the triangle, hits AB at D, refracts into the hemisphere, and travels some path inside.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Set up a coordinate system with O at the origin.",
+    "conclusion": "Points B and C are on the x-axis at (-L/2, 0) and (L/2, 0), respectively.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A is the apex of the triangle.",
+    "conclusion": "Coordinates of A would be (0, h).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The longest distance of light propagating in a hemisphere is x = L * cos(30 degrees - theta).",
+    "conclusion": "By x = vt, n = c/v, get t = 7L/(4c).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

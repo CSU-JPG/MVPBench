@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A single-turn square wire frame is placed on a horizontal surface, with half in a uniform magnetic field perpendicular to the plane and directed inward. The magnetic field's magnitude changes with time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square wire frame has a side length of 0.2 meters and a total resistance of 4 ohms. The magnetic field's magnitude is given by B = (3 + 2t) T, and the frame remains stationary from t = 0 to t = 5 seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frame is stationary, so there must be a frictional force counteracting other forces.",
+    "conclusion": "A frictional force acts on the wire frame to counteract the magnetic force due to the changing magnetic field.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday's law of induction: emf = -dΦ/dt",
+    "conclusion": "The induced emf is equal to the negative rate of change of magnetic flux through the coil.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame is square with side length 0.2 m, and half of it is in the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side length is 0.2 m, and half of it is in the magnetic field.",
+    "conclusion": "The area within the magnetic field is 0.1 m * 0.2 m = 0.02 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic flux Φ is B * A, where B is the magnetic field magnitude and A is the area in the field.",
+    "conclusion": "Φ = B(t) * A = (3 + 2t) T * 0.02 m²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ/dt = d/dt [(3 + 2t) * 0.02]",
+    "conclusion": "dΦ/dt = 2 * 0.02 = 0.04 V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "emf = -dΦ/dt",
+    "conclusion": "emf = -0.04 V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ohm's law: I = emf / R",
+    "conclusion": "I = -0.04 V / 4 Ω = -0.01 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates the direction of the current.",
+    "conclusion": "The current flows in a direction to oppose the change in magnetic flux.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The square is labeled ABCD, with M and N being points on the vertical dashed line. The magnetic field is into the paper on the right side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is increasing into the paper.",
+    "conclusion": "By Lenz's law, the induced current flows to oppose the change in magnetic flux.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is into the paper and increasing with time.",
+    "conclusion": "The magnetic flux through the area in the field is increasing inward.",
+    "judgment": "Reasonable"
+  }]

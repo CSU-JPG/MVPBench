@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Choose the positive x-direction to be the direction in which the bullets are fired (toward the target on cart B).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cart A is moving to the left with a speed of v1.",
+    "conclusion": "Cart A therefore has ground velocity vA = –v1 (to the left).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cart B is moving to the right with a speed of v2.",
+    "conclusion": "Cart B has ground velocity vB = +v2 (to the right).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Every bullet leaves the muzzle with ground speed v0 toward +x.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The firings are separated by a time interval Δt0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Label the first two bullets “#1” (fired at t = 0) and “#2” (fired at t = Δt0).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Bullet #1 is fired at t = 0 with speed v0.",
+    "conclusion": "Bullet #1 (for all t ≥ 0): x1(t) = v0 t.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cart A (and the muzzle) at t = Δt0 has velocity –v1.",
+    "conclusion": "Cart A (and the muzzle) at t = Δt0: xA(Δt0) = (–v1) Δt0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Bullet #2 starts from x = –v1 Δt0 at t = Δt0 and moves with speed v0.",
+    "conclusion": "Bullet #2: x2(t) = –v1 Δt0 + v0 (t – Δt0) = v0 t – (v0 + v1) Δt0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Separation between the two bullets while both are airborne for t ≥ Δt0 but before #1 hits.",
+    "conclusion": "s = x1 – x2 = v0 t – [v0 t – (v0 + v1) Δt0] = (v0 + v1) Δt0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The separation s is a constant and does not depend on the exact instant chosen as long as both bullets are still in flight.",
+    "conclusion": "Therefore the fixed distance between two successive bullets that are simultaneously in the air is s = (v0 + v1) Δt0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

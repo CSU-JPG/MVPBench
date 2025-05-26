@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "image description",
+    "conclusion": "The process from state C to state D is shown as a horizontal line in the p-V diagram at a constant pressure.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The pressure at state C is p_CD = 0.75 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The volume of state C is V_C = 4 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The volume of state D is V_D = 3 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_C = 4 L",
+    "conclusion": "Convert the volume of state C from liters to cubic meters: V_C = 4 × 10^-3 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_D = 3 L",
+    "conclusion": "Convert the volume of state D from liters to cubic meters: V_D = 3 × 10^-3 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The work done by the gas during an isobaric process is given by the formula W = p ΔV = p (V_final - V_initial).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p_CD = 0.75 × 10^5 Pa, V_C = 4 × 10^-3 m^3, V_D = 3 × 10^-3 m^3",
+    "conclusion": "The work done by the gas from C to D is W_CD = p_CD (V_D - V_C).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_CD = p_CD (V_D - V_C), p_CD = 0.75 × 10^5 Pa, V_D = 3 × 10^-3 m^3, V_C = 4 × 10^-3 m^3",
+    "conclusion": "W_CD = (0.75 × 10^5 Pa) × (3 × 10^-3 m^3 - 4 × 10^-3 m^3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_CD = (0.75 × 10^5 Pa) × (3 × 10^-3 m^3 - 4 × 10^-3 m^3)",
+    "conclusion": "W_CD = (0.75 × 10^5 Pa) × (-1 × 10^-3 m^3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_CD = (0.75 × 10^5 Pa) × (-1 × 10^-3 m^3)",
+    "conclusion": "W_CD = -0.75 × 10^2 J = -75 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_CD = -75 J",
+    "conclusion": "The work done by the gas from C to D is -75 J, meaning 75 J of work is done on the gas by the surroundings.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The question asks for 'how much work is done externally by the gas'. This usually refers to the work done by the gas on its surroundings.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_CD = -75 J",
+    "conclusion": "If the question asks for the magnitude of the work done, or the work done by the external agent on the gas, the answer would be positive.",
+    "judgment": "Reasonable"
+  }]

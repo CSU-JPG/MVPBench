@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conveyor belt is moving at a speed of 6 m/s, and it's horizontal. The distance between the two drive wheels, M and N, is 10 m. A 3-kg object is gently placed on the conveyor belt directly above wheel M.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coefficient of kinetic friction between the object and the conveyor belt is 0.3, and the acceleration due to gravity is 10 m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The object is placed on the conveyor belt with zero velocity relative to the ground. The conveyor belt is moving at 6 m/s.",
+    "conclusion": "There will be a kinetic friction force acting on the object to accelerate it up to the belt's speed.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coefficient of kinetic friction is 0.3, and the mass of the object is 3 kg. The acceleration due to gravity is 10 m/s².",
+    "conclusion": "The normal force N is equal to the weight of the object, which is N = m * g = 3 * 10 = 30 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force N is 30 N, and the coefficient of kinetic friction is 0.3.",
+    "conclusion": "The frictional force is f = 0.3 * 30 = 9 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force is 9 N, and the mass of the object is 3 kg.",
+    "conclusion": "The acceleration of the object due to this frictional force is a = f / m = 9 / 3 = 3 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The final velocity v is 6 m/s, the initial velocity u is 0 m/s, and the acceleration a is 3 m/s².",
+    "conclusion": "Using the kinematic equation v² = u² + 2as, the distance s the object covers while accelerating to the belt's speed is s = 6 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance between M and N is 10 meters, and the object accelerates for 6 meters.",
+    "conclusion": "After accelerating for 6 meters, the object will move at a constant speed for the remaining 4 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force only acts during the acceleration phase.",
+    "conclusion": "Once the object reaches the speed of the conveyor belt, there's no relative motion between the object and the belt, so no frictional force acts on the object during the constant velocity phase.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force is 9 N, and the distance during the acceleration phase is 6 m.",
+    "conclusion": "The work done by the frictional force is W = f * d = 9 * 6 = 54 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

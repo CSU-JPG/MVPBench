@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "People inside the tank can see the outside within a total angular spread of 120 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The optical boundary is a plane plate of uniform thickness.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The outside directions that reach the observer are symmetric about the normal.",
+    "conclusion": "The two extreme rays in air strike the outer surface at angles of +60 degrees and -60 degrees with the normal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the tank wall material is sqrt(3).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n_air * sin(theta_air) = n_glass * sin(theta_glass).",
+    "conclusion": "sin(theta_glass) = sin(60 degrees) / sqrt(3) = 1/2, therefore theta_glass = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inside the glass, each extreme ray propagates at 30 degrees to the normal.",
+    "conclusion": "The upward or downward direction of the rays remains unchanged.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The tank-wall thickness is 18 cm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal (lateral) shift of one extreme ray while it crosses the wall: Δx = h * tan(theta_glass).",
+    "conclusion": "Δx = 18 cm * tan(30 degrees) = 6 * sqrt(3) cm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two extreme rays are symmetric.",
+    "conclusion": "The separation between their hit-points on either face of the plate is twice the lateral shift: D = 2 * Δx = 12 * sqrt(3) cm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the two extreme points (labelled C and D on the outer face, or A and B on the inner face) through which the light rays giving the full 120 degrees external view pass is 12 * sqrt(3) cm.",
+    "conclusion": "The distance AB is 6 * sqrt(3) cm.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

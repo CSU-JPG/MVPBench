@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The charged particles move horizontally with a constant velocity v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Vertically, they experience an acceleration a due to the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charged particles move horizontally with a constant velocity v_0.",
+    "conclusion": "The time t to travel the length L is given by t = L/v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertically, they experience an acceleration a due to the electric field.",
+    "conclusion": "The vertical displacement d can be described by d = 1/2 a t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field E exerts a force on the particles.",
+    "conclusion": "a = F/m = qE/m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For charge q = -α, the acceleration is a = -αE/m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute a and t into the vertical displacement equation.",
+    "conclusion": "d = 1/2 (-αE/m) (L/v_0)^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange to solve for E.",
+    "conclusion": "E = 2mdv_0^2/(-αL^2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage U_1 between the plates is related to the electric field by U_1 = Ed.",
+    "conclusion": "Substitute E into the voltage formula: U_1 = d * (2mdv_0^2/(-αL^2))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cancel d in the numerator and denominator.",
+    "conclusion": "U_1 = 2mdv_0^2/(-αL^2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates direction but is not needed for magnitude.",
+    "conclusion": "U_1 = 2mdv_0^2/αL^2",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to use the ideal gas law: PV = nRT where P is the pressure, V is the volume, n is the number of moles of the gas, R is the universal gas constant, T is the temperature in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cyclic process involves states A → B → C → D → A, and the pressure-volume graph is provided.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state A is given as 27°C.",
+    "conclusion": "Convert the temperature at state A to Kelvin: T_A = 27 + 273 = 300 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state A, the pressure P_A = 1 × 10^5 Pa, and the volume V_A = 3 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state B, the pressure P_B = 1 × 10^5 Pa, and the volume V_B = 4 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the pressure remains constant (P_A = P_B), this is an isobaric process.",
+    "conclusion": "For an isobaric process, the ratio of temperatures is proportional to the ratio of volumes: T_B/T_A = V_B/V_A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B/T_A = V_B/V_A and T_A = 300 K, V_B = 4 L, V_A = 3 L.",
+    "conclusion": "Substitute the known values: T_B/300 = 4/3.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B/300 = 4/3.",
+    "conclusion": "Solve for T_B: T_B = 300 × 4/3 = 400 K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

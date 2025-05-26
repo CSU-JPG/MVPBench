@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A light beam hits a transparent medium ball obliquely from air at point A on the sphere with incident angle I.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The task is to determine if the light will be totally reflected when inside the sphere, assuming I is large.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Refraction occurs when light goes from one medium to another, following Snell's Law: n1 sin(I) = n2 sin(r).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light is going from air (n1 = 1) to the sphere's material (n2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law",
+    "conclusion": "The refracted angle r inside the sphere is given by sin(r) = (n1/n2) sin(I).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when light goes from a denser to a less dense medium and the angle of incidence is greater than the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is given by θc = arcsin(n2/n1).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light enters at point A and travels inside the sphere.",
+    "conclusion": "The path inside the sphere depends on the refracted angle r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light travels in a straight line inside the sphere.",
+    "conclusion": "It will hit the opposite side of the sphere and try to leave.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the exit point determines if total internal reflection occurs.",
+    "conclusion": "If this angle is greater than the critical angle, total internal reflection occurs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The sphere's symmetry and Snell's Law.",
+    "conclusion": "The angle of incidence at the exit point is equal to the refracted angle r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r can't be equal to or greater than the critical angle C.",
+    "conclusion": "The angle of incidence at the exit point can't be equal to or greater than the critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the exit point is less than the critical angle.",
+    "conclusion": "Total internal reflection cannot occur when the light exits the sphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total internal reflection cannot occur.",
+    "conclusion": "The light will not be totally reflected when it is emitted from the inside of the sphere.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

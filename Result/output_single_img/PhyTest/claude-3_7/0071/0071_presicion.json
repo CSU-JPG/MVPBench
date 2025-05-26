@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Transformer with Two Secondary Coils - Analysis",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I'll solve this step-by-step to find the input current in the primary coil of the transformer.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Primary coil: n1 = 100 turns, voltage U1 = 220 V",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Secondary coil 1: Voltage U2 = 6 V, Power P2 = 20 W",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Secondary coil 2: Voltage U3 = 110 V, Power P3 = 60 W",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal transformer, the voltage ratio equals the turns ratio: U2/U1 = n2/n1",
+    "conclusion": "n2 = 100 * (6/220) ≈ 2.73 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal transformer, the voltage ratio equals the turns ratio: U3/U1 = n3/n1",
+    "conclusion": "n3 = 100 * (110/220) = 50 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using P = UI for secondary coil 1",
+    "conclusion": "I2 = P2/U2 = 20 W / 6 V ≈ 3.33 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using P = UI for secondary coil 2",
+    "conclusion": "I3 = P3/U3 = 60 W / 110 V ≈ 0.545 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reflected current from secondary coil 1 to the primary using the turns ratio: I1' = I2 * (n2/n1)",
+    "conclusion": "I1' = 3.33 A * (2.73/100) ≈ 0.091 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reflected current from secondary coil 2 to the primary using the turns ratio: I1'' = I3 * (n3/n1)",
+    "conclusion": "I1'' = 0.545 A * (50/100) ≈ 0.273 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate the total input current in the primary coil: I1 = I1' + I1''",
+    "conclusion": "I1 = 0.091 A + 0.273 A = 0.364 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Alternatively, verify using power: P1 = P2 + P3 = 20 W + 60 W = 80 W",
+    "conclusion": "I1 = P1/U1 = 80 W / 220 V ≈ 0.364 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The input current in the primary coil is approximately 0.364 A or 364 mA.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

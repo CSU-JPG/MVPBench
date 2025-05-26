@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A motorcycle and a car are braking on a straight track, moving in the same direction. The motorcycle is behind the car with an initial distance of 1.5 meters. We need to find the minimum safe distance to prevent a collision.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The motorcycle's velocity decreases linearly from 4 m/s at time t=0 to 0 m/s at time t=8 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motorcycle's velocity decreases linearly from 4 m/s at time t=0 to 0 m/s at time t=8 seconds.",
+    "conclusion": "The motorcycle's acceleration (deceleration) is a1 = (0 m/s - 4 m/s) / 8 s = -0.5 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The car's velocity is given by the equation v2 = 3 - 0.25t, where t is in seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The car's velocity is given by the equation v2 = 3 - 0.25t.",
+    "conclusion": "The car's acceleration is a2 = -0.25 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motorcycle's velocity decreases linearly from 4 m/s at time t=0 to 0 m/s at time t=8 seconds. The car's velocity is given by v2 = 3 - 0.25t.",
+    "conclusion": "The time t' when the motorcycle's speed equals the car's speed is found by setting v1(t') = v2(t').",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motorcycle's velocity decreases linearly from 4 m/s at time t=0 to 0 m/s at time t=8 seconds.",
+    "conclusion": "The equation of the motorcycle's velocity line is v1(t) = -0.5*t + 4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motorcycle's velocity equation is v1(t) = -0.5*t + 4. The car's velocity equation is v2 = 3 - 0.25t.",
+    "conclusion": "Setting v1(t') = v2(t') gives -0.5*t' + 4 = 3 - 0.25*t'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-0.5*t' + 4 = 3 - 0.25*t'.",
+    "conclusion": "Solving for t' gives t' = 4 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motorcycle's velocity equation is v1(t) = -0.5*t + 4.",
+    "conclusion": "At t=4 seconds, the motorcycle's velocity is v1(4) = 2 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motorcycle's velocity decreases linearly from 4 m/s at time t=0 to 0 m/s at time t=8 seconds.",
+    "conclusion": "The displacement of the motorcycle from t=0 to t=4 seconds is the area under the curve, a trapezoid with heights 4 m/s and 2 m/s, and width 4 s.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under the motorcycle's velocity curve from t=0 to t=4 is a trapezoid with heights 4 m/s and 2 m/s, and width 4 s.",
+    "conclusion": "The displacement of the motorcycle s1 = (1/2)*(4 + 2)*4 = 12 meters.",
+    "judgment": "Reasonable"
+  }

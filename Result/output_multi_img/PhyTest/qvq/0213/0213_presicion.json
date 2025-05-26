@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There's a circuit with a variable resistor R, a voltmeter V, and a power source with electromotive force E and internal resistance r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem gives two scenarios: when R is 2 ohms, the voltmeter reads 4 volts, and when R is 5 ohms, the voltmeter reads 5 volts.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The voltmeter is connected in parallel with the resistor R, and the power source is in series with R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The voltmeter is ideal, so it has infinite resistance and measures the voltage across R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance is R + r.",
+    "conclusion": "The current I = E / (R + r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltmeter reads the voltage across R.",
+    "conclusion": "V = I * R = E * R / (R + r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For R1 = 2 ohms and V1 = 4 volts.",
+    "conclusion": "4 = E * 2 / (2 + r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For R2 = 5 ohms and V2 = 5 volts.",
+    "conclusion": "5 = E * 5 / (5 + r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equations: 4 = E * 2 / (2 + r) and 5 = E * 5 / (5 + r).",
+    "conclusion": "8 + 4r = 2E and 25 + 5r = 5E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve 8 + 4r = 2E for E.",
+    "conclusion": "E = 4 + 2r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute E = 4 + 2r into 25 + 5r = 5E.",
+    "conclusion": "25 + 5r = 20 + 10r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation 25 + 5r = 20 + 10r.",
+    "conclusion": "5 = 5r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve 5 = 5r.",
+    "conclusion": "r = 1 ohm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute r = 1 into E = 4 + 2r.",
+    "conclusion": "E = 6 volts.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

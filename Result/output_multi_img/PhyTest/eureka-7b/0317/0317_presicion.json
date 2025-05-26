@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves finding the temperature of an ideal gas in state C using the p-V diagram and the ideal gas law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "In state A, \\( p_A = 3 \\times 10^5 \\) Pa and \\( V_A = 2 \\times 10^{-3} \\) m\\(^3\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "In state C, \\( p_C = 2 \\times 10^5 \\) Pa and \\( V_C = 3 \\times 10^{-3} \\) m\\(^3\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The temperature in Kelvin can be calculated using the ideal gas law \\( pV = nRT \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In state A, \\( p_A = 3 \\times 10^5 \\) Pa, \\( V_A = 2 \\times 10^{-3} \\) m\\(^3\\), and \\( T_A = 27^\\circ C = 300 \\) K.",
+    "conclusion": "The temperature in state A is \\( T_A = 300 \\) K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The process from A to B is isochoric (constant volume), so \\( V_A = V_B \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from A to B is isochoric, so \\( V_A = V_B \\). Using the ideal gas law \\( \\frac{p_A}{T_A} = \\frac{p_B}{T_B} \\), and \\( p_B = 2 \\times 10^5 \\) Pa, \\( T_B = \\frac{p_B}{p_A} T_A \\).",
+    "conclusion": "The temperature in state B is \\( T_B = 200 \\) K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The process from B to C is isobaric (constant pressure), so \\( p_B = p_C \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from B to C is isobaric, so \\( p_B = p_C \\). Using the ideal gas law \\( \\frac{V_B}{T_B} = \\frac{V_C}{T_C} \\), and \\( V_C = 3 \\times 10^{-3} \\) m\\(^3\\), \\( T_C = \\frac{V_C}{V_B} T_B \\).",
+    "conclusion": "The temperature in state C is \\( T_C = 300 \\) K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

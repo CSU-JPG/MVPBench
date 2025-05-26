@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the induced electromotive force (EMF) generated in the wire frame and the current in the loop due to the changing magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side length of the square wire frame is L, and half of the square is inside the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the entire square wire frame is L^2.",
+    "conclusion": "The effective area A_eff through which the magnetic flux changes is A_eff = 1/2 L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux Φ through the area A_eff is given by Φ = B ⋅ A_eff.",
+    "conclusion": "The rate of change of magnetic flux dΦ/dt is k ⋅ A_eff = k ⋅ 1/2 L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday's law states that the induced EMF is equal to the negative rate of change of magnetic flux.",
+    "conclusion": "The induced EMF is -1/2 k L^2, and its magnitude is 1/2 k L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is applied across the resistance R and the capacitance C.",
+    "conclusion": "The current in the loop is I = k L^2 / 2R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the capacitor is fully charged, there is no current in the circuit.",
+    "conclusion": "The current in the loop is 0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

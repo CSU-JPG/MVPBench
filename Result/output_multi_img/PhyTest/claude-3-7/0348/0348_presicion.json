@@ -1,0 +1,117 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The Stirling cycle involves transitions between states A, B, C, and D, returning to A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Processes A→B and C→D are isothermal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In the P-V diagram, process C→D shows pressure increasing while volume decreasing.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The number of molecules colliding with unit area of wall per unit time (collision rate) is proportional to number density and square root of temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The number density is given by n/V, where n is the number of molecules and V is the volume.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "T is the absolute temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The proportionality includes constants and average molecular speed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process C→D is isothermal.",
+    "conclusion": "Temperature remains constant during the C→D process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature remains constant.",
+    "conclusion": "Average molecular speed remains constant during the C→D process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume decreases from C to D.",
+    "conclusion": "V_D < V_C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The number of molecules (n) remains constant throughout the cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume decreases and n is constant.",
+    "conclusion": "Number density increases from C to D: n/V_D > n/V_C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Collision rate is proportional to number density at constant temperature.",
+    "conclusion": "Collision rate at D > Collision rate at C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For ideal gas, PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In an isothermal process, T is constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_C * V_C = nRT and P_D * V_D = nRT",
+    "conclusion": "P_C * V_C = P_D * V_D",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Collision rate ∝ n/V at constant T",
+    "conclusion": "Collision rate at C ∝ 1/V_C and at D ∝ 1/V_D",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_D < V_C",
+    "conclusion": "1/V_D > 1/V_C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During the isothermal process C→D, volume decreases while maintaining constant temperature.",
+    "conclusion": "The number of molecules colliding with the unit area of the wall per unit time increases.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

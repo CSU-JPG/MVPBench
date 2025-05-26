@@ -1,0 +1,65 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid will flow out from A, B, and C, and the task is to predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Outlet A is yellow, Outlet B is blue, Outlet C is pink, Baffles D and E are blue and purple respectively.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Outlet A is located above the baffles (D and E).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Outlet A is located above the baffles (D and E).",
+    "conclusion": "The liquid from Outlet A will flow into the container below the baffles (D).",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Outlet B is located below the baffles (D and E).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Outlet B is located below the baffles (D and E).",
+    "conclusion": "The liquid from Outlet B will flow into the container above the baffles (E).",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Outlet C is located between the baffles (D and E).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Outlet C is located between the baffles (D and E).",
+    "conclusion": "The liquid from Outlet C will flow into the container below the baffles (D).",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from Outlet A flows into container D, the liquid from Outlet B flows into container E, and the liquid from Outlet C flows into container D.",
+    "conclusion": "The liquid will flow into container D after passing through the baffles.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

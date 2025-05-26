@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the voltage U_{1} between the two metal plates in the air purifier, we need to analyze the forces acting on the charged particles and their motion within the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particles are negatively charged with charge -\\alpha.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "They move through a uniform electric field E directed vertically between the plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particles are negatively charged with charge -\\alpha and move through a uniform electric field E.",
+    "conclusion": "The electric force acting on each particle is given by F = -\\alpha E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particles have an initial horizontal velocity v_{0} due to the airflow.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particles experience an electric force F = -\\alpha E.",
+    "conclusion": "The acceleration a due to the electric field is a = \\frac{-\\alpha E}{m}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particles travel a horizontal distance L with constant velocity v_{0}.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particles travel a horizontal distance L with constant velocity v_{0}.",
+    "conclusion": "The time t taken to traverse this distance is t = \\frac{L}{v_{0}}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particles experience an acceleration a = \\frac{-\\alpha E}{m} and travel for time t = \\frac{L}{v_{0}}.",
+    "conclusion": "The vertical displacement y of the particles is y = \\frac{1}{2} \\left( \\frac{\\alpha E}{m} \\right) \\left( \\frac{L}{v_{0}} \\right)^2 = \\frac{\\alpha E L^2}{2 m v_{0}^2}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical displacement y must equal the plate spacing d for complete collection.",
+    "conclusion": "d = \\frac{\\alpha E L^2}{2 m v_{0}^2}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = \\frac{\\alpha E L^2}{2 m v_{0}^2}.",
+    "conclusion": "Solving for the electric field E gives E = \\frac{2 m v_{0}^2 d}{\\alpha L^2}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The voltage U_{1} between the plates is related to the electric field E by U_{1} = E \\cdot d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = \\frac{2 m v_{0}^2 d}{\\alpha L^2} and U_{1} = E \\cdot d.",
+    "conclusion": "U_{1} = \\left( \\frac{2 m v_{0}^2 d}{\\alpha L^2} \\right) d = \\frac{2 m v_{0}^2 d^2}{\\alpha L^2}.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

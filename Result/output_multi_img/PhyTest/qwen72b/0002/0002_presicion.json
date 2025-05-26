@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The point light source is fixed on a horizontal plane. A small ball is thrown vertically upward from the midpoint between the light source and the vertical wall. The distance between the light source and the wall is \\(d\\), so the midpoint (where the ball is thrown) is at \\(\\frac{d}{2}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball is thrown vertically upward with an initial velocity \\(v_0\\). Its vertical position as a function of time \\(t\\) is given by: \\(y(t) = v_0 t - \\frac{1}{2}gt^2\\). Initially (\\(t=0\\)), the ball is at the midpoint \\(\\left(\\frac{d}{2}, 0\\right)\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coordinates of the ball at any time \\(t\\) are \\(\\left(\\frac{d}{2}, y(t)\\right)\\).",
+    "conclusion": "The slope of the line connecting the light source \\((0,0)\\) and the ball \\(\\left(\\frac{d}{2}, y(t)\\right)\\) is: \\(\\text{slope} = \\frac{2y(t)}{d}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope of the line is \\(\\frac{2y(t)}{d}\\).",
+    "conclusion": "The equation of this line is: \\(y = \\left(\\frac{2y(t)}{d}\\right)x\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The line equation is \\(y = \\left(\\frac{2y(t)}{d}\\right)x\\).",
+    "conclusion": "The shadow is formed where this line intersects the vertical wall at \\(x = d\\). Substituting \\(x = d\\) gives: \\(y_{\\text{shadow}} = 2y(t)\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The shadow's vertical position is \\(y_{\\text{shadow}} = 2y(t)\\).",
+    "conclusion": "Thus, \\(y_{\\text{shadow}}(t) = 2\\left(v_0 t - \\frac{1}{2}gt^2\\right) = 2v_0 t - gt^2\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The shadow's position is \\(y_{\\text{shadow}}(t) = 2v_0 t - gt^2\\).",
+    "conclusion": "The initial velocity of the shadow is found by differentiating \\(y_{\\text{shadow}}(t)\\) with respect to \\(t\\) and evaluating it at \\(t = 0\\): \\(\\frac{dy_{\\text{shadow}}(t)}{dt} = 2v_0 - 2gt\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The derivative is \\(\\frac{dy_{\\text{shadow}}(t)}{dt} = 2v_0 - 2gt\\).",
+    "conclusion": "At \\(t = 0\\), \\(\\frac{dy_{\\text{shadow}}(0)}{dt} = 2v_0\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The headlight system consists of a paraboloid reflector and a hemispherical lens. The light source is at the focal point F of the paraboloid. The light-blocking plate is installed below the symmetry axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light source is at the focal point F of the paraboloid.",
+    "conclusion": "Light rays emitted from the focal point F travel parallel to the axis of the paraboloid after reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light enters the hemispherical lens, where refraction occurs. The refractive index n = 4/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell’s Law relates the angles of incidence and refraction: n1 sin θ1 = n2 sin θ2 where n1 = 1 (air) and n2 = 4/3 (lens material).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell’s Law and refractive index n = 4/3.",
+    "conclusion": "For total internal reflection, the critical angle θc is defined by sin θc = 1/n = 3/4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc is defined by sin θc = 1/n = 3/4.",
+    "conclusion": "The critical angle for total internal reflection is approximately 48.6°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle for total internal reflection is approximately 48.6°.",
+    "conclusion": "The corresponding arc length of this angle is l = (48Rπ)/180 = (4π/15)R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

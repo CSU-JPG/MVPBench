@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel metal rails are on a horizontal plane, separated by 0.6 meters, with lamps L1 and L2 at each end, specifications '3V, 3W' and '6V, 6W' respectively. A conductor rod AB with resistance 1 ohm moves to the right at constant speed, perpendicular to the rails, in a uniform magnetic field of 1 Tesla.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Lamp L1 lights up normally, operating at its rated voltage and power. The task is to find the actual power P2 of lamp L2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1 = 3W, V1 = 3V",
+    "conclusion": "R1 = V1^2 / P1 = (3)^2 / 3 = 3 ohms",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P2 (rated) = 6W, V2 (rated) = 6V",
+    "conclusion": "R2 = V2^2 / P2 = (6)^2 / 6 = 6 ohms",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = B * l * v, B = 1 T, l = 0.6 m",
+    "conclusion": "E = 0.6v",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows two lamps connected to the rails, with the conductor rod moving between them, forming a loop with the moving rod.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The moving rod cuts the magnetic field lines, generating an emf E = B * l * v",
+    "conclusion": "The induced current flows from A to B in the rod, and through the rails to the lamps.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Lamp L1 lights up normally, voltage across L1 is 3V",
+    "conclusion": "Voltage across L2 is also 3V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across L2 is 3V, R2 = 6 ohms",
+    "conclusion": "P2 = V^2 / R2 = (3)^2 / 6 = 1.5W",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

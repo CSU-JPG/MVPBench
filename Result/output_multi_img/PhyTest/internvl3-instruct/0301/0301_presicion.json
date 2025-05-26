@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at State A, \\( T_A = -73^\\circ C = 200 \\, \\text{K} \\) (since \\( T(K) = T(^\\circ C) + 273 \\)).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Volume at State A, \\( V_A = 1 \\times 10^{-3} \\, \\text{m}^3 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the ideal gas law at standard conditions: \\( V_m = 22.4 \\times 10^{-3} \\, \\text{m}^3 \\) per mole at 1 atm and 273 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume at State A, \\( V_A = 1 \\times 10^{-3} \\, \\text{m}^3 \\). Use the ideal gas law at standard conditions: \\( V_m = 22.4 \\times 10^{-3} \\, \\text{m}^3 \\) per mole at 1 atm and 273 K.",
+    "conclusion": "Calculate the number of moles: \\( n = \\frac{V_A}{V_m} = \\frac{1 \\times 10^{-3}}{22.4 \\times 10^{-3}} \\approx 0.0446 \\, \\text{moles} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given change in internal energy from A to C, \\( \\Delta U = 200 \\, \\text{J} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process A to B: Isothermal expansion (no change in internal energy, \\( \\Delta U_{AB} = 0 \\)).",
+    "conclusion": "For A to B: \\( \\Delta U_{AB} = 0 \\implies Q_{AB} = W_{AB} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process B to C: Isochoric process (volume constant, no work done, \\( W_{BC} = 0 \\)).",
+    "conclusion": "For B to C: \\( \\Delta U_{BC} = Q_{BC} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the first law of thermodynamics: \\( \\Delta U = Q - W \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Here, \\( V_B = 4 \\times 10^{-3} \\, \\text{m}^3 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For isothermal process, \\( W_{AB} = nRT_A \\ln\\left(\\frac{V_B}{V_A}\\right) \\).",
+    "conclusion": "Calculate work done A to B: \\( W_{AB} = 0.0446 \\times 8.314 \\times 200 \\times \\ln\\left(\\frac{4 \\times 10^{-3}}{1 \\times 10^{-3}}\\right) \\approx 240 \\, \\text{J} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given change in internal energy from A to C, \\( \\Delta U = 200 \\, \\text{J} \\). For B to C: \\( \\Delta U_{BC} = Q_{BC} \\).",
+    "conclusion": "Heat added B to C: \\( \\Delta U_{BC} = 200 \\, \\text{J} = Q_{BC} \\).",
+    "judgment": "Reasonable"
+  }]

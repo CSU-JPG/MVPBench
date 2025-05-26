@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid from A flows downward and is blocked by a brown bar.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A flows downward and is blocked by a brown bar.",
+    "conclusion": "Liquid from A flows right towards the intersection near the center.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid from B flows downward and is blocked by a teal bar.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from B flows downward and is blocked by a teal bar.",
+    "conclusion": "Liquid from B flows to the right and joins the flow from A at the central intersection.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid from C flows downward and is blocked by an orange bar.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from C flows downward and is blocked by an orange bar.",
+    "conclusion": "Liquid from C flows to the left towards the central intersection where it meets A and B.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A flows right towards the intersection near the center. Liquid from B flows to the right and joins the flow from A at the central intersection. Liquid from C flows to the left towards the central intersection where it meets A and B.",
+    "conclusion": "The combined liquid flow from A, B, and C collects at the central intersection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The combined liquid flow from A, B, and C collects at the central intersection.",
+    "conclusion": "The flow then moves downward through the gap between the white and purple bars.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The flow then moves downward through the gap between the white and purple bars.",
+    "conclusion": "The combined flow continues downward and enters the orange container (D).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid flows into container D after passing through the baffles.",
+    "conclusion": "The liquid will flow into container D.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

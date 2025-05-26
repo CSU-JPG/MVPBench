@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the distance between the position where the red light hits the screen and point A, follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semicircle has a diameter BC, with O as the center. The radius is R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Right Triangle ABC: ∠BAC = 30°, and ∠BCA = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters at a 60° angle to BC.",
+    "conclusion": "The incident angle i is 30° relative to the normal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index n = √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n_air sin i = n_brick sin r",
+    "conclusion": "sin 30° = √3 sin r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 30° = √3 sin r",
+    "conclusion": "sin r = 1/(2√3) = √3/6",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin r = √3/6",
+    "conclusion": "r ≈ 15.47°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels from O to point D inside the brick.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Triangle ODB is right-angled at B with ∠BOD = 30°.",
+    "conclusion": "OD = R tan 30° = R/√3",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle ∠DPA = 30° and r = 15.47°.",
+    "conclusion": "DP = OD × tan(45.47°) ≈ 0.6R",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AP = AB + BP and BP = DP ≈ 0.6R.",
+    "conclusion": "AP ≈ 2R + 0.6R = 2.6R",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the point where the red light hits the screen and point A is calculated.",
+    "conclusion": "The distance is approximately 1.5R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semi-cylindrical transparent brick with refractive index \\( n \\) and radius \\( r \\) is placed on a desktop. A laser beam starts at point A and moves towards point C at a uniform speed \\( v \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The laser beam is perpendicular to the AC direction and translates along this direction from A to C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam moves from A to C at speed \\( v \\).",
+    "conclusion": "The time taken to go from A to C is \\( t = \\frac{2r}{v} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The laser beam is irradiating perpendicular to AC towards point P, which moves from A to C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam is perpendicular to AC and hitting the flat surface of the semi-cylinder.",
+    "conclusion": "The ray will refract into the transparent brick and then emerge at some point on the arc surface ABC.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem states to ignore the propagation time of light in the transparent brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ignoring the propagation time of light in the transparent brick.",
+    "conclusion": "We only need to consider when the light emerges from the arc surface.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semi-cylinder has a coordinate system with point O at the origin, A at (0, r), and C at (0, -r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The position of point P at time \\( t \\) is \\( (0, r - v t) \\).",
+    "conclusion": "The laser beam is coming in horizontally, perpendicular to AC, and hitting the flat surface at P.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray enters the semi-cylinder at P.",
+    "conclusion": "It will refract into the material and exit somewhere on the arc surface ABC.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle formula is \\( \\sin \\theta = \\frac{1}{n} \\).",
+    "conclusion": "The intersection of light and AC surface is point D, where \\( AD = R(1 - \\sin \\theta) = R(1 - \\frac{1}{n}) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The moment you see the emitted light is when \\( t = \\frac{AD}{v} \\).",
+    "conclusion": "The time when light emerges from the arc surface ABC is \\( t = \\frac{R(n-1)}{nv} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

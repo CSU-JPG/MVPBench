@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, analyze the v-t graphs of the truck and the bus to determine the maximum distance between them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows v-t graphs for a truck and a bus. The vertical axis represents velocity (v) in meters per second (m/s), and the horizontal axis represents time (t) in seconds (s).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The truck's graph starts at 40 m/s and decreases linearly to 0 m/s at 10 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The bus's graph starts at 30 m/s and decreases linearly to 0 m/s at 20 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck starts at 40 m/s and stops at 10 seconds.",
+    "conclusion": "The truck covers a distance of \\( \\frac{40 \\times 10}{2} = 200 \\) meters.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus starts at 30 m/s and stops at 20 seconds.",
+    "conclusion": "The bus covers a distance of \\( \\frac{30 \\times 20}{2} = 300 \\) meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the vehicles are 30 meters apart.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum distance between them is the sum of the initial distance and the distances traveled by both vehicles.",
+    "conclusion": "The maximum distance is \\( 30 + 200 + 300 = 530 \\) meters.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

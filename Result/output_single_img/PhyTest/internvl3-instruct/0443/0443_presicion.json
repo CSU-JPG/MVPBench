@@ -1,0 +1,111 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There is a point light source S in a pool emitting monochromatic light A and B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light forms an illuminated circular area on the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The small circular area is illuminated by polychromatic light.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The large circular area is illuminated only by monochromatic light B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of water for monochromatic light A is n_1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of water for monochromatic light B is n_2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law relates the angles of incidence and refraction to the refractive indices of the two media.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For light traveling from water to air, Snell's Law is given by: n_water sin θ_water = n_air sin θ_air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of air n_air is approximately 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_air is approximately 1.",
+    "conclusion": "The equation simplifies to: n_water sin θ_water = sin θ_air.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For monochromatic light B, the refractive index of water is n_2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let θ_water, B be the angle of refraction in water for light B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law for monochromatic light B.",
+    "conclusion": "n_2 sin θ_water, B = sin θ_air, B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light is traveling from water to air.",
+    "conclusion": "The angle of incidence in water is the same as the angle of refraction in air.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_2 sin θ_water, B = sin θ_air, B.",
+    "conclusion": "sin θ_water, B = sin θ_air, B / n_2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle of incidence in air is the same as the angle of refraction in water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence in air is the same as the angle of refraction in water.",
+    "conclusion": "sin θ_water, B = 1 / n_2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final calculation of sin θ_water, B.",
+    "conclusion": "The sine value of the refraction angle of monochromatic light B at the boundary of the small circular area is 1 / n_2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have parallel metal plates of length L separated by distance d. Airflow carrying negatively charged particles enters with velocity v₀. Particles have mass m and charge -α. We need to determine voltage U₁ for complete collection. Gravity and inter-particle interactions are neglected. Air resistance is also neglected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For complete collection, the 'worst-case' particles (those entering at the very top of the entrance) must reach the bottom plate by the time they travel distance L along the flow direction. This means the vertical displacement must be at least d.",
+    "conclusion": "The time to travel length L is: t = L/v₀",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Particles move with constant velocity v₀ (no forces in this direction). The time to travel length L is: t = L/v₀",
+    "conclusion": "Particles are accelerated by the electric field. Electric force: F = -αE, where E is the electric field magnitude. From Newton's second law: F = ma, so a = -αE/m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field between two parallel plates with voltage U is: E = U/d",
+    "conclusion": "Therefore, acceleration in the y-direction: a = -αE/m = -αU/(md)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a particle starting at y = 0 with initial vertical velocity = 0: y = y₀ + v₀ₓt + ½at². y = 0 + 0 + ½(-αU/(md))t²",
+    "conclusion": "y = -½(αU/(md))t²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For complete collection, when t = L/v₀, we need y ≥ d: -½(αU/(md))(L/v₀)² ≥ d",
+    "conclusion": "Solving for U: -½(αU/(md))(L²/v₀²) ≥ d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-½(αU/(md))(L²/v₀²) ≥ d",
+    "conclusion": "-αUL²/(2mdv₀²) ≥ d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-αUL²/(2mdv₀²) ≥ d",
+    "conclusion": "-αUL² ≥ 2md²v₀²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-αUL² ≥ 2md²v₀²",
+    "conclusion": "U ≥ -2md²v₀²/(-αL²)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U ≥ -2md²v₀²/(-αL²)",
+    "conclusion": "U ≥ 2md²v₀²/(αL²)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since all particles with charge -α must be 'just completely collected', we need the minimum voltage that satisfies this inequality.",
+    "conclusion": "U₁ = 2md²v₀²/(αL²)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

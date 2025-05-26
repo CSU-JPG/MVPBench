@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the time during which there is an induced current in the frame as it moves through the magnetic field.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Identify the intervals during which the frame is in the magnetic field and calculate the time for each interval.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The frame has a side length \\( l \\) and the width of the magnetic field is \\( d \\). Since \\( l < d \\), the frame will be completely in the magnetic field for a certain period of time and will have parts outside the field for the rest of the time.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The frame enters the magnetic field when the left edge of the frame reaches the boundary of the magnetic field. This takes a time \\( t_{\\text{enter}} = \\frac{l}{v} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The frame exits the magnetic field when the right edge of the frame leaves the boundary of the magnetic field. This takes a time \\( t_{\\text{exit}} = \\frac{l}{v} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The total time for the frame to move a distance \\( d \\) is \\( t_{\\text{total}} = \\frac{d}{v} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The time during which the frame is not in the magnetic field is \\( t_{\\text{not in field}} = t_{\\text{total}} - t_{\\text{in field}} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The time during which the frame is in the magnetic field is the total time minus the time it takes to enter and exit the field.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since the frame is in the field for a time \\( t_{\\text{in field}} = \\frac{2l}{v} \\) (because it enters and exits the field), the time during which the frame is in the field is \\( t_{\\text{in field}} = \\frac{d}{v} - 2 \\cdot \\frac{l}{v} + \\frac{2l}{v} = \\frac{d - 2l + 2l}{v} = \\frac{d}{v} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The time during which there is an induced current in the frame is the time the frame is in the magnetic field, which is \\( t_{\\text{in field}} = \\frac{d - l}{v} \\).",
+    "relevant": "Yes"
+  }
+]

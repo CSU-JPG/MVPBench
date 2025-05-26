@@ -1,0 +1,121 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze relative motion to determine collision time.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Collision occurs if Car A's displacement relative to Car B equals or exceeds initial distance.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Collision occurs when positions are the same, assuming Car A catches up.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Initial distance between cars is d = x_B0 - x_A0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Collision occurs when difference in displacements equals initial distance d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Car A initial velocity is 25 m/s, stops at 25 s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Car A acceleration is -1 m/s^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Car A velocity function is v_A(t) = 25 - t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Car B initial velocity is 15 m/s, stops at 30 s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Car B acceleration is -0.5 m/s^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Car B velocity function is v_B(t) = 15 - 0.5t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Displacement of Car A is Δx_A(t) = 25t - 0.5t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Displacement of Car B is Δx_B(t) = 15t - 0.25t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Collision occurs when Δx_A(t_c) - Δx_B(t_c) = d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Initial distance d is difference in total stopping distances.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At t=20s, both cars have the same velocity.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Displacement of Car A at t=20s is 300 m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Displacement of Car B at t=20s is 200 m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Difference in displacement at t=20s is 100 m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Collision occurs if initial distance d is less than or equal to 100 m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "If d < 100 m, collision occurs before t=20s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "If d = 50 m, collision occurs at t ≈ 5.86 s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Collision is inevitable given braking profiles.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Maximum closing distance occurs at t=20s.",
+    "relevant": "Yes"
+  }]

@@ -1,0 +1,72 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Calculate the Ampere force on the entire wire frame in a uniform magnetic field.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Ampere force formula: F = I * L * B * sin(theta).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Straight part of the wire is perpendicular to the magnetic field.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Force on the straight part is given as F.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For semi-circular part, consider force on each infinitesimal segment.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Force on small segment dL: dF = I * dL * B * sin(theta).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "In semi-circle, current direction changes, magnetic field is perpendicular to plane.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Horizontal components of forces on semi-circle cancel out due to symmetry.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Vertical component of force on each segment: dF_vertical = I * B * dL * sin(theta).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Total vertical force on semi-circle: F_semi-circle = integral from 0 to pi of I * B * r * dtheta * sin(theta).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Evaluate integral: F_semi-circle = I * B * r * integral from 0 to pi of sin(theta) dtheta.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Integral of sin(theta) from 0 to pi is 2, so F_semi-circle = 2 * I * B * r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Total force on wire frame: F_total = F + F_semi-circle = F + 2 * I * B * r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final answer: Magnitude of Ampere force on entire wire frame is F_total = F + 2 * I * B * r.",
+    "relevant": "Yes"
+  }
+]

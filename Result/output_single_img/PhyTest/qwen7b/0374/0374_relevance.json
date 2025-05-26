@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Break down the motion into two phases: the initial vertical ascent and the subsequent curvilinear motion.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Initial conditions for vertical ascent: Initial velocity v_0 = 0 m/s, Acceleration a_y = 10g = 100 m/s² (upward), Height reached h_1 = 5000 m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using the kinematic equation for vertical displacement h_1 = (1/2) a_y t_1^2, solve for t_1: t_1 = 10 s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using the kinematic equation for velocity v_y = a_y t_1, calculate v_y = 1000 m/s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Horizontal velocity v_x remains zero throughout the vertical ascent phase.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "New conditions for curvilinear motion: Initial velocity v_0 = 1000 m/s (upward), New acceleration components: Horizontal acceleration a_x = g sin θ, Vertical acceleration a_y = g cos θ - g.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Given values: cos θ = 1/11, g = 10 m/s².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate a_x = g sin θ and a_y = g cos θ - g: a_y = -100/11 m/s².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Equations of motion: Horizontal motion x(t) = (1/2) a_x t^2, Vertical motion y(t) = v_y t + (1/2) a_y t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute v_y = 1000 m/s into vertical motion equation: y(t) = 1000 t - (50/11) t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Find time of impact when y(t) = 0: Solve 1000 t - (50/11) t^2 = 0 for t, resulting in t = 22 s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate distance traveled horizontally x(22) = (1/2) a_x (22)^2 = 2420 sqrt(120) m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final answer: The horizontal distance traveled by the missile before hitting the enemy aircraft is 2420 sqrt(120) m.",
+    "relevant": "Yes"
+  }
+]

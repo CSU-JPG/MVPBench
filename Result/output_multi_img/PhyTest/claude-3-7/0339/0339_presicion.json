@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Work Done by an Ideal Gas in a Thermodynamic Cycle",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Looking at the images, I can see a rectangular ABCDA cycle in the P-V diagram for an ideal gas: - A at point (V_1, P_1) - B at point (V_1, P_2) - C at point (V_2, P_2) - D at point (V_2, P_1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The question asks for the work done by the gas when transitioning from state D to state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the P-V diagram, the transition from D to A is a horizontal line from (V_2, P_1) to (V_1, P_1). This represents an isobaric process (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For any process, the work done by a gas is given by: W = ∫ P dV",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In an isobaric process, pressure is constant (P = P_1).",
+    "conclusion": "W_{D → A} = ∫ P_1 dV = P_1 ∫ dV = P_1 (V_1 - V_2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since V_1 < V_2 (we're moving from right to left on the diagram), (V_1 - V_2) is negative.",
+    "conclusion": "When a gas is compressed (volume decreases), work is done ON the gas by the surroundings, not BY the gas. So the work done BY the gas is negative: W_{D → A} = P_1 (V_1 - V_2) = -P_1 (V_2 - V_1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas on the surroundings when transitioning from state D to state A is: W_{D → A} = -P_1 (V_2 - V_1)",
+    "conclusion": "This is negative, indicating that work is done ON the gas, not BY the gas during this compression process.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

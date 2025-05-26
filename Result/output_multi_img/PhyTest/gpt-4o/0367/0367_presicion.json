@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the ratio of the post-collision velocity to the pre-collision velocity of the basketball during its collision with the ground, we will analyze the problem step by step.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball experiences two forces during its motion: Gravitational force: F_g = mg, acting downward. Air resistance: F_r = λF_g = λmg, acting opposite to the direction of motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force acting on the basketball depends on its direction of motion.",
+    "conclusion": "During free fall (downward motion): Net force F_net,down = F_g - F_r = mg(1 - λ). During upward motion (rebound): Net force F_net,up = F_r - F_g = mg(λ - 1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from a height H and rebounds to a height h. The energy lost during the collision with the ground is due to the inelastic nature of the collision and the work done against air resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Energy before collision (falling from height H): The initial potential energy is: E_initial = mgH.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the basketball falls, air resistance does work on it, reducing its kinetic energy.",
+    "conclusion": "The work done by air resistance during the fall is: W_air,fall = λmgH.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial potential energy is mgH and the work done by air resistance is λmgH.",
+    "conclusion": "The kinetic energy just before the collision is: E_kinetic,pre = mgH - W_air,fall = mgH(1 - λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Energy after collision (rebounding to height h): After the collision, the basketball rebounds with reduced kinetic energy due to the inelastic collision.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let the ratio of the post-collision velocity to the pre-collision velocity be e (the coefficient of restitution).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The kinetic energy just before the collision is mgH(1 - λ).",
+    "conclusion": "The kinetic energy immediately after the collision is: E_kinetic,post = e^2 * E_kinetic,pre = e^2 * mgH(1 - λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the basketball rises, air resistance does work on it again, reducing its kinetic energy further.",
+    "conclusion": "The work done by air resistance during the upward motion is: W_air,rise = λmgh.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the maximum height h, all the remaining kinetic energy is converted into potential energy.",
+    "conclusion": "E_potential,max = mgh.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The kinetic energy immediately after the collision is e^2 * mgH(1 - λ) and the work done by air resistance during the upward motion is λmgh.",
+    "conclusion": "The energy balance during the upward motion is: E_kinetic,post - W_air,rise = E_potential,max.",
+    "judgment": "Reasonable"
+  }]

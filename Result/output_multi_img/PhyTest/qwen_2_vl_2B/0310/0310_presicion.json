@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The relationship between the volume V of an ideal gas of a certain mass and the thermodynamic temperature T is shown in the figure. The pressure of the gas in state A is pA = p0, the temperature TA = T0, the line segment AB is parallel to the V axis, and the extension line of BC passes through the origin.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "In the figure, the volume of the gas at state A is V_A = V_0, and the temperature at state A is T_A = T_0.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The volume of the gas at state B is V_B = 2V_0, and the temperature at state B is T_B = T_0.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume of the gas at state C is given as V_C = V_B - V_A. Substituting V_B = 2V_0 and V_A = V_0.",
+    "conclusion": "The volume of the gas at state C is V_C = V_0.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state C is T_C. The volume of the gas at state C is V_C = V_0, which is the same as the volume of the gas at state A.",
+    "conclusion": "The temperature at state C is the same as the temperature at state A.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state C is the same as the temperature at state A, and the temperature at state A is T_A = T_0.",
+    "conclusion": "The temperature at state C is T_C = T_0.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the ground truth, the BC extension line passes through the origin, and the relationship between volume and temperature is given by V/T = constant. For state B, V_B/T_B = V_C/T_C.",
+    "conclusion": "Using V_B = 2V_0, T_B = T_0, and V_C = V_0, we find T_C = (V_C * T_B) / V_B = (V_0 * T_0) / (2V_0) = T_0 / 2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

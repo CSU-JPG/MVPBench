@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the forces acting on the system composed of the three hemispherical bodies A, B, and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The forces acting on each body are: Weight (mg) acting downwards, Normal forces (NA and NB) from the ground, Frictional forces (fA and fB) from the ground, Normal force (NC) from the other bodies they are in contact with.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Body C is smooth, so there is no frictional force acting on it.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Body C is smooth, so there is no frictional force acting on it.",
+    "conclusion": "The only vertical force acting on C is its weight mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The only vertical force acting on C is its weight mg.",
+    "conclusion": "NC = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For body B, there is no horizontal force acting on it.",
+    "conclusion": "The frictional force fB must be zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For body A, the net force in the x-direction must be zero.",
+    "conclusion": "fA + fAC = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For body A, the net force in the y-direction must be zero.",
+    "conclusion": "NA - mg - fCA - NCB = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The center of C must lie on the line joining the centers of A and B due to symmetry.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The center of C must lie on the line joining the centers of A and B due to symmetry.",
+    "conclusion": "The distance between the centers of A and B is 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the centers of A and B is 2R.",
+    "conclusion": "The distance between the center of C and the center of A (or B) is R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using geometry, the contact forces fAC and fCA are equal in magnitude because the surfaces are smooth.",
+    "conclusion": "fAC = fCA = f",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "fAC = fCA = f",
+    "conclusion": "f = mg (sqrt(3)/6)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical equilibrium condition for A gives: NA = mg + fCA + NBA",
+    "conclusion": "NA = mg + mg (sqrt(3)/6) + mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "NA = mg + mg (sqrt(3)/6) + mg",
+    "conclusion": "NA = mg (2 + sqrt(3)/6)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "NA = mg (2 + sqrt(3)/6)",
+    "conclusion": "NA = mg (12 + sqrt(3))/6",
+    "judgment": "Match"
+  }

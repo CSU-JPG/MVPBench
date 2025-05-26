@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the masses of objects A, B, and C are 2m, 3m, and m respectively. The system is in equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on object C are gravity: mg and tension in the rope: F_T = mg.",
+    "conclusion": "Since the system is in equilibrium, the tension in the rope is equal to the weight of object C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on object A are gravity: 2mg, tension in the rope: F_T = mg, and spring force: F_k.",
+    "conclusion": "Since object A is in equilibrium, the net force on it must be zero: F_T + F_k = 2mg, thus F_k = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The spring force F_k is given by Hooke's law: F_k = kx.",
+    "conclusion": "kx = mg, therefore x = mg/k.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Now, the mass of object C is changed to 5m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The new tension in the rope is F_T' = 5mg.",
+    "conclusion": "The forces acting on object A now are gravity: 2mg, tension in the rope: F_T' = 5mg, and spring force: F_k'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since object A is again in equilibrium, the net force on it must be zero: F_T' + F_k' = 2mg.",
+    "conclusion": "5mg + F_k' = 2mg, thus F_k' = -3mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates that the spring force is now pulling upwards (the spring is extended). Using Hooke's law again: F_k' = -kx'.",
+    "conclusion": "-3mg = -kx', therefore x' = 3mg/k.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, the spring was compressed by mg/k. Now, the spring is extended by 3mg/k.",
+    "conclusion": "The total change in the position of object A is Δx = x' + x = 3mg/k + mg/k = 4mg/k.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

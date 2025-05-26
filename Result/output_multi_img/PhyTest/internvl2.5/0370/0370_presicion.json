@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Resistor R1 = 50 Ω is a fixed resistor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Resistor R2 is unknown.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Resistor R3 is a variable resistor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Capacitor C = 2 × 10^-6 F.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows the terminal voltage U as a function of the current I. Points A and B correspond to the two endpoints of the variable resistor R3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When P is at the left end, the resistance R3 is maximum.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When P is at the right end, the resistance R3 is minimum (essentially short-circuited).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point A, I = 0 A and U = 4 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point B, I = 0.8 A and U = 1 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point A, I = 0 A and U = 4 V.",
+    "conclusion": "Point A: UA = E since I = 0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point B, I = 0.8 A and U = 1 V.",
+    "conclusion": "Point B: UB = E - Ir.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A: UA = E since I = 0.",
+    "conclusion": "E = 4 V",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point B: UB = E - Ir.",
+    "conclusion": "1 V = 4 V - (0.8 A) * r",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 V = 4 V - (0.8 A) * r",
+    "conclusion": "r = (4 V - 1 V) / 0.8 A",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = (4 V - 1 V) / 0.8 A",
+    "conclusion": "r = 3.75 Ω",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 4 V, r = 3.75 Ω",
+    "conclusion": "Electromotive force (EMF) E = 4 V, Internal resistance r = 3.75 Ω",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

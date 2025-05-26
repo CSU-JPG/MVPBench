@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identical steel balls are released from the same position every 0.1 seconds with zero initial velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The photograph shows the positions of several balls at a single moment with AB = 15 cm and BC = 20 cm in actual scale.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to analyze the motion of these balls.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The balls are under constant acceleration due to gravity along the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Position equation for an object under constant acceleration starting from rest: x = 0.5at^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The balls are released every 0.1 seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Balls are released every 0.1 seconds.",
+    "conclusion": "Ball C was released first, Ball B was released 0.1 seconds after C, Ball A was released 0.2 seconds after C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "BC = 20 cm and AB = 15 cm from the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Position equation: x = 0.5at^2",
+    "conclusion": "Ball C's position: x_C = 0.5at_C^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Position equation: x = 0.5at^2",
+    "conclusion": "Ball B's position: x_B = 0.5a(t_C + 0.1)^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Position equation: x = 0.5at^2",
+    "conclusion": "Ball A's position: x_A = 0.5a(t_C + 0.2)^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC = 20 cm and AB = 15 cm",
+    "conclusion": "x_B - x_C = 20 cm and x_A - x_B = 15 cm",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_B - x_C = 20 cm",
+    "conclusion": "0.1at_C + 0.005a = 20",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_A - x_B = 15 cm",
+    "conclusion": "0.1at_C + 0.015a = 15",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.1at_C + 0.005a = 20 and 0.1at_C + 0.015a = 15",
+    "conclusion": "Subtracting gives -0.01a = 5, so a = -500 cm/s²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Negative acceleration indicates opposite direction, expect positive acceleration",
+    "conclusion": "a = 500 cm/s²",
+    "judgment": "Match"
+  }]

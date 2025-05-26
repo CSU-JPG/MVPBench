@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "In electrostatic equilibrium, the electric field strength inside the conductor is zero everywhere. This means that the net electric force on any charge inside the conductor is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "A point charge with a charge of \\(+q\\) is fixed at \\(A(0,0,h)\\), and the electrostatic force constant is \\(k\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The space where \\(z > 0\\) is a vacuum, and the region where \\(z \\leq 0\\) is filled with an infinite conductor.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The point charge \\(+q\\) is located at \\(A(0,0,h)\\) above the conductor.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field strength inside the conductor is zero everywhere in electrostatic equilibrium.",
+    "conclusion": "The electric field formed by the induced charges has the same magnitude but the opposite direction as the electric field formed by the original charge.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field formed by the induced charges has the same magnitude but the opposite direction as the electric field formed by the original charge.",
+    "conclusion": "We only need to find the magnitude of the electric field strength of the charge \\(+q\\) at the point \\((h, h, -h)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula for the electric field strength of a point charge is \\(E = \\frac{kq}{r^2}\\).",
+    "conclusion": "The distance \\(r\\) from the charge \\(+q\\) at \\(A(0,0,h)\\) to the point \\((h,h,-h)\\) is \\(r = \\sqrt{(2h)^2 + (\\sqrt{2}h)^2} = \\sqrt{6}h\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance \\(r\\) from the charge \\(+q\\) at \\(A(0,0,h)\\) to the point \\((h,h,-h)\\) is \\(r = \\sqrt{6}h\\).",
+    "conclusion": "The electric field strength at the point \\((h,h,-h)\\) due to the charge \\(+q\\) is \\(E = \\frac{kq}{r^2} = \\frac{kq}{6h^2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field formed by the induced charges has the same magnitude as the electric field formed by the original charge at \\((h,h,-h)\\).",
+    "conclusion": "The magnitude of the electric field strength formed by the induced charges at the point \\((h,h,-h)\\) is \\(\\frac{kq}{6h^2}\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

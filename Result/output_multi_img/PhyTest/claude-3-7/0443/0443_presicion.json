@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "From the images and description: Light source S emits two monochromatic lights: A and B. On the water surface, we see two circular illuminated areas: A small inner circle illuminated by both monochromatic lights A and B (polychromatic) and a larger outer ring illuminated only by monochromatic light B. The refractive indices of water for these lights are: For light A: n₁ and For light B: n₂. We need to find the sine value of the refraction angle of monochromatic light B at the boundary of the small circle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Both light rays A and B travel through water and hit the water-air interface. At a certain angle (critical angle), light undergoes total internal reflection. This critical angle depends on the refractive index.",
+    "conclusion": "For the small inner circle, both lights A and B can exit the water surface, creating a polychromatic illumination. For the outer ring, only light B exits, meaning light A has already reached its critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the boundary of the small circle, light A reaches its critical angle. When a light ray is at its critical angle, the refracted ray travels along the interface (refraction angle = 90°). Using Snell's law: n₁ × sin(θ₁) = 1 × sin(90°) = 1",
+    "conclusion": "sin(θ₁) = 1/n₁",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the boundary of the small circle, both lights A and B have the same incident angle θ₁ because they come from the same point source S and travel to the same point on the water surface.",
+    "conclusion": "The incident angle of light B at the boundary is also θ₁ = arcsin(1/n₁).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law for light B: n₂ × sin(θ₁) = 1 × sin(θ₂)",
+    "conclusion": "Substituting what we know: n₂ × (1/n₁) = sin(θ₂)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting what we know: n₂ × (1/n₁) = sin(θ₂)",
+    "conclusion": "sin(θ₂) = n₂/n₁",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

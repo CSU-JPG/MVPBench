@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a square wire frame with side length L and a capacitor with capacitance C. Half of the frame is in a uniform magnetic field that weakens at a rate k.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's Law of Electromagnetic Induction states that the induced electromotive force (EMF) is equal to the rate of change of magnetic flux through the circuit.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame is half in and half out of the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the square wire frame is L^2. Since half is in the magnetic field, the effective area is half of L^2.",
+    "conclusion": "The effective area is (1/2)L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of the magnetic field is k and the effective area is (1/2)L^2.",
+    "conclusion": "The rate of change of magnetic flux is (1/2)kL^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is given by the rate of change of magnetic flux.",
+    "conclusion": "The induced EMF is (1/2)kL^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ohm's Law states that the current is equal to the EMF divided by the total resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of the wire frame is R = 4ρ/L.",
+    "conclusion": "The resistance of the wire frame is 4ρ/L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equivalent resistance of the capacitor is 1/C.",
+    "conclusion": "The equivalent resistance of the capacitor is 1/C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance is the sum of the wire frame resistance and the capacitor resistance.",
+    "conclusion": "The total resistance is 4ρ/L + 1/C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current is given by the EMF divided by the total resistance.",
+    "conclusion": "The current in the loop is kL^3 / (8ρ + 2L/C).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the capacitor is fully charged, there is no current in the circuit.",
+    "conclusion": "The current in the loop is 0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

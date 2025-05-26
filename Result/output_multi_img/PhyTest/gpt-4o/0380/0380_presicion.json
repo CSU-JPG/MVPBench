@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ball P has mass M = 4m, is neutral, and has initial velocity v_0 = mg/(qB) to the right.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ball Q has mass m, charge -q, and initial velocity 0 (at rest).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic field B is directed outward from the plane of the paper and affects only the charged ball Q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision is elastic, meaning momentum and kinetic energy are conserved.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball Q is at rest before the collision.",
+    "conclusion": "After the collision, ball Q will move into the region with the magnetic field B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of momentum: Mv_0 = Mv_1 + mv_2, with M = 4m and v_0 = mg/(qB).",
+    "conclusion": "4mg/(qB) = 4v_1 + v_2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of kinetic energy: (1/2)Mv_0^2 = (1/2)Mv_1^2 + (1/2)mv_2^2, with M = 4m and v_0 = mg/(qB).",
+    "conclusion": "4(m^2g^2)/(q^2B^2) = 4v_1^2 + v_2^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equations: 4mg/(qB) = 4v_1 + v_2 and 4(m^2g^2)/(q^2B^2) = 4v_1^2 + v_2^2.",
+    "conclusion": "Solve for v_2 in terms of v_1: v_2 = 4mg/(qB) - 4v_1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve the system of equations for v_1 and v_2.",
+    "conclusion": "v_1 = 3mg/(5qB), v_2 = 8mg/(5qB), both directions to the right",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

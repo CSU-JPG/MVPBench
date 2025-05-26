@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromotive force of the power supply E = 10V, with negligible internal resistance. The two capacitors C1=C2=30μF, the resistors R1=4.0Ω and R2=6.0Ω, and the switch S is closed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit is in steady state when switch S is closed. The capacitors are fully charged, and there's no current flowing through them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In steady state, capacitors block DC current, so no current flows through them. Current flows only through the resistors R1 and R2 in series.",
+    "conclusion": "Total resistance = R1 + R2 = 4.0Ω + 6.0Ω = 10.0Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total resistance = 10.0Ω, E = 10V",
+    "conclusion": "Initial current I0 = E/R_total = 10V/10Ω = 1.0A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial current I0 = 1.0A, R1 = 4.0Ω",
+    "conclusion": "Voltage across C1: V1 = I0 × R1 = 1.0A × 4.0Ω = 4.0V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial current I0 = 1.0A, R2 = 6.0Ω",
+    "conclusion": "Voltage across C2: V2 = I0 × R2 = 1.0A × 6.0Ω = 6.0V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C1 = 30μF, V1 = 4.0V",
+    "conclusion": "Q1 = C1 × V1 = 30μF × 4.0V = 120μC",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C2 = 30μF, V2 = 6.0V",
+    "conclusion": "Q2 = C2 × V2 = 30μF × 6.0V = 180μC",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When S is opened, the right end of R2 is disconnected. The charge on C2 has nowhere to go, so it remains constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "C1 and C2 will redistribute their charges until they reach the same voltage as they will effectively be in parallel through the R1-R2 connection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial total charge: Q_total = Q1 + Q2 = 120μC + 180μC = 300μC",
+    "conclusion": "Total charge is conserved.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C1 = 30μF, C2 = 30μF",
+    "conclusion": "Final capacitance in parallel: C_total = C1 + C2 = 30μF + 30μF = 60μF",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q_total = 300μC, C_total = 60μF",
+    "conclusion": "Final voltage: V_final = Q_total/C_total = 300μC/60μF = 5.0V",
+    "judgment": "Wrong"
+  }]

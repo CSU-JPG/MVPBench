@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, C, and D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (E, F, G, or H) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Each colored inlet block (A, B, C, D) has the same color as the first baffle it will strike.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angled baffles act like mirrors, reflecting the flow downward and sideways until it reaches a matching-colored chute at the bottom.",
+    "conclusion": "Tracking the color-matching path of every bounce shows that each starting color ultimately lands in the chute of the identical color at the base.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream A and B strikes the green slanted barrier and is deflected to the left.",
+    "conclusion": "Mixture of stream A and B ends in container E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream C straddles the green slanted barrier and bifurcates.",
+    "conclusion": "Stream C ends in container F with some droplets reaching container E and H.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream D encounters the yellow baffle and is deflected to the right.",
+    "conclusion": "Stream D ends in container H.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "No stream reaches container G.",
+    "conclusion": "Container G remains empty.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

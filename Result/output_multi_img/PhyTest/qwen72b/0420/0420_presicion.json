@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine whether the light will undergo total internal reflection when it is emitted from the inside of the sphere, we need to analyze the geometry and the conditions for total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The incident angle i is the angle between the incident ray and the normal at point A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the light enters the sphere, it refracts according to Snell's Law: n1 sin i = n2 sin r, where n1 is the refractive index of air (approximately 1), and n2 is the refractive index of the sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 sin i = n2 sin r",
+    "conclusion": "sin r = sin i / n2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light travels inside the sphere and reaches point B. At point B, the angle of incidence i' needs to be determined.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "OA and OB are both radii of the sphere, triangle OAB is isosceles with OA = OB = R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Triangle OAB is isosceles with OA = OB = R.",
+    "conclusion": "The angle ∠OAB = r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In an isosceles triangle, the base angles are equal.",
+    "conclusion": "∠OBA = ∠OAB = r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal at B is along OB, and the incident ray at B makes an angle 180° - 2r with OB.",
+    "conclusion": "i' = 90° - r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For total internal reflection to occur, the angle of incidence i' must be greater than or equal to the critical angle θc given by sin θc = n2 / n1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin i' = sin (90° - r) = cos r.",
+    "conclusion": "For total internal reflection, cos r ≥ sin θc = 1 / n2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos r ≥ 1 / n2",
+    "conclusion": "sin r ≤ √(1 - (1/n2)^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin r = sin i / n2",
+    "conclusion": "sin i / n2 ≤ √(1 - (1/n2)^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin i / n2 ≤ √(1 - (1/n2)^2)",
+    "conclusion": "sin i ≤ n2 √(1 - (1/n2)^2) = √(n2^2 - 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If sin i > √(n2^2 - 1), total internal reflection occurs at point B.",
+    "conclusion": "Yes, if the incident angle i is large enough such that sin i > √(n2^2 - 1), the light will be totally reflected when it is emitted from the inside of the sphere.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

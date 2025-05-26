@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a prism with an equilateral triangle cross-section, and a beam of white light is incident at point M with an angle of incidence α = 60°. The material of the prism has a refractive index n = √3 for red light, and we need to find the angle between the emergent red light and the incident light at point M.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cross-section of the prism is an equilateral triangle, so all angles in the triangle are 60°. The light enters at point M, which is on one of the sides, and after refraction, it enters the prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident angle is α = 60°. The refractive index for red light is n = √3.",
+    "conclusion": "Using Snell's law at the first surface: n_air * sin(α) = n_prism * sin(θ1). Plugging in the values: 1 * sin(60°) = √3 * sin(θ1). sin(60°) = √3/2. So, √3/2 = √3 * sin(θ1). sin(θ1) = (√3/2)/√3 = 1/2. Therefore, θ1 = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light beam enters the prism at 30°.",
+    "conclusion": "Now, I need to find the path inside the prism. Since it's an equilateral triangle, the internal angle at the next surface is also 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal angle is 60°, and the angle of refraction at the first surface is 30°.",
+    "conclusion": "The angle of incidence at the second surface is θ2 = 60° - 30° = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the second surface is 30°.",
+    "conclusion": "The refraction angle at the second surface is 60°. Therefore, the angle is 60°.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

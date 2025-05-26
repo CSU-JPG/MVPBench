@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Since the winter began, haze weather with visibility less than 100m has occurred multiple times in many places across the country. During such severe weather, two cars, Car A and Car B, were traveling in the same direction on a straight one-way road, with Car B in front and Car A behind. At a certain moment, the drivers of both cars simultaneously heard a siren warning of an accident ahead and started braking at the same time, but unfortunately, the two cars collided.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem asks to determine whether the two cars collide before or after 20 seconds of braking.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The v-t graph shows Car A starting at 25 m/s and decelerating linearly, and Car B starting at 15 m/s and also decelerating linearly. Both cars' velocities reach zero at different times.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Car A starts at 25 m/s and decelerates at a rate of 2 m/s². Car B starts at 15 m/s and decelerates at a rate of 3 m/s².",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A starts at 25 m/s and decelerates at a rate of 2 m/s².",
+    "conclusion": "The time it takes for Car A to reach 0 m/s is \\( t = \\frac{v_f - v_i}{a} = \\frac{0 - 25}{-2} = 12.5 \\) seconds.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car B starts at 15 m/s and decelerates at a rate of 3 m/s².",
+    "conclusion": "The time it takes for Car B to reach 0 m/s is \\( t = \\frac{v_f - v_i}{a} = \\frac{0 - 15}{-3} = 5 \\) seconds.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time it takes for Car A to reach 0 m/s is 12.5 seconds, and the time it takes for Car B to reach 0 m/s is 5 seconds.",
+    "conclusion": "The two cars collide after 12.5 seconds of braking.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

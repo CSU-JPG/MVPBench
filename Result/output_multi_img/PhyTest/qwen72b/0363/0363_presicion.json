@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the voltage U_1 between the two metal plates required for complete collection of negatively charged dust particles, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The relationship between the electric field E and the voltage U_1 is given by: E = U_1/d",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = U_1/d",
+    "conclusion": "Electric field strength E can be derived from the voltage U_1 and the plate separation d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the horizontal direction, the particles move with a constant velocity v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the horizontal direction, the particles move with a constant velocity v_0.",
+    "conclusion": "The time t it takes for a particle to travel the length L of the plates is t = L/v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the vertical direction, the particles experience a constant acceleration due to the electric force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The acceleration a experienced by a particle with charge -α in an electric field E is given by: a = F/m = -αE/m = -αU_1/md",
+    "conclusion": "The acceleration a experienced by a particle with charge -α in an electric field E is a = -αU_1/md.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a = -αU_1/md and t = L/v_0",
+    "conclusion": "The vertical displacement y of the particle after time t under this acceleration is y = 1/2 a t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "y = 1/2 a t^2, a = -αU_1/md, and t = L/v_0",
+    "conclusion": "y = -1/2 αU_1 L^2/(md v_0^2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the particles to be completely collected by the plates, the vertical displacement y must be equal to half the plate separation d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "y = -1/2 αU_1 L^2/(md v_0^2) and |y| = d/2",
+    "conclusion": "1/2 αU_1 L^2/(md v_0^2) = d/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/2 αU_1 L^2/(md v_0^2) = d/2",
+    "conclusion": "αU_1 L^2/(md v_0^2) = d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "αU_1 L^2/(md v_0^2) = d",
+    "conclusion": "U_1 = md^2 v_0^2/(α L^2)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

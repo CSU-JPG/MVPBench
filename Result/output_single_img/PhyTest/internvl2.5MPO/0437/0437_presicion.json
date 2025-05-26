@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The bottom of the semi-cylindrical glass brick is coated with a layer of reflective film. The glass brick is a semi-cylinder with radius R. The light enters at point A and exits at point B. The distance AB is given as 0.26R. The distance from A to the center O is \\( \\frac{\\sqrt{2}R}{2} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light incident from point A is refracted by glass and then exits from point B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the right triangle AOP, where OP is the radius R.",
+    "conclusion": "\\( \\sin i = \\frac{AP}{AO} = \\frac{R}{\\frac{\\sqrt{2}R}{2}} = \\frac{2}{\\sqrt{2}} = \\sqrt{2} \\), therefore, \\( i = 45^\\circ \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the right triangle BOQ.",
+    "conclusion": "\\( \\sin r = \\frac{BQ}{BO} = \\frac{0.26R}{R} = 0.26 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: \\( n_1 \\sin i = n_2 \\sin r \\), where \\( n_1 \\) is the refractive index of air (approximately 1), and \\( n_2 \\) is the refractive index of glass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given: \\( 1 \\cdot \\sin 45^\\circ = n_2 \\cdot 0.26 \\).",
+    "conclusion": "\\( \\sin 45^\\circ = \\frac{\\sqrt{2}}{2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute into Snell's Law: \\( \\frac{\\sqrt{2}}{2} = n_2 \\cdot 0.26 \\).",
+    "conclusion": "\\( n_2 = \\frac{\\frac{\\sqrt{2}}{2}}{0.26} = \\frac{\\sqrt{2}}{0.52} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify: \\( n_2 \\approx \\frac{1.414}{0.52} \\approx 2.72 \\).",
+    "conclusion": "The refractive index of the glass is approximately 1.5.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced electromotive force (EMF) in a conductor element of length dr moving with velocity v in a magnetic field B is given by dE = (v x B) · dl.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conductor rod ab rotates at a constant angular velocity ω around an axis perpendicular to the paper surface passing through point O.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between a and O is very small and can be neglected, so we assume the rotation is around end a.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The length of the rod ab is 4L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let r be the distance from O (which is at a) to a point on the rod. The velocity of this point is v = ωr, and it is perpendicular to the rod.",
+    "conclusion": "The magnetic field B is uniform and perpendicular to the plane of rotation (into the paper). Thus, v is perpendicular to B and also to dl (which is along the rod).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v is perpendicular to B and also to dl (which is along the rod).",
+    "conclusion": "The component of v perpendicular to dl is v, and v is perpendicular to B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The component of v perpendicular to dl is v, and v is perpendicular to B.",
+    "conclusion": "|v x B| = vB = ωrB.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "|v x B| = vB = ωrB.",
+    "conclusion": "The direction of v x B is along the rod towards a (for counterclockwise rotation and B into the page).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The direction of v x B is along the rod towards a (for counterclockwise rotation and B into the page).",
+    "conclusion": "dl is from a to b, so dl is in the direction away from a.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dl is from a to b, so dl is in the direction away from a.",
+    "conclusion": "Let's say the rod is along the x-axis, with a at x=0 and b at x=4L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let's say the rod is along the x-axis, with a at x=0 and b at x=4L.",
+    "conclusion": "v x B is in the negative x direction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v x B is in the negative x direction.",
+    "conclusion": "dl = dx i.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dl = dx i.",
+    "conclusion": "(v x B) · dl = -ωrB dx.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Here r=x.",
+    "conclusion": "(v x B) · dl = -ωxB dx.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(v x B) · dl = -ωxB dx.",
+    "conclusion": "The potential difference V_b - V_a = ∫_a^b (v x B) · dl = ∫_0^{4L} (-ωxB) dx.",
+    "judgment": "Reasonable"
+  }]

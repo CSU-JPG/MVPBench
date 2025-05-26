@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a vacuum in the region z > 0 and the region z ≤ 0 is filled with a perfect conductor. A point charge +q is at position (0,0,h), where h > 0. We need to find the electric field at point (h,h,-h) due to induced charges only.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In electrostatics, we can replace the conducting half-space with an image charge to satisfy the boundary conditions at the interface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a point charge +q at (0,0,h), we place an image charge -q at (0,0,-h).",
+    "conclusion": "The image charge creates an electric field that, when combined with the original charge's field, ensures that the electric field is zero inside the conductor and the electric potential is constant at the boundary (z = 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The point (h,h,-h) is inside the conductor, so the total electric field there must be zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The field due to the original charge +q at (0,0,h) plus the field due to the image charge -q at (0,0,-h) plus the field due to all other induced charges (surface charges) must equal zero.",
+    "conclusion": "The induced charges consist of the image charge -q at (0,0,-h) and the surface charge density induced on the conductor surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the total field inside the conductor is zero, the field due to induced charges must exactly cancel the field due to the original charge +q.",
+    "conclusion": "The electric field at (h,h,-h) due to the original charge +q at (0,0,h) must be calculated.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the point (h,h,-h) and the original charge +q at (0,0,h) is r = √[(h-0)² + (h-0)² + (-h-h)²] = √[2h² + 4h²] = √[6h²] = h√6.",
+    "conclusion": "The electric field due to the original charge has magnitude E_original = k·q/r² = k·q/(h√6)².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the electric field due to the induced charges must be E_induced = E_original = k·q/(6h²).",
+    "conclusion": "The magnitude of the electric field formed by the induced charges at point (h,h,-h) is E_induced = k·q/(6h²).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

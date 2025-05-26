@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the increase in the range of light incident on the central point at the bottom of the light-transmitting hole after embedding the glass brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Compare the angles of incidence before and after the glass brick is embedded.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When there is no glass brick, the light travels directly from the top of the hole to the bottom.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The geometry forms a right triangle where the height \\( d \\) is the opposite side and half the diameter \\( L/2 \\) is the adjacent side.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: \\( d = 20\\sqrt{3} \\, \\text{cm} \\), \\( L = 40 \\, \\text{cm} \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The half-diameter \\( \\frac{L}{2} = 20 \\, \\text{cm} \\).",
+    "conclusion": "The angle of incidence \\( \\theta_1 \\) can be found using the tangent function: \\( \\tan(\\theta_1) = \\frac{d}{\\frac{L}{2}} = \\sqrt{3} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence \\( \\theta_1 = \\tan^{-1}(\\sqrt{3}) \\).",
+    "conclusion": "Thus, \\( \\theta_1 = 60^\\circ \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the glass brick is embedded, the light travels through the glass and then exits into the air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the glass \\( n = \\sqrt{3} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law at the interface between the glass and air: \\( n \\sin(\\theta_2) = \\sin(\\theta_3) \\).",
+    "conclusion": "Since \\( \\theta_3 = 60^\\circ \\), \\( \\sqrt{3} \\sin(\\theta_2) = \\frac{\\sqrt{3}}{2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for \\( \\sin(\\theta_2) \\): \\( \\sin(\\theta_2) = \\frac{\\frac{\\sqrt{3}}{2}}{\\sqrt{3}} = \\frac{1}{2} \\).",
+    "conclusion": "Thus, \\( \\theta_2 = \\sin^{-1}\\left(\\frac{1}{2}\\right) = 30^\\circ \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence in the glass is \\( 30^\\circ \\).",
+    "conclusion": "The total angle of incidence in the air is now \\( 2 \\times 30^\\circ = 60^\\circ \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The original angle without the glass was \\( 60^\\circ \\). With the glass, the effective angle is \\( 2 \\times 30^\\circ = 60^\\circ \\).",
+    "conclusion": "The range of light incident on the central point at the bottom of the light-transmitting hole is not increased.",
+    "judgment": "Wrong"
+  }]

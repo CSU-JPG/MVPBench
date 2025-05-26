@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to calculate the electric field at point A due to the charges at the vertices of the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point O is the midpoint of the line connecting the charges 2q and -q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point O is the midpoint of the line connecting the charges 2q and -q.",
+    "conclusion": "The distance from each charge to point O is L√2/2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field due to a point charge q at a distance r is given by: E = kq/r^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = kq/r^2, r = L√2/2",
+    "conclusion": "For the charge 2q: E_{2q} = 4kq/L^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = kq/r^2, r = L√2/2",
+    "conclusion": "For the charge -q: E_{-q} = -2kq/L^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E_{2q} = 4kq/L^2, E_{-q} = -2kq/L^2",
+    "conclusion": "E = 2kq/L^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 2kq/L^2",
+    "conclusion": "Given that this magnitude is E: E = 2kq/L^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A is one of the vertices of the cube.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A is one of the vertices of the cube.",
+    "conclusion": "Point A is located at a distance L√3 from both charges.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = kq/r^2, r = L√3",
+    "conclusion": "The electric field due to the charge 2q at point A: E_{2q} = 2kq/3L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = kq/r^2, r = L√3",
+    "conclusion": "The electric field due to the charge -q at point A: E_{-q} = -kq/3L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E_{2q} = 2kq/3L^2, E_{-q} = -kq/3L^2",
+    "conclusion": "E_A = kq/3L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 2kq/L^2",
+    "conclusion": "kq = EL^2/2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E_A = kq/3L^2, kq = EL^2/2",
+    "conclusion": "E_A = E/6.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

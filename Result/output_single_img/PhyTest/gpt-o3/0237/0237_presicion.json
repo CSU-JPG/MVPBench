@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire consists of two straight, mutually-perpendicular segments.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment ca (length L) carries current I upward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment cd (length 2 L) carries current I to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a straight segment in a uniform magnetic field that is perpendicular to the plane of the wire, the magnitude of the magnetic (Ampère) force is F = I L B sin θ, where θ is the angle between the current direction and the magnetic-field direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The field is perpendicular to the plane of the wire, so θ = 90° and sin θ = 1 for both segments.",
+    "conclusion": "Force on ca: F₁ = I (L) B = IBL",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The field is perpendicular to the plane of the wire, so θ = 90° and sin θ = 1 for both segments.",
+    "conclusion": "Force on cd: F₂ = I (2 L) B = 2 IBL",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two forces act at right angles to one another (because the currents in the two segments are at right angles).",
+    "conclusion": "The resultant magnitude is F = √(F₁² + F₂²)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = √(F₁² + F₂²)",
+    "conclusion": "F = √[(IBL)² + (2 IBL)²]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = √[(IBL)² + (2 IBL)²]",
+    "conclusion": "F = IBL √(1 + 4)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = IBL √(1 + 4)",
+    "conclusion": "F = IBL √5",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the total Ampère force on the bent wire is F = I B L √5.",
+    "conclusion": "The magnitude of the Ampere force acting on the current-carrying wire is F = BIL' = √5 BIL.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

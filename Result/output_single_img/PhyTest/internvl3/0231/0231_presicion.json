@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude and direction of the resultant Ampere force acting on the trapezoidal frame, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "AB = L, BC = L, CD = L, AD = 2L (since AB and CD form 60° angles with AD, and AB = BC = CD = L)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Resistance R of a segment is given by R = ρL/S, where ρ is the resistivity, L is the length, and S is the cross-sectional area.",
+    "conclusion": "Each segment AB, BC, CD, and AD has resistance R = ρL/S.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The segments AB, BC, and CD are in series, and AD is in parallel with the combination of AB, BC, and CD.",
+    "conclusion": "Series resistance: R_series = 3R = 3ρL/S.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Parallel resistance: 1/R_total = 1/R_series + 1/R_AD = 1/(3ρL/S) + 1/(ρ2L/S).",
+    "conclusion": "Simplify: 1/R_total = S/(3ρL) + S/(2ρL) = 5S/(6ρL). Therefore, R_total = 6ρL/(5S).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's Law: I = E/R_total.",
+    "conclusion": "I = E/(6ρL/(5S)) = 5SE/(6ρL).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The force on a current-carrying wire in a magnetic field is given by F = ILB sin θ, where θ is the angle between the current and the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For AB and CD, θ = 60°, so sin 60° = √3/2. For BC and AD, θ = 90°, so sin 90° = 1.",
+    "conclusion": "F_AB = F_CD = ILB√3/2 = (5SE/(6ρL))LB√3/2 = 5SEB√3/(12ρ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For BC, θ = 90°, so sin 90° = 1.",
+    "conclusion": "F_BC = ILB = (5SE/(6ρL))LB = 5SEB/(6ρ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For AD, θ = 90°, so sin 90° = 1.",
+    "conclusion": "F_AD = I2LB = (5SE/(6ρL))2LB = 5SEB/(3ρ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_AB and F_CD have horizontal components due to the 60° angle. F_BC is vertical. F_AD is horizontal.",
+    "conclusion": "F_AB,x = F_CD,x = 5SEB√3/(12ρ) cos 60° = 5SEB√3/(24ρ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total horizontal force: F_total,x = 2(5SEB√3/(24ρ)) + 5SEB/(3ρ).",
+    "conclusion": "F_total,x = 5SEB√3/(12ρ) + 5SEB/(3ρ).",
+    "judgment": "Match"
+  }]

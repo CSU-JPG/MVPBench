@@ -1,0 +1,82 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ion implantation involves ions accelerated through a velocity selector, magnetic analyzer, and deflection system before implantation into a wafer.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The velocity selector uses crossed electric and magnetic fields to select particles with a specific velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Electric force in the velocity selector is given by $F_E = qE$ (upward).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic force in the velocity selector is given by $F_B = qvB$ (downward).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electric force $F_E = qE$ and magnetic force $F_B = qvB$ must balance for ions to pass straight through.",
+    "conclusion": "$qE = qvB$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$qE = qvB$",
+    "conclusion": "Solving for velocity: $v = \\frac{E}{B}$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the magnetic analyzer, ions experience a magnetic force causing them to move in a circular path.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic force $F = qvB = \\frac{mv^2}{R}$",
+    "conclusion": "Solving for the charge-to-mass ratio: $\\frac{q}{m} = \\frac{v}{BR}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting $v = \\frac{E}{B}$ into $\\frac{q}{m} = \\frac{v}{BR}$",
+    "conclusion": "$\\frac{q}{m} = \\frac{E}{B^2R}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For ions to pass through the magnetic analyzer from aperture M to aperture N, their circular path radius must be between $R_1$ and $R_2$.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius of the circular motion of ions is $R = \\frac{R_1 + R_2}{2}$.",
+    "conclusion": "The charge-to-mass ratio of selected ions is $\\frac{q}{m} = \\frac{2E}{(R_1+R_2)B^2}$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the velocity of ions after passing through the velocity selector is $v = \\frac{E}{B}$.",
+    "conclusion": "Final answer: $v = \\frac{E}{B}$",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge-to-mass ratio of the ions selected by the magnetic analyzer is $\\frac{q}{m} = \\frac{2E}{(R_1+R_2)B^2}$.",
+    "conclusion": "Final answer: $\\frac{q}{m} = \\frac{2E}{(R_1+R_2)B^2}$",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "P is moving horizontally with an initial velocity v_{0} = \\frac{m g}{q B}.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Q is moving horizontally with a velocity v_{0}.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision is elastic, meaning there is no mechanical energy loss and no transfer of charge occurs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision is head-on, so the velocities of P and Q are equal after the collision.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Before the collision, the total momentum of P and Q is P_{total} = P_{P} + P_{Q}. After the collision, the total momentum of P and Q is P_{total}' = P_{P}' + P_{Q}'.",
+    "conclusion": "Since the collision is elastic, the total momentum is conserved, so P_{total} = P_{total}'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The kinetic energy of P before the collision is K_{P} = \\frac{1}{2} m v_{0}^2. The kinetic energy of Q before the collision is K_{Q} = \\frac{1}{2} m v_{0}^2.",
+    "conclusion": "Since the collision is elastic, the total kinetic energy is conserved, so K_{P} + K_{Q} = K_{P}' + K_{Q}'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the conservation of momentum, we have P_{P} + P_{Q} = P_{P}' + P_{Q}'. From the conservation of energy, we have K_{P} + K_{Q} = K_{P}' + K_{Q}'.",
+    "conclusion": "We can use these equations to solve for v_{P}' and v_{Q}'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_{P} = P_{P}' = \\frac{m v_{0}}{2}. P_{Q} = P_{Q}' = \\frac{m v_{0}}{2}.",
+    "conclusion": "Substituting the initial conditions into the equations.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the conservation of momentum, we have \\frac{m v_{0}}{2} + \\frac{m v_{0}}{2} = \\frac{M + m}{2} v_{P}'^2 + \\frac{m v_{0}}{2}.",
+    "conclusion": "Simplifying, we get \\frac{m v_{0}}{2} = \\frac{M + m}{2} v_{P}'^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for v_{P}'^2, we get v_{P}'^2 = \\frac{M + m}{M} \\cdot \\frac{v_{0}}{2}.",
+    "conclusion": "From the conservation of energy, we have \\frac{1}{2} m v_{0}^2 + \\frac{1}{2} m v_{0}^2 = \\frac{M + m}{2} v_{P}'^2 + \\frac{1}{2} m v_{0}^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying, we get \\frac{1}{2} m v_{0}^2 = \\frac{M + m}{2} v_{P}'^2 + \\frac{1}{2} m v_{0}^2.",
+    "conclusion": "Solving for v_{P}'^2, we get v_{P}'^2 = \\frac{M + m}{M} \\cdot \\frac{v_{0}}{2}"}]

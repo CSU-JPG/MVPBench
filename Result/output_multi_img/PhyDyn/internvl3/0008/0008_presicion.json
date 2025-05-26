@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, C and D. Predict which container (E, F or G) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid from A (Green) flows directly downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A (Green) flows directly downward.",
+    "conclusion": "Liquid from A hits the brown baffle and is deflected towards the left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A hits the brown baffle and is deflected towards the left.",
+    "conclusion": "Liquid from A ends up in Container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid from B (Pink) flows directly downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from B (Pink) flows directly downward.",
+    "conclusion": "Liquid from B hits the purple baffle and is directed towards the center.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from B hits the purple baffle and is directed towards the center.",
+    "conclusion": "Liquid from B ends up in Container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid from C (Yellow) flows directly downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from C (Yellow) flows directly downward.",
+    "conclusion": "Liquid from C hits the yellow-orange baffle and is directed towards the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from C hits the yellow-orange baffle and is directed towards the right.",
+    "conclusion": "Liquid from C ends up in Container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Liquid from D (Blue) flows directly downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from D (Blue) flows directly downward.",
+    "conclusion": "Liquid from D hits the blue baffle and is directed towards the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from D hits the blue baffle and is directed towards the right.",
+    "conclusion": "Liquid from D ends up in Container G.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A ends up in Container E; Liquid from B ends up in Container F; Liquid from C ends up in Container F; Liquid from D ends up in Container G.",
+    "conclusion": "Container E receives liquid from A (Green); Container F receives liquids from B (Pink) and C (Yellow); Container G receives liquid from D (Blue).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Container E receives liquid from A (Green); Container F receives liquids from B (Pink) and C (Yellow); Container G receives liquid from D (Blue).",
+    "conclusion": "Most mixture of A, B, C and D end in container F; a thin stream of mixture from A, B and C ends in container E; no stream ends in container G.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

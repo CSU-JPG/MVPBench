@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the forces acting on the hemispheres A and B and use the conditions for equilibrium and friction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the forces acting on each hemisphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For hemisphere A: Weight of A: W_A = mg, Normal force from the wall: N_A, Frictional force from the wall: f_A, Normal force from hemisphere B: N_{AB}, Component of the normal force from B: N_{AB} cos(30°), Component of the weight of B: (2mg) sin(30°) = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of the forces must balance.",
+    "conclusion": "N_{AB} sin(30°) = mg, N_{AB} = 2mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal component of the forces must balance.",
+    "conclusion": "N_{AB} cos(30°) = f_A, f_A = N_{AB} cos(30°) = 2mg * sqrt(3)/2 = sqrt(3)mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the maximum static friction force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum static friction force is given by f_max = μ_s N_A.",
+    "conclusion": "Since the hemispheres are just not sliding, the frictional force f_A is equal to the maximum static friction force: f_A = μ_s N_A, sqrt(3)mg = μ_s N_A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the normal force N_A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force N_A is the sum of the vertical components of the forces acting on A.",
+    "conclusion": "N_A = N_{AB} cos(30°) + mg sin(30°) = 2mg * sqrt(3)/2 + mg * 1/2 = sqrt(3)mg + 1/2mg = (sqrt(3) + 1/2)mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Solve for the friction coefficient μ_s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sqrt(3)mg = μ_s (sqrt(3) + 1/2)mg.",
+    "conclusion": "sqrt(3) = μ_s (sqrt(3) + 1/2), μ_s = sqrt(3)/(sqrt(3) + 1/2) = 2sqrt(3)/(2sqrt(3) + 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for μ_s.",
+    "conclusion": "μ_s = 2sqrt(3)/(2sqrt(3) + 1).",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

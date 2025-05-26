@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "As shown in the figure, within the square region abcd with side length 2L (including the boundary), there exists a uniform magnetic field with magnetic induction strength B, directed perpendicularly into the plane of the paper.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Between the parallel metal plates MN and PQ, there is a uniform electric field (not shown in the figure). MN coincides with the left half of side ad, and the left ends M and P of the two plates lie on side ab. The length of the metal plates and the distance between them are both L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A negatively charged particle with mass m and charge q is injected along the central line SO of the two metal plates, moving in a straight line, and finally just fails to exit the magnetic field from side cd. The gravitational force on the particle is neglected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Find the magnitude of the velocity of the particle when it is shot into point S; do not add any other content.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a square region labeled abcd with a uniform magnetic field entering the plane at a 90-degree angle. Inside the square, there are parallel metal plates MN and PQ, with the electric field not shown. A negatively charged particle is injected along the central line SO and moves in a straight line. The particle just fails to exit the magnetic field at side cd.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle is negatively charged with mass m and charge q. It is shot into point S and moves along the central line SO.",
+    "conclusion": "The particle's motion is influenced by both the electric and magnetic forces. The magnetic force (F_B) is perpendicular to both the velocity of the particle and the magnetic field.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the particle just fails to exit the magnetic field at cd, the magnetic force must balance the electric force (F_E) when the particle is at C.",
+    "conclusion": "The magnetic force is given by F_B = qvB, where v is the velocity of the particle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle travels from S to C in time t. The distance SC is equal to the side length of the square, which is 2L.",
+    "conclusion": "The equation of motion under the magnetic force is qvBt = m(v - v₀), where v₀ is the initial velocity.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the particle just fails to exit, v = 0 when the particle is at C. Thus, qvBt = m(v - v₀).",
+    "conclusion": "Solving for v₀ gives v₀ = qBt/m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute t = 2L/v₀ into the equation: qB(2L/v₀) = m(v₀ - v₀).",
+    "conclusion": "Solve the equation to find v₀ = √(2qLB/m).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle is emitted from between the two plates and enters the magnetic field, where it undergoes uniform circular motion under the influence of the Lorentz force alone.",
+    "conclusion": "According to the left-hand rule, the particle deflects clockwise. The particle just fails to exit the magnetic field from the cd edge, meaning its circular trajectory is tangent to the cd edge.",
+    "judgment": "Match"
+  }

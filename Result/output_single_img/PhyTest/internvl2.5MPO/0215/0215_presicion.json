@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the flow rate Q of the liquid in the pipe using the electromagnetic flowmeter, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The EMF E generated between points M and N is due to the motion of the conductive liquid through the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's Law of Electromagnetic Induction, the EMF E is given by: E = B * v * d where B is the magnetic induction intensity, v is the velocity of the liquid, and d is the diameter of the pipe.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = B * v * d",
+    "conclusion": "v = E / (B * d)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The flow rate Q is the volume of liquid flowing through the cross-section of the pipe per unit time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The volume flow rate Q is given by: Q = v * A where A is the cross-sectional area of the pipe.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cross-sectional area A of the pipe is: A = π * (d/2)^2 = π * d^2 / 4",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = E / (B * d) and A = π * d^2 / 4",
+    "conclusion": "Q = (E / (B * d)) * (π * d^2 / 4)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q = (E / (B * d)) * (π * d^2 / 4)",
+    "conclusion": "Q = π * E * d / (4 * B)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

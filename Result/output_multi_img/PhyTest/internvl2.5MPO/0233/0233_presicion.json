@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire frame is a single-turn square with a side length of 0.2 m. The total resistance of the wire frame is 4 Ω. Half of the wire frame is in a magnetic field, which varies with time according to B = (3 + 2t) T. The frame remains stationary from t = 0 to t = 5 seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area A is 0.2 × 0.2 = 0.04 m².",
+    "conclusion": "Magnetic flux Φ through the wire frame is given by Φ = B · A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ = B · 0.04.",
+    "conclusion": "Induced EMF 𝓔 is given by 𝓔 = -dΦ/dt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ/dt = 0.04 · dB/dt. Given B = 3 + 2t, dB/dt = 2 T/s.",
+    "conclusion": "dΦ/dt = 0.04 × 2 = 0.08 V.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "𝓔 = 0.08 V and R = 4 Ω.",
+    "conclusion": "The current I induced in the wire frame is given by Ohm's Law: I = 𝓔/R = 0.02 A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 0.02 A, L = 0.2 m.",
+    "conclusion": "The force on a current-carrying conductor in a magnetic field is given by F = I · L · B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B = 3 + 2t = 3 + 2 × 2.5 = 8 T.",
+    "conclusion": "Magnetic induction at t = 2.5 s is 8 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 0.02 × 0.2 × 8.",
+    "conclusion": "F = 0.032 N.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Lenz's Law, the induced current will generate a magnetic field opposing the change in the original magnetic field.",
+    "conclusion": "The direction of the frictional force is such that it opposes the motion that would be induced by the magnetic force, which acts to the left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is at rest, so the magnitude of the frictional force is 0.016 N. According to Lenz's law, the Ampere force on the wire frame is to the left, so the frictional force is to the right.",
+    "conclusion": "The magnitude of the frictional force acting on the wire frame at t = 2.5 seconds is 0.016 N, and its direction is horizontally to the right.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Negatively charged particles with charge -α and mass m enter the collector. Two parallel plates of length L are separated by distance d. The bottom plate is positively charged, the top plate is negatively charged. The voltage between plates is U₁. Particles enter with horizontal velocity v₀. An electric field E points upward between the plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field between two parallel plates is uniform.",
+    "conclusion": "E = U₁/d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force on a charged particle is F = qE.",
+    "conclusion": "F = -α(U₁/d)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Newton's second law: F = ma.",
+    "conclusion": "a = -(αU₁)/(md)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal motion is constant at velocity v₀, and the vertical motion has constant acceleration.",
+    "conclusion": "The time to travel horizontally across the plates: t = L/v₀",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During this time, the vertical displacement must equal d.",
+    "conclusion": "d = (1/2)(-(αU₁)/(md))(L/v₀)²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation: d = (1/2)(-(αU₁)/(md))(L/v₀)²",
+    "conclusion": "-αU₁L² = 2md²v₀²",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-αU₁L² = 2md²v₀²",
+    "conclusion": "U₁ = -(2md²v₀²)/(αL²)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since U₁ is a voltage, it must be positive.",
+    "conclusion": "U₁ = (2md²v₀²)/(αL²)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the refractive index of the glass brick using Snell's law and geometric relationships.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Light enters glass brick at point A, travels to B, refracts at B.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Angle of incidence at B is 45 degrees since triangle SMN is isosceles right and B is midpoint of MN.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using Snell's law at B: sin 45 degrees = n_glass * sin alpha.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since n_air = 1, sin 45 degrees = n_glass * sin alpha, thus sqrt(2)/2 = n_glass * sin alpha.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Light travels from B to O, then refracts at O to reach C.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Distance BO = R/4, OC = 3R/4.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Angle of incidence at O is alpha, angle of refraction is beta.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using Snell's law at O: n_glass * sin alpha = n_hemisphere * sin beta.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Refractive index of hemisphere is sqrt(2410)/30.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "n_glass * sin alpha = sqrt(2410)/30 * sin beta.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Light travels from C to D, refracting at curved surface of hemisphere.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Angle of incidence at D is beta, angle of refraction is gamma (into air).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using Snell's law at D: n_hemisphere * sin beta = n_air * sin gamma.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since n_air = 1, sqrt(2410)/30 * sin beta = sin gamma.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From Step 1: sin alpha = sqrt(2)/2 / n_glass.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From Step 2: n_glass * sin alpha = sqrt(2410)/30 * sin beta.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute sin alpha from Step 1: n_glass * (sqrt(2)/2 / n_glass) = sqrt(2410)/30 * sin beta.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "sqrt(2)/2 = sqrt(2410)/30 * sin beta.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solve for sin beta: sin beta = (15sqrt(2))/sqrt(2410).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From Step 3: sqrt(2410)/30 * sin beta = sin gamma.",
+    "relevant": "Yes"
+  }]

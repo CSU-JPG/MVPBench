@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cube has a side length a and a refractive index n = 1.5. A bubble is located at the center of the cube. We need to determine the minimum area of paper required such that the bubble is not visible from any external direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the bubble to be invisible from an external direction, the light ray entering the cube should either reflect off the surface or refract out of the paper.",
+    "conclusion": "The critical angle for total internal reflection (TIR) occurs when the angle of incidence is equal to the critical angle θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc is given by sin(θc) = 1/n = 1/1.5 = 2/3.",
+    "conclusion": "θc = arcsin(2/3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum angle from which the bubble can still be seen is determined by the critical angle. This angle subtends an arc of a/2 from the center of the cube.",
+    "conclusion": "The critical angle θc corresponds to an arc length a/2 in a circle with radius r, where r = a/√2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc forms a sector of a circle with radius r = a/√2.",
+    "conclusion": "The area of this sector is given by: Area of sector = πr² · θc/2π = π(a/√2)² · arcsin(2/3)/2 = πa²/2 · arcsin(2/3)/2 = πa²arcsin(2/3)/4.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculating the area of each paper piece using the derived formula.",
+    "conclusion": "Final Answer: πa²arcsin(2/3)/4",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

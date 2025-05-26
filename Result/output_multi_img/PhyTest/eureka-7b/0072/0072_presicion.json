@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A radar emits radio waves into the distance, with each emission lasting 1 μs and the interval between two emissions being 100 μs. The sharp waves displayed on the indicator's fluorescent screen are as shown in the figure. It is known that ab = bc in the figure, and the speed of light in a vacuum is c = 3.0 × 10^8 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The figure shows three sharp waves on the fluorescent screen, with the distances labeled as a, b, and c. It is given that ab = bc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The duration of each emission is 1 μs, and the interval between two emissions is 100 μs.",
+    "conclusion": "The time for the wave to travel to the obstacle and back is 1 μs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The speed of light is c = 3.0 × 10^8 m/s, and the time for the wave to travel to the obstacle and back is 1 μs.",
+    "conclusion": "The total distance traveled by the wave in 1 μs is d = c × 1 μs = 3.0 × 10^8 m/s × 1 × 10^-6 s = 300 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance traveled by the wave in 1 μs is 300 m, and the wave travels to the obstacle and back.",
+    "conclusion": "The distance to the obstacle is half of the total distance traveled, d_obstacle = 300 m / 2 = 150 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The figure shows that ab = bc.",
+    "conclusion": "The distances a and c are equal in the context of the wave travel times. This relationship does not affect the calculation of the distance to the obstacle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance to the obstacle is calculated as 150 m.",
+    "conclusion": "The distance between the obstacle and the radar is 150 m.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

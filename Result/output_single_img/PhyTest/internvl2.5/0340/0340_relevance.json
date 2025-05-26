@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "To determine the heat exchanged, analyze each segment of the cycle and apply the first law of thermodynamics.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "First law of thermodynamics: ΔU = Q - W.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For an ideal gas, change in internal energy depends only on temperature change.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since the cycle is cyclic, ΔU = 0, so Q = W.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Process AB is an isothermal expansion.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For isothermal expansion, W_AB = nRT_0 ln(V2/V1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Q_AB = W_AB = nRT_0 ln(V2/V1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Process BC is an isobaric expansion.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For isobaric expansion, W_BC = P2(V2 - V1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Q_BC = nC_p ΔT = C_p P2(V2 - V1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Process CD is an isothermal compression.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For isothermal compression, W_CD = -nRT_0 ln(V2/V1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Q_CD = W_CD = -nRT_0 ln(V2/V1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Process DA is an isobaric compression.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For isobaric compression, W_DA = -P1(V1 - V2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Q_DA = nC_p ΔT = C_p P1(V1 - V2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Sum of heat exchanged: Q_total = Q_AB + Q_BC + Q_CD + Q_DA.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute values: Q_total = C_p(P2 - P1)(V2 - V1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final conclusion: Q_total = C_p(P2 - P1)(V2 - V1).",
+    "relevant": "Yes"
+  }
+]

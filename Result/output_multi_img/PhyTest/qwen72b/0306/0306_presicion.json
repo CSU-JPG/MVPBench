@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We are given the p-V diagram showing states A, B, and C. The temperature of the gas at state C (Tc) is 300 K. Use the ideal gas law: \\( pV = nRT \\), where \\( n \\) is the number of moles, \\( R \\) is the universal gas constant, and \\( T \\) is the temperature. Since the amount of gas (n) and the gas constant (R) remain the same for states A, B, and C, we can use the relationship \\( \\frac{p_1 V_1}{T_1} = \\frac{p_2 V_2}{T_2} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state C: Pressure \\( p_C = 5 \\times 10^5 \\) Pa, Volume \\( V_C = 2 \\times 10^{-3} \\) m³. At state B: Pressure \\( p_B = 2 \\times 10^5 \\) Pa, Volume \\( V_B = 5 \\times 10^{-3} \\) m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the equation: \\( \\frac{p_B V_B}{T_B} = \\frac{p_C V_C}{T_C} \\). Substitute the values for states B and C.",
+    "conclusion": "\\( \\frac{(2 \\times 10^5 \\text{ Pa}) \\cdot (5 \\times 10^{-3} \\text{ m}^3)}{T_B} = \\frac{(5 \\times 10^5 \\text{ Pa}) \\cdot (2 \\times 10^{-3} \\text{ m}^3)}{300 \\text{ K}} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify both sides of the equation: \\( \\frac{10 \\times 10^2 \\text{ Pa·m}^3}{T_B} = \\frac{10 \\times 10^2 \\text{ Pa·m}^3}{300 \\text{ K}} \\)",
+    "conclusion": "\\( \\frac{1000 \\text{ Pa·m}^3}{T_B} = \\frac{1000 \\text{ Pa·m}^3}{300 \\text{ K}} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the numerator is the same on both sides, equate the denominators.",
+    "conclusion": "T_B = 300 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two hemispheres A (mass m) and B (mass 2m) are between vertical walls. Hemisphere B is against a smooth wall (no friction). Hemisphere A has friction with the left wall. The line connecting their centers makes a 30° angle with the horizontal. We need to find the dynamic friction coefficient between hemisphere A and the wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Between the vertical walls are hemispheres A and B with masses m and 2m respectively. The line between the two ball centers and the horizontal direction into A is at a 30° angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Hemisphere B is smooth and there is friction between hemisphere A and the left wall.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Forces on hemisphere A: Weight: mg (downward), Normal force from the wall: N₁ (horizontal, to the right), Friction force from the wall: f (upward), Contact force from hemisphere B: F_AB (at 30° above horizontal).",
+    "conclusion": "For hemisphere A: Horizontal equilibrium: N₁ = F_AB·cos(30°), Vertical equilibrium: f = mg - F_AB·sin(30°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Forces on hemisphere B: Weight: 2mg (downward), Normal force from the wall: N₂ (horizontal, to the left), Contact force from hemisphere A: F_BA (at 30° below horizontal).",
+    "conclusion": "For hemisphere B: Horizontal equilibrium: N₂ = F_BA·cos(30°), Vertical equilibrium: 2mg = F_BA·sin(30°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By Newton's Third Law: F_AB = F_BA.",
+    "conclusion": "F_AB = F_BA.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From hemisphere B's vertical equilibrium: F_BA·sin(30°) = 2mg.",
+    "conclusion": "F_BA = 4mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_AB = F_BA.",
+    "conclusion": "F_AB = 4mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N₁ = F_AB·cos(30°) = 4mg·cos(30°).",
+    "conclusion": "N₁ = 2√3·mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "f = mg - F_AB·sin(30°) = mg - 4mg·sin(30°).",
+    "conclusion": "f = -mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the friction force is |f| = mg.",
+    "conclusion": "The magnitude of the friction force is |f| = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "μ·N₁ = |f|.",
+    "conclusion": "μ = |f|/N₁ = mg/(2√3·mg) = 1/(2√3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "μ = 1/(2√3).",
+    "conclusion": "μ = √3/6.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

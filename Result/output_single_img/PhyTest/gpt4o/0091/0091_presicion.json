@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Object A is at a height of h = 1 m. Object B is at the bottom of the inclined plane. Both objects have a mass m = 1 kg. The inclined plane angle is θ = 37°. The system is released from rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Object A is suspended at a height of 1 meter above the ground. Object B is positioned at the bottom of the inclined plane.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A is at a height of h = 1 m. Object B is at the bottom of the inclined plane. Both objects have a mass m = 1 kg.",
+    "conclusion": "The only force acting on A is gravity, F_A = mg = 1 × 10 = 10 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object B is at the bottom of the inclined plane. The inclined plane angle is θ = 37°.",
+    "conclusion": "The gravitational force component along the incline is F_{B,parallel} = mg sin θ = 10 sin 37°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 37° = 0.6",
+    "conclusion": "F_{B,parallel} = 10 × 0.6 = 6 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_A = 10 N. F_{B,parallel} = 6 N.",
+    "conclusion": "The net force on the system is F_{net} = F_A - F_{B,parallel} = 10 - 6 = 4 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total mass of the system is 2 kg.",
+    "conclusion": "The acceleration a of the system is given by a = F_{net}/m_{total} = 4/2 = 2 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = 1 m. a = 2 m/s².",
+    "conclusion": "Using the equation of motion h = 1/2 a t², we solve for t: 1 = 1/2 × 2 × t² implies t² = 1 implies t = 1 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = 1 s.",
+    "conclusion": "It takes 1 second for A to hit the ground.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a = 2 m/s². t = 1 s.",
+    "conclusion": "Using v = at, Object B has a velocity of v = 2 × 1 = 2 m/s up the incline when A hits the ground.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the string breaks, B is only under the influence of gravity along the incline.",
+    "conclusion": "The acceleration of B down the incline is a_B = g sin θ = 10 × 0.6 = 6 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_i = 2 m/s. a_B = 6 m/s².",
+    "conclusion": "Find the time t_1 for B to stop: v_f = v_i - a_B t_1 implies 0 = 2 - 6 t_1 implies t_1 = 2/6 = 1/3 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t_1 = 1/3 s.",
+    "conclusion": "B stops after 1/3 s.",
+    "judgment": "Match"
+  }

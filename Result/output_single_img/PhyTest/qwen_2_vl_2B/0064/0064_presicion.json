@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a circular wooden board with a radius r, stationary on the surface of a liquid. Directly below the center o of the board at a depth of H = √3r, there is a point light source S. The refractive index of the liquid is n = √2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The task is to determine how much distance the point source S should be moved vertically upward so that the light emitted from S is just not visible above the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance H is given as √3r.",
+    "conclusion": "The distance from the center of the circular board to the point source S is √3r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the liquid is n = √2.",
+    "conclusion": "The angle of incidence θ can be calculated using the formula: sin(θ) = sin(θ_refracted)/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence θ can be calculated using the formula: sin(θ) = sin(θ_refracted)/n.",
+    "conclusion": "The angle of incidence θ can be found using the tangent function: tan(θ) = sin(θ_refracted)/√2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ) = sin(θ_refracted)/√2.",
+    "conclusion": "θ = arctan(sin(θ_refracted)/√2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted angle θ_refracted is √3 times the angle of incidence θ.",
+    "conclusion": "θ_refracted = √3θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ_refracted = √3θ.",
+    "conclusion": "sin(θ_refracted) = √3sin(θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ_refracted) = √3sin(θ).",
+    "conclusion": "sin(θ_refracted) = √3tan(θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ_refracted) = √3tan(θ).",
+    "conclusion": "sin(θ_refracted) = √3arctan(sin(θ)/√2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance H is given as √3r.",
+    "conclusion": "The vertical distance from the center of the circular board to the point source S is √3r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light emitted from S is just not visible above the water surface.",
+    "conclusion": "The point source S should be moved upward so that the light is not refracted back into the liquid, meaning the angle of incidence θ at the point source S should be 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence θ at the point source S should be 90°.",
+    "conclusion": "The vertical distance H that the point source S should be moved upward is r.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

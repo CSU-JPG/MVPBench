@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two particles, A and B, start from rest at the same point and move in the same direction. Their velocities over time are plotted in a graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph is a velocity-time graph with time (t) on the x-axis and velocity (v) on the y-axis. There are two lines, one for particle A and one for particle B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle A starts from rest, its velocity increases to 2v₀ at t=t₀, decreases to zero at t=2t₀, and becomes negative, reaching -v₀ at t=3t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle B starts from rest, reaches a velocity of v₀ at t=3t₀, maintains v₀ until t=5t₀, and decreases to zero at t=6t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between the particles is the difference in their positions, s(t) = s_A(t) - s_B(t).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between them at any time t is s(t) = s_A(t) - s_B(t).",
+    "conclusion": "To find when they are farthest apart, find the maximum value of s(t), which occurs when ds/dt = 0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ds/dt = v_A - v_B.",
+    "conclusion": "To find when s(t) is maximum, find when v_A - v_B = 0, meaning their velocities are equal.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows that v_A and v_B intersect at some point.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relative distance is the integral of (v_A - v_B) dt from t=0 to t.",
+    "conclusion": "s(t) = ∫(v_A - v_B) dt from 0 to t.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the maximum of s(t), take its derivative and set it to zero: ds/dt = v_A - v_B = 0.",
+    "conclusion": "Find when v_A = v_B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The intersection of v_A and v_B occurs around t=2t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph shows the intersection of v_A and v_B.",
+    "conclusion": "The farthest distance occurs at the red dot between 2t₀ and 3t₀.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

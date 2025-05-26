@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a semi-cylindrical transparent body with a refractive index n=2, radius R, and length L. Parallel light beams enter vertically through the rectangular surface, and some light exits through the curved surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semi-cylinder has a flat rectangular surface and a curved semi-circular surface. Light enters through the rectangular surface perpendicular to it.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light enters perpendicular to the rectangular surface, so the angle of incidence is 0 degrees.",
+    "conclusion": "There's no refraction at the rectangular surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refractive index n=2 is higher than air (n≈1).",
+    "conclusion": "Total internal reflection could occur if the angle of incidence at the curved surface is greater than the critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given n=2, using Snell's law: sin θ_c = 1/n = 1/2.",
+    "conclusion": "The critical angle θ_c = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Some light exits through the curved surface.",
+    "conclusion": "At some points, the angle of incidence is less than or equal to 30 degrees, allowing refraction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Need to find the area of the curved surface where the angle of incidence is less than or equal to 30 degrees.",
+    "conclusion": "This is where the light can exit.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A vertical cross-section of the semi-cylinder shows a semi-circle with center O and endpoints O' and B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Light rays enter perpendicular to the rectangular surface, parallel to each other and perpendicular to the flat surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rays are parallel to the axis of the cylinder.",
+    "conclusion": "They travel in straight lines inside the semi-cylinder.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rays hit the curved surface at some angle θ relative to the normal.",
+    "conclusion": "Need to relate θ to the geometry of the semi-cylinder.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Normal to the curved surface at any point is along the radius of the semi-circle.",
+    "conclusion": "The angle between the normal and the ray at point B is θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For refraction to occur, sin θ ≤ 1/n, which is sin θ ≤ 0.5.",
+    "conclusion": "θ must be less than or equal to 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle θ is related to the geometry of the semi-cylinder.",
+    "conclusion": "The illuminated area S is given by S = 2RθL.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 30 degrees.",
+    "conclusion": "S = 2R(π/6)L = (π/3)RL.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

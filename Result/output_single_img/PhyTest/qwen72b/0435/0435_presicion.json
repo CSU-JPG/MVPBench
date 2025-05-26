@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the tank material is \\( n = \\sqrt{3} \\). The largest visible external angle for people inside the tank is \\( 120^\\circ \\). We need to find the distance \\( AB \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the tank material is \\( n = \\sqrt{3} \\).",
+    "conclusion": "The critical angle \\( \\theta_c \\) for total internal reflection is given by \\( \\sin \\theta_c = \\frac{1}{n} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting \\( n = \\sqrt{3} \\) into \\( \\sin \\theta_c = \\frac{1}{n} \\).",
+    "conclusion": "The critical angle \\( \\theta_c \\) is \\( \\theta_c = \\arcsin \\left( \\frac{\\sqrt{3}}{3} \\right) \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The largest visible external angle is \\( 120^\\circ \\). This means the light rays entering the tank from the outside must be within \\( 60^\\circ \\) (half of \\( 120^\\circ \\)) from the normal on either side.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light ray to enter the tank, it must be incident at an angle less than or equal to the critical angle \\( \\theta_c \\).",
+    "conclusion": "The angle of incidence at \\( D \\) is \\( \\theta_i = 60^\\circ \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: \\( n \\sin \\theta_i = \\sin \\theta_r \\) and \\( \\theta_i = 60^\\circ \\).",
+    "conclusion": "Substituting gives \\( \\sqrt{3} \\cdot \\frac{\\sqrt{3}}{2} = \\sin \\theta_r \\), leading to \\( \\sin \\theta_r = \\frac{3}{2} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The calculation shows \\( \\sin \\theta_r = \\frac{3}{2} \\), which is not possible.",
+    "conclusion": "This indicates that the light ray will undergo total internal reflection.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height of the tank is 18 cm and the angle of incidence is \\( 60^\\circ \\).",
+    "conclusion": "The distance \\( AB = 2 \\times 18 \\tan 60^\\circ = 36 \\sqrt{3} \\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

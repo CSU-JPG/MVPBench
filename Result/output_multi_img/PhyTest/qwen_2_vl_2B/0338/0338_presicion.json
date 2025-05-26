@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To determine the temperature of state D, we need to analyze the given cycle and the properties of the ideal gas.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The cycle is ABCDA, as shown in the figure.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The cycle is ABCDA, as shown in the figure.",
+    "conclusion": "States A and D are at the same pressure, \\(P_1\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "State A has \\(P_A = P_1\\) and \\(V_A = V_1\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "State D has \\(P_D = P_1\\) and \\(V_D = V_2\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The ideal gas law is \\(PV = nRT\\), where \\(P\\) is pressure, \\(V\\) is volume, \\(n\\) is the number of moles, \\(R\\) is the gas constant, and \\(T\\) is temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ideal gas law is \\(PV = nRT\\).",
+    "conclusion": "The temperature at any state can be calculated using \\(T = \\frac{PV}{nR}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A has \\(P_A = P_1\\), \\(V_A = V_1\\), and \\(T_A = T_0\\).",
+    "conclusion": "Using the ideal gas law, \\(T_A = \\frac{P_A V_A}{nR}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State D has \\(P_D = P_1\\) and \\(V_D = V_2\\).",
+    "conclusion": "Using the ideal gas law, \\(T_D = \\frac{P_D V_D}{nR}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A has \\(P_A = P_1\\), \\(V_A = V_1\\), and \\(T_A = T_0\\). State D has \\(P_D = P_1\\) and \\(V_D = V_2\\).",
+    "conclusion": "From the ideal gas law, \\(\\frac{P_A V_A}{T_A} = \\frac{P_D V_D}{T_D}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\frac{P_A V_A}{T_A} = \\frac{P_D V_D}{T_D}\\), \\(P_A = P_D = P_1\\), \\(V_A = V_1\\), \\(V_D = V_2\\), and \\(T_A = T_0\\).",
+    "conclusion": "Solving for \\(T_D\\), we get \\(T_D = \\frac{P_1 V_2}{P_1 V_1} T_0\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

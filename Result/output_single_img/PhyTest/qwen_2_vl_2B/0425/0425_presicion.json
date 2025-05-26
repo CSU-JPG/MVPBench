@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The vertex angle of the isosceles prism is $heta = 30^\\circ$, the side length of the AB side is $L$, the light DO hits the midpoint O of the AB side, the incident angle $i = 45^\\circ$, the propagation speed of light in vacuum is $C$, and the propagation time of light in the prism is what we need to find.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light DO hits the midpoint O of the AB side.",
+    "conclusion": "The length of DO is equal to the length of AB, therefore $DO = L$.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle $heta$ is the vertex angle of the isosceles prism and the incident angle $i = 45^\\circ$.",
+    "conclusion": "The angle $OAB$ is equal to $heta - i$, therefore $OAB = 30^\\circ - 45^\\circ = -15^\\circ$. Since the angle cannot be negative, we assume that the angle $OAB$ is actually $180^\\circ - 15^\\circ = 165^\\circ$.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle $OAB$ is the angle between the incident ray DO and the side AB.",
+    "conclusion": "The angle $OAB$ is equal to the angle $heta$, therefore $OAB = 30^\\circ$.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The propagation distance of light in the prism is $s=\\frac{L\\sin{\\theta} }{2} $ and $v=\\frac{c}{n}$ where $n=\\sqrt{2}$.",
+    "conclusion": "The propagation time $t=\\frac{s}{v}$, therefore $t=\\frac{\\sqrt{2}L }{4c}$.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

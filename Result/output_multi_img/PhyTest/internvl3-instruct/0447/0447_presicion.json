@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a semicircular brick with radius R. A laser beam is injected at point O (center of the semicircle) on the edge MN, and it's perpendicular to MN. The beam shifts to the left from O and only monochromatic light is emitted from the semicircle surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle between the emitted light and the incident direction is 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light is injected perpendicularly.",
+    "conclusion": "The incident angle is 0 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Emitted light forms an angle of 30 degrees with the incident direction.",
+    "conclusion": "The light is emitted at 30 degrees relative to the normal after refraction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law: n1 sin(theta1) = n2 sin(theta2)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 1 (air), theta1 = 0 degrees, theta2 = 30 degrees.",
+    "conclusion": "1 * sin(0 degrees) = n2 * sin(30 degrees)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 * sin(0 degrees) = n2 * sin(30 degrees)",
+    "conclusion": "0 = n2 * 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0 = n2 * 1/2",
+    "conclusion": "n2 = 2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the transparent material for the monochromatic light is 2.",
+    "conclusion": "This applies to both red and green light since the question states that only monochromatic light is emitted, regardless of reflection.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

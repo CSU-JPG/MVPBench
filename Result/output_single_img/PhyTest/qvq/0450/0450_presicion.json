@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have two light bulbs submerged in water. One is at a depth h1 and emits red light, while the other is at a different depth and emits yellow light. The refractive indices for red and yellow light in water are n1 and n2, respectively. Both light bulbs illuminate the same area on the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light from a point source propagates in water and reaches the water surface to illuminate an area. When light travels from water to air, it bends away from the normal due to refraction. There's a critical angle beyond which total internal reflection occurs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For each light bulb, the light that escapes the water and illuminates the surface forms a circle, and the boundary of this circle corresponds to the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is given by θc = arcsin(1/n), where n is the refractive index of water for the respective light.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For red light, n = n1.",
+    "conclusion": "θc1 = arcsin(1/n1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For yellow light, n = n2.",
+    "conclusion": "θc2 = arcsin(1/n2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The illuminated area on the water surface forms a circle. The radius of this circle can be found by considering the right triangle formed by the depth h, the radius r, and the angle θc.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the diagram, the distance from the point directly above the light bulb to the edge of the illuminated area is r, and the depth is h.",
+    "conclusion": "tan(θc) = r/h",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the red light bulb, tan(θc1) = r1/h1.",
+    "conclusion": "r1 = h1 tan(arcsin(1/n1))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the yellow light bulb, tan(θc2) = r2/h2.",
+    "conclusion": "r2 = h2 tan(arcsin(1/n2))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the areas are equal, the areas of the circles are equal: πr1^2 = πr2^2.",
+    "conclusion": "r1^2 = r2^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r1 and r2 are both positive.",
+    "conclusion": "r1 = r2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h1 tan(arcsin(1/n1)) = h2 tan(arcsin(1/n2))",
+    "conclusion": "This equation relates the depths h1 and h2 to the refractive indices n1 and n2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem asks to find the area of the light-emitting surface of a light bulb.",
+    "conclusion": "S1 = πr1^2 = πh1^2/(n1^2-1)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

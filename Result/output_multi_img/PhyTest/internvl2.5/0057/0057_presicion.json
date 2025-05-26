@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromotive force of the power supply is E=6V, the internal resistance is r=2Ω, the fixed resistors are R1=2Ω, R2=3Ω, R3=6Ω, and the capacitance of the capacitor is C=10μF.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R2=3Ω, R3=6Ω",
+    "conclusion": "The equivalent resistance of the parallel combination of R2 and R3 is R23=2Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R1=2Ω, R23=2Ω, r=2Ω",
+    "conclusion": "The total resistance of the circuit is R_total=6Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E=6V, R_total=6Ω",
+    "conclusion": "The current I in the circuit is 1A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I=1A, R1=2Ω",
+    "conclusion": "The voltage across R1 is U1=2V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U1=2V",
+    "conclusion": "The voltage across the capacitor C is U_C=2V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C=10μF, U_C=2V",
+    "conclusion": "The charge Q on the capacitor is Q=20μC.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

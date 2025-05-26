@@ -1,0 +1,62 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Use Snell's Law and geometry of light paths when the tank is empty and filled.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Identify geometry and angles: incident angle i, refracted angle r, tank height H, distance h, horizontal distance L, outlet depth H-h.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Light path when tank is empty: path length is sqrt(H^2 + L^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Light path when tank is filled: path in air is sqrt(h^2 + L^2), path in liquid is sqrt((H-h)^2 + x^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Snell's Law: n_air sin i = n_liquid sin r, where n_air = 1 and n_liquid = n.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "In air, sin i = L/sqrt(H^2 + L^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "In liquid, sin r = (L-x)/sqrt((H-h)^2 + (L-x)^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "When light spot falls at outlet, x = 0, path in liquid becomes sqrt((H-h)^2 + L^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Apply Snell's Law: 1 * sin i = n * sin r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute expressions for sin i and sin r: L/sqrt(H^2 + L^2) = n * L/sqrt((H-h)^2 + L^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solve for n: n = sqrt((H-h)^2 + L^2)/sqrt(H^2 + L^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final answer: refractive index n = sqrt((H-h)^2 + L^2)/sqrt(H^2 + L^2).",
+    "relevant": "Yes"
+  }
+]

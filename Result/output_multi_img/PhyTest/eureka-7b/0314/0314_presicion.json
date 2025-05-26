@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "An ideal gas undergoes a cyclic process A→B→C→D→A, with each state in equilibrium. The temperature at state A is 27°C. The task is to find the work done externally by the gas from state C to state D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The cyclic process is represented on a pressure-volume (P-V) diagram. State C has P_C = 0.75 × 10^5 Pa and V_C = 4 L. State D has P_D = 0.75 × 10^5 Pa and V_D = 3 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "In an isobaric process (constant pressure), the work done is given by W = P × ΔV, where ΔV = V_final - V_initial.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "From the P-V diagram, the process from C to D is isobaric, with pressure P = 0.75 × 10^5 Pa and a volume change ΔV = V_D - V_C = 3 L - 4 L = -1 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from C to D is isobaric with P = 0.75 × 10^5 Pa and ΔV = -1 L.",
+    "conclusion": "The work done by the gas from C to D is W_CD = P × ΔV = 0.75 × 10^5 Pa × (-1 L) = -0.75 × 10^5 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas from C to D is W_CD = -0.75 × 10^5 J.",
+    "conclusion": "The external work done by the gas from state C to state D is -75 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

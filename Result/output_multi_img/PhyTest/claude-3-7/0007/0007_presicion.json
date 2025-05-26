@@ -1,0 +1,109 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I'll solve this step-by-step to find the maximum distance between the vehicles during the emergency braking.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The truck starts at 40 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The bus starts at 30 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Both vehicles decelerate linearly (constant deceleration).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "They both reach the same velocity at t = 10 s (where the lines intersect).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The truck stops completely at around t = 20 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The bus continues moving until around t = 30 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial velocity: 40 m/s, Final velocity: 0 m/s at t = 20 s",
+    "conclusion": "Deceleration of the truck is 2 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial velocity: 30 m/s, Final velocity: 0 m/s at t = 30 s",
+    "conclusion": "Deceleration of the bus is 1 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area under the v-t curve for the truck from 0 to 20s",
+    "conclusion": "The truck travels 400 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area under the v-t curve for the bus from 0 to 20s",
+    "conclusion": "The bus travels 400 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the bus is 30 meters ahead of the truck.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Truck starts at position 0, Bus starts at position 30",
+    "conclusion": "At t = 0s, the distance between them is 30 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area under the v-t curve for the truck from 0 to 10s",
+    "conclusion": "Truck position at t = 10s is 300 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area under the v-t curve for the bus from 0 to 10s",
+    "conclusion": "Bus position at t = 10s is 280 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Truck position at t = 10s is 300 meters, Bus position at t = 10s is 280 meters",
+    "conclusion": "The truck is ahead of the bus by 20 meters at t = 10s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the truck is now ahead of the bus and both are decelerating, the distance between them will continue to increase until one of them stops.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck has a higher deceleration rate, and the bus never catches up",
+    "conclusion": "The maximum distance will be at t = 20s when the truck stops.",
+    "judgment": "Wrong"
+  }]

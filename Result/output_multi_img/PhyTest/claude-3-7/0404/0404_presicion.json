@@ -1,0 +1,53 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a semi-cylindrical transparent object with radius R. Initially, light enters along axis OA from the left. When the light enters at point C (at distance \\(\\frac{\\sqrt{3}}{3}R\\) from O), no light exits from the right side. We need to find the refractive index of the object.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The second diagram appears to show the light path when it enters at point C, with the light being totally internally reflected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "O is the center of the flat face. The radius is R. Point C is at a distance \\(\\frac{\\sqrt{3}}{3}R\\) from O on the flat face.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When light enters at point C, it refracts at the air-material interface, travels through the material, and when it reaches the curved surface, it experiences total internal reflection instead of exiting.",
+    "conclusion": "The light experiences total internal reflection at the curved surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Critical angle (\\(\\theta_c\\)) is given by: \\(\\sin\\theta_c = \\frac{n_2}{n_1}\\) where \\(n_1\\) is the refractive index of the material and \\(n_2 = 1\\) for air. So \\(\\sin\\theta_c = \\frac{1}{n}\\) where n is the refractive index we're looking for.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The y-coordinate of C is \\(\\frac{\\sqrt{3}}{3}R\\). The x-coordinate of C is 0 (on the flat face).",
+    "conclusion": "The light travels horizontally from C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A horizontal ray from C will intersect the semicircle at a point with y-coordinate: \\(\\frac{\\sqrt{3}}{3}R\\). The equation of the semicircle is: \\(x^2 + y^2 = R^2\\). Substituting y = \\(\\frac{\\sqrt{3}}{3}R\\): \\(x^2 + (\\frac{\\sqrt{3}}{3}R)^2 = R^2\\).",
+    "conclusion": "The intersection point is at \\((\\frac{\\sqrt{6}}{3}R, \\frac{\\sqrt{3}}{3}R)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal at any point on a circle passes through the center. So the normal is the line from O to the intersection point. The angle between the horizontal ray and this normal is \\(\\theta = \\arctan(\\frac{y}{x}) = \\arctan(\\frac{\\frac{\\sqrt{3}}{3}R}{\\frac{\\sqrt{6}}{3}R}) = \\arctan(\\frac{\\sqrt{3}}{\\sqrt{6}})\\).",
+    "conclusion": "The angle of incidence \\(\\theta = \\arctan(\\frac{\\sqrt{2}}{2})\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection to occur, this incident angle must equal the critical angle: \\(\\theta = \\theta_c\\). So \\(\\arctan(\\frac{\\sqrt{2}}{2}) = \\arcsin(\\frac{1}{n})\\). Taking the sine of both sides: \\(\\sin(\\arctan(\\frac{\\sqrt{2}}{2})) = \\frac{1}{n}\\).",
+    "conclusion": "\\(\\frac{\\sqrt{3}}{3} = \\frac{1}{n}\\)"}]

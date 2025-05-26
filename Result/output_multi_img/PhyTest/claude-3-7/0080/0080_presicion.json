@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The setup is a conductor rod sliding down inclined rails in a uniform magnetic field: Rails make angle θ with horizontal, Distance between rails is L, Uniform magnetic field B points downward, Resistor R is connected at lower end, Conductor rod has mass m and resistance r, The rod starts from rest and reaches maximum velocity after sliding distance x. We need to find the time t it takes for the conductor rod to reach maximum velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the rod slides down, it experiences a gravitational force component along the incline, cuts through magnetic field lines, inducing an EMF, creates a current in the closed circuit formed with the resistor, and experiences a magnetic force opposing the motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The component of gravitational force along the incline is: F_g = mg\\sin\\theta",
+    "conclusion": "The gravitational force acting on the rod along the incline is F_g = mg\\sin\\theta.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the rod moves with velocity v, it cuts magnetic field lines, inducing an EMF: \\mathcal{E} = BLv. This EMF drives a current in the closed circuit with total resistance (R + r): I = \\frac{\\mathcal{E}}{R+r} = \\frac{BLv}{R+r}",
+    "conclusion": "The induced EMF is \\mathcal{E} = BLv and the current is I = \\frac{BLv}{R+r}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current-carrying rod in the magnetic field experiences a force: F_B = ILB = \\frac{B^2L^2v}{R+r}. This force opposes the motion, acting upward along the incline.",
+    "conclusion": "The magnetic force opposing the motion is F_B = \\frac{B^2L^2v}{R+r}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Newton's second law: m\\frac{dv}{dt} = mg\\sin\\theta - \\frac{B^2L^2v}{R+r}. This is a first-order differential equation that describes the rod's motion.",
+    "conclusion": "The equation of motion is m\\frac{dv}{dt} = mg\\sin\\theta - \\frac{B^2L^2v}{R+r}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum velocity occurs when acceleration becomes zero: mg\\sin\\theta - \\frac{B^2L^2v_m}{R+r} = 0. Solving for the maximum velocity: v_m = \\frac{mg\\sin\\theta(R+r)}{B^2L^2}",
+    "conclusion": "The maximum velocity v_m is \\frac{mg\\sin\\theta(R+r)}{B^2L^2}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation of motion: \\frac{dv}{dt} = \\frac{g\\sin\\theta}{v_m}v_m - \\frac{g\\sin\\theta}{v_m}v. Let's define \\alpha = \\frac{g\\sin\\theta}{v_m} = \\frac{B^2L^2}{m(R+r)}. Then: \\frac{dv}{dt} = \\alpha(v_m - v). This is a differential equation with solution: v = v_m(1 - e^{-\\alpha t})",
+    "conclusion": "The solution to the differential equation is v = v_m(1 - e^{-\\alpha t}).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We know that \\frac{dx}{dt} = v, so: \\frac{dx}{dt} = v_m(1 - e^{-\\alpha t}). Integrating: x = v_m t + \\frac{v_m}{\\alpha}(e^{-\\alpha t}"}]

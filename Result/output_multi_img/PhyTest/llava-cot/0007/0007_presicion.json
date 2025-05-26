@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A truck and a bus are traveling in the same lane on a highway, with the bus in front and the truck behind. They apply brakes simultaneously when they are 30 meters apart.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The v-t graph shows both vehicles initially traveling at 40 m/s. The truck's speed decreases to 30 m/s over 10 seconds, while the bus's speed decreases to 0 m/s over 20 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph indicates that both vehicles apply brakes simultaneously.",
+    "conclusion": "The bus travels from 40 m/s to 0 m/s in 20 seconds, covering a braking distance of 400 meters.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck travels from 40 m/s to 30 m/s in 10 seconds.",
+    "conclusion": "The truck covers a braking distance of 150 meters.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, the vehicles are 30 meters apart.",
+    "conclusion": "After braking, the maximum distance between them is the sum of their braking distances plus the initial separation: 400 + 150 + 30 = 580 meters.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

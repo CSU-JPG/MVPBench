@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The v-t graph represents velocity (v) on the y-axis in m·s⁻¹ versus time (t) on the x-axis in seconds. The velocity values indicate the particle's motion direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "From 0 to 1 second, the velocity is constant at +2 m·s⁻¹.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "From 1 to 2 seconds, the velocity decreases linearly from +2 m·s⁻¹ to 0 m·s⁻¹.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "From 2 to 3 seconds, the velocity decreases linearly from 0 m·s⁻¹ to -2 m·s⁻¹.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Positive velocity (+v) indicates motion in the defined positive direction, negative velocity (-v) indicates motion opposite to the defined positive direction, and zero velocity indicates the particle is momentarily at rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From 2 to 3 seconds, the velocity decreases linearly from 0 m·s⁻¹ to -2 m·s⁻¹.",
+    "conclusion": "At t = 2s, the velocity is 0 m·s⁻¹, and at t = 3s, the velocity is -2 m·s⁻¹.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From 2 to 3 seconds, the velocity decreases linearly from 0 m·s⁻¹ to -2 m·s⁻¹.",
+    "conclusion": "Throughout the interval from 2 to 3 seconds, the velocity is negative and decreasing (becoming more negative).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Negative velocity indicates motion opposite to the defined positive direction. From 2 to 3 seconds, the velocity is consistently negative.",
+    "conclusion": "From 2 to 3 seconds, the particle moves in the direction opposite to the defined positive direction.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

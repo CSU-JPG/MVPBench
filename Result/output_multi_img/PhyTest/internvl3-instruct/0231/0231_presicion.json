@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude and direction of the resultant Ampere force acting on the trapezoidal frame, we need to consider the following steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the Lengths of the Sides: Given AB = BC = CD = L. AD is the base of the trapezoid. The angle between AB and CD with AD is 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Calculate the Resistances: The resistance R of a wire is given by R = ρL/S, where ρ is the resistivity, L is the length of the wire, and S is the cross-sectional area.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For sides AB, BC, and CD, each has length L, so each resistance is R = ρL/S.",
+    "conclusion": "The resistance for each of AB, BC, and CD is R = ρL/S.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side AD consists of two segments: a and d, each with length L.",
+    "conclusion": "The length of AD is 2L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistances AB, BC, and CD are in series, and each has resistance R = ρL/S.",
+    "conclusion": "R_series = 3R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The segments a and d are in parallel.",
+    "conclusion": "R_parallel = R/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total resistance R_total = R_series + R_parallel = 3R + R/2.",
+    "conclusion": "R_total = 7R/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I through the frame is given by I = E/R_total.",
+    "conclusion": "I = 2E/7R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Calculate the Ampere Force: The Ampere force on a current-carrying wire in a magnetic field is given by F = I · L · B · sin θ, where θ is the angle between the current and the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the magnetic field is perpendicular to the plane, sin 90° = 1.",
+    "conclusion": "The force calculation simplifies to F = I · L · B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For each side: F_AB = I · L · B, F_BC = I · L · B, F_CD = I · L · B, F_AD = I · 2L · B.",
+    "conclusion": "Calculated forces for each side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The direction of the force on each side is perpendicular to both the current and the magnetic field.",
+    "conclusion": "The forces on AB and CD are vertical. The force on BC is horizontal. The force on AD is vertical.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Combining these forces: The resultant vertical force F_vertical = I · L · B + I · L · B + I · 2L · B.",
+    "conclusion": "F_vertical = 4I · L · B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal force F_horizontal = I · L · B.",
+    "conclusion": "F_horizontal = I · L · B.",
+    "judgment": "Match"
+  }]

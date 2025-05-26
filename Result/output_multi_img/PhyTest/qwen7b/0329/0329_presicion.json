@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes processes A→B, B→C, and C→A, returning to state A. Temperature at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P = 1×10^5 Pa, V = 2L. State C: P = 1×10^5 Pa, V = 5L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A: P = 1×10^5 Pa, V = 2L. State C: P = 1×10^5 Pa, V = 5L.",
+    "conclusion": "Process A → B is adiabatic, B → C is isobaric, C → A is isochoric.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an isochoric process, W = 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an isobaric process, W = PΔV.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = 4×10^5 Pa, ΔV = 0.003 m^3.",
+    "conclusion": "W = 1200 J for process B → C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a complete cycle, W_A→B + W_B→C + W_C→A = 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_C→A = 0, W_B→C = 1200 J.",
+    "conclusion": "W_A→B = 1200 J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an adiabatic process, Q = 0 and W = nC_vΔT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_A→B = 1200 J.",
+    "conclusion": "PV^γ = constant for adiabatic process.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cycle returns to initial state A.",
+    "conclusion": "Temperatures at states A and C are the same.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A = P_C, V_A = 2L, V_C = 5L, T_A = 200K.",
+    "conclusion": "Using ideal gas law, T_C = 1000K.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

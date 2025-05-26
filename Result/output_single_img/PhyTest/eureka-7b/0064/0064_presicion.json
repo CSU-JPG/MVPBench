@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the vertical distance by which the point light source S must be moved upward so that the light emitted from S is just not visible above the water surface. We will use Snell's law and geometric properties to find the required distance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The radius of the circular board is r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The depth of the point light source S below the center O of the board is H = sqrt(3)r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the liquid is n = sqrt(2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from S to O is sqrt(r^2 + H^2) = sqrt(r^2 + (sqrt(3)r)^2) = sqrt(4r^2) = 2r.",
+    "conclusion": "The distance from S to O is 2r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence theta can be found using trigonometry in the right triangle formed by the depth H and the radius r: tan theta = H/r = sqrt(3)r/r = sqrt(3).",
+    "conclusion": "theta = 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law at the water surface: n1 sin theta1 = n2 sin theta2 where n1 is the refractive index of the liquid (n1 = sqrt(2)), n2 is the refractive index of air (n2 = 1), theta1 is the angle of incidence in the liquid, and theta2 is the angle of refraction in air.",
+    "conclusion": "sqrt(2) sin theta1 = sin theta2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since theta = 60 degrees, we need to find theta1 such that the light is just not visible above the water surface, i.e., theta2 = 90 degrees: sin 90 degrees = sqrt(2) sin theta1.",
+    "conclusion": "sin theta1 = 1/sqrt(2) = sqrt(2)/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin theta1 = sqrt(2)/2 implies theta1 = 45 degrees.",
+    "conclusion": "The angle of incidence theta1 is 45 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from S to the water surface is d. The angle of incidence theta1 = 45 degrees in the liquid implies that the distance from S to the point where the light ray hits the water surface is d cot 45 degrees = d.",
+    "conclusion": "The distance from S to the water surface is d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the geometry of the right triangle formed by the depth h and the radius r in the liquid, we have: tan 45 degrees = h/r.",
+    "conclusion": "h = r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance from S to the water surface is the hypotenuse of the right triangle formed by the depth h and the radius r: sqrt(h^2 + r^2) = sqrt(r^2 + r^2) = sqrt(2r^2) = r sqrt(2).",
+    "conclusion": "The total distance from S to the water surface is r sqrt(2).",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,42 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Known data: Magnetic-flux density B = 0.10 T, Coil turns n = 100, Rectangular sides l₁ = AB = 0.20 m, l₂ = BC = 0.50 m, Angular speed ω = 100 π rad/s, Timing origin t = 0 when the plane of the coil is in the neutral position.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Coil area A = l₁ × l₂ = (0.20 m)(0.50 m) = 0.10 m²",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Time-dependent magnetic flux through the coil Φ(t) = n B A cos (ωt)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The cosine appears because flux is maximum when the plane of the coil is perpendicular to the field and zero when it lies in the neutral position; at t = 0 the cosine is zero, matching the statement in the problem.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Induced emf ε(t) = − dΦ/dt = − n B A (−ω) sin (ωt) = n B A ω sin (ωt)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Peak (maximum) emf ε_max = n B A ω = (100)(0.10 T)(0.10 m²)(100 π rad/s) = 1.0 × 100 π V = 100 π V ≈ 3.14 × 10² V",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Full expression for the instantaneous emf ε(t) = (100 π V) sin (100 π t)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The induced emf varies sinusoidally as ε(t) = 100 π sin(100 π t) volts, and its magnitude reaches a maximum value of 100 π V (about 314 V).",
+    "relevant": "Yes"
+  }
+]

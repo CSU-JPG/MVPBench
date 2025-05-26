@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a single-turn square wire frame with side length 0.2m and resistance 4Ω. Half of the wire frame is in a uniform magnetic field perpendicular to the plane of the paper and directed inward. The magnetic induction intensity B varies with time as B = (3 + 2t)T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The goal is to find the magnitude and direction of the frictional force acting on the wire frame at t = 2.5s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The square wire frame is stationary on a horizontal surface, with half of it inside the magnetic field (right side of the frame). The magnetic field is directed inward (into the plane of the paper).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's law of electromagnetic induction, the induced electromotive force (emf) in a loop is given by E = S * ΔB / Δt, where S is the area of the loop in the magnetic field, ΔB is the change in magnetic field, and Δt is the time interval.",
+    "conclusion": "The induced emf in the wire frame is E = 0.04V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced current I in the wire frame is given by I = E / R, where E is the induced emf and R is the resistance of the wire frame. Substituting E = 0.04V and R = 4Ω.",
+    "conclusion": "The induced current in the wire frame is I = 0.01A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t = 2.5s, the magnetic induction intensity B is given by B = (3 + 2t)T. Substituting t = 2.5s.",
+    "conclusion": "The magnetic induction intensity at t = 2.5s is B = 8T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the Ampere force on the wire frame is given by F = B * I * L, where B is the magnetic induction intensity, I is the induced current, and L is the length of the wire in the magnetic field. Substituting B = 8T, I = 0.01A, and L = 0.2m.",
+    "conclusion": "The magnitude of the Ampere force is F = 0.016N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is stationary, so the frictional force must balance the Ampere force. According to Lenz's law, the Ampere force on the wire frame is to the left.",
+    "conclusion": "The frictional force is to the right and has a magnitude of 0.016N.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

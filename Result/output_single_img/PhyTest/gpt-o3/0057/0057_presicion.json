@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At steady state the capacitor is an open circuit (no dc current through it).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At steady state the capacitor is an open circuit (no dc current through it).",
+    "conclusion": "The branch containing the capacitor and R₂ is therefore open; only the branch containing R₁ and R₃ carries current supplied by the source.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The branch containing the capacitor and R₂ is therefore open; only the branch containing R₁ and R₃ carries current supplied by the source.",
+    "conclusion": "The current I flowing from the source is found from the series resistance R₁ + R₃ together with the source’s internal resistance r: Req = r + R₁ + R₃ = 2 Ω + 2 Ω + 6 Ω = 10 Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Req = r + R₁ + R₃ = 2 Ω + 2 Ω + 6 Ω = 10 Ω",
+    "conclusion": "I = E / Req = 6 V / 10 Ω = 0.60 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 0.60 A",
+    "conclusion": "The potential difference between the two horizontal nodes (i.e. the voltage across the open branch where the capacitor sits) equals the drop across R₁ (because R₁ is between the same two nodes): Vnode = I · R₁ = 0.60 A × 2 Ω = 1.2 V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vnode = 1.2 V",
+    "conclusion": "This node-to-node voltage is the voltage across the capacitor after a long time, so Q = C · V = (10 μF)(1.2 V) = 12 μC",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

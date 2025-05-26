@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the electric field at point A due to the point charges 2q and -q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Assume the cube is placed in a coordinate system such that: The positive charge 2q is at (0, 0, 0). The negative charge -q is at (L, L, L). Point A is at (L, 0, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The midpoint O of the line connecting (0, 0, 0) and (L, L, L) is: O = (L/2, L/2, L/2).",
+    "conclusion": "The distance from 2q to O is r1 = sqrt(3) * L/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The midpoint O of the line connecting (0, 0, 0) and (L, L, L) is: O = (L/2, L/2, L/2).",
+    "conclusion": "The distance from -q to O is r2 = sqrt(3) * L/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from 2q to O is r1 = sqrt(3) * L/2.",
+    "conclusion": "The electric field at O due to 2q is E1 = 8kq/3L^2 * r1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from -q to O is r2 = sqrt(3) * L/2.",
+    "conclusion": "The electric field at O due to -q is E2 = -4kq/3L^2 * r2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E1 = 8kq/3L^2 * r1 and E2 = -4kq/3L^2 * r2.",
+    "conclusion": "The net electric field at O is EO = 4kq/3L^2 * (r1 + r2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the magnitude of the electric field at O is E.",
+    "conclusion": "E = 4kq/3L^2 * sqrt(2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A is at (L, 0, 0).",
+    "conclusion": "The distance from 2q to A is r1' = L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A is at (L, 0, 0).",
+    "conclusion": "The distance from -q to A is r2' = sqrt(2)L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from 2q to A is r1' = L.",
+    "conclusion": "The electric field at A due to 2q is E1' = 2kq/L^2 * i.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from -q to A is r2' = sqrt(2)L.",
+    "conclusion": "The electric field at A due to -q is E2' = kq/2L^2 * (i + j + k).",
+    "judgment": "Match"
+  }]

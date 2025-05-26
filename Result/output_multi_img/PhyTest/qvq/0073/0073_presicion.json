@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The working principle of the electromagnetic railgun involves a projectile moving between two parallel rails with current flowing through it, generating a magnetic field and propelling the projectile forward due to the Lorentz force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: L = 0.5 m, d = 0.02 m, m = 0.02 kg, I = 10 A, B = 1 T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Power is defined as work done per unit time, or force times velocity: P = F * v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = BIL",
+    "conclusion": "The force on the projectile is F = 1 T * 10 A * 0.5 m = 5 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a = F / m",
+    "conclusion": "The acceleration of the projectile is a = 5 N / 0.02 kg = 250 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v² = u² + 2 a s",
+    "conclusion": "The velocity at the end of the rails is v = sqrt(250) ≈ 15.81 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = F * v",
+    "conclusion": "The power at launch is P = 5 N * 15.81 m/s ≈ 79.05 W.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

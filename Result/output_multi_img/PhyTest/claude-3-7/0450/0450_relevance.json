@@ -1,0 +1,76 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Setup with light bulbs underwater emitting light, light rays traveling through water and into air, rays refract at the water-air interface, light forms an illuminated area on the water surface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Light bulb A at depth h1 emits red light with refractive index n1, Light bulb B at some depth emits yellow light with refractive index n2, Both light bulbs form the same illuminated area on the water surface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Need to find the area of the light-emitting area of a light bulb.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Diagram shows a point O (the light source) at depth h, with rays traveling to points M and N on the surface.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Snell's law gives n_water sin(i) = n_air sin(r) when light passes from water to air.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "i is the angle of incidence in water, r is the angle of refraction in air, n_water is the refractive index of water, n_air = 1 is the refractive index of air.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The light bulb is at point O at depth h below the water surface, The illuminated area on the surface is a circle with radius r, The critical angle for total internal reflection is theta_c.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For a ray from point O to reach a point at distance r from the center of the illuminated area, the angle of incidence i = arctan(r/h), From Snell's law: n sin(i) = sin(r).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At the critical angle, r = 90° and sin(r) = 1, giving sin(i_c) = 1/n.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For the red light (bulb A): Depth = h1, Refractive index = n1, Critical angle sin(i_c1) = 1/n1, Maximum radius r1 = h1 tan(i_c1) = h1 tan(arcsin(1/n1)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For the yellow light (bulb B): Depth = h2 (unknown), Refractive index = n2, Critical angle sin(i_c2) = 1/n2, Maximum radius r2 = h2 tan(i_c2) = h2 tan(arcsin(1/n2)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since both bulbs create the same illuminated area, r1 = r2, giving h1 tan(arcsin(1/n1)) = h2 tan(arcsin(1/n2)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Rearranging to find h2: h2 = h1 tan(arcsin(1/n1)) / tan(arcsin(1/n2)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The light-emitting area of the bulb would be related to the solid angle from which light can escape the water.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Given the critical angle i_c, the solid angle is Omega = 2pi(1 - cos(i_c)).",
+    "relevant": "Yes"
+  }]

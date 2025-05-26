@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To determine the temperature at state A, we need to analyze the given V-T diagram and use the information provided.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "State A: V_A = 0.4 m^3, State B: V_B = 0.6 m^3, State C: V_C = 0.6 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The diagram shows that the volume of the gas increases from V_A to V_B and then to V_C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume increases from V_A to V_B.",
+    "conclusion": "The temperature must increase from T_A to T_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature increases from T_A to T_B.",
+    "conclusion": "The temperature at state A (T_A) is the same as the temperature at state B (T_B).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The pressure at state A is 1.5 × 10^5 Pa.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The line segment AB passes through the origin in the V-T diagram.",
+    "conclusion": "The relationship V_A / T_A = V_B / T_B holds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_A / T_A = V_B / T_B and V_A = 0.4 m^3, V_B = 0.6 m^3, T_B = 300 K.",
+    "conclusion": "T_A = (V_A / V_B) × T_B = (0.4 / 0.6) × 300 K = 200 K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

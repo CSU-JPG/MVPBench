@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The radar emits waves that last 1μs each.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Time between emissions is 100μs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The sharp triangular waves shown on the screen represent reflections.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We're told that ab = bc (the distances between points are equal).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light c = 3.0×10^8 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Three triangular peaks appear on the screen.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Points a, b, and c are marked on the horizontal axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relation ab = bc tells us the time intervals between reflections are equal.",
+    "conclusion": "The points a, b, and c likely represent the times when reflections from obstacles are detected.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since ab = bc, these reflections are coming at equal time intervals.",
+    "conclusion": "We're detecting multiple reflections of the same signal bouncing back and forth between the radar and the obstacle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If we call the distance between the radar and the obstacle d, then: First reflection (point a): Radio wave travels distance 2d (to obstacle and back), time = 2d/c.",
+    "conclusion": "Second reflection (point b): Radio wave travels distance 4d (to obstacle, back to radar, to obstacle again, and back to radar), time = 4d/c.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Second reflection (point b): Radio wave travels distance 4d (to obstacle, back to radar, to obstacle again, and back to radar), time = 4d/c.",
+    "conclusion": "Third reflection (point c): Radio wave travels distance 6d, time = 6d/c.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If ab = bc, then the time between first and second reflection equals the time between second and third reflection.",
+    "conclusion": "Time for second reflection - Time for first reflection = Time for third reflection - Time for second reflection.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4d/c - 2d/c = 6d/c - 4d/c.",
+    "conclusion": "2d/c = 2d/c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since ab = bc represents the time it takes for the wave to travel distance 2d, we have: ab = 2d/c.",
+    "conclusion": "We need to determine what ab equals in terms of time.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since we're told the interval between emissions is 100μs, and the peaks we see are equally spaced, each interval (ab or bc) must be 100μs.",
+    "conclusion": "100×10^-6 s = 2d/c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "100×10^-6 s = 2d/c.",
+    "conclusion": "d = (100×10^-6 s × c)/2.",
+    "judgment": "Match"
+  }]

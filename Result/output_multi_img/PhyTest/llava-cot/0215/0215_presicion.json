@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, I will analyze the image and the given scenario to determine the flow rate Q of the conductive liquid in the pipe. I'll apply the principles of electromagnetic flowmeters, focusing on the relationship between the electromotive force E, the magnetic induction intensity B, and the flow rate.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a schematic diagram of an electromagnetic flowmeter. It shows a pipe made of non-magnetic material with a uniform magnetic field B inside. Conductive liquid flows through this field, creating a potential difference E between points M and N on the pipe wall. The pipe's diameter is labeled as d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In an electromagnetic flowmeter, the conductive liquid flowing through a magnetic field induces an electromotive force E on the pipe wall. This E is directly proportional to the magnetic induction intensity B and the flow velocity v of the liquid.",
+    "conclusion": "E ∝ B · v",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E ∝ B · v",
+    "conclusion": "E ∝ (B · d · Q) / (π · (d/2)^2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E ∝ (B · d · Q) / (π · (d/2)^2)",
+    "conclusion": "E ∝ (4 · B · d · Q) / (π · d^2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E ∝ (4 · B · d · Q) / (π · d^2)",
+    "conclusion": "E ∝ (4 · B · Q) / (π · d)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E ∝ (4 · B · Q) / (π · d)",
+    "conclusion": "Q ∝ (π · d · E) / (4 · B)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q ∝ (π · d · E) / (4 · B)",
+    "conclusion": "The flow rate Q is (π · d · E) / (4 · B)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

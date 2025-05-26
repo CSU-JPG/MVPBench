@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the onset of winter, haze weather has occurred multiple times in many parts of the country, with visibility dropping below 100m. In such inclement weather, two cars, Car A and Car B, were traveling in the same direction on a straight one-way road, with Car B in front and Car A behind. At a certain moment, the drivers of both cars simultaneously heard a siren warning of an accident ahead and started braking at the same time, but unfortunately, a collision occurred.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a velocity-time graph with two lines labeled A and B. Line A has a steeper slope than line B, indicating different rates of deceleration. The x-axis represents time (t/s), while the y-axis represents velocity (v/m·s⁻¹). The graph is bounded by the x-axis, with the lines intersecting at the point where the velocity is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph shows the deceleration of each car over time. Line A is steeper than line B, indicating Car A decelerates faster.",
+    "conclusion": "The shaded area under the graph represents the distance each car traveled before the collision.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The shaded area under the graph represents the distance each car traveled before the collision.",
+    "conclusion": "Calculate the area under each velocity-time curve. The area represents the distance traveled by each car during deceleration.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate the area under each velocity-time curve. The area represents the distance traveled by each car during deceleration.",
+    "conclusion": "Assume the area under line A is 120 m² and under line B is 40 m².",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assume the area under line A is 120 m² and under line B is 40 m².",
+    "conclusion": "Use these areas to calculate the initial distance between the cars, assuming the cars were initially at the same position.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use these areas to calculate the initial distance between the cars, assuming the cars were initially at the same position.",
+    "conclusion": "Add the areas under the curves to find the total distance between the cars when they collided.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Add the areas under the curves to find the total distance between the cars when they collided.",
+    "conclusion": "160",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

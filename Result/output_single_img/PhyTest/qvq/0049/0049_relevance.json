@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Car traveling at 30 m/s spots a truck moving at 10 m/s, 30 meters ahead.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Graph shows velocity vs. time for car and truck, labeled as a and b.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Vertical axis is velocity in m/s, horizontal axis is time in seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Point 'a' on car's velocity curve, 'b' on truck's velocity curve.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Truck moves at constant speed of 10 m/s, car's speed decreases over time.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Car's velocity decreases from 30 m/s to 20 m/s in first second, then to 10 m/s at 5 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Determine if car catches up to truck before car's speed drops to truck's speed.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Car is initially 30 meters behind the truck.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Find equations for positions of car and truck as a function of time.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Truck's position equation: \\( s_t = s_{t0} + v_t \\cdot t \\), with \\( v_t = 10 \\) m/s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Truck's initial position: \\( s_{t0} = s_{c0} + 30 \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Car's velocity decreases from 30 m/s to 20 m/s in first second, then linearly to 10 m/s at 5 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Integrate car's velocity function over time to find position.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Approximate car's velocity function: quadratic from t=0 to t=1, linear from t=1 to t=5.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From t=0 to t=1: \\( v_c(t) = a t^2 + b t + 30 \\), with \\( a + b = -10 \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From t=1 to t=5: \\( v_c(t) = -2.5 t + 22.5 \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At t=1, velocity matches linear part: \\( a + b = -10 \\).",
+    "relevant": "Yes"
+  }
+]

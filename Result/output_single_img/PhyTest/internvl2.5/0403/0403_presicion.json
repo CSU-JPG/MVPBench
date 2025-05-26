@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the refraction angle when the light enters the Dawes prism and check if the light can exit from edge CD.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray enters the prism parallel to the base CD.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The prism is an isosceles right-angle prism.",
+    "conclusion": "The incident angle θ_i with respect to the normal at point A is 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n_1 sin(θ_i) = n_2 sin(θ_r).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "n_1 is the refractive index of the medium outside the prism (air, n_1 = 1). n_2 is the refractive index of the prism glass (n_2 = √2). θ_i is the incident angle (45°). θ_r is the refraction angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 * sin(45°) = √2 * sin(θ_r)",
+    "conclusion": "sin(45°) = √2/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "√2/2 = √2 * sin(θ_r)",
+    "conclusion": "sin(θ_r) = 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ_r) = 1/2",
+    "conclusion": "θ_r = sin^(-1)(1/2) = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θ_c is given by: sin(θ_c) = 1/n_2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ_c) = 1/√2",
+    "conclusion": "θ_c = sin^(-1)(1/√2) = 45°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at CD is the same as the angle of refraction at A, which is 30°.",
+    "conclusion": "Since 30° is less than the critical angle of 45°, the light will not undergo total internal reflection and will exit from edge CD.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As shown in the diagram, the incidence angle θ when the light reaches edge CD is 75° > C.",
+    "conclusion": "Cannot exit from edge CD.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

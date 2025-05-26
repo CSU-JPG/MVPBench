@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the amount of charge that passes through resistor R_1 after the switch S is opened.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch S is closed, the circuit is powered by the electromotive force E = 10 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The capacitors C_1 and C_2 are in parallel with the resistors R_1 and R_2, respectively.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the internal resistance of the power supply is negligible, the voltage across each capacitor is equal to the supply voltage E = 10 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge Q on a capacitor is given by Q = C * V.",
+    "conclusion": "For C_1, the charge Q_1 = C_1 * E = 30 μF * 10 V = 300 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge Q on a capacitor is given by Q = C * V.",
+    "conclusion": "For C_2, the charge Q_2 = C_2 * E = 30 μF * 10 V = 300 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch S is opened, the capacitors C_1 and C_2 start discharging through the resistors R_1 and R_2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit becomes a series circuit with C_1, R_1, C_2, and R_2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, C_1 has a charge of 300 μC and C_2 also has 300 μC.",
+    "conclusion": "As the capacitors discharge, the total charge Q_total = Q_1 + Q_2 = 600 μC is redistributed between the capacitors.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In a series circuit, the charge on capacitors in series is the same.",
+    "conclusion": "Therefore, the final charge on each capacitor will be half of the total initial charge.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final charge on C_1 and C_2 is Q_final = Q_total / 2 = 600 μC / 2 = 300 μC.",
+    "conclusion": "The charge passing through R_1 is the difference between the initial charge on C_1 and the final charge on C_1.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the initial charge on C_1 was 300 μC and the final charge remains 300 μC.",
+    "conclusion": "No charge passes through R_1.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

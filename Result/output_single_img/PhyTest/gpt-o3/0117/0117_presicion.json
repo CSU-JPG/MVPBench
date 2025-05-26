@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Set up the notation: m is the mass of each block (A and B), k is the spring constant (light, mass-less spring), F is the constant vertical upward force applied to A, x(t) is the extension of the spring (upward displacement of A relative to B), ω = √(k / m).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, x = 0 and ẋ = 0 (the system is at rest).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B is in contact with the ground, so the ground exerts a normal reaction N such that N + kx – mg = 0.",
+    "conclusion": "Initially N = mg, because kx = 0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The moment B is just about to leave the ground is characterised by N = 0.",
+    "conclusion": "kx = mg.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Equation of motion of block A while B is still on the ground: During the interval from t = 0 until the instant B leaves the ground, B does not move, therefore its lower end of the spring is fixed to the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For A (upward positive): mẍ = F – mg – kx.",
+    "conclusion": "Equation of motion: mẍ = F – mg – kx.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rewrite mẍ = F – mg – kx: ẍ + (k / m)x = (F – mg)/m ≡ C (constant).",
+    "conclusion": "With ω = √(k/m), the solution is x(t) = (F – mg)/k [1 – cos ωt].",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The constants are fixed by x(0)=0 and ẋ(0)=0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Apply the lift–off condition: B leaves the ground when kx = mg. Using x(t) = (F – mg)/k [1 – cos ωt].",
+    "conclusion": "k x = k (F – mg)/k [1 – cos ωt] = (F – mg) [1 – cos ωt].",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Set (F – mg) [1 – cos ωt*] = mg.",
+    "conclusion": "The minimum constant force that can satisfy this is obtained when [1 – cos ωt*] reaches its largest possible value, 2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Putting [1 – cos ωt*] = 2 gives 2 (F – mg) = mg.",
+    "conclusion": "F = 3mg/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Thus the smallest constant pull that will just make B leave the floor is 1.5 mg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Any larger force would also work, but the problem says “a constant force is applied … until B just leaves the ground”, i.e. the least force able to do so.",
+    "judgment": "N/A"
+  }]

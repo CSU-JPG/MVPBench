@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, identify relevant information from the image and the question. Calculate the magnitude of the Ampere force using the provided lengths, angle, and magnetic induction intensity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a wire forming a triangle ABC. It shows uniform magnetic fields perpendicular to the plane of the paper, with arrows indicating directions. The wire ABC is perpendicular to these fields. The lengths of both AB and BC are labeled as L, and the angle ∠ABC is 120°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire ABC is perpendicular to the magnetic field.",
+    "conclusion": "The wire experiences an Ampere force due to the currents in the wires AB and BC.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the Ampere force can be calculated using the formula F = I × B × L.",
+    "conclusion": "F = I × B × L, where I is the current intensity, B is the magnetic induction intensity, and L is the length of the wire.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle ∠ABC is 120°.",
+    "conclusion": "The force components along AB and BC are equal, and the total force F can be calculated as F = 2 × I × B × L × sin(60°).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify sin(60°) = √3/2.",
+    "conclusion": "F = 2 × I × B × L × √3/2 = √3 × I × B × L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute I = 1, B = 1, and L = 1.",
+    "conclusion": "F = √3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The final answer is √3.",
+    "conclusion": "The final answer is √3.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

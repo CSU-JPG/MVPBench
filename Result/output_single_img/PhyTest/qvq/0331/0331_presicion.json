@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process with steps A to B, B to C, and C to A. Temperature at state A is 200 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The p-V diagram has volume on the x-axis (liters) and pressure on the y-axis (10^5 Pa). Points A, B, and C are marked.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A is at (2 L, 1 × 10^5 Pa).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B is at (2 L, 4 × 10^5 Pa).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point C is at (5 L, 1 × 10^5 Pa).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process A to B is a vertical line on the p-V diagram.",
+    "conclusion": "Process A to B is at constant volume (2 L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process B to C is a straight line decreasing from B to C.",
+    "conclusion": "Process B to C has decreasing pressure and increasing volume.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process C to A is a horizontal line on the p-V diagram.",
+    "conclusion": "Process C to A is at constant pressure (1 × 10^5 Pa).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Work done by the gas in a process is given by W = ∫P dV.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process A to B is at constant volume.",
+    "conclusion": "No work is done in process A to B (W_AB = 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process B to C is a straight line on the p-V diagram.",
+    "conclusion": "Pressure can be expressed as a linear function of volume: P = mV + b.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Points B(2 L, 4 × 10^5 Pa) and C(5 L, 1 × 10^5 Pa) are given.",
+    "conclusion": "Slope m = (-3 × 10^5 Pa) / (3 L) = -1 × 10^5 Pa/L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using point B to find y-intercept.",
+    "conclusion": "b = 6 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pressure function derived: P(V) = (-1 × 10^5 Pa/L) V + 6 × 10^5 Pa.",
+    "conclusion": "Work done from B to C: W_BC = ∫(2 to 5) (-1 × 10^5 V + 6 × 10^5) dV.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrating the pressure function.",
+    "conclusion": "W_BC = [-0.5 × 10^5 V^2 + 6 × 10^5 V] from 2 L to 5 L.",
+    "judgment": "Match"
+  }]

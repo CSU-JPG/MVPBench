@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the given information: Temperature at state A: \\( T_A = -73^\\circ C = 200 \\, \\text{K} \\), Internal energy change from A to C: \\( \\Delta U = 200 \\, \\text{J} \\), Volume at state A: \\( V_A = 1 \\times 10^{-3} \\, \\text{m}^3 \\), Volume at state C: \\( V_C = 4 \\times 10^{-3} \\, \\text{m}^3 \\), Pressure at state A: \\( p_A = 3 \\times 10^5 \\, \\text{Pa} \\), Pressure at state C: \\( p_C = 1 \\times 10^5 \\, \\text{Pa} \\), Standard conditions: 1 mole of gas occupies 22.4 L at 1 atm and 273 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law \\( pV = nRT \\) at state A",
+    "conclusion": "Calculate the number of moles of the gas: \\( n = \\frac{p_A V_A}{R T_A} \\), where \\( R = 8.31 \\, \\text{J/mol K} \\). \\( n \\approx 1.81 \\, \\text{mol} \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the process from A to C is not specified as isothermal, adiabatic, or isobaric, we use the fact that the internal energy change is given.",
+    "conclusion": "Determine the temperature at state C using \\( \\Delta U = nC_v \\Delta T \\), where \\( C_v = \\frac{3}{2}R \\). \\( \\Delta T \\approx 9 \\, \\text{K} \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate the temperature at state C",
+    "conclusion": "T_C = T_A + \\Delta T = 200 \\, \\text{K} + 9 \\, \\text{K} = 209 \\, \\text{K}",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use the ideal gas law to find \\( T_C \\)",
+    "conclusion": "\\(\\frac{p_A V_A}{T_A} = \\frac{p_C V_C}{T_C}\\), \\( T_C = 266.67 \\, \\text{K} \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Convert to degrees Celsius",
+    "conclusion": "T_C = 266.67 \\, \\text{K} - 273 = -6.33^\\circ C",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given answer",
+    "conclusion": "The temperature at state C is \\( 273 \\, \\text{K} \\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

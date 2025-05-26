@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two balls A and B are attached to a light rod rotating in a vertical plane around a smooth horizontal shaft. The rod has a length of 3L, with balls A and B at each end, each having a mass of m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point O is located L away from ball A, so the distances are L from O to A and 2L from O to B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The system is rotating in a vertical plane, and when ball A reaches its highest point, it exerts no force on the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rod is light, meaning its mass is negligible compared to the masses of the balls.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Both balls are moving in circular paths with radii L and 2L, respectively, and must have the same angular velocity, ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball A is at the highest point of its circular path, exerting no force on the rod.",
+    "conclusion": "The only force acting on ball A is its weight, mg downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball A at the highest point requires centripetal force to keep moving in a circle.",
+    "conclusion": "The centripetal force is provided by its weight, so mg = mω²L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = mω²L",
+    "conclusion": "ω = sqrt(g/L)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ball B is at the bottom of its circular path.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball B is at the bottom of its circular path.",
+    "conclusion": "The forces acting on ball B are its weight (mg upward) and the force exerted by the rod, F_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball B requires centripetal force to move in a circle with radius 2L.",
+    "conclusion": "The centripetal force is F_c = mω²(2L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force on ball B must be directed toward the center, which is upward.",
+    "conclusion": "F_net = F_B + mg = mω²(2L)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ω = sqrt(g/L)",
+    "conclusion": "F_net = F_B + mg = m*(g/L)*(2L) = 2mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_net = F_B + mg = 2mg",
+    "conclusion": "F_B = 2mg - mg = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod exerts a force upward on ball B (F_B = mg up).",
+    "conclusion": "Ball B exerts a force downward on the rod (F_B on rod = mg down).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball B exerts a force downward on the rod (F_B on rod = mg down).",
+    "conclusion": "The force exerted by ball B on the rod is 3mg downward.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

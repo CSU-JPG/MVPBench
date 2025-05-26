@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conveyor belt is 6 meters long, moves at a speed of 2 m/s, and the kinetic friction coefficient between cargo A and the conveyor is 0.2. Cargo is released from rest at the left end of the conveyor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Immediately after the load touches the belt, the only horizontal force on it is kinetic friction, whose magnitude is µ₁mg.",
+    "conclusion": "Dividing by the mass gives the initial acceleration a = µ₁g = 0.2 × 10 m/s² = 2 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "While the load is still slipping, this constant acceleration brings its speed up from 0 to the belt speed v₀ = 2 m/s.",
+    "conclusion": "The time for that is t₁ = v₀/a = 1 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time for that is t₁ = 1 s.",
+    "conclusion": "The distance covered in this phase is s₁ = ½at₁² = 1 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After matching the belt speed, slipping stops; the load now moves together with the belt at 2 m/s.",
+    "conclusion": "The remaining distance is L₁ − s₁ = 6 m − 1 m = 5 m, which takes t₂ = 5 m / 2 m/s = 2.5 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total travel time is T = t₁ + t₂ = 1 s + 2.5 s.",
+    "conclusion": "The total travel time is T = 3.5 s.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

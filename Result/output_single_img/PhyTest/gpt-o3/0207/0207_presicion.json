@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Label the two given charges: Charge 1: 2q is fixed at the lower left-front corner of the cube. Charge 2: –q is fixed at the upper right-back corner (the body-diagonal opposite the first).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Denote O as the midpoint of the body-diagonal connecting those two charges.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let k = 1/(4π ε₀). For any point P, the electric field magnitude due to a point charge Q at distance r is |E| = k|Q|/r².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The full body-diagonal of the cube = L√3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The full body-diagonal of the cube = L√3.",
+    "conclusion": "Hence the midpoint O is a distance L√3/2 from each charge.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Vertex A is one of the other six vertices. It is a body-diagonal neighbor of neither charge.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertex A is one of the other six vertices. It is a body-diagonal neighbor of neither charge.",
+    "conclusion": "From A to the 2q charge: r₁ = L√2. From A to the –q charge: r₂ = L√2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = k(2q)/(L√3/2)² + k(q)/(L√3/2)²",
+    "conclusion": "E = 12kq/(L²).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 12kq/(L²).",
+    "conclusion": "Field magnitude at O (given): E = 12kq/(L²).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r₁ = r₂ = L√2",
+    "conclusion": "|E_A| = √[ (k·2q / r₁²)² + (k·q / r₂²)² – 2( k·2q / r₁² )( k·q / r₂² ) cosθ ], where θ is the angle between the two radius vectors from A to the charges.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Geometry of the cube shows cosθ = –½.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute r₁ = r₂ = L√2 and cosθ = –½",
+    "conclusion": "Simplify, and compare with the earlier expression for E.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify, and compare with the earlier expression for E.",
+    "conclusion": "|E_A| = (E / 2).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

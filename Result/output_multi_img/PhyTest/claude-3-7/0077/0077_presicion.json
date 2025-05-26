@@ -1,0 +1,55 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "U-shaped tube with unequal diameters. Left tube A is open upward, and the cross-sectional area of the closed right tube B is 3 times that of tube A. The tube is filled with mercury, the atmospheric pressure is p₀ = 76 cmHg, and the ambient temperature is 27°C = 300 K. The distance from the mercury surface in tube A to the opening is h₁ = 24 cm, and the mercury surface is Δh = 4 cm higher than that in tube B. The length of the air column in tube B is h₂ = 12 cm. Tube A is heated while tube B remains at constant temperature. Goal: Find temperature of gas in tube A when liquid levels equalize.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, the pressure of the gas in tube B must balance the pressure from the atmospheric pressure transmitted through tube A and the pressure due to the height difference Δh.",
+    "conclusion": "For the gas in tube B: p₁ = p₀ + ρgΔh",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the gas in tube B: p₁ = p₀ + ρgΔh",
+    "conclusion": "Apply the ideal gas law to tube B initially: p₁V₁ = nRT₁, where V₁ = 3S × h₂ (volume of gas in tube B), T₁ = 300 K (initial temperature), n is the number of moles (constant)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When liquid levels equalize, Δh = 0, and the height of mercury in both tubes is the same.",
+    "conclusion": "The gas in tube B will have same temperature T₁ = 300 K (remains constant), new height (h₂ - dh₂), where dh₂ is the change in height, new volume V₂ = 3S × (h₂ - dh₂), new pressure p₂ = p₀ (since liquid levels are equal)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at constant temperature: p₁V₁ = p₂V₂",
+    "conclusion": "(p₀ + ρgΔh)(3S × h₂) = p₀(3S × (h₂ - dh₂))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(p₀ + ρgΔh)(3S × h₂) = p₀(3S × (h₂ - dh₂))",
+    "conclusion": "Simplifying: (p₀ + ρgΔh)h₂ = p₀(h₂ - dh₂)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying: (p₀ + ρgΔh)h₂ = p₀(h₂ - dh₂)",
+    "conclusion": "Expanding: p₀h₂ + ρgΔh·h₂ = p₀h₂ - p₀dh₂",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Expanding: p₀h₂ + ρgΔh·h₂ = p₀h₂ - p₀dh₂",
+    "conclusion": "Solving for dh₂: p₀dh₂ = ρgΔh·h₂",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for dh₂: p₀dh₂ = ρgΔh·h₂",
+    "conclusion": "dh₂ = (ρgΔh·h₂)/p₀",
+    "judgment": "Reasonable"
+  }]

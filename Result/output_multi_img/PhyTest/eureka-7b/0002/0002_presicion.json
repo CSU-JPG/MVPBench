@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to understand the relationship between the motion of the ball and the shadow it casts on the wall. The key is to use similar triangles to relate the height of the ball to the position of its shadow.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Define the variables: Let h(t) be the height of the ball as a function of time t. The initial height of the ball is L/2 (where L is the distance from the light source to the wall). The height of the ball as a function of time is given by h(t) = v_0 t - 1/2 g t^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum height is reached when the vertical component of the velocity is zero. The initial vertical velocity is v_0.",
+    "conclusion": "The time to reach the maximum height is t = v_0/g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At time t = v_0/g, the height of the ball is h(v_0/g) = v_0 * (v_0/g) - 1/2 * g * (v_0/g)^2.",
+    "conclusion": "The height of the ball at maximum height is 1/2 * (v_0^2/g).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Relate the height of the ball to the position of its shadow: The shadow of the ball on the wall forms a similar triangle with the light source and the wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, the ball is at L/2 and the shadow is at L. The ratio of the heights is L/2 / L = 1/2.",
+    "conclusion": "The ratio of the heights is 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the ball rises, the shadow moves closer to the light source. The height of the shadow H(t) can be expressed in terms of the height of the ball h(t) using similar triangles: h(t)/H(t) = 1/2.",
+    "conclusion": "Therefore, H(t) = 2h(t).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height of the ball is h(t) = v_0 t - 1/2 g t^2.",
+    "conclusion": "The height of the shadow is H(t) = 2(v_0 t - 1/2 g t^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial height of the shadow is H(0) = 2 * (L/2) = L.",
+    "conclusion": "The initial velocity of the shadow is the derivative of H(t) with respect to t evaluated at t = 0: H'(t) = 2(v_0 - g t).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t = 0, H'(0) = 2v_0.",
+    "conclusion": "Therefore, the initial velocity of the shadow is 2v_0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

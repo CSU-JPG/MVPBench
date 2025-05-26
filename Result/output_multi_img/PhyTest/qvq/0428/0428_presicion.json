@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A diving enthusiast sends a laser signal to shore rescue workers, and the angle between the laser beam and the water surface is α.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Only when α is greater than 41 degrees can the shore rescuers receive the laser beam.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves refraction of light as it passes from water to air, related to Snell's law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's law: n1 * sin(θ1) = n2 * sin(θ2), where n1 is the refractive index of water, θ1 is the angle of incidence, n2 is the refractive index of air, and θ2 is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of air is approximately 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the laser beam and the water surface is α, and when α > 41 degrees, the shore rescuers can receive the beam.",
+    "conclusion": "At α = 41 degrees, the beam just grazes the surface, and beyond that, it can escape into the air.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is the angle of incidence in the denser medium beyond which total internal reflection occurs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula for the critical angle is θc = arcsin(n2 / n1).",
+    "conclusion": "θc = arcsin(1 / n1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If α is the angle between the laser beam and the water surface, then the angle of incidence θ1 would be 90 degrees minus α.",
+    "conclusion": "θ1 = 90 - α",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At α = 41 degrees, θ1 = θc.",
+    "conclusion": "θc = 90 - 41 = 49 degrees",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If θc = 49 degrees, then 49 = arcsin(1 / n1).",
+    "conclusion": "sin(49) = 1 / n1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(49) = 1 / n1",
+    "conclusion": "n1 = 1 / sin(49)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

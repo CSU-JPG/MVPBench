@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The suitcase has a total mass of 15 kg and is pulled with an oblique upward force to achieve uniform motion on a horizontal surface. The gravitational acceleration is g = 10 m/s², sin 37° = 0.6, and the force of gravity is 10 m/s². The resistance of the suitcase to the ground is proportional to the supporting force of the ground, with a proportionality constant μ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a suitcase with wheels, which can be pushed or pulled on the ground.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The forces acting on the suitcase are: (1) the weight of the suitcase (G), (2) the normal force (N), (3) the frictional force (f = μN), and (4) the pull force (F), which has vertical and horizontal components.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The weight of the suitcase is given by G = mg, where m = 15 kg and g = 10 m/s².",
+    "conclusion": "The weight of the suitcase is G = 150 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pull force F can be decomposed into vertical and horizontal components: vertical component = F sin θ, horizontal component = F cos θ.",
+    "conclusion": "The pull force F has a vertical component F sin θ and a horizontal component F cos θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For uniform motion, the net force in the vertical direction must be zero. The vertical forces are the normal force N, the weight G, and the vertical component of the pull force F sin θ.",
+    "conclusion": "The vertical force balance equation is N + F sin θ = G.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the vertical force balance equation N + F sin θ = G.",
+    "conclusion": "The normal force is N = G - F sin θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For uniform motion, the net force in the horizontal direction must be zero. The horizontal forces are the frictional force f and the horizontal component of the pull force F cos θ.",
+    "conclusion": "The horizontal force balance equation is f = F cos θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force is given by f = μN, and the normal force is N = G - F sin θ.",
+    "conclusion": "The horizontal force balance equation becomes μ(G - F sin θ) = F cos θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation μ(G - F sin θ) = F cos θ.",
+    "conclusion": "The equation becomes μG - μF sin θ = F cos θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation μG - μF sin θ = F cos θ.",
+    "conclusion": "The equation becomes μG = F cos θ + μF sin θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation μG = F cos θ + μF sin θ.",
+    "conclusion": "The equation becomes F = μG / (cos θ + μ sin θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The minimum pull force F is given as 90 N, and the weight G is 150 N. Substituting these values into the equation F = μG / (cos θ + μ sin θ).",
+    "conclusion": "The equation becomes 90 = (μ * 150) / (cos θ + μ sin θ).",
+    "judgment": "Match"
+  }]

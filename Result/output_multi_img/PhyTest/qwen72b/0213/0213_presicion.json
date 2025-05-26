@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the electromotive force E and the internal resistance r of the power source, we need to use the information given about the voltmeter readings and the corresponding resistance values.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The circuit consists of a variable resistor R, an ideal voltmeter V, and a power source with an electromotive force E and internal resistance r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the resistance box reads R1 = 2 Ω and the voltmeter reads U1 = 4 V.",
+    "conclusion": "According to Ohm's law, the current I1 through the circuit is I1 = U1/R1 = 4/2 = 2 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the voltage divider rule for the power source with I1 = 2 A and U1 = 4 V.",
+    "conclusion": "4 = E - 2r (Equation 1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the resistance box reads R2 = 5 Ω and the voltmeter reads U2 = 5 V.",
+    "conclusion": "The current I2 through the circuit is I2 = U2/R2 = 5/5 = 1 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the voltage divider rule for the power source with I2 = 1 A and U2 = 5 V.",
+    "conclusion": "5 = E - r (Equation 2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We have two equations: 4 = E - 2r and 5 = E - r.",
+    "conclusion": "Subtract Equation 1 from Equation 2: 1 = r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute r = 1 back into Equation 2: 5 = E - 1.",
+    "conclusion": "E = 6.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

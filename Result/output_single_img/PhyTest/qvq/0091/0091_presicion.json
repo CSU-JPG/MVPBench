@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have two objects, A and B, each with a mass of 1 kg. They're connected by a massless string that passes over a fixed pulley at the top of an inclined plane. The inclined plane has an angle of 37 degrees with the horizontal, and it's fixed on a horizontal ground. Initially, object B is at the bottom of the inclined plane, and object A is 1 meter above the ground. The plane is long enough, and there's no friction between B and the plane, nor between the string and the pulley. The system is released from rest, and we're supposed to find the time it takes for object B to return to the bottom of the inclined plane after the string breaks when A hits the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The tension in the string will be the same throughout since the string is massless and there's no friction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The forces acting on object A are its weight (mg downward) and the tension T in the string upward. For object B, there's its weight (mg downward along the plane), the normal force from the plane, and the tension T in the string upward along the plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the plane is frictionless, the only force acting on B along the plane is the component of its weight down the plane and the tension up the plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The acceleration of the system is denoted as a. Since both objects are connected by a string, their accelerations will be related by the geometry of the system.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The string connects A and B via the pulley. The displacement of A downward is equal to the displacement of B up the plane, because the string length is constant.",
+    "conclusion": "y + x*sin(theta) = constant",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "y + x*sin(theta) = constant",
+    "conclusion": "a_A + a_B*sin(theta) = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a_A + a_B*sin(theta) = 0",
+    "conclusion": "a_B = -a_A / sin(theta)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The equations of motion for both objects are written.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For object A: mg - T = m*a_A",
+    "conclusion": "T = mg - m*a_A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For object B: T - m*g*sin(theta) = m*a_B",
+    "conclusion": "mg - m*a_A - m*g*sin(theta) = m*a_B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg - m*a_A - m*g*sin(theta) = m*a_B and a_B = -a_A / sin(theta)",
+    "conclusion": "g - a_A - g*sin(theta) = -a_A / sin(theta)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "g - a_A - g*sin(theta) = -a_A / sin(theta)",
+    "conclusion": "g(1 - sin(theta)) = a_A (1 - 1/sin(theta))",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a metal rod sliding on rails in a magnetic field, requiring the ratio of loop currents and powers of external forces at two speeds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speeds are given as v1 and v2 with a ratio of 1:2, meaning v2 is twice v1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A metal rod with resistance R slides uniformly from position ab to position a'b' along smooth horizontal rails with negligible resistance.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The diagram shows crosses indicating a magnetic field pointing into the page.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod is moving to the right, cutting through magnetic field lines.",
+    "conclusion": "This induces an emf in the rod according to Faraday's law.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced emf is given by: E = B l v, where B is the magnetic field strength, l is the length of the rod, and v is the velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the rails have negligible resistance, the resistance of the loop is essentially just R, the resistance of the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's law: I = E/R = B l v/R.",
+    "conclusion": "The current is directly proportional to the velocity of the rod.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given v2 = 2 v1, find the ratio of currents: I2/I1 = (B l v2/R) / (B l v1/R) = v2/v1.",
+    "conclusion": "The ratio of the loop currents is 2:1.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power of the external force is equal to the power dissipated in the circuit due to the induced current.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power dissipated in the resistor is given by: P = I^2 R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For v1: P1 = I1^2 R = (B l v1/R)^2 R = B^2 l^2 v1^2/R.",
+    "conclusion": "Power P1 is proportional to v1^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For v2: P2 = I2^2 R = (B l v2/R)^2 R = B^2 l^2 v2^2/R.",
+    "conclusion": "Power P2 is proportional to v2^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given v2 = 2 v1, substitute into P2: P2 = 4 B^2 l^2 v1^2/R = 4 P1.",
+    "conclusion": "The ratio of the powers is 4:1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The external force needed to maintain constant velocity is equal to the magnetic force: F = B I l.",
+    "conclusion": "The power delivered by the external force is P = F v = B l v I = B^2 l^2 v^2/R.",
+    "judgment": "Match"
+  }]

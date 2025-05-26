@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process A→B→C→D→A. Temperature at state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From A to B, pressure remains constant at 1 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Volume increases from 3 L to 4 L from A to B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ideal gas law: PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature at state A is 27°C.",
+    "conclusion": "Temperature at state A is 300 K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state A: P_A = 1 × 10^5 Pa, V_A = 3 L = 0.003 m³, T_A = 300 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state B: P_B = 1 × 10^5 Pa, V_B = 4 L = 0.004 m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A to B is an isobaric process.",
+    "conclusion": "Temperature will change if the volume changes, but T_B is not needed for work calculation.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Work done by gas in isobaric process: W = P * (V_B - V_A).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = 1 × 10^5 Pa, V_A = 0.003 m³, V_B = 0.004 m³.",
+    "conclusion": "W = 1 × 10^5 Pa * (0.004 m³ - 0.003 m³) = 100 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gas is expanding from A to B.",
+    "conclusion": "Work done by the gas on surroundings is positive: W = +100 J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Question asks for work done externally by the gas.",
+    "conclusion": "Work done externally by the gas from A to B is 100 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

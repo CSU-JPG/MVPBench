@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes the ABCDA cycle where P₁, P₂, V₁, and V₂ are known quantities.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state A is T₀.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In the state D, P_D = P₁ and V_D = V₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In the state A, P_A = P₁ and V_A = V₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Path D → A is carried out at the constant pressure P₁ while the volume is reduced from V₂ to V₁.",
+    "conclusion": "For any quasi-static process at constant pressure, W = ∫ P dV = P (V_final – V_initial).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Taking the limits V = V₂ → V₁ and P = P₁, W = P₁ (V₁ – V₂).",
+    "conclusion": "W_D→A = P₁ (V₁ – V₂).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since V₁ < V₂, V₁ – V₂ is negative.",
+    "conclusion": "The work done by the gas on the surroundings is W_D→A = –P₁ (V₂ – V₁).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

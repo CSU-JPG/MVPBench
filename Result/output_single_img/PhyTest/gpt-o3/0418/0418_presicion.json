@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The incident beam enters the prism normally to face AD, so it travels straight to the first sloping surface AB without deviation.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident beam enters the prism normally to face AD.",
+    "conclusion": "The beam travels straight to the first sloping surface AB without deviation.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At AB, the angle between the incident ray inside the glass and the normal to AB is 30° (because ∠OAB = 60°, so the complement to 90° gives 30°).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "∠OAB = 60°",
+    "conclusion": "The angle between the incident ray inside the glass and the normal to AB is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Critical angle: sin θ_c = 1/n = 1/√2 ⇒ θ_c = 45°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = √2",
+    "conclusion": "Critical angle θ_c = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Comparison: Angle of incidence i = 30° < θ_c (45°), so the ray refracts out of the prism at AB.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle of incidence i = 30°, θ_c = 45°",
+    "conclusion": "The ray refracts out of the prism at AB.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Applying Snell’s law at AB: n sin i = sin r",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n sin i = sin r, n = √2, i = 30°",
+    "conclusion": "√2 sin 30° = sin r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "√2 sin 30° = sin r",
+    "conclusion": "√2 (½) = sin r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "√2 (½) = sin r",
+    "conclusion": "sin r = √2 / 2 = sin 45°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin r = √2 / 2 = sin 45°",
+    "conclusion": "r = 45°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The emergent ray leaves face AB in the glass-to-air direction that makes 45° with the normal to AB.",
+    "conclusion": "The ray makes 45° inside the air on the exterior side of AB.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

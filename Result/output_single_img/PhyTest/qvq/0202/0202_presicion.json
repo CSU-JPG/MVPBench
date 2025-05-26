@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semi-circular wire frame with radius r is placed in a uniform magnetic field perpendicular to its plane. Points M and N are connected to a constant voltage power supply. The force on the straight part of the wire frame is F.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ampere force is the force on a current-carrying conductor in a magnetic field, given by F = I L x B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame consists of a straight part between M and N and a semi-circular arc from M to N via Q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on the straight part is F.",
+    "conclusion": "The force on the straight part is F = I x 2r x B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = I x 2r x B.",
+    "conclusion": "I x B = F / 2r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semi-circular arc has a length of πr.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I flows through the arc.",
+    "conclusion": "The force on the semi-circular arc is equivalent to the force on a straight conductor with length equal to the arc length.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on a curved wire in a uniform magnetic field is equal to the current times the magnetic field times the effective length.",
+    "conclusion": "The effective length for the semi-circular arc is the chord length, 2r.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on the semi-circular arc is calculated using the effective length.",
+    "conclusion": "The force on the semi-circular arc is F' = (2/π)F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The directions of the forces on the straight and curved parts are both vertically upward.",
+    "conclusion": "The total force on the entire wire frame is F + F' = (1 + 2/π)F.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

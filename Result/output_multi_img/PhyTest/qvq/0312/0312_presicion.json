@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process A→B→C→D→A with each state in equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at state A is 27°C, which is 300 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From A to B: Pressure is constant at 1 atm, volume increases from 3 L to 4 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From B to C: Volume is constant at 4 L, pressure decreases from 1 atm to 0.75 atm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From C to D: Pressure is constant at 0.75 atm, volume decreases from 4 L to 3 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From D to A: Volume is constant at 3 L, pressure increases from 0.75 atm to 1 atm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since it's a cyclic process, the gas returns to its initial state A with the same temperature and pressure.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state A: \\(P_A = 1 \\times 10^5\\) Pa, \\(V_A = 3\\) L = 0.003 m³, \\(T_A = 300\\) K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state B: \\(P_B = 1 \\times 10^5\\) Pa, \\(V_B = 4\\) L = 0.004 m³, \\(T_B = ?\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the pressure is constant from A to B, use Charles's law: \\(V \\propto T\\).",
+    "conclusion": "\\(\\frac{V_A}{T_A} = \\frac{V_B}{T_B}\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\frac{V_A}{T_A} = \\frac{V_B}{T_B}\\)",
+    "conclusion": "Plugging in the known values: \\(\\frac{0.003}{300} = \\frac{0.004}{T_B}\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving \\(\\frac{0.003}{300} = \\frac{0.004}{T_B}\\)",
+    "conclusion": "Solving for \\(T_B\\): \\(T_B = \\frac{0.004 \\times 300}{0.003} = 400\\) K",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A is marked with a red dot at (3 L, 1 atm), and state B at (4 L, 1 atm).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculation gives 400 K for \\(T_B\\), consistent with Charles's law at constant pressure.",
+    "conclusion": "Convert 400 K to °C: \\(T(°C) = 400 - 273.15 = 126.85\\) °C ≈ 127°C",
+    "judgment": "Reasonable"
+  }
+]

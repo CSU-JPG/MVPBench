@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The truck and the bus start braking simultaneously. The initial distance between the truck and the bus is 30 meters.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The truck's initial velocity is 40 m/s, and it decelerates linearly. The bus's initial velocity is 30 m/s, and it also decelerates linearly.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck's velocity decreases from 40 m/s to 0 m/s over 20 seconds.",
+    "conclusion": "Deceleration of the truck: \\( a_t = \\frac{0 - 40}{20} = -2 \\, \\text{m/s}^2 \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus's velocity decreases from 30 m/s to 0 m/s over 30 seconds.",
+    "conclusion": "Deceleration of the bus: \\( a_b = \\frac{0 - 30}{30} = -1 \\, \\text{m/s}^2 \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the truck: Initial velocity \\( u_t = 40 \\, \\text{m/s} \\), Deceleration \\( a_t = -2 \\, \\text{m/s}^2 \\), Time \\( t = 10 \\, \\text{s} \\)",
+    "conclusion": "Distance traveled by the truck: \\( s_t = 40(10) + \\frac{1}{2}(-2)(10)^2 = 300 \\, \\text{meters} \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the bus: Initial velocity \\( u_b = 30 \\, \\text{m/s} \\), Deceleration \\( a_b = -1 \\, \\text{m/s}^2 \\), Time \\( t = 10 \\, \\text{s} \\)",
+    "conclusion": "Distance traveled by the bus: \\( s_b = 30(10) + \\frac{1}{2}(-1)(10)^2 = 250 \\, \\text{meters} \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial distance between the truck and the bus: 30 meters, Distance traveled by the truck: 300 meters, Distance traveled by the bus: 250 meters",
+    "conclusion": "Relative distance at \\( t = 10 \\, \\text{s} \\): \\( \\text{Relative distance} = 300 - 250 + 30 = 80 \\, \\text{meters} \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum distance between the truck and the bus during the braking process is calculated.",
+    "conclusion": "The maximum distance between the two vehicles is 80 meters.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

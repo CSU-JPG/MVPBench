@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The radar emits radio waves for a duration of 1 μs, with an interval of 100 μs between two emissions.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The screen shows sharp waves at points a, b, and c, and it is given that ab = bc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time between emissions is 100 μs, and ab = bc.",
+    "conclusion": "The time for the wave to travel to the obstacle and back is half of the interval between emissions.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total time for the wave to travel to the obstacle and back is 100 μs.",
+    "conclusion": "The time for one-way travel (from radar to obstacle) is 50 μs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The speed of light c = 3.0 × 10^8 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time for one-way travel is 50 μs.",
+    "conclusion": "Convert 50 μs to seconds: 50 μs = 50 × 10^-6 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The speed of light c = 3.0 × 10^8 m/s and the time for one-way travel is 50 × 10^-6 s.",
+    "conclusion": "The distance to the obstacle can be calculated using the formula d = speed × time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = 3.0 × 10^8 m/s × 50 × 10^-6 s.",
+    "conclusion": "The distance to the obstacle is 15,000 m.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An electromagnetic railgun fire truck launches fire extinguishing projectiles into high-rise buildings using electromagnetic propulsion technology.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The energy stored in capacitors is converted into the kinetic energy of the projectile through electromagnetic induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "By setting the working voltage of the energy storage capacitors, the desired muzzle velocity of the projectile can be achieved.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The railgun is aimed directly at a high-rise building, with a horizontal distance L=60m between them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The muzzle velocity of the projectile is v₀=50m/s, and the launch angle relative to the horizontal plane is θ=53°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Neglecting the height of the railgun above the ground and air resistance, and taking the acceleration due to gravity as g=10m/s², and sin53°=0.8.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 53° = 0.8",
+    "conclusion": "cos 53° = √(1 – sin²) = √(1 – 0.8²) = √0.36 = 0.6",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v₀ = 50 m/s, cosθ = 0.6",
+    "conclusion": "v₀ₓ = v₀ cosθ = 50 m/s × 0.6 = 30 m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v₀ = 50 m/s, sinθ = 0.8",
+    "conclusion": "v₀ᵧ = v₀ sinθ = 50 m/s × 0.8 = 40 m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = v₀ₓ t, L = 60 m, v₀ₓ = 30 m/s",
+    "conclusion": "t = L / v₀ₓ = 60 m / 30 m/s = 2.0 s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "y = v₀ᵧ t – ½ g t², v₀ᵧ = 40 m/s, t = 2.0 s, g = 10 m/s²",
+    "conclusion": "y = 40 m/s × 2.0 s – ½ (10 m/s²)(2.0 s)² = 80 m – 0.5 × 10 × 4 = 80 m – 20 m = 60 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The projectile is launched from ground level; its vertical displacement equals the height above the ground where it strikes the building.",
+    "conclusion": "H = 60 m",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

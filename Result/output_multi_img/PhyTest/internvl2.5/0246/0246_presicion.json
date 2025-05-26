@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have two parallel straight guide-rails ab and cd separated by distance l. A fixed resistor R is connected between points b and d. A conductor rod MN with resistance R is placed perpendicular to ab and cd and is moving at velocity v along the guide-rails. The entire setup is in a uniform magnetic field B, perpendicular to the plane of the guide-rails (pointing into the paper).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As MN moves with velocity v, it cuts across the magnetic field lines.",
+    "conclusion": "The induced electromotive force (EMF) in MN is given by E = B * l * v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance in the circuit is the sum of the resistance of the rod MN and the fixed resistor R.",
+    "conclusion": "Since MN also has resistance R, the total resistance R_total = R + R = 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's Law, I = E / R_total.",
+    "conclusion": "I = (B * l * v) / (2R)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By the right-hand rule for EMF induced by motion in a magnetic field: Thumb points in the direction of motion of MN (to the right). Fingers point in the direction of the magnetic field (into the paper).",
+    "conclusion": "The palm faces downwards, indicating that the current flows from M to N.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across MN can be considered as the voltage drop across the rod due to the induced current.",
+    "conclusion": "Voltage drop U = I * R = (B * l * v) / 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced current flows from point b to d through the fixed resistor R.",
+    "conclusion": "The direction of the induced current through the fixed resistor R is from b to d.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

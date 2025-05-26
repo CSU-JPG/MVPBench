@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the increase in the range of light incident on the central point at the bottom of the light-transmitting hole when a glass brick with a refractive index of \\( n = \\sqrt{3} \\) is embedded in the light hole.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The diameter of the circular light hole is \\( L = 40 \\, \\text{cm} \\). The thickness of the light hole is \\( d = 20\\sqrt{3} \\, \\text{cm} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light that enters the hole without any glass brick will spread out based on the angle of incidence on the roof.",
+    "conclusion": "The initial angle of incidence \\( i_0 \\) can be calculated using the geometry of the hole: \\(\\tan(i_0) = \\frac{L/2}{d} = \\frac{20}{20\\sqrt{3}} = \\frac{1}{\\sqrt{3}}\\). This gives us: \\(i_0 = \\tan^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right) = 30^\\circ.\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A glass brick with a refractive index \\( n = \\sqrt{3} \\) is embedded in the light hole.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We need to find the new angle of incidence \\( i \\) after the glass brick is embedded.",
+    "conclusion": "When light enters the glass brick, it refracts according to Snell's law: \\(n_{\\text{air}} \\sin(i) = n_{\\text{glass}} \\sin(r)\\), where \\( i \\) is the angle of incidence in the air, and \\( r \\) is the angle of refraction in the glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the critical angle where the refracted ray grazes the boundary of the glass brick: \\(\\sin(r) = \\frac{1}{n}\\). Substituting \\( n = \\sqrt{3} \\): \\(\\sin(r) = \\frac{1}{\\sqrt{3}}\\).",
+    "conclusion": "Solving for \\( r \\): \\(r = \\sin^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right) = 30^\\circ.\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence \\( i \\) in the air for which the light will refract at \\( r = 30^\\circ \\): \\(\\sin(i) = n \\sin(r) = \\sqrt{3} \\times \\frac{1}{\\sqrt{3}} = 1.\\)",
+    "conclusion": "Therefore: \\(i = \\sin^{-1}(1) = 90^\\circ.\\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial range of incidence without the glass brick was \\( 30^\\circ \\). With the glass brick, the range increases to \\( 90^\\circ \\).",
+    "conclusion": "The increase in the range of incidence is: \\(90^\\circ - 30^\\circ = 60^\\circ.\\)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

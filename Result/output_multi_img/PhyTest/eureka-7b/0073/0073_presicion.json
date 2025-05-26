@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The working principle of the electromagnetic railgun is that the projectile moves freely between two parallel rails and maintains good contact with the rails. Current flows in from one rail, passes through the conductive projectile, and then flows back through the other rail. The rail current generates a magnetic field perpendicular to the plane of the rails at the projectile, and the electrified projectile is propelled at high speed along the rails due to the Lorentz force acting on it.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Xiao Ming purchased a railgun model with the following parameters: rail length L = 0.5 m, parallel rail spacing d = 0.02 m, projectile mass m = 0.02 kg, rail current I = 10 A, and magnetic field strength B = 1 T. All resistances are neglected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Lorentz force acting on the projectile is given by F = B * I * d, where B is the magnetic field strength, I is the current, and d is the distance between the rails.",
+    "conclusion": "The force on the projectile is F = 1 T * 10 A * 0.02 m = 0.2 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done on the projectile is equal to the change in its kinetic energy. The work done by the force F over a distance L is W = F * L. The kinetic energy of the projectile is K = 1/2 * m * v^2. Setting the work done equal to the change in kinetic energy, we get F * L = 1/2 * m * v^2.",
+    "conclusion": "The velocity of the projectile is v = sqrt(2 * F * L / m).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of the projectile is v = sqrt(2 * F * L / m). Substituting the values F = 0.2 N, L = 0.5 m, and m = 0.02 kg, we get v = sqrt(2 * 0.2 N * 0.5 m / 0.02 kg).",
+    "conclusion": "The velocity of the projectile is v = sqrt(10) m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power of the electromagnetic railgun is the rate at which work is done, given by P = F * v. Substituting the values F = 0.2 N and v = sqrt(10) m/s.",
+    "conclusion": "The power of the electromagnetic railgun is P = 0.2 * sqrt(10) W.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

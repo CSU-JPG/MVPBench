@@ -1,0 +1,77 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the radius d of the light-blocking plate such that no light exits from the inner surface of the hemispherical shell.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The outer radius of the hemisphere is R' = sqrt(2)R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The inner radius of the hemisphere is R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The refractive index of the glass is n = sqrt(2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For TIR to occur at the inner surface, the angle of incidence at the inner surface must be greater than or equal to the critical angle theta_c.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The critical angle theta_c is given by sin theta_c = 1/n = 1/sqrt(2) = sqrt(2)/2, therefore, theta_c = 45 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Consider a light ray incident parallel to the central axis OO' at a distance x from the axis.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "This ray will strike the outer surface at a point where the radial distance from the center is sqrt(2)R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The angle of incidence at the outer surface is theta_i, which can be found using the geometry of the hemisphere.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The angle theta_i is related to the distance x by sin theta_i = x/sqrt(2)R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using Snell's law, the angle of refraction theta_r inside the glass is n sin theta_i = sin theta_r, implying sin theta_r = x/R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For TIR to occur at the inner surface, the angle of incidence at the inner surface must be >= 45 degrees, therefore, sin theta_r >= sin 45 degrees implies x/R >= sqrt(2)/2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solving for x gives x >= sqrt(2)/2 R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The maximum value of x for which TIR occurs is sqrt(2)/2 R, therefore, the radius d of the light-blocking plate must be d = sqrt(2)/2 R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The radius d of the light-blocking plate is boxed{sqrt(2)/2 R}.",
+    "relevant": "Yes"
+  }
+]

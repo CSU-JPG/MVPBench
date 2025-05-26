@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the distance between the position where the red light hits the screen and point A, we need to follow the path of the light through the semicircular brick and use the principles of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cross-sectional view of a material brick with a semicircle on the left and a right triangle on the right is shown. BC is the diameter of the semicircle, O is the center, and the radius is R. AB is horizontal, and angle A is 30 degrees. A screen MN is perpendicular to the horizontal plane at point A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the brick for red light is sqrt(3), and the speed of red light in vacuum is C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle between the incident direction and BC is 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident light angle with respect to the normal (BC) is 60 degrees. The refractive index of the brick is sqrt(3).",
+    "conclusion": "The incident angle is 60 degrees, and the refractive index is sqrt(3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(theta_i) = n2 sin(theta_r). n1 = 1 (vacuum), n2 = sqrt(3), sin(60 degrees) = sqrt(3)/2.",
+    "conclusion": "sin(theta_r) = 1/2, thus theta_r = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the brick at D and travels to C. The angles are 30 degrees and 60 degrees, forming a 30-60-90 triangle.",
+    "conclusion": "In a 30-60-90 triangle, the sides are in the ratio 1 : sqrt(3) : 2. Given R is the radius, the length DC is R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The right triangle COA has angles 30 degrees and 60 degrees.",
+    "conclusion": "The distance from C to A is the hypotenuse of this triangle, which is 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light refracts at D and exits at C, traveling horizontally to hit the screen at P.",
+    "conclusion": "The horizontal distance from C to the screen is 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance the light travels horizontally from A to the screen is 2R.",
+    "conclusion": "The distance between the position where the red light hits the screen and point A is 2R.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

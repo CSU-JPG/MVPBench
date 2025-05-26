@@ -1,0 +1,59 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the area of the light-emitting region on the water surface, we need to consider the refraction of light as it exits the water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light bulb emits light in all directions, but only the light that refracts at the water surface will contribute to the illuminated area.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use Snell's Law for red light from bulb A at depth \\( h_1 \\): \\( n_1 \\sin \\theta_1 = \\sin 90^\\circ \\)",
+    "conclusion": "Solve for \\(\\theta_1\\): \\(\\sin \\theta_1 = \\frac{1}{n_1}\\), \\(\\theta_1 = \\arcsin\\left(\\frac{1}{n_1}\\right)\\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use Snell's Law for yellow light from bulb B at depth \\( h_2 \\): \\( n_2 \\sin \\theta_2 = \\sin 90^\\circ \\)",
+    "conclusion": "Solve for \\(\\theta_2\\): \\(\\sin \\theta_2 = \\frac{1}{n_2}\\), \\(\\theta_2 = \\arcsin\\left(\\frac{1}{n_2}\\right)\\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius \\( r \\) of the illuminated area on the surface is related to the depth \\( h \\) and the angle of refraction \\(\\theta\\): \\( r = h \\tan \\theta \\)",
+    "conclusion": "For red light: \\( r_1 = h_1 \\tan(\\arcsin\\left(\\frac{1}{n_1}\\right)) \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius \\( r \\) of the illuminated area on the surface is related to the depth \\( h \\) and the angle of refraction \\(\\theta\\): \\( r = h \\tan \\theta \\)",
+    "conclusion": "For yellow light: \\( r_2 = h_2 \\tan(\\arcsin\\left(\\frac{1}{n_2}\\right)) \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area \\( A \\) of the illuminated circle on the surface is given by: \\( A = \\pi r^2 \\)",
+    "conclusion": "For red light: \\( A_1 = \\pi (h_1 \\tan(\\arcsin\\left(\\frac{1}{n_1}\\right)))^2 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area \\( A \\) of the illuminated circle on the surface is given by: \\( A = \\pi r^2 \\)",
+    "conclusion": "For yellow light: \\( A_2 = \\pi (h_2 \\tan(\\arcsin\\left(\\frac{1}{n_2}\\right)))^2 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the areas are the same, set \\( A_1 = A_2 \\)",
+    "conclusion": "\\(\\pi (h_1 \\tan(\\arcsin\\left(\\frac{1}{n_1}\\right)))^2 = \\pi (h_2 \\tan(\\arcsin\\left(\\frac{1}{n_2}\\right)))^2\\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\pi (h_1 \\tan(\\arcsin\\left(\\frac{1}{n_1}\\right)))^2 = \\pi (h_2 \\tan(\\arcsin\\left(\\frac{1}{n_2}\\right)))^2\\)",
+    "conclusion": "Solve for \\( h_2 \\): \\( h_2 = h_1 \\frac{\\tan(\\arcsin\\left(\\frac{1}{n_1}\\right))}"}]

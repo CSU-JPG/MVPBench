@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The p-V image of the change process of an ideal gas from state A to state B and then to state C is shown.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature of the gas in state A is known to be 27 °C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A: p₁ = 3.0 × 10⁵ Pa, V₁ = 1.0 × 10⁻³ m³, T₁ = 27 °C = 300 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State B: p₂ = 2.0 × 10⁵ Pa, V₂ = 1.0 × 10⁻³ m³",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State C: p₃ = 2.0 × 10⁵ Pa, V₃ = 3.0 × 10⁻³ m³",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = p₁V₁ / (R T₁)",
+    "conclusion": "Amount of gas (moles) n ≈ 0.120 mol",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = p₂V₂/(nR)",
+    "conclusion": "Temperature at B T₂ ≈ 201 K",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₃ = p₃V₃/(nR)",
+    "conclusion": "Temperature at C T₃ ≈ 603 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A→B (isochoric): W_AB = 0",
+    "conclusion": "Work done from A to B W_AB = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B→C (isobaric): W_BC = p₂ (V₃ – V₂)",
+    "conclusion": "Work done from B to C W_BC = 400 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total W_AC = W_AB + W_BC",
+    "conclusion": "Total work done from A to C W_AC = 400 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔT_AC = T₃ – T₁",
+    "conclusion": "Change in temperature ΔT_AC = 303 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU = n C_V ΔT",
+    "conclusion": "Change in internal energy ΔU ≈ 378 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q = ΔU + W",
+    "conclusion": "Heat transferred Q_AC ≈ 7.8 × 10² J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The heat absorbed by the gas during the entire A → B → C process is approximately 7.8 × 10² joules (about 0.8 kJ).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

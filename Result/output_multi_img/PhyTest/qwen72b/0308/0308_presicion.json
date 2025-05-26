@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law states: PV = nRT where P is the pressure, V is the volume, n is the number of moles of the gas, R is the universal gas constant, and T is the temperature in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For state A, Volume V_A = V_0, Temperature T_A = T_0, Pressure P_A = P_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law for state A: P_0 V_0 = n R T_0",
+    "conclusion": "P_0 V_0 = n R T_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For state B, Volume V_B = 2V_0, Temperature T_B = T_0 (since AB is parallel to the V-axis, the temperature remains constant).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law for state B: P_B (2V_0) = n R T_0",
+    "conclusion": "P_B (2V_0) = n R T_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the number of moles n and the gas constant R are the same for both states, we can set up a ratio using the ideal gas law: From state A: P_0 V_0 = n R T_0 From state B: P_B (2V_0) = n R T_0",
+    "conclusion": "Divide the equation for state B by the equation for state A: (P_B (2V_0))/(P_0 V_0) = (n R T_0)/(n R T_0)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(P_B (2V_0))/(P_0 V_0) = 1",
+    "conclusion": "2P_B = P_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2P_B = P_0",
+    "conclusion": "P_B = P_0/2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

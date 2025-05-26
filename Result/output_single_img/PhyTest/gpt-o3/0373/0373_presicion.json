@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball of mass m is dropped from rest at a height H above the ground. It undergoes an inelastic collision with the ground and rebounds to a maximum height h above the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the air resistance experienced by the basketball during its motion is λ times the magnitude of the gravitational force acting on the basketball (where λ is a constant and 0<λ<(H-h)/(H+h)).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity is the same for each collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the gravitational acceleration is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the ratio of the post-collision velocity to the pre-collision velocity of the basketball during its collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Result (ratio of rebound-speed to impact-speed): k ≡ vafter/vbefore = √[(1 + λ) h / ( (1 − λ) H )] (0 < k < 1)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net downward acceleration during descent from height H: g (1 − λ)",
+    "conclusion": "Impact speed: vbefore² = 2 g(1 − λ) H",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net downward (retarding) acceleration during rise to height h after the bounce: g (1 + λ)",
+    "conclusion": "Launch speed just after the bounce: vafter² = 2 g(1 + λ) h",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The collision itself is characterised by a constant speed-ratio k, so vafter = k vbefore",
+    "conclusion": "Substitute the two kinematic results and solve for k: k² [2 g(1 − λ) H] = 2 g(1 + λ) h",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "k² [2 g(1 − λ) H] = 2 g(1 + λ) h",
+    "conclusion": "k² = (1 + λ) h / [ (1 − λ) H ]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "k² = (1 + λ) h / [ (1 − λ) H ]",
+    "conclusion": "k = √[(1 + λ) h / ((1 − λ) H)]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Because 0 < λ < (H − h)/(H + h), the square-root argument is less than 1, giving k < 1 as expected for an inelastic bounce.",
+    "conclusion": "Hence the required ratio of the post-collision velocity to the pre-collision velocity is k = √[(1 + λ) h / ((1 − λ) H)].",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

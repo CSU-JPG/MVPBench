@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a small ball with charge +q and mass m released from rest at point A in a tube. The tube consists of a quarter-circle arc (AB) and a horizontal straight section (BCD). Two fixed charges, +Q and -Q, are located at points M and N, respectively, forming an equilateral triangle with point B. The goal is to determine the magnitude of the electric force experienced by the ball at point B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The tube consists of a quarter-circle arc (AB) with radius R and a horizontal straight section (BCD). Points M, N, and B form an equilateral triangle with side length L. The line MN passes through point C and is perpendicular to BCD.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electrostatic constant is k, and the gravitational acceleration is g. The small ball can be treated as a point charge, and the tube is smooth and insulated.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The small ball is released from rest at point A and moves under the influence of gravitational and electric forces.",
+    "conclusion": "The forces acting on the small ball are gravitational force (F_g = mg, downward) and electric forces due to the charges at points M and N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charges at M and N are +Q and -Q, respectively, and the ball has charge +q.",
+    "conclusion": "The ball experiences an electric force due to the charge at M, F_1 = kQq / (distance^2), and due to the charge at N, F_2 = kQq / (distance^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the ball at point B and the charges at M and N is L (from the equilateral triangle geometry).",
+    "conclusion": "The magnitudes of the electric forces are F_1 = F_2 = kQq / L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces F_1 and F_2 act along the lines connecting the ball at B to the charges at M and N, respectively.",
+    "conclusion": "The angle between F_1 and F_2 is 120° (from the equilateral triangle geometry).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces F_1 and F_2 are equal in magnitude and form an angle of 120°.",
+    "conclusion": "The resultant force F can be calculated using the parallelogram rule: F = 2F_1 * cos(60°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_1 = kQq / L^2 and cos(60°) = 1/2.",
+    "conclusion": "The resultant force F = 2 * (kQq / L^2) * (1/2) = kQq / L^2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

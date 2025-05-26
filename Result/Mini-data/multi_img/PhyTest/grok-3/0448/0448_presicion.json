@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a semicircular material brick and a right triangle, aiming to find the distance between the point where a red light ray hits a screen and point A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semicircle has its diameter along BC, with O as the center and radius R. Thus, BC = 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The right triangle ABC has angle A = 30°, and AB is horizontal. Angle C is 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle A = 30°, Angle C = 90°",
+    "conclusion": "The remaining angle at B is 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Triangle ABC, BC = 2R, angle A = 30°",
+    "conclusion": "AB = 4R using sin 30° = BC/AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Triangle ABC, AB = 4R, angle A = 30°",
+    "conclusion": "AC = 2√3R using cos 30° = AC/AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A screen MN is placed at point A, perpendicular to the horizontal plane, so MN is vertical.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A beam of red light is directed at the center O of the semicircle, with an angle of 60° between the incident direction and BC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the brick for red light is √3, and the speed of light in a vacuum is c.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Incident ray directed at O, angle with BC is 60°",
+    "conclusion": "The angle of incidence i is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law, n1 = 1, n2 = √3, i = 30°",
+    "conclusion": "The angle of refraction r is 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refracted ray travels inside the brick",
+    "conclusion": "The refracted ray travels downward at 60° to the horizontal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refracted ray travels inside the brick, angle with horizontal is 60°",
+    "conclusion": "The refracted ray hits BA at point P.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refracted ray hits BA at point P",
+    "conclusion": "The outgoing light DP and AB are parallel.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Outgoing light DP and AB are parallel",
+    "conclusion": "AD = AC - CD = 3R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AD = 3R, angle A = 30°",
+    "conclusion": "The distance between the position where the red light hits the screen and point A is PA = 3/2 R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

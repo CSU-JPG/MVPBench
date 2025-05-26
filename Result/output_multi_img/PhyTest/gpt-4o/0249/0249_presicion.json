@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the effective value of the induced electromotive force (emf) in the coil, we need to consider the change in magnetic flux through the coil as it rotates in the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil rotates around the axis OO' at a constant angular velocity ω, and the magnetic field is uniform with magnetic induction B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil is a square with side length L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The axis OO' is perpendicular to the magnetic field and coplanar with the coil.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side ab is at a distance of L/4 from the axis OO'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux Φ through the coil is given by: Φ = B ⋅ A ⋅ cos(θ) where A is the area of the coil and θ is the angle between the normal to the coil and the magnetic field.",
+    "conclusion": "The area A of the square coil is L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the coil rotates, θ changes with time. Specifically, θ = ωt, where t is time.",
+    "conclusion": "Substitute θ = ωt into the flux equation: Φ(t) = B ⋅ L^2 ⋅ cos(ωt)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf ℰ is given by Faraday's law of electromagnetic induction: ℰ = -N dΦ/dt where N is the number of turns in the coil.",
+    "conclusion": "Differentiate Φ(t) with respect to t: dΦ/dt = -B ⋅ L^2 ⋅ ω ⋅ sin(ωt)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute dΦ/dt into Faraday's law: ℰ = N ⋅ B ⋅ L^2 ⋅ ω ⋅ sin(ωt)",
+    "conclusion": "The amplitude of the emf is ℰ₀ = N ⋅ B ⋅ L^2 ⋅ ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective value (root mean square, RMS) of the sinusoidal emf is given by: ℰ_eff = ℰ₀/√2 where ℰ₀ is the amplitude of the emf.",
+    "conclusion": "The effective value of the induced emf is: ℰ_eff = N ⋅ B ⋅ L^2 ⋅ ω/√2",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

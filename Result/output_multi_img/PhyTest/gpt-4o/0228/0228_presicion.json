@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square coil has n turns and a side length a. Half of the coil is inside a uniform magnetic field, and the plane of the coil is perpendicular to the magnetic field. The magnetic induction B increases uniformly from B to 2B over a time interval Δt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The square coil has n turns and a side length a. Half of the coil is inside a uniform magnetic field.",
+    "conclusion": "The effective area of the coil exposed to the magnetic field is A_effective = 1/2 * a^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective area of the coil exposed to the magnetic field is A_effective = 1/2 * a^2.",
+    "conclusion": "The magnetic flux through the coil is Φ = n * B * A_effective = n * B * (1/2 * a^2) = n * B * a^2 / 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic induction B changes uniformly from B to 2B over the time interval Δt.",
+    "conclusion": "The change in magnetic flux ΔΦ is ΔΦ = Φ_final - Φ_initial.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial flux Φ_initial = n * B * a^2 / 2, Final flux Φ_final = n * 2B * a^2 / 2.",
+    "conclusion": "ΔΦ = n * 2B * a^2 / 2 - n * B * a^2 / 2 = n * B * a^2 / 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday's law states that the induced EMF is equal to the rate of change of magnetic flux.",
+    "conclusion": "The induced EMF is ε = ΔΦ / Δt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔΦ = n * B * a^2 / 2.",
+    "conclusion": "ε = (n * B * a^2 / 2) / Δt = n * B * a^2 / (2 * Δt).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

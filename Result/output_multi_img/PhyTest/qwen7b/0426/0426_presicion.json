@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The observer (person) is at h1 = 15 meters above the water surface. The submarine is at h2 = 23 meters below the water surface, making the total vertical distance from the observer to the submarine h2 + h1 = 23 + 15 = 38 meters. The angle of incidence is 53°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of water is n = 4/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law: n_water * sin(theta_inc) = sin(theta_refracted).",
+    "conclusion": "4/3 * sin(53°) = sin(theta_refracted).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(53°) = 0.8.",
+    "conclusion": "4/3 * 0.8 = sin(theta_refracted).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4/3 * 0.8 = sin(theta_refracted).",
+    "conclusion": "1.067 = sin(theta_refracted).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1.067 = sin(theta_refracted).",
+    "conclusion": "This value is not possible since the sine of an angle cannot exceed 1. Total internal reflection occurs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total vertical distance is 38 meters and angle of incidence is 53°.",
+    "conclusion": "tan(53°) = 38/x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(53°) = 4/3.",
+    "conclusion": "4/3 = 38/x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4/3 = 38/x.",
+    "conclusion": "x = 28.5 meters.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There's a square wire frame made of uniform wire, with each side being 0.2 meters long. Half of the square is placed in a uniform magnetic field that's perpendicular to the paper and directed into the paper. The magnetic field is increasing at a rate of 10 teslas per second.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The square is split into two halves by the magnetic field. The left half is in the magnetic field, and the right half is not. There are crosses in the left half of the square, representing the magnetic field lines going into the page.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is increasing, changing the flux through the area enclosed by the wire frame.",
+    "conclusion": "According to Faraday's law, a change in magnetic flux through a closed loop induces an EMF in the loop.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side length of the square is 0.2 meters.",
+    "conclusion": "The total area of the square is A_total = side^2 = (0.2 m)^2 = 0.04 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only half of the square is in the magnetic field.",
+    "conclusion": "The effective area experiencing the magnetic field is A_effective = A_total / 2 = 0.04 m² / 2 = 0.02 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is increasing at a rate of 10 T/s.",
+    "conclusion": "The rate of change of magnetic flux is dΦ/dt = A_effective * dB/dt = 0.02 m² * 10 T/s = 0.2 Wb/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's law, the induced EMF is equal to -dΦ/dt.",
+    "conclusion": "The magnitude of the induced EMF is EMF = |dΦ/dt| = 0.2 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is uniform, so the induced EMF will be distributed evenly around the loop.",
+    "conclusion": "The EMF will cause a current to flow in the wire frame, generating a potential difference across different points.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is increasing into the page.",
+    "conclusion": "Using Lenz's law, the induced current will flow clockwise to oppose the change.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Points a and b are connected by a segment that is not in the magnetic field.",
+    "conclusion": "The potential difference between points a and b is determined by the distribution of the induced EMF.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The EMF is 0.2 V and points a and b are at the midpoints.",
+    "conclusion": "The potential difference U_ab = -E/2 = -0.2V/2 = -0.1V.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

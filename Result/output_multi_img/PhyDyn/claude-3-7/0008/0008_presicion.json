@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, C and D. Predict which container (E, F or G) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There is a setup with colored liquids flowing from containers at the top (A, B, C, D) down through a series of baffles (colored rods) and ultimately reaching containers at the bottom (E, F, G).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container A is a green tab at the top.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There is a brown rod/baffle labeled A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The green liquid flows down and follows the brown rod.",
+    "conclusion": "The green liquid encounters the green path which directs it further left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The green liquid continues along this path.",
+    "conclusion": "The green liquid eventually reaches container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container B is a pink tab at the top.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pink liquid flows straight down until it hits the purple rod.",
+    "conclusion": "The pink liquid flows along the purple rod toward the bottom left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pink liquid connects with the blue rod and flows leftward.",
+    "conclusion": "The pink liquid ultimately flows into container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container C is a yellow tab at the top.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The yellow liquid flows down and eventually makes contact with the orange rod.",
+    "conclusion": "The yellow liquid flows along a path that moves downward and to the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The yellow liquid's path connects to the bottom container.",
+    "conclusion": "The yellow liquid flows into container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container D is a blue tab at the top.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The blue liquid flows down and contacts the orange rod.",
+    "conclusion": "The blue liquid follows a path rightward.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The blue liquid clearly flows into container G.",
+    "conclusion": "Liquid from container D flows into container G.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Based on the visual evidence across all three images.",
+    "conclusion": "Liquid from container A flows into container E; Liquid from container B flows into container F; Liquid from container C flows into container F; Liquid from container D flows into container G.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

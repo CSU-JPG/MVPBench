@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a rectangular wire frame rotating in a uniform magnetic field: Single-turn rectangular wire frame (abcd) in a horizontal uniform magnetic field B, Area of the wire frame is S, Resistance of the wire frame is R, The wire frame rotates at a constant angular velocity ω around a vertical axis, The axis of rotation coincides with side cd, We need to find the instantaneous induced current at 60° rotation and the average EMF during this process",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux Φ through a loop is given by: Φ = B·S·cos(θ), Where: B is the magnetic field intensity, S is the area of the loop, θ is the angle between the magnetic field direction and the normal to the loop's surface",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initially, the loop is in the horizontal plane with the magnetic field also horizontal. This means the normal to the loop's surface is vertical, perpendicular to the magnetic field, so initially θ = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the loop rotates around the cd side, the angle between the normal and the magnetic field changes.",
+    "conclusion": "When the loop has rotated by angle α, the angle between the normal and the magnetic field is: θ = 90° - α",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Therefore, the magnetic flux at any angle α is: Φ(α) = B·S·cos(90° - α)",
+    "conclusion": "Φ(α) = B·S·sin(α)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's law, the induced EMF is: EMF = -dΦ/dt",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of flux is: dΦ/dt = d(B·S·sin(α))/dt = B·S·cos(α)·dα/dt = B·S·cos(α)·ω",
+    "conclusion": "EMF = -B·S·ω·cos(α)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using Ohm's law, the induced current is: I = EMF/R",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At α = 60°: I = -B·S·ω·cos(60°)/R",
+    "conclusion": "I = -B·S·ω/(2R)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The average EMF is: EMF_avg = (1/(t₂-t₁))·∫EMF·dt",
+    "conclusion": "Since α = ω·t, and the rotation is from α = 0° to α = 60°: t₁ = 0 and t₂ = 60°/ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The average EMF becomes: EMF_avg = (ω/60°)·∫₀^(60°) [-B·S·ω·cos(α)]·(dα/ω)",
+    "conclusion": "EMF_avg = -(B·S·ω/60°)·∫₀^(60°) cos(α)·dα",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF_avg = -(B·S·ω/60°)·[sin(60°) - sin(0°)]",
+    "conclusion": "EMF_avg = -(B·S·ω/60°)·[√3/2 - 0]",
+    "judgment": "Match"
+  }]

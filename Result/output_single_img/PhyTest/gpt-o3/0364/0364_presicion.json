@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial cruising speed before the toll booth: v₀ = 30 m/s",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Required speed while passing the booth: v₁ = 5 m/s",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Distance that must be covered at the constant low speed: d = 10 m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnitude of (de-)acceleration for braking and re-acceleration: a = 1 m/s²",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use v² = u² + 2as with a = −1 m/s², u = v₀, v = v₁",
+    "conclusion": "Braking distance s₁ (30 m/s → 5 m/s): s₁ = (v₁² − v₀²)/(2·−1) = 437.5 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use v² = u² + 2as with a = +1 m/s², u = 5 m/s, v = 30 m/s",
+    "conclusion": "Re-acceleration distance s₂ (5 m/s → 30 m/s): s₂ = (v² − u²)/(2a) = 437.5 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Low-speed constant-velocity distance: d = 10 m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total displacement from the moment braking starts until normal speed is regained: S = s₁ + d + s₂",
+    "conclusion": "S = 437.5 m + 10 m + 437.5 m = 885 m",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

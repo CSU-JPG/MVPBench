@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to calculate the electromotive force (EMF) induced in the coil due to the change in magnetic flux through the coil. We will use Faraday's law of electromagnetic induction, which states that the induced EMF in a coil is equal to the negative rate of change of magnetic flux through the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a square coil with \( n \) turns and side length \( a \). The coil is positioned such that half of it is inside a uniform magnetic field. The magnetic field changes uniformly from \( B \) to \( 2B \) over a time interval \( \Delta t \).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Half of the coil is in the magnetic field.",
+    "conclusion": "The area \( A \) of the coil in the magnetic field is: \( A = \frac{1}{2} \times a^2 \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux \( \Phi \) through the coil is given by: \( \Phi = n \times B \times A \).",
+    "conclusion": "Initial magnetic flux (\( \Phi_i \)) when the magnetic field is \( B \): \( \Phi_i = n \times B \times \frac{1}{2} \times a^2 = \frac{1}{2} n B a^2 \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux \( \Phi \) through the coil is given by: \( \Phi = n \times B \times A \).",
+    "conclusion": "Final magnetic flux (\( \Phi_f \)) when the magnetic field is \( 2B \): \( \Phi_f = n \times 2B \times \frac{1}{2} \times a^2 = n B a^2 \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in magnetic flux (\( \Delta \Phi \)) is: \( \Delta \Phi = \Phi_f - \Phi_i \).",
+    "conclusion": "The change in magnetic flux (\( \Delta \Phi \)) is: \( \Delta \Phi = n B a^2 - \frac{1}{2} n B a^2 = \frac{1}{2} n B a^2 \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's law, the induced EMF (\( \mathcal{E} \)) is: \( \mathcal{E} = -\frac{\Delta \Phi}{\Delta t} \).",
+    "conclusion": "The induced EMF (\( \mathcal{E} \)) is: \( \mathcal{E} = -\frac{\frac{1}{2} n B a^2}{\Delta t} \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the induced EMF in the coil is: \( \mathcal{E} = -\frac{\frac{1}{2} n B a^2}{\Delta t} \).",
+    "conclusion": "The magnitude of the induced EMF in the coil is: \( \mathcal{E} = \frac{1}{2} \frac{n B a^2}{\Delta t} \)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

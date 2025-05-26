@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the potential difference between points a and b in the wire frame when the magnetic field changes.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux ΦB through a surface is given by: ΦB = B ⋅ A ⋅ cos(θ).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The magnetic field B is increasing at a rate of 10 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side-length of the square is 0.2 m.",
+    "conclusion": "The area A of the half-square that is in the magnetic field is A = 1/2 × (0.2 m)^2 = 0.02 m^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle θ is 0° because the magnetic field is perpendicular to the plane of the square.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΦB = B ⋅ A ⋅ cos(θ) and θ = 0°.",
+    "conclusion": "The magnetic flux ΦB through the half-square is ΦB = B ⋅ 0.02 m^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's law states that the induced electromotive force (EMF) 𝓔 in a closed loop is equal to the negative rate of change of the magnetic flux through the loop: 𝓔 = -dΦB/dt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B is increasing at a rate of 10 T/s.",
+    "conclusion": "dB/dt = 10 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦB/dt = d/dt(B ⋅ 0.02 m^2) and dB/dt = 10 T/s.",
+    "conclusion": "The rate of change of the magnetic flux is dΦB/dt = 0.02 m^2 ⋅ 10 T/s = 0.2 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "𝓔 = -dΦB/dt and dΦB/dt = 0.2 V.",
+    "conclusion": "The induced EMF 𝓔 is 𝓔 = -(-0.2 V) = 0.2 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF causes a current to flow around the wire frame.",
+    "conclusion": "The potential difference between points a and b can be found by considering the portion of the wire from a to b.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire forms a complete square, so each side has an equal share of the total resistance.",
+    "conclusion": "The segment from a to b is one-fourth of the perimeter of the square.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The EMF is 0.2 V and it is induced around the entire loop.",
+    "conclusion": "The potential difference across any segment of the wire will be proportional to the length of that segment.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The segment from a to b is one-fourth of the perimeter.",
+    "conclusion": "The potential difference Vab is Vab = 1/4 × 0.2 V = 0.05 V.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

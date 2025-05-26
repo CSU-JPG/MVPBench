@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The semicircular glass brick has a radius R, and its flat base lies horizontally. The critical angle for total internal reflection within the glass is γ, where γ < π/2. Parallel rays of light strike the flat base at an angle π - γ relative to the horizontal plane of the base. The light passes through the curved semicircular surface and refracts. Some rays exit through the flat base.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The ray tangent to the curved surface of the semicircular glass brick refracts at the curved surface and exits through the flat base at point E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray tangent to the curved surface of the semicircular glass brick refracts at the curved surface and exits through the flat base at point E.",
+    "conclusion": "The tangent ray divides the semicircular surface into two regions: Rays striking the curved surface to the left of the tangent ray undergo total internal reflection and do not exit through the base. Rays striking the curved surface to the right of the tangent ray refract and exit through the base.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider the tangent ray at point E. The angle of incidence at the curved surface is γ, which is the critical angle. This ray refracts and exits through the base at point E.",
+    "conclusion": "The refracted ray at point E is perpendicular to the base because the angle of refraction is 90° (this occurs at the critical angle).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light passing through the base is confined to the region between points M and E.",
+    "conclusion": "To find the width ME, we need to calculate the horizontal distance between points M and E.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The semicircular glass brick has its center at O, and its radius is R. The tangent ray at point E makes an angle γ with the radius of the semicircular surface at E. This radius is perpendicular to the tangent ray.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the horizontal axis and the radius at point E is γ.",
+    "conclusion": "The horizontal coordinate of point E is x_E = R cos γ.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal coordinate of point M is -R.",
+    "conclusion": "The width ME is the horizontal distance between M and E: ME = x_E - x_M = R cos γ - (-R) = R cos γ + R = R (1 + cos γ).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray at point E is perpendicular to the base because the angle of refraction is 90° (this occurs at the critical angle).",
+    "conclusion": "The width of the portion of the base through which light passes is OE = R sin γ.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

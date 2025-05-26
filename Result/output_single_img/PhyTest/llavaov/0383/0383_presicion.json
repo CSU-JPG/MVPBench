@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rails AB and CD are placed vertically, connected at one end with DE. The region BDE forms an isosceles right triangle. A uniform magnetic field of magnitude B exists in the space, directed perpendicularly into the plane of the rails. The distance between AB and CD is l. The conductor rod MN has a mass of m and a resistance per unit length of r. The height difference between MN and BD is also l. The conductor rod MN is released from rest and reaches a constant speed before it arrives at BD. During its descent, the rod remains horizontal and maintains good contact with the rails. The resistance and friction of the rails are negligible, and the acceleration due to gravity is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the velocity v of the conductor rod MN when it is moving at a constant speed, we need to consider the forces acting on the rod and the induced electromotive force (EMF) due to the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux Φ through the rod MN is given by Φ = B * l * v.",
+    "conclusion": "The induced EMF 𝓔 is given by 𝓔 = B * l * v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force due to the magnetic field on the rod MN is given by the Lorentz force law: F = B * I * l. The current I in the rod is determined by Ohm's Law, I = 𝓔 / R, where R = r * l.",
+    "conclusion": "The current I is I = B * v / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the current I = B * v / r into the Lorentz force equation F = B * I * l.",
+    "conclusion": "The force due to the magnetic field is F = B^2 * l * v / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force acting on the rod is given by F_g = m * g.",
+    "conclusion": "The gravitational force is F_g = m * g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the rod is moving at a constant speed, the net force acting on it must be zero. Therefore, the force due to the magnetic field must balance the gravitational force: B^2 * l * v / r = m * g.",
+    "conclusion": "The equilibrium condition is B^2 * l * v / r = m * g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation B^2 * l * v / r = m * g to solve for v.",
+    "conclusion": "v = m * g * r / (B^2 * l)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

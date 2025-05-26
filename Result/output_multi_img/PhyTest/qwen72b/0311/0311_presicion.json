@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, the relationship between pressure P, volume V, temperature T, and number of moles n is given by PV = nRT where R is the universal gas constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure at state A is P_A = P_0 and the temperature T_A = T_0. The volume at state A is V_A = V_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The volume at state B is V_B = 2V_0. The line segment AB is parallel to the V-axis, so the temperature at state B is T_B = T_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A V_A = n R T_A and P_B V_B = n R T_B",
+    "conclusion": "P_0 V_0 = P_B (2V_0)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_0 V_0 = P_B (2V_0)",
+    "conclusion": "P_B = P_0 / 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The line segment BC extends through the origin, implying V ∝ T for states B and C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The line segment BC extends through the origin, implying V ∝ T for states B and C.",
+    "conclusion": "The pressure at state C is the same as state B, i.e., P_C = P_B = P_0 / 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_C/V_B = T_C/T_B and V_C < V_B",
+    "conclusion": "T_C = (k/2) * T_0 where k < 2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assuming V_C = V_0 / 2",
+    "conclusion": "T_C = (1/2)/2 * T_0 = T_0 / 4",
+    "judgment": "Reasonable",
+    "final_answer": "1"
+  }
+]

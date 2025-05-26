@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: Mass of the ball, m; Charge of the ball, q; Length of the string, L; Angle between the string and the vertical direction, θ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the electric field strength, E, consider the forces acting on the ball: gravitational force, tension in the string, and electric force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force acts downward.",
+    "conclusion": "The gravitational force, F_g, is given by F_g = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The tension in the string acts along the string.",
+    "conclusion": "The tension can be resolved into vertical and horizontal components.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of tension balances the gravitational force.",
+    "conclusion": "T cos(θ) = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal component of tension balances the electric force.",
+    "conclusion": "T sin(θ) = qE",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Dividing T sin(θ) = qE by T cos(θ) = mg",
+    "conclusion": "tan(θ) = qE / mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for E from tan(θ) = qE / mg",
+    "conclusion": "E = mg tan(θ) / q",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

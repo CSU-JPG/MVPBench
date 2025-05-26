@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The figure shows an equilateral triangular glass prism with two monochromatic light beams (a and b) entering perpendicular to the hypotenuse. After entering the prism, these beams will reach other faces and potentially exit the prism or undergo total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two different monochromatic lights (a and b) enter the glass prism. Both enter perpendicular to the hypotenuse (so no refraction at entry). Both will have the same angle of incidence when exiting the glass to air. We need to determine which beam will first undergo total internal reflection when the angle of incidence is gradually increased.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when the angle of incidence is greater than the critical angle. The critical angle depends on the refractive indices of the media and is given by: sin(θc) = n2/n1, where θc is the critical angle, n1 is the refractive index of the medium the light is in (glass), and n2 is the refractive index of the medium the light is going to (air).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since a and b are different monochromatic lights, they have different wavelengths. The refractive index of glass varies with wavelength - this is called dispersion. Generally, shorter wavelengths (like blue/violet) experience a higher refractive index than longer wavelengths (like red).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For beam a with refractive index na, the critical angle is: sin(θc,a) = nair/na. For beam b with refractive index nb, the critical angle is: sin(θc,b) = nair/nb.",
+    "conclusion": "The beam with the smaller critical angle will undergo total internal reflection first when the angle of incidence is gradually increased.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If nb > na, then sin(θc,b) < sin(θc,a), which means θc,b < θc,a.",
+    "conclusion": "Light b will undergo total internal reflection first if nb > na.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the figure and the statement that 'light b will first undergo total internal reflection,' we can infer that light b must have a higher refractive index than light a.",
+    "conclusion": "Light b must have a shorter wavelength than light a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light b has a shorter wavelength than light a. Due to dispersion, the refractive index for light b (nb) is greater than for light a (na). This higher refractive index for b results in a smaller critical angle.",
+    "conclusion": "With a smaller critical angle, light b will reach the condition for total internal reflection before light a when the angle of incidence is gradually increased.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

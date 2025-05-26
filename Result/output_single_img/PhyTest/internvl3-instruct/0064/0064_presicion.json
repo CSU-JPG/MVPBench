@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the distance the point source S should be moved vertically upward so that the light emitted from S is just not visible above the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This situation occurs when the light rays from S reach the critical angle at the water-air interface, causing total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θ_c is the angle of incidence in the denser medium (water) at which the angle of refraction in the less dense medium (air) is 90°. The critical angle can be found using Snell's Law: n_1 sin θ_c = n_2 sin 90°, where n_1 is the refractive index of water (√2) and n_2 is the refractive index of air (approximately 1).",
+    "conclusion": "√2 sin θ_c = 1 implies sin θ_c = 1/√2 implies θ_c = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the light source S is at a depth H below the surface, the light rays will reach the critical angle at the water-air interface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The geometry of the situation forms a right triangle with the depth H, the radius r of the circular board, and the hypotenuse being the line from S to the point where the light ray hits the surface at the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The depth H is given as √3r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We need to find the new depth H' such that the light rays from S just reach the critical angle. Using the geometry of the right triangle: tan θ_c = r/H'. Since θ_c = 45°, tan 45° = 1 = r/H'.",
+    "conclusion": "H' = r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial depth H is √3r. The new depth H' is r.",
+    "conclusion": "The vertical distance ΔH that S should be moved upward is ΔH = H - H' = √3r - r = (√3 - 1)r.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem states that the detector's velocity v is inversely proportional to its displacement x.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem states that the detector's velocity v is inversely proportional to its displacement x.",
+    "conclusion": "Mathematically, this can be expressed as v = k/x where k is a proportionality constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At point A, v_A = 4 m/s and x_A is the displacement at point A. At point B, v_B = 2 m/s and x_B = 2 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_B = 2 m/s and x_B = 2 m.",
+    "conclusion": "Using the formula v = k/x, we can calculate k for point B: k = v_B * x_B = 4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "k = 4",
+    "conclusion": "Thus, the velocity equation becomes v = 4/x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = 4/x",
+    "conclusion": "The relationship between velocity, displacement, and time is v = dx/dt, which implies dt = dx/v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dt = dx/v and v = 4/x",
+    "conclusion": "Substitute v = 4/x into the equation: dt = x dx/4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dt = x dx/4",
+    "conclusion": "To find the total time t for the detector to move from point A to point B, integrate dt over the displacement interval [x_A, x_B]: t = ∫(x dx/4) from x_A to x_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The limits of integration are: x_A: the displacement at point A. x_B = 2 m: the displacement at point B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_A = 4 m/s corresponds to x_A = 1 m.",
+    "conclusion": "From the graph, we see that x_A = 1 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_A = 1 m and x_B = 2 m",
+    "conclusion": "t = ∫(x dx/4) from 1 to 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = ∫(x dx/4) from 1 to 2",
+    "conclusion": "Factor out 1/4: t = (1/4) ∫(x dx) from 1 to 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "∫(x dx)",
+    "conclusion": "The integral of x is ∫ x dx = x^2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "∫ x dx = x^2/2",
+    "conclusion": "Evaluate this from x = 1 to x = 2: t = (1/4) [x^2/2 | from 1 to 2].",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = (1/4) [x^2/2 | from 1 to 2]",
+    "conclusion": "Substitute the limits: t = (1/4) [(4/2) - (1/2)].",
+    "judgment": "Match"
+  }]

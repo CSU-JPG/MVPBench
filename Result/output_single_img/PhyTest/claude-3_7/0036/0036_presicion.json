@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Coach bus traveling at constant 20 m/s, driver spots puppy at 45 m ahead, reaction time is 0.5s before brakes are applied, after reaction time, bus decelerates uniformly, the velocity-time graph is provided.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initial velocity is 20 m/s, velocity remains constant for 0.5s (reaction time), after 0.5s, velocity decreases linearly until it reaches 0, the bus comes to a complete stop at around t = 5.5s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During the 0.5s reaction time, the bus continues at constant velocity.",
+    "conclusion": "Distance traveled during reaction time is d₁ = v × t = 20 m/s × 0.5s = 10 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the graph, the bus decelerates from 20 m/s to 0 m/s in 5.0s (from t = 0.5s to t = 5.5s).",
+    "conclusion": "Deceleration rate is Δv/Δt = -20 m/s ÷ 5.0s = -4 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the kinematic equation for distance with constant acceleration: d₂ = v₀t + ½at², where v₀ = 20 m/s, a = -4 m/s², t = 5.0s.",
+    "conclusion": "Distance traveled during deceleration is d₂ = 20 m/s × 5.0s + ½ × (-4 m/s²) × (5.0s)² = 100m - 50m = 50m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total distance = d₁ + d₂ = 10m + 50m.",
+    "conclusion": "Total distance traveled is 60m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The puppy was initially 45m away, but the bus travels a total of 60m before stopping.",
+    "conclusion": "60m > 45m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus travels a total of 60 meters before coming to a complete stop, but the puppy was only 45 meters away.",
+    "conclusion": "The puppy is not safe.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

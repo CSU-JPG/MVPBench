@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The point light source is fixed on the horizontal plane at the left end. The small ball is thrown vertically upward from the midpoint between the light source and the right wall. Let the horizontal distance between the light source and the wall be \\( L \\). The ball is initially at a height \\( y = 0 \\) and moves vertically upward with an initial velocity \\( v_0 \\). The shadow of the ball is cast on the right wall due to the light source.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The diagram shows a point light source on the left, a small ball in the middle, and a vertical wall on the right. The ball is moving upward, and its shadow is cast on the wall.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the geometry of the setup, the shadow's position on the wall depends on the height \\( y \\) of the ball. Using similar triangles: \\(\\frac{\\text{Height of shadow on the wall}}{L} = \\frac{y}{\\frac{L}{2}}\\).",
+    "conclusion": "The height of the shadow on the wall is \\( 2y \\).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height of the shadow on the wall is \\( 2y \\).",
+    "conclusion": "The shadow's position on the wall is proportional to the ball's height \\( y \\).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The shadow's position on the wall is proportional to the ball's height \\( y \\).",
+    "conclusion": "The velocity of the shadow on the wall is the rate of change of its position with respect to time: \\( v_{\\text{shadow}} = \\frac{d}{dt}(\\text{Height of shadow on the wall}) \\).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of the shadow on the wall is \\( v_{\\text{shadow}} = \\frac{d}{dt}(\\text{Height of shadow on the wall}) \\). Substituting the shadow's height \\( 2y \\): \\( v_{\\text{shadow}} = \\frac{d}{dt}(2y) = 2 \\frac{dy}{dt} \\).",
+    "conclusion": "The velocity of the shadow is \\( v_{\\text{shadow}} = 2 \\frac{dy}{dt} \\), where \\( \\frac{dy}{dt} \\) is the vertical velocity of the ball.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of the shadow is \\( v_{\\text{shadow}} = 2 \\frac{dy}{dt} \\), where \\( \\frac{dy}{dt} \\) is the vertical velocity of the ball. At \\( t = 0 \\), the ball is thrown upward with an initial velocity \\( v_0 \\).",
+    "conclusion": "The initial velocity of the shadow is \\( v_{\\text{shadow}} = 2 \\cdot v_0 \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

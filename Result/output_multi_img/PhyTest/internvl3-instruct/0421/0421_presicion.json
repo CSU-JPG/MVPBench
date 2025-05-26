@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The well is cylindrical with a radius r = 0.5 m, depth h = 8 m, and the refractive index of water is n = 4/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θ_c is the angle of incidence in water above which total internal reflection occurs.",
+    "conclusion": "Using Snell's Law: n1 sin θ1 = n2 sin θ2. At the critical angle, θ2 = 90°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the critical angle, θ2 = 90°.",
+    "conclusion": "sin θ_c = n2/n1 = 1/(4/3) = 3/4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle forms a right triangle with the radius of the well and the vertical distance d from the water surface to the frog.",
+    "conclusion": "The tangent of the critical angle θ_c is given by tan θ_c = r/d.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan θ_c = r/d.",
+    "conclusion": "d = r/tan θ_c.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ_c = 3/4.",
+    "conclusion": "cos θ_c = √(1 - sin² θ_c) = √(1 - (3/4)²) = √(7/16) = √7/4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ_c = 3/4 and cos θ_c = √7/4.",
+    "conclusion": "tan θ_c = (3/4)/(√7/4) = 3/√7.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = r/tan θ_c and tan θ_c = 3/√7.",
+    "conclusion": "d = 0.5/(3/√7) = 0.5√7/3.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total vertical distance H from the wellhead to the frog is H = h + d.",
+    "conclusion": "H = 8 + 0.442 ≈ 8.442 m.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromagnetic flowmeter operates based on Faraday's Law of Electromagnetic Induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a conductive fluid moves through a magnetic field, an electromotive force (EMF) is generated across the fluid perpendicular to both the flow direction and the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday's Law",
+    "conclusion": "The induced EMF \\( E \\) is given by: \\( E = B \\cdot v \\cdot d \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The EMF \\( E \\) is directly proportional to the velocity \\( v \\) of the fluid.",
+    "conclusion": "Rearranging the equation to solve for \\( v \\): \\( v = \\frac{E}{B \\cdot d} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The flow rate \\( Q \\) is the volume of fluid passing through the cross-sectional area of the pipe per unit time.",
+    "conclusion": "It can be expressed as: \\( Q = A \\cdot v \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The cross-sectional area \\( A \\) of the pipe is \\( A = \\pi \\left(\\frac{d}{2}\\right)^2 = \\frac{\\pi d^2}{4} \\)",
+    "conclusion": "Substituting \\( v \\) from Step 3 into the flow rate equation: \\( Q = \\frac{\\pi d^2}{4} \\cdot \\frac{E}{B \\cdot d} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for \\( Q \\)",
+    "conclusion": "Q = \\frac{\\pi d E}{4B}",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

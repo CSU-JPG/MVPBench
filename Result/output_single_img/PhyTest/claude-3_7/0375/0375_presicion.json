@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel rails are connected to lamps L₁ (3V, 3W) and L₂ (6V, 6W). A conducting rod with resistance r = 1 Ω moves at constant speed perpendicular to the rails. Uniform magnetic field B = 1 T passes vertically through the plane. We need to find the actual power P₂ of lamp L₂.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When a conductor moves through a magnetic field, it induces an EMF given by: \\( \\mathcal{E} = Blv \\).",
+    "conclusion": "The EMF induced in the moving rod is \\( \\mathcal{E} = Blv \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit consists of the moving rod with resistance r = 1 Ω, lamp L₁ with resistance R₁ (to be calculated), and lamp L₂ with resistance R₂ (to be calculated).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For lamp L₁ (3V, 3W), \\( R_1 = \\frac{V^2}{P} = \\frac{(3 \\text{ V})^2}{3 \\text{ W}} = \\frac{9}{3} = 3 \\text{ Ω} \\).",
+    "conclusion": "The resistance of lamp L₁ is 3 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For lamp L₂ (6V, 6W), \\( R_2 = \\frac{V^2}{P} = \\frac{(6 \\text{ V})^2}{6 \\text{ W}} = \\frac{36}{6} = 6 \\text{ Ω} \\).",
+    "conclusion": "The resistance of lamp L₂ is 6 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When lamp L₁ operates at its rated power, the voltage across it must be 3V. Therefore, the current flowing through the circuit is \\( I = \\frac{3 \\text{ V}}{3 \\text{ Ω}} = 1 \\text{ A} \\).",
+    "conclusion": "The current when L₁ operates normally is 1 A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total voltage drop in the circuit equals the induced EMF: \\( \\mathcal{E} = I \\cdot (r + R_1 + R_2) = 1 \\text{ A} \\cdot (1 \\text{ Ω} + 3 \\text{ Ω} + 6 \\text{ Ω}) = 10 \\text{ V} \\).",
+    "conclusion": "The total EMF needed is 10 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the EMF is Blv and we now know EMF = 10V: \\( v = \\frac{\\mathcal{E}}{Bl} = \\frac{10 \\text{ V}}{1 \\text{ T} \\cdot 0.6 \\text{ m}} = \\frac{10}{0.6} = 16.67 \\text{ m/s} \\).",
+    "conclusion": "The rod's velocity is 16.67 m/s.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across lamp L₂ is \\( V_2 = I \\cdot R_2 = 1 \\text{ A} \\cdot 6 \\text{ Ω} = 6 \\text{ V} \\). Therefore, the actual power of lamp L₂ is \\( P_2 = I^2 \\cdot R_2 = (1 \\text{ A})^2 \\cdot 6 \\text{ Ω} = 6 \\text{ W}"}]

@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the magnitude of the normal force F_N between the locking tongue D and the locking groove E when the door is in the self-locking state.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The spring force F_s acting on the locking tongue D is given by Hooke's law: F_s = kx where k is the spring stiffness coefficient and x is the compression distance of the spring.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The weight of the locking tongue D is mg, where m is the mass of the locking tongue and g is the acceleration due to gravity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The normal force F_N is the component of the force that is perpendicular to the surface of the locking groove E.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frictional force F_f is the component of the force that is parallel to the surface of the locking groove E and acts in the direction opposite to the sliding motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The spring force F_s can be resolved into two components: F_{s\\parallel} = F_s \\sin \\theta = kx \\sin \\theta and F_{s\\perp} = F_s \\cos \\theta = kx \\cos \\theta.",
+    "conclusion": "The spring force has a parallel component kx \\sin \\theta and a perpendicular component kx \\cos \\theta.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The weight of the locking tongue D can be resolved into two components: F_{g\\parallel} = mg \\sin \\theta and F_{g\\perp} = mg \\cos \\theta.",
+    "conclusion": "The weight has a parallel component mg \\sin \\theta and a perpendicular component mg \\cos \\theta.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force F_N is the sum of the perpendicular components of the spring force and the weight: F_N = F_{s\\perp} + F_{g\\perp} = kx \\cos \\theta + mg \\cos \\theta = (kx + mg) \\cos \\theta.",
+    "conclusion": "The normal force F_N is (kx + mg) \\cos \\theta.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The maximum static friction force F_{fm} is given by: F_{fm} = \\mu F_N.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the door to be in the self-locking state, the sum of the parallel components of the spring force and the weight must be greater than or equal to the maximum static friction force: F_{s\\parallel} + F_{g\\parallel} \\geq F_{fm}. Substituting the expressions for the parallel components and the maximum static friction force, we get: kx \\sin \\theta + mg \\sin \\theta \\geq \\mu (kx \\cos \\theta + mg \\cos \\theta).",
+    "conclusion": "The self-locking condition is kx \\sin \\theta + mg \\sin \\theta \\geq \\mu (kx \\cos \\theta + mg \\cos \\theta).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Factoring out the common terms, we get: \\sin \\theta (kx + mg) \\geq \\mu \\cos \\theta (kx + mg). Since kx + mg \\neq 0, we can divide both sides by kx + mg: \\sin \\theta \\geq \\mu \\cos \\theta.",
+    "conclusion": "The inequality \\sin \\theta \\geq \\mu \\cos \\theta holds.",
+    "judgment": "Match"
+  }]

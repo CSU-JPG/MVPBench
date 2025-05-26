@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two particles, A and B, start from rest at the same time and position, moving in the same direction. Their motion is described by a velocity-time (v-t) graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a v-t graph, the slope of the line gives the acceleration, and the area under the curve gives the displacement.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle A starts accelerating from t=0 to t=t₀, reaching a velocity of 2v₀, and then decelerates to zero by t=2t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle B accelerates from t=0 to t=4t₀, reaching a velocity of v₀, remains at v₀ until t=5t₀, and then decelerates to zero by t=6t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Particle A starts from rest at t=0 and reaches a velocity of 2v₀ at t=t₀.",
+    "conclusion": "The acceleration a_A is 2v₀ / t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Particle B starts from rest at t=0 and reaches a velocity of v₀ at t=4t₀.",
+    "conclusion": "The acceleration a_B is v₀ / 4t₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The accelerations are a_A = 2v₀ / t₀ and a_B = v₀ / 4t₀.",
+    "conclusion": "The ratio a_A / a_B = 8.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope of the v-t graph for A is twice that of B.",
+    "conclusion": "The ratio of the accelerations of A and B is 2:1.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

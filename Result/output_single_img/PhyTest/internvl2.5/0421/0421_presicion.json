@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the farthest vertical distance from the wellhead water surface that the frog can see, we need to consider the concept of total internal reflection and the critical angle for water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle \\(\\theta_c\\) is the angle of incidence in water at which light is refracted at 90 degrees to the normal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: \\(n_1 \\sin(\\theta_c) = n_2 \\sin(90^\\circ)\\), where \\(n_1 = \\frac{4}{3}\\) and \\(n_2 = 1\\).",
+    "conclusion": "\\(\\frac{4}{3} \\sin(\\theta_c) = 1\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\frac{4}{3} \\sin(\\theta_c) = 1\\)",
+    "conclusion": "\\(\\sin(\\theta_c) = \\frac{3}{4}\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin(\\theta_c) = \\frac{3}{4}\\)",
+    "conclusion": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{3}{4}\\right)\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{3}{4}\\right)\\)",
+    "conclusion": "\\(\\theta_c \\approx 48.59^\\circ\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frog is at the bottom of the well, and we need to find the maximum vertical distance \\(h\\) from the water surface that the frog can see.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle forms a right triangle with the radius of the wellhead and the vertical distance \\(h\\).",
+    "conclusion": "\\(\\tan(\\theta_c) = \\frac{r}{h}\\), where \\(r = 0.5 \\, \\text{m}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\tan(\\theta_c) = \\frac{r}{h}\\)",
+    "conclusion": "\\(h = \\frac{r}{\\tan(\\theta_c)}\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\theta_c \\approx 48.59^\\circ\\)",
+    "conclusion": "\\(\\tan(48.59^\\circ) \\approx 1.13\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(h = \\frac{r}{\\tan(\\theta_c)}\\) and \\(\\tan(48.59^\\circ) \\approx 1.13\\)",
+    "conclusion": "\\(h = \\frac{0.5}{1.13} \\approx 0.44 \\, \\text{m}\\)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

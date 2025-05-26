@@ -1,0 +1,100 @@
+[
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initial speed of car A: 25 m/s",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initial speed of car B: 15 m/s",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car A’s speed decreases linearly to 0 in 25 s",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car B’s speed decreases linearly to 0 in 30 s",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A’s speed decreases linearly to 0 in 25 s",
+    "conclusion": "a₍A₎ = −25 m/s / 25 s = −1.0 m/s²",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car B’s speed decreases linearly to 0 in 30 s",
+    "conclusion": "a₍B₎ = −15 m/s / 30 s = −0.50 m/s²",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Taking the instant the brakes are applied as t = 0 and the initial distance between the cars as d₀",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a₍A₎ = −1.0 m/s²",
+    "conclusion": "x₍A₎(t) = 25 t + ½(−1.0)t²",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a₍B₎ = −0.50 m/s²",
+    "conclusion": "x₍B₎(t) = d₀ + 15 t + ½(−0.50)t²",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Collision occurs when x₍A₎ = x₍B₎",
+    "conclusion": "25 t − ½t² = d₀ + 15 t − ¼t²",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "25 t − ½t² = d₀ + 15 t − ¼t²",
+    "conclusion": "10 t − ¼t² = d₀",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The graph caption states that “the two cars just avoid collision” if the reaction is exactly as graphed.",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equality 10 t − ¼t² = d₀ is satisfied by the point marked on the graph (the point where the two lines intersect, at t = 20 s).",
+    "conclusion": "For the actual event in the problem in which they do collide, the equality must be reached at a time slightly smaller than 20 s.",
+    "judgment": "Reasonable",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the actual event in the problem in which they do collide, the equality must be reached at a time slightly smaller than 20 s.",
+    "conclusion": "Therefore the two cars collide a little before the 20-s mark.",
+    "judgment": "Reasonable",
+    "final_answer": "1"
+  }
+]

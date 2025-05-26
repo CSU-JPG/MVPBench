@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify Given Values: Angle of incidence, α = 37°, Refractive index, n = 4/3, Length of the rectangle, AB = 2L, Width of the rectangle, AD = L",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle of incidence, α = 37°",
+    "conclusion": "Calculate the Angle of Incidence: θi = 90° - α = 53°",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(θi) = n2 sin(θr), n1 = 1, n2 = 4/3, θi = 53°",
+    "conclusion": "Apply Snell's Law: sin(θr) = 3/4 sin(53°), sin(θr) = 0.6, θr = sin⁻¹(0.6) ≈ 36.87°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refracted angle θr = 36.87°",
+    "conclusion": "Determine the Geometry Inside the Rectangle: Angle with horizontal side AB = 90° - 36.87° = 53.13°",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle with horizontal side AB = 53.13°",
+    "conclusion": "Use Trigonometry to Find PM: tan(53.13°) = L/PM, PM = L/tan(53.13°) ≈ 0.75L",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal distance PM = 0.75L",
+    "conclusion": "Calculate the Total Length PM: PM = L + 0.75L = 1.75L",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

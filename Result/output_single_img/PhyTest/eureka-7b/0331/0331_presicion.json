@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to calculate the work done by the gas during the cyclic process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The work done by the gas during a cyclic process can be found using the area under the p-V diagram.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The p-V diagram shows three processes: A→B (isobaric), B→C (isochoric), C→A (isobaric).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to calculate the work done during each process and then sum them up.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For process A→B: Pressure P_A = P_B = 4 × 10^5 Pa, Volume changes from V_A = 2 L to V_B = 2 L (constant volume).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the volume does not change during A→B, the work done is W_AB = P ΔV = 4 × 10^5 Pa × (2 L - 2 L) = 0.",
+    "conclusion": "Work done during A→B is 0 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For process B→C: Volume V_B = V_C = 2 L (constant volume), Pressure changes from P_B = 4 × 10^5 Pa to P_C = 1 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the volume does not change during B→C, the work done is W_BC = P ΔV = 1 × 10^5 Pa × (2 L - 2 L) = 0.",
+    "conclusion": "Work done during B→C is 0 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For process C→A: Pressure P_C = P_A = 1 × 10^5 Pa, Volume changes from V_C = 5 L to V_A = 2 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done during C→A is W_CA = P ΔV = 1 × 10^5 Pa × (5 L - 2 L) = 3 × 10^5 J.",
+    "conclusion": "Work done during C→A is 3 × 10^5 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total work done by the gas during the cyclic process is the sum of the work done in each segment: W_total = W_AB + W_BC + W_CA = 0 + 0 + 3 × 10^5 J = 3 × 10^5 J.",
+    "conclusion": "Total work done by the gas during the cyclic process is 3 × 10^5 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the gas returns to its initial state, the total work done by the gas is equal to the negative of the total work done by the surroundings.",
+    "conclusion": "The work done by the gas on the surroundings is -3 × 10^5 J.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

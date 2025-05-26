@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two parallel metal rails with spacing L = 0.5 m at angle θ = 30° to horizontal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Uniform magnetic field B = 0.2 T pointing vertically upward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod a: mass m_a = 0.3 kg, resistance R = 0.1 Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod b: mass m_b = 0.1 kg, resistance R = 0.1 Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Force F = 2 N pulling rod a upward along the rails.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When rod a has velocity v_a = 1.0 m/s, its generated Joule heat is Q_a = 0.12 J.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rod a: mass m_a = 0.3 kg, gravitational acceleration g = 10 m/s², angle θ = 30°.",
+    "conclusion": "Gravitational component along the rails for rod a: m_a g sinθ = 1.5 N (downward).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rod b: mass m_b = 0.1 kg, gravitational acceleration g = 10 m/s², angle θ = 30°.",
+    "conclusion": "Gravitational component along the rails for rod b: m_b g sinθ = 0.5 N (downward).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "As the rods move in the magnetic field, they form a complete circuit with the rails.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic field B = 0.2 T, spacing L = 0.5 m, velocity v.",
+    "conclusion": "The EMF in each rod is given by: 𝓔 = BLv.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF 𝓔 = BL(v_a - v_b), resistance R = 0.1 Ω.",
+    "conclusion": "The current in the circuit is: I = (BL(v_a - v_b))/(2R).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = (BL(v_a - v_b))/(2R), resistance R = 0.1 Ω.",
+    "conclusion": "The Joule heat generated in rod a is: P_a = I²R = (B²L²(v_a - v_b)²)/(4R).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Joule heat Q_a = 0.12 J, B = 0.2 T, L = 0.5 m, R = 0.1 Ω, v_a = 1.0 m/s.",
+    "conclusion": "0.025 × (1.0 - v_b)² = 0.12.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.025 × (1.0 - v_b)² = 0.12.",
+    "conclusion": "(1.0 - v_b)² = 4.8.",
+    "judgment": "Match"
+  }]

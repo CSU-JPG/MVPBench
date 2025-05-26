@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Each pulse lasts 1 µs and the time between the start of two successive outgoing pulses is 100 µs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The indicator is synchronised so that the trace begins at the instant an outgoing pulse leaves the antenna.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The first sharp peak corresponds to the outgoing pulse (labelled a).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The next two identical-looking peaks are echoes returning from the same obstacle produced by the two successive transmitted pulses (labels b and c).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ab = bc and ab + bc = 100 µs",
+    "conclusion": "The time interval between the outgoing pulse and its echo is exactly 50 µs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time interval between the outgoing pulse and its echo is 50 µs.",
+    "conclusion": "The 50 µs is the round-trip travel time of the radar wave to the obstacle and back.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Round-trip travel time is 50 µs.",
+    "conclusion": "Time for one-way travel = 50 µs ÷ 2 = 25 µs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Time for one-way travel is 25 µs and speed of light is 3.0 × 10⁸ m/s.",
+    "conclusion": "Distance = speed × time = (3.0 × 10⁸ m/s) × (25 × 10⁻⁶ s) = 7.5 × 10³ m = 7.5 km.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance calculated as 7.5 × 10³ m.",
+    "conclusion": "The obstacle is 7.5 km from the radar.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

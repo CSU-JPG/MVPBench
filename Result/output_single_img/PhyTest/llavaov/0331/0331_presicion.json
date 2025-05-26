@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process A→B→C→A, returning to its initial state.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle consists of three segments: A→B, B→C, and C→A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment A→B is a constant volume process.",
+    "conclusion": "The work done in segment A→B is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment B→C is a constant pressure process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Pressure at B is 4 x 10^5 Pa and volume at B is 2 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Pressure at C is 1 x 10^5 Pa and volume at C is 5 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use W = p * ΔV for segment B→C.",
+    "conclusion": "The work done in segment B→C is 12,000 J.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment C→A is a constant volume process.",
+    "conclusion": "The work done in segment C→A is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Sum of work done in each segment: 0 + 12,000 J + 0.",
+    "conclusion": "The total work done by the gas on the surroundings is 12,000 J.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

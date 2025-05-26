@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid will flow out from A, B, and C. Predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Five colored tabs on top (blue, yellow, green, blue, green) labeled A, B, and C. Multiple colored baffles (rectangular bars) are arranged diagonally on the board. Two containers at the bottom are labeled D (red) and E (brown).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Yellow liquid flows from point A, following a path downward. Blue liquid flows from point B, traveling downward. Green liquid flows from point C, traveling downward. All three colored streams are starting to interact with the baffles.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The yellow liquid (from A) has traveled downward, hit the gray baffle, changed direction, and appears to be moving toward the left side. The blue liquid (from B) has traveled downward, hit the cyan baffle, and deflected toward the black baffle. The green liquid (from C) has traveled downward and appears to merge with the blue stream. The combined liquids appear to pool near the black baffle, with most of the liquid traveling toward the left side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The yellow liquid (from A) has traveled downward, hit the gray baffle, changed direction, and appears to be moving toward the left side.",
+    "conclusion": "The yellow liquid (A) hits the gray baffle and changes direction toward the left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The blue liquid (from B) has traveled downward, hit the cyan baffle, and deflected toward the black baffle.",
+    "conclusion": "The blue liquid (B) hits the cyan baffle and flows downward toward the black baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The green liquid (from C) has traveled downward and appears to merge with the blue stream.",
+    "conclusion": "The green liquid (C) flows downward and joins with the blue stream.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The combined liquids appear to pool near the black baffle, with most of the liquid traveling toward the left side.",
+    "conclusion": "The black baffle appears to redirect most liquid toward the left side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Looking at the final image, the majority of liquid (blue, green, and yellow) appears to be collecting on the left side.",
+    "conclusion": "Most of the liquid from points A, B, and C will flow into container D (the red container on the left).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

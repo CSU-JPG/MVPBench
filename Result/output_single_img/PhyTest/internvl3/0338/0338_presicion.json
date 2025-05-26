@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the temperature at state D, we need to analyze the processes involved in the ABCDA cycle and use the ideal gas law: PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The ABCDA cycle consists of four processes: AB, BC, CD, and DA.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "AB is an isobaric expansion from (P1, V1) to (P1, V2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "BC is an isochoric process from (P1, V2) to (P2, V2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "CD is an isobaric compression from (P2, V2) to (P2, V1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "DA is an isochoric process from (P2, V1) to (P1, V1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A temperature is given as T0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB is isobaric. Use the ideal gas law: P1V1/T0 = P1V2/TB.",
+    "conclusion": "TB = T0 * (V2/V1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC is isochoric. Use the ideal gas law: P1V2/TB = P2V2/TC.",
+    "conclusion": "TC = TB * (P2/P1) = T0 * (V2/V1) * (P2/P1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "CD is isobaric. Use the ideal gas law: P2V2/TC = P2V1/TD.",
+    "conclusion": "TD = TC * (V1/V2) = T0 * (V2/V1) * (P2/P1) * (V1/V2) = T0 * (P2/P1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the ideal gas equation of state: (P1V1/T0) = (P1V2/TD).",
+    "conclusion": "TD = (P1V2/P1V1) * T0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

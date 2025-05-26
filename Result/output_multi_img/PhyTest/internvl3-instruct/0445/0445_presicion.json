@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light travels from air (or vacuum with speed C) into water. Due to the refraction of light, the scenery above water is seen within a cone with a vertex angle α when viewed from underwater.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index n of water can be determined using Snell's Law, which relates the angle of incidence to the angle of refraction.",
+    "conclusion": "For total internal reflection at the critical angle, θc, we have: sin(θc) = 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertex angle of the cone α is twice the critical angle.",
+    "conclusion": "α = 2θc, therefore θc = α/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n = sin(90°)/sin(θc) = 1/sin(θc).",
+    "conclusion": "Substituting θc = α/2: n = 1/sin(α/2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The speed of light in water v is given by: v = C/n.",
+    "conclusion": "Substituting n: v = C/(1/sin(α/2)) = C sin(α/2).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

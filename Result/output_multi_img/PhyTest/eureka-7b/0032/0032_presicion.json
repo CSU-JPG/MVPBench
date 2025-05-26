@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Two particles, A and B, start moving simultaneously from rest, from the same position, and in the same direction. The velocity-time graph of their motion is provided.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The distance traveled by each particle can be determined by integrating the velocity with respect to time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The velocity-time graph shows particle A accelerating from 0 to 2v_0 over t_0, maintaining a constant velocity of 2v_0 from t_0 to 3t_0, and decelerating to 0 from 3t_0 to 6t_0. Particle B accelerates uniformly from 0 to v_0 over 6t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of particle A is v_A = (2v_0/t_0) * t from t = 0 to t = t_0.",
+    "conclusion": "The distance traveled by particle A from t = 0 to t = t_0 is d_A = v_0 * t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of particle A is constant at v_A = 2v_0 from t = t_0 to t = 3t_0.",
+    "conclusion": "The distance traveled by particle A from t = t_0 to t = 3t_0 is d_A = 2v_0 * 2t_0 = 4v_0 * t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of particle A decreases linearly from 2v_0 to 0 from t = 3t_0 to t = 6t_0.",
+    "conclusion": "The distance traveled by particle A from t = 3t_0 to t = 6t_0 is d_A = 3v_0 * t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distances traveled by particle A in each interval are d_A = v_0 * t_0, 4v_0 * t_0, and 3v_0 * t_0.",
+    "conclusion": "The total distance traveled by particle A is d_A = 7v_0 * t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of particle B is v_B = (v_0 / 5t_0) * t from t = 0 to t = 6t_0.",
+    "conclusion": "The distance traveled by particle B is d_B = 9v_0 * t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between A and B is determined by their respective displacements over time.",
+    "conclusion": "The farthest distance between A and B occurs when their velocities are equal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the velocity-time graph, the velocities of A and B are equal at a point between 2t_0 and 3t_0.",
+    "conclusion": "The farthest distance between A and B occurs at the red dot between 2t_0 and 3t_0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

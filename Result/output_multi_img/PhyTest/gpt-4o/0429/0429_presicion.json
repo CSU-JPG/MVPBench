@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We are given a semi-circular glass brick with center O and radius R. Light enters the brick at point P on the vertical interface with an incident angle θ = 60°. The light undergoes total internal reflection at the circular surface and exits parallel to the incident light. We need to find the distance OP, denoted as x.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a semi-circular glass brick with center O and radius R placed on a horizontal desktop. Light is incident at point P on the vertical interface with angle θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the glass brick at point P with an incident angle θ = 60°.",
+    "conclusion": "Using Snell's law: n1 sin θ = n2 sin r, where n1 = 1 (refractive index of air), n2 = n (refractive index of glass), θ = 60° (incident angle), r (refracted angle).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting n1 = 1 and sin 60° = √3/2.",
+    "conclusion": "√3/2 = n sin r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light refracts inside the glass and hits the circular surface at point B.",
+    "conclusion": "For total internal reflection to occur: sin C = 1/n, where C is the critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "From the geometry of the semi-circular brick: The refracted light travels from P to B, where OB is the radius of the semi-circle (R). The angle of incidence at B is equal to the critical angle C. The light exits parallel to the incident light, which implies symmetry in the path.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry: The angle between OP and the horizontal is r (refracted angle). The angle between OB and the horizontal is C (critical angle).",
+    "conclusion": "Using the geometry of the semi-circle, the relationship between r and C is: r + C = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From sin C = 1/n, we know C = arcsin(1/n).",
+    "conclusion": "From r + C = 90°, we find: r = 90° - C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute C = arcsin(1/n).",
+    "conclusion": "r = 90° - arcsin(1/n).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From Snell's law: √3/2 = n sin r.",
+    "conclusion": "Substitute r = 90° - arcsin(1/n): sin r = cos(arcsin(1/n)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the identity cos(arcsin(x)) = √(1 - x²).",
+    "conclusion": "sin r = √(1 - (1/n)²).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "√3/2 = n √(1 - (1/n)²).",
+    "conclusion": "Square both sides: (√3/2)² = n² (1 - 1/n²).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "3/4 = n² - 1.",
+    "conclusion": "n² = 7/4.",
+    "judgment": "Wrong"
+  }]

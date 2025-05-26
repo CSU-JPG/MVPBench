@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The vertex angle of the cone is \\(\\alpha\\). Light travels from air (or vacuum) into water. We need to find the propagation speed of light in water, denoted as \\(v\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law relates the angles of incidence and refraction when light passes through different media: \\(n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index \\(n\\) of a medium is related to the speed of light in that medium \\(v\\) and the speed of light in vacuum \\(C\\) by: \\(n = \\frac{C}{v}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For total internal reflection to occur, the angle of incidence must be greater than or equal to the critical angle \\(\\theta_c\\). The critical angle is given by: \\(\\sin \\theta_c = \\frac{1}{n}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertex angle \\(\\alpha\\) of the cone is twice the critical angle \\(\\theta_c\\).",
+    "conclusion": "\\(\\alpha = 2 \\theta_c\\), therefore, \\(\\theta_c = \\frac{\\alpha}{2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\theta_c = \\frac{\\alpha}{2}\\) and \\(\\sin \\theta_c = \\frac{1}{n}\\).",
+    "conclusion": "\\(\\sin \\left( \\frac{\\alpha}{2} \\right) = \\frac{1}{n}\\), solving for \\(n\\): \\(n = \\frac{1}{\\sin \\left( \\frac{\\alpha}{2} \\right)}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the relationship between the refractive index and the speed of light: \\(v = \\frac{C}{n}\\).",
+    "conclusion": "Substitute \\(n\\): \\(v = \\frac{C}{\\frac{1}{\\sin \\left( \\frac{\\alpha}{2} \\right)}} = C \\sin \\left( \\frac{\\alpha}{2} \\right)\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

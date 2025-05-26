@@ -1,0 +1,76 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The tank wall has a thickness of 18 cm. The refractive index of the tank wall material is \\(\\sqrt{3}\\). The largest external angle that can be seen is \\(120^\\circ\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index \\(n\\) is given as \\(\\sqrt{3}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index \\(n\\) is given as \\(\\sqrt{3}\\).",
+    "conclusion": "The critical angle \\(\\theta_c\\) for total internal reflection is given by \\(\\sin \\theta_c = \\frac{1}{n} = \\frac{1}{\\sqrt{3}}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin \\theta_c = \\frac{1}{\\sqrt{3}}\\)",
+    "conclusion": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right) \\approx 35.26^\\circ\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The external angle is \\(120^\\circ\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The external angle is \\(120^\\circ\\).",
+    "conclusion": "The internal angle of incidence \\(\\theta_i\\) is related to the external angle by \\(\\theta_i = 180^\\circ - 120^\\circ = 60^\\circ\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using Snell's Law at the boundary between the tank wall and the outside: \\(n_1 \\sin \\theta_i = n_2 \\sin \\theta_r\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: \\(n_1 = \\sqrt{3}\\), \\(n_2 = 1\\), \\(\\theta_i = 60^\\circ\\).",
+    "conclusion": "Solve for \\(\\theta_r\\): \\(\\sqrt{3} \\sin 60^\\circ = \\sin \\theta_r\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sqrt{3} \\sin 60^\\circ = \\sin \\theta_r\\)",
+    "conclusion": "\\(\\sqrt{3} \\cdot \\frac{\\sqrt{3}}{2} = \\sin \\theta_r\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sqrt{3} \\cdot \\frac{\\sqrt{3}}{2} = \\sin \\theta_r\\)",
+    "conclusion": "\\(\\frac{3}{2} = \\sin \\theta_r\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\frac{3}{2} = \\sin \\theta_r\\)",
+    "conclusion": "Since \\(\\sin \\theta_r\\) cannot be greater than 1, this indicates that total internal reflection occurs at the boundary.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light travels through the tank wall at an angle of \\(35.26^\\circ\\) (critical angle) relative to the normal.",
+    "conclusion": "The distance \\(d\\) the light travels through the wall can be found using the thickness of the wall and the angle of incidence: \\(d = \\frac{\\text{thickness}}{\\cos \\theta_c}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(d = \\frac{\\text{thickness}}\\)"}]

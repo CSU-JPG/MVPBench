@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "设正方形 abcd 的左边界为 x＝0，右边界 cd 为 x＝2L；上边界为 y＝2L。",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "带负电粒子从 S(0,1.5L) 沿 +x 方向进入，两平行板 MN(y＝2L) 与 PQ(y＝L) 之间存在匀强电场 E（方向待定）。",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "磁场 B 垂直纸面向里（－z 方向），速度 v 沿 +x。",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v×B 对正电为 +y，对负电为 －y，故对负电粒子 F_B 向下。",
+    "conclusion": "磁场力 F_B 对负电粒子向下。",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "要想走直线，需电场力 F_E 向上抵消磁场力：qE 与 F_E 同向，因为 q＜0，故 E 必须向下。",
+    "conclusion": "电场 E 必须向下以抵消磁场力。",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "|q|E = |q|vB",
+    "conclusion": "v = E/B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "出了电场后只受磁场力，做匀速圆周运动。",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "半径 R = mv/(|q|B)",
+    "conclusion": "圆周运动的半径 R = mv/(|q|B)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "圆心位于 O 点正下方 R 处，坐标 C(L, 1.5L－R)。",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "圆的最右端 x 坐标为 L + R，应恰好等于边 cd 的 x＝2L",
+    "conclusion": "L + R = 2L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "L + R = 2L",
+    "conclusion": "R = L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mv/(|q|B) = L",
+    "conclusion": "v = |q|BL/m",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

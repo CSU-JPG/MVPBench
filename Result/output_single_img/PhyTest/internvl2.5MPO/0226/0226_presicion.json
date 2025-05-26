@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conductor rod MN is moving in a uniform magnetic field B with a direction vertically downward. The rod is connected to a spring and moves on a smooth metal guide rail. The system is connected to resistors with resistance R at both ends.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rod has an initial horizontal leftward velocity v_0. The spring is initially in its natural length.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod moves and cuts through the magnetic field lines.",
+    "conclusion": "The induced EMF is given by \\( \\mathcal{E} = B L v_0 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance in the circuit is 2R.",
+    "conclusion": "The current \\( I \\) induced in the circuit is \\( I = \\frac{B L v_0}{2R} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Ampere force \\( F \\) on the rod is given by \\( F = B I L \\). Substituting the expression for \\( I \\).",
+    "conclusion": "\\( F = \\frac{B^2 L^2 v_0}{2R} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The Joule heat generated in the resistor R is Q. The total energy dissipated as heat is 2Q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The initial kinetic energy of the rod is \\( \\frac{1}{2} m v_0^2 \\). This energy is converted into heat and work done against the spring.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The energy balance equation is \\( \\frac{1}{2} m v_0^2 = 2Q + \\frac{1}{2} k x^2 \\).",
+    "conclusion": "Since we are not given \\( k \\) or \\( x \\), we focus on the initial kinetic energy and heat.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial kinetic energy is related to the heat generated: \\( \\frac{1}{2} m v_0^2 = 2Q \\).",
+    "conclusion": "Solving for \\( v_0 \\): \\( v_0 = \\sqrt{\\frac{4Q}{m}} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting \\( v_0 \\) into the expression for \\( F \\).",
+    "conclusion": "\\( F = \\frac{B^2 L^2}{R} \\sqrt{\\frac{Q}{m}} \\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

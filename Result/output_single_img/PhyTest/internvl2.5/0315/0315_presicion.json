@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the heat exchange Q in the cyclic process for an ideal gas, we need to analyze the process step by step.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process is shown in the p-V diagram, and we know the temperature at state A is 27°C (300 K).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A to B is an isobaric process (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B to C is an isochoric process (constant volume).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C to D is an isobaric process (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D to A is an isochoric process (constant volume).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A to B is an isobaric process.",
+    "conclusion": "W_AB = P ΔV = 1 × 10^5 Pa × (4 - 3) L = 1 × 10^5 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B to C is an isochoric process.",
+    "conclusion": "W_BC = 0 (constant volume)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C to D is an isobaric process.",
+    "conclusion": "W_CD = P ΔV = 0.75 × 10^5 Pa × (3 - 4) L = -0.75 × 10^5 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D to A is an isochoric process.",
+    "conclusion": "W_DA = 0 (constant volume)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done in each process.",
+    "conclusion": "W_total = W_AB + W_BC + W_CD + W_DA = 1 × 10^5 J + 0 + (-0.75 × 10^5 J) + 0 = 0.25 × 10^5 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas in a cyclic process, the change in internal energy over a complete cycle is zero: ΔU = 0",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU = 0 and W_total = 0.25 × 10^5 J",
+    "conclusion": "0 = Q - W_total, therefore Q = W_total = 0.25 × 10^5 J",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

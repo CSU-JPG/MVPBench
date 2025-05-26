@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The charged particle enters the magnetic field B_1 perpendicularly at point O. In a uniform magnetic field, the charged particle undergoes circular motion due to the Lorentz force. The radius of the circular motion depends on the magnetic field strength, the charge, the velocity, and the mass of the particle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the particle crosses the interface MN, it enters the second magnetic field B_2, where B_2 = B_1/2. In B_2, the particle also undergoes circular motion, but with a different radius due to the weaker magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The trajectory of the particle forms a closed loop, and the particle eventually returns to point O.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius of the circular motion in a magnetic field is given by r = mv/(qB).",
+    "conclusion": "In B_1, the radius is r_1 = mv/(qB_1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius of the circular motion in a magnetic field is given by r = mv/(qB).",
+    "conclusion": "In B_2, the radius is r_2 = mv/(qB_2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since B_2 = B_1/2, r_2 = mv/(q(B_1/2)) = 2(mv/(qB_1)) = 2r_1.",
+    "conclusion": "The radius in B_2 is twice the radius in B_1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time period of circular motion in a magnetic field is given by T = 2πr/v.",
+    "conclusion": "In B_1, the time period is T_1 = 2πr_1/v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time period of circular motion in a magnetic field is given by T = 2πr/v.",
+    "conclusion": "In B_2, the time period is T_2 = 2πr_2/v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since r_2 = 2r_1, T_2 = 2π(2r_1)/v = 2T_1.",
+    "conclusion": "The time period in B_2 is twice the time period in B_1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle completes half a circular motion in B_1 and half a circular motion in B_2 before returning to point O.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time taken to complete half a circular motion is half the time period.",
+    "conclusion": "In B_1, the time for half a circular motion is t_1 = T_1/2 = πr_1/v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time taken to complete half a circular motion is half the time period.",
+    "conclusion": "In B_2, the time for half a circular motion is t_2 = T_2/2 = πr_2/v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since r_2 = 2r_1, t_2 = π(2r_1)/v = 2(πr_1/v) = 2t_1.",
+    "conclusion": "The time for half a circular motion in B_2 is twice that in B_1.",
+    "judgment": "Match"
+  }]

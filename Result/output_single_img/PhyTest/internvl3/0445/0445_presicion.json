@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the propagation speed of light in water, we need to use the concept of the critical angle and Snell's Law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertex angle of the cone is α.",
+    "conclusion": "The critical angle θ_c is α/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law relates the angles of incidence and refraction to the refractive indices of the two media.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n_1 sin θ_1 = n_2 sin θ_2. For the critical angle, θ_1 = θ_c and θ_2 = 90°.",
+    "conclusion": "n_water sin θ_c = n_vacuum sin 90°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_vacuum = 1 and sin 90° = 1.",
+    "conclusion": "n_water sin θ_c = 1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index n of a medium is related to the speed of light in that medium v and the speed of light in vacuum c by n = c/v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = c/v",
+    "conclusion": "v_water = c/n_water",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_water sin θ_c = 1",
+    "conclusion": "n_water = 1/sin θ_c",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ_c = α/2",
+    "conclusion": "n_water = 1/sin (α/2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_water = c/n_water and n_water = 1/sin (α/2)",
+    "conclusion": "v_water = c sin (α/2)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

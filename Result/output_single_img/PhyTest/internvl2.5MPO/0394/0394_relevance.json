@@ -1,0 +1,96 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "To express van der Waals constants a and b in terms of T_c and P_c, use van der Waals equation and conditions at critical point.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Van der Waals equation: (P + a/V^2)(V - b) = RT",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "At critical point, first derivative of pressure with respect to volume is zero.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "At critical point, second derivative of pressure with respect to volume is zero.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Volume at critical point is denoted as V_c.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Van der Waals equation at critical point becomes: (P_c + a/V_c^2)(V_c - b) = RT_c",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Differentiate van der Waals equation with respect to V: ∂P/∂V = -2a/V^3 + RT/(V - b)^2",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At critical point: -2a/V_c^3 + RT_c/(V_c - b)^2 = 0",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Differentiate first derivative with respect to V: ∂^2P/∂V^2 = 6a/V^4 - 2RT/(V - b)^3",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At critical point: 6a/V_c^4 - 2RT_c/(V_c - b)^3 = 0",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From first derivative condition: 2a/V_c^3 = RT_c/(V_c - b)^2",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From second derivative condition: 6a/V_c^4 = 2RT_c/(V_c - b)^3",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify second equation: 3a/V_c^4 = RT_c/(V_c - b)^3",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Divide second derivative equation by first derivative equation: 3/V_c = 1/(V_c - b)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solve for b: 3(V_c - b) = V_c, b = 2V_c/3",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute b into first derivative condition: 2a/V_c^3 = RT_c/(V_c/3)^2",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify: 2a/V_c^3 = 9RT_c/V_c^2, 2a = 9RT_c V_c, a = 9RT_c V_c/2",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Express V_c in terms of P_c and T_c using van der Waals equation at critical point.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute a and b: (P_c + 9RT_c/2V_c)(V_c/3) = RT_c",
+    "relevant": "Yes"
+  }]

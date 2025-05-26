@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the temperature at state C, we can use the ideal gas law and the properties of the processes involved in the cycle ABCDA.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process AB is an isochoric process from A to B with constant volume and pressure increasing from P1 to P2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process BC is an isobaric process from B to C with constant pressure P2 and volume increasing from V1 to V2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process CD is an isochoric process from C to D with constant volume V2 and pressure decreasing from P2 to P1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process DA is an isobaric process from D to A with constant pressure P1 and volume decreasing from V2 to V1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state A: PA = P1, VA = V1, and TA = T0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state B: PB = P2, VB = V1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state C: PC = P2, VC = V2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at state A: P1 V1 = nRT0",
+    "conclusion": "nR = P1 V1 / T0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at state C: P2 V2 = nRT_C and nR = P1 V1 / T0",
+    "conclusion": "P2 V2 = (P1 V1 / T0) T_C",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P2 V2 = (P1 V1 / T0) T_C",
+    "conclusion": "T_C = (P2 V2 T0) / (P1 V1)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

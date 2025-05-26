@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial Conditions: Height of the platform H = 0.4 m, Inclination angle θ = 37°, Radius of pipe CD is r = 0.1 m, Radius of track DEF is R = 0.2 m, Coefficient of kinetic friction μ = 1/12",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the ball to complete the motion, the minimum height h required is given as 0.45 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using energy conservation: mgh - μmg cos θ · h/sin θ = 1/2mv_0^2",
+    "conclusion": "Calculate v_0 for h = 0.45 m: v_0 = √(2g(h - μh cot θ)) = √(2g × 0.45(1 - 1/12 × 4/3)) = 2 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point E, the ball just passes through: mg = m v^2/R",
+    "conclusion": "Velocity v = √(gR) = 2 m/s.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From D to E, using energy conservation: v_D = √(v^2 + 2gR)",
+    "conclusion": "v_D = 2√3 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From D to F: v_F = √(v_D^2 + 2gr)",
+    "conclusion": "v_F = 4 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given the elastic collision, the velocity after collision v_G = v_F",
+    "conclusion": "v_G = 4 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum horizontal distance x_max is calculated considering the vertical motion of the ball: x_max = v_G t",
+    "conclusion": "Time t is: t = √(2(H + R)/g)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting: x_max = 4 × √(2 × (0.4 + 0.2)/10)",
+    "conclusion": "x_max = 1.2 m",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The vertex angle of the isosceles prism ABC is θ = 30°, the side length of the AB side is L, and the light DO hits the midpoint O of the AB side. When the incident angle i = 45°, the light finally exits perpendicular to the AC side. It is known that the propagation speed of light in vacuum is C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the prism at an angle of 45° and the vertex angle of the prism is 30°.",
+    "conclusion": "The light travels from point D to the midpoint O of AB, and then reflects off the hypotenuse BC and exits perpendicular to AC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the first surface is 45°.",
+    "conclusion": "The angle of refraction at the first surface can be found using Snell's law: n1 sin i = n2 sin r where n1 is the refractive index of the medium (air, n1 = 1), i = 45°, and n2 is the refractive index of the prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 45° = 1/√2",
+    "conclusion": "1/√2 = sin r/n2 implies n2 = √2 sin r",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light reflects off the hypotenuse BC and exits perpendicular to AC.",
+    "conclusion": "The angle of incidence at the second surface must be such that the light exits perpendicular to AC. This means the angle of incidence is 60° (since the angle between the incident and reflected rays is 120° and the angle of incidence is 60°).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law again for the second surface: n2 sin 60° = n3 sin 90°",
+    "conclusion": "n2 sin 60° = n3 implies n3 = n2 √3/2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the light exits perpendicular to AC, the angle of incidence is 60° and the angle of refraction is 90°.",
+    "conclusion": "The refractive index n3 must be such that n2 sin 60° = n3 implies n3 = n2 √3/2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the first Snell's law, n2 = √2 sin r, and the light exits perpendicular to AC.",
+    "conclusion": "The refractive index n3 must be such that the light exits at 90°. This implies that the refractive index n3 is consistent with the geometry and the angle of incidence.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance AO is half the length of AB, so AO = L/2.",
+    "conclusion": "The angle of incidence at the first surface is 45° and the angle of refraction is r. The light travels a distance d1 in the prism before reflecting off the hypotenuse.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light reflects off the hypotenuse and travels a distance d2 before exiting.",
+    "conclusion": "The total distance traveled by the light in the prism is the sum of d1 and d2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The propagation speed of light in the prism is v = C/n, where n is the refractive index of the prism.",
+    "conclusion": "The total time t is given by t = d/v, where d is the total distance traveled by the light in the prism.",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,58 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The detector moves along the positive x-axis from the origin O, and its velocity is inversely proportional to its displacement. At point A, velocity = 4 m/s. At point B, velocity = 2 m/s. Displacement from O to B is 2 m.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity is inversely proportional to displacement.",
+    "conclusion": "The velocity equation can be written as v = k/x, where k is a constant of proportionality.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point B, v = 2 m/s and x = 2 m. Using v = k/x.",
+    "conclusion": "The constant k is calculated as k = 4.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point A, v = 4 m/s and k = 4. Using v = k/x.",
+    "conclusion": "The displacement at point A is x_A = 1 m.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the time from A to B, the formula t = ∫(dx/v) is used. Substituting v = k/x and k = 4.",
+    "conclusion": "The time equation becomes t = ∫(x/4) dx from x_A = 1 to x_B = 2.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The integral t = ∫(x/4) dx from x = 1 to x = 2 is calculated.",
+    "conclusion": "The integral evaluates to t = (1/4) * [(x^2)/2] from 1 to 2.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The integral result t = (1/4) * [(x^2)/2] from 1 to 2 is evaluated.",
+    "conclusion": "The time is calculated as t = (1/4) * (2 - 0.5) = (1/4) * 1.5 = 3/8 seconds.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The calculated time t = 3/8 seconds.",
+    "conclusion": "The time it takes for the detector to move from point A to point B is 3/8 seconds.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

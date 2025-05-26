@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the flow rate Q of the liquid in the pipe using the electromagnetic flowmeter, we need to understand the relationship between the electromotive force E, the magnetic field B, the velocity of the liquid v, and the diameter of the pipe d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electromotive force E generated between points M and N on the pipe wall is due to the motion of the conductive liquid through the magnetic field.",
+    "conclusion": "According to Faraday's law of electromagnetic induction, the electromotive force E is given by: E = B * v * d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "B is the magnetic induction intensity (magnetic field strength), v is the velocity of the liquid, d is the diameter of the pipe.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The flow rate Q is defined as the volume of liquid passing through the cross-section of the pipe per unit time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a circular pipe, the cross-sectional area A is: A = π * d^2 / 4",
+    "conclusion": "The flow rate Q can be expressed in terms of the velocity v and the cross-sectional area A: Q = A * v = (π * d^2 / 4) * v",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the equation for electromotive force, E = B * v * d",
+    "conclusion": "We can solve for velocity v: v = E / (B * d)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the expression for v into the flow rate equation: Q = (π * d^2 / 4) * v",
+    "conclusion": "Q = (π * d^2 / 4) * (E / (B * d))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q = (π * d^2 / 4) * (E / (B * d))",
+    "conclusion": "Simplify the expression for Q: Q = (π * d / 4) * (E / B)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplified expression for Q: Q = (π * d / 4) * (E / B)",
+    "conclusion": "The flow rate Q of the liquid in the pipe is given by: Q = (π * d * E) / (4 * B)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

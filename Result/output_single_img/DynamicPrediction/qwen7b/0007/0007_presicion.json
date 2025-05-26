@@ -1,0 +1,103 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The baffles (A, B, and C) are placed in such a way that they block the direct path of the liquid.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The baffles (A, B, and C) are placed in such a way that they block the direct path of the liquid.",
+    "conclusion": "The liquid will have to follow the path around these baffles.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle A is positioned horizontally at the top of the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle A is positioned horizontally at the top of the image.",
+    "conclusion": "It will likely cause the liquid to flow downward.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle B is positioned diagonally, starting from the top left and extending towards the bottom right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle B is positioned diagonally, starting from the top left and extending towards the bottom right.",
+    "conclusion": "It will cause the liquid to flow in a diagonal path.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle C is positioned horizontally at the top of the image, similar to baffle A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle C is positioned horizontally at the top of the image, similar to baffle A.",
+    "conclusion": "It will likely cause the liquid to flow downward.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After passing through baffle A, the liquid will flow downward.",
+    "conclusion": "The liquid will flow downward after passing through baffle A.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After passing through baffle B, the liquid will flow in a diagonal path.",
+    "conclusion": "The liquid will flow in a diagonal path after passing through baffle B.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After passing through baffle C, the liquid will flow downward again.",
+    "conclusion": "The liquid will flow downward again after passing through baffle C.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container D is located on the left side of the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container E is located on the right side of the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the liquid flows downward after passing through baffle A and baffle C, it will eventually reach container E.",
+    "conclusion": "The liquid will eventually reach container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The diagonal path caused by baffle B does not change the overall downward flow pattern significantly, as the liquid will still be directed towards container E.",
+    "conclusion": "The liquid will still be directed towards container E.",
+    "judgment": "Wrong"
+  }]

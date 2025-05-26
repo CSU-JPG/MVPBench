@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to calculate the change in magnetic flux through the coil as it rotates 60° around the z-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux (Φ) through a surface is given by the formula: Φ = B ⋅ A ⋅ cos(θ), where B is the magnetic induction intensity (in Tesla), A is the area of the coil (in square meters), θ is the angle between the magnetic field direction and the normal to the surface of the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initially, the coil is aligned such that its normal is along the x-axis (since the magnetic field is along the positive x-axis).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil is aligned such that its normal is along the x-axis.",
+    "conclusion": "The angle θ between the magnetic field and the normal to the coil is 0°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ is 0°.",
+    "conclusion": "The initial magnetic flux (Φ_i) is: Φ_i = B ⋅ A ⋅ cos(0°) = 0.1 T ⋅ 0.4 m² ⋅ 1 = 0.04 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil rotates 60° downward around the z-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil rotates 60° downward around the z-axis.",
+    "conclusion": "The normal to the coil now makes a 60° angle with the x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ is 60°.",
+    "conclusion": "The final magnetic flux (Φ_f) is: Φ_f = B ⋅ A ⋅ cos(60°) = 0.1 T ⋅ 0.4 m² ⋅ 0.5 = 0.02 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ_f = 0.02 Wb and Φ_i = 0.04 Wb.",
+    "conclusion": "The change in magnetic flux (ΔΦ) is the difference between the final and initial flux: ΔΦ = Φ_f - Φ_i = 0.02 Wb - 0.04 Wb = -0.02 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil rotates 60° downward around the z-axis.",
+    "conclusion": "The magnetic flux changes by -0.02 Wb as the coil rotates 60° downward around the z-axis.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

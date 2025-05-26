@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to use the principles of transformer operation and the power conservation theorem.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The transformer has a primary coil with n_1 = 100 turns and is connected to a circuit with a voltage of U_1 = 220 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have two secondary coils with voltages U_2 = 6 V and U_3 = 110 V, and corresponding power ratings of P_2 = 20 W and P_3 = 60 W.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_2 = U_2 I_2",
+    "conclusion": "I_2 = 20 / 6 = 10/3 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_3 = U_3 I_3",
+    "conclusion": "I_3 = 60 / 110 = 6/11 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The transformer ratio is given by the ratio of the number of turns in the primary to the number of turns in the secondary coils.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power in the primary coil is equal to the sum of the powers in the secondary coils (assuming no power loss in the transformer).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_total = P_2 + P_3 = 20 + 60",
+    "conclusion": "P_total = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_1 = U_1 I_1 and P_1 = P_total",
+    "conclusion": "U_1 I_1 = 80",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_1 I_1 = 80",
+    "conclusion": "I_1 = 80 / 220 = 4/11 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The transformer ratio for the voltage is: U_1/U_2 = n_1/n_2",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "220/6 = 100/n_2",
+    "conclusion": "n_2 = 600/220 = 30/11",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The transformer ratio for the voltage is also: U_1/U_3 = n_1/n_3",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "220/110 = 100/n_3",
+    "conclusion": "n_3 = 11000/220 = 50",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I_2 = (U_1/U_2) I_1",
+    "conclusion": "I_2 = (220/6) * (4/11) = 40/3 A",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I_3 = (U_1/U_3) I_1",
+    "conclusion": "I_3 = (220/110) * (4/11) = 8/11 A",
+    "judgment": "Wrong"
+  }]

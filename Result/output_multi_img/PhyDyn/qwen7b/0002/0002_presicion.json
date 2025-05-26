@@ -1,0 +1,58 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid will flow out from A, B, and C, and the task is to predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The liquid flows out from points labeled A, B, and C.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Container D is on the left side of the image, and Container E is on the right side of the image.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid flows out from points labeled A, B, and C.",
+    "conclusion": "The orange liquid from A will flow downwards and curve slightly before entering Container D.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid flows out from points labeled A, B, and C.",
+    "conclusion": "The pink liquid from B will flow down and to the right, curving to enter Container E.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid flows out from points labeled A, B, and C.",
+    "conclusion": "The teal liquid from C will flow down and to the left, curving downward before entering Container D.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Streams from A and B both land on the green baffle, they merge and flow to the left. The stream from C falls on the right edge of that same baffle and is deflected to the right.",
+    "conclusion": "Streams from A and B merge on the slanted cyan baffle; the combined flow then splits at the bottom, with part entering container D on the left and part entering container E on the right.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Streams from A and B merge on the slanted cyan baffle; the combined flow then splits at the bottom, with part entering container D on the left and part entering container E on the right. The stream from C continues along its own baffle and also falls into container E.",
+    "conclusion": "Most of the combined flow from A and B ends up in container D with a small portion of C joining; conversely, container E receives most of the flow from C with a small portion from A and B.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

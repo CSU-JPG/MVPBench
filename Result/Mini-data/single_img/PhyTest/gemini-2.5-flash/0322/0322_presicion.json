@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the temperature at state A in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature at state A is 27°C.",
+    "conclusion": "T_A = 27°C + 273 = 300 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the ideal gas law at state A to find nR.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p_A = 1.0 × 10^5 Pa, V_A = 6 × 10^{-3} m^3, T_A = 300 K.",
+    "conclusion": "nR = 2 J/K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Calculate the temperature at state C using the ideal gas law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p_C = 3.0 × 10^5 Pa, V_C = 2 × 10^{-3} m^3, nR = 2 J/K.",
+    "conclusion": "T_C = 300 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Calculate the change in internal energy from A to C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_C = T_A = 300 K.",
+    "conclusion": "ΔU_{AC} = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Calculate the work done by the gas during the process from A to C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_A = V_B, so W_{AB} = 0.",
+    "conclusion": "W_{AB} = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p_B = 2.0 × 10^5 Pa, p_C = 3.0 × 10^5 Pa, V_B = 6 × 10^{-3} m^3, V_C = 2 × 10^{-3} m^3.",
+    "conclusion": "W_{BC} = -1000 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_{AB} = 0, W_{BC} = -1000 J.",
+    "conclusion": "W_{AC} = -1000 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Apply the first law of thermodynamics to find the heat transferred from A to C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU_{AC} = 0, W_{AC} = -1000 J.",
+    "conclusion": "Q_{AC} = -1000 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Interpret the result for heat transfer.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q_{AC} = -1000 J.",
+    "conclusion": "The amount of heat transferred by the gas is 1000 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

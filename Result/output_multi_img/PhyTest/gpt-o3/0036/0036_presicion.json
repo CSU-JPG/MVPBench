@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial speed of coach bus, v₀ = 20 m s⁻¹",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Distance to the puppy when the driver first sees it, x = 45 m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Reaction (driver delay) time, Δt = 0.50 s",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the velocity-time graph: after the 0.50 s reaction, the velocity falls uniformly from 20 m s⁻¹ to 0 m s⁻¹ in the interval 0.50 s → 5.0 s (i.e. a braking time of 4.5 s).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "s_react = v₀ · Δt",
+    "conclusion": "s_react = 20 m s⁻¹ × 0.50 s = 10 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The part of the graph from t = 0.50 s to 5.0 s is a triangle of height 20 m s⁻¹ and base 4.5 s. Area = (½) · base · height",
+    "conclusion": "s_brake = ½ × 4.5 s × 20 m s⁻¹ = 45 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "s_total = s_react + s_brake",
+    "conclusion": "s_total = 10 m + 45 m = 55 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial gap to the puppy = 45 m, Stopping distance = 55 m (> 45 m)",
+    "conclusion": "The coach bus needs 55 m to stop but the puppy is only 45 m ahead. Therefore the bus reaches the puppy’s position before it comes to rest. The puppy is not safe.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

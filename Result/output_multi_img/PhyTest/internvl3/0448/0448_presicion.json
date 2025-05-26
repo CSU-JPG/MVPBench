@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the distance between the position where the red light hits the screen and point A (let's denote this distance as AP), we will follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The radius of the semicircle is R. The refractive index is n = √3. The speed of light in vacuum is c. The angle of incidence is i = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(i) = n2 sin(r), where n1 is the refractive index of air (approximately 1), n2 is the refractive index of the brick (√3), i is the angle of incidence (60°), and r is the angle of refraction.",
+    "conclusion": "sin(60°) = √3 sin(r), so sin(r) = 1/2, thus r = 30°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light is refracted at D with an angle of 30° concerning the normal. The refracted light travels along DP until it hits the screen at point P.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In triangle OAD, angle ODA = 30° because it is complementary to the angle of refraction.",
+    "conclusion": "Triangle OAD is a right triangle with angle OAD = 90°, angle ODA = 30°, and angle ADO = 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "OD is the radius R. In triangle OAD, AD = R cot(30°) = R √3.",
+    "conclusion": "AD = R √3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In triangle ADP, AP = AD cot(30°) = R √3 × √3 = 3R.",
+    "conclusion": "AP = 3R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the position where the red light hits the screen and point A is AP = 3R.",
+    "conclusion": "The distance between the position where the red light hits the screen and point A is 3R.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

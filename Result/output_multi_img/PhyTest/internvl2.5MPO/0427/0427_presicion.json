@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the longest propagation time of the refracted light in the hemisphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The triangle ABC is equilateral with side length L. The ray of light is incident on side AB and enters the hemisphere at point D. BD = L/4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BD = L/4, AD = L - L/4 = 3L/4",
+    "conclusion": "Use trigonometry in triangle ABD: tan(60° - θ) = (√3L/2) / (3L/4) = 2√3/3",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(60° - θ) = 2√3/3",
+    "conclusion": "tan(30° - θ) = 2√3/3",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(30° - θ) = 2√3/3",
+    "conclusion": "Solving for θ, find θ ≈ 22.6°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell’s law states n sin θ = sin 30°.",
+    "conclusion": "Solve for n: n = 1/(2 sin(22.6°)) ≈ √3",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The path inside the hemisphere is x, where x is the diameter of the hemisphere.",
+    "conclusion": "For maximum propagation, the path is the diameter of the hemisphere.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Speed inside the hemisphere v = c/√3.",
+    "conclusion": "Calculate the maximum path length.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The longest time is when the light travels the diameter, which is √3L.",
+    "conclusion": "Time t is given by: t = (√3L) / (c/√3) = 3L/c",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The longest propagation time of the refracted light in the hemisphere is 3L/c.",
+    "conclusion": "Thus, the final answer is 3L/c.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A truck and a bus are both braking suddenly, and we need to find the maximum distance between them during this braking process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The bus is in front of the truck. They start braking at the same time. Initially, they are 30 meters apart.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There's a velocity-time (v-t) graph provided, which shows the velocities of both vehicles over time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a v-t graph, the slope of the line represents acceleration (or deceleration, since they're braking). The area under the curve gives the displacement over time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The truck's velocity decreases linearly from 40 m/s to 0 m/s between 0 and 20 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The bus's velocity decreases linearly from 30 m/s to 0 m/s between 0 and 30 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The truck's velocity decreases linearly from 40 m/s to 0 m/s between 0 and 20 seconds.",
+    "conclusion": "Deceleration of the truck (a_truck) = (0 - 40)/20 = -2 m/s²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Deceleration of the truck (a_truck) = -2 m/s²",
+    "conclusion": "The velocity of the truck as a function of time is v_truck(t) = 40 - 2t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus's velocity decreases linearly from 30 m/s to 0 m/s between 0 and 30 seconds.",
+    "conclusion": "Deceleration of the bus (a_bus) = (0 - 30)/30 = -1 m/s²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Deceleration of the bus (a_bus) = -1 m/s²",
+    "conclusion": "The velocity of the bus as a function of time is v_bus(t) = 30 - t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of the truck as a function of time is v_truck(t) = 40 - 2t",
+    "conclusion": "Position of the truck as a function of time is s_truck(t) = 40t - t² + C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of the bus as a function of time is v_bus(t) = 30 - t",
+    "conclusion": "Position of the bus as a function of time is s_bus(t) = 30t - (1/2)t² + C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t=0, s_bus(0) = 0",
+    "conclusion": "C for bus = 0, so s_bus(t) = 30t - (1/2)t²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t=0, s_truck(0) = -30 m",
+    "conclusion": "C for truck = -30, so s_truck(t) = 40t - t² - 30",
+    "judgment": "Match"
+  }]

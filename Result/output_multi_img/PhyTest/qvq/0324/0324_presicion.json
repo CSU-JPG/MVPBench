@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have an ideal gas being heated gradually with p-T and V-T graphs provided. We need to find the pressure at 600 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas follows laws like Charles's Law and Gay-Lussac's Law, relating pressure, volume, and temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The p-T graph shows a straight line from 0.5 × 10^5 Pa at 200 K to 1.0 × 10^5 Pa at 400 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The p-T graph shows a straight line from 0.5 × 10^5 Pa at 200 K to 1.0 × 10^5 Pa at 400 K.",
+    "conclusion": "Pressure increases linearly with temperature, suggesting p ∝ T at constant volume (Gay-Lussac's Law).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The V-T graph shows a horizontal line from 400 K to 600 K, indicating constant volume at about 2 m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From 600 K to 700 K, the V-T graph shows volume increasing linearly from 2 m³ to about 3 m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The temperature axis goes from 0 to 700 K, with markings every 100 K. The p-T graph has points at 200 K and 400 K, and the V-T graph has points at 400 K, 600 K, and 700 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the p-T graph, we have points: (200 K, 0.5 × 10^5 Pa) and (400 K, 1.0 × 10^5 Pa).",
+    "conclusion": "We can find the equation of the line to relate pressure and temperature.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Points: (200 K, 0.5 × 10^5 Pa) and (400 K, 1.0 × 10^5 Pa).",
+    "conclusion": "The slope m of the line is 2500 Pa/K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Slope m = 2500 Pa/K and point (200 K, 0.5 × 10^5 Pa).",
+    "conclusion": "Equation is p = mT + b. Calculating b gives b = -450,000 Pa.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume is constant during a certain part of the process.",
+    "conclusion": "p ∝ T, matching the p-T graph.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas equation of state and given values.",
+    "conclusion": "At 600 K, the gas pressure is $1.25×10^5P_a$.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

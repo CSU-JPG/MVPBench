@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromotive force (emf) of the power supply is E = 10 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The capacitors C1 and C2 both have a capacitance of 30 μF.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistors R1 = 4.0 Ω and R2 = 6.0 Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the switch S is closed, allowing the capacitors to charge.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch S is closed, the capacitors C1 and C2 are in parallel with the power supply.",
+    "conclusion": "The voltage across each capacitor is equal to the emf of the power supply, V = 10 V.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge on a capacitor is given by Q = C × V.",
+    "conclusion": "For C1: Q1 = C1 × V = 30 × 10^-6 F × 10 V = 300 × 10^-6 C = 300 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge on a capacitor is given by Q = C × V.",
+    "conclusion": "For C2: Q2 = C2 × V = 30 × 10^-6 F × 10 V = 300 × 10^-6 C = 300 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch S is opened, the power supply is disconnected, and the capacitors start discharging through the resistors R1 and R2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitors are in series with the resistors R1 and R2.",
+    "conclusion": "The total initial charge on the capacitors is Q_total = Q1 + Q2 = 300 μC + 300 μC = 600 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the capacitors discharge through both resistors in series, the same amount of charge that was initially stored in the capacitors will pass through R1.",
+    "conclusion": "Therefore, the amount of charge passing through R1 is 600 μC.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

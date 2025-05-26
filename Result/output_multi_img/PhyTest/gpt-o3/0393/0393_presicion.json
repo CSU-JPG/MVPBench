@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an empty (air-filled) coaxial capacitor of height l, inner radius a and outer radius b that is held at a fixed potential difference V, the stored electrostatic energy is calculated using the formula U = ½ C V².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitance per unit length is C = 2π ε₀ l / ln(b/a).",
+    "conclusion": "The stored electrostatic energy is U(l) = ½ [ 2π ε₀ l / ln(b/a) ] V².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The stored electrostatic energy is U(l) = ½ [ 2π ε₀ l / ln(b/a) ] V².",
+    "conclusion": "The stored electrostatic energy is U(l) = (π ε₀ V² l) / ln(b/a).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This expression is linear in the height l because, before any fluid rises, every centimetre of the capacitor length contributes the same amount of capacitance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The stored electrostatic energy is U(l) = (π ε₀ V² l) / ln(b/a).",
+    "conclusion": "The total energy stored in the capacitor before any fluid rises is U = (π ε₀ V² l) / ln(b/a).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

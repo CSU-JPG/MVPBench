@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from rest at a height H.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "It falls under the influence of gravity and air resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gravitational force acting on the basketball is mg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The air resistance is given as λmg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential energy at height H is mgH. The work done against air resistance during the fall is λmgH.",
+    "conclusion": "The kinetic energy just before the collision is 1/2mv^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using energy conservation: mgH - λmgH = 1/2mv^2.",
+    "conclusion": "v^2 = 2gH(1 - λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v^2 = 2gH(1 - λ).",
+    "conclusion": "v = sqrt(2gH(1 - λ)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball rebounds to a height h.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential energy at height h is mgh. The work done against air resistance during the ascent is λmgh.",
+    "conclusion": "The kinetic energy just after the collision is 1/2mu^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using energy conservation: 1/2mu^2 = mgh + λmgh.",
+    "conclusion": "u^2 = 2gh(1 + λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "u^2 = 2gh(1 + λ).",
+    "conclusion": "u = sqrt(2gh(1 + λ)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio k of the post-collision velocity u to the pre-collision velocity v is given by: k = u/v = sqrt(2gh(1 + λ))/sqrt(2gH(1 - λ)).",
+    "conclusion": "k = sqrt(h(1 + λ)/H(1 - λ)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "k = sqrt(h(1 + λ)/H(1 - λ)).",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity is k = sqrt(h(1 + λ)/H(1 - λ)).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

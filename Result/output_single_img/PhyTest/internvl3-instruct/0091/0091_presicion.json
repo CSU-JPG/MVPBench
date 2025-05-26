@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Objects A and B, each with a mass of m=1kg, are attached to the two ends of a massless string. The string passes over a fixed pulley at the top of an inclined plane with an angle of θ=37°, which is fixed on a horizontal ground. Initially, object B is pulled to the bottom of the inclined plane, while object A is at a height of h=1m above the ground. Friction between B and the inclined plane, as well as between the string and the pulley, is negligible. The system is released from rest and allowed to move. g is taken as 10m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on object A are gravity and tension in the string. The forces acting on object B are gravity, normal force, and tension in the string. The tension is the same throughout the string.",
+    "conclusion": "For object A: T - mg = ma. For object B: mg sin θ - T = ma.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For object A: T - mg = ma. For object B: mg sin θ - T = ma.",
+    "conclusion": "Adding these equations: mg - mg sin θ = 2ma.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg - mg sin θ = 2ma.",
+    "conclusion": "a = g(1 - sin θ)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 37° and sin 37° = 0.6.",
+    "conclusion": "a = 10(1 - 0.6)/2 = 2 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A falls a distance h = 1 m with acceleration a = 2 m/s².",
+    "conclusion": "Using the kinematic equation: h = (1/2) a t².",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = (1/2) a t² and h = 1 m.",
+    "conclusion": "1 = (1/2) × 2 × t².",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 = (1/2) × 2 × t².",
+    "conclusion": "t² = 1.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t² = 1.",
+    "conclusion": "t = 1 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object B has been accelerating for t = 1 s with acceleration a = 2 m/s².",
+    "conclusion": "Using the kinematic equation for velocity: v = at.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = at and a = 2 m/s², t = 1 s.",
+    "conclusion": "v = 2 × 1 = 2 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the string breaks, object B moves up the incline with initial velocity v = 2 m/s and decelerates due to gravity.",
+    "conclusion": "The deceleration is g sin θ = 10 × 0.6 = 6 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = u + at, u = 2 m/s, a = -6 m/s².",
+    "conclusion": "0 = 2 - 6t.",
+    "judgment": "Reasonable"
+  }]

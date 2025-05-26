@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between two parallel rails is 15 cm, the mass of the metal rod MN is m = 17 g, its resistance R1 is 4 Ω, the sliding rheostat R2 is connected in series with MN, the magnetic induction intensity B of the uniform magnetic field is vertically upward with a magnitude of 0.6 T, the electromotive force of the power source is E = 10 V, and the internal resistance r = 1 Ω. When the switch S is closed, the metal rod MN remains stationary (g = 10 m/s², √3 = 1.7).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "If the parallel rails are smooth, find the magnitude of the Ampere force acting on the metal rod and the resistance value of R2 (retain one significant figure in the result).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electromotive force E = 10 V, Internal resistance r = 1 Ω, Resistance R1 = 4 Ω",
+    "conclusion": "Calculate the total resistance in the circuit when R2 is included: R_total = R1 + R2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's law: I = E / R_total = 10 V / (4 Ω + R2)",
+    "conclusion": "Determine the current in the circuit: I = 10 V / (4 Ω + R2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic force F_B on the rod due to the magnetic field: F_B = B * I * L, where B = 0.6 T, L = 15 cm = 0.15 m",
+    "conclusion": "Substitute I into the equation: F_B = 0.6 T * I * 0.15 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rod is in equilibrium under three forces: Gravitational force (mg), Normal force (N), Magnetic force (F_B).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the rod is smooth, there’s no frictional force. The rod is in static equilibrium, so the net force must be zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the free body diagram, the angle between the magnetic field vector and the rod is 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The components of the magnetic force F_B that act in the plane of the rod are: Horizontal component (F_Bx): F_Bx = F_B * cos(60°) = F_B * 1/2, Vertical component (F_By): F_By = F_B * sin(60°) = F_B * √3/2",
+    "conclusion": "In equilibrium: F_Bx - mg * sin(30°) = 0, F_By - mg * cos(30°) = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal balance: 0.6 T * I * 0.15 m * 1/2 = mg * sin(30°)",
+    "conclusion": "0.225 * I = mg / 2, I = mg / 0.45",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute mg: I = 0.017 kg * 10 m/s² / 0.45",
+    "conclusion": "I = 0.17 N / 0.45, I ≈ 0.378 A",
+    "judgment": "Match"
+  }

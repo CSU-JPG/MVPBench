@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball of mass m is dropped from rest at a height H above the ground. It undergoes an inelastic collision with the ground and rebounds to a maximum height h above the ground. The magnitude of the air resistance experienced by the basketball during its motion is λ times the magnitude of the gravitational force acting on the basketball (where λ is a constant and 0<λ<(H-h)/(H+h)). The ratio of the post-collision velocity to the pre-collision velocity is the same for each collision with the ground. The magnitude of the gravitational acceleration is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the ratio of the post-collision velocity to the pre-collision velocity of the basketball during its collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from rest at height H and it bounces back to a height h after an inelastic collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Air resistance is proportional to the gravitational force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Mass of the basketball: m, Initial height: H, Final height after bounce: h, Air resistance: λ × mg, where λ is a constant (0 < λ < (H - h)/(H + h)), Gravitational acceleration: g",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The basketball is dropped from rest at height H.",
+    "conclusion": "Just before hitting the ground, its velocity is v_down.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The collision is inelastic, and it rebounds with a velocity v_up.",
+    "conclusion": "The ratio we need to find is e = v_up/v_down, where e is the coefficient of restitution.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball reaches a maximum height h after the collision.",
+    "conclusion": "The ascent after collision is complete.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using conservation of energy, considering air resistance.",
+    "conclusion": "The energy equation from H to just before hitting the ground: mgh - work by air resistance = 1/2mv_down^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Air resistance acts against motion, so work done during descent is λ mg H.",
+    "conclusion": "mgh - λ mg H = 1/2mv_down^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mgh - λ mg H = 1/2mv_down^2",
+    "conclusion": "v_down = sqrt(2g(H - λ H))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During ascent: initial kinetic energy - work by air resistance = mgh",
+    "conclusion": "1/2mv_up^2 - λ mg h = mgh",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/2mv_up^2 - λ mg h = mgh",
+    "conclusion": "1/2mv_up^2 = mg(h + λ h)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/2mv_up^2 = mg(h + λ h)",
+    "conclusion": "v_up = sqrt(2g(h + λ h))",
+    "judgment": "Reasonable"
+  }]

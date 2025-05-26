@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The detector's velocity is inversely proportional to its displacement.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At point A, the velocity is 4 m/s. At point B, the velocity is 2 m/s. The displacement from O to B is 2 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v is inversely proportional to x.",
+    "conclusion": "The relationship can be written as v = k/x, where k is a constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using v_B = k/x_B and v_B = 2 m/s, x_B = 2 m.",
+    "conclusion": "k = 4",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "k = 4",
+    "conclusion": "The velocity function is v = 4/x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_A = 4 m/s and v = 4/x_A.",
+    "conclusion": "x_A = 1 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Time t is the integral of velocity v with respect to displacement from x_A to x_B.",
+    "conclusion": "t = ∫(1 to 2) (x/4) dx",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = ∫(1 to 2) (x/4) dx",
+    "conclusion": "t = (1/4) ∫(1 to 2) x dx",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = (1/4) ∫(1 to 2) x dx",
+    "conclusion": "t = (1/4) [x^2/2] from 1 to 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = (1/4) [x^2/2] from 1 to 2",
+    "conclusion": "t = (1/4) (2 - 0.5)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = (1/4) (2 - 0.5)",
+    "conclusion": "t = (1/4) * 1.5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t = (1/4) * 1.5",
+    "conclusion": "t = 0.375 s",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

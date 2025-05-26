@@ -1,0 +1,86 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the magnitude and direction of the resultant Ampere force acting on the trapezoidal frame in the given magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance R of each segment can be calculated using the formula: R = (ρ * l) / S.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Each segment ab, bc, and cd has a length L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each segment ab, bc, and cd has a length L.",
+    "conclusion": "The resistance of each segment is R_ab = R_bc = R_cd = (ρL) / S.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment ad forms the base of the trapezoid with each side forming a 60° angle with the base.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment ad forms the base of the trapezoid with each side forming a 60° angle with the base.",
+    "conclusion": "The length of ad is 5L/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The length of ad is 5L/2.",
+    "conclusion": "The resistance of segment ad is R_ad = (5ρL) / (2S).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistances of segments are R_ab = R_bc = R_cd = (ρL) / S and R_ad = (5ρL) / (2S).",
+    "conclusion": "The total resistance R_total of the trapezoidal frame is (11ρL) / (2S).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance R_total of the trapezoidal frame is (11ρL) / (2S).",
+    "conclusion": "The current I through the frame is I = (2ES) / (11ρL).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The Ampere force F on a segment of length l carrying current I in a magnetic field B is given by: F = I * l * B * sin(θ).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I through the frame is I = (2ES) / (11ρL).",
+    "conclusion": "For segment ab, F_1 = (ES√3B) / (11ρ), direction: Downward-left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I through the frame is I = (2ES) / (11ρL).",
+    "conclusion": "For segment bc, F_2 = (ES√3B) / (11ρ), direction: Upward-right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I through the frame is I = (2ES) / (11ρL).",
+    "conclusion": "For segment cd, F_3 = (ES√3B) / (11ρ), direction: Downward-left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I through the frame is I = (2ES) / (11ρL).",
+    "conclusion": "For segment ad, F_4 = (5ESB) / (11ρ), direction: Rightward.",
+    "judgment": "Match"
+  }
+]

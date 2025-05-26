@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas of definite quality begins at state A and returns to its initial state after processes A→B, B→C, and C→A. Temperature at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P_A = 1 × 10^5 Pa, V_A = 2 L, T_A = 200 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: P_B = 4 × 10^5 Pa",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: P_C = 1 × 10^5 Pa, V_C = 5 L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the amount of gas is constant, we can use the equation: PV/T = constant.",
+    "conclusion": "Equation: P_AV_A/T_A = P_CV_C/T_C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation: P_AV_A/T_A = P_CV_C/T_C",
+    "conclusion": "Rearrange for T_C: T_C = (P_CV_C/P_AV_A) T_A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_C = (P_CV_C/P_AV_A) T_A",
+    "conclusion": "Substitute values: T_C = ((1 × 10^5) × 5)/((1 × 10^5) × 2) × 200",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_C = ((1 × 10^5) × 5)/((1 × 10^5) × 2) × 200",
+    "conclusion": "Simplify: T_C = (5/2) × 200",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_C = (5/2) × 200",
+    "conclusion": "Calculate T_C: T_C = 500 K",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

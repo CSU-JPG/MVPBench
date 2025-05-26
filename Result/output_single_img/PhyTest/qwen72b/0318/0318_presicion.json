@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A: P_A = 3 × 10^5 Pa, V_A = 2 × 10^{-3} m³, T_A = 27°C = 300 K. State B: P_B = 2 × 10^5 Pa, V_B = 2 × 10^{-3} m³. State C: P_C = 2 × 10^5 Pa, V_C = 3 × 10^{-3} m³.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the p-V diagram, the pressure remains constant from state B to state C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure remains constant from state B to state C.",
+    "conclusion": "The process from B to C is an isobaric process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an isobaric process, the work done W is given by W = P ΔV.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = P_B = P_C = 2 × 10^5 Pa, ΔV = V_C - V_B.",
+    "conclusion": "ΔV = V_C - V_B = 3 × 10^{-3} m³ - 2 × 10^{-3} m³ = 1 × 10^{-3} m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W = P ΔV, P = 2 × 10^5 Pa, ΔV = 1 × 10^{-3} m³.",
+    "conclusion": "W = 2 × 10^5 Pa × 1 × 10^{-3} m³ = 200 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume increases from state B to state C.",
+    "conclusion": "The work done by the gas is positive.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas is positive and calculated as 200 J.",
+    "conclusion": "The work done externally by the gas from state B to state C is 200 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

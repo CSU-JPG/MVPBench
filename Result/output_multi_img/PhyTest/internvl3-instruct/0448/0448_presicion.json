@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the distance between the position where the red light hits the screen and point A, we need to analyze the refraction and the geometry involved.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "BC is the diameter of the semicircle. O is the center of the semicircle. Angle A = 30°. A screen MN is placed at point A, perpendicular to the horizontal plane.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the brick for red light is √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle between the incident direction and BC is 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the incident direction and BC is 60°.",
+    "conclusion": "Since angle OBC = 60°, the incident angle of the light beam at O is also 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 1 (air), n2 = √3 (brick), θ1 = 60°.",
+    "conclusion": "Using Snell's law, sin θ2 = (n1 sin θ1) / n2 = (1 * sin 60°) / √3 = (√3/2) / √3 = 1/2. θ2 = sin⁻¹(1/2) = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray makes an angle of 30° with the normal at D.",
+    "conclusion": "In triangle ODP, since angle O = 30° and angle ODP = 90°, angle P = 60°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In triangle ODP, using the sine rule: DP/sin 30° = OD/sin 60°.",
+    "conclusion": "Given that the radius OD = R: DP = R * (1/√3).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Angle A = 30°, tan 30° = 1/√3, tan 30° = DP/AP.",
+    "conclusion": "AP = R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AD = AC - CD = (2R/sin 30°) - R = 3R.",
+    "conclusion": "The distance between the position where the red light hits the screen and point A is PA = AD * sin 30° = (3/2)R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

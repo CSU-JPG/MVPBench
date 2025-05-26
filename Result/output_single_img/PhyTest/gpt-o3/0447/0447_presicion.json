@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semicircle brick with a radius of R is made of a special transparent material. A beam of laser mixed with red and green light is injected perpendicular to the edge of the brick diameter MN at the center point O of R/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the laser beam slowly shifts to the left from the point O, it is found that only monochromatic light is emitted from the semicircle surface, and the angle between the emitted light and the incident direction is 30 degrees, regardless of reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the transparent material to two kinds of monochromatic light is asked.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "One key numerical datum is missing, so the two refractive-index values cannot be extracted unambiguously from what we know so far.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inside incidence angle at the spherical surface when the beam has been shifted leftward: sin i = |x|/R, cos i = sqrt(R^2 - x^2)/R, where x (>0) is the horizontal shift of the entry point away from the center O.",
+    "conclusion": "The inside incidence angle at the spherical surface is determined by the horizontal shift x.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Critical-angle condition for the color that just ceases to emerge: If the green ray is the first to be totally internally reflected, i equals its critical angle: i = theta_c,green = arcsin(1/n_green).",
+    "conclusion": "The critical angle for green light is arcsin(1/n_green).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Exit-angle condition for the color that still emerges: For the surviving red ray, the outside refracted angle r_out obeys Snell’s law: n_red sin i = sin r_out.",
+    "conclusion": "The refracted angle for red light obeys Snell's law: n_red sin i = sin r_out.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The experiment tells us that the beam makes 30 degrees with its original vertical direction. Because the incident ray inside the block is vertical while the emergent ray is tilted by 30 degrees, the geometry of the plane of incidence gives r_out = i + 30 degrees.",
+    "conclusion": "The refracted angle r_out for red light is i + 30 degrees.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Hence the two indices are linked by n_red = sin(i + 30 degrees)/sin i, n_green = 1/sin i.",
+    "conclusion": "The refractive indices are n_red = sin(i + 30 degrees)/sin i and n_green = 1/sin i.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A single extra numerical fact—e.g. the actual shift x of the entry point or the corresponding incidence angle i—would fix the value of sin i and thereby give unique numbers for n_red and n_green.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "If you can supply that one missing piece (for instance “the beam has been shifted horizontally by 0.40 R” or “the internal incidence angle is 42 degrees when only the red light emerges”), I can plug it straight into the formulas above and give the two refractive indices immediately.",
+    "judgment": "N/A"
+  }]

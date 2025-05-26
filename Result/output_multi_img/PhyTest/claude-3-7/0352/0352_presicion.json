@@ -1,0 +1,53 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Basketball Collision and Rebound Problem: I'll solve this step-by-step to find the ratio of post-collision velocity to pre-collision velocity of a basketball during its collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given Information: Basketball mass: $m$, Initial height: $H$, Maximum rebound height: $h$ (where $h < H$), Air resistance: $\\lambda$ times the gravitational force (where $0 < \\lambda < \\frac{H-h}{H+h}$), Gravitational acceleration: $g$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analyze the Forces and Velocities: Let's define our velocities and accelerations: $v_{down}$: velocity of the ball falling down (just before collision), $v_{up}$: velocity of the ball immediately after collision, $a_{down}$: acceleration during descent, $a_{up}$: acceleration during ascent",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravitational force: $F_g = mg$ (downward), Air resistance: $F_{air} = \\lambda mg$ (upward)",
+    "conclusion": "Net acceleration during descent: $a_{down} = g - \\lambda g = g(1-\\lambda)$ (downward)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravitational force: $F_g = mg$ (downward), Air resistance: $F_{air} = \\lambda mg$ (downward) [since the ball is moving upward]",
+    "conclusion": "Net acceleration during ascent: $a_{up} = g + \\lambda g = g(1+\\lambda)$ (downward)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Starting from rest at height $H$, the ball accelerates downward with $a_{down} = g(1-\\lambda)$. Using the equation $v^2 = v_0^2 + 2as$",
+    "conclusion": "$v_{down}^2 = 0 + 2g(1-\\lambda)H$, $v_{down} = \\sqrt{2g(1-\\lambda)H}$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Post-collision velocity is $v_{up}$. When the ball reaches its maximum height $h$, its velocity becomes zero. Using $v^2 = v_0^2 + 2as$ for the ascent",
+    "conclusion": "$0 = v_{up}^2 - 2g(1+\\lambda)h$, $v_{up} = \\sqrt{2g(1+\\lambda)h}$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We need to find $\\frac{v_{up}}{v_{down}}$. $v_{up} = \\sqrt{2g(1+\\lambda)h}$, $v_{down} = \\sqrt{2g(1-\\lambda)H}$",
+    "conclusion": "$\\frac{v_{up}}{v_{down}} = \\frac{\\sqrt{2g(1+\\lambda)h}}{\\sqrt{2g(1-\\lambda)H}} = \\sqrt{\\frac{(1+\\lambda)h}{(1-\\lambda)H}}$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The question states $0 < \\lambda < \\frac{H-h}{H+h}$. If we substitute $\\lambda = \\frac{H-h}{H+h}$ into our ratio formula",
+    "conclusion": "$\\frac{v_{up}}{v_{down}} = \\sqrt{\\frac{(1+\\frac{H-h}{H+h})h}{(1-\\frac{H-h}{H+h})H}} = \\sqrt{\\frac{(\\frac{H+h+H-h}{H+h})h}{(\\frac{H+h-H+h}{H+h})H}}"}]

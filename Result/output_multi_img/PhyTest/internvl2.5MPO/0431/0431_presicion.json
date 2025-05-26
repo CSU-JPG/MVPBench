@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, let's analyze the steps involving the refraction, total internal reflection, and geometry of the prism.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The ray enters the prism from point M at an incident angle of 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side length of the square is a. The point M is the midpoint of AB, so MB = a/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray enters the prism from point M at an incident angle of 60 degrees.",
+    "conclusion": "Use Snell's Law: n1 sin(theta_i) = n2 sin(theta_r).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Here, n1 = 1 (air), and theta_i = 60 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let n2 be the refractive index of the prism.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total internal reflection occurs at N on the BC side.",
+    "conclusion": "The critical angle C is given by sin C = 1/n2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since total internal reflection occurs, theta_r = 45 degrees (as it reflects parallel to the base).",
+    "conclusion": "From Snell’s Law, sin 60 degrees = n2 sin 45 degrees.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 60 degrees = n2 sin 45 degrees.",
+    "conclusion": "sqrt(3)/2 = n2 * sqrt(2)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sqrt(3)/2 = n2 * sqrt(2)/2.",
+    "conclusion": "Solving for n2, we get n2 = sqrt(3)/sqrt(2) = sqrt(3/2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "M to N: Since theta_r = 45 degrees, MB = BN = a/2.",
+    "conclusion": "The path of the refracted ray is determined.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray reflects and exits parallel to its entry path.",
+    "conclusion": "Since the ray exits at P, the distance along CD is the same as BC.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the ray exits at P, the distance along CD is the same as BC.",
+    "conclusion": "P is located at a distance a/4 from C along CD.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry and refraction path.",
+    "conclusion": "Distance between Points P and C: (sqrt(3) - 1)/2 * a",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

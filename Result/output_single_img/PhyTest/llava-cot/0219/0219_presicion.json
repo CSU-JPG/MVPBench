@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The area of the coil ABCO is 0.4 m² and the magnetic induction intensity of the uniform magnetic field is B = 0.1 T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field direction is along the positive x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil ABCO is initially positioned such that its plane is perpendicular to the x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The plane of the coil is perpendicular to the x-axis.",
+    "conclusion": "The initial magnetic flux is Φ_initial = B × S = 0.1 × 0.4 = 0.04 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil rotates 60° downward around the z-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After rotating 60° downward, the plane of the coil becomes inclined to the x-axis.",
+    "conclusion": "The final magnetic flux is Φ_final = B × S × cos(60°) = 0.1 × 0.4 × 0.5 = 0.02 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ_final = 0.02 Wb and Φ_initial = 0.04 Wb.",
+    "conclusion": "The change in magnetic flux is ΔΦ = Φ_final - Φ_initial = 0.02 - 0.04 = -0.02 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates a decrease in magnetic flux.",
+    "conclusion": "The magnetic flux changes by 0.02 Wb.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

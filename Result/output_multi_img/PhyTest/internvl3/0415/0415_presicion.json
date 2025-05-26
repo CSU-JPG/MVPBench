@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the refractive index of the glass, we need to analyze the given geometry and apply Snell's Law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Radius of the semicircular glass brick: R. Angle of incidence: θ = 30°. Distance between two bright spots on the screen CD: (√3 + 1)R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray passes through point O and hits the screen at two points due to refraction and reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Define angles and distances: θ = 30° is the angle between the incident ray and OO'. β is the angle between the refracted ray and OO'.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the two bright spots on the screen is given by l1 + l2 = (√3 + 1)R.",
+    "conclusion": "Let l1 be the distance from point A to the point where the refracted ray hits the screen. Let l2 be the distance from point A to the point where the reflected ray hits the screen.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "l1 + l2 = (√3 + 1)R.",
+    "conclusion": "l1 = R cot β and l2 = R cot (45° - θ). Using θ = 30°, we have 45° - θ = 15°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Trigonometric Values: cot 15° = 2 + √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "l2 = R cot 15° = R(2 + √3).",
+    "conclusion": "Apply the Distance Condition: l1 + l2 = R cot β + R(2 + √3) = (√3 + 1)R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R cot β + R(2 + √3) = (√3 + 1)R.",
+    "conclusion": "Simplifying: cot β + 2 + √3 = √3 + 1. Therefore, cot β = -1. This implies β = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell’s Law states n1 sin θ = n2 sin β.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 1 (refractive index of air), θ = 30°, and β = 45°.",
+    "conclusion": "1 · sin 30° = n · sin 45°. Using sin 30° = 1/2 and sin 45° = √2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/2 = n · √2/2.",
+    "conclusion": "Solving for n: n = 1/√2 · 2 = √2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

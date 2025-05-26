@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the Given Data: Temperature at state A: \\( T_A = -73^{\\circ}C = 200 \\, K \\) (using the conversion \\( T(K) = T(^{\\circ}C) + 273 \\)), Pressure at state A: \\( p_A = 3 \\times 10^5 \\, \\text{Pa} \\), Volume at state A: \\( V_A = 1 \\times 10^{-3} \\, \\text{m}^3 \\), Pressure at state C: \\( p_C = 1 \\times 10^5 \\, \\text{Pa} \\), Volume at state C: \\( V_C = 3 \\times 10^{-3} \\, \\text{m}^3 \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the Ideal Gas Law: The ideal gas law is given by: \\( PV = nRT \\). For states A and C, we have: \\( p_A V_A = nR T_A \\) and \\( p_C V_C = nR T_C \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use the Ideal Gas Law: The ideal gas law is given by: \\( PV = nRT \\). For states A and C, we have: \\( p_A V_A = nR T_A \\) and \\( p_C V_C = nR T_C \\)",
+    "conclusion": "Relate Temperatures Using the Ideal Gas Law: \\( \\frac{p_A V_A}{T_A} = \\frac{p_C V_C}{T_C} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Relate Temperatures Using the Ideal Gas Law: \\( \\frac{p_A V_A}{T_A} = \\frac{p_C V_C}{T_C} \\)",
+    "conclusion": "Calculate the Temperature at State C: Substituting the given values into the equation: \\( \\frac{3 \\times 10^5 \\times 1 \\times 10^{-3}}{200} = \\frac{1 \\times 10^5 \\times 3 \\times 10^{-3}}{T_C} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate the Temperature at State C: Substituting the given values into the equation: \\( \\frac{3 \\times 10^5 \\times 1 \\times 10^{-3}}{200} = \\frac{1 \\times 10^5 \\times 3 \\times 10^{-3}}{T_C} \\)",
+    "conclusion": "Simplify the equation: \\( \\frac{300}{200} = \\frac{300}{T_C} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the equation: \\( \\frac{300}{200} = \\frac{300}{T_C} \\)",
+    "conclusion": "1.5 = \\frac{300}{T_C}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1.5 = \\frac{300}{T_C}",
+    "conclusion": "T_C = 200 \\, K",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

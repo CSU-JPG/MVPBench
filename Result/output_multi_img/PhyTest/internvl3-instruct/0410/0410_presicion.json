@@ -1,0 +1,71 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to ensure that the bubble at the center of the glass cube is not visible from any direction outside the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cube has side length \\(a\\). The bubble is at the center of the cube, so it is at a distance of \\(a/2\\) from each face of the cube.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the glass cube is \\(n = 1.5\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the glass cube is \\(n = 1.5\\).",
+    "conclusion": "To keep the bubble invisible from outside, we need to calculate the critical angle for total internal reflection.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the glass cube is \\(n = 1.5\\).",
+    "conclusion": "The critical angle \\(\\theta_c\\) for total internal reflection can be found using the refractive indices of the glass and air: \\(\\sin(\\theta_c) = \\frac{1}{n} = \\frac{1}{1.5}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin(\\theta_c) = \\frac{1}{1.5}\\).",
+    "conclusion": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{2}{3}\\right)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bubble is at the center, at a distance \\(a/2\\) from each face. The critical angle creates a cone of light that needs to be blocked for total internal reflection.",
+    "conclusion": "The radius \\(r\\) of the circle that needs to be covered can be related to the critical angle and the distance from the center to the face.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{2}{3}\\right)\\).",
+    "conclusion": "Using the critical angle, the radius \\(r\\) is given by: \\(r = \\frac{a}{2} \\tan(\\theta_c)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(r = \\frac{a}{2} \\tan(\\theta_c)\\).",
+    "conclusion": "Substituting the value of \\(\\theta_c\\): \\(r = \\frac{a}{2} \\tan\\left(\\sin^{-1}\\left(\\frac{2}{3}\\right)\\right)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\tan\\left(\\sin^{-1}\\left(\\frac{2}{3}\\right)\\right)\\).",
+    "conclusion": "Using trigonometric identities and approximate values: \\(\\tan\\left(\\sin^{-1}\\left(\\frac{2}{3}\\right)\\right) = \\frac{\\sqrt{5}}{2}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(r = \\frac{a}{2} \\tan\\left(\\sin^{-1}\\left(\\frac{2}{3}\\right)\\right)\\).",
+    "conclusion": "Therefore: \\(r = \\frac{a}{2} \\cdot \\frac{\\sqrt{5}}{2} = \\frac{a\\sqrt{5}}{4}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius \\(r = \\frac{a\\sqrt{5}}{4}\\).",
+    "conclusion": "The area \\(A\\) of the circle on each face that needs to be covered is: \\(A = \\pi r^2 = \\pi \\left(\right)\\frac{a\\sqrt{5}}{4}"}]

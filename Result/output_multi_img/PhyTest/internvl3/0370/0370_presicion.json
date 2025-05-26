@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the electromotive force (EMF) E and the internal resistance r of the power supply, we'll use the given information and the graph of terminal voltage versus current.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: U_A = 4 V, I_A = 0.2 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B: U_B = 1 V, I_B = 0.8 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The terminal voltage U is given by: U = E - I * r where E is the EMF and r is the internal resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A: U_A = 4 V, I_A = 0.2 A",
+    "conclusion": "4 = E - 0.2r (Equation 1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point B: U_B = 1 V, I_B = 0.8 A",
+    "conclusion": "1 = E - 0.8r (Equation 2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation 1: 4 = E - 0.2r, Equation 2: 1 = E - 0.8r",
+    "conclusion": "Subtract equation (2) from equation (1): (4 - 1) = (E - 0.2r) - (E - 0.8r)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "3 = 0.6r",
+    "conclusion": "Solve for r: r = 3 / 0.6 = 5 Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = 5 Ω, Equation 1: 4 = E - 0.2r",
+    "conclusion": "Substitute r back into equation (1): 4 = E - 0.2 * 5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4 = E - 1",
+    "conclusion": "E = 5 V",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

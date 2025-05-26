@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "The fibre core is homogeneous glass with refractive index n surrounded by air with refractive index 1.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The fibre's circular cross-section has diameter D, and when bent, its centre-line becomes an arc of a circle with radius r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "When the fibre is bent, meridional rays are no longer parallel to the local outer surface, reducing the axial angle by δ.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The reduction in angle δ is approximately D/(2r), which is the angle subtended by the core radius at the bend centre.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Before bending, the largest axial angle for total internal reflection is the critical angle θc = arcsin(1/n).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "After bending, the incidence angle is reduced by δ, and must still be at least θc to avoid radiating out.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The limiting case is θc - δ = θc(crit) leading to δ = 0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Any non-zero reduction must leave the incidence angle at least θc(crit), hence δ ≤ θc.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The inequality becomes D/(2r) ≤ arcsin(1/n), and for modest bends, arcsin(1/n) can be approximated as 1/n.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solving for r gives r_min = nD/2, the smallest radius to ensure total internal reflection.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The turning radius of the fibre’s centre-line must be at least nD/2.",
+    "relevant": "Yes"
+  }
+]

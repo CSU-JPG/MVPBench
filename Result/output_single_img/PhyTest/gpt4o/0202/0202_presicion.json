@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to calculate the Ampere force acting on the entire wire frame, which consists of a straight part and a semi-circular part.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire frame is placed in a uniform magnetic field, and the plane of the wire frame is perpendicular to the direction of the magnetic induction intensity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The Ampere force (also known as the Lorentz force) on a current-carrying wire in a magnetic field is given by: F = I · L · B · sin(θ) where I is the current, L is the length of the wire, B is the magnetic field strength, and θ is the angle between the wire and the magnetic field direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The straight part of the wire is perpendicular to the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The straight part of the wire is perpendicular to the magnetic field, so θ = 90° and sin(90°) = 1.",
+    "conclusion": "The force on the straight part is given as F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For the semi-circular part, the direction of the current changes continuously, but the magnetic field remains perpendicular to the plane of the semi-circle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Due to symmetry, the horizontal components of the forces on the semi-circular part will cancel out, leaving only the vertical component.",
+    "conclusion": "The vertical component of the force on each segment is: dF_vertical = I · B · dL · sin(θ) where θ is the angle between the radius at that segment and the vertical direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total vertical force on the semi-circular part can be found by integrating over the semi-circle.",
+    "conclusion": "The vertical component of the force is: F_semi-circle = ∫(0 to π) I · B · r · dθ · sin(θ) where r · dθ is the arc length of the infinitesimal segment.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The integral becomes: F_semi-circle = I · B · r ∫(0 to π) sin(θ) dθ.",
+    "conclusion": "The integral of sin(θ) from 0 to π is 2, so: F_semi-circle = 2 · I · B · r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force on the wire frame is the sum of the forces on the straight part and the semi-circular part.",
+    "conclusion": "F_total = F + F_semi-circle = F + 2 · I · B · r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_total = F + 2 · I · B · r.",
+    "conclusion": "The magnitude of the Ampere force acting on the entire wire frame is: F_total = F + 2 · I · B · r.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

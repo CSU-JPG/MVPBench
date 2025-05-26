@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The space where z > 0 is a vacuum, and the region where z ≤ 0 is filled with an infinite conductor. A point charge with a charge of +q is fixed at A(0,0,h), and the electrostatic force constant is k. The electric field strength inside the conductor is zero everywhere in the state of electrostatic equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field inside the conductor is zero.",
+    "conclusion": "The induced charges on the surface of the conductor must create an electric field that cancels out the electric field due to the point charge +q at point A(0,0,h).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The electric field due to the point charge +q at point (h,h,-h) can be calculated using Coulomb's law: E = kq/r^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The distance r between the point charge and the point (h,h,-h) is calculated using the distance formula: r = sqrt((0-h)^2 + (0-h)^2 + (h-(-h))^2) = sqrt(6h^2) = h√6.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = h√6",
+    "conclusion": "Substituting r = h√6 into the electric field formula, we get: E = kq/(h√6)^2 = kq/6h^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field inside the conductor is zero.",
+    "conclusion": "The induced charges on the surface of the conductor must create an electric field of equal magnitude but opposite direction to cancel out the electric field due to the point charge.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced charges create an electric field of equal magnitude but opposite direction.",
+    "conclusion": "The magnitude of the electric field formed by the induced charges at the point (h,h,-h) is also kq/6h^2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

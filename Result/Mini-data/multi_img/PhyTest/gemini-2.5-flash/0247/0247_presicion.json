@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the change in magnetic flux, we use the formula for magnetic flux Φ = BA cos θ, where B is the magnetic induction intensity, A is the area of the coil, and θ is the angle between the magnetic field vector and the area vector (normal to the coil's surface). The change in magnetic flux is ΔΦ = Φ_final - Φ_initial.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The magnetic field vector B is in the positive x-direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initially, the coil ABCO is in the xy-plane (as shown by points O, C on x-axis, A on z-axis, B in xz-plane but the diagram implies ABCO is a flat surface).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Assuming the coil is initially in the xz-plane as implied by the diagram with O, A, B, C being vertices of a parallelogram in the xz-plane.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil ABCO lies in the xz-plane.",
+    "conclusion": "The area vector (normal to the coil) for a surface in the xz-plane can be in the positive or negative y-direction. Let's assume the normal vector is in the positive y-direction, n_initial = j.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is in the positive x-direction, B = B i.",
+    "conclusion": "The angle between the magnetic field B and the initial area vector n_initial is 90° (since i · j = 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the magnetic field B and the initial area vector n_initial is 90°.",
+    "conclusion": "The initial magnetic flux Φ_initial = BA cos(90°) = 0 Wb.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil rotates 60° downward around the z-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, the coil is in the xz-plane. Rotating 60° downward around the z-axis means the plane of the coil now makes an angle with the xz-plane.",
+    "conclusion": "Let the area vector rotate. Initially, the area vector was along the y-axis. When it rotates 60° downward around the z-axis, it will be in the xy-plane. The new normal vector will have components in the y and x directions.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the initial normal (y-axis) and the x-axis is 90°.",
+    "conclusion": "As the coil rotates 60° downward around the z-axis, the normal vector rotates.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider the normal vector starting from j. Rotating 60° downward around the z-axis means it moves towards the positive x-axis.",
+    "conclusion": "The normal vector will be at an angle of 60° with the y-axis, and 30° with the x-axis.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal vector will be at an angle of 30° with the x-axis.",
+    "conclusion": "The final angle θ_final between the magnetic field B (along x-axis) and the new area vector n_final is 30°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The final angle θ_final between the magnetic field B and the new area vector n_final is 30°.",
+    "conclusion": "Φ_final = BA cos(θ_final) = BA cos(30°).",
+    "judgment": "Reasonable"
+  }]

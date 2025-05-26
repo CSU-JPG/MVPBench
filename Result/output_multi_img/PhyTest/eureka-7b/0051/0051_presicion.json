@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An L-shaped skateboard A is initially at rest on a rough horizontal surface. A light spring with a spring constant of k is fixed to the right end of the skateboard. The left end of the spring is connected to a small block B, and the spring is initially at its natural length. A small block C slides onto the skateboard from its leftmost end with an initial velocity v0. After traveling a distance of s0, it undergoes a perfectly inelastic collision with B (the collision time is extremely short), and then they move together to the right. After a certain period, the skateboard A also begins to move. The masses of A, B, and C are all m. The coefficient of kinetic friction between the skateboard and the small blocks, and between the skateboard and the ground, are both μ. The maximum static friction is approximately equal to the sliding friction, and the spring remains within its elastic limit throughout.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the frictional force on block C as it travels a distance s0 is -μmg s0. The initial kinetic energy of block C is (1/2)mv0^2.",
+    "conclusion": "The kinetic energy of block C after traveling a distance s0 is (1/2)mv1^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By the work-energy theorem, the work done by the frictional force is equal to the change in kinetic energy: -μmg s0 = (1/2)mv1^2 - (1/2)mv0^2.",
+    "conclusion": "v1^2 = v0^2 - 2μgs0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v1^2 = v0^2 - 2μgs0.",
+    "conclusion": "v1 = sqrt(v0^2 - 2μgs0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the collision is perfectly inelastic, the two blocks move together with a common speed v2. By conservation of momentum, the total momentum before the collision is equal to the total momentum after the collision: mv1 = (m + m)v2.",
+    "conclusion": "v2 = sqrt(v0^2 - 2μgs0) / 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mechanical energy before the collision is the kinetic energy of block C: E_before = (1/2)m(v1^2).",
+    "conclusion": "E_before = (1/2)m(v0^2 - 2μgs0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mechanical energy after the collision is the kinetic energy of the combined block B and C: E_after = (1/2)(m + m)v2^2.",
+    "conclusion": "E_after = (1/4)m(v0^2 - 2μgs0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mechanical energy loss is ΔE = E_before - E_after.",
+    "conclusion": "ΔE = (1/4)m(v0^2 - 2μgs0).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

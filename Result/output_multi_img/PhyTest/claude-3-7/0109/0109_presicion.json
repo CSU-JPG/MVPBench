@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block A of a right-angled triangle with a mass of M is placed on an inclined plane with an inclination of θ. When θ = 37°, the block can just rest on the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Change θ to 30°, and put a smooth cylinder B with mass m between A and the inclined plane. Known sin 37° = 0.6, cos 37° = 0.8, M = 4m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Figure A shows block A resting on an inclined plane with an angle of 37°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Figure B shows block A and cylinder B on an inclined plane with an angle of 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Weight component parallel to the plane: M g sin 37°, Weight component perpendicular to the plane: M g cos 37°, Maximum static friction: f_max = μ M g cos 37°",
+    "conclusion": "Since the block is just about to slide, f_max = M g sin 37°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "f_max = M g sin 37°, Maximum static friction: f_max = μ M g cos 37°",
+    "conclusion": "μ M g cos 37° = M g sin 37°, μ = sin 37° / cos 37° = 0.75",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "μ = sin 37° / cos 37° = 0.75",
+    "conclusion": "The coefficient of static friction is μ = 0.75",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analyze the second scenario (Figure B, θ = 30°)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block A (mass M), Cylinder B (mass m), Given: M = 4m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Weight component parallel to plane: m g sin 30°, Weight component perpendicular to plane: m g cos 30°, Normal force from block A: N_A, Normal force from inclined plane: N_plane",
+    "conclusion": "Forces on Cylinder B are defined",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Weight component parallel to plane: M g sin 30°, Weight component perpendicular to plane: M g cos 30°, Normal force from cylinder B: N_B, Friction force from inclined plane: f",
+    "conclusion": "Forces on Block A are defined",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Perpendicular: N_plane + N_A cos α - m g cos 30° = 0, Parallel: N_A sin α - m g sin 30° = 0",
+    "conclusion": "For the cylinder to be in equilibrium, the net force must be zero",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Perpendicular: N_B cos α - M g cos 30° = 0, Parallel: f - M g sin 30° - N_B sin α = 0",
+    "conclusion": "For block A to be in equilibrium",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N_B = N_A and M = 4m",
+    "conclusion": "We can solve for the friction force f",
+    "judgment": "Match"
+  }]

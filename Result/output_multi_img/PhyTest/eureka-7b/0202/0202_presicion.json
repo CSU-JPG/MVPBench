@@ -1,0 +1,65 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a semi-circular wire frame with radius r, made of wires of the same material and thickness, fixed in a uniform magnetic field. The plane of the wire frame is perpendicular to the magnetic field, and points M and N are connected to a direct current constant voltage power supply.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The wire frame consists of a straight part MN of length 2r and a semi-circular part MQN with radius r.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The Ampere force on a segment of wire carrying current I in a magnetic field B is given by F = I * L * B * sin(theta), where L is the length of the wire and theta is the angle between the current and the magnetic field.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The magnitude of the Ampere force acting on the straight part MN is given as F.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The straight part MN has a length of 2r, and the force on it is F.",
+    "conclusion": "The current I in the wire frame satisfies F = I * 2r * B.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is made of the same material and thickness, and the resistance is proportional to the length of the wire.",
+    "conclusion": "The resistance R' of the semi-circular part MQN is R' = (pi/2) * R, where R is the resistance of the straight part MN.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance R' of the semi-circular part MQN is R' = (pi/2) * R, and the voltage across the wire frame is constant.",
+    "conclusion": "The current I' in the semi-circular part MQN is I' = (2/pi) * I.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I' in the semi-circular part MQN is (2/pi) * I, and the length of the semi-circular part is pi * r.",
+    "conclusion": "The Ampere force on the semi-circular part MQN is F' = (2/pi) * F.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Ampere force on the straight part MN is F, and the Ampere force on the semi-circular part MQN is (2/pi) * F.",
+    "conclusion": "The total Ampere force on the entire wire frame is F + F' = (1 + 2/pi) * F.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

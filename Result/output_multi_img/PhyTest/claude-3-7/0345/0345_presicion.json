@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Looking at the P-V diagram, I'll analyze a complete cycle of the ideal gas going through adiabatic and isochoric processes.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process b→c is an isochoric heating process represented by a vertical line upward at constant volume.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process c→d is an adiabatic expansion process represented by a curved line decreasing from c to d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process d→a is an isochoric cooling process represented by a vertical line downward at constant volume.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process a→b is an adiabatic compression process represented by a curved line increasing from a to b.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume is constant, pressure increases, temperature increases, work done = 0 (since ΔV = 0), From the First Law of Thermodynamics (ΔU = Q - W), Since W = 0, Q = ΔU > 0",
+    "conclusion": "Heat is absorbed by the system during process b→c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By definition, adiabatic processes have no heat transfer, Q = 0, Work is done by the system (W > 0), ΔU = -W < 0 (internal energy decreases)",
+    "conclusion": "There is no heat transfer during process c→d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume is constant, pressure decreases, temperature decreases, work done = 0 (since ΔV = 0), From ΔU = Q - W, Since W = 0, Q = ΔU < 0",
+    "conclusion": "Heat is released by the system during process d→a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By definition, adiabatic processes have no heat transfer, Q = 0, Work is done on the system (W < 0), ΔU = -W > 0 (internal energy increases)",
+    "conclusion": "There is no heat transfer during process a→b.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Heat absorbed: Only during process b→c, Heat released: Only during process d→a",
+    "conclusion": "To determine which is greater, compare the magnitude of temperature changes.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For b→c: ΔT₁ = T_c - T_b (temperature increase), For d→a: ΔT₂ = T_d - T_a (temperature decrease)",
+    "conclusion": "The temperature change from d→a is smaller than from b→c.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal gas in an isochoric process: Q = nCv·ΔT, So |Q_absorbed| > |Q_released|",
+    "conclusion": "The amount of heat absorbed is greater than the amount of heat released.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

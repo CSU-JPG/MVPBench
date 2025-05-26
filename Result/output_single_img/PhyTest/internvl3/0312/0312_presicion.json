@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process is cyclic: A → B → C → D → A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A has a temperature \\( T_A = 27^\\circ \\text{C} = 300 \\text{ K} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure at state A is \\( p_A = 1 \\times 10^5 \\text{ Pa} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure at state B is \\( p_B = 1 \\times 10^5 \\text{ Pa} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The volume at state A is \\( V_A = 3 \\text{ L} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The volume at state B is \\( V_B = 4 \\text{ L} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by: \\( pV = nRT \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the number of moles \\( n \\) and the gas constant \\( R \\) are constant.",
+    "conclusion": "We can write: \\( \\frac{p_A V_A}{T_A} = \\frac{p_B V_B}{T_B} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the equation \\( \\frac{p_A V_A}{T_A} = \\frac{p_B V_B}{T_B} \\) and substituting known values.",
+    "conclusion": "Substitute: \\( \\frac{(1 \\times 10^5 \\text{ Pa})(3 \\text{ L})}{300 \\text{ K}} = \\frac{(1 \\times 10^5 \\text{ Pa})(4 \\text{ L})}{T_B} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving the equation \\( \\frac{3}{300} = \\frac{4}{T_B} \\).",
+    "conclusion": "Calculate \\( T_B = \\frac{4 \\times 300}{3} = 400 \\text{ K} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

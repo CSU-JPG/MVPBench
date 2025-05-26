@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To solve the problem, we need to determine the time during which there is an induced current in the frame as it moves through the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The key is to identify the intervals during which the frame is in the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The frame is a square with side length \\( l \\), and the width of the magnetic field is \\( d \\). Since \\( l < d \\), the frame will be completely in the magnetic field for a certain period of time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frame enters the magnetic field when the left edge of the frame is at the boundary of the magnetic field.",
+    "conclusion": "The time taken for the left edge to reach the boundary is \\( t_1 = \\frac{l}{v} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frame is in the magnetic field until the right edge of the frame is at the boundary of the magnetic field.",
+    "conclusion": "The time taken for the right edge to leave the magnetic field is \\( t_2 = \\frac{l}{v} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total time during which the frame is in the magnetic field is calculated as \\( t_{\\text{in}} = t_2 - t_1 \\).",
+    "conclusion": "The total time is \\( t_{\\text{in}} = \\frac{l}{v} - \\left( \\frac{l}{v} - \\frac{d}{v} \\right) = \\frac{d}{v} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "An induced current occurs when the wire frame enters and exits the magnetic field. When the wire frame is completely within the magnetic field, no induced current is generated.",
+    "conclusion": "The distance traveled during the process of the induced current is \\( s = 2l \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance traveled during the process of the induced current is \\( s = 2l \\), and the speed of the frame is \\( v \\).",
+    "conclusion": "The time for the induced current is \\( t = \\frac{2l}{v} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

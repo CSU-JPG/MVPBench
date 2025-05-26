@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The relationship between the volume V of an ideal gas of a certain mass and the thermodynamic temperature T is shown in the figure. The pressure of the gas in state A is pA = p0, and the temperature TA = T0. The line segment AB is parallel to the V axis, and the extension line of BC passes through the origin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "In the graph, at state A, V = V0 and T = T0. At state B, V = 2V0. The extension line of BC passes through the origin.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state A, V = V0 and T = T0. The pressure at state A is pA = p0.",
+    "conclusion": "The initial conditions at state A are V = V0, T = T0, and pA = p0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state B, V = 2V0. The relationship between volume and temperature is governed by the ideal gas law.",
+    "conclusion": "The temperature at state B, TB, can be calculated using the equation V = p × T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state B, V = 2V0 and the relationship V = p × T holds.",
+    "conclusion": "TB = 2T0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The line segment AB is parallel to the V axis.",
+    "conclusion": "The temperature at state B is the same as the temperature at state A, which is T0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state C, the extension line of BC passes through the origin, and the relationship V/T is constant along BC.",
+    "conclusion": "VC/TC = VB/TB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "VC/TC = VB/TB, and VB = 2V0, TB = T0, and VC = V0.",
+    "conclusion": "TC = (V0 × T0) / (2V0) = T0 / 2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

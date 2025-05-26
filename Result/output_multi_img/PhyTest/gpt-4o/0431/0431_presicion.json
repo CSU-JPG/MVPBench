@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the refractive index of the prism and the distance between points P and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The ray enters the prism at point M with an incident angle of 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray enters the prism at point M with an incident angle of 60 degrees.",
+    "conclusion": "Using Snell's Law: n1 sin(theta1) = n2 sin(theta2). Here: n1 = 1 (air refractive index), theta1 = 60 degrees (incident angle), n2 = n (refractive index of the prism), theta2 = theta (refracted angle inside the prism).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n1 sin(theta1) = n2 sin(theta2). Here: n1 = 1 (air refractive index), theta1 = 60 degrees (incident angle), n2 = n (refractive index of the prism), theta2 = theta (refracted angle inside the prism).",
+    "conclusion": "Substituting: sin 60 degrees = n sin theta. Since sin 60 degrees = sqrt(3)/2, we have: sqrt(3)/2 = n sin theta (Equation 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point N, the ray undergoes total internal reflection on the BC side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point N, the ray undergoes total internal reflection on the BC side.",
+    "conclusion": "For total internal reflection to occur, the angle of incidence at N must satisfy: sin(phi) >= 1/n, where phi is the angle of incidence at N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry of the square prism indicates that the refracted angle theta at M is equal to the angle of incidence phi at N (due to symmetry).",
+    "conclusion": "sin(theta) >= 1/n (Equation 2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square prism has side length a, and M is the midpoint of AB. Therefore, the distance from M to B is a/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The refracted ray travels diagonally from M to N and then reflects to P.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray makes an angle theta with the normal at M.",
+    "conclusion": "The ray travels a horizontal distance a/2 and a vertical distance a from M to N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "After total internal reflection at N, the ray exits the prism at P on the CD side.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry of the square prism indicates that the distance PC is proportional to the refracted angle theta.",
+    "conclusion": "Using trigonometry: PC = a tan(theta).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From Equation 1: sin(theta) = sqrt(3)/(2n).",
+    "conclusion": "Substitute this into Equation 2: sqrt(3)/(2n) >= 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sqrt(3)/(2n) >= 1/n.",
+    "conclusion": "Simplify: sqrt(3) >= 2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

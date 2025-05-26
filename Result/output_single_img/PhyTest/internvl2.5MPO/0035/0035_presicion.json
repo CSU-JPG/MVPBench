@@ -1,0 +1,103 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine when the two cars collide, we need to analyze the velocity-time (v-t) graph provided.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows the velocities of Car A and Car B over time as they brake.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car A starts at 25 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car B starts at 15 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car A's velocity decreases linearly from 25 m/s to 0 m/s over 25 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Car B's velocity decreases linearly from 15 m/s to 0 m/s over 30 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A's velocity decreases linearly from 25 m/s to 0 m/s over 25 seconds.",
+    "conclusion": "For Car A: v_A = 25 - t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car B's velocity decreases linearly from 15 m/s to 0 m/s over 30 seconds.",
+    "conclusion": "For Car B: v_B = 15 - 0.5t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For Car A: v_A = 25 - t",
+    "conclusion": "For Car A: x_A = 25t - 0.5t^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For Car B: v_B = 15 - 0.5t",
+    "conclusion": "For Car B: x_B = 15t - 0.25t^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cars collide when x_A = x_B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_A = 25t - 0.5t^2 and x_B = 15t - 0.25t^2",
+    "conclusion": "25t - 0.5t^2 = 15t - 0.25t^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "25t - 0.5t^2 = 15t - 0.25t^2",
+    "conclusion": "10t = 0.25t^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "10t = 0.25t^2",
+    "conclusion": "40t = t^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "40t = t^2",
+    "conclusion": "t^2 - 40t = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t^2 - 40t = 0",
+    "conclusion": "t(t - 40) = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t(t - 40) = 0",
+    "conclusion": "t = 0 or t = 40",
+    "judgment": "Match"
+  }]

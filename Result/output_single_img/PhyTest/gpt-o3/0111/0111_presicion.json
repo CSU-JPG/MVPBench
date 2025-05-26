@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block A (mass m) rests on a smooth 30° incline.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A light, inextensible rope passes successively over a fixed pulley at the top of the incline, under a movable pulley that carries block B, and is finally fastened to the ceiling.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The two strands of rope that leave the movable pulley make a 90° angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "All pulleys and the rope are mass-less and friction-less.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The whole system is at rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The whole system is at rest.",
+    "conclusion": "Hence the tension is the same (T) everywhere in the rope.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A is at rest on a smooth 30° incline.",
+    "conclusion": "Along the incline the only forces are component of A’s weight: m g sin 30° (down the slope) and rope tension: T (up the slope).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A is at rest, the forces along the incline cancel.",
+    "conclusion": "T = m g sin 30° = m g (½) = ½ m g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Two equal tensions T pull on the movable pulley; the angle between them is 90°.",
+    "conclusion": "Vector addition of the two tensions gives a single resultant upward force F_up = √(T² + T²) = T √2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pulley carries block B; therefore its total downward load is the weight of B.",
+    "conclusion": "F_down = m_B g.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the pulley (and therefore B) to remain at rest, upward and downward forces balance.",
+    "conclusion": "T √2 = m_B g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Insert the value of T from T = ½ m g into T √2 = m_B g.",
+    "conclusion": "(½ m g) √2 = m_B g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(½ m g) √2 = m_B g.",
+    "conclusion": "m_B = (½ m) √2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m_B = (½ m) √2.",
+    "conclusion": "m_B = m / √2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

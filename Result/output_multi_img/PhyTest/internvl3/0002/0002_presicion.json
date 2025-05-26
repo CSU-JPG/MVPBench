@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A point light source is fixed on a horizontal plane. A small ball is thrown vertically upward from the midpoint between the point light source and the right wall. The initial velocity of the ball is \\( v_0 \\). The acceleration due to gravity is \\( g \\), acting downward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical position \\( y(t) \\) of the ball at any time \\( t \\) can be given by the equation of motion.",
+    "conclusion": "The vertical position \\( y(t) \\) of the ball is \\( y(t) = v_0 t - \\frac{1}{2} g t^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The shadow of the ball is formed on the right wall due to the point light source.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry of the situation implies similar triangles between the light source, the ball, and the shadow on the wall.",
+    "conclusion": "The position of the shadow \\( s(t) \\) on the wall can be related to the position of the ball \\( y(t) \\) by similar triangles: \\( \\frac{s(t)}{D} = \\frac{y(t)}{y(t) + \\frac{D}{2}} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for \\( s(t) \\) using the similar triangles relation.",
+    "conclusion": "The position of the shadow is \\( s(t) = D \\cdot \\frac{y(t)}{y(t) + \\frac{D}{2}} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the velocity of the shadow, differentiate \\( s(t) \\) with respect to \\( t \\).",
+    "conclusion": "The velocity of the shadow \\( v_s(t) = \\frac{ds(t)}{dt} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the quotient rule for differentiation with \\( u = y(t) \\) and \\( v = y(t) + \\frac{D}{2} \\).",
+    "conclusion": "The derivative is \\( v_s(t) = D \\cdot \\frac{v \\cdot \\frac{dy(t)}{dt} - u \\cdot \\frac{dv}{dt}}{v^2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\( \\frac{dy(t)}{dt} = v_0 - gt \\) and \\( \\frac{dv}{dt} = \\frac{dy(t)}{dt} \\), substitute these into the equation.",
+    "conclusion": "The velocity of the shadow is \\( v_s(t) = D \\cdot \\frac{(y(t) + \\frac{D}{2})(v_0 - gt) - y(t)(v_0 - gt)}{(y(t) + \\frac{D}{2})^2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for the velocity of the shadow.",
+    "conclusion": "The velocity of the shadow is \\( v_s(t) = D \\cdot \\frac{\\frac{D}{2}(v_0 - gt)}{(y(t) + \\frac{D}{2})^2} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At \\( t = 0 \\), \\( y(0) = 0 \\).",
+    "conclusion": "The initial velocity of the shadow is \\( v_s(0) = D \\cdot \\frac{\\frac{D}{2} \\cdot v_0}{(\\frac{D}{2})^2} = 2v_0 \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

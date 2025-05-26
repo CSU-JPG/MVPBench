@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the refractive index of the glass, we need to apply Snell's Law and geometric principles to the given setup.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semicircular glass brick has a radius R. The incident light makes an angle θ = 30° with the line OO'. Two bright spots appear on the screen CD, and the distance between them is (√3 + 1)R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray hits the glass at point O and refracts into the glass. The incident angle i is 30°, as given.",
+    "conclusion": "Let the refracted angle inside the glass be r. Using Snell's Law: n sin i = sin r where n is the refractive index of the glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n sin i = sin r",
+    "conclusion": "Rearrange Snell's Law to solve for r: sin r = n sin i. Since i = 30°: sin r = n sin 30° = n (1/2) = n/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The refracted ray travels in the semicircle and exits at point A. The angle β between the refracted ray and the normal at A is 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between the two bright spots on the screen CD is given by: l1 + l2 = (√3 + 1)R",
+    "conclusion": "From the geometry, we know that: l1 = R tan 45° = R and l2 = R tan 30° = R (1/√3) = R/√3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "l1 = R and l2 = R/√3",
+    "conclusion": "l1 + l2 = R + R/√3 = R (1 + 1/√3) = R ((√3 + 1)/√3)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R ((√3 + 1)/√3) = (√3 + 1)R",
+    "conclusion": "Simplifying: (√3 + 1)/√3 = √3 + 1. This confirms that the geometry is consistent.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin r = n/2 and sin 45° = √2/2",
+    "conclusion": "Therefore: n/2 = √2/2. Solving for n: n = √2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The cross-section ABCD of a transparent homogeneous optical element is a rectangle with a length of 2L and a width of L. A thin beam of monochromatic light enters the device from the middle point P on the AB side at an angle α = 37° with the AB side and is refracted and emitted from the M point on the CD side. The refractive index of the element is n = 4/3. The task is to find the length of PM.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The rectangle has sides AB = 2L and AD = L. The light enters at point P on AB and exits at point M on CD.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The refractive index n = 4/3 indicates the relationship between the sine of the angles of incidence and refraction: sin(θ1)/sin(θ2) = n.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refractive index n = 4/3 and angle of incidence α = 37°.",
+    "conclusion": "Using the law of refraction, sin(θ) = sin(90° - α)/n = cos(α)/n = cos(37°)/(4/3).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos(37°) = 0.8 and n = 4/3.",
+    "conclusion": "sin(θ) = 0.8 / (4/3) = 0.6.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ) = 0.6.",
+    "conclusion": "θ = sin⁻¹(0.6).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry of the rectangle and the refracted angle θ.",
+    "conclusion": "The length of PM can be expressed as PM = L / cos(θ).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos(θ) = √(1 - sin²(θ)) and sin(θ) = 0.6.",
+    "conclusion": "cos(θ) = √(1 - 0.6²) = √(1 - 0.36) = √0.64 = 0.8.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "PM = L / cos(θ) and cos(θ) = 0.8.",
+    "conclusion": "PM = L / 0.8 = 5L / 4.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

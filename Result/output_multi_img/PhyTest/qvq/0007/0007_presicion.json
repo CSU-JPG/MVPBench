@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a truck and a bus braking suddenly, with the bus in front and the truck behind, initially 30 meters apart.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A v-t graph is provided showing velocities over time for both vehicles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph is a velocity versus time graph with velocity in m/s on the y-axis and time in seconds on the x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The truck's line starts at 40 m/s and decreases linearly to 0 m/s by about 15 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The bus's line starts at 30 m/s and decreases linearly to 0 m/s by about 30 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The two lines intersect around 10 seconds on the time axis, with a velocity of around 20 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since it's a v-t graph, the area under each curve represents the displacement of each vehicle.",
+    "conclusion": "Displacement is calculated by integrating the velocity over time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Truck's initial velocity is 40 m/s and reaches 0 m/s in 15 seconds.",
+    "conclusion": "The equation for the truck's velocity is v_truck(t) = (-8/3) * t + 40.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Bus's initial velocity is 30 m/s and reaches 0 m/s in 30 seconds.",
+    "conclusion": "The equation for the bus's velocity is v_bus(t) = -t + 30.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrating the truck's velocity function from 0 to t.",
+    "conclusion": "Displacement of truck, s_truck(t) = (-4/3 t²) + 40t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrating the bus's velocity function from 0 to t.",
+    "conclusion": "Displacement of bus, s_bus(t) = (-1/2 t²) + 30t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial distance between the truck and bus is 30 meters.",
+    "conclusion": "Distance(t) = s_bus(t) - s_truck(t) + 30.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t = 10s, the speed of the truck is greater than that of the bus.",
+    "conclusion": "At t = 10s, the two vehicles are at their maximum distance apart.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During the first 10 seconds, calculate displacements: truck = 250m, bus = 300m.",
+    "conclusion": "Maximum distance = 300m - 250m + 30m = 80m.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

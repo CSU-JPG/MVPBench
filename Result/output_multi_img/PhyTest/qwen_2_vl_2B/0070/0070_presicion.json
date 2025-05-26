@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic induction intensity of the uniform magnetic field is B=0.1T, the number of turns of the rectangular coil is n=100, the side lengths are l_AB=0.2m and l_BC=0.5m, and it rotates uniformly around the symmetry axis OO′ with an angular velocity ω=100π rad/s. Timing starts when the coil plane passes through the neutral plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angular velocity is given as ω = 100π rad/s. The angular frequency, ω, is related to the angular velocity, ω, by the formula ω = 2πf, where f is the frequency in Hz.",
+    "conclusion": "The frequency, f, is f = ω / (2π) = 100π / (2π) = 50 Hz.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil rotates uniformly around the symmetry axis OO′ with an angular velocity ω = 100π rad/s. The number of revolutions per second, n, is calculated using n = ω / (2π).",
+    "conclusion": "The number of revolutions per second, n, is n = 100π / (2π) = 50.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The number of cycles per second, N, is calculated as N = 1 / f, where f is the frequency.",
+    "conclusion": "The number of cycles per second, N, is N = 1 / 50 = 0.02 Hz.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF, E, is given by the formula E = N × (B × l_AB × l_BC) / (2π).",
+    "conclusion": "The induced EMF, E, is calculated as E = 0.02 × (0.1 × 0.2 × 0.5) / (2π).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The correct formula for the induced EMF in the coil is E = n × B × A × ω × sin(ωt), where A is the area of the coil and n is the number of turns.",
+    "conclusion": "The induced EMF is E = 100 × 0.1 × (0.2 × 0.5) × 100π × sin(100πt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for the induced EMF: E = 100 × 0.1 × (0.2 × 0.5) × 100π × sin(100πt).",
+    "conclusion": "The induced EMF is E = 314 sin(100πt) V.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

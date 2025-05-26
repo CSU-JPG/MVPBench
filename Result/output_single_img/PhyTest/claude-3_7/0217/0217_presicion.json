@@ -1,0 +1,65 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A straight wire of length $2l$ is bent into a V-shape with an angle of $60°$ between the arms. Each arm of the V has equal length. The wire is placed in a uniform magnetic field $B$ perpendicular to the plane of the wire. Current $I$ flows through the wire.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The original wire length is $2l$, and it's bent into two equal segments.",
+    "conclusion": "Each arm has length $l$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The force on a straight current-carrying conductor in a magnetic field is given by: $\\vec{F} = I \\vec{L} \\times \\vec{B}$, where $I$ is the current, $\\vec{L}$ is the length vector pointing in the direction of the current, and $\\vec{B}$ is the magnetic field vector. For a straight wire segment of length $L$, the magnitude of the force is: $F = ILB\\sin\\theta$, where $\\theta$ is the angle between the current direction and the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is perpendicular to the plane containing the wire, so the angle between the current direction and the magnetic field is $90°$ for both arms.",
+    "conclusion": "$\\sin\\theta = \\sin(90°) = 1$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$\\sin\\theta = 1$ for each arm.",
+    "conclusion": "For each arm: $F_{arm} = IlB$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the total force, we need to add the forces on both arms as vectors.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let's define a coordinate system where the V-shape lies in the xy-plane, and the magnetic field points in the z-direction. The angle between the arms is $60°$, so each arm makes a $30°$ angle with the axis of symmetry.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For arm 1, if we assume the current flows from the vertex outward.",
+    "conclusion": "$\\vec{F_1} = IlB(\\hat{j})$ (perpendicular to arm 1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For arm 2, the current flows from the vertex outward.",
+    "conclusion": "$\\vec{F_2} = IlB(-\\sin(60°)\\hat{i} - \\cos(60°)\\hat{j})$ (perpendicular to arm 2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting $\\sin(60°) = \\frac{\\sqrt{3}}{2}$ and $\\cos(60°) = \\frac{1}{2}$ into $\\vec{F_2} = IlB(-\\sin(60°)\\hat{i} - \\cos(60°)\\hat{j})$.",
+    "conclusion": "$\\vec{F_2} = IlB(-\\frac{\\sqrt{3}}{2}\\hat{i} - \\frac{1}{2}\\hat{j})$.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$\\vec{F_1} = IlB(\\hat{j})$ and $\\vec{F_2} = IlB(-\\frac{\\sqrt{3}}{2}\\hat{i} - \\frac{1}{2}\\hat{j})$",
+    "conclusion": "$\\vec{F_{total}} = \\vec{F_1} + \\vec{F_2} = IlB(\\hat{j}"}]

@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A square wire frame is made of uniform wire. The side-length of the square is 0.2 m. Half of the square is placed in a uniform magnetic field perpendicular to the paper and directed into the paper.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The magnetic field is increasing at a rate of 10 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the square wire frame is 0.2 m * 0.2 m = 0.04 m^2.",
+    "conclusion": "The magnetic flux through the half of the square in the magnetic field is 0.04 m^2 * 10 T = 0.4 Wb.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through the half of the square in the magnetic field is 0.4 Wb.",
+    "conclusion": "The rate of change of the magnetic flux is 0.4 Wb/s.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's law of electromagnetic induction, the induced electromotive force is equal to the rate of change of the magnetic flux, which is 0.4 V.",
+    "conclusion": "The induced electromotive force is 0.4 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the wire frame is made of uniform wire, the potential difference between points a and b is half of the induced electromotive force, which is 0.2 V.",
+    "conclusion": "The potential difference between points a and b is 0.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between points a and b is 0.2 V.",
+    "conclusion": "Therefore, the answer is B.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

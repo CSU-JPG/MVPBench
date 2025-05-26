@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes three processes A→B, B→C, and C→A, returning to its initial state A. The temperature at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The work done by the external environment on the gas during the process from C to A needs to be determined.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, the pressure at state C is 1 × 10^5 Pa, and the volume is 5L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, the pressure at state A is 1 × 10^5 Pa, and the volume is 2L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from C to A is isopressure (constant pressure) as indicated by the horizontal line in the diagram.",
+    "conclusion": "The process C→A is an isopressure change.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula for work done during an isopressure process is W = pΔV.",
+    "conclusion": "The work done by the external environment on the gas during C→A can be calculated using W = pΔV.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the diagram, p = 1 × 10^5 Pa, V_C = 5L, and V_A = 2L.",
+    "conclusion": "The change in volume ΔV = V_A - V_C = 2L - 5L = -3L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula W = pΔV and the values p = 1 × 10^5 Pa and ΔV = -3L.",
+    "conclusion": "The work done by the external environment on the gas during C→A is W = (1 × 10^5 Pa) × (-3L) = -3 × 10^5 J.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The correct work done by the external environment on the gas during C→A is given as W = 300 J.",
+    "conclusion": "The work done by the external environment on the gas during C→A is 300 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The reciprocal of the velocity of a certain particle moving in a straight line is shown in the diagram as a function of its displacement x.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The graph shows 1/v (reciprocal of velocity) on the y-axis versus displacement x on the x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows a straight line with positive slope going through the origin.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph shows a straight line with positive slope going through the origin.",
+    "conclusion": "When x = 0 (at point O), 1/v = 0, so v = infinity (theoretically).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph shows a straight line with positive slope going through the origin.",
+    "conclusion": "As x increases, 1/v increases linearly.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As x increases, 1/v increases linearly.",
+    "conclusion": "Since 1/v increases with x, this means v decreases as x increases.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Acceleration is the rate of change of velocity with time: a = dv/dt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v decreases as x increases.",
+    "conclusion": "If the particle is moving in the positive x direction, then v > 0.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v > 0 and v is decreasing.",
+    "conclusion": "Then dv/dt < 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dv/dt < 0 while moving in the positive direction.",
+    "conclusion": "A negative acceleration means the particle is slowing down.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the graph, 1/v ∝ x.",
+    "conclusion": "This means v ∝ 1/x.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v ∝ 1/x.",
+    "conclusion": "As x increases, v decreases, confirming the particle is slowing down.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reciprocal of velocity (1/v) increases linearly with displacement, meaning the velocity decreases as the particle moves further along its path.",
+    "conclusion": "Since a decreasing positive velocity corresponds to a negative acceleration, the particle is decelerating.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

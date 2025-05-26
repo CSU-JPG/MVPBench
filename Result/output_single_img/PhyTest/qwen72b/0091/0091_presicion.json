@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the time it takes for object B to return to the bottom of the inclined plane after the string breaks when object A hits the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Objects A and B each have a mass of 1 kg and are attached to the ends of a massless string passing over a fixed pulley at the top of an inclined plane with an angle of 37 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Object B is initially at the bottom of the inclined plane, and object A is at a height of 1 m above the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The inclined plane is sufficiently long, and friction between B and the inclined plane, as well as between the string and the pulley, is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The system is released from rest and allowed to move, taking g as 10 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on object A are the gravitational force mg downward and the tension T in the string upward. The net force on object A is mg - T = ma.",
+    "conclusion": "The net force on object A is mg - T = ma.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on object B are the gravitational force component mg sin theta down the incline and the tension T in the string up the incline. The net force on object B is T - mg sin theta = ma.",
+    "conclusion": "The net force on object B is T - mg sin theta = ma.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the equation mg - T = ma, we have T = m(g - a). Substitute T into the equation T - mg sin theta = ma.",
+    "conclusion": "mg - ma - mg sin theta = ma",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg - ma - mg sin theta = ma",
+    "conclusion": "mg(1 - sin theta) = 2ma",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg(1 - sin theta) = 2ma",
+    "conclusion": "g(1 - sin theta) = 2a",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "g(1 - sin theta) = 2a",
+    "conclusion": "a = g(1 - sin theta)/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given theta = 37 degrees and sin 37 degrees = 0.6, a = g(1 - sin theta)/2",
+    "conclusion": "a = 2 m/s^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A falls a distance h = 1 m. Using the kinematic equation v^2 = u^2 + 2as where u = 0, s = h = 1 m, and a = 2 m/s^2",
+    "conclusion": "v = 2 m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of object B when the string breaks is 2 m/s up the incline.",
+    "conclusion": "Object B has an initial velocity of 2 m/s up the incline.",
+    "judgment": "Match"
+  }]

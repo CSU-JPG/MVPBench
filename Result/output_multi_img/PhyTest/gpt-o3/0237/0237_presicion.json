@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the two straight segments that actually carry current: segment ac of length L is vertical; segment cd of length 2L is horizontal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field B is uniform and perpendicular to the plane of the wire.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is uniform and perpendicular to the plane of the wire.",
+    "conclusion": "Each straight segment experiences a magnetic (Ampère) force of magnitude F = ILB sin θ, where θ is the angle between the segment and B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is perpendicular to the plane.",
+    "conclusion": "θ = 90° for every straight segment, hence sin θ = 1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 90° for every straight segment, hence sin θ = 1.",
+    "conclusion": "Each segment feels a force whose magnitude equals the product ILB times its own length.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each segment feels a force whose magnitude equals the product ILB times its own length.",
+    "conclusion": "Vertical segment ac: F₁ = IBL.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each segment feels a force whose magnitude equals the product ILB times its own length.",
+    "conclusion": "Horizontal segment cd: F₂ = IB(2L) = 2IBL.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces act on directions that are perpendicular to the respective wire segments and lie in the plane.",
+    "conclusion": "Segment ac (current upward) → force points toward the right (use right-hand rule).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces act on directions that are perpendicular to the respective wire segments and lie in the plane.",
+    "conclusion": "Segment cd (current to the right) → force points downward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two force vectors are mutually perpendicular.",
+    "conclusion": "Magnitude of the resultant force on the bent wire is the vector sum of the perpendicular components: F = √(F₁² + F₂²).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = √(F₁² + F₂²).",
+    "conclusion": "F = √[(IBL)² + (2IBL)²] = IBL√(1 + 4) = IBL√5.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

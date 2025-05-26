@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball is dropped from a height H and rebounds to a height h after an inelastic collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Air resistance is proportional to the gravitational force, with a proportionality constant λ, where 0 < λ < (H - h)/(H + h).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ratio of post-collision velocity to pre-collision velocity is the same for each collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The goal is to find the ratio of the post-collision velocity to the pre-collision velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from rest at height H, so its initial velocity is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball falls under gravity, experiences air resistance on the way down, hits the ground, and then bounces back up, again experiencing air resistance, to a new height h.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "m is the mass of the basketball, g is the acceleration due to gravity, v_down is the velocity just before hitting the ground, v_up is the velocity just after rebounding from the ground, e = v_up/v_down is the coefficient of restitution.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The net force acting on the basketball during descent is F_net, down = mg - λmg = mg(1 - λ).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_net, down = mg(1 - λ)",
+    "conclusion": "The acceleration during descent is a_down = g(1 - λ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a_down = g(1 - λ), u = 0",
+    "conclusion": "v_down^2 = 2g(1 - λ)H",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_down^2 = 2g(1 - λ)H",
+    "conclusion": "v_down = √(2g(1 - λ)H)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During the collision with the ground, the basketball's velocity changes from v_down to -v_up.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_up = e v_down",
+    "conclusion": "v_up = -e v_down",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The net force during ascent is F_net, up = -mg - λmg = -mg(1 + λ).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_net, up = -mg(1 + λ)",
+    "conclusion": "The acceleration during ascent is a_up = -g(1 + λ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a_up = -g(1 + λ), v_up^2 = 0 + 2(-g(1 + λ))h",
+    "conclusion": "v_up^2 = 2g(1 + λ)h",
+    "judgment": "Match"
+  }

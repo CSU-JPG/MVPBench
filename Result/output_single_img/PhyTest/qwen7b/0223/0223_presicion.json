@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the potential difference between points a and b in the wire frame due to the changing magnetic field using Faraday's law of induction and Ohm's law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side length of the square wire frame is 0.2 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side length of the square is 0.2 m.",
+    "conclusion": "The total area of the square is 0.04 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only half of the square is placed in the magnetic field.",
+    "conclusion": "The area of the half-square in the magnetic field is 0.02 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's law states that the induced emf in a closed loop is equal to the negative rate of change of the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through the half-square is given by Φ_B = B * A_half.",
+    "conclusion": "The rate of change of magnetic flux is dΦ_B/dt = A_half * dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A_half = 0.02 m² and dB/dt = 10 T/s.",
+    "conclusion": "dΦ_B/dt = 0.2 Wb/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ_B/dt = 0.2 Wb/s.",
+    "conclusion": "The induced emf is -0.2 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf is -0.2 V.",
+    "conclusion": "The potential difference V_ab = 0.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference V_ab is calculated from the induced emf.",
+    "conclusion": "The potential difference between points a and b in the wire frame is -0.1 V.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process is cyclic: A → B → C → D → A, and each state is in equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: p_A = 1 × 10^5 Pa, V_A = 3 L = 3 × 10^-3 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: p_B = 1 × 10^5 Pa, V_B = 4 L = 4 × 10^-3 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: p_C = 0.75 × 10^5 Pa, V_C = 4 L = 4 × 10^-3 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State D: p_D = 0.75 × 10^5 Pa, V_D = 3 L = 3 × 10^-3 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at state A: T_A = 27°C = 27 + 273 = 300 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the work done by the gas from C to D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the diagram, C → D is an isobaric process (constant pressure) because the pressure remains constant at p = 0.75 × 10^5 Pa, while the volume changes from V_C = 4 × 10^-3 m^3 to V_D = 3 × 10^-3 m^3.",
+    "conclusion": "C → D is an isobaric process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal gas, the work done by the gas in a process is given by W = ∫ p dV. Since C → D is isobaric, the pressure is constant.",
+    "conclusion": "W_{C → D} = p ΔV where ΔV = V_D - V_C, and p = 0.75 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔV = V_D - V_C = (3 × 10^-3) - (4 × 10^-3) = -1 × 10^-3 m^3",
+    "conclusion": "ΔV = -1 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_{C → D} = (0.75 × 10^5) × (-1 × 10^-3)",
+    "conclusion": "W_{C → D} = -75 J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates that the gas is compressed (V decreases), meaning work is done on the gas. However, the problem asks for the work done by the gas. In thermodynamic convention, work done by the gas is positive for expansion and negative for compression.",
+    "conclusion": "Since W_{C → D} = -75 J, the work done by the gas is -75 J, meaning the gas does negative work (i.e., the surroundings do work on the gas).",
+    "judgment": "Match"
+  }]

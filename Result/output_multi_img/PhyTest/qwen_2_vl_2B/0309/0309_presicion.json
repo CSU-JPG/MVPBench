@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The relationship between the volume V of an ideal gas and the thermodynamic temperature T is shown in the figure. The pressure of the gas in state A is pA = p0, the temperature TA = T0, the line segment AB is parallel to the V axis, and the extension line of BC passes through the origin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The work done by the gas on the outside world during the change from state A to state B is 10 J. The task is to determine how much heat is absorbed by the gas in this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "In the figure, state A is at (T0, V0), state B is at (T0, 2V0), and the line segment AB is parallel to the V-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The extension line of BC passes through the origin (0, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The equation for the volume of an ideal gas is given as V = V0 * e^(-Q / (R * T0)), where V0 is the initial volume, Q is the heat absorbed by the gas, R is the gas constant, and T0 is the initial temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation V = V0 * e^(-Q / (R * T0)) and given V0 = 2V0.",
+    "conclusion": "The final volume V can be expressed as V = 2V0 * e^(-10 / (R * T0)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The relationship between temperature and volume is given as T = T0 * e^(Q / (R * V0)).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation T = T0 * e^(Q / (R * V0)) and given V0 = 2V0.",
+    "conclusion": "The final temperature T can be expressed as T = T0 * e^(10 / (2R * 2V0)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas is equal to the change in internal energy Q of the gas.",
+    "conclusion": "The work done W = Q.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas is given as 10 J.",
+    "conclusion": "The heat absorbed by the gas Q = 10 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

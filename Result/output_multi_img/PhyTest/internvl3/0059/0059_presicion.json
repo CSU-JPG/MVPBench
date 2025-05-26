@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the internal resistance r of the power supply, we can use the given information and the principles of circuit analysis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When R = R1 = 2Ω, the voltmeter reads U1 = 3V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When R = R2 = 6Ω, the voltmeter reads U2 = 4.5V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U1 = I1 R1, 3V = I1 × 2Ω",
+    "conclusion": "I1 = 1.5A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U2 = I2 R2, 4.5V = I2 × 6Ω",
+    "conclusion": "I2 = 0.75A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The voltage E provided by the power supply can be written as: E = U + I ⋅ r",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For R1: E = 3V + 1.5A ⋅ r",
+    "conclusion": "Equation 1: E = 3 + 1.5r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For R2: E = 4.5V + 0.75A ⋅ r",
+    "conclusion": "Equation 2: E = 4.5 + 0.75r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation 1: E = 3 + 1.5r, Equation 2: E = 4.5 + 0.75r",
+    "conclusion": "Set the equations equal: 3 + 1.5r = 4.5 + 0.75r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "3 + 1.5r = 4.5 + 0.75r",
+    "conclusion": "Subtract 0.75r from both sides: 3 + 0.75r = 4.5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "3 + 0.75r = 4.5",
+    "conclusion": "Subtract 3 from both sides: 0.75r = 1.5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.75r = 1.5",
+    "conclusion": "Solve for r: r = 2Ω",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

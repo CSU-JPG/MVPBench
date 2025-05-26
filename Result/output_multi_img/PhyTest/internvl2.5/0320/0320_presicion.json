@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the temperature of the gas in state C, we can use the ideal gas law and the fact that the temperature is proportional to the product of pressure and volume (PV/T = constant for a given mass of gas).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: State A: Temperature = 27°C = 300 K (since T(K) = T(°C) + 273.15)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Pressure and volume at state A: p_A = 2.0 × 10^5 Pa, V_A = 6.0 × 10^{-2} m³",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Pressure and volume at state C: p_C = 3.0 × 10^5 Pa, V_C = 4.0 × 10^{-2} m³",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ideal Gas Law at State A: T_A = (p_A · V_A) / (R · n)",
+    "conclusion": "T_A = (p_A · V_A) / (R · n)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate p_A · V_A: (2.0 × 10^5 Pa × 6.0 × 10^{-2} m³)",
+    "conclusion": "p_A · V_A = 1.2 × 10^4 Pa·m³",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ideal Gas Law at State C: T_C = (p_C · V_C) / (R · n)",
+    "conclusion": "T_C = (p_C · V_C) / (R · n)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate p_C · V_C: (3.0 × 10^5 Pa × 4.0 × 10^{-2} m³)",
+    "conclusion": "p_C · V_C = 1.2 × 10^4 Pa·m³",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since p_A · V_A = p_C · V_C, and both states A and C have the same product of pressure and volume, by the ideal gas law, the temperatures must also be the same.",
+    "conclusion": "T_C = T_A = 300 K",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

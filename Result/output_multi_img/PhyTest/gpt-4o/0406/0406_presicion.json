@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem step by step, we need to analyze the geometry and physics of light refraction and reflection in the given optical element.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The diagram shows a square ABCO with side length R, where AC is an arc of a circle centered at O with radius R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A point source of light is located at O, and light rays are emitted uniformly in all directions.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the material is n = 2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light to exit through AB or BC, it must refract at the arc AC and then travel directly toward AB or BC.",
+    "conclusion": "The critical angle for refraction is determined by Snell's law: sin θc = 1/n = 1/2. Thus, the critical angle is θc = arcsin(1/2) = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light rays incident on the arc AC at angles greater than 30° (relative to the normal at the point of incidence) will undergo total internal reflection and cannot exit through AB or BC.",
+    "conclusion": "Light rays incident on the arc AC at angles greater than 30° will undergo total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The arc AC spans a quarter-circle, corresponding to an angular range of 90° (from OA to OC).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light rays emitted from O make angles with the radius OA (or equivalently, the normal to the arc at the point of incidence).",
+    "conclusion": "For a light ray to have an incident angle greater than 30°, the angle between the light ray and the radius must exceed 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light rays emitted from O at angles less than 60° (relative to OA) will strike the arc AC at incident angles less than 30°, allowing them to refract and exit through AB or BC.",
+    "conclusion": "The light rays emitted from O at angles greater than 60° (relative to OA) will strike the arc AC at incident angles greater than 30°, resulting in total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angular range of the arc where total internal reflection occurs corresponds to light rays emitted at angles between 60° and 90° (relative to OA).",
+    "conclusion": "The angular range is Δθ = 90° - 60° = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total circumference of the circle is 2πR, and the arc AC spans 90°, which is one-quarter of the circle.",
+    "conclusion": "The total length of the arc AC is L_AC = (1/4) * 2πR = πR/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The portion of the arc where total internal reflection occurs corresponds to an angular range of 30°, which is one-third of the 90° arc.",
+    "conclusion": "The length of the arc where total internal reflection occurs is L_reflection = (1/3) * L_AC = (1/3) * (πR/2) = πR/6.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

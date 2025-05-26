@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Objects A and B, each with a mass of 1 kg, are attached to the two ends of a massless string. The string passes over a fixed pulley at the top of an inclined plane with an angle of 37 degrees, which is fixed on a horizontal ground. Object A is at a height of 1 m above the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The inclined plane is sufficiently long, and friction between B and the inclined plane, as well as between the string and the pulley, is negligible. The system is released from rest and allowed to move. g is 10 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The connection between object B and the string breaks at the moment object A hits the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mass of object A: 1 kg, Mass of object B: 1 kg, Angle of incline: 37 degrees, Acceleration due to gravity: 10 m/s^2",
+    "conclusion": "The component of gravity acting on object B along the inclined plane is m_B g sin(theta).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Newton's second law for the system: m_A g - m_B g sin(theta) = (m_A + m_B) a",
+    "conclusion": "a = 2 m/s^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A falls from a height h = 1 m. Using the kinematic equation: h = (1/2) a t^2",
+    "conclusion": "Object A hits the ground in 1 second.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of object B just before the connection breaks can be found using: v = at",
+    "conclusion": "At the moment of break, object B is moving up the incline with a velocity of 2 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the break, only gravity acts on object B, causing it to decelerate as it moves up and then accelerate back down. Deceleration due to gravity along the incline: a = g sin(theta) = 10 * 0.6 = 6 m/s^2",
+    "conclusion": "Time to stop moving up the incline: t = 1/3 s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using s = ut + (1/2) at^2",
+    "conclusion": "Distance traveled up the incline: s = 1/3 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using s = (1/2) at^2 (starting from rest)",
+    "conclusion": "Time to slide back down: t^2 = 1/9",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t^2 = 1/9",
+    "conclusion": "Time to slide back down: t = 1/3 s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Time to stop moving up the incline: t = 1/3 s, Time to slide back down: t = 1/3 s",
+    "conclusion": "Total time for object B to return to the bottom of the inclined plane: 1 s",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

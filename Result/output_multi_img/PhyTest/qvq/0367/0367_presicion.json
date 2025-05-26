@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball is dropped from a height H above the ground and rebounds to a height h after an inelastic collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The air resistance experienced by the basketball is λ times the magnitude of the gravitational force acting on it, where λ is a constant and 0 < λ < (H-h)/(H+h).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity is the same for each collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the gravitational acceleration is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The goal is to find the ratio of the post-collision velocity to the pre-collision velocity during the collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from rest, so its initial velocity is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force during descent is mg - λmg = mg(1 - λ) downward.",
+    "conclusion": "The acceleration during descent is g(1 - λ) downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial velocity is zero, and the acceleration is g(1 - λ) downward.",
+    "conclusion": "The velocity just before hitting the ground is v = √(2gH(1 - λ)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During the collision, the basketball's velocity changes from v downward to some rebound velocity v' upward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio of post-collision velocity to pre-collision velocity is e, so v' = -e v.",
+    "conclusion": "v' = -e v indicates the change in direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During the ascent, the basketball moves upward with initial velocity v'.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force during ascent is mg + λmg = mg(1 + λ) downward.",
+    "conclusion": "The acceleration during ascent is g(1 + λ) downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The basketball decelerates during its ascent, comes to rest at the maximum height h, where its velocity is zero.",
+    "conclusion": "v' = √(2gh(1 + λ)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v' = -e v and v' = √(2gh(1 + λ)), v = √(2gH(1 - λ)).",
+    "conclusion": "√(2gh(1 + λ)) = e √(2gH(1 - λ)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Squaring both sides: 2gh(1 + λ) = e² × 2gH(1 - λ).",
+    "conclusion": "h(1 + λ) = e²H(1 - λ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve for e²: h(1 + λ) = e²H(1 - λ).",
+    "conclusion": "e² = h(1 + λ)/H(1 - λ).",
+    "judgment": "Match"
+  }

@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine two things: the instantaneous value of the induced current when the wire frame rotates through an angle of 60°, and the average value of the induced electromotive force (EMF) during this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF in a rotating loop in a magnetic field is given by the formula: \\( \\mathcal{E} = B S \\omega \\sin(\\theta) \\) where: - \\( B \\) is the magnetic field intensity, - \\( S \\) is the area of the loop, - \\( \\omega \\) is the angular velocity, - \\( \\theta \\) is the angle through which the loop has rotated.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that \\( \\theta = 60^\\circ \\) (which is \\( \\frac{\\pi}{3} \\) radians), the instantaneous EMF is: \\( \\mathcal{E} = B S \\omega \\sin\\left(\\frac{\\pi}{3}\\right) \\)",
+    "conclusion": "Since \\( \\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2} \\), we have: \\( \\mathcal{E} = B S \\omega \\frac{\\sqrt{3}}{2} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced current \\( I \\) is given by Ohm's law: \\( I = \\frac{\\mathcal{E}}{R} \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the expression for \\( \\mathcal{E} \\): \\( I = \\frac{B S \\omega \\frac{\\sqrt{3}}{2}}{R} \\)",
+    "conclusion": "\\( I = \\frac{B S \\omega \\sqrt{3}}{2R} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The average induced EMF over a time interval can be found by integrating the instantaneous EMF over that interval and dividing by the time interval.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time interval \\( \\Delta t \\) for a rotation of 60° (which is \\( \\frac{\\pi}{3} \\) radians) at an angular velocity \\( \\omega \\) is: \\( \\Delta t = \\frac{\\Delta \\theta}{\\omega} = \\frac{\\frac{\\pi}{3}}{\\omega} = \\frac{\\pi}{3\\omega} \\)",
+    "conclusion": "The average EMF \\( \\mathcal{E}_{\\text{avg}} \\) is: \\( \\mathcal{E}_{\\text{avg}} = \\frac{1}{\\Delta t} \\int_0^{\\Delta t} \\mathcal{E}(t) \\, dt \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\( \\mathcal{E}(t) = B S \\omega \\sin(\\omega t) \\), we have: \\( \\mathcal{E}_{\\text{avg}} = \\frac{1}{\\frac{\\pi}{3\\omega}} \\int_0^{\\frac{\\pi}{3\\omega}} B S \\omega \\sin(\\omega t) \\, dt \\)",
+    "conclusion": "\\( \\mathcal{E}_{\\text{avg}} = \\frac{3\\omega}{\\pi} \\int_0^{\\frac{\\pi}{3}} B S \\sin(\\theta) \\, d\\theta \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\mathcal{E}_{\\text{avg}} = \\frac{3\\omega}{\\pi} B S \\left[ -\\cos(\\theta) \\right]\\)"}]

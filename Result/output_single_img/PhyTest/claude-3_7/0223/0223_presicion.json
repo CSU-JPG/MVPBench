@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This problem involves electromagnetic induction, specifically Faraday's law. When a magnetic field changes over time, it induces an electromotive force (EMF) in a conducting loop proportional to the rate of change of magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the figure, the magnetic field covers half of the square frame. The field is directed into the paper (perpendicular to the wire frame).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area of half the square = (0.2 m)² × 0.5",
+    "conclusion": "Area of half the square = 0.02 m²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux is defined as: Φ = B·A",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rate of change of flux = dΦ/dt = A·dB/dt, dB/dt = 10 T/s, Area experiencing flux change = 0.02 m²",
+    "conclusion": "dΦ/dt = 0.02 m² × 10 T/s = 0.2 Wb/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's law: EMF = -dΦ/dt",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = -dΦ/dt, dΦ/dt = 0.2 Wb/s",
+    "conclusion": "EMF = -0.2 V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The negative sign indicates that the induced EMF opposes the change in magnetic flux (Lenz's law).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between points a and b is the EMF induced in the circuit.",
+    "conclusion": "V_ab = 0.2 V",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the magnetic field is directed into the paper and increasing, the induced current will flow in a way to create a magnetic field coming out of the paper in the half-square region (opposing the change). This means the current flows clockwise around the square.",
+    "conclusion": "With clockwise current flow, the potential at point a will be higher than at point b.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between points a and b is 0.2 V, with point a at a higher potential than point b.",
+    "conclusion": "The potential difference between points a and b in the wire frame is 0.2 V.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

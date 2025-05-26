@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the collision between the two balls, P and Q, and determine their velocities after the collision. We will use the principles of conservation of momentum and conservation of kinetic energy, as the collision is elastic.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ball P has mass M = 4m and initial velocity v_0 = mg/(qB). Ball Q has mass m and is initially at rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total momentum before the collision must equal the total momentum after the collision.",
+    "conclusion": "Mv_0 = Mv_P + mv_Q",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting M = 4m and v_0 = mg/(qB) into the momentum equation.",
+    "conclusion": "4m(mg/(qB)) = 4m v_P + m v_Q",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying the momentum equation.",
+    "conclusion": "4g/(qB) = 4v_P + v_Q (Equation 1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the collision is elastic, the total kinetic energy before and after the collision is conserved.",
+    "conclusion": "1/2 M v_0^2 = 1/2 M v_P^2 + 1/2 m v_Q^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting M = 4m and v_0 = mg/(qB) into the kinetic energy equation.",
+    "conclusion": "1/2 (4m) (mg/(qB))^2 = 1/2 (4m) v_P^2 + 1/2 m v_Q^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying the kinetic energy equation.",
+    "conclusion": "4m^2 g^2/(q^2 B^2) = 4v_P^2 + v_Q^2 (Equation 2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving Equation 1 for v_Q.",
+    "conclusion": "v_Q = 4g/(qB) - 4v_P",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_Q from Equation 1 into Equation 2.",
+    "conclusion": "4m^2 g^2/(q^2 B^2) = 4v_P^2 + (4g/(qB) - 4v_P)^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Expanding and simplifying the substituted kinetic energy equation.",
+    "conclusion": "4m^2 g^2/(q^2 B^2) = 20v_P^2 - 32g/(qB) v_P + 16g^2/(q^2 B^2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranging the equation.",
+    "conclusion": "20v_P^2 - 32g/(qB) v_P + 12g^2/(q^2 B^2) = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving the quadratic equation for v_P.",
+    "conclusion": "v_P = (32g/(qB) ± sqrt((32g/(qB))^2 - 4 * 20 * 12g^2/(q^2 B^2)))/(2 * 20)",
+    "judgment": "Match"
+  }]

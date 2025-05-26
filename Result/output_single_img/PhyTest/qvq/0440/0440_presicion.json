@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a wedge-shaped glass with a top angle of 30 degrees and a light source S on one side. The light refracts at an angle of 45 degrees perpendicular to the side.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wedge has a top angle of 30 degrees, with sides meeting at point O. Light source S is on side OP, emitting light that refracts at a 45-degree angle at point N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The goal is to find the ratio of the length of the light-emitting part on the edge to the entire edge length.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wedge has a top angle of 30 degrees, making the base angles 75 degrees each.",
+    "conclusion": "The triangle is isosceles with angles 30, 75, and 75 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law relates the angles of incidence and refraction: n1 sin(theta1) = n2 sin(theta2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light is incident normally to the side, with an angle of incidence of 0 degrees.",
+    "conclusion": "According to Snell's Law, sin(theta2) is 0, implying theta2 is 0 degrees.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light source S is on side OP, emitting light perpendicular to OP.",
+    "conclusion": "The light ray travels parallel to the side from the source.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light source S emits a ray perpendicular to OP, hitting point N on OQ and refracting at a 45-degree angle.",
+    "conclusion": "The path of the light ray is from S to N and then to Q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wedge is a cross-section triangle with vertices O, P, and Q, and base PQ.",
+    "conclusion": "The edge refers to the base PQ of the wedge.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light source is at S on OP, emitting light that refracts at N on OQ.",
+    "conclusion": "The ratio of the illuminated part of PQ to the entire PQ needs to be found.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometric relationship, the incident angle at OQ is 30 degrees, and the refraction angle is 45 degrees.",
+    "conclusion": "The refractive index n = sqrt(2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle formula for total reflection is sin(C) = 1/n, with C = 45 degrees.",
+    "conclusion": "Light is totally reflected at two points AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = 2AC = 2CS = OS, NS = OS tan(30 degrees).",
+    "conclusion": "The ratio AB/NS = sqrt(3).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

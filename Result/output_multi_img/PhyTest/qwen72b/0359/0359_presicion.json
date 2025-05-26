@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem of determining the distance from the particle's launch position to point P, we need to analyze the motion of the charged particle under the influence of the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the particle's velocity direction when entering the magnetic field and PQ is 60 degrees.",
+    "conclusion": "Horizontal component of velocity at point P is v_x = v_0 cos(60 degrees) = v_0/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the particle's velocity direction when entering the magnetic field and PQ is 60 degrees.",
+    "conclusion": "Vertical component of velocity at point P is v_y = v_0 sin(60 degrees) = sqrt(3) v_0/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Before entering the magnetic field, the particle moves only under the influence of the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field E imparts a vertical acceleration to the particle.",
+    "conclusion": "Vertical acceleration a_y = qE/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since there is no horizontal acceleration, the horizontal component of velocity remains constant at v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let t be the time taken for the particle to travel horizontally from the launch point to point P.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let x be the horizontal distance traveled by the particle before reaching point P.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal velocity is v_0.",
+    "conclusion": "Horizontal distance x = v_0 t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical acceleration a_y = qE/m.",
+    "conclusion": "Vertical displacement y = (1/2) a_y t^2 = (1/2) (qE/m) t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical velocity at point P is v_y = sqrt(3) v_0/2.",
+    "conclusion": "Vertical velocity v_y = a_y t = (qE/m) t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equating two expressions for v_y: (qE/m) t = sqrt(3) v_0/2.",
+    "conclusion": "Time t = sqrt(3) m v_0/(2 q E).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute t = sqrt(3) m v_0/(2 q E) into x = v_0 t.",
+    "conclusion": "Horizontal distance x = sqrt(3) m v_0^2/(2 q E).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using the Pythagorean theorem, the distance s from the launch position to point P is s = sqrt(x^2 + y^2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute t = sqrt(3) m v_0/(2 q E) into y = (1/2) (qE/m) t^2.",
+    "conclusion": "Vertical distance y = 3 m v_0^2/(8 q E).",
+    "judgment": "Match"
+  }

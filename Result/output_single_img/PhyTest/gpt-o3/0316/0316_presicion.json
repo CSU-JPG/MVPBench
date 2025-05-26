@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a fixed mass of ideal gas, states obey p V = n R T, so the ratio T ∝ p V at different states.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: p_A = 3 × 10⁵ Pa; V_A = 1 × 10⁻³ m³",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: p_B = 2 × 10⁵ Pa; V_B = 1 × 10⁻³ m³",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using T_B / T_A = (p_B V_B) / (p_A V_A)",
+    "conclusion": "T_B = (2 × 10⁵ · 1 × 10⁻³) / (3 × 10⁵ · 1 × 10⁻³) × T_A = (2/3) T_A",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given T_A = 27 °C = 300 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = (2/3) × 300 K",
+    "conclusion": "T_B = 200 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Converting to Celsius: T_B = 200 K",
+    "conclusion": "T_B(°C) = 200 K − 273 K = −73 °C",
+    "judgment": "Reasonable"
+  }
+]

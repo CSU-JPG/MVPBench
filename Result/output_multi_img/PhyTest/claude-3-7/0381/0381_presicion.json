@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a rotating coil in a uniform magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil has 100 turns and 10Ω resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux Φ through each turn varies sinusoidally with time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph in Figure (Z) shows the magnetic flux variation.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From Figure (Z), the magnetic flux Φ follows a sinusoidal pattern with amplitude: 2.0 × 10⁻² Wb and period: About 6.28 × 10⁻²s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Period T = 6.28 × 10⁻²s",
+    "conclusion": "ω = 2π/T = 100 rad/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electromotive force (EMF) is given by: EMF = -N × dΦ/dt",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "N = number of turns = 100",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ(t) = 2.0 × 10⁻² sin(ωt) Wb",
+    "conclusion": "dΦ/dt = 2.0 × 10⁻² × ω × cos(ωt) Wb/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ/dt = 2.0 × 10⁻² × 100 × cos(ωt) Wb/s",
+    "conclusion": "dΦ/dt = 2.0 Wb/s × cos(ωt)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = -N × dΦ/dt",
+    "conclusion": "EMF = -100 × 2.0 × cos(ωt) V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = -100 × 2.0 × cos(ωt) V",
+    "conclusion": "EMF = -200 × cos(ωt) V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum value of cos(ωt) is 1",
+    "conclusion": "|EMF|ₘₐₓ = 200 V",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

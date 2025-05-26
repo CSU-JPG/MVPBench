@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The detector's velocity v is inversely proportional to its displacement x. This means v = k/x, where k is a constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point B (displacement x = 2 m), the velocity v = 2 m/s.",
+    "conclusion": "2 = k/2 implies k = 4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relationship between velocity and displacement is now v = 4/x.",
+    "conclusion": "At point A, the velocity is 4 m/s. Using v = 4/x, 4 = 4/x_A implies x_A = 1 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find the time taken to move from point A (x_A = 1 m) to point B (x_B = 2 m), use dt = dx/v = dx/(4/x) = x dx/4.",
+    "conclusion": "The total time t is the integral of dt from x = 1 to x = 2: t = ∫(1 to 2) x dx/4 = (1/4) ∫(1 to 2) x dx.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Evaluating the integral, ∫(1 to 2) x dx = [x^2/2] from 1 to 2 = 2 - 1/2 = 3/2.",
+    "conclusion": "t = (1/4) × (3/2) = 3/8 seconds.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

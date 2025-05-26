@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem step-by-step, we need to analyze the refraction and geometry of the prism. The goal is to find the angle between the emergent red light and the incident white light at point M.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The incident angle at point M is given as alpha = 60 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n1 sin alpha = n2 sin beta, where n1 = 1 (air refractive index), n2 = sqrt(3) (refractive index of the prism material for red light), alpha = 60 degrees.",
+    "conclusion": "Substitute the values: sin 60 degrees = sqrt(3)/2, n2 = sqrt(3). 1 * sqrt(3)/2 = sqrt(3) sin beta. Solve for sin beta: sin beta = (sqrt(3)/2)/sqrt(3) = 1/2. Thus, beta = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism has an equilateral triangular cross-section, so each internal angle is 60 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray inside the prism makes an angle beta = 30 degrees with the normal at the first surface. Since the prism angle is 60 degrees.",
+    "conclusion": "The angle between the refracted ray and the normal at the second surface is: Angle of incidence at second surface = 60 degrees - beta = 60 degrees - 30 degrees = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the second surface, the light exits the prism and refracts again. Using Snell's law: n2 sin (angle of incidence at second surface) = n1 sin (emergent angle), where n2 = sqrt(3), Angle of incidence at second surface = 30 degrees, n1 = 1 (air refractive index).",
+    "conclusion": "Substitute the values: sqrt(3) sin 30 degrees = 1 * sin theta. sqrt(3) * 1/2 = sin theta. sin theta = sqrt(3)/2. Thus, theta = 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total deviation of the red light is the angle between the emergent ray and the incident ray. The deviation is calculated as: Deviation = (alpha + theta) - Prism angle, where alpha = 60 degrees (incident angle), theta = 60 degrees (emergent angle), Prism angle = 60 degrees.",
+    "conclusion": "Deviation = (60 degrees + 60 degrees) - 60 degrees = 120 degrees - 60 degrees = 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the emergent red light and the incident white light at point M is 60 degrees.",
+    "conclusion": "Therefore, the angle is 60 degrees.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, C, and D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (E, F, or G) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: The liquid flows down from A and encounters a yellow baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A: The liquid flows down from A and encounters a yellow baffle.",
+    "conclusion": "It will flow to the right, passing through the yellow baffle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It will flow to the right, passing through the yellow baffle.",
+    "conclusion": "It will then flow into container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B: The liquid flows down from B and encounters an orange baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point B: The liquid flows down from B and encounters an orange baffle.",
+    "conclusion": "It will flow to the right, passing through the orange baffle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It will flow to the right, passing through the orange baffle.",
+    "conclusion": "It will then flow into container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point C: The liquid flows down from C and encounters a light blue baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point C: The liquid flows down from C and encounters a light blue baffle.",
+    "conclusion": "It will flow to the right, passing through the light blue baffle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It will flow to the right, passing through the light blue baffle.",
+    "conclusion": "It will then flow into container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point D: The liquid flows down from D and encounters a blue baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point D: The liquid flows down from D and encounters a blue baffle.",
+    "conclusion": "It will flow to the right, passing through the blue baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It will flow to the right, passing through the blue baffle.",
+    "conclusion": "It will then flow into container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A and B: The liquid will flow into container E. From C and D: The liquid will flow into container F.",
+    "conclusion": "The liquid from points A and B will flow into container E, and the liquid from points C and D will flow into container F. Container G will not receive any liquid from points A, B, C, or D.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

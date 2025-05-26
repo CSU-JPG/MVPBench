@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Semicylinder radius: R = 0.75 m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point A is at the left end of the cylinder on the ground",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point B is directly above point A",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point O is the center of the semicylinder",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point C is on the semicylinder with angle ∠OC = 53° from horizontal",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ball is thrown horizontally from B with initial velocity v_0",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point O: (0, 0)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: (-R, 0) = (-0.75, 0)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between OC and horizontal is 53°",
+    "conclusion": "Point C is at (R·cos(53°), R·sin(53°)) = (0.75·cos(53°), 0.75·sin(53°)) = (0.75·0.6, 0.75·0.8) = (0.45, 0.6) m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B is directly above A, so B is at (-0.75, ?)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball grazes point C",
+    "conclusion": "The trajectory of the ball must pass through point C",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a projectile with initial horizontal velocity v_0 and no initial vertical velocity, the equation of the trajectory is y = y_B - (g/2v_0^2)(x-x_B)^2",
+    "conclusion": "At point C (0.45, 0.6), 0.6 = y_B - (g/2v_0^2)(1.2)^2 = y_B - (g·1.44/2v_0^2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a projectile, the horizontal position is given by x = x_B + v_0·t",
+    "conclusion": "The time to reach point C is t = (x_C - x_B)/v_0 = (0.45-(-0.75))/v_0 = 1.2/v_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a projectile, the vertical position is y = y_B + 0·t - (1/2)g·t^2",
+    "conclusion": "At point C, 0.6 = y_B - (1/2)g·t^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute t = 1.2/v_0",
+    "conclusion": "0.6 = y_B - (1/2)g·(1.2/v_0)^2 = y_B - (g·1.44/2v_0^2)",
+    "judgment": "Match"
+  }]

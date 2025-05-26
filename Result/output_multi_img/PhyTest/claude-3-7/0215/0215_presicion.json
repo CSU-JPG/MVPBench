@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves an electromagnetic flowmeter with: - A circular pipe of diameter d made of non-magnetic material - A uniform magnetic field B passing through the pipe - Conductive liquid flowing through the pipe with velocity v - Measurement points M and N on opposite sides of the pipe wall - Measured electromotive force (EMF) E between points M and N",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This device works on Faraday's law of electromagnetic induction. When a conductive fluid moves through a magnetic field, charged particles experience a Lorentz force perpendicular to both the velocity and magnetic field directions.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the conductive liquid flows through the magnetic field with velocity v, the charged particles in the liquid experience a force: - The magnetic field B is perpendicular to the flow direction - The induced electric field E is perpendicular to both B and v",
+    "conclusion": "The induced EMF between points M and N is given by: E = B * v * d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The flow rate Q is the volume of liquid passing through the pipe per unit time: Q = A * v",
+    "conclusion": "A is the cross-sectional area of the pipe: A = π * (d/2)^2 = πd^2/4",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the EMF equation: E = B * v * d",
+    "conclusion": "We can rearrange to find v: v = E / (B * d)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the velocity into the flow rate equation: Q = A * v = (πd^2/4) * (E / (B * d))",
+    "conclusion": "Q = πdE / 4B",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

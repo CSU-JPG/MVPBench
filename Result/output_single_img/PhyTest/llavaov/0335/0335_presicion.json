@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The internal energy U of the ideal gas is related to the temperature T by the equation U = aT, where a is a positive constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state A is T0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state B, the pressure is 0.6p0 and the volume is V0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state C, the pressure is 0.6p0 and the volume is 0.5V0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law PV = nRT, but without n or R, the temperature at state B cannot be directly calculated.",
+    "conclusion": "The temperature at state B is indeterminate with given information.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law PV = nRT, but without n or R, the temperature at state C cannot be directly calculated.",
+    "conclusion": "The temperature at state C is indeterminate with given information.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal energy U is a state function, and the change in internal energy ΔU from state B to state C is a(TC - TB).",
+    "conclusion": "The change in internal energy ΔU is indeterminate without TC and TB.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas is equal to the change in internal energy ΔU from state B to state C.",
+    "conclusion": "The work done by the gas is indeterminate.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the effective value of the induced electromotive force (EMF) in the coil, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil is a square with side length L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil is a square with side length L.",
+    "conclusion": "The area A of the coil is A = L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil rotates at a constant angular velocity ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux Φ through the coil is given by Φ = B ⋅ A ⋅ cos(θ), where θ is the angle between the normal to the coil and the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF 𝓔 is given by Faraday's Law: 𝓔 = -N dΦ/dt, where N is the number of turns in the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle θ changes with time as θ = ωt.",
+    "conclusion": "The magnetic flux becomes Φ = B ⋅ L^2 ⋅ cos(ωt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ = B ⋅ L^2 ⋅ cos(ωt).",
+    "conclusion": "Differentiating Φ with respect to time t gives dΦ/dt = -B ⋅ L^2 ⋅ ω ⋅ sin(ωt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "𝓔 = -N dΦ/dt and dΦ/dt = -B ⋅ L^2 ⋅ ω ⋅ sin(ωt).",
+    "conclusion": "𝓔 = N ⋅ B ⋅ L^2 ⋅ ω ⋅ sin(ωt).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The effective (RMS) value of the induced EMF is given by 𝓔_rms = 𝓔_max/√2, where 𝓔_max is the maximum value of the induced EMF.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum induced EMF occurs when sin(ωt) = 1.",
+    "conclusion": "𝓔_max = N ⋅ B ⋅ L^2 ⋅ ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "𝓔_rms = 𝓔_max/√2 and 𝓔_max = N ⋅ B ⋅ L^2 ⋅ ω.",
+    "conclusion": "𝓔_rms = N ⋅ B ⋅ L^2 ⋅ ω/√2.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

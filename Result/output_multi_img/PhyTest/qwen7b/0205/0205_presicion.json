@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The parallel-plate capacitor has a positive plate with charge +Q, a negative plate with charge -Q, and distance between the plates d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A point charge q is located at the midpoint between the plates.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field within the dielectric medium of the capacitor can be calculated using E = Q / (ε₀ A).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The point charge q is at the midpoint, and the electric fields from both plates will add up vectorially.",
+    "conclusion": "The net electric field at the midpoint is E_net = E_positive + E_negative = 0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force F experienced by a point charge q in an electric field E is given by F = qE.",
+    "conclusion": "Since the net electric field at the midpoint is zero, the force exerted on the point charge q will also be zero: F = q × 0 = 0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between the two plates is U = Q / C, and the electric field intensity between the two plates is E = U / d.",
+    "conclusion": "The electric field force acting on the charge q is F = qE = Qq / Cd.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

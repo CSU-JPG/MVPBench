@@ -1,0 +1,86 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Containers A, B, and C are the sources of liquid flow. The liquid flows downward and interacts with the baffles (angled barriers) that direct the flow. At the bottom, there are two containers labeled D and E.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Container A is yellow, container B is blue, and container C is green. Container D is red, and container E is brown.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "There are angled baffles: gray, cyan, orange, black, green, and purple.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The yellow liquid flows downward and hits the gray baffle.",
+    "conclusion": "The gray baffle directs the yellow liquid toward the orange baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gray baffle directs the yellow liquid toward the orange baffle.",
+    "conclusion": "The orange baffle further directs the yellow liquid toward container D.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The blue liquid flows downward and hits the cyan baffle.",
+    "conclusion": "The cyan baffle directs the blue liquid toward the black baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The cyan baffle directs the blue liquid toward the black baffle.",
+    "conclusion": "The black baffle directs the blue liquid toward container E.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The green liquid flows downward and hits the cyan baffle.",
+    "conclusion": "The cyan baffle directs the green liquid toward the black baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The cyan baffle directs the green liquid toward the black baffle.",
+    "conclusion": "The black baffle directs the green liquid toward container E.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from B and C flows together after hitting the black baffle.",
+    "conclusion": "The mixture of liquid from B and C flows to the left together.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from A changes its flow direction to the right after passing through the brown barrier.",
+    "conclusion": "The liquid from A merges with the mixture of liquid from B and C.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from A merges with the mixture of liquid from B and C.",
+    "conclusion": "All liquids flow to container D, and none reach container E.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

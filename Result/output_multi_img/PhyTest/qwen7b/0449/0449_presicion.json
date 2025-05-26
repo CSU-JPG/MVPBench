@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analyze the behavior of light rays when they pass through the circular light hole and then through the glass brick, considering both the case before and after embedding the glass brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The critical angle θ_c for a material with refractive index n is given by sin(θ_c) = 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = √3",
+    "conclusion": "sin(θ_c) = 1/√3 = √3/3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ_c) = √3/3",
+    "conclusion": "θ_c = arcsin(√3/3)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the incident ray and the normal to the surface of the glass brick is given as 30°.",
+    "conclusion": "The angle of incidence i is 90° - 30° = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "i = 60° and θ_c = arcsin(√3/3) ≈ 35.26°",
+    "conclusion": "Since 60° > arcsin(√3/3), the light ray will undergo total internal reflection within the glass brick.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The minimum angle of incidence i_min is the critical angle θ_c. The maximum angle of incidence i_max is 60°.",
+    "conclusion": "The range of angles is from θ_c to 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The original range of angles of incidence before the glass brick was inserted was from 0° to 30°.",
+    "conclusion": "After inserting the glass brick, the new range of angles of incidence is from arcsin(√3/3) to 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The increase in the range of angles is 60° - 30° = 30°.",
+    "conclusion": "The range of light incident on the central point at the bottom of the light-transmitting hole is increased by 30°.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

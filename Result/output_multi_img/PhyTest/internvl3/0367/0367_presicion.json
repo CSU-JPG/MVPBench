@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from a height H.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The air resistance force is λmg, where λ is a constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force acting on the basketball as it falls is mg - λmg = mg(1 - λ).",
+    "conclusion": "The acceleration during the fall is g(1 - λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the kinematic equation v^2 = u^2 + 2as, where u = 0 (initial velocity), a = g(1 - λ), and s = H.",
+    "conclusion": "v_pre^2 = 2g(1 - λ)H.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_pre^2 = 2g(1 - λ)H.",
+    "conclusion": "The pre-collision velocity v_pre = sqrt(2g(1 - λ)H).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball rebounds to a maximum height h.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force acting on the basketball as it ascends is mg + λmg = mg(1 + λ).",
+    "conclusion": "The deceleration during the ascent is g(1 + λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the kinematic equation v^2 = u^2 + 2as, where v = 0 (final velocity at max height), a = -g(1 + λ), and s = h.",
+    "conclusion": "0 = v_post^2 - 2g(1 + λ)h.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0 = v_post^2 - 2g(1 + λ)h.",
+    "conclusion": "The post-collision velocity v_post = sqrt(2g(1 + λ)h).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio is given by: v_post/v_pre = sqrt(2g(1 + λ)h)/sqrt(2g(1 - λ)H).",
+    "conclusion": "v_post/v_pre = sqrt((1 + λ)h/(1 - λ)H).",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

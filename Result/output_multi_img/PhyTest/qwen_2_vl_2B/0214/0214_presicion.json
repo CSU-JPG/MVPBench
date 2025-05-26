@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The circuit consists of a resistance R1, an electric motor M, and an ammeter A. The switch can be open or closed, and the voltage across the circuit remains unchanged.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The circuit diagram shows a resistance R1 = 20Ω, an electric motor M with internal resistance R2 = 10Ω, an ammeter A, and a switch S.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "When the switch S is open, the ammeter reads I0 = 0.5A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The power consumed by the circuit can be calculated using the formula P = V × I, where V is the voltage and I is the current.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch is open, the ammeter reads I0 = 0.5A, and R1 = 20Ω.",
+    "conclusion": "The voltage across R1 when the switch is open is U = I0 × R1 = 0.5 × 20 = 10V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch is closed, the voltage across the circuit remains unchanged at U = 10V.",
+    "conclusion": "The current through R1 remains I1 = U / R1 = 10 / 20 = 0.5A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal resistance of the electric motor is R2 = 10Ω, and the voltage across the circuit is U = 10V.",
+    "conclusion": "The maximum possible current through the motor is I2 = U / R2 = 10 / 10 = 1A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current through R1 is I1 = 0.5A, and the maximum possible current through the motor is I2 = 1A.",
+    "conclusion": "The total current measured by the ammeter is I < I1 + I2 = 0.5 + 1 = 1.5A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across the circuit is U = 10V, and the total current is I < 1.5A.",
+    "conclusion": "The power consumed by the circuit is P = U × I < 10 × 1.5 = 15W.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

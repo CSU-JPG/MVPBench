@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To ensure all the light emitted from the point light source S can pass through the glass sphere without total internal reflection, we need to determine the maximum distance d from the center O of the sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when light traveling from a denser medium (glass) to a rarer medium (air) strikes the boundary at an angle greater than the critical angle θc.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is given by sin(θc) = 1/n, where n is the refractive index of the glass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light to not undergo TIR, the angle of incidence α must be less than or equal to the critical angle θc.",
+    "conclusion": "Therefore, sin(α) ≤ 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the triangle formed by the light path, the distance d from S to O and the radius R of the sphere: sin(α) = d/R",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For no TIR, d/R ≤ 1/n.",
+    "conclusion": "Rearrange to find d: d ≤ R/n",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The point light source S must be within a distance R/n from the center O of the sphere to ensure that all light can pass through without undergoing total internal reflection.",
+    "conclusion": "The position of the point light source S must satisfy d ≤ R/n relative to the center O of the sphere.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

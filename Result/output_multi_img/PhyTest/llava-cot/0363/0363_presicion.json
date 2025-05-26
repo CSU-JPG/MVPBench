@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The principle of a certain negative ion air purification is shown in the figure. A mixed airflow consisting of air and negatively charged dust particles (considered as small spheres) enters a collector composed of a pair of parallel metal plates. In the collector, the velocity v_{0} of the air and charged particles along the direction of the plates remains constant. Under the action of a uniform electric field, the charged particles hit the metal plates and are collected. It is known that the length of the metal plates is L and the spacing between the plates is d. The effects of gravity and inter-particle interactions are negligible. If air resistance is neglected, and all particles with mass m and charge -α are just completely collected, determine the voltage U_{1} between the two metal plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image illustrates a setup for collecting negatively charged particles using a pair of parallel metal plates. The mixed airflow enters from the left, carrying particles. The air velocity v_0 is constant. The plates have a length L and spacing d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves determining the voltage U_1 needed to ensure that charged particles are completely collected by the metal plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The setup consists of a pair of parallel metal plates with a length L and a spacing d. The mixed airflow enters with particles, and the air velocity v_0 is constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A uniform electric field is applied between the plates.",
+    "conclusion": "The electric field exerts a force F_E = qE on each charged particle, where q is the charge and E is the electric field strength.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particles to be just collected, the electric force must balance the inertial force.",
+    "conclusion": "F_E = ma",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the velocity is constant, a = v_0^2/d.",
+    "conclusion": "F_E = m v_0^2/d",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field strength E is related to the voltage U_1 and plate spacing d.",
+    "conclusion": "E = U_1/d",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equating the electric force to the inertial force: qE = m v_0^2/d.",
+    "conclusion": "q U_1/d = m v_0^2/d",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying gives: q U_1 = m v_0^2.",
+    "conclusion": "U_1 = m v_0^2/q",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

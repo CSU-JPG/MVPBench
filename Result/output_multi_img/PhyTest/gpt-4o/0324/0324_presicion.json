@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the pressure of the gas when the temperature is 600 K, we will analyze the given graphs step by step.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "p-T graph (pressure vs. temperature): This graph shows the relationship between pressure and temperature. The pressure increases linearly with temperature.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "V-T graph (volume vs. temperature): This graph shows the relationship between volume and temperature. The volume also increases linearly with temperature.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the p-T graph: At T = 200 K, p = 0.5 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the p-T graph: At T = 400 K, p = 1.0 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relationship between pressure and temperature is linear.",
+    "conclusion": "We can use the equation of a straight line: p = mT + c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the two points: (T = 200 K, p = 0.5 × 10^5 Pa) and (T = 400 K, p = 1.0 × 10^5 Pa).",
+    "conclusion": "The slope m is given by: m = Δp/ΔT = (1.0 × 10^5 - 0.5 × 10^5) Pa / (400 - 200) K = 2.5 × 10^2 Pa/K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the graph, the line passes through the origin (T = 0 K, p = 0 Pa).",
+    "conclusion": "The y-intercept c = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope m = 2.5 × 10^2 Pa/K and the y-intercept c = 0.",
+    "conclusion": "The equation for the pressure becomes: p = 2.5 × 10^2 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute T = 600 K into the equation p = 2.5 × 10^2 T.",
+    "conclusion": "p = 2.5 × 10^2 × 600 = 1.5 × 10^5 Pa.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

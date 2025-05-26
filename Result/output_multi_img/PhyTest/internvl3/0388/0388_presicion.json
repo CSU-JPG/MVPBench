@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the condition that F_1 must satisfy to make the plank move upward, we need to analyze the forces and friction involved in the system.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A plank of length L = 0.60 m and mass M = 0.40 kg is leaning against a smooth vertical wall. At the lower right of the plank, there is a small block of mass m = 0.80 kg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coefficient of kinetic friction between the block and the plank is mu = 0.20, and the maximum static friction between the block and the plank is equal to the kinetic friction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Take g = 10 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "One person applies a horizontal constant force F_1 to the left on the block, while another person applies a vertical constant force F_2 upward to pull the block.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "On the block: F_1 (horizontal force to the left), F_2 (vertical force upward), mg (weight of the block, downward), f (frictional force between the block and the plank). On the plank: Mg (weight of the plank, downward), Normal force N from the wall (horizontal), Frictional force f (same as on the block but opposite direction).",
+    "conclusion": "Identify the forces acting on the block and the plank.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum static frictional force is given by f_max = mu N. Since the block is just starting to move, the frictional force f is equal to the maximum static frictional force.",
+    "conclusion": "Determine the frictional force f: f = mu N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the block to move upward, the sum of the vertical forces must be greater than zero. Therefore, F_2 - mg - f = ma.",
+    "conclusion": "Apply Newton's second law to the block in the vertical direction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The plank will start moving upward if the horizontal component of the forces causes it to pivot about the point of contact with the ground.",
+    "conclusion": "Apply Newton's second law to the plank in the horizontal direction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force N is related to the horizontal component of F_1 and the frictional force: N = F_1. Since f = mu N, we have f = mu F_1.",
+    "conclusion": "Calculate the normal force N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The plank will start moving upward when the vertical force F_2 is sufficient to overcome the combined weight of the block and the plank, plus the frictional force. Therefore, F_2 > mg + f + Mg.",
+    "conclusion": "Determine the condition for the plank to move upward.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting f = mu F_1: F_2 > mg + mu F_1 + Mg.",
+    "conclusion": "Solve for F_1: F_1 > (F_2 - mg - Mg)/mu.",
+    "judgment": "Reasonable"
+  }

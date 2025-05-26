@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The well has a depth of 8 m, a circular wellhead radius of 0.5 m, and the refractive index of water is n = 4/3. The frog is at the center of the bottom of the well and wants to see the scenery outside the well.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frog can see the scenery outside the well through the water surface only within the cone of light formed by rays that refract at the critical angle C. Beyond this angle, total internal reflection occurs, and the frog cannot see outside.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n_water * sin(C) = n_air * sin(90°), where n_water = 4/3 and n_air = 1.",
+    "conclusion": "sin(C) = 3/4",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(C) = 3/4",
+    "conclusion": "C = arcsin(3/4)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frog is at the center of the bottom of the well. The cone of light forms a circular boundary at the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using trigonometry: tan(C) = radius of the circular boundary at the water surface / depth of the well.",
+    "conclusion": "R = h * tan(C)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = 8 m and C = arcsin(3/4)",
+    "conclusion": "R = 8 * tan(arcsin(3/4))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(arcsin(x)) = x / sqrt(1 - x^2), where x = 3/4",
+    "conclusion": "tan(arcsin(3/4)) = 3/sqrt(7)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R = 8 * 3/sqrt(7)",
+    "conclusion": "R = 24/sqrt(7)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R = 24/sqrt(7)",
+    "conclusion": "R ≈ 9.06 m",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The farthest vertical distance from the wellhead water surface that the frog can see corresponds to the radius R of the circular boundary at the water surface.",
+    "conclusion": "The farthest vertical distance is approximately 9.06 m.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

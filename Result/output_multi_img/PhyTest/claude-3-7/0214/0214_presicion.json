@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Resistance R₁ = 20Ω",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Internal resistance of motor R₂ = 10Ω",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When switch is open, current I₀ = 0.5A",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When switch is closed, voltage across circuit remains unchanged",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Need to find relationship between circuit power P and 15W",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch is open, the motor is disconnected from the circuit. The current only flows through R₁ and the ammeter.",
+    "conclusion": "Using Ohm's Law: U = I₀ × R₁, U = 0.5A × 20Ω = 10V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch is closed, the motor (with its internal resistance) is connected in parallel with R₁.",
+    "conclusion": "The equivalent resistance of the parallel combination is: R_eq = (R₁ × R₂) ÷ (R₁ + R₂) = (20Ω × 10Ω) ÷ (20Ω + 10Ω) = 200Ω ÷ 30Ω ≈ 6.67Ω",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the voltage remains unchanged at 10V",
+    "conclusion": "I_total = U ÷ R_eq = 10V ÷ 6.67Ω = 1.5A",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total power consumed is calculated using the formula P = U × I_total",
+    "conclusion": "P = 10V × 1.5A = 15W",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current through R₁: I₁ = U ÷ R₁ = 10V ÷ 20Ω = 0.5A",
+    "conclusion": "Power in R₁: P₁ = I₁² × R₁ = (0.5A)² × 20Ω = 5W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current through motor: I₂ = U ÷ R₂ = 10V ÷ 10Ω = 1.0A",
+    "conclusion": "Power in motor: P₂ = I₂² × R₂ = (1.0A)² × 10Ω = 10W",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total power is calculated by summing the power in each component: P = P₁ + P₂",
+    "conclusion": "Total power: P = 5W + 10W = 15W",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The calculated total power consumed by the circuit",
+    "conclusion": "The electric power P consumed by the circuit is equal to 15W. Therefore, P = 15W.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

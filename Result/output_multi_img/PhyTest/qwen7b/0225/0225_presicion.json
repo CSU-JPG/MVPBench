@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the power dissipated in the resistor R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The conductor rod MN moves with a velocity v in a magnetic field B perpendicular to its motion.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod MN moves with a velocity v in a magnetic field B perpendicular to its motion.",
+    "conclusion": "The induced electromotive force (emf) in the conductor is given by: E = B * L * v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit consists of the conductor MN, the resistor R, and the rails.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The circuit consists of the conductor MN, the resistor R, and the rails.",
+    "conclusion": "The current I flowing through the circuit can be found using Ohm's law: I = E / (R + r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = B * L * v and I = E / (R + r).",
+    "conclusion": "I = (B * L * v) / (R + r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power P_R dissipated in the resistor is given by: P_R = I^2 * R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = (B * L * v) / (R + r).",
+    "conclusion": "I^2 = ((B * L * v) / (R + r))^2 = (B^2 * L^2 * v^2) / (R + r)^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_R = I^2 * R and I^2 = (B^2 * L^2 * v^2) / (R + r)^2.",
+    "conclusion": "P_R = R * (B^2 * L^2 * v^2) / (R + r)^2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

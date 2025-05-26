@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine which container (E or F) liquid will flow into after passing through the baffles labeled A, B, C, and D, we need to analyze the direction of the liquid flow based on the orientation of the baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle A is oriented horizontally from left to right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle B is oriented diagonally from top-left to bottom-right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle C is oriented vertically from top to bottom.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle D is oriented diagonally from top-right to bottom-left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle A is oriented horizontally from left to right.",
+    "conclusion": "The liquid from A will flow horizontally.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle B is oriented diagonally from top-left to bottom-right.",
+    "conclusion": "The liquid from B will flow diagonally from top-left to bottom-right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle C is oriented vertically from top to bottom.",
+    "conclusion": "The liquid from C will flow vertically.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle D is oriented diagonally from top-right to bottom-left.",
+    "conclusion": "The liquid from D will flow diagonally from top-right to bottom-left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container E has an opening that can receive liquid flowing horizontally or vertically.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Container F has an opening that can receive liquid flowing diagonally.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from A will flow horizontally.",
+    "conclusion": "The liquid from A can enter Container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from C will flow vertically.",
+    "conclusion": "The liquid from C can enter Container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from B will flow diagonally from top-left to bottom-right.",
+    "conclusion": "The liquid from B can enter Container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from D will flow diagonally from top-right to bottom-left.",
+    "conclusion": "The liquid from D can enter Container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from A can enter Container E. The liquid from C can enter Container E. The liquid from B can enter Container F. The liquid from D can enter Container F.",
+    "conclusion": "Liquid will flow into Container E from A and C, and into Container F from B and D.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

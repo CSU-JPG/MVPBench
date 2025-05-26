@@ -1,0 +1,92 @@
+[
+  {
+    "step_type": "image description",
+    "conclusion": "Pressures from A to B: 1.0 × 10⁵ Pa; Pressures from C to D: 0.75 × 10⁵ Pa",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Volumes from A to D: 3 L; Volumes from B to C: 4 L",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The process A → B → C → D → A is a rectangle on the p-V diagram",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "A→B: isobaric expansion (p = 1.0 × 10⁵ Pa, V: 3 L → 4 L)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "B→C: isochoric cooling (V = 4 L, p: 1.0 × 10⁵ Pa → 0.75 × 10⁵ Pa)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "C→D: isobaric compression (p = 0.75 × 10⁵ Pa, V: 4 L → 3 L)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "D→A: isochoric heating (V = 3 L, p: 0.75 × 10⁵ Pa → 1.0 × 10⁵ Pa)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Use the ideal-gas law to relate temperatures: T ∝ pV (at constant nR)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Given: T_A = 27 °C = 300 K",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "T_B = T_A · (V_B/V_A) = 300 K · (4 L / 3 L) = 400 K",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "T_C = T_B · (p_C/p_B) = 400 K · (0.75/1.0) = 300 K",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "T_D = T_A (symmetry of the rectangle) = 300 K",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Compute work W for the full cycle: W is the area of the rectangle",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "W = (p_high – p_low) × ( V_high – V_low ) = (1.0 × 10⁵ Pa – 0.75 × 10⁵ Pa) × (4 L – 3 L) = 25 J",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Positive because the cycle is traversed clockwise, so the gas does net positive work on the surroundings",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Apply the first law for a complete cycle: Over one closed cycle, the internal-energy change ΔU = 0 (state function)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "First-law statement: ΔU = Q – W ⇒ 0 = Q – W ⇒ Q = W",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Q = +25 J (net heat absorbed by the gas in one cycle)",
+    "relevant": "Yes"
+  }
+]

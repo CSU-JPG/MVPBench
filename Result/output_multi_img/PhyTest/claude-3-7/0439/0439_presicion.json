@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to determine if cup A has a higher concentration of sucrose water than cup B. We know that higher sucrose concentration leads to a higher refractive index.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Two identical glasses (A and B) with sucrose water at different concentrations.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Same incident angle θ for both light beams.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Different refraction angles: β₁ > β₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The left glass is labeled '甲' (A) and the right glass is labeled '乙' (B).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n₁sin(θ) = n₂sin(β).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "n₁ is the refractive index of air (approximately 1), n₂ is the refractive index of the sucrose solution, θ is the incident angle, β is the refraction angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n₁sin(θ) = n₂sin(β).",
+    "conclusion": "For Glass A: sin(θ) = n₁sin(β₁).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n₁sin(θ) = n₂sin(β).",
+    "conclusion": "For Glass B: sin(θ) = n₂sin(β₂).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Incident angle θ is the same for both glasses.",
+    "conclusion": "n₁sin(β₁) = n₂sin(β₂).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₁sin(β₁) = n₂sin(β₂).",
+    "conclusion": "n₁/n₂ = sin(β₂)/sin(β₁).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "β₁ > β₂.",
+    "conclusion": "sin(β₁) > sin(β₂).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(β₁) > sin(β₂).",
+    "conclusion": "sin(β₂)/sin(β₁) < 1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₁/n₂ = sin(β₂)/sin(β₁) and sin(β₂)/sin(β₁) < 1.",
+    "conclusion": "n₁/n₂ < 1, thus n₁ < n₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Higher refractive index corresponds to higher concentration of sucrose water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₁ < n₂ and higher refractive index corresponds to higher concentration.",
+    "conclusion": "Glass A has refractive index n₁ and Glass B has refractive index n₂, thus concentration of sucrose water in cup B is higher.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

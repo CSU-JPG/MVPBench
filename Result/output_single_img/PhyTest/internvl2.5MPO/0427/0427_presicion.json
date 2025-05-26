@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The triangle ABC is equilateral with side length L. The light is incident on AB and only the light in the BD area can enter the hemisphere. BD = L/4.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BD = L/4 and AB = L",
+    "conclusion": "The critical angle C is given by sin C = BD/AB = 1/4. Therefore, n = 4.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels from D to O (the center of the hemisphere) and then to C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance DO is the radius of the hemisphere, which is L/2.",
+    "conclusion": "Using the Pythagorean theorem in triangle DOC, DC = sqrt((L/2)^2 + (L/2)^2) = sqrt(L^2/2) = (sqrt(2)L)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light in the medium is v = c/n = c/4.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance traveled in the hemisphere is DO + DC = L/2 + (sqrt(2)L)/2.",
+    "conclusion": "The time t is given by t = (L(1 + sqrt(2))/2)/(c/4) = 2L(1 + sqrt(2))/c.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

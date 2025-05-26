@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to use Snell's Law, which describes the relationship between the angles of incidence and refraction when light passes through the interface of two different media.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The formula for Snell's Law is: n_1 sin θ_1 = n_2 sin θ_2",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "n_1 is the refractive index of the first medium, θ_1 is the angle of incidence in the first medium, n_2 is the refractive index of the second medium, θ_2 is the angle of refraction in the second medium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In this problem: The first medium is water, so n_1 = n_water. The second medium is air, so n_2 = n_air. The angle of incidence in the water is 90° - α (since the laser beam makes an angle α with the water surface). The angle of refraction in the air is α.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the refractive index of water, n_water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n_water sin(90° - α) = n_air sin α",
+    "conclusion": "Since sin(90° - α) = cos α, we can rewrite the equation as: n_water cos α = n_air sin α",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of air is approximately n_air = 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_water cos α = sin α",
+    "conclusion": "Solving for n_water: n_water = sin α / cos α = tan α",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We are given that the angle α must be greater than 41 degrees for the laser beam to be received by the rescuers.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "This means that the critical angle θ_c for total internal reflection must be such that sin θ_c = n_air / n_water.",
+    "conclusion": "For total internal reflection to occur, the angle of incidence must be greater than the critical angle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θ_c is given by: sin θ_c = 1 / n_water",
+    "conclusion": "From the problem, we know that α > 41°. The critical angle θ_c is the angle at which the sine of the angle is equal to the ratio of the refractive indices.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since α = 90° - θ_r (where θ_r is the angle of refraction in the water), and sin α = cos θ_r, we can use the relationship sin θ_c = 1 / n_water and θ_c = 41°",
+    "conclusion": "sin 41° = 1 / n_water",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for n_water: n_water = 1 / sin 41°",
+    "conclusion": "Using the value of sin 41° ≈ 0.656: n_water = 1 / 0.656 ≈ 1.52",
+    "judgment": "Wrong"
+  }]

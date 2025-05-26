@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial state A: $T_A = -73°C = 200$ K (converting to Kelvin)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Process: A → B → C (as shown in the p-V diagram)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Change in internal energy from A to C: $\\Delta U_{A→C} = 200$ J",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "$p$ is in units of $10^5$ Pa",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "$V$ is in units of $10^{-3}$ m$^3$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Standard conditions: 1 mole occupies 22.4 L at 1 atm and 273 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "$N_A = 6.0 \\times 10^{23}$ mol$^{-1}$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: $p_A = 3 \\times 10^5$ Pa, $V_A = 1 \\times 10^{-3}$ m$^3$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: $p_C = 1 \\times 10^5$ Pa, $V_C = 4 \\times 10^{-3}$ m$^3$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at state A: $pV = nRT$",
+    "conclusion": "Amount of gas in moles $n = \\frac{3 \\times 10^5 \\text{ Pa} \\times 1 \\times 10^{-3} \\text{ m}^3}{8.314 \\text{ J/(mol·K)} \\times 200 \\text{ K}} = 0.1804$ mol",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, the change in internal energy depends only on temperature: $\\Delta U = nC_V \\Delta T$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal monatomic gas, $C_V = \\frac{3}{2}R$; For an ideal diatomic gas, $C_V = \\frac{5}{2}R$; For an ideal polyatomic gas, $C_V = 3R$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the Avogadro number $N_A$",
+    "conclusion": "Number of particles = $n \\times N_A = 0.1804 \\text{ mol} \\times 6.0 \\times 10^{23} \\text{ mol}^{-1} = 1.082 \\times 10^{23}$ particles",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using $\\Delta U = nC_V \\Delta T$ for monatomic gas",
+    "conclusion": "$\\Delta T = \\frac{200 \\text{ J}}{0.1804 \\text{ mol} \\times 12.471 \\text{ J/(mol·K)}} = 88.89$ K",
+    "judgment": "Reasonable"
+  }]

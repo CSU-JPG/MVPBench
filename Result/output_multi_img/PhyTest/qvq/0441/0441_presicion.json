@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a semicircular optical fiber with diameter D and refractive index N. A beam of parallel light is injected perpendicular to end face A and emitted from end face B. The task is to find the minimum turning radius R for total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Optical fibers transmit light through total internal reflection, occurring when light travels from a medium with a higher refractive index to one with a lower refractive index, and the angle of incidence exceeds the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The fiber is bent into a semicircle, with light entering at point A, traveling along the semicircular path, and exiting at point B. The cross-section is circular with diameter D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is given by θc = arcsin(1/N) because the fiber is surrounded by vacuum with refractive index 1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light path is along the fiber's core, following a semicircular path with radius R.",
+    "conclusion": "The light path will be curved, and total internal reflection must occur at every point along the fiber.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The central axis of the fiber is turning in a semicircle with radius R. The fiber's radius is D/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The inner surface of the fiber is at a distance R - D/2 from the central axis.",
+    "conclusion": "The angle of incidence at the inner surface should be greater than or equal to the critical angle for total internal reflection.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The condition for total internal reflection is that the angle of incidence θi ≥ θc at every point along the fiber's path.",
+    "conclusion": "The relationship between the bend radius R, the fiber's diameter D, and the critical angle θc needs to be established.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical state of light is when total reflection just happens on the outer surface.",
+    "conclusion": "The relationship is given by sin C = (R - D/2) / (R + D/2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the relationship between critical angle and refractive index sin C = 1/N.",
+    "conclusion": "R = D(N+1) / 2(N-1).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

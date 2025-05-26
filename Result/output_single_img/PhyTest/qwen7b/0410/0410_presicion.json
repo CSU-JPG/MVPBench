@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cube has a side length a, the refractive index of the glass is n = 1.5, and a small bubble is located at the center of the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to cover each face of the cube with a piece of paper so that light cannot pass through the bubble from any direction outside the cube.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light to be blocked from passing through the bubble, it must be reflected or refracted away from the line of sight from any point outside the cube.",
+    "conclusion": "The critical angle for total internal reflection (TIR) occurs when the angle of incidence equals the critical angle θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law: n1 sin θc = n2 sin 90°, where n1 is the refractive index of air (n1 = 1) and n2 is the refractive index of the glass (n2 = 1.5).",
+    "conclusion": "sin θc = 1.5, which is not possible, indicating total internal reflection is not possible for light traveling from air into glass.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The bubble is located at the center of the cube, equidistant from all faces of the cube.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To block light from passing through the bubble, we need to cover each face of the cube such that no light ray can reach the bubble directly or indirectly from any direction outside the cube.",
+    "conclusion": "The minimum area required for each piece of paper is simply the area of one face of the cube.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each face of the cube is a square with side length a.",
+    "conclusion": "The area of one face of the cube is a^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the problem asks for the minimum area of each piece of paper needed to cover each face of the cube.",
+    "conclusion": "The minimum area of each piece of paper is a^2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

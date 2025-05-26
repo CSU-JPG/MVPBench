@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Points A, B, M, and N are all at distance sqrt(2)L from O. A and B are on a horizontal line with O as the midpoint. M and N are on the perpendicular bisector of AB. The x-axis points vertically downward with O as origin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "All points are at distance sqrt(2)L from O, forming a circle with radius sqrt(2)L centered at O.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "O is at (0, 0). A and B are on a horizontal line with O as midpoint and at distance sqrt(2)L from O.",
+    "conclusion": "A is at (-L, 0) and B is at (L, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "M is on the perpendicular bisector above O at distance sqrt(2)L.",
+    "conclusion": "M is at (0, -sqrt(2)L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N is on the perpendicular bisector below O at distance sqrt(2)L.",
+    "conclusion": "N is at (0, sqrt(2)L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Coordinates of M and A are (0, -sqrt(2)L) and (-L, 0) respectively.",
+    "conclusion": "Distance from M to A is Lsqrt(3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Due to symmetry, distance from M to B is Lsqrt(3).",
+    "conclusion": "Distance from M to B is Lsqrt(3).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electric field at M due to charge at A: E_A = kQ/r_MA^2 * r_hat_MA.",
+    "conclusion": "Electric field at M due to charge at A is kQ/(3L^2) * sin(theta).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electric field at M due to charge at B: E_B = kQ/r_MB^2 * r_hat_MB.",
+    "conclusion": "Electric field at M due to charge at B is kQ/(3L^2) * sin(theta).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Due to symmetry, horizontal components of fields cancel out, and vertical components add up.",
+    "conclusion": "Total vertical electric field at M is 2 * kQ/(3L^2) * sqrt(2)/sqrt(3).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electric field at M is E_M = 2 * kQ/(3L^2) * sqrt(2)/sqrt(3).",
+    "conclusion": "E_M = 2sqrt(6)kQ/(9L^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electric force on S₁ with charge Q at point M is F_E = QE_M.",
+    "conclusion": "F_E = 2sqrt(6)kQ^2/(9L^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Figure (c) shows acceleration at point M (x = -sqrt(2)L) is 2g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration at point M is 2g, due to gravity and electric force: a_M = g + F_E/m.",
+    "conclusion": "F_E/m = g.",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,44 @@
+[
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows a straight line passing through the points (t = -2 s, x/t = 0 m/s) and (t = 0 s, x/t = 10 m/s).",
+    "judgment": "Match",
+    "final_answer": "0"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph shows a straight line passing through the points (t = -2 s, x/t = 0 m/s) and (t = 0 s, x/t = 10 m/s).",
+    "conclusion": "The gradient of the line is (10 - 0)/(0 - (-2)) = 5 (m/s)/s.",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gradient of the line is 5 (m/s)/s.",
+    "conclusion": "For t ≥ 0 s, the line obeys x/t = 10 + 5t.",
+    "judgment": "Match",
+    "final_answer": "0"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For t ≥ 0 s, the line obeys x/t = 10 + 5t.",
+    "conclusion": "Multiply by t to obtain the position as a function of time: x = t(10 + 5t) = 10t + 5t².",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = 10t + 5t².",
+    "conclusion": "Differentiate to get the instantaneous speed (velocity magnitude): v = dx/dt = 10 + 10t.",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = dx/dt = 10 + 10t.",
+    "conclusion": "At the end of the 2nd second (t = 2 s): v = 10 + 10(2) = 30 m/s.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

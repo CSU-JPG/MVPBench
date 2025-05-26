@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This question involves Snell's law and the concept of total internal reflection, which creates the viewing cone for divers underwater.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a diver is underwater, they see the above-water scenery confined to a cone with vertex angle α. This is due to the refraction of light at the water-air interface. The boundary of this cone represents the critical angle for total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle α shown in the figure represents the vertex angle of the cone.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle α shown in the figure represents the vertex angle of the cone.",
+    "conclusion": "For a ray of light at the boundary of this cone, it corresponds to the critical angle for total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At the critical angle θc, the refracted angle in air would be 90° (i.e., the refracted ray would travel along the water-air interface).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's law states: n₁ sin θ₁ = n₂ sin θ₂",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Where: n₁ is the refractive index of water, n₂ is the refractive index of air (≈ 1), θ₁ is the angle of incidence in water (critical angle), θ₂ is the angle of refraction in air (90° at critical angle)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law states: n₁ sin θ₁ = n₂ sin θ₂ and θ₂ is 90° at critical angle",
+    "conclusion": "n_water sin θc = n_air sin 90°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_water sin θc = n_air sin 90°",
+    "conclusion": "n_water sin θc = 1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_water sin θc = 1",
+    "conclusion": "n_water = 1/sin θc",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle α shown in the figure represents the vertex angle of the cone.",
+    "conclusion": "The critical angle θc is related to the vertex angle α by θc = α/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_water = 1/sin θc and θc = α/2",
+    "conclusion": "n_water = 1/sin(α/2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The relationship between refractive index and speed of light is: n = c/v",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = c/v and n_water = 1/sin(α/2)",
+    "conclusion": "v = c/n = c/(1/sin(α/2)) = c sin(α/2)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

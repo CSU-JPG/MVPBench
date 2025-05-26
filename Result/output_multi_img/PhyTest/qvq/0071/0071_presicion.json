@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A transformer with two secondary coils is given, and the input current in the primary coil needs to be found.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The primary coil has 100 turns and is connected to a circuit with a voltage of 220V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two appliances are connected to the secondary coils: one rated 6V, 20W, and the other 110V, 60W.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ratio of the primary voltage to the secondary voltage is equal to the ratio of the number of turns in the primary coil to the number of turns in the secondary coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V1 / V2 = N1 / N2",
+    "conclusion": "220V / 6V = 100 / N2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "220V / 6V = 100 / N2",
+    "conclusion": "N2 = (100 * 6V) / 220V = 600 / 220 ≈ 2.727 turns",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In an ideal transformer, the power in the primary equals the sum of the powers in the secondary coils.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1 = P2 + P3",
+    "conclusion": "P1 = 20W + 60W = 80W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1 = 80W and V1 = 220V",
+    "conclusion": "I1 = P1 / V1 = 80W / 220V ≈ 0.3636 A",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

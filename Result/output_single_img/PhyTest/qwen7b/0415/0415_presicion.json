@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the path of the light ray through the semicircular glass brick and determine the refractive index of the glass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semicircular glass brick has a radius R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray enters the glass at point O, which is the center of the semicircle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The incident angle θ_i is given as 30°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the light ray hits the interface (the boundary between air and glass), it undergoes refraction according to Snell's Law: n_1 sin θ_i = n_2 sin θ_r where n_1 is the refractive index of air (n_1 = 1), n_2 is the refractive index of the glass, θ_i is the incident angle (θ_i = 30°), θ_r is the refracted angle.",
+    "conclusion": "1 * sin 30° = n_2 * sin θ_r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 30° = 1/2",
+    "conclusion": "1/2 = n_2 * sin θ_r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray travels inside the semicircular glass brick.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the glass is semicircular, the ray will follow a circular path with radius R.",
+    "conclusion": "The distance traveled by the ray inside the glass can be calculated using the geometry of the semicircle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From Snell's Law: sin θ_r = 1/(2n_2)",
+    "conclusion": "sin θ_r = 1/(2n_2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light ray exits the glass at point B and continues to travel in a straight line until it hits the screen CD.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between the two spots on the screen is given as (√3 + 1)R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from O to B is R (radius of the semicircle).",
+    "conclusion": "The distance from B to the screen is the hypotenuse of a right triangle where one leg is R and the other leg is the distance from B to the screen.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the Pythagorean theorem: (√3 + 1)R = √((R cos θ_r)^2 + (R sin θ_r)^2)",
+    "conclusion": "(√3 + 1)R = R",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the earlier equation: sin θ_r = 1/(2n_2)",
+    "conclusion": "We know that sin θ_r = √3/2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Thus: √3/2 = 1/(2n_2)",
+    "conclusion": "n_2 = 1/(√3/2)",
+    "judgment": "Wrong"
+  }]

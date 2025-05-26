@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The radius of the circular board is r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The depth of the point light source S below the center O is H = sqrt(3)r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the liquid is n = sqrt(2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the liquid is n = sqrt(2).",
+    "conclusion": "sin C = 1/sqrt(2) = sqrt(2)/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin C = sqrt(2)/2.",
+    "conclusion": "The critical angle C is 45 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The depth of the point light source S below the center O is H = sqrt(3)r.",
+    "conclusion": "The distance from the light source to the edge of the board is sqrt(H^2 - r^2) = r*sqrt(2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle C is 45 degrees.",
+    "conclusion": "The angle of incidence at the edge of the board is 90 degrees - C = 45 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from the light source to the edge of the board is r*sqrt(2) and the angle of incidence is 45 degrees.",
+    "conclusion": "h = r*sqrt(2)/tan(45 degrees) = r*sqrt(2).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The depth of the point light source S below the center O is H = sqrt(3)r and the refractive index of the liquid is n = sqrt(2).",
+    "conclusion": "h = (sqrt(3)r - r)/sqrt(2) = ((sqrt(3) - 1)r)/sqrt(2) = ((sqrt(6) - sqrt(2))r)/2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

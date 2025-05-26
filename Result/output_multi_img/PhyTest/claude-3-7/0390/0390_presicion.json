@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A small insulating ball (mass m = 8g = 0.008 kg) slides from height h₁ on rail PA. The ball must have exactly enough energy to just exit at point D (meaning at D, it has zero vertical velocity component).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The path involves: 1. An inclined rail PA (angle θ = 53°) 2. A horizontal rail AB 3. A semicircular track BCD (radius R = 0.5m) 4. An electric field E = 6×10⁶ V/m to the right of BD.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball needs to just fly out at point D, its vertical velocity component should be zero at that point.",
+    "conclusion": "I'll use energy conservation principles to track how the ball's energy changes throughout its path.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the starting point, the ball has only potential energy.",
+    "conclusion": "Initial energy: E₁ = mgh₁",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point A, some potential energy has been converted to kinetic energy.",
+    "conclusion": "Potential energy: E_pot,A = 0 (taking A as our reference height), Kinetic energy: E_kin,A = mgh₁ (from energy conservation), Velocity at A: v_A = √(2gh₁)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since there's no energy loss between A and B (smooth horizontal rail), the energy remains unchanged.",
+    "conclusion": "Energy at B: E_B = E_A = mgh₁, Velocity at B: v_B = v_A = √(2gh₁)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the semicircular path, the ball's motion is affected by gravity (changing potential energy).",
+    "conclusion": "For a ball to just exit at point D, it needs to have enough velocity to complete the semicircular path with zero vertical velocity component at D.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point D, the ball's height is h_D = 2R = 1m above point B.",
+    "conclusion": "For the ball to just make it to D, we need to apply conservation of energy from B to D.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At B: E_B = mgh₁ (all kinetic energy), At D: E_D = mv_D²/2 + mgR·2 (kinetic + potential energy).",
+    "conclusion": "The minimum velocity needed at B for the ball to reach D with zero vertical velocity is: Using centripetal force: mv²/R = mg at the top point, This gives: v_min = √(gR) = √(10 × 0.5) = √5 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From energy conservation: Initial energy at height h₁: E₁ = mgh₁, Energy needed at B: E_B = m·v_min²/2 = m·(gR)/2 = mgR/2.",
+    "conclusion": "Setting these equal: mgh₁ = mv_B²/2 = m(gR)/2 + mv_D²/2 + mg·2R, But v_D = √(gR) because it's the minimum velocity at D for horizontal trajectory.",
+    "judgment": "Reasonable"
+  }]

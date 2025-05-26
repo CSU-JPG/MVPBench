@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two metal rails are placed parallel to each other on the same horizontal plane, separated by a distance of l = 0.6 m. The left and right ends of the rails are connected to lamps L1 and L2 with specifications '3V, 3W' and '6V, 6W' respectively. A conductor rod ab with resistance r = 1 Ω is placed on the rails and is perpendicular to them. A uniform magnetic field with magnetic induction B = 1 T passes vertically through the plane of the rails. When the conductor rod moves to the right at a constant speed under the action of an external force, lamp L1 just lights up normally. The resistance of the rails is negligible. The actual power P2 of the lamp L2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts two metal rails, L1 and L2, placed parallel to each other on a horizontal plane. A conductor rod ab with resistance r = 1 Ω is placed perpendicular to the rails. A uniform magnetic field with B = 1 T passes vertically through the plane of the rails. The left end of the rails is connected to lamp L1, which is specified to have 3V, 3W, and the right end is connected to lamp L2, which is specified to have 6V, 6W.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod ab is moving to the right at a constant speed under the action of an external force.",
+    "conclusion": "The magnetic field B = 1 T induces an electromotive force (EMF) in the conductor rod due to the motion.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The EMF induced in the conductor rod causes a current to flow from L1 to L2 through the rod.",
+    "conclusion": "When the rod moves, the current i is given by the equation i = vB/r, where v is the velocity of the rod, B is the magnetic field, and r is the resistance of the rod.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the rod's resistance r = 1 Ω and assuming v = 1 m/s for calculation purposes.",
+    "conclusion": "The induced current i = 1 A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power P1 at lamp L1 is calculated using the voltage V1 and current i: P1 = V1 * i = 3 V * 1 A.",
+    "conclusion": "P1 = 3 W.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since lamp L1 just lights up normally, the power P1 is equal to the power P2 at lamp L2.",
+    "conclusion": "P2 = 3 W.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

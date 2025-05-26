@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the electromotive force (EMF) induced in the coil, we will apply Faraday's Law of Induction, which states that the induced EMF is equal to the rate of change of the magnetic flux through the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux (Φ) through the coil is given by: Φ = B ⋅ A ⋅ cos(θ) where B is the magnetic field strength, A is the area of the coil, and θ is the angle between the magnetic field and the normal to the coil's plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the plane of the coil is perpendicular to the magnetic field (θ = 0), cos(θ) = 1.",
+    "conclusion": "The area of the coil is A = a².",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the coil is A = a².",
+    "conclusion": "Therefore, the magnetic flux through the coil when the magnetic field is B: Φ = B ⋅ (a²/2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field strength changes from B to 2B in a time interval Δt.",
+    "conclusion": "The initial magnetic flux Φi and final magnetic flux Φf are: Φi = B ⋅ (a²/2), Φf = 2B ⋅ (a²/2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial magnetic flux Φi and final magnetic flux Φf are: Φi = B ⋅ (a²/2), Φf = 2B ⋅ (a²/2).",
+    "conclusion": "The change in magnetic flux ΔΦ is: ΔΦ = Φf - Φi = B ⋅ (a²/2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in magnetic flux ΔΦ is: ΔΦ = B ⋅ (a²/2).",
+    "conclusion": "The rate of change of magnetic flux over time Δt is: ΔΦ/Δt = B ⋅ (a²/2) / Δt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Faraday's Law, the induced EMF (E) is given by: E = n ⋅ ΔΦ/Δt where n is the number of turns in the coil.",
+    "conclusion": "Substituting the rate of change of the magnetic flux: E = n ⋅ B ⋅ (a²/2) / Δt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the rate of change of the magnetic flux: E = n ⋅ B ⋅ (a²/2) / Δt.",
+    "conclusion": "Simplifying the expression, we get: E = n ⋅ B ⋅ a² / (2 ⋅ Δt).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying the expression, we get: E = n ⋅ B ⋅ a² / (2 ⋅ Δt).",
+    "conclusion": "Thus, the electromotive force induced in the coil is: E = n ⋅ B ⋅ a² / (2 ⋅ Δt).",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

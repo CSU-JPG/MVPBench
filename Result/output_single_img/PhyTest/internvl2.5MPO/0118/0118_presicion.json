@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the forces acting on the hemispheres A and B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Between the vertical walls are hemispheres A and B with masses m and 2m respectively.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The line between the two ball centers and the horizontal direction into A is at a 30° angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There is friction between hemisphere A and the left wall, and hemisphere B is smooth.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The maximum static friction is equal to the sliding friction force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Hemisphere A has weight \\( W_A = mg \\), normal force \\( N_A \\) from the wall, frictional force \\( f_A \\) from the wall, and contact force \\( F_{AB} \\) from hemisphere B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Hemisphere B has weight \\( W_B = 2mg \\), normal force \\( N_B \\) from the wall, and contact force \\( F_{BA} \\) from hemisphere A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the line connecting the centers of the hemispheres and the horizontal is 30°.",
+    "conclusion": "The vertical component of the contact force \\( F_{BA} \\) must balance the weight of hemisphere B: \\( F_{BA} \\sin(30°) = 2mg \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_{BA} \\sin(30°) = 2mg",
+    "conclusion": "F_{BA} = 4mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal component of the contact force \\( F_{AB} \\) must balance the normal force \\( N_A \\).",
+    "conclusion": "F_{AB} \\cos(30°) = N_A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_{AB} = 4mg",
+    "conclusion": "N_A = 2\\sqrt{3}mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of the contact force \\( F_{AB} \\) plus the frictional force \\( f_A \\) must balance the weight of hemisphere A.",
+    "conclusion": "F_{AB} \\sin(30°) + f_A = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_{AB} \\sin(30°) + f_A = mg",
+    "conclusion": "f_A = -mg",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force \\( f_A \\) is given by \\( f_A = \\mu N_A \\).",
+    "conclusion": "-mg = \\mu \\cdot 2\\sqrt{3}mg",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-mg = \\mu \\cdot 2\\sqrt{3}mg",
+    "conclusion": "\\mu = \\frac{-1}{2\\sqrt{3}}",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\mu = \\frac{-1}{2\\sqrt{3}}",
+    "conclusion": "\\mu = \\frac{-\\sqrt{3}}{6}",
+    "judgment": "Wrong"
+  }]

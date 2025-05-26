@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the refractive index of the prism and the distance PC using the given conditions.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side length of the square ABCD is a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "M is the midpoint of AB.",
+    "conclusion": "AM = MB = a/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The incident angle at M is 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law: n sin i = sin r, where i is the incident angle and r is the refracted angle.",
+    "conclusion": "The angle of refraction r can be found using n sin 60 degrees = sin r.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident angle i = 60 degrees. Let the refractive index of the prism be n. Then, sin 60 degrees = sqrt(3)/2.",
+    "conclusion": "The angle of refraction r is such that the light ray hits the side BC at point N.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at N is 90 degrees - theta where theta is the angle BNM.",
+    "conclusion": "Since the light undergoes total internal reflection at N, the angle of incidence must be greater than the critical angle theta_c, where theta_c = sin^-1(1/n).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at N is 90 degrees - theta.",
+    "conclusion": "For total internal reflection to occur, theta > theta_c = sin^-1(1/n).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle BNM is such that the light ray reflects off the side BC and then exits the prism.",
+    "conclusion": "The angle of incidence at N is the complement of the angle BNM, and the angle of refraction at M is 60 degrees.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance MC is a/2 (since M is the midpoint of AB).",
+    "conclusion": "The angle of incidence at N is such that the light ray reflects off the side BC and then exits the prism.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at N is 90 degrees - theta, and the angle of refraction at M is 60 degrees.",
+    "conclusion": "The angle of incidence at N is 30 degrees (since the angle of incidence must be such that the light ray reflects off the side BC and then exits the prism).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Therefore, theta = 60 degrees and the angle of incidence at N is 90 degrees - 30 degrees = 60 degrees.",
+    "conclusion": "By Snell's law, n sin 60 degrees = sin 90 degrees, so n * sqrt(3)/2 = 1. Solving for n, we get n = 2/sqrt(3) = 2sqrt(3)/3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance PC is the horizontal distance from P to C.",
+    "conclusion": "Since the angle of incidence at N is 30 degrees and the distance MC = a/2, the distance NC is a tan 30 degrees = a/sqrt(3).",
+    "judgment": "Reasonable"
+  }]

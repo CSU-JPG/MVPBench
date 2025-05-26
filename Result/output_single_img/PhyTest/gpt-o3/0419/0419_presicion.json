@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Prism cross-section: equilateral triangle → apex angle A = 60°",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Incident angle of the red ray at face 1: i₁ = α = 60°",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Refractive index for the red ray: n = √3 (inside prism)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Outside medium: air, n₀ = 1",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell’s law n₀ sin i₁ = n sin r₁",
+    "conclusion": "sin r₁ = (n₀/n) sin i₁ = (1/√3)·sin 60° = (1/√3)·(√3/2) = 1/2 → r₁ = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r₁ + r₂ = A",
+    "conclusion": "r₂ = A – r₁ = 60° – 30° = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell’s law n sin r₂ = n₀ sin i₂′",
+    "conclusion": "sin i₂′ = n sin r₂ = √3·sin 30° = √3·(1/2) = √3/2 → i₂′ = 60°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "δ = i₁ + i₂′ – A",
+    "conclusion": "δ = 60° + 60° – 60° = 60°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The red ray emerges making an angle of 60° with the incident ray entering at point M.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

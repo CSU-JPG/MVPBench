@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Read the co-ordinates of the three states from the p-V diagram (pressure is in 10⁵ Pa, volume in 10⁻³ m³).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A : p₁ = 1.0 × 10⁵ Pa , V₁ = 6.0 × 10⁻³ m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B : p₂ = 2.0 × 10⁵ Pa , V₂ = 6.0 × 10⁻³ m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C : p₃ = 3.0 × 10⁵ Pa , V₃ = 2.0 × 10⁻³ m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Amount of gas n, T₁ is given: 27 °C = 300 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p₁ = 1.0 × 10⁵ Pa, V₁ = 6.0 × 10⁻³ m³, T₁ = 300 K",
+    "conclusion": "n = p₁V₁ / (RT₁) = (1.0 × 10⁵)(6.0 × 10⁻³) / (8.314 × 300) ≈ 0.241 mol",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "It is the same n in every state.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p₂ = 2.0 × 10⁵ Pa, V₂ = 6.0 × 10⁻³ m³, n = 0.241 mol",
+    "conclusion": "T₂ = p₂V₂ / (nR) = (2.0 × 10⁵)(6.0 × 10⁻³)/(0.241·8.314) ≈ 600 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p₃ = 3.0 × 10⁵ Pa, V₃ = 2.0 × 10⁻³ m³, n = 0.241 mol",
+    "conclusion": "T₃ = p₃V₃ / (nR) = (3.0 × 10⁵)(2.0 × 10⁻³)/(0.241·8.314) ≈ 300 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₃ = 300 K, T₁ = 300 K",
+    "conclusion": "Notice T₃ = T₁, so the gas ends with the same internal-energy as it started.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔT = T₃ – T₁ = 0",
+    "conclusion": "Change in internal energy (ideal gas, ΔU = nC_vΔT) ΔU = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Work done by the gas",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment A → B: isochoric (V constant)",
+    "conclusion": "W_AB = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Segment B → C: straight line on p-V plane.",
+    "judgment": "N/A"
+  }]

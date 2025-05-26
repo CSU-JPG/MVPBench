@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, we have three masses: A is 2m, B is 3m, and C is m. They're arranged with A connected to C through a pulley, and A is also connected to B via a spring.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The mass of C is changed to 5m, and we need to find out how much A rises when the system reaches a new equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the initial setup, C is mass m, and it's hanging from a pulley, connected to A which is 2m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A is also connected to B via a spring, and B is on the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Consider the forces acting on each mass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mass A (2m): Gravity: downward force of 2m*g, Tension from the rope connected to C: T, Spring force from the spring connected to B: k*x",
+    "conclusion": "Since A is in equilibrium, the net force on A is zero: T - 2m*g - k*x = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mass C (m): Gravity: m*g downward, Tension from the rope: T upward",
+    "conclusion": "Equilibrium: T - m*g = 0 → T = m*g",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A's equilibrium equation: T = m*g",
+    "conclusion": "m*g - 2m*g - k*x = 0 → -m*g - k*x = 0 → k*x = -m*g",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Assume upward is positive for A and downward for C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For A: T - 2m*g - k*x = 0, For C: T - m*g = 0",
+    "conclusion": "T = m*g",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Plugging into A's equation: T = m*g",
+    "conclusion": "m*g - 2m*g - k*x = 0 → -m*g - k*x = 0 → k*x = -m*g",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Consider the spring is stretched because B is heavier than A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B is on the ground, the spring is stretched downward by (3m*g - 2m*g) = m*g",
+    "conclusion": "The spring force on A is upward with magnitude k*x = m*g",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For A: T - 2m*g + k*x = 0, But T = m*g",
+    "conclusion": "m*g - 2m*g + m*g = 0 → 0 = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When C's mass is changed to 5m, the tension T will change, and the system will adjust to a new equilibrium position.",
+    "judgment": "N/A"
+  }

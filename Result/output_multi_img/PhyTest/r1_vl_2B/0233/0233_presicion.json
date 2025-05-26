@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a single-turn square wire frame placed stationary on a horizontal surface. Half of the wire frame is in a uniform magnetic field perpendicular to the plane of the paper and directed inward. The magnetic field intensity is given as B = 3 + 2t T, and the wire frame remains stationary from t = 0 to t = 5 s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The goal is to find the magnitude and direction of the frictional force acting on the wire frame at the moment t = 2.5 s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field intensity is given as B = 3 + 2t T.",
+    "conclusion": "At t = 2.5 s, the magnetic field intensity B = 3 + 2(2.5) = 8 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field intensity at t = 2.5 s is B = 8 T. According to Faraday's law of electromagnetic induction, the induced electromotive force E = (SΔB)/Δt.",
+    "conclusion": "The magnitude of the induced electromotive force in the loop is E = 0.04 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced electromotive force is E = 0.04 V, and the total resistance of the wire frame is R = 4 Ω.",
+    "conclusion": "The magnitude of the induced current is I = E/R = 0.01 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field intensity at t = 2.5 s is B = 8 T, the induced current is I = 0.01 A, and the side length of the square wire frame is l = 0.2 m.",
+    "conclusion": "The magnitude of the Ampere force is F = BIL = 0.016 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is stationary, and the magnitude of the Ampere force is F = 0.016 N.",
+    "conclusion": "The magnitude of the frictional force is 0.016 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to Lenz's law, the Ampere force on the wire frame is to the left.",
+    "conclusion": "The direction of the frictional force is to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the frictional force is 0.016 N, and its direction is to the right.",
+    "conclusion": "The magnitude of the frictional force acting on the wire frame is 0.016 N, and the direction is to the right.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

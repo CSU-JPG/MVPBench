@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The force F is horizontal while the slope makes an angle θ = 37° with the horizontal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force F is horizontal while the slope makes an angle θ = 37° with the horizontal.",
+    "conclusion": "The components of F are F∥ = F cos θ along the slope and F⊥ = F sin θ perpendicular to the slope.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Along the slope (up-slope taken as +): T – mg sin θ – fA = 0",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The friction is kinetic (impending upward motion) and acts down the plane: fA = μ NA.",
+    "conclusion": "Normal reaction on A: NA = mg cos θ",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "NA = mg cos θ",
+    "conclusion": "T = mg sin θ + μ mg cos θ = mg (sin θ + μ cos θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Normal reaction on B: NB = mg cos θ + F sin θ",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Along the slope: F cos θ – T – mg sin θ – fB = 0 with fB = μ NB acting down the slope.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Insert (2) and (3) in (4)",
+    "conclusion": "F cos θ – [mg(sin θ + μ cos θ)] – mg sin θ – μ[mg cos θ + F sin θ] = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F cos θ – [mg(sin θ + μ cos θ)] – mg sin θ – μ[mg cos θ + F sin θ] = 0",
+    "conclusion": "F(cos θ – μ sin θ) = 2 mg sin θ + 2 μ mg cos θ",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F(cos θ – μ sin θ) = 2 mg sin θ + 2 μ mg cos θ",
+    "conclusion": "F = 2 mg (sin θ + μ cos θ) / (cos θ – μ sin θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "sin 37° = 0.6, cos 37° = 0.8, μ = 0.5",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 37° = 0.6, cos 37° = 0.8, μ = 0.5",
+    "conclusion": "Numerator: sin θ + μ cos θ = 0.6 + 0.5 × 0.8 = 1.0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin 37° = 0.6, cos 37° = 0.8, μ = 0.5",
+    "conclusion": "Denominator: cos θ – μ sin θ = 0.8 – 0.5 × 0.6 = 0.5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Numerator: sin θ + μ cos θ = 1.0, Denominator: cos θ – μ sin θ = 0.5",
+    "conclusion": "F = 2 mg × 1.0 / 0.5 = 4 mg",
+    "judgment": "Match"
+  }]

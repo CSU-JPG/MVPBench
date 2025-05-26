@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, analyze the forces acting on the charged ball when it is between the metal plates, both with and without the applied voltage.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows two vertical parallel metal plates separated by a distance \\( d \\). A charged ball falls vertically between the plates, initially following a trajectory \\( AB \\). When a voltage \\( U \\) is applied, the trajectory changes to \\( BC \\) at an angle of \\( 45^\\circ \\) to the vertical.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, without any voltage applied, the ball moves vertically due to gravity, indicating no electric force is acting on it.",
+    "conclusion": "The gravitational force \\( G \\) acting on the ball is balanced by the electric force \\( F_e \\) when the voltage \\( U \\) is applied.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force is directed horizontally. At the point where the trajectory changes, the horizontal electric force must balance the gravitational force.",
+    "conclusion": "The electric force \\( F_e = G \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric force is given by Coulomb's law: \\( F_e = \\frac{kqU}{d} \\), where \\( k \\) is Coulomb's constant, \\( q \\) is the charge of the ball, and \\( U \\) is the applied voltage.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equating the electric force to the gravitational force: \\( \\frac{kqU}{d} = G \\).",
+    "conclusion": "Solving for \\( q \\), the charge on the ball, we get: \\( q = \\frac{Gd}{kU} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the gravitational force \\( G \\) of the ball is \\( 10 \\text{N} \\), the distance \\( d \\) between the two plates is \\( 0.1 \\text{m} \\), the constant \\( k \\) is \\( 8.99 \\times 10^9 \\text{N} \\cdot \\text{m}^2/\\text{C}^2 \\), and the applied voltage \\( U \\) is \\( 100 \\text{V} \\).",
+    "conclusion": "Calculate the charge amount of the ball: \\( q = \\frac{10 \\times 0.1}{8.99 \\times 10^9 \\times 100} = 1.116 \\times 10^{-12} \\text{C} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The correct formula for the charge is \\( q = \\frac{Gd}{U} \\).",
+    "conclusion": "The amount of charge carried by this small ball is \\( \\frac{Gd}{U} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

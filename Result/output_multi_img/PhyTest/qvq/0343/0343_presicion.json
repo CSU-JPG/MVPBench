@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves an ideal gas changing states, and the temperature in state B needs to be found given that in state A it's 300K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows pressure versus volume with points A, B, C, and D connected in a specific order.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment BC is a hyperbola with the axes as asymptotes.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment BC is a hyperbola with the axes as asymptotes.",
+    "conclusion": "During the process BC, the product of pressure and volume is constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A is at 4 atm and 10 L, and point B is at 4 atm and around 20 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A is at 4 atm and 10 L, and point B is at 4 atm and around 20 L.",
+    "conclusion": "The process from A to B is isobaric.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ideal gas law is PV = nRT and the process from A to B is isobaric.",
+    "conclusion": "P_A * V_A = n * R * T_A and P_B * V_B = n * R * T_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A * V_A = n * R * T_A and P_B * V_B = n * R * T_B.",
+    "conclusion": "(P_A * V_A) / (P_B * V_B) = T_A / T_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(P_A * V_A) / (P_B * V_B) = T_A / T_B and P_A = P_B.",
+    "conclusion": "V_A / V_B = T_A / T_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_A / V_B = T_A / T_B.",
+    "conclusion": "T_B = T_A * (V_B / V_A).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = T_A * (V_B / V_A) and T_A = 300K, V_B = 20L, V_A = 10L.",
+    "conclusion": "T_B = 300K * (20L / 10L) = 600K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from A to B is isobaric and the calculation shows T_B = 600K.",
+    "conclusion": "The temperature in state B is 600 Kelvin.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

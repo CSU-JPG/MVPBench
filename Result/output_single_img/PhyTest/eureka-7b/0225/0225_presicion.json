@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a conductor rod sliding on parallel metal rails in a uniform magnetic field, with a resistor R connected at one end.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows two parallel metal rails connected to a resistor R, with a conductor rod MN placed on the rails and moving to the right under an external force F in a magnetic field B directed vertically downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod is moving with a speed v in a magnetic field B.",
+    "conclusion": "The induced emf in the conductor rod is given by emf = B * v * d, where d is the distance between the rails.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf is shared between the resistor R and the internal resistance r of the conductor rod.",
+    "conclusion": "The current I in the circuit is given by I = (B * v * d) / (R + r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force exerted by the magnetic field on the conductor rod is given by the Lorentz force law.",
+    "conclusion": "The magnetic force F_B on the conductor rod is F_B = (B^2 * v * d^2) / (R + r).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force F_f is given by F_f = μ * mg.",
+    "conclusion": "The frictional force on the conductor rod is F_f = μ * mg.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force on the conductor rod is the difference between the external force F and the sum of the magnetic force and the frictional force.",
+    "conclusion": "Since the rod slides uniformly, F = F_B + F_f = (B^2 * v * d^2) / (R + r) + μ * mg.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power dissipated in the resistor R is given by P_R = I^2 * R.",
+    "conclusion": "The power dissipated in the resistor R is P_R = (B^2 * v^2 * d^2 * R) / (R + r)^2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

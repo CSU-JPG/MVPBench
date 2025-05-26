@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Draw separate free-body diagrams for Object A (hanging mass), Object B (block on the horizontal surface), and Junction O.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Label the tensions: T_A in rope OA, acting upward on A; T_B in rope OB, acting toward O on B; T_P in rope OP, acting along OP, 45° above the horizontal toward P.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A (vertical forces)",
+    "conclusion": "T_A – m_A g = 0  ⇒  T_A = m_A g = 5 kg × 10 m/s² = 50 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object B (horizontal forces)",
+    "conclusion": "T_B = 0 (because the block is at rest and a smooth horizontal surface is implied, so no opposing horizontal force). ⇒ T_B = 0 N",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Junction O (take O as a point where the three tension forces meet). Because O is at rest, the vector sum of the three tensions is zero. Choose horizontal +x rightward, vertical +y upward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Components: T_B acts along +x (right): (T_B, 0); T_A acts along –y (down): (0, –T_A); T_P acts along the 45° rope: (–T_P cos45°, T_P sin45°)",
+    "conclusion": "Set ΣF_x = 0 and ΣF_y = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal: T_B – T_P cos45° = 0",
+    "conclusion": "T_B – T_P cos45° = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical: T_P sin45° – T_A = 0",
+    "conclusion": "T_P sin45° – T_A = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute known T_A and T_B, cos45° = sin45° = √2/2",
+    "conclusion": "(1) 0 – T_P (√2/2) = 0 ⇒ T_P = 0",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute known T_A and T_B, cos45° = sin45° = √2/2",
+    "conclusion": "(2) T_P (√2/2) – 50 = 0 ⇒ T_P = 100/√2 = 50√2 ≈ 71 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Equations (1) and (2) cannot both be true unless we re-examine the assumption for T_B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Because the rope OB is taut, the block must pull on O; therefore there has to be a reaction on B. Even on an ideal smooth surface, the rope transmits tension; so T_B is not zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let T_B be unknown and solve the two simultaneous equations correctly",
+    "conclusion": "Horizontal: T_B = T_P (√2/2) (i)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let T_B be unknown and solve the two simultaneous equations correctly",
+    "conclusion": "Vertical: T_P (√2/2) = T_A = 50 N (ii)",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine which container (D or E) the liquid will flow into after passing through the baffles, we need to analyze the paths of the liquid from points A, B, and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid flows downward from A. It encounters a red baffle that directs it to the left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid flows downward from B. It encounters a green baffle that directs it to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid flows downward from C. It encounters a green baffle that directs it to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid flows downward from A. It encounters a red baffle that directs it to the left.",
+    "conclusion": "The liquid is directed left by the red baffle and flows into container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid flows downward from B. It encounters a green baffle that directs it to the right.",
+    "conclusion": "The liquid is directed right by the green baffle and flows into container D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid flows downward from C. It encounters a green baffle that directs it to the right.",
+    "conclusion": "The liquid is directed right by the green baffle and flows into container D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A flows into container E. Liquid from B and C flows into container D.",
+    "conclusion": "The liquid will flow into container D from B and C, and into container E from A.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

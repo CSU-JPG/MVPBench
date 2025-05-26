@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block C moves with an initial velocity \( v_0 \).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block B is initially at rest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance traveled by block C before the collision is \( s_0 \).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Before the collision, the kinetic energy of block C is \( \frac{1}{2} m v_0^2 \). The work done by friction over distance \( s_0 \) is \( \mu m g s_0 \).",
+    "conclusion": "Using energy conservation: \( \frac{1}{2} m v_1^2 = \frac{1}{2} m v_0^2 - \mu m g s_0 \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using energy conservation: \( \frac{1}{2} m v_1^2 = \frac{1}{2} m v_0^2 - \mu m g s_0 \)",
+    "conclusion": "Solving for \( v_1 \): \( v_1 = \sqrt{v_0^2 - 2 \mu g s_0} \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The collision is perfectly inelastic, so blocks B and C stick together. Initial momentum: \( m v_1 \). Final combined mass: \( 2m \). Final momentum: \( 2m v_2 \).",
+    "conclusion": "Using momentum conservation: \( m v_1 = 2m v_2 \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using momentum conservation: \( m v_1 = 2m v_2 \)",
+    "conclusion": "Solving for \( v_2 \): \( v_2 = \frac{v_1}{2} = \frac{\sqrt{v_0^2 - 2 \mu g s_0}}{2} \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial kinetic energy before the collision: \( \frac{1}{2} m v_1^2 \). Final kinetic energy after the collision: \( \frac{1}{2} (2m) v_2^2 = m \left( \frac{v_1}{2} \right)^2 = \frac{1}{2} m \left( \frac{v_1^2}{4} \right) \).",
+    "conclusion": "Mechanical energy loss \( \Delta E \): \( \Delta E = \frac{1}{2} m v_1^2 - \frac{1}{2} m \left( \frac{v_1^2}{4} \right) \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mechanical energy loss \( \Delta E \): \( \Delta E = \frac{1}{2} m v_1^2 - \frac{1}{2} m \left( \frac{v_1^2}{4} \right) \)",
+    "conclusion": "Simplifying: \( \Delta E = \frac{1}{2} m v_1^2 \left( 1 - \frac{1}{4} \right) = \frac{3}{8} m v_1^2 \)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying: \( \Delta E = \frac{3}{8} m v_1^2 \)",
+    "conclusion": "Substituting \( v_1 \): \( \Delta E = \frac{3}{8} m (v_0^2 - 2 \mu g s_0) \)",
+    "judgment": "Match"
+  }

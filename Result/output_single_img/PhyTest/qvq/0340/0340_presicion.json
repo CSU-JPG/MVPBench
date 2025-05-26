@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process, specifically the ABCDA cycle shown in the diagram. Pressure and volume values at different points are given, and the temperature at state A is T₀.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The task is to find the amount of heat exchanged between the gas and the external environment during this cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle is a rectangular path on the P-V diagram with points A, B, C, and D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From A to B: Isochoric process (constant volume) because the volume doesn't change from V₁ to V₁, but the pressure increases from P₁ to P₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From B to C: Isobaric process (constant pressure) since the pressure remains at P₂ while the volume increases from V₁ to V₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From C to D: Isochoric process where the pressure decreases from P₂ to P₁ while the volume stays at V₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From D back to A: Isobaric process where the pressure remains at P₁ and the volume decreases from V₂ to V₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "First law of thermodynamics: ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, ΔU = nCᵥΔT, where n is the number of moles, and Cᵥ is the molar specific heat capacity at constant volume.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the cycle is ABCDA, the change in internal energy over a complete cycle is zero.",
+    "conclusion": "ΔU = 0, therefore Q = W for the entire cycle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process A to B is isochoric, so work done W = 0.",
+    "conclusion": "Q_AB = ΔU_AB = nCᵥ(T_B - T_A).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the ideal gas law: PV = nRT. At point A: P₁V₁ = nRT₀. At point B: P₂V₁ = nRT_B.",
+    "conclusion": "T_B = (P₂/P₁) * T₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q_AB = nCᵥ(T_B - T_A) and T_B = (P₂/P₁) * T₀.",
+    "conclusion": "Q_AB = nCᵥT₀(P₂/P₁ - 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process B to C is isobaric, work done W = P₂(V₂ - V₁).",
+    "conclusion": "Q_BC = ΔU_BC + W = nC_p(T_C - T_B) + P₂(V₂ - V₁).",
+    "judgment": "Match"
+  }]

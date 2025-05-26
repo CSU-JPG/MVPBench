@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block A is just about to slip on the ground, and Block B is just about to slide down due to the force applied.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block A is placed on a horizontal ground, and block B is pushed by a horizontal force and is in close contact with block A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coefficient of kinetic friction between A and B is μ1, and the coefficient of kinetic friction between A and the ground is μ2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The maximum static friction force is equal to the sliding friction force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block A is in contact with the ground.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A is in contact with the ground.",
+    "conclusion": "The friction force between A and the ground is given by f_A = μ2 ⋅ N_A, where N_A is the normal force exerted by the ground on block A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A experiences a horizontal force F due to block B pushing it.",
+    "conclusion": "This force is equal to the friction force between A and B, which is f_AB = μ1 ⋅ N_B, where N_B is the normal force exerted by block B on block A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block B is in contact with block A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block B is in contact with block A.",
+    "conclusion": "The friction force between B and A is f_AB = μ1 ⋅ N_B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block B experiences a vertical force due to gravity.",
+    "conclusion": "The gravitational force is mg_B, where m_B is the mass of block B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The friction force f_AB acts vertically upwards to prevent block B from sliding down.",
+    "conclusion": "For block B to be just about to slide down, the friction force must equal the gravitational force: μ1 ⋅ N_B = m_B ⋅ g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For block A to be just about to slip, the friction force between A and the ground must equal the force exerted by block B.",
+    "conclusion": "μ2 ⋅ N_A = μ1 ⋅ N_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force N_A is equal to the weight of block A plus the vertical component of the force exerted by block B.",
+    "conclusion": "N_A = m_A ⋅ g + N_B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute N_B = m_B ⋅ g / μ1 from the equilibrium condition for block B into the equation for N_A.",
+    "conclusion": "N_A = m_A ⋅ g + m_B ⋅ g / μ1.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute N_A into the equilibrium condition for block A.",
+    "conclusion": "μ2 ⋅ (m_A ⋅ g + m_B ⋅ g / μ1) = μ1 ⋅ m_B ⋅ g / μ1.",
+    "judgment": "Reasonable"
+  }]

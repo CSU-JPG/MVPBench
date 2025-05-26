@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two metal rails are placed parallel to each other on the same horizontal plane, separated by a distance of l = 0.6 m. The left and right ends of the rails are connected to lamps L1 and L2 with specifications '3V, 3W' and '6V, 6W' respectively. A conductor rod ab with resistance r = 1 Ω is placed on the rails and is perpendicular to them. A uniform magnetic field with magnetic induction B = 1 T passes vertically through the plane of the rails. When the conductor rod moves to the right at a constant speed under the action of an external force, lamp L1 just lights up normally. The resistance of the rails is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to follow a series of steps to find the actual power P2 of lamp L2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Lamp L1 lights up normally.",
+    "conclusion": "The voltage across L1 is equal to its nominal voltage, which is 3V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Power formula P = V_lamp * I and lamp L1 specifications.",
+    "conclusion": "I1 = 1 A for lamp L1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Power formula P = V^2/R and lamp L1 specifications.",
+    "conclusion": "R1 = 3 Ω for lamp L1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the conductor rod ab moves to the right, it generates an electromotive force (EMF) due to the Lorentz force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday's law of electromagnetic induction.",
+    "conclusion": "EMF = B * l * v.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the resistance of the rails is negligible, the entire EMF is dropped across L1 and L2, and a current splits between them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Power formula P = V^2/R and lamp L2 specifications.",
+    "conclusion": "R2 = 6 Ω for lamp L2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total EMF generated and voltage across L1.",
+    "conclusion": "E = 3V + V2 where V2 is the voltage across L2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I1 = 1 A and voltage across L2.",
+    "conclusion": "P2 = V2 * I2 = V2 * (3V / (r + R1 + R2)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across L2 and resistance of L2.",
+    "conclusion": "I2 = V2 / (r + R2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across L2 is 3V.",
+    "conclusion": "P2 = 3V * (3V / (1Ω + 3Ω + 6Ω)) = 1.5W.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

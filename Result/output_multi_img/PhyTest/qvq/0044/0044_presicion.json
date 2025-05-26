@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A computer was used to depict an x-t graph for a vehicle during a certain phase.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph has axes labeled x/t in meters per second on the y-axis and t in seconds on the x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There's a solid line that starts from t equals -2 seconds and goes up to t equals 0, and then a dashed line that continues from there.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The y-axis is x/t, which is position divided by time, and the x-axis is time in seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Speed is typically the magnitude of velocity, which is dx/dt, the derivative of position with respect to time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph is plotting x/t versus t.",
+    "conclusion": "x/t is like average velocity, but not instantaneous velocity.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To find instantaneous speed at t=2 seconds, find the slope of the x-t graph at t=2 seconds.",
+    "conclusion": "The slope would give the instantaneous velocity at that time.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At t=0, x/t = 10 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At t=-2 seconds, x/t is 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From t=-2 to t=0, x/t increases linearly from 0 to 10 m/s.",
+    "conclusion": "The slope of x versus t from t=-2 to t=0 is 5 m/s.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x/t(t) = m*t + c, where m is the slope and c is the y-intercept.",
+    "conclusion": "m = 5 m/s², so x/t(t) = 5*t + 10 for t >= -2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity at the end of the 2nd second is v = v_0 + a * t.",
+    "conclusion": "v = 10 + 10 * 2 = 30 m/s.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

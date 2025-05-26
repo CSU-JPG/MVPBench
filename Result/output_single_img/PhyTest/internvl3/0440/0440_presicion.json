@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wedge has a top angle of 30°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light source S is perpendicular to one side of the wedge.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refraction angle is 45°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When light enters the glass from the air, it refracts according to Snell's Law: n1 sin θ1 = n2 sin θ2.",
+    "conclusion": "n1 is the refractive index of air (approximately 1), θ1 is the angle of incidence (90° - 45° = 45°), n2 is the refractive index of glass, and θ2 is the angle of refraction (45°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: 1 * sin 45° = n2 * sin 45°.",
+    "conclusion": "This simplifies to n2 = 1, which is not possible for glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Typically, glass has a refractive index greater than 1, so let's assume a typical value for glass, n2 ≈ 1.5.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels at an angle of 45° inside the glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Due to the geometry of the wedge, the light will reflect multiple times before exiting.",
+    "conclusion": "The light travels in a zigzag pattern inside the glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective path length can be calculated by considering the geometry and the angle of refraction.",
+    "conclusion": "The ratio of the length of the light-emitting part on the edge to the length of the edge depends on the number of reflections and the geometry.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a 30° wedge, the light will exit after a certain number of reflections, depending on the exact dimensions and refractive index.",
+    "conclusion": "The ratio can be approximated using geometric considerations.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a 30° wedge and a 45° refraction angle, the ratio often simplifies to a trigonometric function of the angles involved.",
+    "conclusion": "The ratio of the length of the light-emitting part on the edge to the length of the edge is approximately 1/√3 or about 0.577.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

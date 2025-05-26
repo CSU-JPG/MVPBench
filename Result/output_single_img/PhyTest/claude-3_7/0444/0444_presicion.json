@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a semi-cylindrical transparent brick with refractive index n and radius r. The laser beam initially hits point A and moves down at constant speed V along AC. We need to find when the light emerges from the arc surface ABC. The propagation time of light within the brick is ignored.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The laser beam enters perpendicular to AC at point A and moves towards point C along the AC direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The beam enters perpendicular to AC at some point, then refracts when it hits the curved surface.",
+    "conclusion": "For a ray entering at position y from O, we need to determine where it hits the curved surface and when it emerges from the curved surface.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Set up a coordinate system with the origin at O, y-axis along OA (upward), and x-axis perpendicular to AC (rightward). So A is at (0,r) and C is at (0,-r).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a ray entering at position (0,y), it travels horizontally in the +x direction.",
+    "conclusion": "It hits the semicircle at point (x1,y) where x1 = sqrt(r^2-y^2) from the equation of the circle x^2+y^2=r^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the point (x1,y), apply Snell's Law. The normal to the surface at this point is along the radial direction, pointing from O to (x1,y).",
+    "conclusion": "The angle of incidence θi is θi = arccos(x1/r) = arccos(sqrt(r^2-y^2)/r). Using Snell's Law: n sin(θi) = sin(θr), where θr is the angle of refraction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since we're ignoring the propagation time inside the brick, the ray emerges from the curved surface at the same time it enters the flat surface.",
+    "conclusion": "The laser beam reaches position y at time t = (r-y)/V because it starts at A (position y=r) and moves downward at speed V.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical condition occurs when the refracted ray is tangent to the curved surface, which happens when θr = 90°.",
+    "conclusion": "From Snell's Law: n sin(θi) = sin(90°) = 1, so sin(θi) = 1/n, which means θi = arcsin(1/n).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We know that θi = arccos(sqrt(r^2-y^2)/r).",
+    "conclusion": "arccos(sqrt(r^2-y^2)/r) = arcsin(1/n). Since arccos(x) = arcsin(sqrt(1-x^2)) for x ≥ 0, arcsin(|y|/r) = arcsin(1/n). Therefore, |y|/r = 1/n, or |y| = r/n.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since we're moving from A toward C (downward), y is positive above O and negative below O.",
+    "conclusion": "Therefore y = -r/n (this is below O).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time when the beam reaches this position is t = (r-(-r/n))/V.",
+    "conclusion": "t = r(1+1/n)/V = r(n+1)/(nV).",
+    "judgment": "Wrong"
+  }]

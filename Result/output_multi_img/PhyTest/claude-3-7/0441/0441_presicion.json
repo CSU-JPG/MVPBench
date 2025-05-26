@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An optical fiber with circular cross-section (diameter D) is bent into a semicircle. The refractive index inside the fiber is N. Outside the fiber is vacuum (n = 1). Light enters perpendicular to face A and exits from face B. We need to find the minimum radius r of the central axis that ensures total internal reflection.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection to occur at the boundary between the fiber and vacuum, the angle of incidence must exceed the critical angle θc.",
+    "conclusion": "The critical angle is given by: sinθc = 1/N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Light rays travel in straight lines inside the fiber until they hit the boundary. The incident angle at the boundary varies based on the position. The smallest incident angle occurs at the outermost part of the bend.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Looking at the diagram with point C, the critical case happens when a light ray hits the outer boundary at exactly the critical angle θc.",
+    "conclusion": "The angle at the center corresponds to the angle of incidence.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the triangle formed in the second figure: The hypotenuse is from the center to point C. This distance equals r + D/2 (radius to centerline plus half the diameter). The adjacent side is r (radius to centerline).",
+    "conclusion": "Using trigonometry: cosθ = r/(r + D/2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We need the incident angle to be greater than or equal to the critical angle: θ ≥ θc.",
+    "conclusion": "cosθ ≤ cosθc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cosθc = sqrt(1 - sin²θc) = sqrt(1 - 1/N²) = sqrt(N²-1)/N.",
+    "conclusion": "We need: r/(r + D/2) ≤ sqrt(N²-1)/N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for r: r ≤ sqrt(N²-1)/N * (r + D/2).",
+    "conclusion": "r ≤ sqrt(N²-1)/N * r + sqrt(N²-1)/N * D/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r - sqrt(N²-1)/N * r ≤ sqrt(N²-1)/N * D/2.",
+    "conclusion": "r * (1 - sqrt(N²-1)/N) ≤ sqrt(N²-1)/N * D/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r * (N - sqrt(N²-1))/N ≤ sqrt(N²-1)/N * D/2.",
+    "conclusion": "r ≥ sqrt(N²-1) * D/2 / (N - sqrt(N²-1)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We can simplify by multiplying both numerator and denominator by (N + √(N²-1)).",
+    "conclusion": "r ≥ sqrt(N²-1) * D/2 * (N + sqrt(N²-1)) / (N² - (N²-1)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r ≥ sqrt(N²-1) * D/2 * (N + sqrt(N²-1)) / 1.",
+    "conclusion": "r ≥ N² * D / (2 * sqrt(N²-1)).",
+    "judgment": "Wrong"
+  }]

@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "To solve the problem, we need to determine the instantaneous value of the induced current and the average value of the induced electromotive force (EMF) when the wire frame rotates through an angle of 60°.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The induced EMF in a rotating coil in a magnetic field is given by: \\( \\mathcal{E} = B \\cdot A \\cdot \\omega \\cdot \\sin(\\theta) \\), where \\( A \\) is the area of the coil, \\( \\omega \\) is the angular velocity, and \\( \\theta \\) is the angle of rotation.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For the given problem: The area of the coil \\( A = S \\), the magnetic field \\( B \\), the angular velocity \\( \\omega \\), and the angle of rotation \\( \\theta = 60^\\circ \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute the values into the formula: \\( \\mathcal{E} = B \\cdot S \\cdot \\omega \\cdot \\sin(60^\\circ) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since \\( \\sin(60^\\circ) = \\frac{\\sqrt{3}}{2} \\), we get: \\( \\mathcal{E} = B \\cdot S \\cdot \\omega \\cdot \\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}}{2} B S \\omega \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The induced current \\( I \\) is given by Ohm's law: \\( I = \\frac{\\mathcal{E}}{R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute the expression for \\( \\mathcal{E} \\): \\( I = \\frac{\\frac{\\sqrt{3}}{2} B S \\omega}{R} = \\frac{\\sqrt{3}}{2} \\frac{B S \\omega}{R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The average value of the induced EMF over one complete cycle is given by: \\( \\langle \\mathcal{E} \\rangle = \\frac{1}{T} \\int_0^T \\mathcal{E}(t) \\, dt \\), where \\( T \\) is the period of the rotation.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The period \\( T \\) is given by: \\( T = \\frac{2\\pi}{\\omega} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The induced EMF as a function of time is: \\( \\mathcal{E}(t) = B \\cdot S \\cdot \\omega \\cdot \\sin(\\omega t) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The average value is: \\( \\langle \\mathcal{E} \\rangle = \\frac{1}{\\frac{2\\pi}{\\omega}} \\int_0^{\\frac{2\\pi}{\\omega}} B \\cdot S \\cdot \\omega \\cdot \\sin(\\omega t) \\, dt \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "\\( \\langle \\mathcal{E} \\rangle = \\frac{\\omega}{2\\pi} \\int_0^{\\frac{2\\pi}{\\omega}} B \\cdot S \\cdot \\omega \\cdot \\sin(\\omega t) \\, dt \\).",
+    "relevant": "Yes"
+  }]

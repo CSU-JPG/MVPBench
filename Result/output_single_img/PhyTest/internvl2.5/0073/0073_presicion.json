@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The working principle of the electromagnetic railgun involves a projectile moving freely between two parallel rails, maintaining good contact with the rails. Current flows in from one rail, passes through the conductive projectile, and flows back through the other rail. The rail current generates a magnetic field perpendicular to the plane of the rails at the projectile, propelling it at high speed due to the Lorentz force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Xiao Ming purchased a railgun model with a rail length of 0.5 m, a parallel rail spacing of 0.02 m, a projectile mass of 0.02 kg, a rail current of 10 A, and a magnetic field strength of 1 T. All resistances are neglected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = 10 A, L = 0.5 m, B = 1 T",
+    "conclusion": "The Lorentz force F acting on the projectile is calculated as F = I * L * B = 10 A * 0.5 m * 1 T = 5 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 5 N, m = 0.02 kg",
+    "conclusion": "Using Newton's second law, the acceleration a of the projectile is calculated as a = F / m = 5 N / 0.02 kg = 250 m/s^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The velocity v of the projectile can be found using the kinematic equation v = a * t, where t is the time taken to travel the length of the rail.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = 0.02 m, a = 250 m/s^2",
+    "conclusion": "The time t is calculated using the equation d = 0.5 * a * t^2, resulting in t^2 = 0.02 / 125 = 0.00016, and t = sqrt(0.00016) = 0.004 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a = 250 m/s^2, t = 0.004 s",
+    "conclusion": "The velocity v of the projectile is calculated as v = a * t = 250 m/s^2 * 0.004 s = 1 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 5 N, v = 1 m/s",
+    "conclusion": "The power P of the electromagnetic railgun is calculated as P = F * v = 5 N * 1 m/s = 5 W.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

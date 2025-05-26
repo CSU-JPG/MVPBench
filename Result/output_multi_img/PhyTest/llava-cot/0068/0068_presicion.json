@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The number of turns of a circular coil is N=200, the area of the coil is S=1m^2, the resistance of the coil is r=10Ω, and the coil is connected to an external resistor with a resistance of R=50Ω. The coil is placed in a uniform magnetic field perpendicular to the plane of the coil and directed inward. The variation of the magnetic induction over time is shown in Figure B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a circular coil with N = 200 turns, area S = 1 m^2, and resistance r = 10 Ω. The coil is connected in series with an external resistor R = 50 Ω. The coil is placed in a uniform magnetic field, and the variation of the magnetic induction over time is shown in Figure B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The magnetic induction B varies over time as shown in Figure B. At t = 4 s, B changes from 0.2 T to 0.4 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic induction B changes from 0.2 T to 0.4 T.",
+    "conclusion": "The change in magnetic induction ΔB is 0.4 T - 0.2 T = 0.2 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N = 200, S = 1 m^2, ΔB = 0.2 T.",
+    "conclusion": "The induced EMF ΔE is given by N × S × ΔB = 200 × 1 × 0.2 = 40 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = 10 Ω, R = 50 Ω.",
+    "conclusion": "The total resistance R_total in the circuit is r + R = 10 Ω + 50 Ω = 60 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔE = 40 V, R_total = 60 Ω.",
+    "conclusion": "The maximum power P consumed by the resistor R is calculated using the power formula: P = (ΔE)^2 / R_total = (40)^2 / 60 = 1600 / 60 = 26.67 W.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum power consumed by the resistor R is 26.67 W.",
+    "conclusion": "The maximum power consumed by R is 26.67 W.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

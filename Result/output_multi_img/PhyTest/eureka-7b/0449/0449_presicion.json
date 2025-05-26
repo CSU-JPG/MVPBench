@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the range of light incident on the central point at the bottom of the light-transmitting hole after the glass brick is embedded. We will use Snell's law and trigonometry to find the angles of incidence and refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the glass brick is \\( n = \\sqrt{3} \\).",
+    "conclusion": "The critical angle \\( \\theta_c \\) is given by: \\(\\sin \\theta_c = \\frac{1}{n}\\). Substituting \\( n = \\sqrt{3} \\): \\(\\sin \\theta_c = \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin \\theta_c = \\frac{\\sqrt{3}}{3}\\).",
+    "conclusion": "The critical angle \\( \\theta_c \\) is: \\(\\theta_c = \\sin^{-1}\\left(\\frac{\\sqrt{3}}{3}\\right)\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the figure, the light ray just reaches the edge of the light hole at an angle of \\( 30^\\circ \\) with the normal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law at the first interface (air to glass): \\(n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2\\), where \\( n_1 = 1 \\) (index of air), \\( n_2 = \\sqrt{3} \\) (index of glass), and \\( \\theta_2 = 30^\\circ \\).",
+    "conclusion": "Solving for \\( \\theta_1 \\): \\(\\sin \\theta_1 = n_2 \\sin \\theta_2 = \\sqrt{3} \\sin 30^\\circ = \\sqrt{3} \\cdot \\frac{1}{2} = \\frac{\\sqrt{3}}{2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin \\theta_1 = \\frac{\\sqrt{3}}{2}\\).",
+    "conclusion": "Therefore, \\(\\theta_1 = \\sin^{-1}\\left(\\frac{\\sqrt{3}}{2}\\right) = 60^\\circ\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray just reaches the edge of the light hole at an angle of \\( 30^\\circ \\) with the normal. The angle of incidence before the glass brick is embedded is \\( 60^\\circ \\), and the angle of incidence after the glass brick is embedded is \\( 30^\\circ \\).",
+    "conclusion": "The range of light incident on the central point at the bottom of the light-transmitting hole is: \\(\\Delta i = 60^\\circ - 30^\\circ = 30^\\circ\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident angle is larger than before embedding the glass brick. \\(2\\times(60^\\circ-30^\\circ)=60^\\circ\\).",
+    "conclusion": "Therefore, the range of incident light is \\(60^\\circ\\) larger than that before embedding the glass brick.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

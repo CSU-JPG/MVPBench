@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the time at which the laser beam emerges from the arc surface ABC of the semi-cylindrical transparent brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam will emerge from the arc surface when it strikes the surface at the critical angle for total internal reflection.",
+    "conclusion": "The critical angle \\(\\theta_c\\) is given by \\(\\sin \\theta_c = \\frac{1}{n}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident angle \\(\\theta\\) is related to the vertical displacement \\(R\\) of the laser beam by the geometry of the cylinder: \\(R = r \\sin(\\theta)\\).",
+    "conclusion": "For the beam to refract out at the critical angle, set \\(\\theta = \\theta_c\\), thus \\(R = r \\sin(\\theta_c)\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical distance \\(R\\) that the laser beam travels is \\(r \\sin(\\theta_c)\\).",
+    "conclusion": "The laser beam travels with a uniform speed \\(v\\) along the AC direction.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time \\(t\\) taken for the beam to travel this distance is given by \\(t = \\frac{R}{v}\\).",
+    "conclusion": "Substituting \\(R = r \\sin(\\theta_c)\\), we get \\(t = \\frac{r \\sin(\\theta_c)}{v}\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using \\(\\sin(\\theta_c) = \\frac{1}{n}\\), the time \\(t\\) becomes: \\(t = \\frac{r}{v} \\cdot \\frac{1}{n}\\).",
+    "conclusion": "Simplifying, we have: \\(t = \\frac{r}{nv}\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Considering the critical angle and the geometric properties of the cylinder.",
+    "conclusion": "The moment when the light emerges from the arc surface ABC is \\(\\frac{rn}{v \\sqrt{n^2 - 1}}\\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

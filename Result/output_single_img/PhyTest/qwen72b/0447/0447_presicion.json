@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the behavior of the laser beam as it passes through the semicircular brick and determine the refractive indices for the two monochromatic lights (red and green).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semicircular brick has a radius R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The laser beam is initially injected perpendicularly at the center O of the diameter MN.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "As the beam shifts to the left, it hits the semicircle surface at some point and gets refracted.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the beam shifts to the left, it hits the semicircle surface at some point and gets refracted.",
+    "conclusion": "If the angle of incidence exceeds the critical angle, total internal reflection occurs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem states that only monochromatic light is emitted, indicating that the light is refracted and not totally internally reflected.",
+    "conclusion": "The angle between the emitted light and the incident direction is given as 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the emitted light and the incident direction is given as 30 degrees.",
+    "conclusion": "The angle of refraction θ_r is 30 degrees relative to the normal at the point of incidence on the semicircle surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's law relates the angles of incidence and refraction to the refractive indices of the media: n_1 sin θ_i = n_2 sin θ_r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Here, n_1 is the refractive index of air (approximately 1), n_2 is the refractive index of the transparent material, θ_i is the angle of incidence, and θ_r is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The beam is initially perpendicular and then shifts.",
+    "conclusion": "The angle of incidence θ_i can be determined using the geometry of the semicircle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assume the beam shifts such that the angle of incidence is complementary to the angle of refraction.",
+    "conclusion": "θ_i = 90° - θ_r = 90° - 30° = 60°",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the known values into Snell's law: 1 · sin 60° = n_2 · sin 30°.",
+    "conclusion": "Using the values of sine functions: sin 60° = √3/2, sin 30° = 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 · √3/2 = n_2 · 1/2",
+    "conclusion": "Solving for n_2: n_2 = √3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the transparent material for both monochromatic lights (red and green) is √3.",
+    "conclusion": "final_answer: 0",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

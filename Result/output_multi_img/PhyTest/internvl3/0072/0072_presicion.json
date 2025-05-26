@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The radar emits a radio wave pulse lasting 1 μs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The interval between two emissions is 100 μs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The figure shows that ab = bc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ab = bc",
+    "conclusion": "The time taken for the radar pulse to reach the obstacle and return is split equally between ab and bc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ab = bc and interval between emissions is 100 μs",
+    "conclusion": "The total time for a round trip (emission to reflection and back) is ab + bc = 2 × ab.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Interval between emissions is 100 μs and ab = bc",
+    "conclusion": "The round-trip time is 100 μs.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Round-trip time is 100 μs",
+    "conclusion": "The one-way time (from radar to obstacle) is half of the round-trip time: One-way time = 100 μs / 2 = 50 μs.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "One-way time is 50 μs",
+    "conclusion": "50 μs = 50 × 10^-6 s = 5 × 10^-5 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light c = 3.0 × 10^8 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Speed of light c = 3.0 × 10^8 m/s and one-way time is 5 × 10^-5 s",
+    "conclusion": "Distance d = c × one-way time = 3.0 × 10^8 m/s × 5 × 10^-5 s = 1.5 × 10^4 m = 15 km.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

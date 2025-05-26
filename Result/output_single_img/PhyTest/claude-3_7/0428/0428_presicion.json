@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This is a problem about Snell's law and the critical angle for total internal reflection. The diver is underwater and sending a laser beam upward at an angle α with the water surface. We're told that the laser beam only reaches the shore rescuers when α > 41°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When light passes from a medium with higher refractive index (water) to one with lower refractive index (air), there exists a critical angle. If the angle of incidence is less than this critical angle, some light is refracted out. If it's greater than or equal to the critical angle, total internal reflection occurs, and no light escapes the water.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let's define our variables: n₁ = refractive index of water (unknown), n₂ = refractive index of air (= 1.00), α = angle between laser beam and water surface (incident angle), θₜ = angle of refraction in air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam only reaches shore when α > 41°.",
+    "conclusion": "41° is the critical angle for total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the critical angle, the refracted ray travels along the boundary (water-air interface).",
+    "conclusion": "θₜ = 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using Snell's law: n₁sin(θ₁) = n₂sin(θ₂).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the critical angle: n₁sin(αₑ) = n₂sin(90°).",
+    "conclusion": "n₁sin(41°) = 1.00.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₁sin(41°) = 1.00.",
+    "conclusion": "n₁ = 1.00/sin(41°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₁ = 1.00/sin(41°).",
+    "conclusion": "n₁ = 1.00/0.6561.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₁ = 1.00/0.6561.",
+    "conclusion": "n₁ ≈ 1.524.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

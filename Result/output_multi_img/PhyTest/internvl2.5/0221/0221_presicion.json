@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the potential difference U_{ab} between the ends of the conductor rod ab, we need to calculate the induced electromotive force (emf) in the rod due to its motion in the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The conductor rod ab of length 4L rotates with angular velocity ω. The distance from point a to the axis O is negligible, so we can assume a is at the axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod ab of length 4L rotates with angular velocity ω.",
+    "conclusion": "At any point along the rod, the linear velocity v is given by v = ω · r, where r is the distance from the axis of rotation to the point on the rod.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod is rotating, so different parts of the rod have different linear velocities.",
+    "conclusion": "We need to integrate over the length of the rod to find the total induced emf.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider an infinitesimal element dr at a distance r from the axis. The linear velocity of this element is v = ωr.",
+    "conclusion": "The emf induced in an infinitesimal length dr is given by dE = B · v · dr.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting v = ωr, we get dE = B · (ωr) · dr = Bωr dr.",
+    "conclusion": "Integrate dE over the entire length of the rod from r = 0 to r = 4L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrate dE = Bωr dr from r = 0 to r = 4L.",
+    "conclusion": "E = ∫(0 to 4L) Bωr dr = Bω [r^2/2] from 0 to 4L = Bω (16L^2/2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = Bω (16L^2/2).",
+    "conclusion": "E = Bω · 8L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference U_{ab} is equivalent to the induced emf E.",
+    "conclusion": "U_{ab} = 8BωL^2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

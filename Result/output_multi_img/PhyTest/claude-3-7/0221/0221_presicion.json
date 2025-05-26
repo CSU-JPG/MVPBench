@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Length of conductor rod ab = 4L",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Uniform magnetic field with induction intensity B",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod rotates at constant angular velocity ω around axis through point O",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Distance between a and O is negligibly small",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod rotates in a plane perpendicular to the magnetic field",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod rotates in a magnetic field, which will induce an EMF due to the motion of charges in the conductor through the magnetic field.",
+    "conclusion": "The potential difference U_{ab} will be determined by this induced EMF.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The EMF induced in a conductor moving through a magnetic field is given by: ε = ∫ (v × B) · dl",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "v is the velocity of each point on the conductor, B is the magnetic field, dl is an infinitesimal length element along the conductor",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since point a is very close to O, we can consider the rod as rotating with one end (a) at the axis of rotation.",
+    "conclusion": "For a point at distance r from O, the tangential velocity is v = ωr.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an infinitesimal segment dr at position r from O: Velocity: v = ωr",
+    "conclusion": "Contribution to EMF: dU = B · ωr · dr (since v, B, and dr are perpendicular)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrating from r = 0 (point a) to r = 4L (point b): U_{ab} = ∫_0^{4L} B · ωr · dr",
+    "conclusion": "U_{ab} = B · ω ∫_0^{4L} r · dr",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_{ab} = B · ω ∫_0^{4L} r · dr",
+    "conclusion": "U_{ab} = B · ω [r^2/2]_0^{4L}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_{ab} = B · ω [r^2/2]_0^{4L}",
+    "conclusion": "U_{ab} = B · ω ((4L)^2/2 - 0^2/2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_{ab} = B · ω ((4L)^2/2 - 0^2/2)",
+    "conclusion": "U_{ab} = B · ω · 16L^2/2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_{ab} = B · ω · 16L^2/2",
+    "conclusion": "U_{ab} = 8 B ω L^2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

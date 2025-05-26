@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to find the refractive index of the transparent material for the two kinds of monochromatic light (red and green) when the laser beam is injected into the semicircular brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When the laser beam shifts to the left from point O, the angle between the emitted light and the incident direction is 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the emitted light and the incident direction is 30 degrees.",
+    "conclusion": "The angle of incidence (θ1) is related to this 30-degree angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semicircle has a radius R, and the laser is injected at a distance of R/2 from the center.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The semicircle has a radius R, and the laser is injected at a distance of R/2 from the center.",
+    "conclusion": "Using trigonometric relationships, the angle of incidence (θ1) can be found using the geometry of the semicircle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using trigonometric relationships, the angle of incidence (θ1) can be found using the geometry of the semicircle.",
+    "conclusion": "sin(θ1) = 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ1) = 1/2",
+    "conclusion": "θ1 = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n1 sin(θ1) = n2 sin(θ2), where n1 is the refractive index of the incident medium (air: n1 = 1), n2 is the refractive index of the transparent material, θ1 is the angle of incidence (30 degrees), and θ2 is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The emitted light is at an angle of 30 degrees relative to the incident direction.",
+    "conclusion": "θ2 = 60°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 · sin(30°) = n2 · sin(60°)",
+    "conclusion": "n2 = 1/√3 = √3/3",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of red light is smaller than that of green light, and the semi-circular surface just refracts red light.",
+    "conclusion": "n_red = √3, n_green = 2",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

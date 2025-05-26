@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Inner radius R, Outer radius 2R, Angle of incidence i = 45°",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray enters at point A and grazes the inner surface at point B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray grazes the inner surface at point B.",
+    "conclusion": "At point B, the angle between the refracted ray inside the sphere and the normal is 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Triangle OAB is a right triangle with OB = R and OA = 2R.",
+    "conclusion": "Triangle OAB forms a 45-45-90 triangle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Triangle OAB is a 45-45-90 triangle.",
+    "conclusion": "The angle made by the refracted ray inside the sphere with the normal r can be calculated: sin(r) = R/2R = 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(r) = 1/2",
+    "conclusion": "r = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n1 sin(i) = n2 sin(r)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 1 (refractive index of vacuum), i = 45°, r = 30°",
+    "conclusion": "sin(45°) = √2/2 and sin(30°) = 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 * √2/2 = n2 * 1/2",
+    "conclusion": "√2/2 = n2/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "√2/2 = n2/2",
+    "conclusion": "√2 = n2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

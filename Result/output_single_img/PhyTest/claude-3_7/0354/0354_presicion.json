@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block P has mass m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block Q has mass 4m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Q is initially at rest at point A",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "P collides elastically with Q, moving upward with velocity v_0",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Coefficient of kinetic friction between Q and the plane is tan θ",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "No friction between P and the plane",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision between P and the bumper is perfectly elastic",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial momentum: m * v_0 + 4m * 0 = m * v_0",
+    "conclusion": "After collision, denote the velocities as v_{P_1} and v_{Q_1}",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of momentum: m * v_0 = m * v_{P_1} + 4m * v_{Q_1}",
+    "conclusion": "v_0 = v_{P_1} + 4v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of kinetic energy: (1/2)m * v_0^2 = (1/2)m * v_{P_1}^2 + (1/2) * 4m * v_{Q_1}^2",
+    "conclusion": "v_0^2 = v_{P_1}^2 + 4v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Relative velocity approach: v_{Q_1} - v_{P_1} = -(v_0 - 0)",
+    "conclusion": "v_{Q_1} - v_{P_1} = -v_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From v_{Q_1} - v_{P_1} = -v_0",
+    "conclusion": "v_{Q_1} = v_{P_1} - v_0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_{Q_1} = v_{P_1} - v_0 into v_0 = v_{P_1} + 4v_{Q_1}",
+    "conclusion": "v_0 = v_{P_1} + 4(v_{P_1} - v_0)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Recalculation using v_{P_1} - v_{Q_1} = -v_0 and v_0 = v_{P_1} + 4v_{Q_1}",
+    "conclusion": "v_{P_1} = v_{Q_1} - v_0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_{P_1} = v_{Q_1} - v_0 into v_0 = v_{P_1} + 4v_{Q_1}",
+    "conclusion": "v_0 = (v_{Q_1} - v_0) + 4v_{Q_1}",
+    "judgment": "Reasonable"
+  }]

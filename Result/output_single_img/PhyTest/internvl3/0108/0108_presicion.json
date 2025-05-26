@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the forces acting on the hemispheres A and B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Between the vertical walls are hemispheres A and B with masses m and 2m respectively.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The line between the two ball centers and the horizontal direction into A is a 30° angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There is friction between hemisphere A and the left wall, and the sphere of B is smooth.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The maximum static friction is equal to the sliding friction force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For Hemisphere A: Weight (WA): m * g, Normal force from the left wall (NA), Frictional force from the left wall (fA), Contact force from Hemisphere B (FAB).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For Hemisphere B: Weight (WB): 2m * g, Contact force from Hemisphere A (FBA), Normal force from the right wall (NB).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The system is in equilibrium.",
+    "conclusion": "For Hemisphere A: In the vertical direction: NA sin(30°) + fA = m * g. In the horizontal direction: NA cos(30°) = FAB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The system is in equilibrium.",
+    "conclusion": "For Hemisphere B: In the vertical direction: FBA sin(30°) = 2m * g. In the horizontal direction: FBA cos(30°) = NB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Newton's Third Law: FAB = FBA.",
+    "conclusion": "Equate the horizontal components: NA cos(30°) = NB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force fA is given by fA = μ * NA.",
+    "conclusion": "μ is the coefficient of friction we need to find.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the vertical equilibrium of Hemisphere A: NA sin(30°) + μ * NA = m * g.",
+    "conclusion": "NA (sin(30°) + μ) = m * g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the vertical equilibrium of Hemisphere B: FBA sin(30°) = 2m * g.",
+    "conclusion": "Since FBA = NA cos(30°), we have: NA cos(30°) sin(30°) = 2m * g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "NA cos(30°) sin(30°) = 2m * g.",
+    "conclusion": "NA = 2m * g / (cos(30°) sin(30°)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "NA = 2m * g / (cos(30°) sin(30°)).",
+    "conclusion": "Substitute NA into the friction equation: NA (sin(30°) + μ) = m * g.",
+    "judgment": "Match"
+  }]

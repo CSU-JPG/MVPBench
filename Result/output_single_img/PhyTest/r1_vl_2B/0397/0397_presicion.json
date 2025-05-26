@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole is initially aligned with the X-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole has an initial velocity v_0 parallel to the XY-plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole is placed in a uniform magnetic field B perpendicular to the plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angular momentum of the dipole is given by L = I ω, where I is the moment of inertia and ω is the angular velocity.",
+    "conclusion": "The moment of inertia of the dipole is I = 1/2 m d^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The initial angular velocity ω_0 is given as 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the dipole is initially aligned with the X-axis, its angular momentum is initially along the X-axis.",
+    "conclusion": "The magnetic field B will cause the dipole to rotate around the Y-axis.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angular momentum of the dipole before rotation is L_0 = I ω_0 = 1/2 m d^2 ω_0.",
+    "conclusion": "The angular momentum after rotation is L = I ω = 1/2 m d^2 ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the dipole rotates around the Y-axis, the angular momentum is conserved, so L_0 = L.",
+    "conclusion": "From the equation L_0 = L, we have 1/2 m d^2 ω_0 = 1/2 m d^2 ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying, we get ω_0 = ω.",
+    "conclusion": "Since ω_0 = 0, the minimal angular velocity ω_min is ω_min = ω.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The minimal angular velocity ω_min is the angular velocity required for the dipole to reverse its orientation.",
+    "conclusion": "The minimal angular velocity ω_min necessary for the dipole to reverse its orientation is ω_min = ω.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The minimal ω_0 = ω_min necessary for the dipole to reverse its orientation is ω_min = ω.",
+    "conclusion": "The minimal ω_0 = ω_min necessary for the dipole to reverse its orientation is ω_min = ω.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

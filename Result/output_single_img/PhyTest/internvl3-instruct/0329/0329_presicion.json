@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the temperature of the gas at state C, we need to analyze the processes and use the ideal gas law, PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A→B is an isochoric (constant volume) process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B→C is an isobaric (constant pressure) process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C→A is an isothermal (constant temperature) process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state A: P_A = 1 × 10^5 Pa, V_A = 2 L, T_A = 200 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since A→B is an isochoric process, the volume remains constant.",
+    "conclusion": "V_B = V_A = 2 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure increases to P_B = 4 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since B→C is an isobaric process, the pressure remains constant.",
+    "conclusion": "P_C = P_B = 4 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The volume increases to V_C = 5 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since C→A is an isothermal process, the temperature remains constant.",
+    "conclusion": "T_C = T_A = 200 K.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas equation of state: (P_A * V_A) / T_A = (P_C * V_C) / T_C.",
+    "conclusion": "T_C = 1000 K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

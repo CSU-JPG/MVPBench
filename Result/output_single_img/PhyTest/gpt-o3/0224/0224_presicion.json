@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux linked with the part of the loop that is inside the field equals Φ = (B · ½L²).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The field is directed into the page and is decreasing uniformly at the rate k = –dB/dt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux linked with the part of the loop that is inside the field equals Φ = (B · ½L²). The field is directed into the page and is decreasing uniformly at the rate k = –dB/dt.",
+    "conclusion": "dΦ/dt = ½L²(–dB/dt) = ½L²k.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦ/dt = ½L²k.",
+    "conclusion": "The induced emf around the whole loop is |ε| = |–dΦ/dt| = ½kL².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The loop is broken by an ideal capacitor C, therefore no steady conduction path exists.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The loop is broken by an ideal capacitor C, therefore no steady conduction path exists.",
+    "conclusion": "Charge is displaced and the capacitor becomes charged until the potential difference across it equals the induced emf.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The instantaneous current i obeys i = C (dV/dt), but V = ε, so i = C (dε/dt).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε = ½kL² is constant in time (k is constant), dε/dt = 0.",
+    "conclusion": "i = 0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

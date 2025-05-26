@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to ensure that all light rays emitted by the point light source S inside the glass sphere can pass through the sphere without undergoing total internal reflection (TIR). Total internal reflection occurs when the angle of incidence of a light ray within a denser medium (here, the glass) exceeds the critical angle for that medium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle \\(\\theta_c\\) is given by Snell's law: \\(\\sin \\theta_c = \\frac{1}{n}\\) where \\(n\\) is the refractive index of the glass sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Consider a light ray emitted from S and striking the surface of the sphere at point P. The ray must strike the surface such that the angle of incidence \\(\\alpha\\) does not exceed the critical angle \\(\\theta_c\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In the triangle OSP, where O is the center of the sphere, S is the light source, and P is the point on the sphere's surface: - \\(OS = d\\) is the distance from the center O to the light source S. - \\(OP = R\\) is the radius of the sphere. - The angle \\(\\angle OSP = \\alpha\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light ray to avoid TIR, the maximum angle \\(\\alpha\\) must satisfy: \\(\\alpha \\leq \\theta_c\\).",
+    "conclusion": "From the right triangle OSP, we have: \\(\\sin \\alpha = \\frac{d}{R}\\). Since \\(\\alpha \\leq \\theta_c\\), it follows that: \\(\\sin \\alpha \\leq \\sin \\theta_c\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting \\(\\sin \\theta_c = \\frac{1}{n}\\).",
+    "conclusion": "\\(\\frac{d}{R} \\leq \\frac{1}{n}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange the inequality to find the condition for \\(d\\).",
+    "conclusion": "\\(d \\leq \\frac{R}{n}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The point light source S must be located within a distance \\(d\\) from the center O of the sphere such that: \\(d \\leq \\frac{R}{n}\\).",
+    "conclusion": "d < \\frac{R}{n}",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves two hemispheres A and B with masses m and 2m, respectively. Hemisphere B is smooth, and there is friction between hemisphere A and the left wall. The line between the two ball centers forms a 30° angle with the horizontal direction into A. The task is to calculate the dynamic friction coefficient (μ) between hemisphere A and the left wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The maximum static friction is equal to the sliding friction force, and g is the acceleration due to gravity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The diagram shows two hemispheres A and B placed between two vertical walls. Hemisphere A is in contact with the left wall, and hemisphere B is in contact with hemisphere A. The line connecting the centers of the two hemispheres forms a 30° angle with the horizontal direction into A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Hemisphere B has a smooth surface, so there is no friction between hemispheres A and B. Hemisphere A and the left wall have friction, which is static friction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Hemisphere B has a smooth surface, so there is no friction between hemispheres A and B.",
+    "conclusion": "The force between hemispheres A and B is purely normal and acts along the line connecting their centers.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The line connecting the centers of the two hemispheres forms a 30° angle with the horizontal direction into A.",
+    "conclusion": "The normal force between hemispheres A and B can be resolved into horizontal and vertical components.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Taking hemisphere B as the research object and analyzing its forces.",
+    "conclusion": "From the equilibrium condition, the normal force between hemispheres A and B is $F_N = 2\\sqrt{3}mg$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force between hemispheres A and B is $F_N = 2\\sqrt{3}mg$.",
+    "conclusion": "The horizontal component of the normal force is $F_N \\cos 30° = \\sqrt{3}mg$, and the vertical component is $F_N \\sin 30° = 2mg$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Taking the system of both hemispheres as the research object and analyzing its forces.",
+    "conclusion": "From the equilibrium condition, the total tangential force $F_t = 3mg$, and the normal force $F_{N1} = F_N = 2\\sqrt{3}mg$.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The system just does not slide, and the maximum static friction equals the sliding friction force.",
+    "conclusion": "The static friction force $F_f = \\mu F_{N1}'$, where $F_{N1}'$ is the interaction force representing the pressure of hemisphere A on the wall.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force $F_{N1} = 2\\sqrt{3}mg$, and $F_{N1}'$ is the interaction force representing the pressure of hemisphere A on the wall.",
+    "conclusion": "Solving simultaneously, the dynamic friction coefficient $\\mu = \\frac{\\sqrt{3}}{2}$.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

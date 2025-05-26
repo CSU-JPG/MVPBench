@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball of mass $m$ is dropped from rest at a height $H$ above the ground. It undergoes an inelastic collision with the ground and rebounds to a maximum height $h$ above the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the air resistance experienced by the basketball during its motion is $\\lambda$ times the magnitude of the gravitational force acting on the basketball (where $\\lambda$ is a constant and $0<\\lambda<\\frac{H-h}{H+h}$).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity is the same for each collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the gravitational acceleration is $g$.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the basketball rebounds to a maximum height $h$ after an inelastic collision with the ground.",
+    "conclusion": "We can use the conservation of mechanical energy to find the ratio of the post-collision velocity to the pre-collision velocity.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The mechanical energy before and after the collision is given by: Before collision: $E_{\\text{before}} = mgh + \\frac{1}{2}mv^2$ After collision: $E_{\\text{after}} = mgh + \\frac{1}{2}mv'^2$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the collision is inelastic, the mechanical energy is not conserved due to the air resistance.",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity can be found by considering the energy loss due to air resistance.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The air resistance force is $\\lambda mg$, and the work done by air resistance during the motion from height $H$ to $h$ is: $W_{\\text{air}} = \\lambda mg(H - h)$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in mechanical energy due to air resistance is: $\\Delta E = W_{\\text{air}} = \\lambda mg(H - h)$",
+    "conclusion": "The mechanical energy after the collision is: $E_{\\text{after}} = E_{\\text{before}} - \\Delta E = mgh + \\frac{1}{2}mv^2 - \\lambda mg(H - h)$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the basketball rebounds to a maximum height $h$, the kinetic energy at the maximum height is zero, and the potential energy is $mgh$. Therefore, we have: $mgh = mgh + \\frac{1}{2}mv^2 - \\lambda mg(H - h)$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying the equation, we get: $0 = \\frac{1}{2}mv^2 - \\lambda mg(H - h)$",
+    "conclusion": "Solving for $v^2$, we get: $v^2 = 2\\lambda g(H - h)$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The post-collision velocity $v'$ can be found by considering the conservation of momentum during the collision.",
+    "conclusion": "Since the collision is inelastic, the momentum is conserved, and we have: $mv = mv'$",
+    "judgment": "Wrong"
+  }]

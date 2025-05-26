@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "U-shaped tube with unequal diameters, tube A is open upward, tube B is closed, cross-sectional area of tube B is 3 times that of tube A, filled with mercury, atmospheric pressure p0 = 76 cmHg, ambient temperature = 27°C = 300 K, distance from mercury surface in tube A to opening h1 = 24 cm, mercury surface in tube A is Δh = 4 cm higher than in tube B, length of air column in tube B is h2 = 12 cm, a piston seals tube A, and gas in A is heated while B remains at constant temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pressure at the mercury surface in tube A = atmospheric pressure = p0 = 76 cmHg.",
+    "conclusion": "Pressure in tube B must be higher than atmospheric due to mercury in A being 4 cm higher than in B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pressure difference = Δh cmHg = 4 cmHg.",
+    "conclusion": "Pressure in tube B = p0 + Δh = 76 + 4 = 80 cmHg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial volume in tube A: VA1 = h1 × A = 24A cm³.",
+    "conclusion": "Initial volume of gas in tube A is 24A cm³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial volume in tube B: VB1 = h2 × 3A = 12 × 3A = 36A cm³.",
+    "conclusion": "Initial volume of gas in tube B is 36A cm³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For tube A: pA1VA1 = nA RT_A1, 76 × 24A = nA R × 300.",
+    "conclusion": "Initial state equation for tube A using ideal gas law.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For tube B: pB1VB1 = nB RT_B1, 80 × 36A = nB R × 300.",
+    "conclusion": "Initial state equation for tube B using ideal gas law.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the levels equalize, Δh = 0.",
+    "conclusion": "Both mercury surfaces will be at some intermediate level.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mercury in tube A goes down by y cm, mercury in tube B goes up by y/3 cm.",
+    "conclusion": "For the levels to equalize: 4 = y + y/3, which gives 4 = 4y/3, so y = 3 cm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final volume in tube A: VA2 = (h1 + y)A = (24 + 3)A = 27A cm³.",
+    "conclusion": "Final volume of gas in tube A is 27A cm³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final pressure in tube A: pA2 = p0 = 76 cmHg.",
+    "conclusion": "Final pressure of gas in tube A is 76 cmHg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final volume in tube B: VB2 = (h2 - y/3)3A = (12 - 1)3A = 33A cm³.",
+    "conclusion": "Final volume of gas in tube B is 33A cm³.",
+    "judgment": "Match"
+  }]

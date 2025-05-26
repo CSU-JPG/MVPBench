@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given a point charge +q at point A(0,0,h). We need to find the electric field at point P(h,h,-h) in the region z ≤ 0, which is filled with an infinite conductor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude of the electric field strength at the point (h, h, -h) due to the induced charges on the conductor, we use the method of images.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Method of images",
+    "conclusion": "To satisfy the boundary condition of zero electric field inside the conductor, we place an image charge -q at a symmetrical point across the conductor boundary z = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image charge -q is located at (0, 0, -h).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Image charge location",
+    "conclusion": "Let E1 be the electric field at point P due to the actual charge +q. Let E2 be the electric field at point P due to the image charge -q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance formula",
+    "conclusion": "Distance from +q at A(0,0,h) to P(h,h,-h) is r1 = h√6.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance formula",
+    "conclusion": "Distance from -q at (0,0,-h) to P(h,h,-h) is r2 = h√2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electric field formula",
+    "conclusion": "Electric field due to +q at P: |E1| = kq/(6h^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Electric field formula",
+    "conclusion": "Electric field due to -q at P: |E2| = kq/(2h^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Direction of electric fields",
+    "conclusion": "The direction of E1 is from +q to P. The direction of E2 is from P to -q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Symmetry and known results for image charges",
+    "conclusion": "The final expression for the magnitude of the resultant electric field is E = kq/h^2 (1/√2 - 1/√6).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

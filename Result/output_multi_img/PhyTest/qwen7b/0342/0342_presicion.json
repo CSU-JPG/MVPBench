@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gas follows the path B -> C -> D, analyzed using Boyle's Law for BC and the ideal gas law for AB and CD.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment AB is a constant volume process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment BC is a constant temperature process (hyperbola on pV = constant diagram).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment CD is a constant pressure process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment BC is a constant temperature process.",
+    "conclusion": "Temperature at point D is the same as at point C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point A, p_A = 4 atm, V_A = 10 L, T_A = 300 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B has the same volume as point A (V_B = V_A = 10 L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At point C, V_C = 40 L, p_C = 2 atm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law pV = nRT at points A and C.",
+    "conclusion": "Set up the ratio: (p_A V_A) / T_A = (p_C V_C) / T_C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ratio: (p_A V_A) / T_A = (p_C V_C) / T_C.",
+    "conclusion": "Solve for T_C: T_C = 600 K.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature at points C and D are the same.",
+    "conclusion": "Temperature at point D is 600 K.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

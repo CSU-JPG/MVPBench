@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the sources of liquid: A, B, and C at the top.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the containers at the bottom as potential destinations: D and E.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The yellow liquid from A flows downwards and is deflected by the orange baffle to the right and down, then by the brown baffle to the left and down, and finally towards container D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The blue liquid from B flows downwards and is deflected by the yellow baffle to the right and down, then by the red baffle to the left and down, and finally towards the grey baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The orange liquid from C flows downwards and is deflected by the yellow baffle to the left and down, and finally towards the grey baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The blue liquid from B and the orange liquid from C converge on the grey baffle and flow downwards along it to the left, towards container E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Based on the observed paths in the images",
+    "conclusion": "Liquid from source A flows into container D. Liquid from sources B and C flows into container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from source A flows into container D. Liquid from sources B and C flows into container E.",
+    "conclusion": "Both container D and container E receive liquid.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The question asks to predict 'which container (D or E) it will flow into', and implies a single answer from the options D and E.",
+    "conclusion": "It is likely asking about the container that receives the majority of the liquid, or the combined flow, or the main flow.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Container D receives liquid from one source (A). Container E receives liquid from two sources (B and C).",
+    "conclusion": "Assuming equal flow rates from sources A, B, and C, container E receives twice the amount of liquid as container D.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assuming equal flow rates from sources A, B, and C, container E receives twice the amount of liquid as container D.",
+    "conclusion": "Container E receives the majority of the liquid.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the situation involving the metal rod sliding on a smooth horizontal rail with negligible resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The loop current I induced in the circuit can be calculated using Faraday's law of induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's law states that the induced electromotive force (EMF) \\( \\mathcal{E} \\) is given by \\( \\mathcal{E} = -\\frac{d\\Phi}{dt} \\) where \\( \\Phi \\) is the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux \\( \\Phi \\) through the loop is given by \\( \\Phi = B \\cdot A \\) where \\( B \\) is the magnetic field and \\( A \\) is the area of the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the magnetic field \\( B \\) is constant and the area \\( A \\) changes as the rod moves, we have \\( \\Phi = B \\cdot L \\cdot x \\) where \\( L \\) is the length of the rod and \\( x \\) is the distance traveled by the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of the magnetic flux is \\( \\frac{d\\Phi}{dt} = B \\cdot L \\cdot \\frac{dx}{dt} \\).",
+    "conclusion": "The induced EMF is \\( \\mathcal{E} = -B \\cdot L \\cdot \\frac{dx}{dt} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The loop current \\( I \\) is given by Ohm's law: \\( I = \\frac{\\mathcal{E}}{R} \\).",
+    "conclusion": "Substituting the expression for \\( \\mathcal{E} \\), \\( I = \\frac{-B \\cdot L \\cdot \\frac{dx}{dt}}{R} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the speed \\( v \\) is related to \\( \\frac{dx}{dt} \\), we have \\( I = \\frac{-B \\cdot L \\cdot v}{R} \\).",
+    "conclusion": "The loop current \\( I \\) is proportional to the speed \\( v \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given \\( v_1 : v_2 = 1 : 2 \\), the ratio of the loop currents \\( I_1 \\) and \\( I_2 \\) is \\( \\frac{I_1}{I_2} = \\frac{v_1}{v_2} = \\frac{1}{2} \\).",
+    "conclusion": "The ratio of the loop currents is 1:2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power \\( P \\) dissipated in the circuit due to the induced current is given by \\( P = I^2 \\cdot R \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the expression for \\( I \\), \\( P = \\left( \\frac{-B \\cdot L \\cdot v}{R} \\right)^2 \\cdot R = \\frac{B^2 \\cdot L^2 \\cdot v^2}{R} \\).",
+    "conclusion": "The power \\( P \\) is proportional to \\( v^2 \\).",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process A→B→C→D→A, and we need to find the work done by the gas from state C to state D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process is depicted on a P-V diagram, with pressure in units of p / (×10^5 Pa) and volume in units of V / L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A is at 27°C, and each state is in equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P = p × 10^5 Pa, V = 3V L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: P = p × 10^5 Pa, V = 4V L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: P = 0.75p × 10^5 Pa, V = 4V L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State D: P = 0.75p × 10^5 Pa, V = 3V L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A→B: Horizontal line at P = p × 10^5 Pa, volume increases from 3V to 4V (isobaric expansion).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B→C: Vertical line at V = 4V, pressure decreases from p × 10^5 to 0.75p × 10^5 (isochoric cooling).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C→D: Horizontal line at P = 0.75p × 10^5 Pa, volume decreases from 4V to 3V (isobaric compression).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D→A: Vertical line at V = 3V, pressure increases from 0.75p × 10^5 to p × 10^5 (isochoric heating).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In an isobaric process, W = P ΔV.",
+    "conclusion": "From C to D, the pressure is constant at P = 0.75p × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume changes from VC = 4V L to VD = 3V L.",
+    "conclusion": "ΔV = VD - VC = 3V - 4V = -V L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W = P ΔV and ΔV = -V L.",
+    "conclusion": "W_{C→D} = (0.75p × 10^5) × (-V) = -0.75p × 10^5 × V J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state A (27°C) is given, but we’re only calculating work from C to D, which depends solely on P and ΔV in an isobaric process.",
+    "judgment": "N/A"
+  }]

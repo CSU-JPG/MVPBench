@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the magnitude of the induced electromotive force (EMF) in the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The EMF induced in a rotating coil in a magnetic field is given by the formula: \\( \\mathcal{E} = n B A \\omega \\sin(\\omega t) \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "\\( n \\) is the number of turns in the coil, \\( B \\) is the magnetic induction intensity, \\( A \\) is the area of the coil, \\( \\omega \\) is the angular velocity, \\( t \\) is the time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area \\( A \\) of the rectangular coil is given by: \\( A = l_{AB} \\cdot l_{BC} = 0.2 \\mathrm{m} \\cdot 0.5 \\mathrm{m} \\)",
+    "conclusion": "The area \\( A \\) of the rectangular coil is \\( 0.1 \\mathrm{m}^2 \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic induction intensity \\( B \\) is given as \\( 0.1 \\mathrm{T} \\), the number of turns \\( n \\) is 100, and the angular velocity \\( \\omega \\) is \\( 100\\pi \\mathrm{rad/s} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting these values into the EMF formula, \\( \\mathcal{E} = n B A \\omega \\sin(\\omega t) \\)",
+    "conclusion": "\\( \\mathcal{E} = 100 \\cdot 0.1 \\cdot 0.1 \\cdot 100\\pi \\cdot \\sin(\\omega t) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\mathcal{E} = 100 \\cdot 0.1 \\cdot 0.1 \\cdot 100\\pi \\cdot \\sin(\\omega t) \\)",
+    "conclusion": "\\( \\mathcal{E} = 100 \\cdot 0.01 \\cdot 100\\pi \\cdot \\sin(\\omega t) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\mathcal{E} = 100 \\cdot 0.01 \\cdot 100\\pi \\cdot \\sin(\\omega t) \\)",
+    "conclusion": "\\( \\mathcal{E} = 100 \\cdot 1 \\cdot \\pi \\cdot \\sin(\\omega t) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\mathcal{E} = 100 \\cdot 1 \\cdot \\pi \\cdot \\sin(\\omega t) \\)",
+    "conclusion": "\\( \\mathcal{E} = 100\\pi \\sin(\\omega t) \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the timing starts when the coil plane passes through the neutral plane, the initial angle is \\( \\theta = 0 \\), and the sine function will start at 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "However, the maximum value of the sine function is 1, so the maximum EMF is: \\( \\mathcal{E}_{\\text{max}} = 100\\pi \\cdot 1 = 100\\pi \\mathrm{V} \\)",
+    "judgment": "N/A"
+  }]

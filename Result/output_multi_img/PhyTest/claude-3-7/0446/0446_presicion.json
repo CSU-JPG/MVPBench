@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Hemispherical medium with radius R and refractive index sqrt(2410)/30. O is the center of the hemisphere. SMN is an isosceles right triangle glass brick. B is the midpoint of MN. BO is perpendicular to MN with length R/4. MN and PQ are parallel and equal. Light travels from A → B → C → D. OC = 3R/4.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light beam enters the glass brick at point A, travels to B, then to C, and finally to D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at B (from inside the glass brick) appears to be 45° based on the diagram.",
+    "conclusion": "Let's call the refractive index of the glass brick n_1 and the refractive index of the hemispherical medium n_2 = sqrt(2410)/30.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the light goes from the glass brick into the hemispherical medium at point B, Snell's law gives: n_1 sin(45°) = n_2 sin(alpha)",
+    "conclusion": "n_1 sin(45°) = sqrt(2410)/30 sin(alpha)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_1 sin(45°) = sqrt(2410)/30 sin(alpha)",
+    "conclusion": "n_1 * sqrt(2)/2 = sqrt(2410)/30 sin(alpha)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Looking at the triangle BOC: BO = R/4, OC = 3R/4, The angle BOC = alpha (as shown in the diagram)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the law of sines in triangle BOC: sin(alpha)/3R/4 = sin(beta)/R/4",
+    "conclusion": "sin(alpha) = 3sin(beta)/4 * R/4 = 3Rsin(beta)/16",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since BO is perpendicular to MN, and C lies on the line from O making angle alpha with BO, we can determine that the angle BOC = alpha.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry of the problem, we know that: BO = R/4 (given), OC = 3R/4 (given)",
+    "conclusion": "Using the law of cosines in triangle BOC: BC^2 = BO^2 + OC^2 - 2 * BO * OC * cos(alpha)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To determine BC, I need to use the fact that the light beam refracts at B and travels to C.",
+    "conclusion": "From the properties of the isosceles right triangle and the perpendicular BO with length R/4, I can deduce that sin(alpha) = 3/5.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_1 * sqrt(2)/2 = sqrt(2410)/30 * 3/5",
+    "conclusion": "n_1 = sqrt(2410)/30 * 3/5 * 2/sqrt(2) = sqrt(2410)/30 * 3/5 * 2sqrt(2)/2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n_1 = sqrt(2410)/30 * 3/5 * 2sqrt(2)/2",
+    "conclusion": "n_1 = 3sqrt(2) * sqrt(2410)/150",
+    "judgment": "Wrong"
+  }]

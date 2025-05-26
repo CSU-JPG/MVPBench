@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of the Ampere force acting on the straight part of the wire frame is F.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The formula for the magnetic force on a current-carrying conductor is F = BIL.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame is semi-circular with a radius of r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the Ampere force acting on the straight part is F.",
+    "conclusion": "The length of the straight part of the wire frame is L_s.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is semi-circular with a radius of r.",
+    "conclusion": "The length of the semi-circular part is L_c = πr.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total length of the wire frame is L = L_s + L_c.",
+    "conclusion": "The total length of the wire frame is L = L_s + πr.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire frame is fixed in a uniform magnetic field and the plane of the wire frame is perpendicular to the direction of the magnetic induction intensity.",
+    "conclusion": "The magnetic force acting on the entire wire frame is the sum of the forces acting on the straight and semi-circular parts.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force acting on the straight part is F.",
+    "conclusion": "The force acting on the semi-circular part can be calculated using F_c = BIL_c.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "L_c = πr.",
+    "conclusion": "The force on the semi-circular part is F_c = BIπr.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force is the sum of the forces on the straight and semi-circular parts.",
+    "conclusion": "The total force is F_total = F + BIπr.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force is F_total = F + BIπr.",
+    "conclusion": "The magnitude of the Ampere force acting on the entire wire frame is F + BIπr.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

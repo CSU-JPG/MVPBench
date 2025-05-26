@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to calculate the change in magnetic flux through the coil as it rotates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux (Φ) through a surface is given by the formula: Φ = B ⋅ A ⋅ cos(θ), where B is the magnetic induction intensity, A is the area of the coil, θ is the angle between the magnetic field and the normal to the surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Initially, the coil is aligned such that its normal is along the positive x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, the coil is aligned such that its normal is along the positive x-axis.",
+    "conclusion": "The angle θ1 between the magnetic field and the normal to the coil is 0°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle θ1 between the magnetic field and the normal to the coil is 0°.",
+    "conclusion": "The magnetic flux in the initial position is: Φ1 = B ⋅ A ⋅ cos(0°) = 0.1 T ⋅ 0.4 m² ⋅ 1 = 0.04 Wb",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil rotates 60° downward around the z-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil rotates 60° downward around the z-axis.",
+    "conclusion": "In the final position, the normal to the coil makes an angle θ2 = 60° with the x-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the final position, the normal to the coil makes an angle θ2 = 60° with the x-axis.",
+    "conclusion": "The magnetic flux in the final position is: Φ2 = B ⋅ A ⋅ cos(60°) = 0.1 T ⋅ 0.4 m² ⋅ 0.5 = 0.02 Wb",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux in the initial position is: Φ1 = 0.04 Wb and the magnetic flux in the final position is: Φ2 = 0.02 Wb",
+    "conclusion": "The change in magnetic flux as the coil rotates is given by: ΔΦ = Φ2 - Φ1 = 0.02 Wb - 0.04 Wb = -0.02 Wb",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

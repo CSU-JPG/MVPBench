@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the given information: Temperature at state A: \\( T_A = -73^\\circ C = 200 \\, \\text{K} \\), Internal energy change from A to C: \\( \\Delta U = 200 \\, \\text{J} \\), Volume at state A: \\( V_A = 1 \\times 10^{-3} \\, \\text{m}^3 \\), Volume at state C: \\( V_C = 4 \\times 10^{-3} \\, \\text{m}^3 \\), Pressure at state A: \\( P_A = 3 \\times 10^5 \\, \\text{Pa} \\), Pressure at state C: \\( P_C = 1 \\times 10^5 \\, \\text{Pa} \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the ideal gas law: The ideal gas law is given by: \\( PV = nRT \\) where \\( P \\) is the pressure, \\( V \\) is the volume, \\( n \\) is the number of moles, \\( R \\) is the gas constant, and \\( T \\) is the temperature in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state A: \\( P_A V_A = nRT_A \\)",
+    "conclusion": "Calculate the number of moles: \\( 3 \\times 10^5 \\times 1 \\times 10^{-3} = nR \\times 200 \\), \\( 300 = nR \\times 200 \\), \\( nR = \\frac{300}{200} = 1.5 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state C: \\( P_C V_C = nRT_C \\)",
+    "conclusion": "Determine the temperature at state C: \\( 1 \\times 10^5 \\times 4 \\times 10^{-3} = 1.5 \\times T_C \\), \\( 400 = 1.5 \\times T_C \\), \\( T_C = \\frac{400}{1.5} = 266.67 \\, \\text{K} \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Convert the temperature to Celsius",
+    "conclusion": "Convert the temperature to Celsius: \\( T_C = 266.67 \\, \\text{K} - 273 = -6.33^\\circ C \\)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

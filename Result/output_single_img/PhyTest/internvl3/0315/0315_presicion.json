@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the heat exchange Q in the cyclic process A → B → C → D → A, we need to analyze each segment of the cycle and apply the first law of thermodynamics: ΔU = Q - W.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A to B is an isothermal expansion (constant temperature).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B to C is an isobaric compression (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C to D is an isothermal compression (constant temperature).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D to A is an isobaric expansion (constant pressure).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A to B is an isothermal expansion.",
+    "conclusion": "Work done by the gas during isothermal expansion: W_AB = nRT ln(V_B/V_A).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B to C is an isobaric compression.",
+    "conclusion": "Work done on the gas during isobaric compression: W_BC = P (V_B - V_C).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C to D is an isothermal compression.",
+    "conclusion": "Work done on the gas during isothermal compression: W_CD = nRT ln(V_C/V_D).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D to A is an isobaric expansion.",
+    "conclusion": "Work done by the gas during isobaric expansion: W_DA = P (V_D - V_A).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net work done in a cyclic process is the area enclosed by the cycle on the P-V diagram.",
+    "conclusion": "The area under A → B and C → D (isothermal processes) cancel each other out.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net work is the area of the rectangle formed by B → C and D → A.",
+    "conclusion": "W_net = P × (V_B - V_C).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given P = 0.25 × 10^5 Pa and V_B - V_C = 1 L = 1 × 10^-3 m^3.",
+    "conclusion": "W_net = 0.25 × 10^5 × 1 × 10^-3 = 25 J.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a cyclic process, the change in internal energy over a complete cycle is zero.",
+    "conclusion": "ΔU_cycle = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the first law of thermodynamics for the entire cycle: ΔU_cycle = Q_cycle - W_net.",
+    "conclusion": "0 = Q_cycle - 25.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0 = Q_cycle - 25.",
+    "conclusion": "Q_cycle = 25 J.",
+    "judgment": "Reasonable",
+    "final_answer": "1"
+  }
+]

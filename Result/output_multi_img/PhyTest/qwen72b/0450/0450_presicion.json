@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the area of the light-emitting region on the water surface formed by the light bulbs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Each light bulb forms an illuminated circle on the water surface. The geometry involves a right triangle with depth h, radius r, and critical angle C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The radius r of the illuminated circle is related to the depth h by the critical angle C. The critical angle C is determined by the refractive index n of the water for the respective color of light.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a light bulb emitting red light: sin(C1) = 1/n1",
+    "conclusion": "The critical angle C1 for red light is determined by sin(C1) = 1/n1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a light bulb emitting yellow light: sin(C2) = 1/n2",
+    "conclusion": "The critical angle C2 for yellow light is determined by sin(C2) = 1/n2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the relationship between the critical angle and the geometry: tan(C) = r/h",
+    "conclusion": "The radius r is related to the depth h by tan(C) = r/h.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For red light: tan(C1) = r1/h1",
+    "conclusion": "r1 = h1 * tan(C1)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For yellow light: tan(C2) = r2/h2",
+    "conclusion": "r2 = h2 * tan(C2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that both light bulbs form the same area on the water surface: πr1^2 = πr2^2",
+    "conclusion": "r1^2 = r2^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h1^2 * tan^2(C1) = h2^2 * tan^2(C2)",
+    "conclusion": "h1^2 * tan^2(C1) = h2^2 * tan^2(C2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(C) = sqrt(1/cos^2(C) - 1), using cos(C) = sqrt(1 - sin^2(C))",
+    "conclusion": "tan(C1) = sqrt(n1^2/(n1^2 - 1))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(C2) = sqrt(n2^2/(n2^2 - 1))",
+    "conclusion": "tan(C2) = sqrt(n2^2/(n2^2 - 1))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting these values: h1^2 * (n1^2/(n1^2 - 1) - 1) = h2^2 * (n2^2/(n2^2 - 1) - 1)",
+    "conclusion": "h1^2 * (n1^2/(n1^2 - 1) - 1) = h2^2 * (n2^2/(n2^2 - 1) - 1)",
+    "judgment": "Match"
+  }]

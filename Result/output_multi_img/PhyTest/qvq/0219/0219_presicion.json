@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves calculating the change in magnetic flux through a coil rotating in a magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil ABCO is in a 3D coordinate system with axes x, y, and z. The area of the coil is 0.4 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field strength is 0.1 Tesla, pointing along the positive x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil rotates 60° around the z-axis from its initial position.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic flux (Φ) is given by the formula: Φ = B * A * cosθ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil is in the x-y plane, so its normal is along the z-axis. The magnetic field is along the x-axis.",
+    "conclusion": "The angle between the field and the normal is 90°, making the initial flux Φ_initial = B * A * cos90° = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After rotating 60° around the z-axis, the normal to the coil is still along the z-axis.",
+    "conclusion": "The angle between the field and the normal remains 90°, so the flux after rotation should also be zero.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil rotates 60° downward around the z-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coil rotates 60° around the z-axis.",
+    "conclusion": "The magnetic flux after rotation is Φ_2 = B * A * sin60° = 0.1 * 0.4 * √3/2 Wb ≈ 3.46×10^{-2} Wb.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial flux is 0 and the flux after rotation is 3.46×10^{-2} Wb.",
+    "conclusion": "The change in magnetic flux is ΔΦ = Φ_2 - Φ_1 = 3.46×10^{-2} Wb.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

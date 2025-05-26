@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Need to find the current in the loop and the magnitude of the induced electromotive force (EMF) in the wire frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Square wire frame with side length L. Half of it is placed in a uniform magnetic field perpendicular to the plane of the paper and directed into it. There is a capacitor with capacitance C connected in the loop.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Setup is a square loop with a capacitor, partially in a magnetic field decreasing over time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a magnetic field changes in a conductor, it induces an EMF according to Faraday's law of induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic flux Φ is given by the product of the magnetic field B and the area A perpendicular to the field.",
+    "conclusion": "Since only half of the square is in the magnetic field, the effective area is (L/2) * L = L²/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ = B * A = B * (L²/2).",
+    "conclusion": "Magnetic flux Φ is B * (L²/2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic field is decreasing at a rate of k, dB/dt = -k.",
+    "conclusion": "Induced EMF is equal to the negative rate of change of the magnetic flux.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = - dΦ/dt = - (L²/2) * dB/dt = - (L²/2) * (-k).",
+    "conclusion": "EMF = (k * L²)/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a DC circuit, a capacitor acts like an open circuit in the steady state.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Induced EMF is constant, so the voltage across the capacitor will be increasing linearly with time.",
+    "conclusion": "Current in the loop will be determined by the rate at which the capacitor charges up.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across the capacitor is given by Vc = Q/C.",
+    "conclusion": "Induced EMF is equal to the voltage across the capacitor.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vc = EMF = (k * L²)/2.",
+    "conclusion": "Voltage across the capacitor is (k * L²)/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assuming no resistance in the circuit, the current would be infinite, which doesn't make sense.",
+    "conclusion": "Current in the loop is 0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the radius r_{max} of a drop just before it separates from the nozzle, we need to consider the forces acting on the droplet and the balance of forces that prevent it from separating.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the forces acting on the droplet: Gravity: mg, Surface tension: σl, Surface energy: σS",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the equilibrium condition: The droplet will separate when the force due to gravity is equal to the sum of the forces due to surface tension and surface energy.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The droplet will separate when the force due to gravity is equal to the sum of the forces due to surface tension and surface energy.",
+    "conclusion": "Set up the equation: mg = σl + σS",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Substitute the given values: Let d = 2r (since d ≪ r), Let l = d = 2r, Let S = πr^2",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = σl + σS, Let d = 2r, Let l = d = 2r, Let S = πr^2",
+    "conclusion": "Substitute into the equation: mg = σ(2r) + σ(πr^2), mg = 2σr + πσr^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = 2σr + πσr^2",
+    "conclusion": "Simplify the equation: mg = (2 + π)σr^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = (2 + π)σr^2",
+    "conclusion": "Solve for r: r_{max} = \\frac{mg}{(2 + π)σr^2}",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Plug in the values: Let m = 1 kg (mass of the droplet), Let σ = 10^{-2} N/m (surface tension), Let r = 0.1 m (radius of the droplet)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r_{max} = \\frac{mg}{(2 + π)σr^2}, m = 1 kg, σ = 10^{-2} N/m, r = 0.1 m",
+    "conclusion": "r_{max} = \\frac{1 \\times 10^{-2}}{(2 + π) \\times 10^{-2} \\times (0.1)^2}, r_{max} = \\frac{1}{(2 + π) \\times 10^{-4}}, r_{max} \\approx \\frac{1}{(2 + π) \\times 10^{-4}}, r_{max} \\approx \\frac{1}{(2 + π) \\times 10^{-4}}, r_{max}"}]

@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, C, and D. Predict which container (E or F) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Inlet A: The liquid flows downward and encounters the first baffle (pink).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inlet A: The liquid flows downward and encounters the first baffle (pink).",
+    "conclusion": "Liquid from A will be directed towards the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Inlet B: The liquid flows downward and encounters the second baffle (green).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inlet B: The liquid flows downward and encounters the second baffle (green).",
+    "conclusion": "Liquid from B will be directed towards the left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Inlet C: The liquid flows downward and encounters the third baffle (light blue).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inlet C: The liquid flows downward and encounters the third baffle (light blue).",
+    "conclusion": "Liquid from C will be directed towards the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Inlet D: The liquid flows downward and encounters the fourth baffle (white).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inlet D: The liquid flows downward and encounters the fourth baffle (white).",
+    "conclusion": "Liquid from D will be directed towards the left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A will be directed towards the right.",
+    "conclusion": "Liquid from A will continue to flow towards container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from B will be directed towards the left.",
+    "conclusion": "Liquid from B will continue to flow towards container E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from C will be directed towards the right.",
+    "conclusion": "Liquid from C will continue to flow towards container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from D will be directed towards the left.",
+    "conclusion": "Liquid from D will continue to flow towards container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A will continue to flow towards container F. Liquid from C will continue to flow towards container F.",
+    "conclusion": "Liquids from inlets A and C will flow into container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from B will continue to flow towards container E. Liquid from D will continue to flow towards container E.",
+    "conclusion": "Liquids from inlets B and D will flow into container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquids from inlets B and D will flow into container E. Liquids from inlets A and C will flow into container F.",
+    "conclusion": "Container E will receive liquid from inlets B and D. Container F will receive liquid from inlets A and C.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

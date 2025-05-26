@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the gravitational force F between a point mass m and a uniform sphere of mass M with radius R can be calculated using Newton's law of gravitation.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Newton's law of gravitation",
+    "conclusion": "The formula for the gravitational force F is given by: F = G * (M * m) / r^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "G is the gravitational constant, M is the mass of the sphere, m is the mass of the point, and r is the distance between their centers.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The point mass m is located a distance 2R from the center O of the sphere.",
+    "conclusion": "F_initial = G * (M * m) / (2R)^2 = G * (M * m) / 4R^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The smaller sphere has a radius of R/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The original sphere is uniformly dense.",
+    "conclusion": "The mass M' of the smaller sphere is proportional to its volume.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The volume of a sphere is given by: V = (4/3) * π * r^3",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the original sphere with radius R: V_original = (4/3) * π * R^3",
+    "conclusion": "The mass of the original sphere is M.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the smaller sphere with radius R/2: V_smaller = (4/3) * π * (R/2)^3 = (4/3) * π * R^3 / 8",
+    "conclusion": "V_smaller = (1/8) * (4/3) * π * R^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass M' of the smaller sphere is proportional to its volume.",
+    "conclusion": "M' = (1/8) * M",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If the smaller sphere were still present, it would exert a gravitational force on the point mass m.",
+    "conclusion": "The distance between the center of the smaller sphere and the point mass m would still be 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force due to the smaller sphere would be: F_smaller = G * (M' * m) / (2R)^2",
+    "conclusion": "F_smaller = G * ((1/8) * M * m) / 4R^2 = (1/8) * G * (M * m) / 4R^2 = (1/32) * G * (M * m) / R^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net gravitational force F_net is the initial force minus the force due to the removed smaller sphere.",
+    "conclusion": "F_net = F_initial - F_smaller",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_net = G * (M * m) / 4R^2 - (1/32) * G * (M * m) / R^2",
+    "conclusion": "F_net = G * (M * m) / R^2 * (1/4 - 1/32)",
+    "judgment": "Match"
+  }

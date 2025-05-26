@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas of a definite quality undergoes the ABCDA cycle as shown in the figure, where P1, P2, V1, and V2 are known quantities. It is given that the temperature at state A is T0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle consists of four processes: A → B: Isochoric process at V = V1, pressure increases from P1 to P2; B → C: Isobaric process at P = P2, volume increases from V1 to V2; C → D: Isochoric process at V = V2, pressure decreases from P2 to P1; D → A: Isobaric process at P = P1, volume decreases from V2 to V1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at state A is T0; P1, P2, V1, and V2 are known quantities.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas: PV = nRT, where n is the number of moles and R is the gas constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state A: P1V1 = nRT0",
+    "conclusion": "nR = P1V1/T0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nR = P1V1/T0 and P1V2 = nRTD",
+    "conclusion": "P1V2 = (P1V1/T0) * TD",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1V2 = (P1V1/T0) * TD",
+    "conclusion": "TD = T0 * (V2/V1)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "TD = T0 * (V2/V1)",
+    "conclusion": "The temperature at state D is proportional to the temperature at state A, scaled by the ratio of volumes V2/V1.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since V2 > V1 (as shown in the diagram), the temperature at state D is higher than the temperature at state A.",
+    "conclusion": "The temperature at state D is higher than the temperature at state A.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the ideal gas equation of state P1V1/T0 = P1V2/TD",
+    "conclusion": "TD = (P1V2/P1V1) * T0",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

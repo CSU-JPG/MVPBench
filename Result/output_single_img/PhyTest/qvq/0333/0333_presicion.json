@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves an ideal gas changing from state A to state C, and the task is to find the temperature at state C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The diagram has pressure (p) on the y-axis and volume (V) on the x-axis with points A, B, and C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A is at (V₀, p₀), Point B is at (V₀, 0.6p₀), Point C is at (0.5V₀, 0.6p₀).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There's a vertical line from A to B, and a horizontal line from B to C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state A is T₀, and the internal energy U is related to temperature by U = aT, where a is a positive constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is PV = nRT, where n is the number of moles, R is the ideal gas constant, and T is the temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A to B, volume is constant at V₀, and pressure decreases from p₀ to 0.6p₀.",
+    "conclusion": "From A to B, T is proportional to P, so T₁ = 0.6T₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From B to C, pressure is constant at 0.6p₀, and volume decreases from V₀ to 0.5V₀.",
+    "conclusion": "At constant pressure, T is proportional to V, so T₂ = T₁ * (V₂ / V₁) = 0.6T₀ * 0.5 = 0.3T₀.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

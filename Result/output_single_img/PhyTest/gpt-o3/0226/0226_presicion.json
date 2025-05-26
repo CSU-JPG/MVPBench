@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "ABC is a fixed horizontal smooth rectangular metal guide rail in a uniform magnetic field with magnetic induction intensity B directed vertically downward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between AB is L, and both ends are connected to resistors with resistance R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A conductor rod MN with mass m, length L, and negligible resistance is placed on the guide rail, forming a spring vibration system with a light spring.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the spring is at its natural length, and the conductor rod MN has an initial horizontal leftward velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After a period, the conductor rod MN moves to the rightmost end for the first time, generating Joule heat Q on the resistor R between AB.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The rod MN moves with instantaneous speed v on the left side of the fixed partition.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod MN moves with instantaneous speed v on the left side of the fixed partition.",
+    "conclusion": "Only the left rectangle ABNM changes its area, and no current flows through the right-hand resistor.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only the left rectangle ABNM changes its area, and no current flows through the right-hand resistor.",
+    "conclusion": "The induced electromotive force is E = BLv.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced electromotive force is E = BLv.",
+    "conclusion": "The current in the loop is I = BLv/R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the loop is I = BLv/R.",
+    "conclusion": "The magnitude of the Ampère force on the rod is F = B^2L^2v/R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At the initial moment, the spring is at its natural length, and mechanical energy is E_mech = 1/2 mv_0^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At the first right-hand turning point, speed v = 0, and mechanical energy is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the first right-hand turning point, speed v = 0, and mechanical energy is zero.",
+    "conclusion": "All initial kinetic energy is converted into Joule heating in the resistor R, with heat Q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "All initial kinetic energy is converted into Joule heating in the resistor R, with heat Q.",
+    "conclusion": "v_0 = sqrt(2Q/m).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the Ampère force on the rod is F = B^2L^2v/R and v_0 = sqrt(2Q/m).",
+    "conclusion": "The magnitude of the Ampère force at the initial instant is F_initial = B^2L^2/R * sqrt(2Q/m).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

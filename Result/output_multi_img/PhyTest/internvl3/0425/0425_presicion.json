@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism is isosceles with vertex angle θ = 30°, side length AB = L, light hits midpoint O of AB with incident angle i = 45°, and exits perpendicular to AC.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the prism with an incident angle of 45°.",
+    "conclusion": "Use Snell's Law: sin(45°) = n_prism sin(r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light exits perpendicular to AC, meaning the exit angle is 90°.",
+    "conclusion": "Use Snell's Law: n_prism sin(γ) = 1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry, the path length s inside the prism can be calculated using the refracted angle r and the geometry of the prism.",
+    "conclusion": "The path length s forms a right triangle with half of AB (L/2) and the refracted angle r.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Speed of light in the prism v = c/n_prism.",
+    "conclusion": "Calculate the speed of light in the prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Propagation time t = s/v.",
+    "conclusion": "Calculate the propagation time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use the fact that the light exits perpendicular to AC which implies total internal reflection conditions and geometry to solve for n_prism.",
+    "conclusion": "Find n_prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use the geometry to find the exact path length inside the prism.",
+    "conclusion": "Calculate s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After calculating n_prism and s, substitute into the time equation: t = (n_prism * s) / c.",
+    "conclusion": "The propagation time t is determined.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

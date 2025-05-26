@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The diagram shows a hemispherical water mist with a radius r. Light A enters the hemisphere at an angle of incidence of 30° with the interface (the flat surface of the hemisphere). Light B exits with an angle of 45° with the normal. The refractive index of light B (likely the medium, i.e., water) is √2. The propagation speed of light in air is c. We need to find the propagation time of light A inside the hemisphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence of light A with the interface is 30°. Since the interface is flat and the normal is perpendicular to it.",
+    "conclusion": "The angle of incidence i with the normal is 90° - 30° = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the medium (water mist) is n = √2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell’s law at the entry point: n_air sin i = n_water sin r, 1 * sin 60° = √2 * sin r, sin 60° = √3/2.",
+    "conclusion": "sin r = √3/(2√2) = √6/4, r = arcsin(√6/4) ≈ 37.76°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle of light B with the normal is given as 45°. This suggests the exit angle (angle of refraction out of the hemisphere into air) is 45°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell’s law at exit: n_water sin i_exit = n_air sin r_exit, √2 sin i_exit = 1 * sin 45°, sin 45° = √2/2.",
+    "conclusion": "sin i_exit = 1/2, i_exit = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light enters at point O on the flat interface and travels to the curved surface, exiting as b. The hemisphere has radius r, and the center is at the center of the hemisphere (below the flat surface).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident ray A at 30° to the interface (or 60° to the normal) refracts and follows a path inside the hemisphere. The refracted ray inside the hemisphere makes an angle r ≈ 37.76° with the normal at entry.",
+    "conclusion": "The ray travels toward the curved surface. The exit normal is radial, and the angle of incidence at the curved surface must equal the angle of refraction 45° (into air, n = 1).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light in water is v = c/√2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Propagation time t is the distance divided by speed: t = s/v = 0.88r/(c/√2) = 0.88r√2/c.",
+    "conclusion": "Numerically, 0.88√2 ≈ 1.244, t ≈ 1.244r/c.",
+    "judgment": "Wrong"
+  }]

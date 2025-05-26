@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the maximum width of the incident light beam on the lower surface AB such that the light can exit the upper surface of the hemispherical glass brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The hemispherical glass has a radius R. A beam of light is incident vertically onto the lower surface AB of the hemisphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle of incidence at the curved surface is determined by the refractive properties of the material.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the light to exit through the upper surface, it must undergo total internal reflection at the spherical boundary.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light to exit through the upper surface, it must undergo total internal reflection at the spherical boundary.",
+    "conclusion": "The angle of refraction α at the spherical interface must be less than the critical angle for which total internal reflection occurs.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc for total internal reflection at the spherical surface is given by: sin θc = n_glass / n_air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Here, n_glass is the refractive index of the glass and n_air = 1 for air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When the light beam hits the upper hemisphere, it forms an angle θ relative to the normal at the point of incidence.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light beam will undergo refraction as it exits the glass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the right triangle formed by the radius of the sphere, the incident ray, and the refracted ray, the critical angle θc is related to the angle θ by: sin θc = cos(90° - θ) = sin θ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the problem, the light beam makes an angle of 15° with the vertical when it exits the upper surface.",
+    "conclusion": "The critical angle θc corresponding to this situation is: θc = 90° - 15° = 75°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the light beam is incident vertically on AB, the width of the incident beam is determined by the angle subtended by the critical angle θc at the edge AB.",
+    "conclusion": "The half-width d/2 of the incident beam can be found using trigonometry: d/2 = R tan(θc / 2).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given θc = 75°: θc / 2 = 37.5°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θc / 2 = 37.5°.",
+    "conclusion": "d/2 = R tan 37.5°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the value tan 37.5° ≈ 0.785.",
+    "conclusion": "d/2 ≈ R × 0.785 = 0.785R.",
+    "judgment": "Wrong"
+  }]

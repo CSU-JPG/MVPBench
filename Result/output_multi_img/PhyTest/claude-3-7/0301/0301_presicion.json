@@ -1,0 +1,103 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial state A: T_A = -73°C = 200 K (converting to Kelvin)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Change in internal energy from A to C: ΔU_AC = 200 J",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Standard conditions: 1 mole of ideal gas occupies 22.4 L at 1 atm and 273 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Avogadro's number: N_A = 6.0×10^23 mol^-1",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "p-V diagram showing the process from A to C via B",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A→B: Isobaric process (constant pressure) with volume increasing",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B→C: Isochoric process (constant volume) with pressure decreasing",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "p_A = 3×10^5 Pa",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "V_A = 1×10^-3 m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "p_C = 1×10^5 Pa",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "V_C = 4×10^-3 m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at state A: pV = nRT",
+    "conclusion": "n = (p_A × V_A) / (R × T_A) = 0.0361 mol",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal gas, the change in internal energy depends only on temperature change: ΔU = (3/2)nRΔT",
+    "conclusion": "200 J = (3/2) × 0.0361 mol × 8.314 J/(mol·K) × (T_C - 200 K)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "200 J = 3.74 × (T_C - 200 K)",
+    "conclusion": "T_C - 200 K = 53.5 K",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_C - 200 K = 53.5 K",
+    "conclusion": "T_C = 253.5 K = -19.5°C",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done during A→B: W_AB = p_A(V_B - V_A) = 3×10^5 × (4-1)×10^-3 = 900 J",
+    "conclusion": "Total work: W = 900 J",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Heat added: Q = ΔU + W = 200 J + 900 J = 1100 J",
+    "conclusion": "This makes physical sense as the gas is expanding at constant pressure (doing work) and then cooling at constant volume.",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semicircular glass brick with radius R and critical angle for total internal reflection γ (γ < π/2). Parallel light rays strike the flat base at angle (π - γ) relative to the horizontal. We need to find the width of the portion of the base through which light passes.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Parallel light rays strike the flat base at angle (π - γ) relative to the horizontal.",
+    "conclusion": "The rays are at angle γ from the vertical inside the glass.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Inside the glass, rays travel in straight lines until they hit the curved surface. For a ray to exit the curved surface, the angle of incidence must be less than the critical angle γ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the curved surface equals the angle between the ray and the normal to the surface.",
+    "conclusion": "The boundary ray hits the curved surface at exactly the critical angle γ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The flat base runs from (-R, 0) to (R, 0). The incoming rays have direction vector (sin γ, cos γ).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incoming rays have direction vector (sin γ, cos γ).",
+    "conclusion": "For a ray that starts at position (x, 0) on the base, it will eventually hit the curved surface at some point.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the critical point, the ray makes angle γ with the radius (normal).",
+    "conclusion": "The ray is tangent to a circle of radius R·cos γ centered at the origin.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical ray must start at position (R·sin γ, 0) on the base.",
+    "conclusion": "Any ray that enters the base between (0, 0) and (R·sin γ, 0) will hit the curved surface at an angle less than γ and will exit.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rays that enter between (-R, 0) and (0, 0) will also exit (by symmetry and because the rays are angled).",
+    "conclusion": "The total width of the base through which light passes is R + R·sin γ = R(1 + sin γ).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

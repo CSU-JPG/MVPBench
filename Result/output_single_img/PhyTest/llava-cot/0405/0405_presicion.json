@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, analyze the image to understand the geometry of the semi-cylindrical body and apply the concept of refraction to find the area S of the part of the cylindrical surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a semi-cylindrical body with a rectangular top surface and a curved bottom surface. Parallel light beams enter vertically through the rectangular surface and exit through the curved surface. The semi-cylinder has a radius R and length L, and the refractive index is given as n = 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The semi-cylindrical body has a radius R and length L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index n is given as 2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index n is given as 2.",
+    "conclusion": "The angle of incidence equals the angle of refraction.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the light beams enter parallel and exit parallel, the angle of incidence equals the angle of refraction.",
+    "conclusion": "The area S of the part of the cylindrical surface is calculated using the formula for the lateral surface area of a cylinder, which is 2πRL.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light exits through the curved surface.",
+    "conclusion": "The area S is given by the formula S = (n × L × R × π)/2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute n = 2 into the formula: S = (2 × L × R × π)/2 = L × R × π.",
+    "conclusion": "The area S of the part of the cylindrical surface is L × R × π.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

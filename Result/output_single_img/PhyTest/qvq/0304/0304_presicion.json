@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The image shows a PV diagram of an ideal gas transitioning from state A to state B to state C. The task is to find the temperature at state B, given the temperature at state A is 127°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The x-axis is volume in liters (L), and the y-axis is pressure in atmospheres (atm). Points A, B, and C are plotted on the graph.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: V = 1 L, P = 4 atm; Point B: V = 3 L, P = 3 atm; Point C: V = 4 L, P = 1 atm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is PV = nRT, where P is pressure, V is volume, n is the number of moles, R is the ideal gas constant, and T is temperature.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state A is 127°C.",
+    "conclusion": "Convert 127°C to Kelvin: T_A = 127°C + 273.15 = 400.15 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Need to find T_B using the ideal gas law.",
+    "conclusion": "Since PV is proportional to T, relate states A and B: (P_B * V_B) / (P_A * V_A) = T_B / T_A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A = 4 atm, V_A = 1 L, T_A = 400.15 K; P_B = 3 atm, V_B = 3 L.",
+    "conclusion": "(3 atm * 3 L) / (4 atm * 1 L) = T_B / 400.15 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(3 atm * 3 L) / (4 atm * 1 L) = T_B / 400.15 K.",
+    "conclusion": "Calculate the left side: (9) / (4) = 2.25.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = 2.25 * 400.15 K.",
+    "conclusion": "T_B ≈ 900 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B ≈ 900 K.",
+    "conclusion": "Convert Kelvin back to Celsius: T_B - 273.15 = 627°C.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

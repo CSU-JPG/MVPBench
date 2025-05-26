@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a square wire frame in a magnetic field, and the task is to find the magnitude and direction of the frictional force at a specific time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The square wire frame has a side length of 0.2 meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Side length is 0.2 meters.",
+    "conclusion": "The area of the square is 0.2 m * 0.2 m = 0.04 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Half of the square is in a uniform magnetic field perpendicular to the plane of the paper and directed inward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field strength changes with time, given by B = (3 + 2t) T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total resistance of the wire frame is 4 ohms.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Half of the square is in the magnetic field.",
+    "conclusion": "The effective area experiencing the magnetic field is 0.04 m² / 2 = 0.02 m².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic flux Φ = B * A.",
+    "conclusion": "Φ = (3 + 2t) * 0.02 Wb.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Φ = (3 + 2t) * 0.02 Wb.",
+    "conclusion": "dΦ/dt = 2 * 0.02 = 0.04 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Induced emf is 0.04 V and resistance is 4 ohms.",
+    "conclusion": "Induced current I = 0.04 V / 4 Ω = 0.01 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire frame remains stationary from t = 0 to t = 5 s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Wire frame is stationary, so forces must be balanced.",
+    "conclusion": "Frictional force balances the magnetic force.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t = 2.5 s, B = 3 + 2*2.5.",
+    "conclusion": "B = 8 T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The square has points labeled D, A, C, F, M, N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current is 0.01 A, B = 8 T, and length in field is 0.2 m.",
+    "conclusion": "Magnetic force F = I * L * B = 0.01 * 0.2 * 8 = 0.016 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic force is to the left.",
+    "conclusion": "Frictional force is to the right.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two small balls of mass m each with charges +q and -q respectively, are connected by a rigid massless rod of length d, forming a dipole.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole is parallel to the XY-plane and placed in a uniform magnetic field B perpendicular to this plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the dipole is aligned with the X-axis and has an initial angular velocity ω0 in the XY-plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Its center of mass is at the origin with an initial velocity v0 parallel to the XY-plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given v0=0, find the minimal ω0=ωmin necessary for the dipole to reverse its orientation during the motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a dipole consisting of two balls with charges +q and -q connected by a rod of length d, aligned along the X-axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The dipole is placed in a magnetic field B perpendicular to the XY-plane, represented by a circle with a dot indicating the field direction out of the page.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The dipole has an angular velocity ω0 in the XY-plane, indicated by an arrow curving around the dipole.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charges are +q at +d/2 and -q at -d/2, with the unit vector u=(cosφ,sinφ) giving the orientation angle φ from the X-axis.",
+    "conclusion": "The mechanical data of the dipole includes charges at +d/2 and -d/2, angular velocity ω, and moment of inertia I=1/2 md^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is B=-Bz (into the page), and the linear velocities of the charges are v±=ω×r±=ωd/2(-sinφ,cosφ)±.",
+    "conclusion": "The magnetic forces on the charges are F±=q±v±×B=∓qBωd/2(cosφ,sinφ), acting along the rod but in opposite directions.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces F± are equal in magnitude and opposite in sign, acting along the rod.",
+    "conclusion": "The net torque about the center of mass is τ=r+×F++r−×F−=0, so the magnetic field exerts no torque on the dipole.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "With τ=Iω˙=0, we have ω˙=0⟹ω(t)=ω0=constant.",
+    "conclusion": "The dipole keeps rotating uniformly at its initial angular speed, with orientation angle φ(t)=φ(0)+ω0t.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To rotate through 180°, we need φ(t)−φ(0)=π.",
+    "conclusion": "With constant ω0, this is achieved after time t=π/|ω0|.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Any non-zero angular speed will eventually turn the dipole by 180°.",
+    "conclusion": "The smaller the speed, the longer the time needed.",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,55 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We’re dealing with an ideal gas undergoing a process from state A to state B to state C, as shown in a p-V diagram. Our goal is to find the heat transferred by the gas, given that the temperature at state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The axes of the diagram are labeled as \\( p / \\times 10^5 \\, \\text{Pa} \\) for pressure and \\( V / \\times 10^{-3} \\, \\text{m}^3 \\) for volume.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: Located at \\( (V = 2, p = 1) \\). Volume: \\( V = 2 \\times 10^{-3} \\, \\text{m}^3 = 0.002 \\, \\text{m}^3 \\), Pressure: \\( p = 1 \\times 10^5 \\, \\text{Pa} = 100,000 \\, \\text{Pa} \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: Located at \\( (V = 4, p = 2) \\). Volume: \\( V = 4 \\times 10^{-3} \\, \\text{m}^3 = 0.004 \\, \\text{m}^3 \\), Pressure: \\( p = 2 \\times 10^5 \\, \\text{Pa} = 200,000 \\, \\text{Pa} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: Located at \\( (V = 2, p = 3) \\). Volume: \\( V = 2 \\times 10^{-3} \\, \\text{m}^3 = 0.002 \\, \\text{m}^3 \\), Pressure: \\( p = 3 \\times 10^5 \\, \\text{Pa} = 300,000 \\, \\text{Pa} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process goes from A → B → C, forming a triangle on the p-V diagram.",
+    "conclusion": "Since C returns to the same volume as A, this suggests a cyclic-like process, but we’ll treat it as two distinct processes (A to B and B to C) to compute the heat transfer.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is \\( pV = nRT \\), where \\( p \\) is pressure in Pa, \\( V \\) is volume in \\( \\text{m}^3 \\), \\( n \\) is the number of moles, \\( R = 8.314 \\, \\text{J/(mol·K)} \\) is the universal gas constant, \\( T \\) is the temperature in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A: \\( T_A = 27^\\circ \\text{C} = 27 + 273 = 300 \\, \\text{K} \\), \\( p_A = 100,000 \\, \\text{Pa} \\), \\( V_A = 0.002 \\, \\text{m}^3 \\)",
+    "conclusion": "n = \\frac{200}{2494.2} \\approx 0.0802 \\, \\text{moles}",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State B: \\( p_B = 200,000 \\, \\text{Pa} \\), \\( V_B = 0.004 \\, \\text{m}^3 \\)",
+    "conclusion": "T_B = \\frac{800}{0.6668} \\approx 1199.8 \\, \\text{K}",
+    "judgment": "Wrong"
+  }]

@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A point light source is on the horizontal plane. A small ball is thrown vertically upward with an initial velocity \\(v_0\\). The ball is released from the midpoint between the light source and the right wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "As the ball moves, its shadow will be projected on the wall. The position of the shadow depends on the position of the ball as it moves.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let’s denote the horizontal distance from the light source to the wall as \\(d\\). The ball starts at a distance \\(d/2\\) from the light source.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical position \\(y(t)\\) of the ball at time \\(t\\) is given by \\(y(t) = v_0 t - \\frac{1}{2} g t^2\\).",
+    "conclusion": "The vertical position of the ball as it moves upward is \\(y(t) = v_0 t - \\frac{1}{2} g t^2\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The shadow on the wall is a projection of the ball's position. By similar triangles, the horizontal position of the shadow \\(x_s(t)\\) can be related to the ball's position as \\(\\frac{x_s(t)}{d} = \\frac{y(t)}{d/2}\\).",
+    "conclusion": "The horizontal position of the shadow is \\(x_s(t) = 2 y(t)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Differentiate \\(x_s(t) = 2 y(t)\\) with respect to time to find the velocity of the shadow.",
+    "conclusion": "The velocity of the shadow is \\(v_s(t) = 2 \\frac{dy(t)}{dt}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\(\\frac{dy(t)}{dt} = v_0 - gt\\), the initial velocity of the shadow at \\(t = 0\\) is \\(v_s(0) = 2v_0\\).",
+    "conclusion": "The initial velocity of the shadow is \\(2v_0\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

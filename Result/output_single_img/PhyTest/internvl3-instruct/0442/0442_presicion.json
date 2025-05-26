@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the angle \\(\\theta\\) in the given optical fiber scenario, we need to understand the principles of total internal reflection and the geometry involved.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A laser beam is injected into the optical fiber at point \\(O\\) with an incident angle \\(\\alpha = 45^\\circ\\). Total internal reflection occurs at the side of the optical fiber.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when the angle of incidence inside the fiber is greater than the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle \\(\\theta_c\\) is given by: \\(\\sin \\theta_c = \\frac{n_2}{n_1}\\) where \\(n_1\\) is the refractive index of the core and \\(n_2\\) is the refractive index of the cladding.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The laser beam enters at \\(O\\) and hits the side of the fiber at point \\(A\\). The angle of incidence at \\(A\\) is \\(\\theta\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle \\(\\theta\\) is related to the incident angle \\(\\alpha\\) and the angle of refraction \\(\\beta\\) at the entry point \\(O\\).",
+    "conclusion": "Using Snell's Law at point \\(O\\): \\(n_1 \\sin \\alpha = n_2 \\sin \\beta\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given \\(\\alpha = 45^\\circ\\), \\(n_1 \\sin 45^\\circ = n_2 \\sin \\beta\\).",
+    "conclusion": "\\(n_1 \\cdot \\frac{\\sqrt{2}}{2} = n_2 \\sin \\beta\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(n_1 \\cdot \\frac{\\sqrt{2}}{2} = n_2 \\sin \\beta\\).",
+    "conclusion": "\\(\\sin \\beta = \\frac{n_1 \\sqrt{2}}{2 n_2}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point \\(A\\), the angle of incidence is \\(\\theta\\). For total internal reflection, \\(\\theta\\) must be greater than the critical angle \\(\\theta_c\\).",
+    "conclusion": "The angle \\(\\theta\\) is related to \\(\\beta\\) by the geometry of the fiber: \\(\\theta = 90^\\circ - \\beta\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin \\beta = \\frac{n_1 \\sqrt{2}}{2 n_2}\\).",
+    "conclusion": "\\(\\beta = \\arcsin \\left( \\frac{n_1 \\sqrt{2}}{2 n_2} \\right)\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\beta = \\arcsin \\left( \\frac{n_1 \\sqrt{2}}{2 n_2} \\right)\\).",
+    "conclusion": "\\(\\theta = 90^\\circ - \\arcsin \\left( \\frac{n_1 \\sqrt{2}}{2 n_2} \\right)\\).",
+    "judgment": "Reasonable"
+  }]

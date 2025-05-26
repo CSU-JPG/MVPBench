@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Four wooden blocks labeled A, B, C, and D are placed on a smooth horizontal surface. Blocks B and C are connected by a light spring. A horizontal pulling force F is applied to block B, causing all blocks to accelerate together.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The blocks are identical, and the surface is smooth, so there's no friction between the blocks and the surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The blocks are accelerating together with the same acceleration.",
+    "conclusion": "The total mass of the system is 4m, and the acceleration a of the system is F/4m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The spring between blocks B and C exerts forces on both blocks due to its extension or compression, following Hooke's law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Blocks C and D are stacked together.",
+    "conclusion": "There must be static friction between blocks C and D to prevent slipping.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block D is being accelerated by the friction force from block C.",
+    "conclusion": "The static friction force on block D is f = m * a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force on block C is the spring force minus the friction force.",
+    "conclusion": "F_spring - f = m * a.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block C is accelerating at a, and f = m * a.",
+    "conclusion": "F_spring = 2 m * a.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force on block B is F - F_spring = m * a.",
+    "conclusion": "F = 3 m * a.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force F is accelerating the total mass of 4m.",
+    "conclusion": "F = 4 m * a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For blocks A and D, f_A = f_D = ma.",
+    "conclusion": "The magnitude of the static frictional force acting on D is f_D = F/4.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

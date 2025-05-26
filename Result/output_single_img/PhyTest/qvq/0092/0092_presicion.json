@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A child with a mass of 30 kg is sitting on a sled with a mass of 10 kg. An adult pulls the sled with a force of 100 N at an angle of 37 degrees above the horizontal. The sled moves at a constant speed along the horizontal ground. We need to find the magnitude of the pressure exerted by the sled on the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the sled is moving at a constant speed, the net force acting on it is zero because there's no acceleration.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force is zero due to constant speed.",
+    "conclusion": "The pulling force and the frictional force must be balanced.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The pulling force is 100 N at an angle of 37 degrees above the horizontal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pulling force is 100 N at 37 degrees above horizontal.",
+    "conclusion": "The horizontal component is F_horizontal = F * cos(theta), and the vertical component is F_vertical = F * sin(theta).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given that theta is 37 degrees, sin(37) = 0.6, cos(37) = 0.8.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 100 N, cos(37) = 0.8",
+    "conclusion": "F_horizontal = 100 * 0.8 = 80 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 100 N, sin(37) = 0.6",
+    "conclusion": "F_vertical = 100 * 0.6 = 60 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The pulling force has a horizontal component of 80 N and a vertical component of 60 N.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Consider the forces in the vertical direction: weight of the child and sled acting downward, normal force from the ground acting upward, and vertical component of the pulling force acting upward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mass of child = 30 kg, mass of sled = 10 kg, g = 10 m/s²",
+    "conclusion": "Total weight = (30 kg + 10 kg) * 10 m/s² = 400 N downward",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total weight = 400 N, F_vertical = 60 N",
+    "conclusion": "Normal force (N) + 60 N = 400 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N + 60 N = 400 N",
+    "conclusion": "N = 400 N - 60 N = 340 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the sled is moving at a constant speed, the frictional force (f) must be equal in magnitude to the horizontal component of the pulling force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_horizontal = 80 N",
+    "conclusion": "f = F_horizontal = 80 N",
+    "judgment": "Match"
+  }]

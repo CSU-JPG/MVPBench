@@ -1,0 +1,64 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "A certain mass of an ideal gas undergoes a state change represented on the p-V diagram. The temperature of the gas at state A is -73°C, and the internal energy of the gas changes by 200 J during the process from state A to state C. Under standard conditions, 1 mole of an ideal gas occupies a volume of 22.4 L. Avogadro's number is given as 6.0×10^23 mol^-1.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "State A: p_A = 3 × 10^5 Pa, V_A = 1 × 10^-3 m^3. State B: p_B = 1 × 10^5 Pa, V_B = 3 × 10^-3 m^3. State C: p_C = 1 × 10^5 Pa, V_C = 4 × 10^-3 m^3.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The internal energy of the gas changes by 200 J during the process from state A to state C.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal energy change (ΔU) is given by ΔU = m · c · ΔT, where m is the mass of the gas, c is the specific heat capacity, and ΔT is the temperature change.",
+    "conclusion": "The specific heat capacity of an ideal gas at constant pressure (c_p) is given by c_p = (3/2) · R, where R is the gas constant.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The gas constant (R) is approximately 8.314 J/(mol·K).",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass of the gas (m) is 1 mole, and the temperature change (ΔT) is 273 K - (-73 K) = 346 K.",
+    "conclusion": "ΔU = 1 mol · (3/2) · 8.314 J/(mol·K) · 346 K = 10500 J.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas on the surroundings is given by W = p · ΔV, where ΔV is the change in volume.",
+    "conclusion": "The change in volume (ΔV) is ΔV = V_C - V_A = 4 × 10^-3 m^3 - 1 × 10^-3 m^3 = 3 × 10^-3 m^3.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in volume (ΔV) is 3 × 10^-3 m^3, and p_C = 1 × 10^5 Pa.",
+    "conclusion": "W = p_C · ΔV = 1 × 10^5 Pa · 3 × 10^-3 m^3 = 300 J.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas on the surroundings is W = 300 J, and the internal energy change is ΔU = 200 J.",
+    "conclusion": "The work done (300 J) does not match the internal energy change (200 J), indicating an error in the calculation.",
+    "judgment": "Wrong",
+    "final_answer": null
+  }]

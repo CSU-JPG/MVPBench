@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the induced electromotive force (emf) in the loop and the current flowing through it due to the changing magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We will use Faraday's law of electromagnetic induction and the concept of induced emf in a loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "We have a square wire frame with side length L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Half of the square is in a uniform magnetic field B that is perpendicular to the plane of the square and directed into the paper.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic field is decreasing at a constant rate k.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Half of the square is in the magnetic field.",
+    "conclusion": "The area A in the magnetic field is A = L^2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux Φ through the area is given by Φ = B × A.",
+    "conclusion": "Φ = B × L^2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of magnetic flux dΦ/dt is d(B × L^2/2)/dt.",
+    "conclusion": "dΦ/dt = L^2/2 × dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that dB/dt = -k.",
+    "conclusion": "dΦ/dt = -L^2 k/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday’s law states that the induced emf E in the loop is equal to the negative rate of change of magnetic flux.",
+    "conclusion": "E = L^2 k/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The loop is connected to a capacitor with capacitance C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf will cause a current I to flow, which can be calculated using Ohm's law for the loop: I = E/R.",
+    "conclusion": "Since the problem does not provide resistance R, we assume the loop is ideal and focus on the charge Q on the capacitor.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q = C × E.",
+    "conclusion": "Q = C × L^2 k/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I is the rate of change of charge: I = dQ/dt.",
+    "conclusion": "I = C × d(E)/dt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since E is constant in this scenario.",
+    "conclusion": "I = 0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

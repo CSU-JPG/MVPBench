@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves charging a supercapacitor in a circuit with a charger, a resistor R, and a supercapacitor connected in a loop. The charging process has two stages: constant current and then constant voltage.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The task is to find the voltage across the capacitor, U2, during the constant voltage charging stage when the current through the resistor is I2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the first stage, the charger provides a constant current, charging the supercapacitor until the voltage reaches a certain value. Then, it switches to constant voltage charging, where the voltage output by the charger remains constant, and the current decreases as the capacitor charges further.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During the constant voltage stage, the charger maintains a constant voltage U across the circuit. There's a resistor R in series with the supercapacitor, and the current through the resistor is I2 at the moment of interest.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In a series circuit, the total voltage is the sum of the voltages across each component.",
+    "conclusion": "The voltage from the charger is equal to the voltage across the resistor plus the voltage across the capacitor.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = UR + UC",
+    "conclusion": "U is the constant voltage provided by the charger during the second stage.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "UR = I * R",
+    "conclusion": "For a resistor, the voltage UR can be found using Ohm's law.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "UR = I2 * R",
+    "conclusion": "Given that at the moment of interest, the current through the resistor is I2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = I2 * R + UC",
+    "conclusion": "Plugging UR = I2 * R into the earlier equation.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = I2 * R + UC",
+    "conclusion": "Solve for UC, which is U2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "UC = U - I2 * R",
+    "conclusion": "Therefore, U2 = U - I2 * R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the constant voltage charging stage, the charger maintains a constant voltage U across the entire circuit. As the capacitor charges, the current through the resistor decreases, which means that the voltage drop across the resistor decreases, and thus the voltage across the capacitor approaches U.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the moment when the current is I2, the voltage across the resistor is I2 * R.",
+    "conclusion": "Hence the voltage across the capacitor is U - I2 * R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a series circuit, the sum of the voltage drops across each component equals the total voltage supplied by the source.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to the diagram and the problem statement, it's a simple series circuit with the charger, resistor R, and the supercapacitor.",
+    "judgment": "N/A"
+  }

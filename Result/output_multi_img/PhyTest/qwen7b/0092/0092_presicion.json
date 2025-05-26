@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the forces acting on the sled: The weight of the child (mg_child), the weight of the sled (mg_sled), the normal force (N) exerted by the ground on the sled, the force applied by the adult (F), and the frictional force (f), which balances the horizontal component of the applied force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m_child = 30 kg, m_sled = 10 kg",
+    "conclusion": "Calculate the total mass of the sled and the child: m_total = m_child + m_sled = 30 kg + 10 kg = 40 kg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m_total = 40 kg, g = 10 m/s^2",
+    "conclusion": "Determine the total weight of the sled and the child: mg_total = m_total * g = 40 kg * 10 m/s^2 = 400 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 100 N, sin(37°) = 0.6",
+    "conclusion": "Calculate the vertical component of the applied force: F_y = F * sin(37°) = 100 N * 0.6 = 60 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 100 N, cos(37°) = 0.8",
+    "conclusion": "Calculate the horizontal component of the applied force: F_x = F * cos(37°) = 100 N * 0.8 = 80 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N + F_y - mg_total = 0, F_y = 60 N, mg_total = 400 N",
+    "conclusion": "Determine the normal force (N): N = 400 N - 60 N = 340 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_x - f = 0, F_x = 80 N",
+    "conclusion": "Determine the frictional force (f): f = F_x = 80 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N = 340 N, A = 1 m^2",
+    "conclusion": "Calculate the pressure exerted by the sled on the ground: P = N/A = 340 Pa",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

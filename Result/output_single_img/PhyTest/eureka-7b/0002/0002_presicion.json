@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the initial velocity of the shadow cast by the small ball on the right wall. We will use the principles of projectile motion and similar triangles to find the relationship between the velocity of the ball and the velocity of its shadow.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let the height of the point light source be h. The initial position of the small ball is at the midpoint between the point light source and the right wall. This means the ball is initially at a distance d/2 from the light source, where d is the distance between the light source and the wall. The initial velocity of the ball is v_0, and it is thrown vertically upward. The acceleration due to gravity is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time to reach the maximum height is given by t_up = v_0/g.",
+    "conclusion": "The total time of flight is T = 2t_up = 2v_0/g.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height of the ball as a function of time is y(t) = v_0 t - 0.5 g t^2.",
+    "conclusion": "The height of the ball as a function of time is y(t) = v_0 t - 0.5 g t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The shadow is cast on the wall, and the height of the shadow y_shadow can be found using similar triangles.",
+    "conclusion": "The height of the shadow y_shadow is given by y_shadow/h = d/sqrt((d/2)^2 + (v_0 t - 0.5 g t^2)^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for y_shadow gives y_shadow = h d/sqrt((d/2)^2 + (v_0 t - 0.5 g t^2)^2).",
+    "conclusion": "The height of the shadow y_shadow is h d/sqrt((d/2)^2 + (v_0 t - 0.5 g t^2)^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of the shadow is the derivative of the height of the shadow with respect to time.",
+    "conclusion": "The velocity of the shadow is v_shadow = d y_shadow/dt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the chain rule and the quotient rule, we can find the derivative. However, a more straightforward approach is to use the properties of similar triangles and the fact that the velocity of the shadow is proportional to the velocity of the ball.",
+    "conclusion": "The velocity of the shadow is proportional to the velocity of the ball.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio of the velocities is the same as the ratio of the heights at the same time.",
+    "conclusion": "The velocity of the shadow is v_s(t) = 2 v_0/sqrt((d/2)^2 + (v_0 t - 0.5 g t^2)^2) * (v_0 - g t).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial velocity of the shadow is the velocity at t = 0.",
+    "conclusion": "At t = 0, the height of the ball is y(0) = 0, and the height of the shadow is y_shadow(0) = 2h.",
+    "judgment": "Reasonable"
+  }]

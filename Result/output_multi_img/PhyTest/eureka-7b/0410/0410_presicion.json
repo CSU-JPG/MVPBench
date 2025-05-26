@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the minimum area of each piece of paper that must be pasted on each face of the cube to ensure that the bubble is not visible from any direction outside the cube. The refractive index of the glass is given as n = 1.5.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The bubble is located at the center of the cube, and we need to ensure that light from the bubble does not exit the cube through any of its faces. This means that the critical angle for total internal reflection must be considered.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θ_c for total internal reflection is given by θ_c = sin^(-1)(1/n). For n = 1.5.",
+    "conclusion": "θ_c = sin^(-1)(2/3)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using a calculator, we find θ_c = sin^(-1)(2/3).",
+    "conclusion": "θ_c ≈ 41.81°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relationship between the angles is given by sin r = cos θ_c / (a / sqrt(a^2 + (a/2)^2)).",
+    "conclusion": "cos θ_c = sqrt(1 - (2/3)^2) = sqrt(5/9) = sqrt(5)/3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos θ_c = sqrt(5)/3 and sin r = cos θ_c / (a / sqrt(a^2 + (a/2)^2)).",
+    "conclusion": "sin r = (sqrt(5)/3) / (a / (a sqrt(5)/2)) = (sqrt(5)/3) / (2/sqrt(5)) = 5/6",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin r = 5/6",
+    "conclusion": "r = sin^(-1)(5/6)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the face of the cube is a^2. The area of the triangle is 1/2 * base * height.",
+    "conclusion": "The area of the triangle is 1/4 a^2 tan r",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of each piece of paper is a^2 - 1/4 a^2 tan r.",
+    "conclusion": "tan r = (sin r)/(cos r) = (5/6)/(sqrt(5)/3) = 5/(2 sqrt(5)) = sqrt(5)/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan r = sqrt(5)/2",
+    "conclusion": "The area of each piece of paper is a^2 - 1/4 a^2 * sqrt(5)/2",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

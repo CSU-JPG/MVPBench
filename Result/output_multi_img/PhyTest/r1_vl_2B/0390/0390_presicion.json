@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a ball sliding down an inclined plane, transitioning to a horizontal rail, and then moving through a semicircular track under the influence of gravity and an electric field. The goal is to find the release height of the ball such that it just flies out at point D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Given values: m = 8 g = 0.08 kg, g = 10 m/s^2, θ = 53°, R = 0.5 m, E = 6 × 10^6 V/m, sin(53°) = 0.8, cos(53°) = 0.6.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball is released from height h on the inclined plane and slides down freely under gravity.",
+    "conclusion": "The initial velocity v_0 of the ball at the bottom of the inclined plane can be calculated using the conservation of energy: v_0^2 = g × h × sin(θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0^2 = g × h × sin(θ), g = 10 m/s^2, sin(53°) = 0.8.",
+    "conclusion": "v_0 = √(10 × h × 0.8).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball travels horizontally from point A to point D with initial velocity v_0.",
+    "conclusion": "The total distance d traveled by the ball is d = v_0 × sin(θ).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball just flies out from point D, and the radius of the semicircular track is R = 0.5 m.",
+    "conclusion": "The condition for the ball to just fly out is d = R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = R and d = v_0 × sin(θ).",
+    "conclusion": "h = R / sin(θ).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = R / sin(θ), R = 0.5 m, sin(53°) = 0.8.",
+    "conclusion": "h = 0.5 / 0.8 = 0.625 m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = 0.625 m and v_0 = √(10 × h × 0.8).",
+    "conclusion": "v_0 = √(10 × 0.625 × 0.8) = √(5) ≈ 2.24 m/s.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball travels horizontally from point A to point D with velocity v_0.",
+    "conclusion": "The time t taken to reach point D is t = d / v_0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = R, R = 0.5 m, and v_0 = √(5).",
+    "conclusion": "t = 0.5 / √(5) ≈ 0.22 s.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total height h_a at which the ball is released is the sum of the height h and the vertical distance traveled during the horizontal motion.",
+    "conclusion": "h_a = h + d / 2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = 0.625 m, d = 0.5 m.",
+    "conclusion": "h_a = 0.625 + 0.25 = 0.875 m.",
+    "judgment": "Wrong"
+  }]

@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the temperature of the gas in state B, given that the temperature in state A is 300 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the Ideal Gas Law: PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state A: Pressure (P_A) = 4 atm, Volume (V_A) = 10 L, Temperature (T_A) = 300 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state B: Pressure (P_B) = 4 atm, Volume (V_B) = 20 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A V_A = nRT_A",
+    "conclusion": "4 atm × 10 L = nR × 300 K, nR = 2/15",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_B V_B = nRT_B",
+    "conclusion": "4 atm × 20 L = nR × T_B, 80 = nRT_B",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nR = 2/15 and 80 = nRT_B",
+    "conclusion": "T_B = 600 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

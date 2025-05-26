@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "List the data and symbols: length of the rod (L), spring constant of each spring (k), uniform magnetic field (B), mass of the rod (m), first current (I₁), second current (I₂), required extension of each spring when the current is I₂ (Δ).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic force on a straight conductor: For a straight conductor of length L that is perpendicular to a uniform field B and carries current I, the magnitude of the magnetic force is F_m = I L B. Direction is given by the right-hand rule.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "With current I₁ (a → b), the two springs just do not stretch, i.e., their tensions are zero.",
+    "conclusion": "The upward magnetic force must balance the weight by itself: I₁ L B = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Now the current flows b → a, so the magnetic force is downward.",
+    "conclusion": "The magnetic force equals F′_m = I₂ L B (downward).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod is pulled downward by its own weight plus the magnetic force.",
+    "conclusion": "F_down = mg + I₂ L B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two identical vertical springs share the load equally, so each spring must supply an upward force kΔ.",
+    "conclusion": "2 k Δ = F_down.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From mg = I₁ L B, insert into F_down = mg + I₂ L B and then into 2 k Δ = F_down.",
+    "conclusion": "2 k Δ = L B (I₁ + I₂).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2 k Δ = L B (I₁ + I₂).",
+    "conclusion": "Δ = L B (I₁ + I₂) / (2 k).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

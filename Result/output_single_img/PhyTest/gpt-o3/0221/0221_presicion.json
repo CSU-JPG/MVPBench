@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conductor rod ab has a length of 4L and rotates at a constant angular velocity ω in a uniform magnetic field B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between point a and point O is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the rod spins with angular speed ω in a perpendicular, uniform magnetic field B, each element of length dr located a distance r from the axis O behaves like a small conductor moving with linear speed v = ω r through the field.",
+    "conclusion": "The motional emf generated across the element of length dr is dU = B v dr = B (ω r) dr.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrate from r = 0 at end a (O is essentially at a) to r = 4L at end b: U_ab = ∫₀^{4L} B ω r dr",
+    "conclusion": "U_ab = B ω [r²/2]₀^{4L}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_ab = B ω [r²/2]₀^{4L}",
+    "conclusion": "U_ab = ½ B ω (4L)²",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_ab = ½ B ω (4L)²",
+    "conclusion": "U_ab = 8 B ω L²",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

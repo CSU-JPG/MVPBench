@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a square conductor frame moving through a magnetic field, and we need to find the duration of induced current.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The square conductor frame has side length \\( l \\) and moves with speed \\( v \\) through a magnetic field of width \\( d \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The magnetic field is represented by crosses, indicating it points into the page.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is perpendicular to the motion of the frame.",
+    "conclusion": "This orientation is important for inducing an emf in the frame.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Induced current occurs when there's a change in magnetic flux through the frame.",
+    "conclusion": "The frame must be entering or leaving the magnetic field to cause this change.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The frame moves to the right with speed \\( v \\), and the magnetic field is between two vertical dashed lines, a distance \\( d \\) apart.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frame has sides of length \\( l \\), and it's smaller than \\( d \\).",
+    "conclusion": "The entire frame can fit inside the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the frame enters the magnetic field, one side starts cutting the magnetic field lines.",
+    "conclusion": "This induces an emf and hence a current in the frame.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the frame exits the field, the opposite side starts cutting the field lines.",
+    "conclusion": "This induces another current.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frame is smaller than the field width.",
+    "conclusion": "Once the entire frame is inside the field, there should be no change in flux, meaning no induced current.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Induced current only occurs during the entry and exit phases.",
+    "conclusion": "The time with induced current is the time the frame takes to enter the field plus the time it takes to exit the field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side of the frame has to move into the field by a distance of \\( l \\) to completely enter the field.",
+    "conclusion": "The time to enter is \\( t_{\\text{enter}} = \\frac{l}{v} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When exiting, the side has to move \\( l \\) distance again to completely exit the field.",
+    "conclusion": "The time to exit is \\( t_{\\text{exit}} = \\frac{l}{v} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total time with induced current is the sum of the entry and exit times.",
+    "conclusion": "The total time is \\( t_{\\text{total}} = \\frac{l}{v} + \\frac{l}{v} = \\frac{2l}{v} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

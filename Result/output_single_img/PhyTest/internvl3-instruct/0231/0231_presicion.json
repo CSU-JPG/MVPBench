@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude and direction of the resultant Ampere force acting on the trapezoidal frame, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frame is made of a uniform-thickness resistance wire with resistivity \\(\\rho\\) and cross-sectional area \\(S\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The total length of the wire is the sum of the lengths of sides \\(AB\\), \\(BC\\), \\(CD\\), and \\(DA\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: \\(AB = BC = CD = L\\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\(AB\\) and \\(CD\\) form a \\(60^\\circ\\) angle with \\(AD\\), we can use trigonometry to find \\(AD\\).",
+    "conclusion": "Using the cosine rule in triangle \\(ABD\\): \\(AD = L\\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total length of the wire is \\(L_{\\text{total}} = AB + BC + CD + DA = L + L + L + L\\).",
+    "conclusion": "The total length of the wire is \\(4L\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance \\(R\\) of the wire is \\(R = \\rho \\frac{L_{\\text{total}}}{S}\\).",
+    "conclusion": "The total resistance \\(R = \\rho \\frac{4L}{S}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frame is connected to a power source with electromotive force \\(E\\) and negligible internal resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current \\(I\\) in the frame is given by Ohm's law: \\(I = \\frac{E}{R}\\).",
+    "conclusion": "The current \\(I = \\frac{ES}{4\\rho L}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The Ampere force on a current-carrying wire in a magnetic field is given by: \\(F = I L B \\sin(\\theta)\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For sides \\(AB\\), \\(BC\\), and \\(CD\\), the current is perpendicular to the magnetic field (\\(\\theta = 90^\\circ\\)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on each of these sides is \\(F_{AB} = F_{BC} = F_{CD} = I L B\\).",
+    "conclusion": "The force on each of these sides is \\(\\frac{ESB}{4\\rho}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For side \\(AD\\), the current is parallel to the magnetic field (\\(\\theta = 0^\\circ\\)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on side \\(AD\\) is \\(F_{AD} = 0\\).",
+    "conclusion": "The force on side \\(AD\\) is \\(0\\).",
+    "judgment": "Match"
+  }]

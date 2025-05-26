@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Result we need: the magnetic flux linked with the coil changes only over the half–area that is inside the field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The square has total area A = a²",
+    "conclusion": "Area effectively exposed to the field Ainside = ½ A = a² / 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic induction increases uniformly from B to 2 B in time Δt",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic induction increases uniformly from B to 2 B",
+    "conclusion": "ΔB = 2 B – B = B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area effectively exposed to the field Ainside = a² / 2 and ΔB = B",
+    "conclusion": "Change of flux through one turn ΔΦ₁ = Ainside · ΔB = (a² / 2) · B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Change of flux through one turn ΔΦ₁ = (a² / 2) · B and coil has n turns",
+    "conclusion": "Total change of flux ΔΦ = n · ΔΦ₁ = n · B · a² / 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "By Faraday’s law the (magnitude of the) induced e.m.f. is ε = |ΔΦ| / Δt",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total change of flux ΔΦ = n · B · a² / 2 and Faraday’s law ε = |ΔΦ| / Δt",
+    "conclusion": "ε = n B a² / (2 Δt)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

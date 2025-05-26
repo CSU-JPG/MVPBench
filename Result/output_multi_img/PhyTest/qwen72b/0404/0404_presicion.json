@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the refractive index \\( n \\) of the semi-cylindrical transparent object based on the given conditions.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The radius of the semi-cylinder is \\( R \\). A thin bundle of monochromatic light enters at point \\( C \\), which is at a distance \\( \\frac{\\sqrt{3}}{3} R \\) from \\( O \\). No light rays are emitted from the right side of the transparent object, indicating total internal reflection (TIR) occurs at the curved surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters at point \\( C \\) and no light is emitted from the right side.",
+    "conclusion": "Total internal reflection occurs at the curved surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point \\( C \\) is at a distance \\( \\frac{\\sqrt{3}}{3} R \\) from \\( O \\).",
+    "conclusion": "Use trigonometry to find the angle of incidence \\( i \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Place the semi-cylinder in a coordinate system with \\( O \\) at the origin. Point \\( C \\) has coordinates \\( \\left(0, \\frac{\\sqrt{3}}{3} R\\right) \\). Point \\( B \\) on the curved surface has coordinates \\( (x, y) \\) such that \\( x^2 + y^2 = R^2 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Coordinates of point \\( C \\) and equation \\( x^2 + y^2 = R^2 \\).",
+    "conclusion": "Calculate \\( x = \\sqrt{\\frac{2}{3}} R \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Coordinates of point \\( C \\) and \\( B \\).",
+    "conclusion": "The slope of the line \\( OC \\) is vertical, and the slope of the line \\( OB \\) is \\( \\frac{y}{x} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Slopes of lines \\( OC \\) and \\( OB \\).",
+    "conclusion": "The angle \\( i \\) between these two lines is given by \\( \\tan i = \\frac{x}{y} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Values of \\( x \\) and \\( y \\).",
+    "conclusion": "Calculate \\( \\tan i = \\sqrt{2} \\) and \\( i = \\arctan(\\sqrt{2}) \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For TIR, the critical angle \\( \\theta_c \\) must be exceeded.",
+    "conclusion": "The angle of incidence \\( i \\) must be equal to the critical angle \\( \\theta_c \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Critical angle condition and angle of incidence.",
+    "conclusion": "Calculate \\( \\sin i = \\frac{\\sqrt{2}}{\\sqrt{3}} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law and critical angle condition.",
+    "conclusion": "Calculate \\( n = \\sqrt{\\frac{3}{2}} = \\sqrt{1.5} = \\frac{\\sqrt{6}}{2} \\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

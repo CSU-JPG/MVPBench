@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid starts flowing from three different points: A (yellow), B (cyan), and C (blue and green).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Yellow Liquid (A) flows downwards and encounters the diagonal gray baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Yellow Liquid (A) flows downwards and encounters the diagonal gray baffle.",
+    "conclusion": "Yellow Liquid (A) is redirected towards the center.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Cyan Liquid (B) flows straight down until it hits the horizontal black baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cyan Liquid (B) flows straight down until it hits the horizontal black baffle.",
+    "conclusion": "Cyan Liquid (B) is redirected towards the center.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Blue and Green Liquids (C) flow down and are redirected by the horizontal black baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Blue and Green Liquids (C) flow down and are redirected by the horizontal black baffle.",
+    "conclusion": "Blue and Green Liquids (C) are redirected towards the center.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Yellow Liquid (A) is redirected towards the center. Cyan Liquid (B) is redirected towards the center. Blue and Green Liquids (C) are redirected towards the center.",
+    "conclusion": "All three liquids (yellow, cyan, blue, and green) converge and flow together towards the bottom center of the structure.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquids are further guided by the horizontal black baffle and the diagonal purple baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquids are further guided by the horizontal black baffle and the diagonal purple baffle.",
+    "conclusion": "The liquids are directed towards the center area.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquids are directed towards the center area.",
+    "conclusion": "The combined flow is directed towards the center container (E) due to the alignment and influence of the baffles.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The combined flow is directed towards the center container (E) due to the alignment and influence of the baffles.",
+    "conclusion": "The liquid will flow into container E.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

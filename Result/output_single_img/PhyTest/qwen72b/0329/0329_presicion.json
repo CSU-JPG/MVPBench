@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the temperature of the gas at state C, we need to use the ideal gas law and the relationships between pressure, volume, and temperature during the different processes.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process A→B is an isochoric (constant volume) process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isochoric process, the relationship between pressure and temperature is given by: \\( \\frac{P_A}{T_A} = \\frac{P_B}{T_B} \\)",
+    "conclusion": "Using the isochoric relationship: \\( \\frac{1 \\times 10^5}{200} = \\frac{4 \\times 10^5}{T_B} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given: - \\( P_A = 1 \\times 10^5 \\, \\text{Pa} \\) - \\( T_A = 200 \\, \\text{K} \\) - \\( P_B = 4 \\times 10^5 \\, \\text{Pa} \\)",
+    "conclusion": "Solving for \\( T_B \\): \\( T_B = \\frac{4 \\times 10^5 \\times 200}{1 \\times 10^5} = 800 \\, \\text{K} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process B→C is an isobaric (constant pressure) process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isobaric process, the relationship between volume and temperature is given by: \\( \\frac{V_B}{T_B} = \\frac{V_C}{T_C} \\)",
+    "conclusion": "Using the isobaric relationship: \\( \\frac{2}{800} = \\frac{5}{T_C} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given: - \\( V_B = 2 \\, \\text{L} \\) - \\( T_B = 800 \\, \\text{K} \\) - \\( V_C = 5 \\, \\text{L} \\)",
+    "conclusion": "Solving for \\( T_C \\): \\( T_C = \\frac{5 \\times 800}{2} = 2000 \\, \\text{K} \\)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the ideal gas equation of state \\( \\frac{P_{A}V_{A}}{T_{A}}=\\frac{P_{C}V_{C}}{T_{C}} \\)",
+    "conclusion": "Using the ideal gas equation: \\( T_C = 1000 \\, \\text{K} \\)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

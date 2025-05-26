@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a ray that starts from the point‐like lamp under water to get into the air it must strike the water–air interface with an angle to the normal that is not larger than the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nair ≈ 1",
+    "conclusion": "sin θc = nair / nwater ≈ 1 / n",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If the refractive index of water for the colour considered is n",
+    "conclusion": "sin θc = 1/n",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let the source be at depth h under the flat surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A ray that just succeeds in emerging reaches the surface at the edge of the bright patch; it makes the critical angle θc with the normal (vertical).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For that limiting ray",
+    "conclusion": "tan θc = r / h",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From sin θc = 1/n",
+    "conclusion": "cos θc = √(1 – sin²θc) = √(1 – 1/n²) = √(n² – 1)/n",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos θc = √(n² – 1)/n",
+    "conclusion": "tan θc = sin θc / cos θc = (1/n) / (√(n² – 1)/n) = 1 / √(n² – 1)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Insert tan θc = 1 / √(n² – 1) in tan θc = r / h",
+    "conclusion": "r = h / √(n² – 1)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "lamp A (red) is at depth h₁, water index for red = n₁",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "lamp B (yellow) is at depth h₂, water index for yellow = n₂",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Because the “spot” seen on the surface is the same for the two colours, r₁ = r₂ = r",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using r = h / √(n² – 1) for each colour",
+    "conclusion": "h₁ / √(n₁² – 1) = h₂ / √(n₂² – 1)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The illuminated region is a circle of radius r",
+    "conclusion": "S = π r² = π h² / (n² – 1)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consequently, using either lamp",
+    "conclusion": "S = π h₁² / (n₁² – 1) = π h₂² / (n₂² – 1)",
+    "judgment": "Match"
+  }]

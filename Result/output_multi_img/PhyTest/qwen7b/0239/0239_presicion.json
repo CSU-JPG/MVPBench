@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire ab has a length L and carries a current I. The magnetic field B is directed into the paper. The spring scales read F1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic force on a current-carrying conductor in a magnetic field is given by F_m = B I L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current flows from a to b, and the magnetic field is into the paper.",
+    "conclusion": "The magnetic force will be directed out of the paper according to the right-hand rule.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force is directed out of the paper.",
+    "conclusion": "This force adds to the weight of the wire, so the tension in each spring scale is T = mg + B I L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The spring scale reads F1.",
+    "conclusion": "F1 = T = mg + B I L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The current is reversed and its magnitude becomes 2I.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current is reversed.",
+    "conclusion": "The direction of the magnetic force changes to into the paper.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current is 2I and the magnetic field is B.",
+    "conclusion": "The new magnetic force is F_m' = 2B I L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force is into the paper.",
+    "conclusion": "This force subtracts from the weight of the wire, so the tension in each spring scale is now T' = mg - 2B I L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The spring scale reads F2.",
+    "conclusion": "F2 = T' = mg - 2B I L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equations: F1 = mg + B I L and F2 = mg - 2B I L.",
+    "conclusion": "Subtract the second equation from the first: F1 - F2 = 3B I L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F1 - F2 = 3B I L.",
+    "conclusion": "Solve for B: B = (F1 - F2) / (3 I L).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

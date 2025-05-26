@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A: pₐ = 3 × 10⁵ Pa, Vₐ = 1 × 10⁻³ m³, Tₐ = 27 °C = 300 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State B: pᵦ = 1 × 10⁵ Pa, Vᵦ = 1 × 10⁻³ m³ (same volume as A; the graph shows a vertical drop)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas the state equation is p V = n R T (n is the same for all states of the given mass of gas).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Taking the ratio of the equations for states B and A: (pᵦ Vᵦ)/(pₐ Vₐ) = Tᵦ/Tₐ",
+    "conclusion": "Because Vᵦ = Vₐ, the volumes cancel: Tᵦ = Tₐ (pᵦ/pₐ)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Tᵦ = Tₐ (pᵦ/pₐ)",
+    "conclusion": "Tᵦ = 300 K × (1 × 10⁵ Pa)/(3 × 10⁵ Pa)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Tᵦ = 300 K × (1 × 10⁵ Pa)/(3 × 10⁵ Pa)",
+    "conclusion": "Tᵦ = 300 K × 1/3",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Tᵦ = 300 K × 1/3",
+    "conclusion": "Tᵦ = 100 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Tᵦ = 100 K",
+    "conclusion": "Convert back to Celsius: Tᵦ = 100 K – 273 ≈ –173 °C",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Convert back to Celsius: Tᵦ = 100 K – 273 ≈ –173 °C",
+    "conclusion": "Answer: The temperature at state B is about –1.7 × 10² °C (≈ 100 K).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

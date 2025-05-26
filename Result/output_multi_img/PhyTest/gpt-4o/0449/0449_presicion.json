@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the change in the range of angles of light incident on the central point at the bottom of the light-transmitting hole after embedding the glass brick. We will use Snell's Law and some basic trigonometry to find the solution.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a circular light hole with a diameter L = 40 cm and thickness d = 20√3 cm. A glass brick with refractive index n = √3 is embedded in the hole. We need to find the change in the range of angles of light incident on the central point at the bottom of the hole.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light can enter the hole at any angle up to the maximum angle where it can still reach the central point at the bottom.",
+    "conclusion": "The maximum angle θ_max is determined by the geometry of the hole: tan(θ_max) = (L/2)/d = (40/2)/(20√3) = 1/√3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ_max) = 1/√3",
+    "conclusion": "Therefore, θ_max = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When light enters the glass brick, it refracts according to Snell's Law: n_1 sin(i) = n_2 sin(r). Here, n_1 = 1 (air), n_2 = √3 (glass), i is the angle of incidence, and r is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the maximum angle i = 30°",
+    "conclusion": "sin(r) = sin(30°)/√3 = 1/2√3",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(r) = 1/2√3",
+    "conclusion": "Therefore, r = sin^(-1)(1/2√3).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle r inside the glass brick is smaller than the angle i outside.",
+    "conclusion": "The maximum angle θ_max inside the glass is determined by: tan(θ_max, glass) = (L/2)/d = 1/√3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ_max, glass) = 1/√3",
+    "conclusion": "Therefore, θ_max, glass = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The range of angles inside the glass is increased because the refracted angle r is smaller than the incident angle i.",
+    "conclusion": "The increase in the range of angles is determined by the difference between the maximum angle before and after embedding the glass brick.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The increase in the range of angles is 60° - 30° = 30°.",
+    "conclusion": "The range of light incident on the central point at the bottom of the light-transmitting hole is increased by 30° compared with that before embedding the glass brick.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

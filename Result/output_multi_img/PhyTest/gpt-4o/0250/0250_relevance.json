@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Calculate instantaneous induced current and average induced emf during rotation.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Magnetic flux through wire frame is given by Phi_B = B * S * cos(theta).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Initially, normal to wire frame is parallel to magnetic field, theta = 0 degrees.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Initial magnetic flux is Phi_B,initial = B * S.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "When wire frame rotates 60 degrees, normal makes 60-degree angle with magnetic field.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final magnetic flux is Phi_B,final = B * S * 1/2 = B * S / 2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Faraday's law states induced emf is negative rate of change of magnetic flux.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Angle theta changes with time as theta = omega * t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Magnetic flux is Phi_B = B * S * cos(omega * t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Rate of change of flux is dPhi_B/dt = -B * S * omega * sin(omega * t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Induced emf is E = B * S * omega * sin(omega * t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Induced current I is related to induced emf by Ohm's law: I = E / R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Induced current is I = B * S * omega * sin(omega * t) / R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At 60 degrees, sin(omega * t) = sin(60 degrees) = sqrt(3)/2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Instantaneous current is I = sqrt(3) * B * S * omega / (2 * R).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Average induced emf is given by E_avg = Delta Phi_B / Delta t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Change in flux is Delta Phi_B = Phi_B,final - Phi_B,initial = -B * S / 2.",
+    "relevant": "Yes"
+  }
+]

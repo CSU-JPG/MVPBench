@@ -1,0 +1,77 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze geometry and conditions for total internal reflection.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Incident angle i is between incident ray and normal at point A.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Snell's Law: n1 sin i = n2 sin r, where n1 is refractive index of air, n2 is refractive index of sphere.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "sin r = sin i / n2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Light travels inside sphere to point B; angle of incidence i' needs determination.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Triangle OAB is isosceles with OA = OB = R.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Angle OAB = r from refraction at point A.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "In isosceles triangle, base angles are equal: angle OBA = angle OAB = r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Angle of incidence i' at point B is 90° - r.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For total internal reflection, i' must be >= critical angle θc, where sin θc = n2/n1.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "sin i' = cos r, so cos r >= 1/n2 for total internal reflection.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "sin r <= sqrt(1 - (1/n2)^2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute sin r = sin i / n2 to get sin i <= sqrt(n2^2 - 1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "If sin i > sqrt(n2^2 - 1), light undergoes total internal reflection at point B.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final answer: Yes, if sin i > sqrt(n2^2 - 1), light will be totally reflected.",
+    "relevant": "Yes"
+  }
+]

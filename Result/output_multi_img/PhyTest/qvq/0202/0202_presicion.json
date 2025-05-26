@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a semi-circular wire frame in a uniform magnetic field with a radius r, made of wires of the same material and thickness. The plane of the wire frame is perpendicular to the magnetic field direction. Points M and N are connected to a constant voltage direct current power supply. The Ampere force on the straight part of the wire frame is F, and the task is to find the total Ampere force on the entire wire frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ampere force is the force exerted on a current-carrying conductor in a magnetic field, given by F = BIL, where B is the magnetic field strength, I is the current, and L is the length of the conductor perpendicular to the field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame is semi-circular, consisting of a straight part between points M and N, and a curved part which is the semi-circle arc from M to N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The straight part experiences an Ampere force of F.",
+    "conclusion": "For the straight part, F = B * I * 2r, so B*I = F / (2r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The entire wire frame consists of the straight part and the semi-circular part.",
+    "conclusion": "The total Ampere force on the entire wire frame includes the force on the straight part (F) and the force on the semi-circular part.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The length of the semi-circular arc is πr.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The force on a curved conductor in a uniform magnetic field can be found by integrating the differential force over the path. For a circular loop carrying current I in a uniform magnetic field B, the net force is zero because the forces cancel out symmetrically.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a semi-circle, only half of the loop is present, so the forces don't cancel completely.",
+    "conclusion": "There should be a net force on the semi-circular part.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The differential force dF on a small segment of the wire is dF = B * I * ds, where ds is the differential length along the arc.",
+    "conclusion": "The force on each segment is tangent to the arc, and the net force is the sum of these tangent forces.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In the diagram, the magnetic field lines are represented by crosses, indicating they are directed into the plane of the paper.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current flows from M to N through the straight part, and then from N back to M through the semi-circular arc.",
+    "conclusion": "The current circulates around the loop.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the semi-circular part is I' = (2/π)I.",
+    "conclusion": "The Ampere force on the semi-circular part is F' = B * I' * 2r = (2/π)F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The directions of the Ampere force on the straight part and the semi-circular part are both vertically upward.",
+    "conclusion": "The magnitude of the Ampere force on the entire wire frame is F + F' = (1 + 2/π)F.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

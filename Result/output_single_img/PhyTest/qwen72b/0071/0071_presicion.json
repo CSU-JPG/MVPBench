@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the input current I1 in the primary coil of the transformer.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Appliance 1: '6 V 20 W' with Power P2 = 20 W and Voltage U2 = 6 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Appliance 2: '110 V 60 W' with Power P3 = 60 W and Voltage U3 = 110 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P2 = 20 W, U2 = 6 V",
+    "conclusion": "I2 = P2 / U2 = 20 W / 6 V ≈ 3.33 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P3 = 60 W, U3 = 110 V",
+    "conclusion": "I3 = P3 / U3 = 60 W / 110 V ≈ 0.545 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Voltage ratio between primary and secondary coils: U1/U2 = n1/n2 and U1/U3 = n1/n3",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U2 = 6 V, n1 = 100 turns, U1 = 220 V",
+    "conclusion": "n2 = (U2 * n1) / U1 = (6 V * 100 turns) / 220 V ≈ 2.73 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U3 = 110 V, n1 = 100 turns, U1 = 220 V",
+    "conclusion": "n3 = (U3 * n1) / U1 = (110 V * 100 turns) / 220 V = 50 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P2 = 20 W, P3 = 60 W",
+    "conclusion": "P_total = P2 + P3 = 20 W + 60 W = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Transformer is ideal, so input power P1 equals total output power.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_total = 80 W",
+    "conclusion": "P1 = P_total = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1 = 80 W, U1 = 220 V",
+    "conclusion": "I1 = P1 / U1 = 80 W / 220 V ≈ 0.364 A",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

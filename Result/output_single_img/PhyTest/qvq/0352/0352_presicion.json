@@ -1,0 +1,105 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball is dropped from a height H and rebounds to a height h. Air resistance is proportional to gravitational force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Air resistance is modeled as constant for simplicity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball undergoes descent from height H to the ground and ascent from the ground to height h.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The basketball is shown at height H and height h in the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Gravity acts downward with force mg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Air resistance is lambda times the gravitational force, acting opposite to motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravity and air resistance during descent",
+    "conclusion": "Net force during descent is mg(1 - lambda).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force during descent",
+    "conclusion": "Acceleration during descent is g(1 - lambda).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration during descent and initial velocity is 0",
+    "conclusion": "Velocity just before impact is sqrt(2 * g(1 - lambda) * H).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Pre-collision velocity is v_impact (downward) and post-collision velocity is v_rebound (upward).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pre-collision and post-collision velocities",
+    "conclusion": "Ratio of post-collision to pre-collision velocity is epsilon = v_rebound / v_impact.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During ascent, net force is -mg(1 + lambda).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force during ascent",
+    "conclusion": "Acceleration during ascent is -g(1 + lambda).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration during ascent and final velocity is 0 at height h",
+    "conclusion": "v_rebound^2 = 2gh(1 + lambda).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_rebound = epsilon * v_impact and v_impact = sqrt(2g(1 - lambda)H)",
+    "conclusion": "v_rebound = epsilon * sqrt(2g(1 - lambda)H).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_rebound^2 = 2gh(1 + lambda) and v_rebound = epsilon * sqrt(2g(1 - lambda)H)",
+    "conclusion": "epsilon^2 * 2g(1 - lambda)H = 2gh(1 + lambda).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "epsilon^2 * 2g(1 - lambda)H = 2gh(1 + lambda)",
+    "conclusion": "epsilon = sqrt((1 + lambda)h / (1 - lambda)H).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

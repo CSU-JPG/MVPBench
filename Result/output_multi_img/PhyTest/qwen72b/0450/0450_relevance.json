@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the area of the light-emitting region on the water surface formed by the light bulbs.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Each light bulb forms an illuminated circle on the water surface with a right triangle involving depth, radius, and critical angle.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The radius of the illuminated circle is related to the depth by the critical angle determined by the refractive index.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For red light, sin(C1) = 1/n1; for yellow light, sin(C2) = 1/n2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using tan(C) = r/h, derive r1 = h1 * tan(C1) for red light and r2 = h2 * tan(C2) for yellow light.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Equate the areas: πr1^2 = πr2^2 leading to h1^2 * tan^2(C1) = h2^2 * tan^2(C2).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Use tan(C) = sqrt(1/cos^2(C) - 1) and cos(C) = sqrt(1 - sin^2(C)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate tan(C1) = sqrt(n1^2/(n1^2 - 1)) and tan(C2) = sqrt(n2^2/(n2^2 - 1)).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute values to find h1^2 * (n1^2/(n1^2 - 1) - 1) = h2^2 * (n2^2/(n2^2 - 1) - 1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate the area A = πr1^2 = π(h1 * sqrt(n1^2/(n1^2 - 1)))^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final area of the light-emitting region is A = πh1^2 * (n1^2/(n1^2 - 1)).",
+    "relevant": "Yes"
+  }
+]

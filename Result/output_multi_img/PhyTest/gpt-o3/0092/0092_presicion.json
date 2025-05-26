@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A child with a mass of 30 kg is sitting on a sled with a mass of 10 kg. An adult pulls the sled with a force of 100 N at an angle of 37° above the horizontal, causing the sled to move at a constant speed along the horizontal ground. Given that sin 37° = 0.6, cos 37° = 0.8, and taking g = 10 m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m = 30 kg + 10 kg = 40 kg",
+    "conclusion": "The total mass of the child and sled is 40 kg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W = mg = 40 kg × 10 m/s²",
+    "conclusion": "The weight of the child and sled is 400 N (downward).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 100 N, cos 37° = 0.8",
+    "conclusion": "The horizontal component of the pulling force is Fₓ = 100 N × 0.8 = 80 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 100 N, sin 37° = 0.6",
+    "conclusion": "The vertical component of the pulling force is Fᵧ = 100 N × 0.6 = 60 N (upward).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Upward forces: normal reaction N + Fᵧ, Downward force: weight W, Equilibrium: N + Fᵧ = W",
+    "conclusion": "The equation for vertical force balance is N + 60 N = 400 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N + 60 N = 400 N",
+    "conclusion": "The normal reaction force is N = 400 N – 60 N = 340 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N = 340 N",
+    "conclusion": "The magnitude of the force (often called the “pressure” or normal reaction) exerted by the sled on the ground is N = 3.4 × 10² N ≈ 340 N.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

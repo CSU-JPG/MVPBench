@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes a cyclic process A→B→C→D→A. Temperature at state A is 27°C (300 K).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "PV diagram: x-axis is volume (V), y-axis is pressure (P).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ideal gas law: PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a cyclic process, net work done is area enclosed by path in PV diagram. Change in internal energy is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assuming standard values based on typical problems.",
+    "conclusion": "Assume A→B is isobaric, B→C is isochoric, C→D is isobaric, D→A is isochoric.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Pressures at A and D are 1 atm and 0.75 atm, volumes at A and B are 3 L and 4 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Assume A→B is isobaric expansion.",
+    "conclusion": "Use ideal gas law: At A: P_A * V_A = nR * T_A, At B: P_B * V_B = nR * T_B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A = P_B = 1 atm, V_A = 3 L, V_B = 4 L, T_A = 300 K.",
+    "conclusion": "nR = 1/300 atm L/K, T_B = (4) / (1/300) = 1200 K.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Re-evaluate assumptions and calculations.",
+    "conclusion": "Temperature increase from 300 K to 1200 K seems excessive for small volume change.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Reconsider process assumptions.",
+    "conclusion": "A to B is isobaric, pressure constant, use ideal gas law correctly.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use ideal gas equation of state: P_B * V_B / T_B = P_A * V_A / T_A.",
+    "conclusion": "T_B = 400 K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem step-by-step, we need to calculate the electric field strength at point A due to the charges 2q and -q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cube has a side length L. The charges 2q and -q are located at two vertices of the cube. Point A is another vertex of the cube. The midpoint O lies on the line connecting 2q and -q.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field due to a point charge Q at a distance r is given by: E = k |Q| / r^2, where k is Coulomb's constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between 2q and A is the diagonal of a face of the cube.",
+    "conclusion": "r_{2qA} = sqrt(L^2 + L^2) = sqrt(2)L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance between -q and A is the space diagonal of the cube.",
+    "conclusion": "r_{-qA} = sqrt(L^2 + L^2 + L^2) = sqrt(3)L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field at A is the vector sum of the fields due to 2q and -q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the electric field at A due to 2q is E_{2q} = k (2q) / r_{2qA}^2.",
+    "conclusion": "E_{2q} = k (2q) / (sqrt(2)L)^2 = k (2q) / 2L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the electric field at A due to -q is E_{-q} = k q / r_{-qA}^2.",
+    "conclusion": "E_{-q} = k q / (sqrt(3)L)^2 = k q / 3L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The field due to 2q points away from 2q (positive charge). The field due to -q points toward -q (negative charge).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The directions of these fields are not parallel, so we need to resolve them into components.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The field E_{2q} at A has components along the cube's axes.",
+    "conclusion": "E_{2q,x} = E_{2q} * 1/sqrt(2) = k (2q) / 2L^2 * 1/sqrt(2) = k (2q) / 2sqrt(2)L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The field E_{2q} at A has components along the cube's axes.",
+    "conclusion": "E_{2q,y} = E_{2q} * 1/sqrt(2) = k (2q) / 2sqrt(2)L^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The field E_{-q} at A has components along the cube's axes.",
+    "conclusion": "E_{-q,x} = E_{-q} * 1/sqrt(3) = k q / 3L^2 * 1/sqrt(3) = k q / 3sqrt(3)L^2.",
+    "judgment": "Match"
+  }]

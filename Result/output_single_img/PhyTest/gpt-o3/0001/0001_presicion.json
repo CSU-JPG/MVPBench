@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The figure shows the displacement x as a function of time t.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From 0 s to 4 s the graph of x(t) is a continuously decreasing, smooth curve that goes from +10 m at t = 0 s to –10 m at t = 4 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph of x(t) is a continuously decreasing curve.",
+    "conclusion": "Because the slope dx/dt is everywhere negative, the particle always moves in the negative-x direction (never turns back).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the slope is small at first, increases steadily, and is largest near t = 4 s.",
+    "conclusion": "The particle starts slowly, speeds up steadily, and is fastest near t = 4 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "“Speed = 5 m s⁻¹” means |dx/dt| = 5 m s⁻¹.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the slope |dx/dt| starts below 5 m s⁻¹, grows through 5 m s⁻¹ exactly once, and then becomes larger than 5 m s⁻¹ for the rest of the interval.",
+    "conclusion": "The equation |dx/dt| = 5 m s⁻¹ has only one solution in the range 0 s < t < 4 s.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle always moves in the negative-x direction and its speed increases continuously.",
+    "conclusion": "The speed equals 5 m s⁻¹ at one and only one instant in this interval.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

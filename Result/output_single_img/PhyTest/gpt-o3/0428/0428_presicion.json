@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The laser beam travels from the water (denser medium) into the air (rarer medium).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle α mentioned in the statement is the angle the ray in water makes with the water-air surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In optics, the critical-angle condition is expressed with the angle θc that the ray in the denser medium makes with the normal (a line perpendicular to the surface).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ (with the normal) + α (with the surface) = 90°",
+    "conclusion": "θc = 90° − αc",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The diver observes that the rescuers only see light when α > 41°.",
+    "conclusion": "The borderline value αc = 41° corresponds to the critical angle for total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θc = 90° − αc = 90° − 41°",
+    "conclusion": "θc = 49°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a ray in water (index nwater) reaching the interface with air (index nair ≈ 1), Snell’s law is nwater sin θc = nair sin 90°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nwater sin θc = nair sin 90°",
+    "conclusion": "nwater sin θc = 1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nwater sin θc = 1",
+    "conclusion": "nwater = 1 / sin θc",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θc = 49°",
+    "conclusion": "sin 49° ≈ 0.7547",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nwater = 1 / sin θc and sin 49° ≈ 0.7547",
+    "conclusion": "nwater = 1 / 0.7547 ≈ 1.33",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "nwater = 1 / 0.7547 ≈ 1.33",
+    "conclusion": "The refractive index of water is approximately n ≃ 1.33.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

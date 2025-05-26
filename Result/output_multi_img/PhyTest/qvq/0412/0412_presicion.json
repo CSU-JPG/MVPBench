@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A glass sphere with refractive index n and radius R is placed in air. A point light source inside emits light in all directions. The goal is to find the condition for the light source's position so all light can pass through the sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's law: n1 sin θ1 = n2 sin θ2, where n1 and n2 are refractive indices, θ1 and θ2 are angles of incidence and refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For light going from glass (n1 = n) to air (n2 = 1), Snell's law becomes n sin θ1 = sin θ2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Critical angle θc occurs when total internal reflection happens: sin θc = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Critical angle is given by sin θc = 1/n.",
+    "conclusion": "If θ1 > θc, total internal reflection occurs, and light won't pass into the air.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Need to position the light source so no light ray hits the sphere's surface at an angle greater than θc.",
+    "conclusion": "Ensure maximum angle of incidence for any ray is ≤ θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Sphere has center O, light source at S, and point P on the sphere's surface where a ray from S hits.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Angles θ and α are marked: θ is between OS and SP, α is between OP and SP.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider geometry: maximum angle of incidence occurs when ray makes largest angle with normal to sphere's surface.",
+    "conclusion": "Normal at any point P is along radius OP.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Need θ1 ≤ θc for all rays.",
+    "conclusion": "Position S so largest angle of incidence is ≤ θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider extreme case where ray grazes sphere's surface.",
+    "conclusion": "Total internal reflection occurs when angle of incidence > θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Find maximum angle of incidence for any ray from S.",
+    "conclusion": "Set maximum angle ≤ θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Triangle OSP with sides OS, SP, and OP, where OP = R and OS = d.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From triangle OSP, OP = R, OS = d.",
+    "conclusion": "Using Snell's law: d/sin α = R/sin θ, sin α = (d/R) sin θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For no total internal reflection, sin α ≤ 1/n.",
+    "conclusion": "d/R ≤ 1/n, thus d < R/n.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

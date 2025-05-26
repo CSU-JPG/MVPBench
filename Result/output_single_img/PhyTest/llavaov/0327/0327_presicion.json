@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The p-V image of an ideal gas changes from state A to B to C. Temperature at state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From state B to state C, the volume changes from 1 × 10^-3 m^3 to 3 × 10^-3 m^3, and the pressure remains constant at 2 × 10^5 Pa.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the process from A to B is isochoric, the temperature remains constant.",
+    "conclusion": "The temperature in state B is also 27°C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from B to C is isobaric. Using the ideal gas law, PV = nRT.",
+    "conclusion": "T_C = (2 × 10^5 Pa * 3 × 10^-3 m^3) / (n * 8.314 J/mol·K) = 720 K.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state A to state B, the temperature remains constant, so there is no heat transferred.",
+    "conclusion": "No heat transferred from A to B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state B to state C, the temperature changes from 300 K to 720 K.",
+    "conclusion": "Q = nC_V(720 K - 300 K) = 1.2 × 10^3 J.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total heat transferred by the gas is calculated.",
+    "conclusion": "The total heat transferred by the gas is 1.2 × 10^3 J.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

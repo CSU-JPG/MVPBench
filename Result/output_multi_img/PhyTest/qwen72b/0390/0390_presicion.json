@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle between the smooth inclined rail PA and the smooth horizontal rail AB fixed on the ground is θ=53°, and the two rails are smoothly connected at point A. The rail AB is tangent to the smooth semicircular track BCD with radius R=0.5m at point B. O is the center of the semicircle BCD, and B, O, D lie on the same vertical line. To the right of BD, there exists a uniform electric field directed horizontally to the left, with a field strength of E=6×10^6 V/m. An insulating small ball a with mass m=8g is released from rest at a certain position on the inclined rail PA and allowed to slide freely. Here, g=10m/s², sin53°=0.8, and cos53°=0.6.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The small ball a can just fly out from point D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the ball just flies out from point D, the normal force exerted by the track on the ball is zero, and the only force acting on the ball is its weight.",
+    "conclusion": "The centripetal force required for circular motion is provided by the weight of the ball.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = mv_D^2/R",
+    "conclusion": "v_D^2 = gR",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_D^2 = gR",
+    "conclusion": "v_D = sqrt(gR)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_D = sqrt(gR) and g = 10 m/s², R = 0.5 m",
+    "conclusion": "v_D = sqrt(10 * 0.5) = sqrt(5) ≈ 2.24 m/s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use energy conservation to find the initial height h_a.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial potential energy at point A is U_A = mgh_a.",
+    "conclusion": "U_A = mgh_a",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point D, the ball has kinetic energy and gravitational potential energy.",
+    "conclusion": "K_D + U_D = 1/2 mv_D^2 + mg(2R)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the electric field is zero for an uncharged particle.",
+    "conclusion": "The total energy at point D is K_D + U_D = 1/2 mv_D^2 + mg(2R)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mgh_a = 1/2 mv_D^2 + mg(2R)",
+    "conclusion": "gh_a = 1/2 v_D^2 + 2gR",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "gh_a = 1/2 v_D^2 + 2gR and v_D^2 = 5",
+    "conclusion": "gh_a = 1/2 * 5 + 2 * 10 * 0.5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "gh_a = 2.5 + 10",
+    "conclusion": "gh_a = 12.5",
+    "judgment": "Match"
+  }

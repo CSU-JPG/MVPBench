@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The semicylinder has a radius R = 0.75 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball is thrown horizontally from point B, which is directly above A, at a height R above the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball grazes point C, which lies on the semicylinder. The angle between the line OC and the horizontal is given as 53°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The semicylinder has a radius R = 0.75 m and the angle between OC and the horizontal is 53°.",
+    "conclusion": "The coordinates of point C in the semicircular frame are: x_C = R cos 53°, y_C = R sin 53°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the given values of cos 53° = 0.6 and sin 53° = 0.8, and R = 0.75 m.",
+    "conclusion": "x_C = 0.75 * 0.6 = 0.45 m, y_C = 0.75 * 0.8 = 0.6 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coordinates of point C are x_C = 0.45 m, y_C = 0.6 m.",
+    "conclusion": "(x_C, y_C) = (0.45, 0.6).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball is thrown horizontally with an initial velocity v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Horizontal motion equation: x = v_0 t.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Vertical motion equation: y = (1/2) g t^2, where g = 10 m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point C, the ball's coordinates are (x_C, y_C) = (0.45, 0.6).",
+    "conclusion": "Substituting into the equations of motion gives: x_C = v_0 t, y_C = (1/2) g t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the horizontal motion equation: x_C = v_0 t.",
+    "conclusion": "t = x_C / v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute t = x_C / v_0 into the vertical motion equation: y_C = (1/2) g (x_C / v_0)^2.",
+    "conclusion": "Rearranging for v_0 gives: v_0^2 = (g x_C^2) / (2 y_C).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the known values: g = 10 m/s², x_C = 0.45 m, y_C = 0.6 m.",
+    "conclusion": "v_0^2 = (10 * (0.45)^2) / (2 * 0.6).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression: v_0^2 = (10 * 0.2025) / 1.2.",
+    "conclusion": "v_0^2 = 1.6875.",
+    "judgment": "Match"
+  }]

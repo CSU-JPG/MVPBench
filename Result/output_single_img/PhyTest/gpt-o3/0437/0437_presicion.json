@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Take the centre of the semicircle as the origin O(0, 0), the flat bottom PQ as the x-axis (y=0) and the curved face x^2+y^2=R^2 (y≥0).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The parallel beam comes from the left, its lower edge sliding along PQ (y=0) and its upper edge grazing the top point M(0,R).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The two special rays mentioned in the statement meet the curved face at A(xA,yA), B(xB,yB), with the given heights yA=0.707 R=√2/2R, yB=0.260 R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the circle equation x^2+y^2=R^2",
+    "conclusion": "xA=−√(R^2−yA^2)=−R/√2, xB=+√(R^2−yB^2) = R√(1-0.26^2)≃0.965 R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident ray is horizontal; the outward normal at A points along nA=(xA,yA)/R",
+    "conclusion": "sin i = yA/R = √2/2 (=0.7071), i ≃ 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The straight segment AB is the path of the same ray inside the block, so its direction vector is v=(xB−xA, yB−yA)=(1.672 R, −0.447 R).",
+    "conclusion": "The unit vector v^=v/|v|, |v|=√(1.672^2+0.447^2) R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle r between v^ and the normal nA obeys sin r = |v^×nA| = |(xB−xA)yA−(yB−yA)xA|/(R |v|) ≃ 0.501 ≈ 1/2.",
+    "conclusion": "r ≈ 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell’s law, n = sin i / sin r = (√2/2) / (1/2)",
+    "conclusion": "n = √2 (about 1.41).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze conditions for gas leakage between chambers",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Initial conditions: Pressure p, Volume V, Temperature T, Height H",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Piston movement changes volumes of chambers; process is adiabatic",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Adiabatic process for helium: T1V1^(γ-1) = T2V2^(γ-1), γ = 5/3",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Adiabatic relation: pV^γ = constant",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Initial adiabatic condition: pV^γ = p0V0^γ",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Diaphragm exerts force F = mg, affecting pressure difference",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Equilibrium condition: p_upper(V1) = p_lower(V2) + mg/A",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Adiabatic condition: p_upper(V1) = (V0/V)^γ p, p_lower(V2) = (V/V0)^γ p",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Pressure equalization at leakage: (V0/V)^γ p = (V/V0)^γ p + mg/A",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify using γ = 5/3: (V0/V)^(5/3) p = (V/V0)^(5/3) p + mg/A",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Given x = mgH/pV",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Equation: (V0/V)^(5/3) p = (V/V0)^(5/3) p + x/2",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Let y = V0/V, solve: y^(5/3) p = (1/y)^(5/3) p + x/2p",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Equation: y^(5/3) + 1/y^(5/3) = x/2p",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Let z = y^(5/3), solve: z + 1/z = x/2p",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final volume calculation: V0 = y",
+    "relevant": "Yes"
+  }
+]

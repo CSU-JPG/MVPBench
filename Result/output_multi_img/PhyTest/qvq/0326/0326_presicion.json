@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas changes from state A to state B, and then to state C. The temperature of the gas at state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The P-V diagram has points A, B, and C. The x-axis is volume in cubic meters times ten to the power of negative three, and the y-axis is pressure in pascals times ten to the power of five.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From A to B, the pressure decreases from 3 times ten to the fifth pascals to 1 times ten to the fifth pascals, while the volume stays constant at 1 times ten to the negative third cubic meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume is constant from A to B.",
+    "conclusion": "This is an isochoric process, meaning volume is constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, during an isochoric process, pressure and temperature are directly proportional. That is, P ∝ T, or P1/T1 = P2/T2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature at point A is 27°C, which is 300 Kelvin.",
+    "conclusion": "Celsius to Kelvin conversion: Celsius + 273.15.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1/T1 = P2/T2 with values (3 × 10^5 Pa) / 300 K = (1 × 10^5 Pa) / T2.",
+    "conclusion": "T2 = 100 K at point B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From B to C, the pressure remains constant at 1 times ten to the fifth pascals, while the volume increases from 1 times ten to the negative third cubic meters to 3 times ten to the negative third cubic meters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pressure is constant from B to C.",
+    "conclusion": "This is an isobaric process, meaning pressure is constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, during an isobaric process, volume and temperature are directly proportional. That is, V ∝ T, or V1/T1 = V2/T2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V1/T1 = V2/T2 with values (1 × 10^-3 m³) / 100 K = (3 × 10^-3 m³) / T2.",
+    "conclusion": "T2 = 300 K at point C.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

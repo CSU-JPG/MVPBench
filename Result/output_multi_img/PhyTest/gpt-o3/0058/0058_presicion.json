@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Supercapacitors are high-capacity capacitors with a capacitance C reaching thousands or even tens of thousands of farads, offering advantages such as high power density, fast charging speed, and long cycle life.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit shown in the diagram is used to charge a supercapacitor. The charger has the capability to control the output voltage and output current.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The charging process is divided into two stages: the first stage is constant current charging, and when the charger detects that the voltage reaches a certain value, it enters the second stage, where constant voltage charging is performed until charging is terminated.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance value is constant at R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When entering the second stage for constant voltage charging, the voltage output by the charger is U, and at a certain moment, the current flowing through the resistor R is I₂.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Find the voltage U₂ across the capacitor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The circuit diagram includes a charger, a resistor labeled R, and a supercapacitor.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Charger = an (almost-ideal) dc voltage source that is being held constant at the value U during the second charging stage.",
+    "conclusion": "The charger is an almost-ideal DC voltage source held constant at U during the second charging stage.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Resistor R (fixed value).",
+    "conclusion": "The resistor R has a fixed value.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Super-capacitor, whose instantaneous terminal voltage is the unknown U₂ we are asked to determine.",
+    "conclusion": "The supercapacitor's instantaneous terminal voltage is the unknown U₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the instant considered the current in the single-loop circuit is I₂ (the same current must flow through every series element).",
+    "conclusion": "The current in the single-loop circuit is I₂, and it flows through every series element.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Express the voltage across the resistor with Ohm’s law UR = I₂ · R",
+    "conclusion": "The voltage across the resistor is UR = I₂ · R using Ohm's law.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Write Kirchhoff’s Voltage Law (KVL) for the single loop (+U) – (UR) – (U₂) = 0",
+    "conclusion": "Kirchhoff’s Voltage Law for the single loop is (+U) – (UR) – (U₂) = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve the KVL equation for U₂ U – UR – U₂ = 0",
+    "conclusion": "Solving the KVL equation for U₂ gives U₂ = U – UR.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute UR from Step 2 U₂ = U – I₂ · R",
+    "conclusion": "Substituting UR from Step 2 gives U₂ = U – I₂ · R.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

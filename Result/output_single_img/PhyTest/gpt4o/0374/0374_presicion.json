@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves analyzing the motion of a missile in two phases: the initial vertical ascent and the subsequent curvilinear motion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The missile starts from rest with an initial velocity of v0 = 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The acceleration during the vertical ascent is a = 10g = 100 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The altitude change during the vertical ascent is from 0 to 5000 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using v^2 = u^2 + 2as, where u = 0, a = 100 m/s^2, and s = 5000 m.",
+    "conclusion": "v^2 = 0 + 2 x 100 x 5000 = 1000000, v = sqrt(1000000) = 1000 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using v = u + at, where u = 0, v = 1000 m/s, and a = 100 m/s^2.",
+    "conclusion": "1000 = 0 + 100t implies t = 1000/100 = 10 s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The missile changes direction at 5000 m altitude, with the thrust now at an angle θ such that cos θ = 1/11.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The thrust acceleration remains constant, so the magnitude of acceleration is still 100 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal acceleration ax = 100 sin θ.",
+    "conclusion": "Vertical acceleration ay = 100 cos θ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given cos θ = 1/11, use sin^2 θ + cos^2 θ = 1.",
+    "conclusion": "sin^2 θ = 1 - (1/11)^2 = 1 - 1/121 = 120/121, sin θ = sqrt(120/121) = sqrt(120)/11",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ax = 100 x sqrt(120)/11.",
+    "conclusion": "ax = 100sqrt(120)/11 m/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ay = 100 x 1/11.",
+    "conclusion": "ay = 100/11 m/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The missile needs to cover the remaining altitude of 15000 m (from 5000 m to 20000 m).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using s = ut + 1/2 ay t^2, where u = 1000 m/s, s = 15000 m, and ay = 100/11 m/s^2.",
+    "conclusion": "15000 = 1000t + 1/2 x 100/11 x t^2, 15000 = 1000t + 50/11t^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Solving this quadratic equation for t will give the time taken for the curvilinear motion.",
+    "judgment": "N/A"
+  }

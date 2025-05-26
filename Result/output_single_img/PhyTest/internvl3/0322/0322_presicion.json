@@ -1,0 +1,109 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the heat transferred by the gas during the process from state A to state B to state C, we need to analyze the p-V diagram and apply the first law of thermodynamics.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P_A = 1.0 × 10^5 Pa, V_A = 6 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: P_B = 2.0 × 10^5 Pa, V_B = 6 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: P_C = 3.0 × 10^5 Pa, V_C = 2 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given that the temperature at state A is T_A = 27°C = 300 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A V_A = nRT_A",
+    "conclusion": "nR = 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_B V_B = nRT_B",
+    "conclusion": "T_B = 600 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_C V_C = nRT_C",
+    "conclusion": "T_C = 300 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A to B: Isochoric process (constant volume), so W_AB = 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "B to C: Linear process on the p-V diagram.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_{BC} = 1/2 × (P_B + P_C) × (V_B - V_C)",
+    "conclusion": "W_{BC} = 1000 J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The change in internal energy for an ideal gas depends only on temperature change: ΔU = nC_V ΔT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU_{AB} = nC_V (T_B - T_A)",
+    "conclusion": "ΔU_{AB} = 600C_V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU_{BC} = nC_V (T_C - T_B)",
+    "conclusion": "ΔU_{BC} = -600C_V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU_{total} = ΔU_{AB} + ΔU_{BC}",
+    "conclusion": "ΔU_{total} = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "ΔU = Q - W",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0 = Q - (W_{AB} + W_{BC})",
+    "conclusion": "Q = W_{BC}",
+    "judgment": "Match"
+  }]

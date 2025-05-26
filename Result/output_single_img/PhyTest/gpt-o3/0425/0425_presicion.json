@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "ABC is an isosceles prism with AB = AC = L and vertex angle ∠BAC = θ = 30°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "O is the midpoint of AB → AO = OB = L⁄2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Put the prism in the xy-plane with the bisector of the vertex angle along the +x-axis: AB makes an angle +θ⁄2 with the +x-axis, AC makes an angle –θ⁄2 with the +x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "B( L cos θ⁄2 ,  L sin θ⁄2 ) , C( L cos θ⁄2 , –L sin θ⁄2 ) , O( L⁄2 cos θ⁄2 , L⁄2 sin θ⁄2 )",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At AB the light comes from air (n₀ = 1) with incidence angle i = 45°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell’s law at AB: n sin r₁ = sin i = sin 45° = √2⁄2",
+    "conclusion": "The ray finally leaves the prism perpendicular to AC, i.e. along the normal to AC. Inside the prism it therefore meets AC at 0° to its normal, so the internal angle at AC is r₂ = 0° (no deviation on exit).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normals of AB and AC enclose exactly the prism vertex angle θ.",
+    "conclusion": "Thus the angle between the internal ray and the normal to AB must be r₁ = θ = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Insert r₁ = θ = 30° in n sin r₁ = sin i = sin 45° = √2⁄2",
+    "conclusion": "n sin 30° = √2⁄2 ⇒ n(½) = √2⁄2 ⇒ n = √2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Because the ray is along the normal to AC, the segment OX (X = exit point on AC) is the perpendicular from O to side AC.",
+    "conclusion": "The distance from a point (x₀, y₀) to the line through the origin in the direction of vector C = (L cos θ⁄2 , –L sin θ⁄2) is d = |x_c y_o – y_c x_o| / |C|.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Compute: x_c = L cos θ⁄2 , y_c = –L sin θ⁄2, x_o = ½L cos θ⁄2 , y_o = ½L sin θ⁄2",
+    "conclusion": "|x_c y_o – y_c x_o| = |(L cos θ⁄2)(½L sin θ⁄2) – (–L sin θ⁄2)(½L cos θ⁄2)| = |(L²/2)cos θ⁄2 sin θ⁄2 + (L²/2)sin θ⁄2 cos θ⁄2| = L² cos θ⁄2 sin θ⁄2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The length of C is |C| = L",
+    "conclusion": "OX = d = L cos θ⁄2 sin θ⁄2.",
+    "judgment": "Match"
+  }]

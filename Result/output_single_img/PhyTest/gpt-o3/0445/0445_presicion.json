@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Divers in the water will see all the scenery above the water in an inverted cone with vertex angle α.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The propagation speed of light in vacuum is C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The propagation speed of light in water is to be determined.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In water, the light rays that can escape into the air are those whose angle of incidence does not exceed the critical angle θc for total internal reflection.",
+    "conclusion": "The critical angle θc determines which light rays can escape into the air.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The two blue dashed rays in the figure are the limiting rays.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two blue dashed rays strike the surface exactly at the critical angle.",
+    "conclusion": "Measured inside the water, each of those rays makes an angle θc with the vertical normal to the surface.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Measured inside the water, each of those rays makes an angle θc with the vertical normal to the surface.",
+    "conclusion": "The angle between the two limiting rays at the diver’s eye is α = 2θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the water–air interface (nair ≈ 1, nwater = n), Snell’s law at the critical angle gives sin θc = nair / nwater = 1 / n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell’s law at the critical angle gives sin θc = 1 / n.",
+    "conclusion": "Combine α = 2θc and sin θc = 1 / n to get sin (α / 2) = 1 / n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin (α / 2) = 1 / n",
+    "conclusion": "n = 1 / sin (α / 2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The speed of light in water is v = C / n, where C is the speed of light in vacuum.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The speed of light in water is v = C / n and n = 1 / sin (α / 2)",
+    "conclusion": "v = C sin (α / 2)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

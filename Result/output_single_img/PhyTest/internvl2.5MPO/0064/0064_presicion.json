@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light source S is initially at a depth H = sqrt(3)r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the liquid is n = sqrt(2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light must be refracted at the critical angle to be just not visible above the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the liquid is n = sqrt(2).",
+    "conclusion": "The critical angle theta_c is given by sin(theta_c) = 1/n = 1/sqrt(2) = sqrt(2)/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(theta_c) = sqrt(2)/2",
+    "conclusion": "Therefore, theta_c = 45 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the light is refracted at the critical angle, it travels along the edge of the circle of radius r on the surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light path forms a right triangle with the vertical distance from S to the surface and the radius r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light path forms a right triangle with the vertical distance from S to the surface and the radius r.",
+    "conclusion": "The vertical distance from S to the surface is H - x, where x is the distance S is moved upward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical distance from S to the surface is H - x and the horizontal distance is r.",
+    "conclusion": "Using the tangent of the critical angle: tan(45 degrees) = 1 = r/(H - x).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(45 degrees) = 1 = r/(H - x)",
+    "conclusion": "Therefore, r = H - x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = H - x and H = sqrt(3)r",
+    "conclusion": "Substitute H = sqrt(3)r: r = sqrt(3)r - x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = sqrt(3)r - x",
+    "conclusion": "Rearrange to solve for x: x = sqrt(3)r - r = (sqrt(3) - 1)r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = (sqrt(3) - 1)r",
+    "conclusion": "The point source S should be moved vertically upward by a distance of (sqrt(3) - 1)r.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

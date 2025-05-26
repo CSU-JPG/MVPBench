@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Put the origin at the point P, the mid-point of AB.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Choose the x–axis along AB (positive to the right) and the y–axis vertically downward into the block.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In these coordinates A(–L,0), B(L,0), D(–L,L), C(L,L), P(0,0).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We must follow the ray from P to the point M on CD (y = L).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The incident ray makes an angle α = 37° with the surface, so the angle with the normal is θi = 90° – α = 53°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell’s law (nair = 1, nblock = 4/3): sin θi = n sin θt ⇒ sin 53° = (4/3) sin θt",
+    "conclusion": "sin θt ≈ 0.59898",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θt ≈ 0.59898",
+    "conclusion": "θt ≈ 36.8°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inside the block the ray therefore makes an angle with the horizontal of β = 90° – θt ≈ 53.2°.",
+    "conclusion": "β ≈ 53.2°",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "From P to CD the vertical drop is Δy = L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "With slope tan β, the associated horizontal displacement is Δx = Δy / tan β ≈ L / (tan 53.2°)",
+    "conclusion": "Δx ≈ L / (4/3) = 3L/4",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "|Δx| = 0.75 L ≤ L",
+    "conclusion": "The ray indeed meets CD at a point M that is inside the side CD.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "PM = √[(Δx)² + (Δy)²] = √[(3L/4)² + L²]",
+    "conclusion": "PM = √[(9/16 + 16/16)L²] = √[(25/16)L²] = (5/4)L",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I'll solve this step-by-step to find the electromotive force $E$ and internal resistance $r$ of the power source.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When switch is at position 1: Voltmeter reads 1 V across $R_1 = 0.5\\Omega$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "When switch is at position 2: Voltmeter reads 1.5 V across $R_2 = 1.5\\Omega$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The voltmeter (V) is measuring the voltage across the entire circuit",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The battery has unknown EMF $E$ and internal resistance $r$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch is at position 1, the circuit contains $R_1$ and the internal resistance $r$. The total resistance in the circuit is: $R_{total} = R_1 + r = 0.5\\Omega + r$",
+    "conclusion": "The current flowing through the circuit is: $I_1 = \\frac{E}{R_1 + r} = \\frac{E}{0.5 + r}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage measured by the voltmeter is: $V_1 = E - I_1 \\cdot r$. We know $V_1 = 1$ V",
+    "conclusion": "$1 = E - \\frac{E}{0.5 + r} \\cdot r$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the switch is at position 2, the circuit contains $R_2$ and the internal resistance $r$. The total resistance in the circuit is: $R_{total} = R_2 + r = 1.5\\Omega + r$",
+    "conclusion": "The current flowing through the circuit is: $I_2 = \\frac{E}{R_2 + r} = \\frac{E}{1.5 + r}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage measured by the voltmeter is: $V_2 = E - I_2 \\cdot r$. We know $V_2 = 1.5$ V",
+    "conclusion": "$1.5 = E - \\frac{E}{1.5 + r} \\cdot r$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From step 2: $1 = E - \\frac{E \\cdot r}{0.5 + r}$. From step 3: $1.5 = E - \\frac{E \\cdot r}{1.5 + r}$",
+    "conclusion": "Set up system of equations",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$1 = E - \\frac{E \\cdot r}{0.5 + r}$",
+    "conclusion": "$E = 1 + 2r$ ... (Equation 1)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$1.5 = E - \\frac{E \\cdot r}{1.5 + r}$",
+    "conclusion": "$E = 1.5 + r$ ... (Equation 2)",
+    "judgment": "Reasonable"
+  }]

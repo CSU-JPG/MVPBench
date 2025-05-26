@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the electromotive force (EMF) induced in the coil, we need to use Faraday's law of electromagnetic induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's law, the EMF induced in a coil is given by: \\( \\mathcal{E} = -N \\frac{\\Delta \\Phi}{\\Delta t} \\) where \\( N \\) is the number of turns in the coil, \\( \\Delta \\Phi \\) is the change in magnetic flux through the coil, \\( \\Delta t \\) is the time interval over which the change occurs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: The side length of the square coil is \\( a \\). The area of the coil is \\( A = a^2 \\). Half of the coil is in the magnetic field. The magnetic field changes from \\( B \\) to \\( 2B \\) over a time interval \\( \\Delta t \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial magnetic flux \\( \\Phi_i \\) through one turn of the coil when the field is \\( B \\): \\( \\Phi_i = B \\cdot \\text{Area of one turn} = B \\cdot \\left( \\frac{A}{2} \\right) = B \\cdot \\frac{a^2}{2} \\)",
+    "conclusion": "The initial magnetic flux \\( \\Phi_i = B \\cdot \\frac{a^2}{2} \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The final magnetic flux \\( \\Phi_f \\) through one turn of the coil when the field is \\( 2B \\): \\( \\Phi_f = 2B \\cdot \\text{Area of one turn} = 2B \\cdot \\left( \\frac{a^2}{2} \\right) = 2B \\cdot \\frac{a^2}{2} = B \\cdot a^2 \\)",
+    "conclusion": "The final magnetic flux \\( \\Phi_f = B \\cdot a^2 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Determine the total change in magnetic flux through the coil: \\( \\Delta \\Phi = \\Phi_f - \\Phi_i = B \\cdot a^2 - B \\cdot \\frac{a^2}{2} = B \\cdot a^2 \\left(1 - \\frac{1}{2}\\right) = B \\cdot a^2 \\cdot \\frac{1}{2} = \\frac{1}{2} B a^2 \\)",
+    "conclusion": "The total change in magnetic flux \\( \\Delta \\Phi = \\frac{1}{2} B a^2 \\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute \\( \\Delta \\Phi \\) into Faraday's law to find the EMF: \\( \\mathcal{E} = -N \\frac{\\Delta \\Phi}{\\Delta t} = -N \\frac{\\frac{1}{2} B a^2}{\\Delta t} = -\\frac{N}{2} \\frac{B a^2}{\\Delta t} \\)",
+    "conclusion": "The EMF induced in the coil is \\( \\boxed{-\\frac{N}{2} \\frac{B a^2}{\\Delta t}} \\)",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

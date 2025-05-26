@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes the ABCDA cycle on a P-V diagram, forming a rectangle with pressures P1, P2 and volumes V1, V2. Temperature at state A is T0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From A to B: Pressure increases from P1 to P2 at constant volume V1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From B to C: Volume increases from V1 to V2 at constant pressure P2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From C to D: Pressure decreases from P2 to P1 at constant volume V2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From D to A: Volume decreases from V2 to V1 at constant pressure P1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process is a rectangular cycle on the P-V diagram, with each process being either constant pressure or constant volume.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Use the ideal gas equation PV = nRT, where n is constant throughout the cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A to B: Volume is constant (V1), pressure increases from P1 to P2.",
+    "conclusion": "TB = (P2 / P1) * T0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From B to C: Pressure is constant (P2), volume increases from V1 to V2.",
+    "conclusion": "TC = (V2 / V1) * TB",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "TB = (P2 / P1) * T0",
+    "conclusion": "TC = (V2 / V1) * (P2 / P1) * T0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law: PA * VA = n * R * TA and PC * VC = n * R * TC",
+    "conclusion": "(P2 * V2) / (P1 * V1) = TC / T0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(P2 * V2) / (P1 * V1) = TC / T0",
+    "conclusion": "TC = T0 * (P2 * V2) / (P1 * V1)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

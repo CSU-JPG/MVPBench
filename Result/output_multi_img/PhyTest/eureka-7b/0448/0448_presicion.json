@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the distance between the position where the red light hits the screen and point A. We will use the properties of refraction and trigonometry.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle between the incident direction and BC is given as 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the incident direction and BC is given as 60 degrees.",
+    "conclusion": "Since BC is the diameter of the semicircle, angle BOC = 180 degrees - 60 degrees = 120 degrees.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the incident direction and BC is given as 60 degrees.",
+    "conclusion": "The angle of incidence i is the angle between the incident ray and the normal at point B. The normal at B is vertical, so i = 90 degrees - 60 degrees = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the brick for red light is sqrt(3).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the brick for red light is sqrt(3).",
+    "conclusion": "According to Snell's Law: n1 sin i = n2 sin r, where n1 is the refractive index of the air (which is 1), n2 is the refractive index of the brick (sqrt(3)), i = 30 degrees, and r is the angle of refraction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1 sin 30 degrees = sqrt(3) sin r",
+    "conclusion": "sin r = 1/(2sqrt(3)) = sqrt(3)/6",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin r = 1/(2sqrt(3)) = sqrt(3)/6",
+    "conclusion": "This value is not possible since sin r must be between 0 and 1. This indicates that the light does not pass through the semicircle and is reflected back.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The radius of the semicircle is R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The distance OB = R and BC = 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angle BAC = 30 degrees and angle A = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle BAC = 30 degrees and angle A = 30 degrees.",
+    "conclusion": "Angle B = 180 degrees - 30 degrees - 30 degrees = 120 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle BOD = 180 degrees - 60 degrees = 120 degrees.",
+    "conclusion": "Using the law of sines in triangle BOD: OD/sin 30 degrees = R/sin 60 degrees",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "OD/sin 30 degrees = R/sin 60 degrees",
+    "conclusion": "OD = (R * sin 30 degrees)/sin 60 degrees = R/sqrt(3)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle BAC = 30 degrees.",
+    "conclusion": "The length of AB can be found using the properties of the right triangle and the angle BAC = 30 degrees.",
+    "judgment": "Reasonable"
+  }]

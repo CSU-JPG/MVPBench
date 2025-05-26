@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, both chambers are identical with pressure p, volume V, temperature T, and height H.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the piston is pressed upwards, the lower chamber's volume decreases, and the upper chamber's volume increases. The process is adiabatic because the cylinder is insulated.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an adiabatic process involving gaseous helium, we have T1V1^(γ-1) = T2V2^(γ-1), where γ is the heat capacity ratio Cp/Cv, and for helium, γ = 5/3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an adiabatic process involving gaseous helium, we have T1V1^(γ-1) = T2V2^(γ-1), where γ is the heat capacity ratio Cp/Cv, and for helium, γ = 5/3.",
+    "conclusion": "Using the adiabatic relation for an ideal gas, pV^γ = constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the adiabatic relation for an ideal gas, pV^γ = constant.",
+    "conclusion": "Initially for both chambers, pV^γ = p0V0^γ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The diaphragm of mass m exerts a force due to gravity: F = mg. This force contributes to the pressure difference across the diaphragm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The diaphragm of mass m exerts a force due to gravity: F = mg. This force contributes to the pressure difference across the diaphragm.",
+    "conclusion": "When the gas leaks, the pressure difference just balances the weight of the diaphragm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the gas leaks, the pressure difference just balances the weight of the diaphragm.",
+    "conclusion": "The equilibrium condition for the diaphragm is: p_upper(V1) = p_lower(V2) + mg/A, where A is the cross-sectional area of the cylinder.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equilibrium condition for the diaphragm is: p_upper(V1) = p_lower(V2) + mg/A, where A is the cross-sectional area of the cylinder.",
+    "conclusion": "From the adiabatic condition, p_upper(V1) = (V0/V)^γ p and p_lower(V2) = (V/V0)^γ p.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the adiabatic condition, p_upper(V1) = (V0/V)^γ p and p_lower(V2) = (V/V0)^γ p.",
+    "conclusion": "At the point of leakage, the pressures are equalized: (V0/V)^γ p = (V/V0)^γ p + mg/A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the point of leakage, the pressures are equalized: (V0/V)^γ p = (V/V0)^γ p + mg/A.",
+    "conclusion": "Since γ = 5/3, (V0/V)^(5/3) p = (V/V0)^(5/3) p + mg/A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given x = mgH/(pV).",
+    "judgment": "N/A"
+  }

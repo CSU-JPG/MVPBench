@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the forces acting on both blocks A and B. Let's denote the mass of block A as \\( m_A \\) and the mass of block B as \\( m_B \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block B is in contact with block A and is just about to slide down.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The forces acting on block B are: The gravitational force \\( m_B g \\) acting downward, the normal force \\( N_B \\) from block A acting upward, and the frictional force \\( f_{AB} \\) from block A acting upward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since block B is just about to slide down, the frictional force \\( f_{AB} \\) is at its maximum static friction value, which is equal to the sliding friction force.",
+    "conclusion": "The frictional force is given by: \\( f_{AB} = \\mu_1 N_B \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since block B is in equilibrium vertically, the sum of the forces in the vertical direction is zero.",
+    "conclusion": "N_B = m_B g",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block A is just about to slip.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The forces acting on block A are: The gravitational force \\( m_A g \\) acting downward, the normal force \\( N_A \\) from the ground acting upward, the frictional force \\( f_{AG} \\) from the ground acting to the left, the normal force \\( N_B \\) from block B acting to the right, and the frictional force \\( f_{AB} \\) from block B acting downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since block A is in equilibrium vertically, the sum of the forces in the vertical direction is zero.",
+    "conclusion": "N_A = m_A g + f_{AB}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since block A is just about to slip, the frictional force \\( f_{AG} \\) is at its maximum static friction value.",
+    "conclusion": "f_{AG} = \\mu_2 N_A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the equilibrium of block B, we have: f_{AB} = \\mu_1 m_B g",
+    "conclusion": "f_{AB} = \\mu_1 m_B g",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the equilibrium of block A, we have: N_A = m_A g + \\mu_1 m_B g",
+    "conclusion": "f_{AG} = \\mu_2 (m_A g + \\mu_1 m_B g)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since block A is just about to slip, the frictional force \\( f_{AG} \\) is equal to the normal force \\( N_B \\) from block B.",
+    "conclusion": "\\(\\mu_2 (m_A g + \\mu_1 m_B g) = m_B g\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Divide both sides by \\( g \\): \\(\\mu_2 (m_A + \\mu_1 m_B) = m_B\\)",
+    "conclusion": "\\(\\mu_2 m_A + \\mu_1 \\mu_2 m_B = m_B\\)",
+    "judgment": "Match"
+  }]

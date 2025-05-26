@@ -1,0 +1,64 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A cylinder of height 2H and volume 2V is divided into two chambers by a diaphragm of mass m. Initially, both chambers have equal volume V, pressure p, and temperature T. The diaphragm rests on a ledge with a gasket that provides a tight seal. The piston at the bottom moves upward slowly. When the pressure difference becomes large enough, gas will leak between chambers. We need to find the volume V_0 of the lower chamber when leakage begins. Given: x = mgH/(pV).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For gas to start leaking, the pressure difference between chambers must overcome the force keeping the diaphragm sealed against the ledge.",
+    "conclusion": "The force comes from the weight of the diaphragm: mg and the pressure forces from both sides.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the piston moves up, the volume of the lower chamber decreases. Since the chambers are insulated, the temperature and pressure in the upper chamber remain constant: p_1 = p, T_1 = T, V_1 = V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The lower chamber undergoes adiabatic compression: pV^γ = p_2V_0^γ (where γ = 5/3 for helium).",
+    "conclusion": "The pressure in the lower chamber changes according to the adiabatic relation.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Leakage begins when the upward force just exceeds the downward force on the diaphragm: Upward force: p_2 ⋅ A (pressure in lower chamber × area), Downward force: p_1 ⋅ A + mg (pressure in upper chamber × area + weight).",
+    "conclusion": "At the point of leakage: p_2 ⋅ A = p_1 ⋅ A + mg, which means: p_2 = p_1 + mg/A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the cylinder can be written as: A = V/H.",
+    "conclusion": "Therefore: p_2 = p + mgH/V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the given value x = mgH/(pV): p_2 = p + p ⋅ x = p(1+x).",
+    "conclusion": "The pressure in the lower chamber when leakage begins is p(1+x).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an adiabatic process with helium (γ = 5/3): pV^{5/3} = p_2V_0^{5/3}. Substituting p_2 = p(1+x): pV^{5/3} = p(1+x)V_0^{5/3}.",
+    "conclusion": "This simplifies to: V^{5/3} = (1+x)V_0^{5/3}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_0^{5/3} = V^{5/3}/(1+x).",
+    "conclusion": "V_0 = V ⋅ (1+x)^{-3/5}.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the third image: V^{5/3}p^3 = V_0^{5/3}(p+Δp)^3 = V_0^{5/3}p^3(1+x)^3.",
+    "conclusion": "This gives us: V^{5/3}/V_0^{5/3} = (1+x)^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Therefore: V_0 = V ⋅ (1+x)^{-3/5}"}]

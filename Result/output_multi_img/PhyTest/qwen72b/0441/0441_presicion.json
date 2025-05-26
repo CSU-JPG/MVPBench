@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to ensure that the light entering the optical fiber undergoes total internal reflection (TIR) throughout its path. We will use Snell's Law and the condition for TIR to derive the minimum turning radius R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For TIR to occur, the angle of incidence inside the medium must be greater than or equal to the critical angle θc.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle θc is given by: sin θc = 1/N where N is the refractive index of the optical fiber.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Consider a ray of light entering the fiber at point A and traveling towards the curved surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider a ray of light entering the fiber at point A and traveling towards the curved surface.",
+    "conclusion": "At any point on the curved surface, the light ray should hit the boundary such that the angle of incidence is at least θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The dashed line represents the central axis of the fiber, which is a semicircle of radius R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The distance d between points A and B is the diameter of the semicircular arc, so d = 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The core of the optical fiber has a diameter D, so the radius of the core is D/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence at the outer surface should be such that TIR occurs.",
+    "conclusion": "This means that the maximum deviation of the light path from the central axis should still allow for TIR.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the point of closest approach to the center of the semicircle (point C), the angle of incidence should be at least the critical angle θc.",
+    "conclusion": "At point C, the light ray travels from the fiber core to the outer boundary. The angle formed between the light ray and the normal at point C should be at least θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius of the fiber core is D/2.",
+    "conclusion": "The effective radius for TIR consideration is R - D/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The condition for TIR gives us: sin θc = D/2(R - D/2).",
+    "conclusion": "Since sin θc = 1/N, we have: 1/N = D/2(R - D/2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/N = D/2(R - D/2).",
+    "conclusion": "Solving for R: 2(R - D/2)/D = N.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2(R - D/2)/D = N.",
+    "conclusion": "2R - D = DN.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2R - D = DN.",
+    "conclusion": "2R = D(N + 1).",
+    "judgment": "Reasonable"
+  }]

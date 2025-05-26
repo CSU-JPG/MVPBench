@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The diver sees the scenery above the water in an inverted cone shape. The vertex angle of the cone is given as \\(\\alpha\\). We need to find the speed of light in water, given the speed of light in vacuum is \\(C\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states that \\(n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2\\), where \\(n_1\\) and \\(n_2\\) are the refractive indices of the two media, and \\(\\theta_1\\) and \\(\\theta_2\\) are the angles of incidence and refraction, respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index \\(n\\) is defined as \\(n = \\frac{C}{v}\\), where \\(v\\) is the speed of light in the medium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The cone seen by the diver is due to total internal reflection. The critical angle \\(\\theta_c\\) is the angle of incidence above which total internal reflection occurs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle is related to the refractive indices by \\(\\sin \\theta_c = \\frac{n_2}{n_1}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertex angle of the cone \\(\\alpha\\) is related to the critical angle. The angle \\(\\alpha/2\\) is the angle of refraction at the water-air boundary.",
+    "conclusion": "Therefore, \\(\\sin(\\alpha/2) = \\frac{1}{n}\\), where \\(n\\) is the refractive index of water.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin(\\alpha/2) = \\frac{1}{n}\\)",
+    "conclusion": "We can express \\(n\\) as \\(n = \\frac{1}{\\sin(\\alpha/2)}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The speed of light in water \\(v\\) is given by \\(v = \\frac{C}{n}\\).",
+    "conclusion": "Substitute \\(n = \\frac{1}{\\sin(\\alpha/2)}\\) into the equation for \\(v\\): \\(v = \\frac{C}{\\frac{1}{\\sin(\\alpha/2)}} = C \\cdot \\sin(\\alpha/2)\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

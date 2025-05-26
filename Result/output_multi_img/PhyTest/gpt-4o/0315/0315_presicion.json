@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process is cyclic, meaning the system returns to its initial state after completing the cycle A → B → C → D → A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a cyclic process, the change in internal energy ΔU over one complete cycle is zero because the internal energy is a state function and the system returns to its initial state.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "First Law of Thermodynamics: ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a complete cycle, ΔU = 0.",
+    "conclusion": "Q = W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The work done by the gas in a PV diagram is the area enclosed by the cycle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle is a rectangle with vertices at A, B, C, and D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A: (V1, P1) = (3 L, 1 × 10^5 Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B: (V2, P1) = (4 L, 1 × 10^5 Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C: (V2, P2) = (4 L, 0.75 × 10^5 Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "D: (V1, P2) = (3 L, 0.75 × 10^5 Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertices coordinates: A: (3 L, 1 × 10^5 Pa), B: (4 L, 1 × 10^5 Pa), C: (4 L, 0.75 × 10^5 Pa), D: (3 L, 0.75 × 10^5 Pa)",
+    "conclusion": "The width of the rectangle is V2 - V1 = 4 L - 3 L = 1 L = 0.001 m^3.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertices coordinates: A: (3 L, 1 × 10^5 Pa), B: (4 L, 1 × 10^5 Pa), C: (4 L, 0.75 × 10^5 Pa), D: (3 L, 0.75 × 10^5 Pa)",
+    "conclusion": "The height of the rectangle is P1 - P2 = (1 - 0.75) × 10^5 Pa = 0.25 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Width = 0.001 m^3, Height = 0.25 × 10^5 Pa",
+    "conclusion": "W = Area = Width × Height = 0.001 m^3 × 0.25 × 10^5 Pa = 25 J",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q = W, W = 25 J",
+    "conclusion": "The heat exchange Q between the gas and the outside world is 25 J.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

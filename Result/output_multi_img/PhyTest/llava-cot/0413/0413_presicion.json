@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A hollow spherical object made of a certain transparent material has an outer diameter twice its inner diameter. A beam of monochromatic light enters the sphere at point A on the surface, making an angle of 45° with the normal. After refraction, the light just grazes the inner surface of the sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a hollow spherical object made of a transparent material. A beam of monochromatic light enters the sphere at point A on the outer surface, making an angle of 45° with the normal. After refraction, the light grazes the inner surface of the sphere at point B. The outer radius is 2R, and the inner radius is R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem states that the outer diameter is twice the inner diameter.",
+    "conclusion": "The outer radius (2R) is twice the inner radius (R).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters at point A with an angle of incidence (i) of 45°.",
+    "conclusion": "The angle of incidence (i) is 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the light grazes the inner surface at point B.",
+    "conclusion": "The angle of incidence at the inner surface is 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By the law of refraction, the angle of incidence (i) equals the angle of refraction (r) at the outer surface.",
+    "conclusion": "i = r = 45°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the inner surface, the angle of incidence (i) is 90°.",
+    "conclusion": "The angle of refraction (r) is the angle at which the light exits the sphere.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the law of refraction: n = sin(∠i) / sin(∠r), where n is the refractive index of the material.",
+    "conclusion": "n = sin(90°) / sin(45°).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = sin(90°) / sin(45°).",
+    "conclusion": "n = 1 / (√2/2) = 2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

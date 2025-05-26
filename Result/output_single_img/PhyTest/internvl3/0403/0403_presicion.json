@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism is an isosceles right-angle prism. The light ray is emitted from point M parallel to the base CD. The refractive index of the prism glass is n = √2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states that n1 sin θ1 = n2 sin θ2, where n1 is the refractive index of the initial medium (air, n1 = 1), θ1 is the angle of incidence, n2 is the refractive index of the prism glass (n2 = √2), and θ2 is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray is parallel to the base CD and enters through edge AC.",
+    "conclusion": "The angle of incidence θ1 is 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: 1 * sin 45° = √2 * sin θ2.",
+    "conclusion": "sin θ2 = 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θ2 = 1/2.",
+    "conclusion": "θ2 = sin⁻¹(1/2) = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc is given by sin θc = 1/n.",
+    "conclusion": "sin θc = √2/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin θc = √2/2.",
+    "conclusion": "θc = sin⁻¹(√2/2) = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refraction angle θ2 is 30° and the critical angle θc is 45°.",
+    "conclusion": "Since θ2 < θc, the light will not undergo total internal reflection and will exit the prism.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As shown in the diagram, the incidence angle θ when the light reaches edge CD is 75° > C.",
+    "conclusion": "Cannot exit from edge CD.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

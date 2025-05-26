@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I need to determine whether light b will undergo total internal reflection before light a when both are incident at the same angle from glass to air, and this angle is gradually increased.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "We have an equilateral triangular glass prism. Two monochromatic light rays (a and b) enter the glass from air, perpendicular to the hypotenuse. The rays then encounter the other sides of the prism and exit back into air.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection (TIR) occurs when light travels from a denser medium (glass) to a less dense medium (air) at an angle of incidence greater than the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle (θc) depends on the refractive indices according to: θc = sin⁻¹(n₂/n₁) where n₁ is the refractive index of glass and n₂ is the refractive index of air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of a medium for a given color of light depends on the wavelength - this is called dispersion.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The angles i₁ and i₂ are the angles of incidence from inside the glass to the air. The angles r₁ and r₂ are the corresponding angles of refraction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For TIR to occur, the angle of incidence must exceed the critical angle. The critical angle depends on the refractive index, which in turn depends on the wavelength of light.",
+    "conclusion": "Since lights a and b are different monochromatic lights (different wavelengths/colors), they will have different refractive indices in glass.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Light with shorter wavelengths (like blue/violet) generally has a higher refractive index than light with longer wavelengths (like red).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For any monochromatic light, the critical angle formula is: θc = sin⁻¹(1/n) where n is the refractive index of glass for that particular wavelength of light (assuming the refractive index of air is approximately 1).",
+    "conclusion": "If the monochromatic light b has a higher refractive index (n_b) than light a (n_a), then: Critical angle for light b: θc_b = sin⁻¹(1/n_b) and Critical angle for light a: θc_a = sin⁻¹(1/n_a).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since sin⁻¹(1/n) decreases as n increases, a higher refractive index results in a smaller critical angle.",
+    "conclusion": "If light b has a higher refractive index than light a (meaning b is a shorter wavelength than a), then the critical angle for light b will be smaller than for light a.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle for light b will be smaller than for light a.",
+    "conclusion": "Light b will reach its critical angle first as we gradually increase the angle of incidence.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light b will reach its critical angle first as we gradually increase the angle of incidence.",
+    "conclusion": "Light b will undergo total internal reflection before light a.",
+    "judgment": "Match"
+  }]

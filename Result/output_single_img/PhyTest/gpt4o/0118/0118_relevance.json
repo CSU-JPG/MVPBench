@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze the forces acting on hemispheres A and B to find the dynamic friction coefficient between hemisphere A and the left wall.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The gravitational force acting downward on hemisphere A is mg.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Let NA be the normal force exerted by the left wall on hemisphere A.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The friction force fA is at its maximum static value, equal to the dynamic friction force, fA = μNA.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Let NAB be the normal force exerted by hemisphere B on A, acting along the line joining the centers of the two hemispheres at a 30° angle to the horizontal.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The gravitational force acting downward on hemisphere B is 2mg.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Let NB be the normal force exerted by the right wall on hemisphere B.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The force NAB acts on B along the line joining the centers of the two hemispheres.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For hemisphere A, horizontal forces: NA = NAB cos(30°).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For hemisphere A, vertical forces: mg = NAB sin(30°) + μNA.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For hemisphere B, horizontal forces: NB = NAB cos(30°).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For hemisphere B, vertical forces: 2mg = NAB sin(30°).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From the vertical force balance on B: 2mg = NAB sin(30°) = NAB * 1/2, so NAB = 4mg.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute NAB = 4mg into the horizontal force balance for A: NA = NAB cos(30°) = 4mg * √3/2 = 2mg√3.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute NAB = 4mg into the vertical force balance for A: mg = 4mg * 1/2 + μ * 2mg√3.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solve for μ: 0 = mg(2μ√3 - 1), 2μ√3 = 1, μ = 1/(2√3) = √3/6.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The dynamic friction coefficient between hemisphere A and the left wall is √3/6.",
+    "relevant": "Yes"
+  }
+]

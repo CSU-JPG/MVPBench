@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The working principle of the electromagnetic railgun is that the projectile to be launched can move freely between two parallel rails and maintain good contact with the rails. Current flows in from one rail, passes through the conductive projectile, and then flows back through the other rail. The rail current generates a magnetic field perpendicular to the plane of the rails at the projectile (which can be considered as a uniform magnetic field). The electrified projectile is then propelled at high speed along the rails due to the Lorentz force acting on it.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Xiao Ming purchased a railgun model online, with a rail length of L = 0.5 m, a parallel rail spacing of d = 0.02 m, a projectile mass of m = 0.02 kg, a rail current of I = 10 A, and a magnetic field strength of B = 1 T. All resistances are neglected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a schematic of parallel rails with a projectile between them and arrows indicating current flow.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the power of an electromagnetic railgun with the given specifications.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Lorentz force on a current-carrying conductor in a magnetic field is given by F = I × L × B.",
+    "conclusion": "The Lorentz force on the projectile is F = 10 A × 0.02 m × 1 T = 0.2 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Newton's second law (F = ma), where F = 0.2 N and m = 0.02 kg.",
+    "conclusion": "The acceleration of the projectile is a = 10 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the kinematic equation v² = v₀² + 2as, where v₀ = 0, a = 10 m/s², and s = 0.5 m.",
+    "conclusion": "The final velocity of the projectile is v = √10 m/s ≈ 3.16 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The kinetic energy of the projectile is given by Eₖ = 1/2 mv², where m = 0.02 kg and v² = 10 m²/s².",
+    "conclusion": "The kinetic energy of the projectile is Eₖ = 0.1 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the kinematic equation s = v₀t + 1/2 at², where s = 0.5 m, v₀ = 0, and a = 10 m/s².",
+    "conclusion": "The time it takes for the projectile to travel the length of the rails is t = √0.1 s ≈ 0.316 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Power is the rate of energy transfer, calculated as P = Eₖ/t, where Eₖ = 0.1 J and t = 0.316 s.",
+    "conclusion": "The power of the electromagnetic railgun is P ≈ 0.316 W.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

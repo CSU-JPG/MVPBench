@@ -1,0 +1,55 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The diagram shows a process where an ideal gas goes from state A to state C via state B. From the diagram: A → B: Isobaric process (constant pressure) B → C: Isochoric process (constant volume).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We're given: Temperature at state A: $-73°C = 200$ K Change in internal energy from A to C: $\\Delta U = 200$ J Goal: Find heat Q exchanged between gas and environment from A to C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, at state A: $p_A = 3 \\times 10^5$ Pa, $V_A = 1 \\times 10^{-3}$ m³ = 1 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the diagram, at state A: $p_A = 3 \\times 10^5$ Pa, $V_A = 1 \\times 10^{-3}$ m³ = 1 L.",
+    "conclusion": "n = \\frac{p_A V_A}{R T_A} = \\frac{(3 \\times 10^5 \\text{ Pa})(1 \\times 10^{-3} \\text{ m}^3)}{(8.314 \\text{ J/mol·K})(200 \\text{ K})} = \\frac{0.3}{1662.8} = 0.18 \\text{ mol}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done = Area under the curve in p-V diagram. For A → B: Work done = $p_A \\times (V_B - V_A) = 3 \\times 10^5 \\times (4 - 1) \\times 10^{-3} = 3 \\times 10^5 \\times 3 \\times 10^{-3} = 900$ J For B → C: No work done (constant volume)",
+    "conclusion": "Total work done = $W = 900$ J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the First Law of Thermodynamics: $Q = \\Delta U + W$ Where: $Q$ is the heat exchanged $\\Delta U$ is the change in internal energy $W$ is the work done by the system",
+    "conclusion": "$Q = 200 \\text{ J} + 900 \\text{ J} = 1100 \\text{ J}$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We can double-check using the properties of an ideal gas: For monatomic gas: $\\Delta U = \\frac{3}{2}nR\\Delta T$ For diatomic gas: $\\Delta U = \\frac{5}{2}nR\\Delta T$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram: State A: $T_A = 200$ K, $p_A = 3 \\times 10^5$ Pa, $V_A = 1 \\times 10^{-3}$ m³ State C: $p_C = 1 \\times 10^5$ Pa, $V_C = 4 \\times 10^{-3}$ m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We can find $T_C$ using the ideal gas law: $T_C = \\frac{p_C V_C}{nR} = \\frac{(1 \\times 10^5)(4 \\times 10^{-3})}{0.18 \\times 8.314} = \\frac{0.4}{1.49652} = 267.3$ K",
+    "conclusion": "Since we know $\\Delta U = 200$ J, this confirms our approach is reasonable.",
+    "judgment": "Reasonable"
+  }]

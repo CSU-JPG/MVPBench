@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a parallel-plate capacitor with capacitance C, charge Q, and plate separation d. A point charge q is placed at the midpoint between the plates, and the task is to find the magnitude of the electrostatic force it experiences.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a parallel-plate capacitor with a positive charge +Q on the left plate and a negative charge -Q on the right plate. A point charge q is located at the midpoint between the plates.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electrostatic force between two charges is given by the formula F = k * (q1 * q2) / r^2, where k is Coulomb's constant, q1 and q2 are the charges, and r is the distance between them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The point charge q is placed at the midpoint between the two plates of the capacitor. The distance between the plates is d.",
+    "conclusion": "The distance r between the point charge q and one of the plates is r = d / 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula for the electrostatic force is F = k * (q1 * q2) / r^2. The distance r between the point charge q and one of the plates is r = d / 2.",
+    "conclusion": "Substituting r = d / 2 into the formula gives F = k * (q * Q) / (d / 2)^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula F = k * (q * Q) / (d / 2)^2 is derived.",
+    "conclusion": "Simplifying the formula gives F = k * (q * Q) / (d^2 / 4) = 4 * k * (q * Q) / d^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula F = 4 * k * (q * Q) / d^2 is derived. The electric field intensity E between the plates is E = Q / (C * d).",
+    "conclusion": "The force on the charge q due to the electric field is F = q * E = q * (Q / (C * d)).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on the charge q due to the electric field is F = q * (Q / (C * d)).",
+    "conclusion": "The magnitude of the electrostatic force experienced by the charge q is F = Qq / (Cd).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the time t for the conductor rod to slide down until it reaches its maximum speed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The magnetic field B is perpendicular to the plane of the rails and directed downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is perpendicular to the plane of the rails and directed downward.",
+    "conclusion": "The induced emf in the conductor rod is given by Faraday's law: emf = B L v, where v is the velocity of the conductor rod.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "emf = B L v",
+    "conclusion": "The current I in the circuit is given by Ohm's law: I = emf / (R + r) = B L v / (R + r)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = B L v / (R + r)",
+    "conclusion": "The force on the conductor rod due to the magnetic field is given by the Lorentz force: F_B = B I L = B (B L v / (R + r)) L = B^2 L^2 v / (R + r)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_B = B^2 L^2 v / (R + r)",
+    "conclusion": "The net force on the conductor rod is the component of the gravitational force parallel to the plane minus the magnetic force: F_net = m g sin(theta) - F_B = m g sin(theta) - B^2 L^2 v / (R + r)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_net = m g sin(theta) - B^2 L^2 v / (R + r)",
+    "conclusion": "At the maximum speed, the net force is zero: m g sin(theta) - B^2 L^2 v_max / (R + r) = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m g sin(theta) - B^2 L^2 v_max / (R + r) = 0",
+    "conclusion": "Solving for v_max: v_max = m g sin(theta) (R + r) / B^2 L^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_net = m g sin(theta) - B^2 L^2 v / (R + r)",
+    "conclusion": "The equation of motion for the conductor rod is: m g sin(theta) - B^2 L^2 v / (R + r) = m a",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m g sin(theta) - B^2 L^2 v / (R + r) = m a",
+    "conclusion": "Since a = dv/dt, we can rewrite the equation as: m g sin(theta) - B^2 L^2 v / (R + r) = m dv/dt",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m g sin(theta) - B^2 L^2 v / (R + r) = m dv/dt",
+    "conclusion": "This is a first-order linear differential equation. We can rearrange it as: dv/dt = g sin(theta) - B^2 L^2 v / (m (R + r))",
+    "judgment": "Match"
+  }]

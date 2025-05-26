@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem step-by-step, we need to determine the time at which the laser beam emerges from the arc surface ABC of the semi-cylindrical transparent brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The semi-cylindrical brick has a radius r, and its center is O. The endpoints of the diameter are A (top) and C (bottom).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The laser beam starts at A and moves uniformly along the diameter AC with a speed v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At any given moment, the laser beam enters the brick at a point D along AC, and refracts inside the brick due to the change in medium (air to transparent material).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the laser beam enters the transparent brick at D, it refracts and travels toward the curved arc surface ABC.",
+    "conclusion": "The laser beam emerges from the arc surface at a point determined by the geometry of the brick and the refractive index n.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam enters the brick at D, which is at a distance x from A along AC. The position x is given by: x = vt where t is the time elapsed since the laser beam started moving.",
+    "conclusion": "The angle of incidence θ at point D is determined by the geometry of the brick. The laser beam travels toward the center O, forming a triangle △AOD.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using trigonometry, the angle θ is given by: sinθ = x/r where r is the radius of the semi-cylindrical brick.",
+    "conclusion": "The laser beam emerges from the arc surface ABC when it reaches the farthest point B on the curved surface.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The farthest point B corresponds to the angle θ = 90°, because the beam has traveled from D to the edge of the semi-circle.",
+    "conclusion": "From the relationship sinθ = x/r, we know: sinθ = 1 (at θ = 90°).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting sinθ = x/r, we find: x = r.",
+    "conclusion": "Since x = vt, we can solve for t: t = r/v.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time at which the laser beam emerges from the arc surface ABC is: t = r/v.",
+    "conclusion": "t = r/v",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

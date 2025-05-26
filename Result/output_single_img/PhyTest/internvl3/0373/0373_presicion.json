@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the ratio of the post-collision velocity to the pre-collision velocity of the basketball during its collision with the ground, we need to consider the effects of air resistance and the inelastic collision.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from rest at height H.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gravitational force acting on the basketball is mg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The air resistance is λmg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force during descent: mg - λmg = mg(1 - λ).",
+    "conclusion": "Acceleration during descent: a_d = g(1 - λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using kinematic equation v^2 = u^2 + 2as with u = 0.",
+    "conclusion": "v_d^2 = 2a_dH = 2g(1 - λ)H.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_d^2 = 2g(1 - λ)H.",
+    "conclusion": "Pre-collision velocity: v_d = √(2g(1 - λ)H).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rebound to height h.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Post-collision velocity is v_u.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force during ascent: mg + λmg = mg(1 + λ).",
+    "conclusion": "Acceleration during ascent: a_u = g(1 + λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using kinematic equation v^2 = u^2 + 2as with final velocity v = 0 at height h.",
+    "conclusion": "0 = v_u^2 - 2a_uh = v_u^2 - 2g(1 + λ)h.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_u^2 = 2g(1 + λ)h.",
+    "conclusion": "Post-collision velocity: v_u = √(2g(1 + λ)h).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_u = √(2g(1 + λ)h) and v_d = √(2g(1 - λ)H).",
+    "conclusion": "Ratio of post-collision to pre-collision velocity: v_u/v_d = √((1 + λ)h/(1 - λ)H).",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

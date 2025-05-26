@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A charged sphere with mass m and charge +q is attached to an inextensible insulating thread of length L. The thread is fixed at point O. A uniform electric field is applied horizontally, and the sphere is initially at rest at point A, forming an angle θ = 30° with the vertical. The sphere is pulled to point B (same height as O) and released. The task is to calculate the speed of the sphere at the lowest point C and the tension in the string at this point.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The diagram shows a charged sphere attached to a thread fixed at point O. The sphere is initially at point A, forming an angle θ with the vertical. The sphere is pulled to point B (horizontally aligned with O) and moves along a circular arc to the lowest point C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The forces acting on the sphere include gravitational force (mg), tension in the string (T), and electric force (qE). The acceleration due to gravity is g, and trigonometric values are provided: sin37° = 0.6, cos37° = 0.8.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The sphere is at rest at point A, so the net force is zero. The forces acting are tension (T), gravitational force (mg), and electric force (qE).",
+    "conclusion": "At point A, the forces are in equilibrium: T + mg = 0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the equilibrium condition T + mg = 0.",
+    "conclusion": "The tension T at point A is T = -mg.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force qE acts horizontally, opposite to the displacement from point A to point B. The sphere is at rest at point A.",
+    "conclusion": "At point A, the electric force is balanced by the horizontal component of tension.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The sphere is released from rest at point B and moves to the lowest point C.",
+    "conclusion": "The motion of the sphere is governed by conservation of mechanical energy.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point B, the sphere has potential energy due to its height above point C. At point C, the potential energy is converted into kinetic energy.",
+    "conclusion": "The speed of the sphere at point C can be calculated using energy conservation: mgh = 0.5mv^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height difference between point B and point C is L (the length of the thread).",
+    "conclusion": "The potential energy at point B is mgh = mgL.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using mgh = 0.5mv^2 and substituting h = L.",
+    "conclusion": "The speed of the sphere at point C is v = √(2gL).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The sphere starts at point A, where it is at an angle θ = 30° with the vertical. The height difference between A and C is L(1 - cosθ).",
+    "conclusion": "The potential energy at point A is mgh = mgL(1 - cosθ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using mgh = 0.5mv^2 and substituting h = L(1 - cosθ).",
+    "conclusion": "The speed of the sphere at point C is v = √(2gL(1 - cosθ)).",
+    "judgment": "Match"
+  }]

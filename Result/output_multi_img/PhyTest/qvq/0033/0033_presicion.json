@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two particles, A and B, start from rest at the same time and place, moving in the same direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The velocity-time graph shows velocities in terms of v0 and time in terms of t0, with markings up to 6t0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle A has a triangular velocity profile that peaks at 2v0 at t0, and then decreases back to zero by 2t0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle B starts at zero, increases linearly to v0 at 4t0, stays at v0 until 5t0, and then decreases back to zero by 6t0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Meeting means they are at the same position again at some time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a velocity-time graph, the area under the curve represents displacement.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since they start from rest, their positions can be found by integrating their velocity functions from time 0 to time t.",
+    "conclusion": "To find when they meet, compare their positions over time and see where their position graphs intersect.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle A: From 0 to t0: velocity increases linearly from 0 to 2v0.",
+    "conclusion": "v_A(t) = (2v0/t0) * t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle A: From t0 to 2t0: velocity decreases linearly from 2v0 to 0.",
+    "conclusion": "v_A(t) = 2v0 - (2v0/t0) * (t - t0)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle B: From 0 to 4t0: velocity increases linearly from 0 to v0.",
+    "conclusion": "v_B(t) = (v0/(4t0)) * t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle B: From 4t0 to 5t0: velocity remains constant at v0.",
+    "conclusion": "v_B(t) = v0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For particle B: From 5t0 to 6t0: velocity decreases linearly from v0 to 0.",
+    "conclusion": "v_B(t) = v0 - (v0/t0) * (t - 5t0)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrate v_A(t) from 0 to t0.",
+    "conclusion": "x_A(t) = v0 * (t^2 / t0)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t=t0, x_A = v0 * t0",
+    "conclusion": "x_A(t) = v0 * t0 at t=t0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Integrate v_A(t) from t0 to 2t0.",
+    "conclusion": "x_A(t) = x_A(t0) + ∫[t0 to t] (2v0 - (2v0/t0)(τ - t0)) dτ",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the initial velocity of the shadow of the ball on the wall when the ball is thrown vertically upward.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The setup involves a point light source, a ball, and a wall, with the ball being thrown from the midpoint between the light source and the wall.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "The ball is thrown vertically upward from a point that is equidistant from the light source and the wall.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Denote the distance from the light source to the ball (and also from the ball to the wall) as d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The ball is thrown vertically upward with an initial velocity v_0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The vertical position of the ball as a function of time t is given by y(t) = v_0 t - (1/2) g t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "y(t) is the height of the ball above the initial position, v_0 is the initial velocity, and g is the acceleration due to gravity.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The shadow of the ball on the wall is formed by the light rays from the point light source.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "As the ball moves vertically, the shadow will move horizontally along the wall.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using similar triangles, the horizontal position of the shadow x_s(t) on the wall can be related to the vertical position of the ball y(t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Consider the triangle formed by the light source, the ball, and the shadow on the wall. The height of the triangle is y(t), and the base is d + x_s(t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The similar triangle formed by the light source, the initial position of the ball, and the wall has a height of 0 and a base of d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "By the property of similar triangles, we have y(t)/(d + x_s(t)) = 0/d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplifying, we find x_s(t) = (d/y(t)) * d.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Differentiate x_s(t) with respect to time to find the velocity of the shadow v_s(t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "v_s(t) = (d/y(t)^2) * (dy(t)/dt).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The derivative of y(t) with respect to time is dy(t)/dt = v_0 - gt.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substituting this into the expression for v_s(t), we get v_s(t) = (d/(v_0 t - (1/2) g t^2)^2) * (v_0 - gt).",
+    "relevant": "Yes"
+  }

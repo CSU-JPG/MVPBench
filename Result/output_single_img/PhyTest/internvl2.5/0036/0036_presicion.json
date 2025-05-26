@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine if the puppy is safe, we need to calculate the total distance the coach bus travels before coming to a stop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We'll break this down into two parts: the distance traveled during the reaction time and the distance traveled while decelerating.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The driver takes 0.5 seconds to react.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "During this time, the bus travels at a constant speed of v = 20 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = 20 m/s, Δt = 0.5 s",
+    "conclusion": "Distance during reaction time: d_reaction = v × Δt = 20 m/s × 0.5 s = 10 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, the bus decelerates uniformly from 20 m/s to 0 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The deceleration time is from t = 0.5 s to t = 4.5 s, which is 4 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under the velocity-time graph during deceleration gives the distance traveled.",
+    "conclusion": "The graph forms a right triangle with base 4 s and height 20 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area of the triangle (distance during deceleration): base = 4 s, height = 20 m/s",
+    "conclusion": "d_deceleration = 1/2 × base × height = 1/2 × 4 s × 20 m/s = 40 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d_reaction = 10 m, d_deceleration = 40 m",
+    "conclusion": "d_total = d_reaction + d_deceleration = 10 m + 40 m = 50 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The puppy is 45 meters ahead.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d_total = 50 m, distance to puppy = 45 m",
+    "conclusion": "Since the total distance the bus travels (50 meters) is greater than the distance to the puppy (45 meters), the bus will not stop before reaching the puppy.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

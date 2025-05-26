@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a gas transitioning through states A, B, and C on a V-T diagram. The pressure at state A is 1.5 × 10⁵ Pa.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The V-T diagram has volume on the y-axis and temperature on the x-axis. Point A is at (Tₐ, 0.4 m³), point B is at (300 K, 0.6 m³), and point C is at (400 K, 0.6 m³).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The line from A to B is straight, suggesting a specific process.",
+    "conclusion": "The process from A to B might be isobaric.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In a V-T diagram for an ideal gas, the slope of a constant pressure process (isobaric) is positive, constant volume is vertical, and constant temperature is horizontal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A to B, volume increases from 0.4 to 0.6 m³, and temperature increases from Tₐ to 300 K.",
+    "conclusion": "The process from A to B appears to be isobaric.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From B to C, volume is constant at 0.6 m³, and temperature increases from 300 K to 400 K.",
+    "conclusion": "The process from B to C is isochoric.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, PV = nRT. If pressure is constant, V ∝ T.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In a V-T diagram, an isobaric process is a straight line passing through the origin.",
+    "conclusion": "The line from A to B seems straight, but it's unclear if it passes through the origin.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If A to B is isobaric, V₁/T₁ = V₂/T₂. Vₐ = 0.4 m³, V₃₀₀ = 0.6 m³.",
+    "conclusion": "0.4 / Tₐ = 0.6 / 300",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving 0.4 / Tₐ = 0.6 / 300",
+    "conclusion": "Tₐ = 200 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that P is constant from A to B, V/T is constant.",
+    "conclusion": "V/T is the same at A and B, confirming Tₐ = 200 K.",
+    "judgment": "Match"
+  }
+]

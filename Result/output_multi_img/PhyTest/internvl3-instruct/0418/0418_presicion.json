@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A beam of light enters the prism ABCD perpendicularly from point O along AD. The prism is a right triangular prism with AB = BC = 8 cm and OA = 2 cm. The angle ∠OAB = 60°. The refractive index of the prism, n = √2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The beam enters perpendicularly along AD, making the angle of incidence at point A 0°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The beam enters perpendicularly along AD.",
+    "conclusion": "The right triangle AOB helps us determine the geometry inside the prism.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A is at the origin. Point O is 2 cm along the x-axis. Point B is 8 cm along the y-axis (since AB = 8 cm and ∠OAB = 60°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refractive index n = √2.",
+    "conclusion": "The critical angle for total internal reflection is θc = arcsin(1/√2) = 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray enters perpendicularly at A and continues to point E on side AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray hits the side AB at an angle of incidence i.",
+    "conclusion": "Use Snell's Law: n sin(i) = sin(r).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray is perpendicular to AD and hits AB at 60°, i = 60°.",
+    "conclusion": "Calculate r: sin(60°) = sin(r), sin(r) = √3/2, r = arcsin(√3/2) = 60°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray exits the prism at point F along BC.",
+    "conclusion": "The direction of the light ray when it first exits the prism is along the line extending from E to F.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

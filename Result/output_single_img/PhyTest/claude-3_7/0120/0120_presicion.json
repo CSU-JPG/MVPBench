@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Mass of suitcase: m = 15 kg, Minimum pull force: F = 90 N, Angle between pull and horizontal: θ (to be determined), Gravitational acceleration: g = 10 m/s², sin 37° = 0.6, Coefficient of friction: μ (to be determined), The suitcase is moving uniformly (constant velocity)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mass of suitcase: m = 15 kg, Gravitational acceleration: g = 10 m/s²",
+    "conclusion": "Weight: W = mg = 15 x 10 = 150 N (downward)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Normal force from ground: N (upward), Pull force: F = 90 N (at angle θ from horizontal), Friction force: f = μN (opposite to motion direction)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pull force: F = 90 N (at angle θ from horizontal)",
+    "conclusion": "Horizontal component: F_x = F cos θ (forward), Vertical component: F_y = F sin θ (upward)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical forces: N + F sin θ - mg = 0",
+    "conclusion": "N = mg - F sin θ = 150 - 90 sin θ",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal forces: F cos θ - f = 0, f = μN",
+    "conclusion": "F cos θ = μN",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F cos θ = μN, N = mg - F sin θ",
+    "conclusion": "F cos θ = μ(mg - F sin θ), 90 cos θ = μ(150 - 90 sin θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Minimum pull force is 90 N",
+    "conclusion": "μ = F cos θ / (mg - F sin θ) = 90 cos θ / (150 - 90 sin θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given that sin 37° = 0.6",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 37°, sin θ = 0.6",
+    "conclusion": "cos θ = sqrt(1 - sin² θ) = sqrt(1 - 0.6²) = sqrt(0.64) = 0.8",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "μ = 90 x 0.8 / (150 - 90 x 0.6)",
+    "conclusion": "μ = 72 / (150 - 54) = 72 / 96 = 0.75",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan θ = μ, tan 37° = sin 37° / cos 37°",
+    "conclusion": "tan 37° = 0.6 / 0.8 = 0.75 = μ",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan 37° = μ",
+    "conclusion": "θ = 37° corresponds to the minimum pull force",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

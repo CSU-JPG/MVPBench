@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the horizontal distance between the submarine and the person on the cruise ship, we need to use the principles of refraction and trigonometry.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Height of the person above the water surface, h1 = 15 m; Depth of the submarine below the water surface, h2 = 23 m; Refractive index of water, n = 4/3; Angle of incidence, θ1 = 53°; sin(53°) = 0.8; cos(53°) = 0.6.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(θ1) = n2 sin(θ2); n1 = 1, n2 = 4/3, θ1 = 53°.",
+    "conclusion": "0.8 = (4/3) * sin(θ2); sin(θ2) = 0.6; θ2 = sin⁻¹(0.6) ≈ 36.87°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ1) = h1/d1; θ1 = 53°, h1 = 15 m.",
+    "conclusion": "d1 = 15/tan(53°) ≈ 11.25 m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ2) = h2/d2; θ2 = 36.87°, h2 = 23 m.",
+    "conclusion": "d2 = 23/tan(36.87°) ≈ 30.67 m.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = d1 + d2; d1 ≈ 11.25 m, d2 ≈ 30.67 m.",
+    "conclusion": "d ≈ 41.92 m.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

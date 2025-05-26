@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The flowmeter works on the principle of Faraday's Law of Electromagnetic Induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a conductive liquid flows through a magnetic field, an electromotive force (EMF) E is induced across the pipe.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday's Law",
+    "conclusion": "The induced EMF E is given by E = B * v * d, where B is the magnetic induction intensity, v is the velocity of the liquid, and d is the diameter of the pipe.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The flow rate Q is the volume of liquid flowing through the cross-section of the pipe per unit time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Flow rate definition",
+    "conclusion": "The volume flow rate Q can be expressed as Q = A * v, where A is the cross-sectional area of the pipe and v is the velocity of the liquid.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cross-sectional area calculation",
+    "conclusion": "The cross-sectional area A of the pipe is A = π * (d/2)^2 = πd^2/4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = B * v * d",
+    "conclusion": "Solving for v gives v = E / (B * d).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v into Q = A * v",
+    "conclusion": "Q = (πd^2/4) * (E / (B * d))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for Q",
+    "conclusion": "Q = πdE / (4B)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

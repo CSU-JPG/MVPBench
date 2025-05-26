@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "The problem involves calculating the instantaneous induced current and average induced EMF for a rotating wire frame in a magnetic field.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The instantaneous EMF is calculated using Faraday's Law: \\( \\varepsilon = B \\omega S \\sin(\\theta) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute \\( \\theta = 60^\\circ \\) to get \\( \\varepsilon = B \\omega S \\times \\frac{\\sqrt{3}}{2} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate instantaneous current using Ohm's Law: \\( I = \\frac{\\varepsilon}{R} = \\frac{B \\omega S \\sqrt{3}}{2R} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The average EMF over one complete rotation is zero due to sinusoidal nature.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate average EMF from 0° to 60° using integration: \\( \\varepsilon_{avg} = \\frac{1}{\\theta_2 - \\theta_1} \\int_{\\theta_1}^{\\theta_2} \\varepsilon(\\theta) d\\theta \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Convert angles to radians: \\( \\theta_1 = 0 \\text{ rad}, \\theta_2 = \\frac{\\pi}{3} \\text{ rad} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Integrate to find \\( \\varepsilon_{avg} = \\frac{3}{\\pi} B \\omega S \\left( -\\cos\\left(\\frac{\\pi}{3}\\right) + \\cos(0) \\right) \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify to get \\( \\varepsilon_{avg} = \\frac{3B \\omega S}{2\\pi} \\).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Final answers: Instantaneous current is \\( \\frac{B \\omega S \\sqrt{3}}{2R} \\), average EMF is \\( \\frac{3B \\omega S}{2\\pi} \\).",
+    "relevant": "Yes"
+  }
+]

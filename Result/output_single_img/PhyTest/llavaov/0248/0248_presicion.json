@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The current in the primary coil is I = 1.4 A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance in the secondary coil is R = 50 Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The voltage in the secondary coil is V = 10 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V = I' * S",
+    "conclusion": "The expression for the voltage in the secondary coil is V = I' * S, where I' is the current in the secondary coil and S is the impedance in the secondary coil.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "10 V = I' * 50 Ω",
+    "conclusion": "I' = 0.2 A",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The expression for the turns ratio of the transformer is n1/n2 = I'/I",
+    "conclusion": "The expression for the turns ratio of the transformer is n1/n2 = I'/I.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1/n2 = 0.2 A / 1.4 A",
+    "conclusion": "n1/n2 = 0.1428",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

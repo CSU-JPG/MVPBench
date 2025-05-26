@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a trapezoidal wire frame with sides AB, BC, CD, and DA, each having specific lengths and angles, connected to a power source with electromotive force E and negligible internal resistance, in a uniform magnetic field B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total resistance of the wire is calculated using the resistivity ρ, length L, and cross-sectional area S.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R_total = ρ(L_ab + L_bc + L_cd + L_da) / S where L_ab = L_bc = L_cd = L and L_da = 2L.",
+    "conclusion": "R_total = ρ(4L) / S = 4ρL/S.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The battery of emf E drives the current I through the circuit.",
+    "conclusion": "I = E / R_total = E S / (4ρL).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnitude of Ampère force on a straight segment of length ℓ carrying current I in a uniform perpendicular field B is |F| = I B ℓ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The direction of the force is given by the right-hand rule, with I as conventional current and B pointing into the page.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment AB (length L, 60° up to the left) carries current I.",
+    "conclusion": "Force magnitude: F_AB = I B L. Direction: horizontally to the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment BC (length L, nearly horizontal but slanted down 60° to the right) carries current I.",
+    "conclusion": "Force magnitude: F_BC = I B L. Direction: horizontally to the left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment CD (length L, 60° down to the right) carries current I.",
+    "conclusion": "Force magnitude: F_CD = I B L. Direction: horizontally to the left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment DA (bottom, horizontal, length 2L) carries current I.",
+    "conclusion": "Force magnitude: F_DA = I B (2L) = 2 I B L. Direction: horizontally to the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rightward forces: F_AB + F_DA = I B L + 2 I B L = 3 I B L. Leftward forces: F_BC + F_CD = I B L + I B L = 2 I B L.",
+    "conclusion": "Net force (right minus left): F_net = (3 − 2) I B L = I B L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute current I from step 1: F_net = (E S / (4ρL)) · B · L.",
+    "conclusion": "F_net = E S B / (4ρ).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnitude: F_net = E S B / (4 ρ). Direction: horizontally to the right.",
+    "conclusion": "The frame experiences a single net Ampère force of magnitude F = E S B / (4 ρ) acting horizontally to the right.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

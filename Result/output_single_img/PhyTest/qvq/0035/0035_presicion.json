@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two cars, A and B, are moving in the same direction on a straight road. Car B is in front, and Car A is behind. They both hear a siren and start braking at the same time, but unfortunately, they collide.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows their velocities over time, with Car A starting at 25 m/s and Car B at 15 m/s. Both are decelerating linearly, and they seem to reach zero velocity at different times—Car A at 30 seconds and Car B at 25 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There's a point where their velocity lines intersect at 20 seconds, with a velocity of around 5 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Both cars are braking, so their velocities are decreasing over time. The slope of their velocity-time graphs gives their acceleration (or deceleration, since it's negative). The area under each graph represents the distance traveled during braking.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since they collide, it means that at some point, Car A catches up to Car B because it was moving faster initially but not so fast that it didn't close the gap before both stopped.",
+    "conclusion": "The key is to find out when the collision occurs relative to the 20-second mark.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For Car A: At time t=0, v=25 m/s; At time t=30 s, v=0 m/s",
+    "conclusion": "The slope (a) is (0 - 25)/(30 - 0) = -25/30 = -5/6 m/s². Thus, the velocity equation for Car A is: v_A = 25 - (5/6)t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For Car B: At time t=0, v=15 m/s; At time t=25 s, v=0 m/s",
+    "conclusion": "The slope (a) is (0 - 15)/(25 - 0) = -15/25 = -3/5 m/s². Thus, the velocity equation for Car B is: v_B = 15 - (3/5)t",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "They intersect at t=20 s, with v=25 - (5/6)*20 = 25 - (100/6) = (150 - 100)/6 = 50/6 ≈ 8.33 m/s, but the image shows it's around 5 m/s.",
+    "conclusion": "There might be a discrepancy here. However, for the sake of this problem, I'll proceed with the equations derived.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Position of Car A: x_A = ∫v_A dt = ∫(25 - 5/6 t) dt = 25t - (5/12)t² + C_A. At t=0, x_A = 0.",
+    "conclusion": "C_A = 0. So, x_A = 25t - (5/12)t²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Position of Car B: x_B = ∫v_B dt = ∫(15 - 3/5 t) dt = 15t - (3/10)t² + C_B. At t=0, x_B = 0.",
+    "conclusion": "C_B = 0. So, x_B = 15t - (3/10)t²",
+    "judgment": "Match"
+  }]

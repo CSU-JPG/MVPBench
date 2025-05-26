@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A transformer with two secondary coils has a primary coil with n1 = 100 turns, connected to a circuit with a voltage of U1 = 220V. Two appliances, '6 V 20 W' and '110 V 60 W,' are connected to the two secondary coils respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the first secondary coil, the voltage is 6 V and the power is 20 W.",
+    "conclusion": "The current can be calculated using the formula P = VI, so I = P/V = 20 W / 6 V = 10/3 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The turns ratio for the first secondary coil is n1/n2 = U1/U2 = 220 V / 6 V.",
+    "conclusion": "The turns ratio for the first secondary coil is 36.67.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n2 = n1 * (U2/U1) = 100 * (6/220).",
+    "conclusion": "n2 = 2.73 turns.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the second secondary coil, the voltage is 110 V and the power is 60 W.",
+    "conclusion": "The current can be calculated using the formula P = VI, so I = P/V = 60 W / 110 V = 6/11 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The turns ratio for the second secondary coil is n1/n3 = U1/U3 = 220 V / 110 V.",
+    "conclusion": "The turns ratio for the second secondary coil is 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n3 = n1 * (U3/U1) = 100 * (110/220).",
+    "conclusion": "n3 = 50 turns.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total current in the primary coil is the sum of the currents in the secondary coils, multiplied by the turns ratio.",
+    "conclusion": "I1 = (I2 * n2/n1) + (I3 * n3/n1) = (10/3 * 2.73/100) + (6/11 * 50/100) = 0.091 A + 0.273 A = 0.364 A.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

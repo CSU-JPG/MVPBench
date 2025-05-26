@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the original setup, the metal rod M rotates with angular velocity ω₀ in a magnetic field B₀. The voltmeter V reads U₀.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The emf (𝓔) induced in the metal rod due to its motion in the magnetic field can be given by Faraday's Law of Induction: 𝓔 = B ⋅ v ⋅ L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The linear velocity v of the end of the rod M is related to the angular velocity ω by: v = ω ⋅ r, where r is the radius of the ring N.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "𝓔 = B₀ ⋅ (ω₀ ⋅ r) ⋅ L",
+    "conclusion": "U₀ = B₀ ⋅ ω₀ ⋅ r ⋅ L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Now, the magnetic field is nB₀, and the voltmeter reads mU₀.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "𝓔_new = nB₀ ⋅ (ω_new ⋅ r) ⋅ L",
+    "conclusion": "mU₀ = nB₀ ⋅ ω_new ⋅ r ⋅ L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U₀ = B₀ ⋅ ω₀ ⋅ r ⋅ L and mU₀ = nB₀ ⋅ ω_new ⋅ r ⋅ L",
+    "conclusion": "m(B₀ ⋅ ω₀ ⋅ r ⋅ L) = n(B₀ ⋅ ω_new ⋅ r ⋅ L)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m(B₀ ⋅ ω₀ ⋅ r ⋅ L) = n(B₀ ⋅ ω_new ⋅ r ⋅ L)",
+    "conclusion": "ω_new = (m/n) ⋅ ω₀",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

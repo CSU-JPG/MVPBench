@@ -1,0 +1,105 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine which container (E, F, or G) the liquid will flow into after passing through the baffles, we need to analyze the paths of the liquid from points A, B, C, and D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: The liquid flows down the black line.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point A: The liquid follows the white line to the left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A: The liquid flows down the black line.",
+    "conclusion": "Point A: The liquid leads to container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B: The liquid flows down the brown line.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point B: The liquid follows the purple line to the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point B: The liquid flows down the brown line.",
+    "conclusion": "Point B: The liquid leads to container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point C: The liquid flows down the pink line.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point C: The liquid follows the orange line to the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point C: The liquid flows down the pink line.",
+    "conclusion": "Point C: The liquid leads to container G.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point D: The liquid flows down the yellow line.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point D: The liquid follows the gray line to the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point D: The liquid flows down the yellow line.",
+    "conclusion": "Point D: The liquid leads to container G.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point A: The liquid leads to container E.",
+    "conclusion": "Container E: Receives liquid from point A.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point B: The liquid leads to container F.",
+    "conclusion": "Container F: Receives liquid from point B.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point C: The liquid leads to container G. Point D: The liquid leads to container G.",
+    "conclusion": "Container G: Receives liquid from points C and D.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Container E: Receives liquid from point A. Container F: Receives liquid from point B. Container G: Receives liquid from points C and D.",
+    "conclusion": "Liquid from A flows into container E. Liquid from B flows into container F. Liquid from C and D flows into container G.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

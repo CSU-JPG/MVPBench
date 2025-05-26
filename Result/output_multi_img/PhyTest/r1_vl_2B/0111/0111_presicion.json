@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a pulley system where block A is suspended from a rope, and block B is attached to the rope. The angle of the rope is given, and the system must remain stationary.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The slope is inclined at 30°, and the light rope is connected to block A through two pulleys. The other end of the rope is fixed to the ceiling. The angle between the two segments of the rope at the pulley is 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To solve this problem, we need to use the principles of mechanics, specifically the principle of moments and the law of moments.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rope is inclined at 30°, and the angle between the rope and the pulley is 90°.",
+    "conclusion": "The rope is pulling on block A at an angle of 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The system must remain stationary.",
+    "conclusion": "The moment about the pivot point (where the rope meets the pulley) should be zero for the system to remain stationary.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The moment about the pivot is given by: Moment = Force on A × Distance from pivot to A - Force on B × Distance from pivot to B.",
+    "conclusion": "The sum of the moments on both sides of the pivot is zero: m × 30° = m_B × 90°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m × 30° = m_B × 90°.",
+    "conclusion": "m_B = (m × 30°) / 90°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m_B = (m × 30°) / 90°.",
+    "conclusion": "m_B = m / 3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass of block A is m.",
+    "conclusion": "The mass of block B is m / 3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Taking A as the research object, the tension in the rope can be obtained from the stress and balance conditions of block A: F_T = m × g × sin(30°).",
+    "conclusion": "The tension in the rope is F_T = 0.5 × m × g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Take the pulley as the research object and analyze its force and balance conditions: m_B × g = √2 × F_T.",
+    "conclusion": "m_B × g = √2 × (0.5 × m × g).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m_B × g = √2 × (0.5 × m × g).",
+    "conclusion": "m_B = (√2 / 2) × m.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

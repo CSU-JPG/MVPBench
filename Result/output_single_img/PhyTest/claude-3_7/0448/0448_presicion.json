@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semicircular brick with center O and radius R, a beam of red light directed at point O, the angle between incident light and BC is 60°, refractive index of the brick is n = √3, a screen MN is perpendicular to the horizontal at point A, and we need to find the distance from A to where the light hits the screen.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Light enters at O (center of semicircle), refracts at point O, travels in a straight line through the material, exits at some point on AC, and finally reaches the screen MN.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between incident light and BC is 60°.",
+    "conclusion": "The incident light makes a 60° angle with the horizontal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n₁sin(θ₁) = n₂sin(θ₂), n₁ = 1, n₂ = √3, θ₁ = 60°.",
+    "conclusion": "θ₂ = arcsin(1/2) = 30°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light travels at 30° to the horizontal inside the material.",
+    "conclusion": "The light will travel parallel to AC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a light ray traveling from the material (n₂ = √3) to air (n₁ = 1), the critical angle is θc = arcsin(1/√3) ≈ 35.3°.",
+    "conclusion": "Total internal reflection occurs at AC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray reflects off AC at the same angle it hit AC (60° to the normal of AC).",
+    "conclusion": "After reflection, the ray will travel at an angle of 120° to the horizontal.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reflected ray will travel until it hits the screen MN, which is vertical at point A.",
+    "conclusion": "D = x * tan(30°) = x * (1/√3).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light travels from O at 30° to the horizontal until it hits AC, and triangle ABC has ∠A = 30°.",
+    "conclusion": "The light will hit AC at point A itself, therefore x = 0, which means D = 0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The distance between the position where the red light hits the screen and point A is 0. The light hits the screen exactly at point A.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

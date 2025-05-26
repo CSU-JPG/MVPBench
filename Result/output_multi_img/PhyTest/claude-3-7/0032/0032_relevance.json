@@ -1,0 +1,46 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze the problem step-by-step to determine when particles A and B are farthest apart.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Both particles start at the origin (same position) at t = 0. Particle A accelerates to 2v₀ at t = t₀, maintains this velocity until 2t₀, then decelerates to zero at 3t₀ and remains stationary. Particle B accelerates more slowly, reaching v₀ at 3t₀, maintains this velocity until 5t₀, then decelerates to zero at 6t₀.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The position x(t) is found by integrating the velocity function: x(t) = ∫v(t)dt.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For particle A, the position functions are: From 0 to t₀: x_A(t) = v₀t²/t₀. From t₀ to 2t₀: x_A(t) = v₀t₀ + 2v₀(t-t₀) = 2v₀t - v₀t₀. From 2t₀ to 3t₀: x_A(t) = x_A(2t₀) + area of triangle = 3v₀t₀ + (3t₀-t)(t-2t₀)v₀/t₀. After 3t₀: x_A(t) = 3v₀t₀ (constant position).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For particle B, the position functions are: From 0 to 3t₀: x_B(t) = v₀t²/(6t₀). From 3t₀ to 5t₀: x_B(t) = x_B(3t₀) + v₀(t-3t₀) = v₀t/2 - v₀t₀/2. From 5t₀ to 6t₀: x_B(t) = x_B(5t₀) + area of triangle = 2v₀t₀ + (6t₀-t)(t-5t₀)v₀/t₀. After 6t₀: x_B(t) = 3v₀t₀ (constant position).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At t = 3t₀, x_A(3t₀) = 3v₀t₀ (A has stopped), and x_B(3t₀) = v₀(3t₀)²/(6t₀) = 3v₀t₀/2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At t = 6t₀, x_A(6t₀) = 3v₀t₀ (A remains stopped), and x_B(6t₀) = 3v₀t₀ (B has now stopped at the same final position as A).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The distance between particles is d(t) = |x_A(t) - x_B(t)|.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For t between 0 and 3t₀: A is ahead of B. At t = 3t₀: A is at 3v₀t₀, B is at 1.5v₀t₀. Their distance is 1.5v₀t₀.",
+    "relevant": "Yes"
+  }]

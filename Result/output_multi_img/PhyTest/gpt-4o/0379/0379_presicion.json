@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Wave 1 (left wave) originates at x = -0.2 m and propagates toward the positive x-direction with a speed v1 = 0.4 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Wave 2 (right wave) originates at x = 1.2 m and propagates toward the negative x-direction with a speed v2 = 0.4 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The two waves will meet at some point along the x-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two waves will meet at some point along the x-axis.",
+    "conclusion": "Let the meeting point be at x_meet. At the meeting time t_meet, the positions of the two wave fronts will coincide.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Wave 1 originates at x = -0.2 m and propagates toward the positive x-direction with a speed v1 = 0.4 m/s.",
+    "conclusion": "The position of the left wave front at time t is: x_left(t) = -0.2 + v1 * t",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Wave 2 originates at x = 1.2 m and propagates toward the negative x-direction with a speed v2 = 0.4 m/s.",
+    "conclusion": "The position of the right wave front at time t is: x_right(t) = 1.2 - v2 * t",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the meeting point, the positions of the two wave fronts are equal.",
+    "conclusion": "x_left(t_meet) = x_right(t_meet)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_left(t_meet) = x_right(t_meet)",
+    "conclusion": "-0.2 + v1 * t_meet = 1.2 - v2 * t_meet",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v1 = v2 = 0.4 m/s",
+    "conclusion": "-0.2 + 0.4 * t_meet = 1.2 - 0.4 * t_meet",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "-0.2 + 0.4 * t_meet = 1.2 - 0.4 * t_meet",
+    "conclusion": "0.4 * t_meet + 0.4 * t_meet = 1.2 + 0.2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.4 * t_meet + 0.4 * t_meet = 1.2 + 0.2",
+    "conclusion": "0.8 * t_meet = 1.4",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.8 * t_meet = 1.4",
+    "conclusion": "t_meet = 1.75 s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "t_meet = 1.75 s",
+    "conclusion": "Calculate the position of the meeting point x_meet: x_meet = x_left(t_meet) = -0.2 + 0.4 * 1.75 = 0.5 m",
+    "judgment": "Reasonable"
+  }]

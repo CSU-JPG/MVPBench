@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (D, E or F) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pink liquid flows downward from A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pink liquid hits the yellow baffle, which directs it rightward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The flow continues past the blue baffle, which it does not interact with directly.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pink liquid flows downward from A and hits the yellow baffle, which directs it rightward.",
+    "conclusion": "The liquid proceeds downward and enters Container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The green liquid flows downward from B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The green liquid impacts the yellow baffle, which directs it downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The green liquid flows downward from B and impacts the yellow baffle, which directs it downward.",
+    "conclusion": "It flows directly into Container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The blue liquid flows downward from C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The blue liquid hits the blue baffle, which directs it downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The blue liquid flows downward from C and hits the blue baffle, which directs it downward.",
+    "conclusion": "The liquid flows directly into Container G.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A flows into Container E, B flows into Container F, C flows into Container G.",
+    "conclusion": "The liquid from A flows into Container E, from B flows into Container F, and from C flows into Container G.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

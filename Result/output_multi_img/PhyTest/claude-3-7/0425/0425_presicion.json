@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Isosceles prism ABC with vertex angle θ = 30°, side length of AB is L, light ray DO hits midpoint O of side AB, incident angle i = 45°, light exits perpendicular to side AC, light speed in vacuum is C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ABC is an isosceles prism with vertex angle 30°.",
+    "conclusion": "Angle BAC = Angle CAB = 30°, Angle ABC = Angle BCA = 75°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law at point O: sin(i) = n sin(r).",
+    "conclusion": "sin(45°) = n sin(r), √2/2 = n sin(r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle r is labeled as γ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels from O to point J on side AC, angle γ is the angle of refraction, angle between refracted ray and normal to AC is labeled as y.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light exits perpendicular to side AC.",
+    "conclusion": "Angle of incidence at J must be 0°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law at point J: n sin(0°) = sin(0°).",
+    "conclusion": "Equation is satisfied regardless of n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light to exit perpendicular to AC, y = 0°.",
+    "conclusion": "Angle γ must be 60° for the ray to be perpendicular to AC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law at point O: sin(45°) = n sin(60°).",
+    "conclusion": "n = √2/√3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Distance from O to J is labeled as L/2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Speed of light in the prism is C/n.",
+    "conclusion": "Propagation time = L/2 ÷ (C/n) = (nL)/(2C).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting n = √2/√3.",
+    "conclusion": "Propagation time = √2L/(2√3C).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

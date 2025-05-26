@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distance between two parallel rails is 15 cm, the mass of the metal rod MN is m=17 g, its resistance R1 is 4Ω, the sliding rheostat R2 is connected in series with MN, the magnetic induction intensity B of the uniform magnetic field is vertically upward with a magnitude of 0.6 T, the electromotive force of the power source is E = 10 V, and the internal resistance r=1Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch S is closed, the metal rod MN remains stationary (g=10 m/s², √3=1.7).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "If the parallel rails are smooth, find the magnitude of the Ampere force acting on the metal rod and the resistance value of R2 (retain one significant figure in the result).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance in the circuit is the sum of the resistance of the metal rod R1, the sliding rheostat R2, and the internal resistance r of the power source.",
+    "conclusion": "R_total = R1 + R2 + r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I in the circuit can be found using Ohm's law: I = E / R_total.",
+    "conclusion": "I = 10 / (4 + R2 + 1) = 10 / (5 + R2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on the metal rod due to the magnetic field is given by the formula F = BIL.",
+    "conclusion": "F = 0.6 × I × 0.15 = 0.09I",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The metal rod is in equilibrium, so the magnetic force must be balanced by the weight of the rod.",
+    "conclusion": "W = mg = 0.017 × 10 = 0.17 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The component of the weight that is垂直 to the plane is W_perp = mg sin(30°).",
+    "conclusion": "W_perp = 0.017 × 10 × 0.5 = 0.085 N",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the rod is in equilibrium, the magnetic force must be equal to the component of the weight perpendicular to the plane: F = W_perp.",
+    "conclusion": "0.09I = 0.085",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve for I: 0.09I = 0.085.",
+    "conclusion": "I = 0.085 / 0.09 = 85/90 = 17/18 ≈ 0.944 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the value of I back into the expression for the current: I = 10 / (5 + R2) = 0.944.",
+    "conclusion": "10 = 0.944 × (5 + R2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve for R2: 10 = 4.72 + 0.944R2.",
+    "conclusion": "R2 = (10 - 4.72) / 0.944 = 5.28 / 0.944 ≈ 5.6 ≈ 6 Ω",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes the ABCDA cycle on a P-V diagram with known quantities P1, P2, V1, V2, and temperature T0 at state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem asks for the work done by the gas on the surroundings when transitioning from state D to state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The cycle forms a rectangle on the P-V diagram with transitions: A to B (constant volume V1), B to C (constant pressure P2), C to D (constant volume V2), D to A (constant pressure P1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A to B is a constant volume process.",
+    "conclusion": "Work done during A to B is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "B to C is a constant pressure process.",
+    "conclusion": "Work done during B to C is P2 * (V2 - V1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C to D is a constant volume process.",
+    "conclusion": "Work done during C to D is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "D to A is a constant pressure process.",
+    "conclusion": "Work done during D to A is P1 * (V1 - V2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Volume decreases from V2 to V1 during D to A.",
+    "conclusion": "Work done by the gas on the surroundings during D to A is -P1 * (V2 - V1).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

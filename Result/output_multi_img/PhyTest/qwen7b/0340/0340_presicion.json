@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the amount of heat exchanged during a cyclic process, we need to calculate the net work done by the gas over one complete cycle and use the first law of thermodynamics.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The first law states that the net heat exchanged Q is equal to the net work done W: Q = W.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The process is a closed loop (cycle) on a PV diagram.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process is a closed loop (cycle) on a PV diagram.",
+    "conclusion": "We need to calculate the work done in each segment of the cycle and sum them up.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment AB represents an isobaric (constant pressure) process from V1 to V2 at pressure P2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment AB represents an isobaric (constant pressure) process from V1 to V2 at pressure P2.",
+    "conclusion": "Work done in segment AB is W_AB = P2 (V2 - V1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment BC represents a constant volume (isochoric) process from V2 to V1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment BC represents a constant volume (isochoric) process from V2 to V1.",
+    "conclusion": "Work done in segment BC is W_BC = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment CD represents an isochoric (constant volume) process from P2 to P1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment CD represents an isochoric (constant volume) process from P2 to P1.",
+    "conclusion": "Work done in segment CD is W_CD = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Segment DA represents an isobaric (constant pressure) process from V2 to V1 at pressure P1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Segment DA represents an isobaric (constant pressure) process from V2 to V1 at pressure P1.",
+    "conclusion": "Work done in segment DA is W_DA = P1 (V2 - V1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done in segments: W_AB = P2 (V2 - V1), W_BC = 0, W_CD = 0, W_DA = P1 (V2 - V1).",
+    "conclusion": "Net work done over one complete cycle is W_net = W_AB + W_BC + W_CD + W_DA.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_net = W_AB + W_BC + W_CD + W_DA.",
+    "conclusion": "W_net = P2 (V2 - V1) + 0 + 0 + P1 (V2 - V1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "W_net = P2 (V2 - V1) + P1 (V2 - V1).",
+    "conclusion": "W_net = (P2 + P1) (V2 - V1).",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude and direction of the resultant Ampere force acting on the trapezoidal frame, we can follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given that the wire has uniform resistivity \\(\\rho\\) and cross-sectional area \\(S\\), the resistance \\(R\\) of each segment can be calculated using: \\[ R = \\frac{\\rho L}{S} \\] Since \\(ab = bc = cd = L\\), each side has the same length \\(L\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of each segment is \\( R = \\frac{\\rho L}{S} \\).",
+    "conclusion": "The total resistance \\(R_t\\) of the frame is \\( R_t = 3R = 3 \\left(\\frac{\\rho L}{S}\\right) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance is \\( R_t = 3 \\left(\\frac{\\rho L}{S}\\right) \\).",
+    "conclusion": "The current \\(I\\) through the frame is \\( I = \\frac{E}{R_t} = \\frac{E}{3 \\left(\\frac{\\rho L}{S}\\right)} = \\frac{ES}{3 \\rho L} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The Ampere force on a segment of length \\(L\\) carrying current \\(I\\) in a magnetic field \\(B\\) is given by: \\[ F = BIL \\]",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on a segment is \\( F = BIL \\).",
+    "conclusion": "For segment \\(ab\\), the effective length in the direction of the magnetic field is \\( L \\cos 60^\\circ = \\frac{L}{2} \\). The force on \\(ab\\) is \\( F_1 = B \\cdot \\frac{L}{2} \\cdot I = \\frac{BES}{6 \\rho} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on a segment is \\( F = BIL \\).",
+    "conclusion": "For segment \\(bc\\), the force is \\( F_2 = BI \\cdot L = \\frac{BES}{3 \\rho} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on a segment is \\( F = BIL \\).",
+    "conclusion": "For segment \\(cd\\), the force is \\( F_3 = B \\cdot \\frac{L}{2} \\cdot I = \\frac{BES}{6 \\rho} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on a segment is \\( F = BIL \\).",
+    "conclusion": "For segment \\(ad\\), which is parallel to the magnetic field, the force is \\( F_4 = 0 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Forces \\(F_1\\) and \\(F_3\\) are equal and opposite along the horizontal direction.",
+    "conclusion": "Forces \\(F_1\\) and \\(F_3\\) cancel each other out.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resultant force is only due to \\(F_2\\).",
+    "conclusion": "The resultant force \\( F_{\\text{resultant}} = F_2 = \\frac{BES}{3 \\rho} \\).",
+    "judgment": "Wrong"
+  }]

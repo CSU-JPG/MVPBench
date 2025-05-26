@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Problem involves an ideal gas undergoing a cyclic process with states A, B, and C. Temperature at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "PV diagram has volume on the horizontal axis in liters and pressure on the vertical axis in units of 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From A to B: Pressure increases from 1 x 10^5 Pa to 4 x 10^5 Pa while volume remains constant at 2 liters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From B to C: Pressure decreases from 4 x 10^5 Pa to 1 x 10^5 Pa while volume increases from 2 liters to 5 liters.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From C to A: Volume decreases from 5 liters to 2 liters while pressure remains constant at 1 x 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cyclic process means gas returns to initial state A, so changes in internal energy over the cycle are zero.",
+    "conclusion": "Net work done by the gas during the cycle is equal to the area enclosed by the cycle in the PV diagram.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done by the gas is represented by the area under the curve in a PV diagram.",
+    "conclusion": "To find total work done by the gas, calculate the area formed by paths A→B→C→A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A to B: Isochoric process, volume is constant.",
+    "conclusion": "Work done from A to B is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From B to C: Pressure and volume change, path is linear on PV diagram.",
+    "conclusion": "Assume linear path, pressure decreases linearly with volume.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Path from B to C is a trapezoid with heights 4 x 10^5 Pa and 1 x 10^5 Pa, width 3 L.",
+    "conclusion": "Area of trapezoid = (1/2) * (4 x 10^5 + 1 x 10^5) * 3 J = 7.5 x 10^5 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Pressure is in 10^5 Pa, volume in liters. Convert liters to cubic meters.",
+    "conclusion": "Volume change from B to C is 0.003 m³.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Average pressure during B to C is (Pb + Pc)/2 = 2.5 x 10^5 Pa.",
+    "conclusion": "Work from B to C = 2.5 x 10^5 Pa * 0.003 m³ = 750 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From C to A: Pressure constant at 1 x 10^5 Pa, volume decreases.",
+    "conclusion": "Work done by the gas during this process is P * ΔV.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total work done by the gas is calculated by considering the area enclosed by the cycle.",
+    "conclusion": "During the cycle, the work done by the outside world on the gas is -450 joules.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

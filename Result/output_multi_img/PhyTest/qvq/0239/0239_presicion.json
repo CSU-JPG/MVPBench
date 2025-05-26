@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves two spring scales, a horizontal wire, and a magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Two identical spring scales hang from a fixed point, each holding one end of a uniform horizontal straight wire labeled 'ab'.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire has a length L and is suspended by these scales in a uniform magnetic field perpendicular to the plane of the paper and pointing into it.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A constant current I flows from a to b, and the reading on one of the spring scales is F1. If the current is reversed and its magnitude is doubled to 2I, the reading becomes F2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force on a current-carrying wire is given by F = ILB sinθ, where θ is 90 degrees.",
+    "conclusion": "The magnetic force F = ILB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current flows from a to b, and the magnetic field is into the paper.",
+    "conclusion": "The magnetic force is upward using the left-hand rule.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The weight of the wire is mg, where m is the mass of the wire and g is the acceleration due to gravity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire is horizontal and suspended by two spring scales.",
+    "conclusion": "Each scale supports half of the weight of the wire, plus or minus the magnetic force.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force is acting upwards on the wire.",
+    "conclusion": "Each scale supports half the weight minus half the magnetic force.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wire is rigid and horizontal, and the net force must be zero for equilibrium.",
+    "conclusion": "T1 + T2 - mg + ILB = 0, where T1 and T2 are the tensions in the scales.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The scales are identical and the wire is uniform.",
+    "conclusion": "In the absence of any current, each scale would support half the weight of the wire.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "With the current flowing, the magnetic force reduces the tension in the scales.",
+    "conclusion": "When the current is I from a to b, each scale reads F1.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F1 + F1 - mg + ILB = 0",
+    "conclusion": "2F1 - mg + ILB = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the current is reversed and doubled to 2I, the magnetic force changes to downward and becomes 2ILB.",
+    "conclusion": "2F2 - mg - 2ILB = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equations: 2F1 - mg + ILB = 0 and 2F2 - mg - 2ILB = 0",
+    "conclusion": "Solve for B: B = (2(F2 - F1)) / (3IL)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

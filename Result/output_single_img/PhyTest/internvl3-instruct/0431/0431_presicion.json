@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square ABCD has side length A. M is the midpoint of AB, so AM = MB = A/2. The ray enters the prism at point M with an incident angle of 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n1 sin(θ1) = n2 sin(θ2) where n1 is the refractive index of the first medium (air, n1 = 1), θ1 is the incident angle, n2 is the refractive index of the prism, and θ2 is the refracted angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For total internal reflection to occur at point N on BC, the angle of incidence must be greater than the critical angle θc. The critical angle is given by: sin(θc) = 1/n2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The ray travels from M to N and then to P.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray travels from M to N and then to P.",
+    "conclusion": "The distance MN can be found using trigonometry in the triangle AMN.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance MN can be found using trigonometry in the triangle AMN.",
+    "conclusion": "The distance PC is the horizontal distance from P to C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ1 = 60°, n1 = 1",
+    "conclusion": "Find θ2 using Snell's Law: sin(60°) = n2 sin(θ2), √3/2 = n2 sin(θ2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection: sin(θc) = 1/n2.",
+    "conclusion": "Determine θc for total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use the geometry of the square and the angles.",
+    "conclusion": "Calculate PC.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate PC.",
+    "conclusion": "PC = (√3 - 1)/2 * A",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

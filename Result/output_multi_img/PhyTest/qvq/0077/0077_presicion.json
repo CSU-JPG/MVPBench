@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a U-shaped tube with mercury and air, with different cross-sectional areas in tubes A and B. The task is to determine the temperature to heat tube A so that mercury levels in both tubes are equal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Tube A is open to the atmosphere, and tube B is closed. The cross-sectional area of tube B is three times that of tube A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The mercury surface in tube A is higher than in tube B by Δh = 4 cm. The distances from the mercury surfaces to the openings are h1 = 24 cm for tube A and h2 = 12 cm for tube B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The atmospheric pressure is p0 = 76 cmHg, and the temperature is 27°C, which is 300 K in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The goal is to heat the air in tube A while keeping the temperature in tube B constant until the mercury levels in both tubes are equal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Tube A is open to the atmosphere, and the mercury in tube A is higher than in tube B by Δh.",
+    "conclusion": "The pressure at the bottom of the U-tube should be the same on both sides.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure at the bottom of the U-tube should be the same on both sides.",
+    "conclusion": "The pressure at the bottom is p0 minus the pressure due to the mercury column above it, which is p0 - ρg h1 on the side of tube A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure at the bottom of the U-tube should be the same on both sides.",
+    "conclusion": "The pressure at the bottom is p_B plus the pressure due to the mercury column above it, which is p_B + ρg h2 on the side of tube B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure at the bottom of the U-tube should be the same on both sides.",
+    "conclusion": "Setting them equal: p0 - ρg h1 = p_B + ρg h2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Setting them equal: p0 - ρg h1 = p_B + ρg h2",
+    "conclusion": "Solving for p_B: p_B = p0 - ρg h1 - ρg h2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mercury surface in tube A is higher by Δh.",
+    "conclusion": "The pressure at the bottom in tube A is p0 minus ρg Δh, because the extra Δh of mercury is above the reference level.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure difference between the two sides is equal to the hydrostatic pressure due to Δh.",
+    "conclusion": "p_A - p_B = ρg Δh",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p_A is p0 - ρg h1, and p_B is p_B + ρg h2",
+    "conclusion": "The pressure at the bottom is the same on both sides.",
+    "judgment": "Match"
+  }

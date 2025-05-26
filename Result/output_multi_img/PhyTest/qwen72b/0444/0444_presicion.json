@@ -1,0 +1,68 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the moment when the light beam emerges from the arc surface ABC after entering the transparent brick.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A semi-cylindrical transparent brick with refractive index n and radius r is laid flat on the desktop. A and C are the upper and lower endpoints of the cross-sectional diameter.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam enters the transparent brick at point D on the left side (perpendicular to AC).",
+    "conclusion": "The beam travels through the brick and eventually exits through the arc surface ABC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The exit point depends on the angle of incidence and the refractive index of the material.",
+    "conclusion": "The beam will exit if the angle of incidence is such that the light does not undergo total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's law states: n sin θ_i = sin θ_r, where θ_i is the angle of incidence and θ_r is the angle of refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle for total internal reflection is given by: sin θ_c = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the light to exit the arc, the angle of incidence must be less than the critical angle.",
+    "conclusion": "The maximum angle of incidence before total internal reflection occurs is θ_c.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam moves from A to C at a speed V. The distance AC is 2r.",
+    "conclusion": "The time taken for the beam to move from A to C is t = 2r/V.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The beam will exit the arc surface when the angle of incidence is exactly the critical angle.",
+    "conclusion": "This happens when the beam has traveled a distance R sin θ_c from A to the point of emergence.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time taken for the beam to travel this distance is t = R sin θ_c / V.",
+    "conclusion": "t = R (1/n) / V = R / nV.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The moment when the light emerges from the arc surface ABC is t = R / nV.",
+    "conclusion": "final_answer: 0",
+    "judgment": "Wrong"
+  }
+]

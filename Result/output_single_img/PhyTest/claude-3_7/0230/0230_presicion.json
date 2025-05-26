@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I'll solve this step by step to find the amount of charge passing through R₁ after switch S is opened.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analyze the initial state (switch S closed). When the switch is closed, we have a circuit with a voltage source, two resistors, and two capacitors.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In steady state (after a long time), capacitors act like open circuits for DC.",
+    "conclusion": "The current through the circuit will be I = E/(R₁ + R₂) = 10V/(4.0Ω + 6.0Ω) = 10V/10.0Ω = 1.0A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current through the circuit is 1.0A.",
+    "conclusion": "The voltage across each resistor: V₁ = I·R₁ = 1.0A × 4.0Ω = 4.0V and V₂ = I·R₂ = 1.0A × 6.0Ω = 6.0V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across each resistor is V₁ = 4.0V and V₂ = 6.0V.",
+    "conclusion": "The capacitor voltages in steady state: V(C₁) = E - V₁ = 10V - 4.0V = 6.0V and V(C₂) = E - V₁ - V₂ = 10V - 4.0V - 6.0V = 0V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitor voltages are V(C₁) = 6.0V and V(C₂) = 0V.",
+    "conclusion": "The charges on the capacitors: Q₁ = C₁·V(C₁) = 30μF × 6.0V = 180μC and Q₂ = C₂·V(C₂) = 30μF × 0V = 0μC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Analyze what happens when switch S is opened. When S is opened, we have a new circuit where C₁ and C₂ are in series with R₁.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Find the equivalent circuit after opening S. The equivalent capacitance of C₁ and C₂ in series: 1/Ceq = 1/C₁ + 1/C₂ = 1/(30μF) + 1/(30μF) = 2/(30μF).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/Ceq = 2/(30μF).",
+    "conclusion": "Ceq = 15μF.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Find the initial voltage across the equivalent capacitance. When S is opened, C₁ has 6.0V and C₂ has 0V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C₁ = C₂ and initial voltages are V(C₁) = 6.0V and V(C₂) = 0V.",
+    "conclusion": "The final voltage will be Veq = V(C₁)/2 = 6.0V/2 = 3.0V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Find the total charge that will flow through R₁. The charge that will flow through R₁ equals the change in charge on Ceq.",
+    "judgment": "N/A"
+  }]

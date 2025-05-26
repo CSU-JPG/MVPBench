@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total mass of the suitcase is 15 kg, gravitational acceleration is g = 10 m/s2, sin 37° = 0.6, and the force of gravity is 10 m/s2. The resistance of the suitcase to the ground is proportional to the supporting force of the ground, the ratio is μ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a suitcase which can be either pushed or pulled on the ground.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A passenger pulls the suitcase with an oblique upward pull to do uniform movement on the horizontal ground, if the minimum value of the pull is 90 N, the Angle between the pull and the horizontal direction is θ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on the suitcase are: Gravitational force (G) = 150 N, Normal force (N), Frictional force (f) = μN, Pulling force (F) = 90 N at an angle θ above the horizontal.",
+    "conclusion": "The gravitational force acting on the suitcase is 150 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pulling force F has two components: Horizontal component F_x = F cos θ, Vertical component F_y = F sin θ.",
+    "conclusion": "The horizontal component of the pulling force is F_x = F cos θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pulling force F has two components: Horizontal component F_x = F cos θ, Vertical component F_y = F sin θ.",
+    "conclusion": "The vertical component of the pulling force is F_y = F sin θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For uniform motion, the net force in both the horizontal and vertical directions must be zero. Horizontal direction: F_x = f, Vertical direction: N + F_y = G.",
+    "conclusion": "In the horizontal direction, the pulling force's horizontal component F_x balances the frictional force f.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For uniform motion, the net force in both the horizontal and vertical directions must be zero. Horizontal direction: F_x = f, Vertical direction: N + F_y = G.",
+    "conclusion": "In the vertical direction, the normal force N balances the gravitational force G and the vertical component of the pulling force F_y.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N + F sin θ = 150 N.",
+    "conclusion": "N = 150 - 90 sin θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F cos θ = μ N, N = 150 - 90 sin θ.",
+    "conclusion": "F cos θ = μ (150 - 90 sin θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F cos θ = μ (150 - 90 sin θ), F = 90 N.",
+    "conclusion": "90 cos θ = μ (150 - 90 sin θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "90 cos θ = μ (150 - 90 sin θ).",
+    "conclusion": "μ = 90 cos θ / (150 - 90 sin θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The minimum pulling force is F = 90 N. To minimize F, the angle θ must be such that the pulling force is most efficient.",
+    "conclusion": "The angle θ is optimal when the frictional force is minimized.",
+    "judgment": "Reasonable"
+  }]

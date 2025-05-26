@@ -1,0 +1,62 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze the motion of the ball and its effect on the shadow's movement.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "A point light source is fixed on a horizontal plane, and a small ball is thrown vertically upward from the midpoint between the light source and the right wall with initial velocity v0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The acceleration due to gravity is g.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The ball's horizontal position remains constant, and its vertical position as a function of time t is y(t) = v0 t - (1/2) g t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The shadow is cast on the wall and moves horizontally as the ball moves vertically.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The shadow's position on the wall is directly proportional to the ball's vertical position.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The shadow's position is xs(t) = (d/2) * (y(t)/h), where d is the distance from the light source to the wall and h is the height of the light source.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify the shadow's position to xs(t) = (d/2) * (v0 t - (1/2) g t^2)/h.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The initial velocity of the shadow is the derivative of xs(t) with respect to time t evaluated at t = 0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Differentiate xs(t) to get dxs/dt = (d/2h) * (v0 - g t).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Evaluate the derivative at t = 0 to find the initial velocity of the shadow: (dxs/dt)|t=0 = (d/2h) v0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The initial velocity of the shadow is (d/2h) v0.",
+    "relevant": "Yes"
+  }
+]

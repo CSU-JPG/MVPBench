@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a semicircular brick with radius R and center O, BC is the diameter of the semicircle, the angle between the incident light beam and BC is 60°, the refractive index of the brick for red light is n = √3, point A forms a 30° angle with the horizontal, screen MN is perpendicular to the horizontal plane, and we need to find the distance from A to where the light hits the screen.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Light enters at point O (center of semicircle), travels through the brick, and refracts when exiting, then continues to the screen MN.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident ray makes a 60° angle with BC, and BC is the diameter, so any line from O to the semicircle is perpendicular to the tangent at that point.",
+    "conclusion": "The angle of incidence at point D is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n₁sin(i) = n₂sin(r), where n₁ = √3, n₂ = 1, i = 30°.",
+    "conclusion": "The angle of refraction r is 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The refracted ray makes a 30° angle with the horizontal and travels from point D to point P on the screen.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray is parallel to the line CA, which makes a 30° angle with the horizontal.",
+    "conclusion": "The refracted ray will hit the screen at the same height above the horizontal as the extension of CA.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refracted ray is parallel to CA and CA intersects the screen at point A.",
+    "conclusion": "The light hits the screen at point A, so the distance h = |AP| is 0.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

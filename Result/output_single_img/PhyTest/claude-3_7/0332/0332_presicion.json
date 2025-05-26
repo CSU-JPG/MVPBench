@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The diagram shows states A, B, and C for an ideal gas with a fixed quantity of gas.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At state A: pressure p0, volume V0, temperature T0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At state B: pressure 0.6p0, volume V0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At state C: pressure 0.6p0, volume 0.5V0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Internal energy U = aT where a is a positive constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas: PV = nRT (where n is number of moles, which is constant).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At state A: p0 V0 = nRT0. At state B: 0.6p0 V0 = nRTB.",
+    "conclusion": "Dividing the equations: (0.6p0 V0) / (p0 V0) = (nRTB) / (nRT0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Dividing the equations: (0.6p0 V0) / (p0 V0) = (nRTB) / (nRT0).",
+    "conclusion": "This simplifies to: 0.6 = TB / T0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0.6 = TB / T0.",
+    "conclusion": "Therefore: TB = 0.6T0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem states that U = aT, so the internal energy is directly proportional to temperature.",
+    "conclusion": "At state A: UA = aT0. At state B: UB = aTB = a(0.6T0) = 0.6aT0 = 0.6UA.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "TB = 0.6T0.",
+    "conclusion": "The temperature at state B is TB = 0.6T0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

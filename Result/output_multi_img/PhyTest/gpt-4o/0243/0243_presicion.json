@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An induced current is generated in the conductor frame when there is a change in the magnetic flux through the frame. This happens when part of the frame enters or exits the magnetic field region. The induced current stops when the entire frame is either completely inside or completely outside the magnetic field, as the magnetic flux through the frame becomes constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The square frame has a side length l, and it moves with a uniform velocity v. The width of the magnetic field region is d, and it is given that l < d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frame will experience induced current during the following two intervals: 1. When the leading edge of the frame enters the magnetic field: The magnetic flux through the frame starts increasing as the frame begins to intersect the magnetic field. 2. When the trailing edge of the frame exits the magnetic field: The magnetic flux through the frame starts decreasing as the frame leaves the magnetic field.",
+    "conclusion": "The frame experiences induced current when entering and exiting the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The leading edge of the frame starts entering the magnetic field at t = 0. The induced current continues until the trailing edge of the frame enters the magnetic field. The distance traveled by the frame for the trailing edge to enter the magnetic field is equal to the side length l of the frame.",
+    "conclusion": "The time taken for the trailing edge to enter the magnetic field is t1 = l/v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the entire frame is inside the magnetic field, there is no change in magnetic flux, and the induced current stops temporarily. The induced current resumes when the leading edge of the frame starts exiting the magnetic field. The induced current continues until the trailing edge of the frame exits the magnetic field. The distance traveled by the frame for the trailing edge to exit the magnetic field is equal to l.",
+    "conclusion": "The time taken for the trailing edge to exit the magnetic field is t2 = l/v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total time during which there is an induced current is the sum of the two intervals: t_total = t1 + t2 = l/v + l/v.",
+    "conclusion": "The total time for induced current is t_total = 2l/v.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

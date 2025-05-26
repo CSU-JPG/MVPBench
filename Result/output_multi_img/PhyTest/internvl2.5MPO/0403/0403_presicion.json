@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A monochromatic light ray is emitted from point M parallel to the base CD. The prism is an isosceles right-angle prism. The refractive index of the prism glass is \\( n = \\sqrt{2} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The incident angle (\\(\\theta_i\\)) at edge AC is 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Use Snell's Law: \\( n_1 \\sin(\\theta_i) = n_2 \\sin(\\theta_r) \\). Here, \\( n_1 = 1 \\) (air) and \\( n_2 = \\sqrt{2} \\) (prism).",
+    "conclusion": "Plugging in the values: \\(\\sin(\\theta_r) = \\frac{\\sin(45°)}{\\sqrt{2}} = \\frac{1}{\\sqrt{2}} \\cdot \\frac{1}{\\sqrt{2}} = \\frac{1}{2}\\). Thus, \\( \\theta_r = 30° \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The refraction angle (\\(\\gamma\\)) when the light enters the prism is 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels through the prism and reaches edge CD. The angle of incidence (\\(\\theta_i'\\)) on edge CD is 45°.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle (\\(\\theta_c\\)) for total internal reflection is given by: \\(\\sin(\\theta_c) = \\frac{1}{\\sqrt{2}} \\approx 0.707\\).",
+    "conclusion": "Therefore, \\( \\theta_c = 45° \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the angle of incidence at CD (\\(45°\\)) is equal to the critical angle (\\(45°\\)).",
+    "conclusion": "The light will undergo total internal reflection.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The refraction angle when the light enters the Dawes prism is \\( 30° \\), and the light cannot exit from edge CD.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

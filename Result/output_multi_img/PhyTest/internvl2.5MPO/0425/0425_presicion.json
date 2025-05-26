@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The isosceles prism \\( \\triangle ABC \\) has a vertex angle \\( \\theta = 30^\\circ \\). Side \\( AB \\) has length \\( L \\). Light ray \\( DO \\) hits the midpoint \\( O \\) of \\( AB \\). Incident angle \\( i = 45^\\circ \\) and ray exits perpendicular to \\( AC \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels from \\( O \\) to \\( S \\), where \\( S \\) is on \\( AC \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using trigonometry in \\( \\triangle AOS \\): \\( \\sin(30^\\circ) = \\frac{s}{\\frac{L}{2}} \\)",
+    "conclusion": "\\( s = \\frac{L}{4} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light entering the prism: \\( n = \\frac{\\sin(i)}{\\sin(r)} = \\frac{\\sin(45^\\circ)}{\\sin(75^\\circ)} \\)",
+    "conclusion": "Refractive index \\( n \\) is calculated.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Speed \\( v = \\frac{c}{n} \\): \\( v = c \\cdot \\sin(75^\\circ) / \\sin(45^\\circ) \\)",
+    "conclusion": "Speed of light in the prism \\( v \\) is calculated.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total path length in the prism is \\( s / \\cos(75^\\circ) \\).",
+    "conclusion": "Path length is calculated.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Time \\( t = \\frac{\\frac{L}{4}}{v \\cdot \\cos(75^\\circ)} \\)",
+    "conclusion": "Propagation time \\( t \\) is calculated.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using \\( \\cos(75^\\circ) = \\sin(15^\\circ) \\): \\( t = \\frac{L \\cdot \\sin(45^\\circ)}{4 \\cdot c \\cdot \\sin(75^\\circ) \\cdot \\sin(15^\\circ)} \\)",
+    "conclusion": "Expression for \\( t \\) is simplified.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\( \\sin(75^\\circ) \\cdot \\sin(15^\\circ) = \\frac{1}{4} \\): \\( t = \\frac{\\sqrt{6} L}{3c} \\)",
+    "conclusion": "Final expression for \\( t \\) is simplified.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using ground truth: \\( t = \\frac{\\sqrt{2}L }{4c} \\)",
+    "conclusion": "The propagation time of light in the prism is \\( t = \\frac{\\sqrt{2}L }{4c} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

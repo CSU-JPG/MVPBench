@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Choose a convenient coordinate system: Let the straight coast line be the x-axis (y = 0). Point A (Xiao-Ming’s starting point) is on the beach at A(xA , +h). Point B (the drowning man) is in the sea at B(xB , –d). Xiao-Ming will leave the beach at some point P(x , 0) on the coast, run from A to P at speed v1, then swim from P to B at speed v2 (v1 > v2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance on the beach: AP = √[(x – xA)² + h²], Distance in the sea: PB = √[(x – xB)² + d²]",
+    "conclusion": "Write the total time as a function of x: T(x) = 1/v1·√[(x – xA)² + h²] + 1/v2·√[(x – xB)² + d²]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Differentiate T with respect to x and set dT/dx = 0",
+    "conclusion": "dT/dx = 1/v1 · (x – xA)/√[(x – xA)² + h²] + 1/v2 · (x – xB)/√[(x – xB)² + d²] = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Translate the derivatives into sines / cosines of the path angles: For the chosen point P, Beach segment (A→P) makes an angle α with the coast line. Sea segment (P→B) makes an angle β with the coast line.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos (angle with coast) = horizontal leg / hypotenuse",
+    "conclusion": "cos α = |x – xA| / AP = (x – xA)/√[(x – xA)² + h²], cos β = |x – xB| / PB = (x – xB)/√[(x – xB)² + d²]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Insert these into the condition dT/dx = 0",
+    "conclusion": "(1/v1) cos α + (1/v2) cos β = 0 ⟹ cos α / v1 = – cos β / v2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The minus sign only shows the two horizontal components point in opposite directions",
+    "conclusion": "With absolute values we obtain the well-known “Snell rule for least-time”: cos α / v1 = cos β / v2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Re-arranging gives cos α / v1 = cos β / v2",
+    "conclusion": "v1 / v2 = cos α / cos β",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

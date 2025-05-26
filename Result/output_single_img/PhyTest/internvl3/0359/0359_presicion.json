@@ -1,0 +1,97 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle is launched horizontally with velocity v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field E is directed vertically downward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force on the particle is F = qE.",
+    "conclusion": "The acceleration due to the electric field is a = qE/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "Horizontal motion equation: x = v_0 t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "Vertical motion equation: y = (1/2) a t^2 = (1/2) (qE/m) t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "Horizontal velocity remains constant: v_x = v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "Vertical velocity: v_y = at = (qE/m) t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the velocity vector and the horizontal when entering the magnetic field is 60 degrees.",
+    "conclusion": "tan(60 degrees) = v_y/v_x = sqrt(3), therefore v_y = v_0 sqrt(3).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_y = (qE/m) t and v_y = v_0 sqrt(3).",
+    "conclusion": "Time to reach point P: t = (v_0 sqrt(3) m)/(qE).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = v_0 t and t = (v_0 sqrt(3) m)/(qE).",
+    "conclusion": "Horizontal distance to point P: x = (v_0^2 sqrt(3) m)/(qE).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic force provides the centripetal force: qvB = mv^2/R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The speed v when entering the magnetic field is v = sqrt(v_x^2 + v_y^2) = sqrt(v_0^2 + (v_0 sqrt(3))^2).",
+    "conclusion": "The speed v = 2v_0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R = mv/qB and v = 2v_0.",
+    "conclusion": "Radius of circular path: R = (2mv_0)/(qB).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle exits between Q and N, implying the radius R must be such that the particle completes a quarter circle or less.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "y = (1/2) (qE/m) t^2 and t = (v_0 sqrt(3) m)/(qE).",
+    "conclusion": "Vertical distance traveled in the electric field: y = (3 v_0^2 m)/(2 qE).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x = (v_0^2 sqrt(3) m)/(qE) and y = (3 v_0^2 m)/(2 qE).",
+    "conclusion": "Total distance to point P: d = sqrt(x^2 + y^2).",
+    "judgment": "Wrong"
+  }]

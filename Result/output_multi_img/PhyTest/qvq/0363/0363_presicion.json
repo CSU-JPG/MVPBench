@@ -1,0 +1,76 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a negative ion air purifier with a collector made of two parallel metal plates. Negatively charged dust particles enter this collector with a constant velocity v₀. The plates have a length L and a spacing d, and there's a uniform electric field between them. The goal is to find the voltage U₁ between the plates that ensures all particles with mass m and charge -α are just completely collected.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a mixed airflow consisting of air and negatively charged particles entering a collector composed of a pair of parallel metal plates. The plates have a length L and spacing d. The particles have a constant velocity v₀ along the direction of the plates.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particles are negatively charged, so they will be attracted to the positively charged plate. The electric field is uniform, which means it's constant throughout the region between the plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particles are moving with a constant velocity v₀ along the direction of the plates.",
+    "conclusion": "In the x-direction, since the velocity is constant, there is no acceleration, so no net force is acting in that direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "There is an electric force acting on the particles in the y-direction due to the uniform electric field.",
+    "conclusion": "The electric force will cause the particles to accelerate towards the positively charged plate.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle's motion in the y-direction is uniformly accelerated, starting from rest (assuming the particle enters the plates with only an x-component of velocity).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field strength E is related to the voltage U₁ and the plate spacing d by the formula E = U₁ / d.",
+    "conclusion": "The electric force on the particle is F = qE = -α * (U₁ / d).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The mass of the particle is m and the electric force is F = -α * (U₁ / d).",
+    "conclusion": "The acceleration a in the y-direction is a = F / m = (-α * U₁) / (m * d).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total distance available in the y-direction is d/2, assuming the particle enters exactly between the plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time t it takes for the particle to travel the length L at constant velocity v₀ is t = L / v₀.",
+    "conclusion": "In this time, the particle accelerates in the y-direction and travels a distance y, which should be less than or equal to d/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the equation of motion y = (1/2) * a * t² and substituting a and t.",
+    "conclusion": "y = (1/2) * [(-α * U₁) / (m * d)] * (L / v₀)².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the particle is just collected, y should be equal to d/2.",
+    "conclusion": "d/2 = (1/2) * [(-α * U₁) / (m * d)] * (L / v₀)².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d/2 = (1/2) * [(-α * U₁) / (m * d)]

@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the power of the external force doing work, we need to analyze the system using Faraday's Law of Electromagnetic Induction and the principles of electrical circuits.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The rod OC rotates with an angular velocity ω in a magnetic field B. The length of the rod is r, and it sweeps out a semicircular path.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod OC rotates with an angular velocity ω in a magnetic field B. The length of the rod is r.",
+    "conclusion": "The induced electromotive force (EMF) in the rod can be found using the formula for the EMF generated in a moving conductor in a magnetic field: EMF = B ⋅ l ⋅ v.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a rotating rod, the velocity v at a distance x from the pivot O is: v = ωx.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective length of the rod contributing to the EMF is from O to C, which is r.",
+    "conclusion": "The induced EMF is: EMF = ∫₀ʳ B ⋅ x ⋅ ω dx.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = ∫₀ʳ B ⋅ x ⋅ ω dx.",
+    "conclusion": "EMF = Bω ∫₀ʳ x dx.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = Bω ∫₀ʳ x dx.",
+    "conclusion": "EMF = Bω [x²/2]₀ʳ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = Bω [x²/2]₀ʳ.",
+    "conclusion": "EMF = Bω (r²/2 - 0).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = Bω (r²/2 - 0).",
+    "conclusion": "EMF = 1/2 Bωr².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The EMF drives a current through the resistor R. Using Ohm's Law: I = EMF/R.",
+    "conclusion": "I = (1/2 Bωr²)/R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = (1/2 Bωr²)/R.",
+    "conclusion": "I = Bωr²/(2R).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power dissipated in the resistor is given by: P = I²R.",
+    "conclusion": "P = (Bωr²/(2R))² R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = (Bωr²/(2R))² R.",
+    "conclusion": "P = B²ω²r⁴/(4R²) ⋅ R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = B²ω²r⁴/(4R²) ⋅ R.",
+    "conclusion": "P = B²ω²r⁴/(4R).",
+    "judgment": "Match"
+  }]

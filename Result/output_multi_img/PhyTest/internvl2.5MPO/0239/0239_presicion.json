@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire ab has a length L. A current I flows through the wire from a to b. The magnetic field B is perpendicular to the plane of the paper, going into the paper. Two identical spring scales support the wire.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force on a current-carrying wire in a magnetic field is given by F = BIL.",
+    "conclusion": "For current I from a to b, this force acts downward on the wire.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The reading on one spring scale is F1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reading on one spring scale is F1.",
+    "conclusion": "The total weight of the wire is 2F1 (since both scales are identical and symmetric).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current is reversed and increased to 2I.",
+    "conclusion": "The force now becomes F' = BI(2L) = 2BIL.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force now becomes F' = BI(2L) = 2BIL.",
+    "conclusion": "This force acts upward due to the direction of the current being reversed.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The reading on one spring scale is F2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The reading on one spring scale is F2.",
+    "conclusion": "The total force supported by the scales is 2F2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the current is I, the equilibrium equation is: 2F1 = mg + BIL. When the current is 2I, the equilibrium equation is: 2F2 = mg - 2BIL.",
+    "conclusion": "Subtract the second equation from the first to eliminate mg: 2F1 - 2F2 = BIL + 2BIL.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2F1 - 2F2 = BIL + 2BIL.",
+    "conclusion": "2F1 - 2F2 = 3BIL.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2F1 - 2F2 = 3BIL.",
+    "conclusion": "B = \\frac{2(F1 - F2)}{3IL}.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

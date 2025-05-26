@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A circular ring with a radius of R made of uniform wire enters a uniform magnetic field with a magnetic induction intensity of B at a constant speed of v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circular ring moves to the position shown in the figure where the angle aOb is 90°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The ring translates with velocity v⃗ to the right through the region where the magnetic induction is B⃗ directed into the page.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ring translates with velocity v⃗ to the right through the region where the magnetic induction is B⃗ directed into the page.",
+    "conclusion": "Every element dl⃗ of the wire that is already inside the field experiences the motional electric field E⃗ = v⃗ × B⃗.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v⃗ is along +x and B⃗ is along –z.",
+    "conclusion": "v⃗ × B⃗ points everywhere along +y, and its magnitude is E = vB (independent of position).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The part of the ring that has entered the field is the circular arc a … b that subtends a central angle of 90° (θ = π/2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The circular arc a … b subtends a central angle of 90° (θ = π/2).",
+    "conclusion": "The polar angle φ of a point on that arc varies from φ = –45° (point b) to φ = +45° (point a).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a circular ring of radius R, the line element on the arc is dl⃗ = R(–sin φ î + cos φ ĵ) dφ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between a and b equals the line integral of the motional electric field along that portion of the conductor.",
+    "conclusion": "V_ab = ∫_b^a (E⃗ · dl⃗) = ∫_{φ = –45°}^{+45°} vB ĵ · [R(–sin φ î + cos φ ĵ) dφ] = vB R ∫_{–π/4}^{+π/4} cos φ dφ = vB R [sin φ]_{–π/4}^{+π/4} = vB R (sin 45° – (–sin 45°)) = vB R (√2/2 + √2/2) = √2 v B R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced electric field points upward (+y).",
+    "conclusion": "Positive charges are pushed toward a, so point a is at the higher potential.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference between a and b is √2 v B R.",
+    "conclusion": "V_a – V_b = √2 · B R v.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

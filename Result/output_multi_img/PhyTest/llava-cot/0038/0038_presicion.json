@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, analyze the acceleration-time graph to determine when the velocity is at its maximum by integrating the acceleration over time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows an acceleration-time graph for a body moving along a straight line. The acceleration starts at 2 m/s² at time t = 0, remains constant until t = 2 s, and then decreases linearly to 0 m/s² at t = 4 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The acceleration is 2 m/s² from t = 0 to t = 2 s.",
+    "conclusion": "The area under the acceleration curve from t = 0 to t = 2 s can be calculated using the formula for the area of a rectangle: \\(2 \\, \\text{m/s}^2 \\times 2 \\, \\text{s} = 4 \\, \\text{m/s}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From t = 2 s to t = 4 s, the acceleration decreases linearly from 2 m/s² to 0 m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From t = 2 s to t = 4 s, the acceleration decreases linearly from 2 m/s² to 0 m/s².",
+    "conclusion": "Calculate the area under the acceleration curve from t = 2 s to t = 4 s using the formula for the area of a triangle: \\(\\frac{1}{2} \\times 2 \\, \\text{m/s}^2 \\times 2 \\, \\text{s} = 2 \\, \\text{m/s}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The areas under the acceleration curve from t = 0 to t = 2 s and from t = 2 s to t = 4 s are 4 m/s and 2 m/s respectively.",
+    "conclusion": "The total change in velocity from t = 0 to t = 4 s is the sum of these areas: \\(4 \\, \\text{m/s} + 2 \\, \\text{m/s} = 6 \\, \\text{m/s}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total change in velocity from t = 0 to t = 4 s is 6 m/s.",
+    "conclusion": "The maximum velocity is reached when the total change in velocity is added to the initial velocity (which is 0 m/s since the body starts from rest).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum velocity is reached when the total change in velocity is added to the initial velocity.",
+    "conclusion": "Thus, the maximum velocity is 6 m/s, which occurs at t = 4 s.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

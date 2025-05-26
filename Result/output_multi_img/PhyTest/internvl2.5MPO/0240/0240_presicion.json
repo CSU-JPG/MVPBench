@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The right arm of the balance has a rectangular coil with n turns. The coil is in a uniform magnetic field with induction intensity B perpendicular to its plane. A current I flows through the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The balance is initially in equilibrium with current I.",
+    "conclusion": "The magnetic force on the coil is nBIL.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the current direction is reversed, the magnetic force also reverses.",
+    "conclusion": "This changes the torque on the coil, causing imbalance.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To balance it again, a mass m is added to the left pan.",
+    "conclusion": "The gravitational force due to the added mass is mg.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force due to the added mass is mg.",
+    "conclusion": "This force creates a torque on the left side, balancing the changed magnetic torque.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque due to gravity is mgL.",
+    "conclusion": "Set this equal to the torque due to the magnetic force change: 2nBIL.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mgL = 2nBIL",
+    "conclusion": "Cancel L from both sides: mg = 2nBI",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg = 2nBI",
+    "conclusion": "Solve for B: B = mg/(2nI)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

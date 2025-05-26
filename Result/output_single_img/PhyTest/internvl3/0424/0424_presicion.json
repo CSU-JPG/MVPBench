@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the ratio \\(\\frac{v_1}{v_2}\\) for the path that minimizes the total travel time from point A to point B, where Xiao Ming runs on the beach and swims in the sea.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This problem is analogous to the principle of least time in optics, also known as Snell's Law.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the variables: \\(v_1\\): Speed of running on the beach, \\(v_2\\): Speed of swimming in the sea, \\(\\theta_1\\): Angle of incidence on the beach, \\(\\theta_2\\): Angle of refraction in the sea, \\(\\alpha\\): Angle between the path on the beach and the perpendicular to the coastline, \\(\\beta\\): Angle between the path in the sea and the perpendicular to the coastline.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Apply Snell's Law: The ratio of the sines of the angles of incidence and refraction is equal to the ratio of the velocities in the two media: \\(\\frac{\\sin \\theta_1}{\\sin \\theta_2} = \\frac{v_1}{v_2}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From Snell's Law and the diagram.",
+    "conclusion": "Relate \\(\\theta_1\\) and \\(\\theta_2\\) to \\(\\alpha\\) and \\(\\beta\\): \\(\\theta_1 = 90^\\circ - \\alpha\\) and \\(\\theta_2 = 90^\\circ - \\beta\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute \\(\\theta_1\\) and \\(\\theta_2\\) into Snell's Law.",
+    "conclusion": "\\(\\frac{\\sin (90^\\circ - \\alpha)}{\\sin (90^\\circ - \\beta)} = \\frac{v_1}{v_2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the identity \\(\\sin (90^\\circ - x) = \\cos x\\).",
+    "conclusion": "\\(\\frac{\\cos \\alpha}{\\cos \\beta} = \\frac{v_1}{v_2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For path 3, the angles \\(\\alpha\\) and \\(\\beta\\) are such that the path minimizes the total travel time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since path 3 is the optimal path.",
+    "conclusion": "The ratio \\(\\frac{v_1}{v_2}\\) is given by \\(\\frac{\\cos \\alpha}{\\cos \\beta}\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the temperature of the gas in state C, we need to use the ideal gas law and the information given in the problem.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: p_A = 3 × 10^5 Pa, V_A = 1 × 10^-3 m^3, T_A = 27 °C = 300 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: p_B = 2 × 10^5 Pa, V_B = 1 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: p_C = 2 × 10^5 Pa, V_C = 3 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by pV = nRT, where n is the number of moles and R is the gas constant. For a given mass of gas, nR is constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the volume remains constant from A to B, this is an isochoric process.",
+    "conclusion": "The temperature and pressure are related by: p_A/T_A = p_B/T_B",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p_A/T_A = p_B/T_B",
+    "conclusion": "T_B = T_A × (p_B/p_A) = 300 K × (2 × 10^5)/(3 × 10^5) = 200 K",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From B to C, the process is isobaric (constant pressure).",
+    "conclusion": "The temperature and volume are related by: V_B/T_B = V_C/T_C",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_B/T_B = V_C/T_C",
+    "conclusion": "T_C = T_B × (V_C/V_B) = 200 K × (3 × 10^-3)/(1 × 10^-3) = 600 K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_C = 600 K",
+    "conclusion": "Convert the temperature to Celsius: T_C = 600 K - 273 = 327 °C",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

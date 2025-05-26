@@ -1,0 +1,105 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas of a certain mass undergoes a cyclic process shown in Figures A→B→C→D→A, where each state is considered to be in equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature of state A is known to be 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The vertical axis represents pressure in units of 10⁵ Pa.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The horizontal axis represents the ratio V/L (volume divided by some length unit).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process forms a rectangular cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Temperature at state A is T₁ = 27°C.",
+    "conclusion": "Temperature at state A is 300 K (converting to Kelvin).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, P₁ = 1 × 10⁵ Pa at point A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the diagram, P₃ = 0.75 × 10⁵ Pa at points C and D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "V₁/L = 3 at points A and D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "V₂/L = 4 at points B and C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas, we can use the ideal gas law: PV = nRT.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the process A→B, this is an isobaric process (constant pressure).",
+    "conclusion": "P₁ = P₂ = 1 × 10⁵ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V₁/L = 3 and V₂/L = 4.",
+    "conclusion": "At state A: P₁V₁ = nRT₁ and At state B: P₂V₂ = nRT₂.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isobaric process (P₁ = P₂), we can write: T₂/T₁ = V₂/V₁.",
+    "conclusion": "T₂ = T₁ × (V₂/V₁).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = T₁ × (V₂/V₁) = 300 K × (4/3).",
+    "conclusion": "T₂ = 400 K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = 400 K.",
+    "conclusion": "Converting back to Celsius: T₂ = 400 K - 273.15 = 126.85°C ≈ 127°C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state B is 400 K or approximately 127°C.",
+    "conclusion": "The temperature in state B is 400K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the voltage U_1 between the two metal plates, we need to analyze the motion of the charged particles in the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The charged particles have a charge -alpha and are moving in a uniform electric field between the plates.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric field E between the plates is given by E = U_1/d.",
+    "conclusion": "The electric field E is related to the voltage U_1 and the distance d between the plates.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force on a charged particle is F = -alpha E.",
+    "conclusion": "The force acting on the charged particle due to the electric field is F = -alpha E.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Newton's second law, F = ma, where m is the mass of the particle and a is its acceleration.",
+    "conclusion": "The acceleration a of the particle is given by a = -alpha E/m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since E = U_1/d, we can substitute this into the acceleration equation: a = -alpha U_1/md.",
+    "conclusion": "The acceleration a of the particle is a = -alpha U_1/md.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particles enter the plates with a horizontal velocity v_0 and are deflected vertically by the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time t it takes for the particles to travel the length L of the plates is t = L/v_0.",
+    "conclusion": "The time t for particles to travel the length L is t = L/v_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical displacement y of the particles due to the electric field is given by y = 1/2 a t^2.",
+    "conclusion": "The vertical displacement y is y = 1/2 a t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting a = -alpha U_1/md and t = L/v_0, we get y = -alpha U_1 L^2/(2 m d v_0^2).",
+    "conclusion": "The vertical displacement y is y = -alpha U_1 L^2/(2 m d v_0^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the particles to be completely collected, the vertical displacement y must be equal to the distance d between the plates.",
+    "conclusion": "The condition for complete collection is d = alpha U_1 L^2/(2 m d v_0^2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange the equation to solve for U_1: d = alpha U_1 L^2/(2 m d v_0^2).",
+    "conclusion": "U_1 = 2 m d^2 v_0^2/(alpha L^2).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

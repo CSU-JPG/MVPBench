@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rectangular guide rail ABCD with resistors R at both ends, uniform magnetic field B pointing vertically downward, conductor rod MN (mass m, length L) forms a spring system, spring initially at natural length, rod has initial horizontal leftward velocity, the rod eventually reaches rightmost position, Joule heat Q generated in resistor R between AB",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rod moves in magnetic field, inducing current",
+    "conclusion": "Forces include Ampere force (electromagnetic force), spring force, normal force from the rail (balanced by weight)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rod moves with velocity v in magnetic field",
+    "conclusion": "EMF = BLv",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Circuit consists of two resistors R in parallel",
+    "conclusion": "Total resistance = R/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = BLv, Total resistance = R/2",
+    "conclusion": "Current I = 2BLv/R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = 2BLv/R",
+    "conclusion": "Ampere force F = 2B²L²v/R",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial kinetic energy and work done by Ampere force",
+    "conclusion": "Initial kinetic energy = ½mv²₀, Joule heat in resistor R between AB = Q, Final potential energy in spring = ½kx²max",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ampere force does negative work, opposing motion",
+    "conclusion": "Work equals Joule heat generated",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Joule heat Q = 4B²L²v₀²t/R",
+    "conclusion": "F₀ = 2B²L²v₀/R = √(QR/t)/v₀",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Formula for initial Ampere force",
+    "conclusion": "F₀ = 2B²L²v₀/R",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

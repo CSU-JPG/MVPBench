@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves determining the ratio of the post-collision velocity to the pre-collision velocity of a basketball dropped from a height H, which rebounds to a height h after an inelastic collision with the ground. The air resistance is proportional to the gravitational force, with a proportionality constant λ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from rest at a height H above the ground, and the air resistance experienced is λ times the gravitational force acting on the basketball.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball rebounds to a maximum height h after the collision with the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The basketball is dropped from rest at height H, and it rebounds to height h after the collision.",
+    "conclusion": "The post-collision velocity can be calculated using the rebound formula.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rebound formula is used to calculate the post-collision velocity.",
+    "conclusion": "The post-collision velocity v is given by: v = sqrt(v_0^2 + 2 * (λmg/m) * h), where v_0 is the initial velocity.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The post-collision velocity v is given by: v = sqrt(v_0^2 + 2 * (λmg/m) * h).",
+    "conclusion": "The ratio of the post-collision velocity to the pre-collision velocity is: v/v_0 = sqrt(1 + (2 * λmg * h)/(mg)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio of the post-collision velocity to the pre-collision velocity is: v/v_0 = sqrt(1 + (2 * λmg * h)/(mg)).",
+    "conclusion": "The ratio simplifies to: v/v_0 = sqrt(1 + 2 * λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio simplifies to: v/v_0 = sqrt(1 + 2 * λ).",
+    "conclusion": "Substitute the given values of λ and g into the expression: v/v_0 = sqrt(1 + 2 * (H-h)/(H+h)).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the given values of λ and g into the expression: v/v_0 = sqrt(1 + 2 * (H-h)/(H+h)).",
+    "conclusion": "The final ratio of the post-collision velocity to the pre-collision velocity is: sqrt(1 + (H-h)/(H+h)).",
+    "judgment": "Reasonable",
+    "final_answer": "0"
+  }
+]

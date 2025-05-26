@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let's analyze the flow of liquid from each source (A, B, C, and D) and predict which container (E, F, or G) it will flow into, considering the baffles' positions.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Source A (Yellow) flows downward and is stopped by the black baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Source A (Yellow) flows downward and is stopped by the black baffle.",
+    "conclusion": "It flows to the right along the black baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It flows to the right along the black baffle.",
+    "conclusion": "It continues straight down and flows into container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Source B (Yellow) flows downward past the yellow baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Source B (Yellow) flows downward past the yellow baffle.",
+    "conclusion": "It continues straight down.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It continues straight down.",
+    "conclusion": "It flows into container F.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Source C (Blue) flows downward past the gray baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Source C (Blue) flows downward past the gray baffle.",
+    "conclusion": "It flows straight down and continues past the white baffle.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It flows straight down and continues past the white baffle.",
+    "conclusion": "It flows into container G.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Source D (White) flows downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Source D (White) flows downward.",
+    "conclusion": "It flows straight down past the gray baffle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It flows straight down past the gray baffle.",
+    "conclusion": "It flows into container G.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Summary of Flow: A flows into F. B flows into F. C flows into G. D flows into G.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Summary of Flow: A flows into F. B flows into F. C flows into G. D flows into G.",
+    "conclusion": "The liquid from A and B will flow into container F, and the liquid from C and D will flow into container G.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

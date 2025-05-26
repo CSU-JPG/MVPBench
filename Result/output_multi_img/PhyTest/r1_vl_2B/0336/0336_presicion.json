@@ -1,0 +1,72 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "An ideal gas undergoes the ABCDA cycle as shown in the figure, where P1, P2, V1, and V2 are known quantities. The temperature at state A is T0.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem asks for the temperature at state B.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "In state A, P_A = P1 and V_A = V1.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "In state B, P_B = P2 and V_B = V1.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In state A, P_A = P1, V_A = V1, and T_A = T0. In state B, P_B = P2 and V_B = V1.",
+    "conclusion": "The process from state A to state B is an isochoric (constant volume) process.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process from state A to state B is isochoric, and the ideal gas law applies: PV = nRT.",
+    "conclusion": "For an isochoric process, the pressure is directly proportional to the temperature.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In state A, P_A = P1, V_A = V1, and T_A = T0. In state B, P_B = P2 and V_B = V1. For an isochoric process, the pressure is directly proportional to the temperature.",
+    "conclusion": "The temperature at state B is T_B = (P_B / P_A) * T_A.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_B = P2, P_A = P1, T_A = T0, and T_B = (P_B / P_A) * T_A.",
+    "conclusion": "The temperature at state B is T_B = (P2 / P1) * T0.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state B is T_B = (P2 / P1) * T0.",
+    "conclusion": "The temperature at state B is T_B = (P2 * V1) / (P1 * V1) * T0, since V1 cancels out in the ideal gas law.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state B is T_B = (P2 * V1) / (P1 * V1) * T0.",
+    "conclusion": "The temperature at state B is T_B = (P2 / P1) * T0.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

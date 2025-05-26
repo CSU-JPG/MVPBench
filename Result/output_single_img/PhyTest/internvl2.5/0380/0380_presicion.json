@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to consider the conservation of momentum and the conservation of kinetic energy during the elastic collision between the two balls P and Q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Mass of ball P: M = 4m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Mass of ball Q: m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial velocity of ball P: v_0 = (mg)/(qB)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial velocity of ball Q: 0 (since it is initially at rest)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of momentum: Mv_0 + m * 0 = Mv_P + mv_Q",
+    "conclusion": "(4m * (mg)/(qB)) = 4mv_P + mv_Q",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying momentum equation: (4m * (mg)/(qB)) = 4mv_P + mv_Q",
+    "conclusion": "(4mg)/(qB) = 4v_P + v_Q",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of kinetic energy: (1/2)Mv_0^2 + (1/2)m * 0^2 = (1/2)Mv_P^2 + (1/2)mv_Q^2",
+    "conclusion": "(1/2) * 4m * ((mg)/(qB))^2 = (1/2) * 4m * v_P^2 + (1/2) * m * v_Q^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying kinetic energy equation: (1/2) * 4m * ((mg)/(qB))^2 = (1/2) * 4m * v_P^2 + (1/2) * m * v_Q^2",
+    "conclusion": "(4m^2g^2)/(q^2B^2) = 4v_P^2 + v_Q^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From momentum equation: (4mg)/(qB) = 4v_P + v_Q",
+    "conclusion": "v_Q = (4mg)/(qB) - 4v_P",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_Q into kinetic energy equation: (4m^2g^2)/(q^2B^2) = 4v_P^2 + ((4mg)/(qB) - 4v_P)^2",
+    "conclusion": "(4m^2g^2)/(q^2B^2) = 4v_P^2 + ((16m^2g^2)/(q^2B^2) - (32mgv_P)/(qB) + 16v_P^2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(4m^2g^2)/(q^2B^2) = 20v_P^2 - (32mgv_P)/(qB) + (16m^2g^2)/(q^2B^2)",
+    "conclusion": "0 = 20v_P^2 - (32mgv_P)/(qB)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "0 = 20v_P^2 - (32mgv_P)/(qB)",
+    "conclusion": "20v_P^2 = (32mgv_P)/(qB)",
+    "judgment": "Match"
+  }]

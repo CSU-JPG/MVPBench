@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A glass sphere with center O, radius R, and refractive index n > 1 is placed in air. Inside the sphere, there is a point light source S.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to determine the condition for the position of S that allows all emitted light to exit the sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total Internal Reflection (TIR) occurs when light travels from a higher refractive index medium (glass) to a lower one (air) if the angle of incidence exceeds the critical angle θc.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle is given by: sin(θc) = 1/n, where n is the refractive index of glass.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc for the glass-air interface is: sin(θc) = 1/n",
+    "conclusion": "The critical angle θc is calculated as sin(θc) = 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For all light rays to escape, none should encounter the glass-air interface at an angle greater than θc.",
+    "conclusion": "The condition for light to escape is that no rays should hit the sphere surface at an angle greater than θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The 'worst-case' ray from S will be the one that hits the sphere surface at the largest angle of incidence.",
+    "conclusion": "The worst-case ray occurs when the ray is tangent to the circle with radius R·sin(θc) centered at the normal intersection point.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let d = distance from S to O (center of sphere). For the worst-case ray from S, the angle of incidence equals θc.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a ray hitting at the critical angle, we can draw a right triangle where one vertex is at S, another vertex is at the point where the ray hits the sphere, and the third vertex is on the normal line from the center.",
+    "conclusion": "From this geometry, we find that sin(θc) = R/d.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θc) = R/d and sin(θc) = 1/n",
+    "conclusion": "Combining these, we have 1/n = R/d.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/n = R/d",
+    "conclusion": "Solving for d gives d = nR.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For all light from the point source S to escape the glass sphere, the distance d from S to the center O must satisfy d ≤ nR.",
+    "conclusion": "The point source must be positioned within a distance of nR from the center of the sphere.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

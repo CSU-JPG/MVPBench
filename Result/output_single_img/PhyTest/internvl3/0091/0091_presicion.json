@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Objects A and B, each with a mass of 1 kg, are attached to the two ends of a massless string. The string passes over a fixed pulley at the top of an inclined plane with an angle of 37 degrees, which is fixed on a horizontal ground. Initially, object B is pulled to the bottom of the inclined plane, while object A is at a height of 1 m above the ground. Friction between B and the inclined plane, as well as between the string and the pulley, is negligible. The system is released from rest and allowed to move. g is 10 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Object A is at a height of 1 m above the ground, and object B is at the bottom of the inclined plane with an angle of 37 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A is moving downward due to gravity. Object B is moving up the incline. The forces acting on object A: F_A = mg. The forces acting on object B: F_B = mg sin theta.",
+    "conclusion": "The net force on the system is F_net = mg - mg sin theta = mg(1 - sin theta).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force on the system is F_net = mg(1 - sin theta). The total mass of the system is 2m.",
+    "conclusion": "The acceleration a of the system is a = F_net / 2m = g(1 - sin theta) / 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given theta = 37 degrees, sin 37 degrees is approximately 0.6.",
+    "conclusion": "The acceleration a is a = 10(1 - 0.6) / 2 = 2 m/s^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A falls a distance h = 1 m. Using the kinematic equation h = 1/2 a t^2.",
+    "conclusion": "The time t for object A to hit the ground is t = 1 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The acceleration a of the system is 2 m/s^2. The time t for object A to hit the ground is 1 s.",
+    "conclusion": "The velocity v of object B when the string breaks is v = at = 2 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the string breaks, object B moves up the incline with an initial velocity of 2 m/s and decelerates due to gravity. The deceleration a' is g sin theta.",
+    "conclusion": "The deceleration a' is 10 * 0.6 = 6 m/s^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial velocity of object B is 2 m/s. The deceleration a' is 6 m/s^2.",
+    "conclusion": "The time t_1 to come to rest is t_1 = 2 / 6 = 1/3 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial velocity of object B is 2 m/s. The time t_1 to come to rest is 1/3 s. The deceleration a' is 6 m/s^2.",
+    "conclusion": "The distance s traveled up the incline is s = 2 * 1/3 - 1/2 * 6 * (1/3)^2 = 1/3 m.",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we will follow the step-by-step process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The electromotive force of the power supply is 10V, with negligible internal resistance. Capacitors C1 and C2 are 30μF each, resistors R1 and R2 are 4.0Ω and 6.0Ω respectively, and the switch S is closed.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When switch S is closed, the capacitors C1 and C2 will charge to the same voltage, given they are in series with the resistors.",
+    "conclusion": "The total resistance in the circuit is R1 + R2 = 4.0Ω + 6.0Ω = 10.0Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance in the circuit is 10.0Ω.",
+    "conclusion": "The current through the resistors is I = E / (R1 + R2) = 10V / 10.0Ω = 1A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current through the resistors is 1A.",
+    "conclusion": "Voltage across R1 is VR1 = I * R1 = 1A * 4.0Ω = 4V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current through the resistors is 1A.",
+    "conclusion": "Voltage across R2 is VR2 = I * R2 = 1A * 6.0Ω = 6V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across R2 is 6V.",
+    "conclusion": "The voltage across C1 and C2 is equal to the voltage across R2 which is 6V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across C1 and C2 is 6V.",
+    "conclusion": "The charge Q = C * V = 30μF * 6V = 180μC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The switch S is opened.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The switch S is opened.",
+    "conclusion": "The capacitors will redistribute their charge.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The capacitors will redistribute their charge.",
+    "conclusion": "The total capacitance now in series is C_total = (C1 * C2) / (C1 + C2) = (30μF * 30μF) / (30μF + 30μF) = 15μF.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge on each capacitor was 180μC.",
+    "conclusion": "The total charge Q_total = 2 * 180μC = 360μC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total charge Q_total is 360μC and total capacitance C_total is 15μF.",
+    "conclusion": "The voltage across the equivalent capacitance after redistribution is V_total = Q_total / C_total = 360μC / 15μF = 24V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across the equivalent capacitance is 24V.",
+    "conclusion": "The voltage across C1 is 24V, and the voltage across C2 is 24V.",
+    "judgment": "Match"
+  }]

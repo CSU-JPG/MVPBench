@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas undergoes three processes A→B, B→C, and C→A, returning to its initial state A. The temperature at state A is 200K. The task is to determine the work done by the external environment on the gas during the process from C to A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: p_A = 1 × 10^5 Pa, V_A = 2 L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: p_B = 4 × 10^5 Pa, V_B = 2 L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: p_C = 1 × 10^5 Pa, V_C = 5 L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A: p_A = 1 × 10^5 Pa, V_A = 2 L, T_A = 200 K. Ideal gas law: pV = nRT.",
+    "conclusion": "Using the ideal gas law for state A: p_A V_A = n R T_A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State B: p_B = 4 × 10^5 Pa, V_B = 2 L. Ideal gas law: pV = nRT.",
+    "conclusion": "Using the ideal gas law for state B: p_B V_B = n R T_B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The amount of gas is the same for states A and B. Ideal gas law: p_A V_A = p_B V_B.",
+    "conclusion": "Substituting values: 1 × 10^5 × 2 = 4 × 10^5 × V_B. Solving for V_B: V_B = 0.5 L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State C: p_C = 1 × 10^5 Pa, V_C = 5 L. Ideal gas law: pV = nRT.",
+    "conclusion": "Using the ideal gas law for state C: p_C V_C = n R T_C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The amount of gas is the same for states A and C. Ideal gas law: p_A V_A = p_C V_C.",
+    "conclusion": "Substituting values: 1 × 10^5 × 2 = 1 × 10^5 × V_C. Solving for V_C: V_C = 2 L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The given diagram and problem statement indicate that V_C = 5 L. Proceeding with this value.",
+    "conclusion": "We will calculate the work done using the area under the p-V diagram for the process C to A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Process C to A is a constant pressure process (isopressure). Work done is given by W = p ΔV.",
+    "conclusion": "W = p_A (V_A - V_C) = 1 × 10^5 × (2 - 5) = 1 × 10^5 × (-3) = -3 × 10^5 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates that the work is done by the gas on the external environment.",
+    "conclusion": "The work done by the external environment on the gas is 3 × 10^5 J = 300 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

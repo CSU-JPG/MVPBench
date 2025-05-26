@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Separate the parts that carry current inside the magnetic field. Inside the uniform field there are only three kinds of conductors: the straight diameter MN (length L₁ = 2 r), the semicircular arc MQN (length L₂ = π r), the two vertical side–legs (equal length, same current, opposite directions).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Work out the currents in the two parallel branches MN (straight) and MQN (arc). All the wire is of the same material and thickness → resistance ∝ length. R₁ : R₂ = L₁ : L₂ = 2 r : π r = 2 : π.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "R₁ : R₂ = 2 : π",
+    "conclusion": "Let the battery supply an emf V. I₁ = V / R₁ (current in MN), I₂ = V / R₂ (current in MQN). Hence I₁ / I₂ = R₂ / R₁ = π / 2 ⇒ I₂ = (2/π) I₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For MN the force is directed vertically (say upward) and its magnitude is F₁ = B I₁ L₁ = B I₁(2 r) (given in the statement as F).",
+    "conclusion": "Thus B I₁ 2 r = F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Take an element dℓ = r dθ. |dF| = B I₂ dℓ = B I₂ r dθ. Direction: dℓ is tangential, B is into the page, therefore dF is radial.",
+    "conclusion": "The vector sum over the half-circle is F⃗₂ = ∫ dF⃗ = B I₂ r ∫₀^π r̂ dθ = B I₂ r (0 î + 2 ĵ) = 2 B I₂ r ĵ. So the magnitude of the force on the arc is F₂ = 2 B I₂ r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Currents are equal and opposite; their magnetic forces are equal in magnitude and opposite in direction (horizontal), so they cancel.",
+    "conclusion": "Thus they contribute nothing to the net force on the frame.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two non-zero forces are both vertical and point the same way. Using (1): B I₁ 2 r = F. Using (2) and I₂ = (2/π) I₁: F₂ = 2 B I₂ r = 2 B r (2/π) I₁ = (4/π) B I₁ r = (4/π)(F / (2 r)) r = (2/π) F.",
+    "conclusion": "F_total = F₁ + F₂ = F + (2/π) F = F (1 + 2/π) = F (π + 2)/π.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

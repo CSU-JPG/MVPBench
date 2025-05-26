@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle is injected from the origin O with an initial velocity v_0 at a 45° angle to the y-axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle is injected from the origin O with an initial velocity v_0 at a 45° angle to the y-axis.",
+    "conclusion": "The velocity components are v_{0x} = v_{0y} = v_0 / sqrt(2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the magnetic field, the particle undergoes circular motion due to the Lorentz force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the magnetic field, the particle undergoes circular motion due to the Lorentz force.",
+    "conclusion": "The radius R of the circular path is R = mv_0 / qB.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius R of the circular path is R = mv_0 / qB.",
+    "conclusion": "The time period T for one complete revolution in the magnetic field is T = 2πR / v_0 = 2πm / qB.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle moves in a quarter-circle path in the magnetic field before entering the electric field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle moves in a quarter-circle path in the magnetic field.",
+    "conclusion": "The time t_1 to travel this quarter-circle path is t_1 = T / 4 = πm / 2qB.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the electric field, the particle experiences a constant force in the negative y-direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the electric field, the particle experiences a constant force in the negative y-direction.",
+    "conclusion": "The acceleration a in the y-direction is a = qE / m.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The velocity in the x-direction remains constant: v_x = v_0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity in the y-direction changes due to the electric field.",
+    "conclusion": "The velocity in the y-direction is v_y = a t_2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle reaches point P(3L, L) with v_x = v_0 and v_y = 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle reaches point P(3L, L) with v_x = v_0.",
+    "conclusion": "The time t_2 to travel the distance 3L in the x-direction is t_2 = 3L / v_0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical displacement y in the electric field is y = 1/2 a t_2^2.",
+    "conclusion": "Given y = L, we have L = 1/2 (qE/m) (3L/v_0)^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "L = 1/2 (qE/m) (3L/v_0)^2.",
+    "conclusion": "Solving for E: E = 2mv_0^2 / 9qL.",
+    "judgment": "Reasonable"
+  }]

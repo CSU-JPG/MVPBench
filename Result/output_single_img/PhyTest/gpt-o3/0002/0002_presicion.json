@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let the horizontal distance from the point-light source to the wall be 2L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball is launched from the midpoint, L from either end.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball is launched from the midpoint, L from either end.",
+    "conclusion": "At any time t its height above the floor is h(t) = v₀ t – ½ g t².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Draw the ray joining the source (x = 0) to the ball (x = L); it meets the wall at x = 2L, casting the shadow.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Draw the ray joining the source (x = 0) to the ball (x = L); it meets the wall at x = 2L, casting the shadow.",
+    "conclusion": "From similar triangles, h(t) / L = H(t) / (2L) ⇒ H(t) = 2 h(t), where H(t) is the shadow’s height on the wall.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Velocity is the time-derivative of height.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity is the time-derivative of height.",
+    "conclusion": "v_shadow(t) = dH/dt = 2 dh/dt = 2 (v₀ – g t).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_shadow(t) = dH/dt = 2 dh/dt = 2 (v₀ – g t).",
+    "conclusion": "At the launch instant t = 0, v_shadow(0) = 2 v₀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the launch instant t = 0, v_shadow(0) = 2 v₀.",
+    "conclusion": "Therefore the shadow starts upward with twice the ball’s initial speed.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Therefore the shadow starts upward with twice the ball’s initial speed.",
+    "conclusion": "The initial velocity of the shadow is 2 v₀ (upward).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

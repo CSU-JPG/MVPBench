@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a single-turn rectangular wire frame rotating in a uniform horizontal magnetic field with magnetic induction intensity B. The frame rotates at a constant angular velocity ω around a vertical axis coinciding with side cd. The goal is to calculate the instantaneous induced current when the frame rotates through 60° and the average value of the induced electromotive force (EMF) during this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The rectangular wire frame abcd is placed in a uniform magnetic field represented by crosses (indicating the field is directed into the plane). The frame rotates around the vertical axis passing through side cd, with angular velocity ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The induced EMF in a rotating wire frame is given by e = BSωsin(ωt), where B is the magnetic induction, S is the area of the frame, ω is the angular velocity, and t is the time. The induced current is given by i = e/R, where R is the resistance of the frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The expression for the instantaneous EMF is e = BSωsin(ωt). At an angle of 60°, sin(60°) = √3/2.",
+    "conclusion": "The instantaneous value of the induced EMF is e = BSωsin(60°) = (√3/2)BSω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The instantaneous EMF is e = (√3/2)BSω, and the induced current is given by i = e/R.",
+    "conclusion": "The instantaneous value of the induced current is i = (√3/2)(BSω)/R = (√3BSω)/(2R).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The average value of the induced EMF can be calculated using the formula: average EMF = ΔΦ/Δt, where ΔΦ is the change in magnetic flux and Δt is the time interval.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time to rotate through 60° is Δt = (π/3)/ω = π/(3ω). The change in magnetic flux is ΔΦ = Φ2 - Φ1 = BS(cos(60°) - cos(0°)) = BS(1/2 - 1) = -1/2 BS.",
+    "conclusion": "The average value of the induced EMF is average EMF = ΔΦ/Δt = (-1/2 BS) / (π/(3ω)) = (3BSω)/(2π).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The instantaneous value of the induced current is (√3BSω)/(2R), and the average value of the induced EMF is (3BSω)/(2π).",
+    "conclusion": "The instantaneous value of the induced current is (√3BSω)/(2R), and the average value of the induced EMF is (3BSω)/(2π).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

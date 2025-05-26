@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic induction intensity of the uniform magnetic field is B=0.1T, the number of turns of the rectangular coil used is n=100, the side lengths are l_AB=0.2m and l_BC=0.5m, and it rotates uniformly around the symmetry axis OO' with an angular velocity ω=100π rad/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Timing starts when the coil plane passes through the neutral plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a rectangular coil with sides labeled AB and BC. The coil is positioned in a uniform magnetic field with the magnetic induction intensity B=0.1T. The coil has n=100 turns and rotates around the symmetry axis OO' with an angular velocity ω=100π rad/s. The coil's plane is initially aligned with the neutral plane.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced electromotive force (EMF) in a rotating coil is given by the formula: EMF = n * B * A * ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "l_AB=0.2m and l_BC=0.5m",
+    "conclusion": "Calculate the area of the coil: A = l_AB * l_BC = 0.2 * 0.5 = 0.1 m^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n=100, B=0.1T, A=0.1 m^2, ω=100π rad/s",
+    "conclusion": "Substitute the given values into the EMF formula: EMF = 100 * 0.1 * 0.1 * 100π",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "EMF = 100 * 0.1 * 0.1 * 100π",
+    "conclusion": "EMF = 10 * 0.1 * π = 0.1π V",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The problem asks for the magnitude of the EMF",
+    "conclusion": "Take the absolute value: |EMF| = 0.1π V",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

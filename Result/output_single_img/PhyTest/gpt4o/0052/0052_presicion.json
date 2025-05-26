@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the motion of the positively charged particles through the velocity selector and determine the kinetic energy of the second particle when it leaves the selector.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The velocity selector consists of perpendicular electric and magnetic fields. The electric field E exerts a force F_E = qE on a charged particle, while the magnetic field B exerts a force F_B = qvB when the particle moves with velocity v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a particle to pass through the selector undeflected (along the dashed line), the forces must balance: F_E = F_B, qE = qvB",
+    "conclusion": "v = E/B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The first particle has mass m and charge q. It is accelerated from rest by the accelerator M and enters the velocity selector with velocity v = E/B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The first particle passes through the selector undeflected, indicating that its velocity is precisely the velocity selected by the selector.",
+    "conclusion": "The first particle's velocity is v = E/B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The second particle has mass 2m and charge q. It is also accelerated from rest by the accelerator M.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since both particles are accelerated by the same potential difference U, they gain the same kinetic energy from the accelerator: (1/2)mv^2 = qU",
+    "conclusion": "For the second particle: (1/2)(2m)v_2^2 = qU",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mv_2^2 = qU",
+    "conclusion": "v_2^2 = qU/m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_2^2 = qU/m",
+    "conclusion": "v_2 = sqrt(qU/m)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The second particle deviates from the dashed line because its velocity v_2 is different from the selector's selected velocity v = E/B.",
+    "conclusion": "The second particle's velocity v_2 is different from v = E/B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The kinetic energy E_k of the second particle when it leaves the selector is given by: E_k = (1/2)(2m)v_2^2",
+    "conclusion": "E_k = mv_2^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E_k = mv_2^2",
+    "conclusion": "E_k = qU",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force performs positive work on the particle throughout the entire process, and according to the functional relationship, we have E_k=qU+Eqd",
+    "conclusion": "E_k={1/2}mv^{2}+qBvd",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

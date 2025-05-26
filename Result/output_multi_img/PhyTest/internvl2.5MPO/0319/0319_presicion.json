@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the amount of heat transferred by the gas during the process from state A to state C, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "State A: Given that the temperature is 27 °C, convert it to Kelvin: T_A = 273 + 27 = 300 K",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isochoric process (constant volume), the temperature is proportional to the pressure. Using (P_A/T_A) = (P_B/T_B)",
+    "conclusion": "T_B = T_A × (P_B/P_A) = 300 × (2/3) = 200 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isobaric process (constant pressure), the temperature is proportional to the volume. Using (V_C/T_C) = (V_B/T_B)",
+    "conclusion": "T_C = T_B × (V_C/V_B) = 200 × (3/2) = 300 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From A to B: Isochoric process (no work done)",
+    "conclusion": "W_AB = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From B to C: Isobaric process",
+    "conclusion": "W_BC = P × ΔV = 2 × 10^5 Pa × (3-2) × 10^-3 m^3 = 200 J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the gas returns to its original temperature (300 K), the change in internal energy ΔU for the entire process is zero",
+    "conclusion": "ΔU = 0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The first law of thermodynamics states: ΔU = Q - W",
+    "conclusion": "0 = Q - (W_AB + W_BC)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the work values: 0 = Q - (0 + 200)",
+    "conclusion": "Q = 200 J",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

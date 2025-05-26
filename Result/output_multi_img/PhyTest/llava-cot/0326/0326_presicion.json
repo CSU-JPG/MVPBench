@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas changes from state A to state B, and then to state C. The temperature at state A is 27°C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The p-V diagram shows a vertical line from A to B (constant pressure) and a horizontal line from B to C (constant volume).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state A to state B, the pressure is constant at 3 × 10^3 Pa.",
+    "conclusion": "The work done is W = p × ΔV = 3 × 10^3 Pa × (2 × 10^-3 m³ - 1 × 10^-3 m³) = 1 J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The first law of thermodynamics for an ideal gas is ΔU = Q - W, where Q = 0.",
+    "conclusion": "ΔU = W = 1 J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an ideal gas, ΔU = n × C_v × ΔT = n × (3/2)R × ΔT = 1 J.",
+    "conclusion": "Solving for ΔT gives ΔT = 2R J/molK.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using R = 8.314 J/molK, ΔT = 2R J/molK.",
+    "conclusion": "ΔT = 16.628 K.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state A is 27°C.",
+    "conclusion": "The temperature at state B is T_B = 27°C + 16.628 K = 43.628°C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From state B to state C, the volume is constant at 2 × 10^-3 m³.",
+    "conclusion": "The work done is W = p × ΔV = 1 × 10^3 Pa × (2 × 10^-3 m³ - 3 × 10^-3 m³) = -1 J.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state B is 43.628°C.",
+    "conclusion": "The temperature at state C is T_C = T_B - (ΔU / n × C_v) = 43.628°C - 16.628°C = 27°C.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

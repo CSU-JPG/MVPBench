@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semicircular brick with a radius R is made of a transparent material. A laser beam is injected perpendicular to the diameter MN at point O, which is offset by R/2 from the center. When the laser beam shifts, only monochromatic light is emitted from the semicircle surface at an angle of 30° to the incident direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when the angle of incidence inside the transparent material is greater than the critical angle θc. The critical angle is related to the refractive index n by: sin(θc) = 1/n.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident light hits the semicircle at an angle such that the refracted light exits at 30° relative to the normal.",
+    "conclusion": "The angle of incidence inside the material, θ1, and the angle of refraction, θ2, are related by Snell's Law: n sin(θ1) = sin(θ2). Given that θ2 = 30°, we have: n sin(θ1) = sin(30°) = 1/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection, θ1 must equal the critical angle θc.",
+    "conclusion": "sin(θc) = 1/n. Since θ1 = θc, we also have: n sin(θc) = 1/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute sin(θc) = 1/n into the equation: n (1/n) = 1/2.",
+    "conclusion": "1 = 1/2. This indicates a contradiction, suggesting the need to re-evaluate the geometric setup and angle relations.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of 30° is the deviation from the normal at the point of exit.",
+    "conclusion": "This deviation indicates the angle between the refracted ray and the normal is 30°. Therefore, θ2 = 30° is the angle of refraction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n sin(θ1) = sin(30°) = 1/2. With θ1 = θc: n sin(θc) = 1/2. And since sin(θc) = 1/n: n (1/n) = 1/2.",
+    "conclusion": "Solving for n: n = 1/sin(30°) = 2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to geometric knowledge, the incident angle of light beam on curved surface satisfies sin(θ1) = 1/2. Solve θ1 = 30°. The angle of refraction is θ2 = 60°.",
+    "conclusion": "According to the definition of refractive index, we can get n_red = sin(60°)/sin(30°) = √3, n_green = 1/sin(30°) = 2.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

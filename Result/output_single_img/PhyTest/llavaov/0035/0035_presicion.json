@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since the winter began, haze weather with visibility less than 100m has occurred multiple times in many places across the country. During such severe weather, two cars, Car A and Car B, were traveling in the same direction on a straight one-way road, with Car B in front and Car A behind. At a certain moment, the drivers of both cars simultaneously heard a siren warning of an accident ahead and started braking at the same time, but unfortunately, the two cars collided. The diagram shows the v-t graph for the two cars just before they would have avoided colliding. From this, at what time do the two cars collide, before or after 20 seconds of braking?",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, Car A starts at a velocity of 25 m/s, and Car B starts at a velocity of 15 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A starts at 25 m/s and decelerates to 0 m/s at 25 seconds. Car B starts at 15 m/s and decelerates to 0 m/s at 30 seconds.",
+    "conclusion": "Car A decelerates at -1 m/s^2 and Car B decelerates at -0.5 m/s^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A decelerates at -1 m/s^2 and Car B decelerates at -0.5 m/s^2.",
+    "conclusion": "The distance traveled by Car A is 25 * t + 0.5 * (-1) * t^2. The distance traveled by Car B is 15 * t + 0.5 * (-0.5) * t^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance traveled by Car A is 25 * t + 0.5 * (-1) * t^2. The distance traveled by Car B is 15 * t + 0.5 * (-0.5) * t^2.",
+    "conclusion": "Setting the distances equal with an initial distance d_initial: 25 * t - 0.5 * t^2 = 15 * t - 0.25 * t^2 + d_initial, simplifying to -0.25 * t^2 + 10 * t = d_initial.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A decelerates faster than Car B.",
+    "conclusion": "Car A will eventually catch up to Car B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A and Car B's velocities are set equal: 25 - 1 * t = 15 - 0.5 * t.",
+    "conclusion": "Solving gives t = 20 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car A decelerates faster and reaches the same velocity as Car B at 20 seconds.",
+    "conclusion": "Since Car A started with a higher velocity, it will have traveled a greater distance than Car B by that time. Therefore, the collision must occur before 20 seconds of braking.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The process from A to B is an isobaric process (constant pressure). The work done by the gas in an isobaric process is given by W = P ΔV.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure at state A is P_A = 1 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The volume at state A is V_A = 3 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The volume at state B is V_B = 4 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "V_A = 3 L, V_B = 4 L",
+    "conclusion": "The change in volume ΔV = V_B - V_A = 1 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔV = 1 L",
+    "conclusion": "Convert the volume change into cubic meters: 1 L = 0.001 m³.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A = 1 × 10^5 Pa, ΔV = 0.001 m³",
+    "conclusion": "Use the formula W = P ΔV: W = (1 × 10^5 Pa) × (0.001 m³) = 100 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume increases from A to B.",
+    "conclusion": "Since the volume increases, the gas does work on the surroundings. Therefore, the work done by the gas is +100 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the gas is +100 J.",
+    "conclusion": "The work done externally by the gas from state A to state B is 100 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

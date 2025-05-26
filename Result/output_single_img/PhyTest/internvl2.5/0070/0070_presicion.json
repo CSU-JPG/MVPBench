@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the magnitude of the induced electromotive force (EMF) in the coil, we can use Faraday's Law of Electromagnetic Induction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF in a rotating coil in a uniform magnetic field is given by: \\( \\mathcal{E} = n B A \\omega \\sin(\\omega t) \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: \\( B = 0.1 \\, \\text{T} \\), \\( n = 100 \\), \\( l_{AB} = 0.2 \\, \\text{m} \\), \\( l_{BC} = 0.5 \\, \\text{m} \\), \\( \\omega = 100\\pi \\, \\text{rad/s} \\)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given \\( l_{AB} = 0.2 \\, \\text{m} \\) and \\( l_{BC} = 0.5 \\, \\text{m} \\)",
+    "conclusion": "Calculate the area \\( A \\) of the coil: \\( A = l_{AB} \\times l_{BC} = 0.2 \\, \\text{m} \\times 0.5 \\, \\text{m} = 0.1 \\, \\text{m}^2 \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the given values into the formula for the induced EMF: \\( \\mathcal{E} = n B A \\omega \\sin(\\omega t) \\)",
+    "conclusion": "Since timing starts when the coil plane passes through the neutral plane, at \\( t = 0 \\), \\( \\sin(\\omega t) = \\sin(0) = 0 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We are interested in the maximum induced EMF, which occurs when \\( \\sin(\\omega t) = 1 \\).",
+    "conclusion": "The maximum induced EMF is: \\( \\mathcal{E}_{\\text{max}} = n B A \\omega \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the values: \\( \\mathcal{E}_{\\text{max}} = 100 \\times 0.1 \\, \\text{T} \\times 0.1 \\, \\text{m}^2 \\times 100\\pi \\, \\text{rad/s} \\)",
+    "conclusion": "\\( \\mathcal{E}_{\\text{max}} = 100 \\times 0.1 \\times 0.1 \\times 100\\pi \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\mathcal{E}_{\\text{max}} = 100 \\times 0.01 \\times 100\\pi \\)",
+    "conclusion": "\\( \\mathcal{E}_{\\text{max}} = 100 \\times \\pi \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\mathcal{E}_{\\text{max}} = 100 \\times \\pi \\)",
+    "conclusion": "\\( \\mathcal{E}_{\\text{max}} = 100\\pi \\, \\text{V} \\approx 314.16 \\, \\text{V} \\)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

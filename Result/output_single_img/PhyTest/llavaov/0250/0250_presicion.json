@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a single-turn rectangular closed wire frame rotating in a horizontal uniform magnetic field with a magnetic induction intensity of B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire frame has an area S, resistance R, and rotates at a constant angular velocity ω around a vertical axis coinciding with side cd.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The task is to find the instantaneous value of the induced current when the frame rotates through 60° and the average value of the induced electromotive force during this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Faraday's Law of Electromagnetic Induction, the instantaneous EMF is given by ε = BωSsin(θ).",
+    "conclusion": "The expression for the instantaneous EMF when the coil rotates through an angle of 60° is ε = BωSsin(60°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute sin(60°) = √3/2 into the expression for EMF.",
+    "conclusion": "The instantaneous EMF is ε = BωS × √3/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's Law, the instantaneous current I = ε/R.",
+    "conclusion": "The instantaneous current is I = (BωS × √3/2) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for the instantaneous current.",
+    "conclusion": "The instantaneous current is I = BωS√3 / 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The average EMF over one complete rotation is zero because the EMF is sinusoidal.",
+    "conclusion": "The average EMF from 0° to 60° requires calculating the area under the curve of the EMF from 0° to 60° and dividing by the angle in radians.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The EMF as a function of angle θ is ε(θ) = BωSsin(θ).",
+    "conclusion": "The average EMF from 0° to 60° is ε_avg = (1/θ_2 - θ_1) ∫ from θ_1 to θ_2 ε(θ) dθ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Convert degrees to radians: θ_1 = 0 rad, θ_2 = 60° = π/3 rad.",
+    "conclusion": "The average EMF is ε_avg = (3/π) BωS [-cos(θ)] from 0 to π/3.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Evaluate the integral and simplify.",
+    "conclusion": "The average EMF is ε_avg = (3/π) BωS (-1/2 + 1).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for the average EMF.",
+    "conclusion": "The average EMF is ε_avg = 3BωS / 2π.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

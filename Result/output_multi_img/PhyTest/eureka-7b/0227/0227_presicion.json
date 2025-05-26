@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "A U-shaped guide rail is fixed on a horizontal surface with a resistor R = 3.0Ω connected in series at the left end. The distance between the guide rails is L = 1.0m. A uniform magnetic field B = 1.0T passes vertically downward through the plane of the guide rails. A metal rod PQ with mass m = 1kg and resistance r = 1.0Ω makes good contact with the guide rails and moves uniformly to the right at a speed of v = 2m/s under the action of a horizontal rightward external force F. The coefficient of kinetic friction between the rod PQ and the guide rails is μ = 0.3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The figure shows a U-shaped guide rail with a resistor R connected between points a and b. A metal rod PQ is placed on the guide rails and moves to the right with velocity v. The magnetic field B is directed vertically downward, represented by crosses in the figure.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf in the loop is given by Faraday's law: emf = B * L * v. Substituting B = 1.0T, L = 1.0m, and v = 2m/s.",
+    "conclusion": "The induced emf in the loop is 2.0V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance in the circuit is the sum of the resistance of the resistor R and the resistance of the rod r: R_total = R + r. Substituting R = 3.0Ω and r = 1.0Ω.",
+    "conclusion": "The total resistance in the circuit is 4.0Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the circuit is given by Ohm's law: I = emf / R_total. Substituting emf = 2.0V and R_total = 4.0Ω.",
+    "conclusion": "The current in the circuit is 0.5A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Lenz's law, the magnetic field is vertically downward, and the rod is moving to the right. According to the right-hand rule, the induced current flows in a direction opposing the change in flux.",
+    "conclusion": "The direction of the current is from Q to P.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod is moving with constant velocity, so the net force on the rod must be zero. The forces acting on the rod are the applied force F, the frictional force, and the force due to the current in the rod.",
+    "conclusion": "The net force on the rod is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frictional force is given by F_friction = μ * m * g. Substituting μ = 0.3, m = 1kg, and g = 9.8m/s².",
+    "conclusion": "The frictional force is 2.94N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force due to the current in the rod is given by F_current = I * L * B. Substituting I = 0.5A, L = 1.0m, and B = 1.0T.",
+    "conclusion": "The force due to the current is 0.5N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the rod to move with constant velocity, the applied force F must balance the frictional force and the force due to the current: F = F_friction + F_current. Substituting F_friction = 2.94N and F_current = 0.5N.",
+    "conclusion": "The applied force F is 3.44N.",
+    "judgment": "Reasonable"
+  }]

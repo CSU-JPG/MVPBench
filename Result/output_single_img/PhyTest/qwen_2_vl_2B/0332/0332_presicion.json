@@ -1,0 +1,86 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to understand the relationship between the internal energy U of an ideal gas and its temperature T. The internal energy U is given by the equation U = aT, where a is a positive constant. This equation shows that the internal energy of an ideal gas is directly proportional to its temperature.",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The initial state A is at a pressure p0 and volume V0.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The final state C is at a pressure 0.6p0 and volume 0.5V0.",
+    "judgment": "Match",
+    "final_answer": ""
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state A is T0.",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the temperature at state B.",
+    "judgment": "N/A",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = aT",
+    "conclusion": "U_A = a * T0",
+    "judgment": "Reasonable",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = aT",
+    "conclusion": "U_C = a * T_C",
+    "judgment": "Reasonable",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = aT",
+    "conclusion": "U_B = a * T_B",
+    "judgment": "Reasonable",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U_B = U_A + ΔU",
+    "conclusion": "ΔU = U_B - U_A",
+    "judgment": "Reasonable",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU = U_C - U_A",
+    "conclusion": "ΔU = (0.6p0 * 0.5V0) - (a * T0)",
+    "judgment": "Wrong",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU = U_C - U_A",
+    "conclusion": "0.6p0 * 0.5V0 = 0.6p0 * 0.5V0 - a * T0",
+    "judgment": "Wrong",
+    "final_answer": ""
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the ideal gas equation of state, P_A * V_A / T_A = P_B * V_B / T_B",
+    "conclusion": "T_B = 0.6T0",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

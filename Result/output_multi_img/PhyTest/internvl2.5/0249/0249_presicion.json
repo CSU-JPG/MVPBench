@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil is a square with side length L and has N turns. The coil rotates with an angular velocity ω in a uniform magnetic field B. The axis of rotation OO' is perpendicular to the magnetic field and coplanar with the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF in a rotating coil is given by: \u03b5 = -N d\u03a6/dt where \u03a6 is the magnetic flux through the coil.",
+    "conclusion": "The magnetic flux \u03a6 is: \u03a6 = B \u00b7 A \u00b7 cos(\u03b8)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\u03a6 = B \u00b7 A \u00b7 cos(\u03b8)",
+    "conclusion": "A = L^2 is the area of the coil.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\u03a6 = B \u00b7 A \u00b7 cos(\u03b8)",
+    "conclusion": "\u03b8 is the angle between the normal to the coil and the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum EMF occurs when d\u03a6/dt is at its maximum, which happens when \u03b8 = 0 or \u03b8 = \u03c0.",
+    "conclusion": "The angle \u03b8 changes with time as \u03b8 = \u03c9t.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\u03b8 = \u03c9t",
+    "conclusion": "The flux as a function of time is: \u03a6(t) = B \u00b7 L^2 \u00b7 cos(\u03c9t)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\u03a6(t) = B \u00b7 L^2 \u00b7 cos(\u03c9t)",
+    "conclusion": "Differentiating with respect to time: d\u03a6/dt = -B \u00b7 L^2 \u00b7 \u03c9 \u00b7 sin(\u03c9t)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d\u03a6/dt = -B \u00b7 L^2 \u00b7 \u03c9 \u00b7 sin(\u03c9t)",
+    "conclusion": "The maximum value of sin(\u03c9t) is 1, so the maximum induced EMF is: \u03b5_max = N \u00b7 B \u00b7 L^2 \u00b7 \u03c9",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\u03b5_max = N \u00b7 B \u00b7 L^2 \u00b7 \u03c9",
+    "conclusion": "The root mean square (RMS) or effective value of the EMF is given by: \u03b5_rms = \u03b5_max/\u221a2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\u03b5_rms = \u03b5_max/\u221a2",
+    "conclusion": "\u03b5_rms = N \u00b7 B \u00b7 L^2 \u00b7 \u03c9/\u221a2",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to use the properties of an ideal gas and the relationships described in the image.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a p-V (pressure-volume) diagram for the gas.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to determine the temperature at state C given the temperature at state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A→B is an isochoric (constant volume) process. The pressure at state A is \\( p_A = 1 \\times 10^5 \\) Pa and the volume is \\( V_A = 2 \\) L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state A is \\( T_A = 200 \\) K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B→C is an isobaric (constant pressure) process. The pressure at state B is \\( p_B = 4 \\times 10^5 \\) Pa and the volume at state B is \\( V_B = 2 \\) L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The volume at state C is \\( V_C = 5 \\) L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C→A is an isothermal (constant temperature) process.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state C is what we need to find.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the isochoric process A→B, the volume is constant, so \\( V_A = V_B \\).",
+    "conclusion": "The pressure changes, and we can use the relationship \\( pV = nRT \\) to find the temperature at state B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the volume is constant, the pressure and temperature are related by \\( p_A V_A = p_B V_B \\).",
+    "conclusion": "This is not directly useful for finding the temperature, so we focus on the isobaric and isothermal processes.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the isobaric process B→C, the pressure is constant, so \\( p_B = p_C \\).",
+    "conclusion": "Using the relationship \\( pV = nRT \\), we can find the temperature at state C.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The volume changes from \\( V_B = 2 \\) L to \\( V_C = 5 \\) L, and the pressure is the same, so \\( p_B V_B = p_C V_C \\).",
+    "conclusion": "This gives \\( p_C = \\frac{p_B V_B}{V_C} = \\frac{4 \\times 10^5 \\times 2}{5} = 1.6 \\times 10^5 \\) Pa.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the isothermal process C→A, the temperature is constant, so \\( T_C = T_A \\).",
+    "conclusion": "Since the gas returns to its initial state A after the processes, the temperature at state C must be the same as the temperature at state A.",
+    "judgment": "Wrong"
+  }]

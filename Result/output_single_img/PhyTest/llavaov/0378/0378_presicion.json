@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given data: Mass of block A, m_A = m; Mass of block B, m_B = 2m; Mass of inclined plane C, m_C = 3m; Height from which block A starts, h",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A starts from rest at height h.",
+    "conclusion": "The potential energy PE of block A at the start is given by: PE = mgh",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A starts from rest and converts all its potential energy into kinetic energy just before the collision.",
+    "conclusion": "The kinetic energy KE of block A just before the collision is equal to the potential energy at the start: KE = mgh",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the collision, blocks A and B stick together and move as a single system with a combined mass of m_A + m_B = 3m.",
+    "conclusion": "The total kinetic energy KE_total after the collision is: KE_total = 1/2 * 3m * v^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The heat generated during the collision is the difference between the kinetic energy before the collision and the kinetic energy after the collision.",
+    "conclusion": "Q = KE - KE_total = mgh - 1/2 * 3m * v^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The formula for the heat generated during the collision is: Q = mgh - 1/2 * 3m * v^2",
+    "conclusion": "Therefore, the heat generated during the collision of A and B is mgh - 1/2 * 3m * v^2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

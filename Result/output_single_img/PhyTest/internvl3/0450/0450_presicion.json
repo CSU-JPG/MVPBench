@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A light bulb is submerged at a depth h in water. The light emitted from the bulb spreads out and forms a circular area on the water surface. The refractive index of water for red light is n1 and for yellow light is n2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light will refract as it exits the water.",
+    "conclusion": "The critical angle θc for total internal reflection is given by sin θc = 1/n where n is the refractive index of water for the respective light color.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relationship between the depth h and the radius r is given by tan θc = r/h.",
+    "conclusion": "Solving for r: r = h tan θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute sin θc = 1/n into tan θc = sin θc / sqrt(1 - sin^2 θc).",
+    "conclusion": "tan θc = 1/sqrt(n^2 - 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = h tan θc and tan θc = 1/sqrt(n^2 - 1).",
+    "conclusion": "r = h / sqrt(n^2 - 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area A of the circular region on the water surface is A = π r^2.",
+    "conclusion": "Substitute r: A = π (h / sqrt(n^2 - 1))^2 = π h^2 / (n^2 - 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For red light with refractive index n1: A1 = π h^2 / (n1^2 - 1). For yellow light with refractive index n2: A2 = π h^2 / (n2^2 - 1).",
+    "conclusion": "Since the problem states that the light-emitting areas are the same, we equate A1 and A2: π h^2 / (n1^2 - 1) = π h^2 / (n2^2 - 1).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The areas are the same for both colors, given the refractive indices and depth are consistent with the problem's conditions.",
+    "conclusion": "The area of the light-emitting region on the water surface for each light bulb is: A = π h^2 / (n^2 - 1) where n is the refractive index of water for the respective light color (either n1 for red or n2 for yellow).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

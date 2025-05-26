@@ -1,0 +1,93 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B, C and D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (E or F) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid from source A flows downwards.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from source A flows downwards.",
+    "conclusion": "The liquid from source A is deflected by the light blue baffle towards the left, leading to container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid from source B flows downwards.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from source B flows downwards.",
+    "conclusion": "The liquid from source B is deflected by the pink baffle towards the left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from source B is deflected by the pink baffle towards the left.",
+    "conclusion": "The liquid from source B then hits the light blue baffle, which further deflects it towards the left, leading to container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid from source C flows downwards.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from source C flows downwards.",
+    "conclusion": "The liquid from source C is deflected by the green baffle towards the left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from source C is deflected by the green baffle towards the left.",
+    "conclusion": "The liquid from source C then hits the light blue baffle, which further deflects it towards the left, leading to container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid from source D flows downwards.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid from source D flows downwards.",
+    "conclusion": "The liquid from source D is deflected by the white baffle towards the right, leading to container F.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from sources A, B, and C flows into container E. Liquid from source D flows into container F.",
+    "conclusion": "Container E receives liquid from 3 sources (A, B, and C), while container F receives liquid from 1 source (D).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Container E receives liquid from 3 sources (A, B, and C), while container F receives liquid from 1 source (D).",
+    "conclusion": "Therefore, container E receives the majority of the liquid.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Container E receives the majority of the liquid.",
+    "conclusion": "Based on the prediction of where the majority of the liquid will flow, the liquid will flow into container E.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

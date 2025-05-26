@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The masses of bodies A, B, and C are m, 2m, and m, respectively, and their radii are all R. The coefficient of kinetic friction between A, B, and the ground is μ = √3/6.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Body C is placed between A and B and has a smooth outer surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Body C is in equilibrium.",
+    "conclusion": "The sum of the forces in the vertical direction on C must be zero: N_CA + N_CB = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Body A is in equilibrium.",
+    "conclusion": "The sum of the forces in the vertical direction on A must be zero: F_A = mg + N_CA.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Body A is not moving horizontally and C is smooth.",
+    "conclusion": "The frictional force f_A = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Body B is in equilibrium.",
+    "conclusion": "The sum of the forces in the vertical direction on B must be zero: F_B = 2mg + N_CB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Body B is not moving horizontally and C is smooth.",
+    "conclusion": "The frictional force f_B = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N_CA + N_CB = mg and A and B are identical in shape with C symmetrically placed.",
+    "conclusion": "N_CA = N_CB = mg/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "N_CA = mg/2 and F_A = mg + N_CA.",
+    "conclusion": "F_A = 3mg/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "There is no horizontal movement and the surfaces are smooth.",
+    "conclusion": "The frictional force f = 0.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The coefficient of kinetic friction between A, B, and the ground is μ = √3/6 and the normal force F_A = 3mg/2.",
+    "conclusion": "The frictional force f = μ * F_A = (√3/6) * (3mg/2) = √3/6 * mg.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two metal rails are placed parallel to each other on the same horizontal plane, separated by a distance of l = 0.6 m. The left and right ends of the rails are connected to lamps L₁ and L₂ with specifications '3V, 3W' and '6V, 6W' respectively. A conductor rod ab with resistance r = 1 Ω is placed on the rails and is perpendicular to them. A uniform magnetic field with magnetic induction B = 1 T passes vertically through the plane of the rails. When the conductor rod moves to the right at a constant speed under the action of an external force, lamp L₁ just lights up normally. The resistance of the rails is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows two metal rails, L₁ and L₂, placed parallel to each other on a horizontal plane. A conductor rod, labeled ab, is placed perpendicular to the rails. A uniform magnetic field, B = 1 T, is directed vertically through the plane. The rod moves to the right at a constant speed, and lamp L₁ just lights up normally.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod ab moves to the right at a constant speed, creating a changing magnetic flux through the rails.",
+    "conclusion": "The magnetic flux through the rails is given by the product of the magnetic induction (B) and the area of the rails (length l and width w).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux through the rails is given by the product of the magnetic induction (B) and the area of the rails (length l and width w).",
+    "conclusion": "The induced electromotive force (EMF) in the rails is calculated using Faraday's law of induction: ε = B · l · v.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the rod moves at a speed v, the induced EMF is ε = 1 T × 0.6 m × v = 0.6v V.",
+    "conclusion": "The power of lamp L₁ is given as 3W, so P₁ = 3 W.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power of lamp L₁ is given as 3W, so P₁ = 3 W.",
+    "conclusion": "Using the power equation P = V²/R, we find the voltage across lamp L₁: V₁ = √(P₁ · R) = √(3 W · 1 Ω) = √3 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the power equation P = V²/R, we find the voltage across lamp L₁: V₁ = √(P₁ · R) = √3 V.",
+    "conclusion": "The actual power of lamp L₂ is calculated using the induced EMF and the resistance of lamp L₂: P₂ = ε²/R₂ = (0.6v)²/1 = 0.36v² W.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since lamp L₁ just lights up, the power of lamp L₂ is equal to the power of lamp L₁: P₂ = 3 W.",
+    "conclusion": "The actual power of lamp L₂ is 3 W.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

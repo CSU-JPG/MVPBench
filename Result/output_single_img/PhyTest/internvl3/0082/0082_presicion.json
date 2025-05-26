@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The balls are released every 0.1 seconds.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The distances between consecutive balls are given as AB = 15 cm and BC = 20 cm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The balls are released every 0.1 seconds.",
+    "conclusion": "The time between the release of ball A and ball B is 0.1 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The balls are released every 0.1 seconds.",
+    "conclusion": "The time between the release of ball B and ball C is also 0.1 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB = 15 cm and time interval is 0.1 seconds.",
+    "conclusion": "The speed of ball B relative to ball A is 150 cm/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "BC = 20 cm and time interval is 0.1 seconds.",
+    "conclusion": "The speed of ball C relative to ball B is 200 cm/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Speed of ball B is 150 cm/s and speed of ball C is 200 cm/s.",
+    "conclusion": "The acceleration a is 500 cm/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Balls are released every 0.1 seconds.",
+    "conclusion": "There are balls released at t = 0, 0.1, 0.2, ... seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball A is at the position after one release interval.",
+    "conclusion": "There is 1 ball (itself) at that position.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ball A is the first ball in the sequence at that specific position.",
+    "conclusion": "There are no balls rolling on top of ball A.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

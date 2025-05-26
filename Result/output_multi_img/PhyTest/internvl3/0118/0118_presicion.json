@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the forces acting on hemispheres A and B and determine the coefficient of friction between hemisphere A and the left wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Hemisphere B has a mass 2m and is smooth, so no friction acts on it. Hemisphere A has a mass m and is in contact with the left wall, where friction exists.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Hemisphere B has a mass 2m and is smooth.",
+    "conclusion": "Vertical force due to gravity on B is 2mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Hemisphere A exerts a force F on B at an angle of 30° from the horizontal.",
+    "conclusion": "Force F exerted by hemisphere A on B has horizontal and vertical components.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Force F exerted by hemisphere A on B at an angle of 30°.",
+    "conclusion": "Horizontal component: F cos(30°), Vertical component: F sin(30°).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Hemisphere B is in equilibrium.",
+    "conclusion": "F cos(30°) = Normal force from hemisphere A = F_N, F sin(30°) = 2mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F sin(30°) = 2mg.",
+    "conclusion": "F = 4mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = 4mg.",
+    "conclusion": "F_N = F cos(30°) = 4mg (√3/2) = 2√3mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Forces on Hemisphere A: Vertical force due to gravity: mg, Normal force from the left wall: F_N.",
+    "conclusion": "Frictional force F_f between hemisphere A and the left wall.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical equilibrium for Hemisphere A.",
+    "conclusion": "F_f + mg = F_N1.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical component of the force exerted by hemisphere B on A must counteract the weight of hemisphere A.",
+    "conclusion": "F_f = F_N1 - mg.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Maximum static friction: F_f = μ F_N.",
+    "conclusion": "μ (2√3mg) = 3mg - mg.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "μ (2√3mg) = 2mg.",
+    "conclusion": "μ = 2mg / 2√3mg = 1/√3 = √3/3.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

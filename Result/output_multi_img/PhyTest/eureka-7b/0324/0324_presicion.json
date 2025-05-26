@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "To determine the pressure of the gas when the temperature is 600 K, we need to analyze the given p-T and V-T graphs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The p-T graph is a straight line passing through the origin, which indicates that the pressure is directly proportional to the temperature.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "This is consistent with Charles's Law, which states p ∝ T for a fixed amount of gas at constant volume.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The points on the p-T graph are (200 K, 0.5 × 10^5 Pa) and (400 K, 1.0 × 10^5 Pa).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The points on the p-T graph are (200 K, 0.5 × 10^5 Pa) and (400 K, 1.0 × 10^5 Pa).",
+    "conclusion": "The slope of the p-T graph is Δp/ΔT = (1.0 × 10^5 Pa - 0.5 × 10^5 Pa) / (400 K - 200 K) = 2500 Pa/K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope of the p-T graph is 2500 Pa/K.",
+    "conclusion": "The equation of the p-T line is p = 2500 Pa/K × T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The V-T graph shows a horizontal line for temperatures between 400 K and 600 K, indicating that the volume is constant.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "This is consistent with Charles's Law, which states V ∝ T for a fixed amount of gas at constant pressure.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The volume is constant at V = 2.5 m³ for temperatures between 400 K and 600 K.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation of the p-T line is p = 2500 Pa/K × T.",
+    "conclusion": "At T = 600 K, p = 2500 Pa/K × 600 K = 1.5 × 10^6 Pa.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Truck and bus are braking; need to find maximum distance between them.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Bus is in front of the truck, both start braking at the same time, initially 30 meters apart.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Velocity-time graph provided shows velocities over time.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Slope of v-t graph represents acceleration; area under curve gives displacement.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Truck's velocity decreases linearly from 40 m/s to 0 m/s between 0 and 20 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Bus's velocity decreases linearly from 30 m/s to 0 m/s between 0 and 30 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Find positions of vehicles as a function of time to determine maximum distance.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Truck's initial velocity is 40 m/s, final velocity is 0 m/s, time is 20 s, deceleration is -2 m/s².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Velocity of truck as a function of time: v_truck(t) = 40 - 2t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Bus's initial velocity is 30 m/s, final velocity is 0 m/s, time is 30 s, deceleration is -1 m/s².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Velocity of bus as a function of time: v_bus(t) = 30 - t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Integrate velocity functions to find position of each vehicle.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Initial position of truck is -30 m, bus is 0 m.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Position of bus as a function of time: s_bus(t) = 30t - (1/2)t².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Position of truck as a function of time: s_truck(t) = 40t - t² - 30.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Distance between vehicles at any time t: d(t) = 0.5t² - 10t + 30.",
+    "relevant": "Yes"
+  }
+]

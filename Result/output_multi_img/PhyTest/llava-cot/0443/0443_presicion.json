@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There is a point light source S in a pool emitting monochromatic light A and B, forming an illuminated circular area on the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Figure A shows a point light source S in a pool. Figure B shows a smaller circle illuminated by polychromatic light and a larger circle by monochromatic light B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of water to monochromatic light A is n_1, and to monochromatic light B is n_2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law: \\(\\frac{\\sin \\theta_1}{\\sin \\theta_2} = \\frac{n_2}{n_1}\\)",
+    "conclusion": "Apply Snell's law to relate angles of incidence and refraction with refractive indices.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given \\(\\frac{\\sin \\theta_1}{\\sin \\theta_2} = \\frac{n_2}{n_1}\\)",
+    "conclusion": "Rearrange to find \\(\\sin \\theta_2 = \\frac{n_1}{n_2} \\sin \\theta_1\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Determine \\(\\sin \\theta_1\\) from the geometry of the light rays.",
+    "conclusion": "The sine of the angle of incidence \\(\\theta_1\\) is the ratio of the opposite side to the hypotenuse.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Values: \\(n_1 = 1.33\\), \\(n_2 = 1.46\\), \\(\\sin \\theta_1 = 0.6\\)",
+    "conclusion": "Substitute known values into the equation.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation: \\(\\sin \\theta_2 = \\frac{1.33}{1.46} \\times 0.6\\)",
+    "conclusion": "Calculate \\(\\sin \\theta_2 = 0.5\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The sine value of the refraction angle of monochromatic light B irradiated to the boundary of the small circle area.",
+    "conclusion": "The sine value is \\(\\sin r = \\frac{n_2}{n_1}\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

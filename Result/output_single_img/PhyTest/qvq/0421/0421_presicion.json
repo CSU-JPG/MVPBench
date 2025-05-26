@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a well that's 8 meters deep with a circular wellhead radius of 0.5 meters. The refractive index of water is 4/3, and there's a frog at the center of the bottom of the well. The frog wants to have a panoramic view of everything outside the well.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The well is filled with water to the top, and the wellhead is circular with a radius of 0.5 meters. The frog is at the bottom center, 8 meters deep.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of water is 4/3, which will affect how light bends as it moves from water to air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The frog is looking up from the bottom of the well, and the view will be limited by the angle at which light can enter the water and still be seen by the frog.",
+    "conclusion": "This is a problem involving total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In optics, when light tries to pass from a medium with a higher refractive index to one with a lower refractive index, there's a critical angle beyond which total internal reflection occurs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc is given by θc = arcsin(1/n), where n is the refractive index of the water relative to air.",
+    "conclusion": "The critical angle would be θc = arcsin(3/4).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "arcsin(0.75) is approximately 48.59 degrees.",
+    "conclusion": "Any light trying to enter the water at an angle greater than 48.59 degrees from the normal will be reflected back into the air and not visible to the frog.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I need to find out how far vertically from the wellhead the frog can see.",
+    "conclusion": "This involves finding the height at which the light rays entering the water at the critical angle still allow the frog to see objects at that height.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The well is cylindrical, and the frog is at the bottom center. Light from an object outside the well enters the water at the edge of the wellhead at the critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wellhead has a radius of 0.5 meters, so the diameter is 1 meter.",
+    "conclusion": "The frog's line of sight will be limited by the critical angle at the water surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the farthest vertical distance, the light ray from the object at that distance will enter the water at the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Let r = radius of wellhead = 0.5 m, d = depth of well = 8 m, n = refractive index of water = 4/3, θc = critical angle = arcsin(3/4).",
+    "conclusion": "I need to find the maximum vertical distance h from the wellhead water surface such that the frog can still see the object at that height.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray from the object at height h enters the water at the edge of the wellhead at the critical angle θc.",
+    "conclusion": "The angle between the ray and the normal at the water surface is θc.",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the amount of charge passing through R1 after the switch S is opened, we need to analyze the circuit in two stages: before and after the switch is opened.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistors R1 and R2 are in series.",
+    "conclusion": "The equivalent resistance Req is: Req = R1 + R2 = 4.0Ω + 6.0Ω = 10.0Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Ohm's Law, E = 10V, Req = 10.0Ω",
+    "conclusion": "The current I is: I = E / Req = 10V / 10.0Ω = 1.0A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = 1.0A, R1 = 4.0Ω",
+    "conclusion": "Voltage across R1: VR1 = I × R1 = 1.0A × 4.0Ω = 4.0V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = 1.0A, R2 = 6.0Ω",
+    "conclusion": "Voltage across R2: VR2 = I × R2 = 1.0A × 6.0Ω = 6.0V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Capacitors are in parallel with resistors, VR1 = 4.0V, C1 = 30μF",
+    "conclusion": "Charge on C1: QC1 = C1 × VR1 = 30μF × 4.0V = 120μC",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Capacitors are in parallel with resistors, VR2 = 6.0V, C2 = 30μF",
+    "conclusion": "Charge on C2: QC2 = C2 × VR2 = 30μF × 6.0V = 180μC",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When the switch S is opened, the capacitors C1 and C2 are in series.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Capacitors C1 and C2 are in series.",
+    "conclusion": "The equivalent capacitance Ceq of capacitors in series is: 1/Ceq = 1/C1 + 1/C2 = 1/30μF + 1/30μF = 2/30μF = 1/15μF, Ceq = 15μF",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Charges on C1 and C2: QC1 = 120μC, QC2 = 180μC",
+    "conclusion": "The total charge Qtotal is the sum of the charges on C1 and C2: Qtotal = QC1 + QC2 = 120μC + 180μC = 300μC",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total charge Qtotal = 300μC, Ceq = 15μF",
+    "conclusion": "Voltage across the equivalent capacitance: Veq = Qtotal / Ceq = 300μC / 15μF = 20V",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Capacitors are in series, total charge Qtotal = 300μC",
+    "conclusion": "Charge on each capacitor after redistribution: Qnew = Qtotal = 300μC",
+    "judgment": "Wrong"
+  }]

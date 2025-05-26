@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The tube is a smooth, vertically placed arc with a radius R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The arc is tangent to the horizontal tube at point B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The triangle MNB is equilateral with side length L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two point charges +Q and -Q are fixed at points M and N, respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball has a mass m and charge +q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ball is released from rest at point A, so its initial velocity is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric force between the charges M and N is given by F = k Q^2/r^2, where r is the distance between the charges.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gravitational force on the ball is mg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since MNB is equilateral, r = L.",
+    "conclusion": "The distance r from point M to point B is L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force F = k Q^2/r^2. Substitute r = L.",
+    "conclusion": "The electric force is F = k Q^2/L^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ball is released from rest.",
+    "conclusion": "The velocity of the ball at point B is v = sqrt(2mgL/(m + Q^2/L^2)).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distance from A to B is R + L.",
+    "conclusion": "The distance traveled by the ball from point A to point B is d = R + L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electric force at point B is F = k Q^2/R^2.",
+    "conclusion": "The electric force at point B is F = k Q^2/R^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force on the ball is the sum of the electric force and the gravitational force.",
+    "conclusion": "The net force on the ball is F_net = k Q^2/R^2 - mg.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the electric force F is k Q^2/R^2.",
+    "conclusion": "The magnitude of the electric force is k Q^2/R^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the electric force experienced by the small ball when it reaches point B is k Q^2/R^2.",
+    "conclusion": "The magnitude of the electric force experienced by the small ball when it reaches point B is k Q^2/R^2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the current in the loop and the magnitude of the induced electromotive force (emf) generated in the wire frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side length of the square wire frame is \\(L\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side length of the square wire frame is \\(L\\).",
+    "conclusion": "The area \\(A\\) of the entire frame is \\(A = L^2\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the entire frame is \\(L^2\\). Only half of the area is in the magnetic field.",
+    "conclusion": "The effective area \\(A_{\\text{eff}}\\) in the magnetic field is \\(A_{\\text{eff}} = \\frac{L^2}{2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rate of change of the magnetic field is given as \\(k\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective area in the magnetic field is \\(\\frac{L^2}{2}\\). The rate of change of the magnetic field is \\(k\\).",
+    "conclusion": "The change in magnetic flux \\(\\Delta \\Phi\\) over time is \\(\\Delta \\Phi = \\frac{L^2}{2} \\cdot \\Delta B\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field changes uniformly at a rate \\(k\\).",
+    "conclusion": "The change in magnetic field \\(\\Delta B = k \\cdot \\Delta t\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's Law of Electromagnetic Induction, the induced emf \\(\\mathcal{E}\\) is given by \\(\\mathcal{E} = -\\frac{d\\Phi}{dt}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in flux is \\(\\Delta \\Phi = \\frac{L^2}{2} \\cdot k \\cdot t\\).",
+    "conclusion": "The induced emf \\(\\mathcal{E} = -\\frac{d}{dt} \\left( \\frac{L^2}{2} \\cdot k \\cdot t \\right)\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf is \\(\\mathcal{E} = -\\frac{d}{dt} \\left( \\frac{L^2}{2} \\cdot k \\cdot t \\right)\\). \\(k\\) and \\(L\\) are constants.",
+    "conclusion": "The induced emf \\(\\mathcal{E} = -\\frac{L^2}{2} \\cdot k\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit includes a resistor \\(R\\) and a capacitor \\(C\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Ohm's Law and the fundamental relationship for capacitors, the current \\(I\\) in the circuit can be found using the voltage across the resistor: \\(\\mathcal{E} = I \\cdot R\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf is \\(\\mathcal{E} = -\\frac{L^2}{2} \\cdot k\\).",
+    "conclusion": "The current \\(I = \\frac{\\mathcal{E}}{R}\\).",
+    "judgment": "Match"
+  }]

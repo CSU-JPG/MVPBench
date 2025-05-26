@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the radius d of the light-blocking plate such that no light exits from the inner surface of the hemispherical hollow shell.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index n = sqrt(2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index n = sqrt(2).",
+    "conclusion": "The critical angle C can be found using Snell's law: sin C = 1/n.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin C = 1/sqrt(2).",
+    "conclusion": "C = arcsin(sqrt(2)/2) = 45 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Consider a light ray incident on the outer surface of the hemisphere at an angle a.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For TIR to occur at the inner surface, b >= C = 45 degrees.",
+    "conclusion": "Using Snell's law at the outer surface: n sin a = sin b.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = sqrt(2), b = 45 degrees.",
+    "conclusion": "sqrt(2) sin a = sin 45 degrees = sqrt(2)/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sqrt(2) sin a = sqrt(2)/2.",
+    "conclusion": "sin a = 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin a = 1/2.",
+    "conclusion": "a = arcsin(1/2) = 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light rays that are incident at angles greater than 30 degrees will undergo TIR at the inner surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light-blocking plate should cover the region where the incident angle is less than or equal to 30 degrees.",
+    "conclusion": "The distance from the center O' of the outer hemisphere to the point where the incident angle is 30 degrees can be found using trigonometry.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a right triangle formed by the radius R' = sqrt(2)R, the height h corresponding to the angle 30 degrees is: h = R' cos 30 degrees.",
+    "conclusion": "h = sqrt(2)R * sqrt(3)/2 = sqrt(6)/2 R.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The radius d of the light-blocking plate is twice this height because the plate covers both sides symmetrically.",
+    "conclusion": "d = 2 * sqrt(6)/2 R = sqrt(6)R.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

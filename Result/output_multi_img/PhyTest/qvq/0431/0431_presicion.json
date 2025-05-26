@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a square prism with side length 'a'. A ray enters at point M, refracts, reflects at N, and exits at P. We need to find the refractive index and distance PC.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law: n1 sin θ1 = n2 sin θ2, where n1 and n2 are refractive indices, and θ1 and θ2 are angles of incidence and refraction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of air is 1, and the incident angle is 60 degrees. Let n be the refractive index of the prism.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Square ABCD with M as the midpoint of AB. AM = MB = a/2. Ray enters at M with a 60-degree angle to the normal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law at point M: 1 * sin(60) = n * sin(θ)",
+    "conclusion": "sin(θ) = (1/n) * sin(60)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when the angle of incidence is greater than or equal to the critical angle. Critical angle θc is given by sin(θc) = (n1/n2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection at N: sin(θc) = 1/n",
+    "conclusion": "Total internal reflection occurs when θ >= θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Coordinate system: D(0,0), C(a,0), B(a,a), A(0,a), M(a/2, a), N(a, y), P(x, 0).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Path from M to N: M(a/2, a) to N(a, y)",
+    "conclusion": "The ray travels from M to N inside the prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total internal reflection at N, angle of incidence φ >= θc, where θc = arcsin(1/n)",
+    "conclusion": "The angle of incidence at N must be greater than or equal to the critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using geometry and Snell's Law: sin(θ) = (1/n) * sin(60)",
+    "conclusion": "Relate θ to the path from M to N.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using geometry: tan(θ) = MB/BN = a/(2BN)",
+    "conclusion": "Relate tan(θ) to the geometry of the prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using tan(θ) = PC/NC",
+    "conclusion": "PC = (sqrt(3) - 1)/2 * a",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The number of turns of a circular coil is N=200, the area of the coil is S=1 m^2, the resistance of the coil is r=10 Ohm, and the coil is connected to an external resistor with a resistance of R=50 Ohm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil is placed in a uniform magnetic field perpendicular to the plane of the coil and directed inward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The variation of the magnetic induction over time is shown in Figure B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows the magnetic field B changes from 0.2 T to 0.4 T over 4 seconds.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The graph shows the magnetic field B changes from 0.2 T to 0.4 T over 4 seconds.",
+    "conclusion": "The rate of change of the magnetic field is dB/dt = (0.4 T - 0.2 T) / 4 s = 0.05 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's Law of Induction, the induced EMF in the coil is given by E = -N dPhi/dt where Phi = B * S is the magnetic flux.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Phi = B * S and dB/dt = 0.05 T/s.",
+    "conclusion": "dPhi/dt = S * dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dPhi/dt = S * dB/dt and S = 1 m^2.",
+    "conclusion": "dPhi/dt = 1 m^2 * 0.05 T/s = 0.05 Wb/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = -N dPhi/dt, N = 200, and dPhi/dt = 0.05 Wb/s.",
+    "conclusion": "E = -200 * 0.05 Wb/s = -10 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total resistance R_total is the sum of the coil's resistance r and the external resistor R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = 10 Ohm and R = 50 Ohm.",
+    "conclusion": "R_total = r + R = 10 Ohm + 50 Ohm = 60 Ohm.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using Ohm's Law, the current I is given by I = E / R_total.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 10 V and R_total = 60 Ohm.",
+    "conclusion": "I = 10 V / 60 Ohm = 1/6 A ≈ 0.1667 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power P consumed by a resistor is given by P = I^2 * R.",
+    "judgment": "N/A"
+  }]

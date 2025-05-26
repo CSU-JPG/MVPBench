@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas of definite quality begins at state A, and after undergoing three processes A→B, B→C, and C→A, it returns to its initial state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature of the gas at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Horizontal axis is volume in litres (L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Vertical axis is pressure in units of 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P_A = 1 × 10^5 Pa (1 on the vertical scale), V_A = 2 L (vertical dotted line meets the 2-L mark).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "T_A = 200 K (given).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: P_B = 4 × 10^5 Pa (4 on the vertical scale), V_B = 2 L (same vertical line as A, so the volume is unchanged).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a fixed amount of gas, PV = nRT ⇒ T ∝ PV.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T ∝ PV",
+    "conclusion": "Form the temperature ratio between B and A: T_B / T_A = (P_B V_B) / (P_A V_A).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B / T_A = (P_B V_B) / (P_A V_A)",
+    "conclusion": "Insert the numbers: T_B / 200 K = (4 × 10^5 Pa · 2 L) / (1 × 10^5 Pa · 2 L) = 4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B / 200 K = 4",
+    "conclusion": "Solve for T_B: T_B = 4 × 200 K = 800 K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

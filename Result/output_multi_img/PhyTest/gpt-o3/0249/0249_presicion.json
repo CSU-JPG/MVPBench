@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A closed square metal coil abcd with N turns has a side-length of L. The coil is in a uniform magnetic field with a magnetic induction intensity of B, and it rotates at a constant angular velocity ω around an axis OO' that is perpendicular to the magnetic field and coplanar with the coil. The ab side is at a distance of L/4 from the axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The coil is square-shaped with sides labeled a, b, c, and d. The axis of rotation OO' is perpendicular to the magnetic field lines, which are horizontal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only the two sides that cut the magnetic field lines—sides ab and cd—contribute to the induced emf, because the other two sides move parallel to the field and experience no magnetic-flux cutting.",
+    "conclusion": "Sides ab and cd contribute to the induced emf.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A straight conductor of length L that is rotating with angular speed ω around an axis O at a perpendicular distance r from the axis has an instantaneous motional emf dε = B ω r dr across an infinitesimal element of width dr along the conductor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Side ab is at distances r ranging from 0 to L/4; side cd is at distances r ranging from L/4 to L/2 from the axis.",
+    "conclusion": "Side ab is at distances r ranging from 0 to L/4; side cd is at distances r ranging from L/4 to L/2 from the axis.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Emf of side ab (magnitude): ε_ab = ∫₀^{L/4} B ω r dr = ½ B ω (L/4)² = B ω L² ⁄ 32.",
+    "conclusion": "Emf of side ab is B ω L² ⁄ 32.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Emf of side cd: ε_cd = ∫_{L/4}^{L/2} B ω r dr = ½ B ω[(L/2)² – (L/4)²] = ½ B ω(L² ⁄ 4 – L² ⁄ 16) = ½ B ω(3 L² ⁄ 16) = 3 B ω L² ⁄ 32.",
+    "conclusion": "Emf of side cd is 3 B ω L² ⁄ 32.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The instantaneous total (peak) emf of the single-turn loop is ε_max(1 turn) = ε_ab + ε_cd = 4 B ω L² ⁄ 32 = B ω L² ⁄ 8.",
+    "conclusion": "The peak emf of the single-turn loop is B ω L² ⁄ 8.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For N identical turns in series, the peak (maximum) emf becomes ε_max = N · (B ω L² ⁄ 8).",
+    "conclusion": "The peak emf for N turns is N · (B ω L² ⁄ 8).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf is sinusoidal in time, so its effective (rms) value is ε_rms = ε_max ⁄ √2 = N (B ω L²) ⁄ (8√2).",
+    "conclusion": "The effective value of the induced emf is N (B ω L²) ⁄ (8√2).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

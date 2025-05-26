@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The plates carry charges +Q and –Q. For an ideal parallel-plate capacitor (neglecting edge effects) the field between the plates is uniform: E = σ/ε₀ = Q/(A ε₀), where A is the plate area and σ is the surface‐charge density Q/A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The capacitance of the same capacitor is C = ε₀A/d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C = ε₀A/d",
+    "conclusion": "Rearranging gives A = Cd/ε₀.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = Q/(A ε₀) and A = Cd/ε₀",
+    "conclusion": "Substitute A into the expression for the field: E = Q/(A ε₀) = Q/((Cd/ε₀) ε₀) = Qd/(C ε₀²).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = Qd/(C ε₀²)",
+    "conclusion": "Cancel one ε₀ to obtain E = Qd/(C ε₀).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A point charge q placed anywhere between the plates (the interior field is uniform) feels a force F = qE.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = qE and E = Qd/(C ε₀)",
+    "conclusion": "Magnitude: F = q · Qd/(C ε₀).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnitude: F = q · Qd/(C ε₀)",
+    "conclusion": "The magnitude of the electrostatic force on the charge q is F = (qQd)/(C ε₀).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

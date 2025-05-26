@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the behavior of light within the prism and use geometric properties to determine the refractive index and the distance between point P and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The incident angle at point M is θ1 = 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refracted angle at point M is θ2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle of incidence at point N is θ3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle of reflection at point N is θ4.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle is given by sin(θc) = 1/n where n is the refractive index of the prism.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From Snell's Law at point M: n sin(θ2) = sin(60°) = √3/2",
+    "conclusion": "The refracted angle θ2 satisfies n sin(θ2) = √3/2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For total reflection to occur at point N, θ3 must satisfy θ3 = θc ≥ sin⁻¹(1/n).",
+    "conclusion": "The angle of incidence θ3 must be equal to or greater than the critical angle.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the geometry of the triangle BMN: ∠BNM = 90° - θ2 and ∠BMN = 60° + θ2.",
+    "conclusion": "∠BNM = θc.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Thus: θ3 = θc = 30°.",
+    "conclusion": "The angle of incidence θ3 is 30°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting back into Snell’s Law for the incident angle at point M: n sin(30°) = sin(60°)",
+    "conclusion": "n = √3",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that θ3 = θc = 30° and using the geometry of the triangle NCP.",
+    "conclusion": "From the right triangle NCB: CN = a/2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the right triangle NPC: CP = tan(30°) * (a - CN)",
+    "conclusion": "CP = 1/√3 * (a/2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "CP = a/2√3 = a√3/6",
+    "conclusion": "The distance between points P and C is a√3/6",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

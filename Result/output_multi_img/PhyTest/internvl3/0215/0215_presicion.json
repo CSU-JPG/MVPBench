@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the flow rate Q of the conductive liquid in the electromagnetic flowmeter, we can use the principles of electromagnetism and fluid dynamics.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The conductive liquid contains charged particles (ions or electrons), and when they move with velocity v through the magnetic field B, they experience a magnetic force given by the Lorentz force law: F = q (v × B) where q is the charge of the particle, v is the velocity, and B is the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductive liquid contains charged particles moving through a magnetic field.",
+    "conclusion": "Due to the magnetic force, a potential difference (electromotive force) E is generated between points M and N. This EMF can be calculated as: E = B · v · d where d is the diameter of the pipe.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The EMF measured can be used to determine the velocity v of the fluid.",
+    "conclusion": "v = E / (B · d)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The flow rate Q is defined as the volume of liquid flowing through the cross-section of the pipe per unit time: Q = A · v where A is the cross-sectional area of the pipe.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a circular pipe, the cross-sectional area A is: A = π (d/2)^2 = π d^2 / 4",
+    "conclusion": "A = π d^2 / 4",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the expression for v into the flow rate equation.",
+    "conclusion": "Q = (π d^2 / 4) · (E / (B · d))",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the expression for Q.",
+    "conclusion": "Q = π d E / (4B)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

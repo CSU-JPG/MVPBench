@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ions enter the velocity selector where there are perpendicular electric and magnetic fields. For the ions to pass through undeflected, the forces due to the electric field and the magnetic field must cancel each other out.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Lorentz force \\( \\vec{F}_L \\) is given by: \\[ \\vec{F}_L = q (\\vec{E} + \\vec{v} \\times \\vec{B}) \\]",
+    "conclusion": "For the ion to pass through undeflected: \\[ qE = qvB \\]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the ion to pass through undeflected: \\[ qE = qvB \\]",
+    "conclusion": "\\[ E = vB \\]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\[ E = vB \\]",
+    "conclusion": "\\[ v = \\frac{E}{B} \\]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "Therefore, the velocity \\( v \\) of the ions after passing through the velocity selector is: \\[ v = \\frac{E}{B} \\]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the magnetic analyzer, the ions move in a circular path due to the magnetic field. The radius of the circular path \\( R \\) depends on the charge-to-mass ratio of the ions.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The centripetal force provided by the magnetic field is: \\[ qvB = \\frac{mv^2}{R} \\]",
+    "conclusion": "Solving for \\( R \\): \\[ R = \\frac{mv}{qB} \\]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\( v = \\frac{E}{B} \\), substitute \\( v \\) into the equation: \\[ R = \\frac{mv}{qB} \\]",
+    "conclusion": "\\[ R = \\frac{m(\\frac{E}{B})}{qB} = \\frac{mE}{qB^2} \\]",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the ions are selected by the magnetic analyzer to have a specific charge-to-mass ratio, we can use the radius \\( R \\) to express this ratio: \\[ R = \\frac{mE}{qB^2} \\]",
+    "conclusion": "\\[ \\frac{q}{m} = \\frac{E}{BR^2} \\]",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After passing through the magnetic analyzer, the ions enter the deflection system. Here, the ions are deflected due to both electric and magnetic fields.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The Lorentz force in the deflection system is: \\[ \\vec{F}_L = q (\\vec{E} + \\vec{v} \\times \\vec{B}) \\]",
+    "conclusion": "The deflection caused by the electric field is in the y-direction, while the deflection caused by the magnetic field is in the x-direction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The small deflection angles imply that the deflections are small, so we can approximate the trigonometric functions as given: \\[ \\sin\\alpha \\approx \\tan\\alpha \\approx \\alpha \\] \\[ \\cos \\alpha \\approx 1 - \\frac{1}{2}\\alpha^2 \\]",
+    "judgment": "N/A"
+  }

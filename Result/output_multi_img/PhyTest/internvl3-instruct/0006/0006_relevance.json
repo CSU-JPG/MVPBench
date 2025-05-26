@@ -1,0 +1,77 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Determine the maximum distance between Car A and Car B at any time between the two instances when they are side by side.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Car A accelerates uniformly from 0 to 40 m/s in 10 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Acceleration of Car A is 4 m/s².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Constant speed of Car A after 10 seconds is 40 m/s.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Car B accelerates uniformly from 0 to 40 m/s in 20 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Acceleration of Car B is 2 m/s².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Velocity of Car B at any time t is given by v_B = 2t.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Position of Car A for 0 ≤ t ≤ 10 is s_A(t) = 2t².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Position of Car A for 10 < t ≤ 30 is s_A(t) = 40t - 200.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Position of Car B is s_B(t) = t².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Find time t when s_A(t) - s_B(t) is maximum for 10 < t ≤ 30.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "s_A(t) - s_B(t) = -t² + 40t - 200.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Derivative is -2t + 40 = 0, so t = 20 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "At t = 20, s_A(20) = 600 meters and s_B(20) = 400 meters.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Maximum distance is 600 - 400 = 200 meters.",
+    "relevant": "Yes"
+  }
+]

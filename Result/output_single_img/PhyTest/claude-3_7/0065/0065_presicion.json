@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ping-pong ball mass: M, Bullet mass: m, Table height: h, Horizontal distance traveled by ball after impact: s",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of momentum: m v_bullet = (m + M) v_combined",
+    "conclusion": "v_bullet = (m + M) v_combined / m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After the collision, the combined system (bullet+ball) becomes a projectile with initial horizontal velocity: v_combined, initial vertical velocity: 0, falling from height: h",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Time of flight formula: t = sqrt(2h/g)",
+    "conclusion": "t = sqrt(2h/g)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal motion: s = v_combined * t",
+    "conclusion": "v_combined = s / t = s / sqrt(2h/g) = s * sqrt(g/2h)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_combined into v_bullet = (m + M) v_combined / m",
+    "conclusion": "v_bullet = (m + M) / m * s * sqrt(g/2h)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final expression for v_bullet",
+    "conclusion": "v_bullet = (m + M)s/m * sqrt(g/2h)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

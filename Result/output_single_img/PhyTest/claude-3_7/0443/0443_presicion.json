@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point light source S is underwater and emits two types of monochromatic light: A and B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "On the water surface, we see a circular pattern with an inner circle illuminated by polychromatic light (both A and B) and an outer annular region illuminated only by monochromatic light B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Water has different refractive indices for the two wavelengths: For light A: refractive index is n₁, For light B: refractive index is n₂.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The goal is to find the sine value of the refraction angle of light B at the boundary of the small circular area.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "This problem involves Snell's Law: n₁sin(θ₁) = n₂sin(θ₂) and Total internal reflection: Light cannot exit water if the incident angle exceeds the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The fact that light B extends beyond the region where light A reaches suggests that light A experiences total internal reflection at a smaller angle than light B.",
+    "conclusion": "At the boundary of the small circular area, light A is at its critical angle (beyond this angle, it undergoes total internal reflection) and light B is still able to exit the water and reaches this boundary.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the critical angle, when light tries to go from a higher to lower refractive medium: sin(θ₂) = 1 (refraction angle = 90°) and From Snell's Law: sin(θ₁) = n₂/n₁.",
+    "conclusion": "For light A at its critical angle: sin(θₐ_critical) = 1/n₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For light B to reach the boundary of the small circle: It must be at an angle where it's just barely able to refract out.",
+    "conclusion": "This means light B is at its critical angle at this boundary: sin(θᵦ_critical) = 1/n₂.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At this boundary: The incident angle of light B is equal to the critical angle of light A.",
+    "conclusion": "Using Snell's Law: n₂sin(θᵦ_incident) = sin(θᵦ_refracted) and we know that θᵦ_incident = θₐ_critical, so sin(θᵦ_incident) = 1/n₁.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n₂ × (1/n₁) = sin(θᵦ_refracted)",
+    "conclusion": "sin(θᵦ_refracted) = n₂/n₁",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

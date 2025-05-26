@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block C has initial velocity v_0 and mass m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block B is initially at rest with mass m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Skateboard A is initially at rest with mass m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There's a spring with constant k attached to A and B",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Coefficient of kinetic friction is μ for all relevant surfaces",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block C slides along the skateboard for distance s_0 while experiencing friction.",
+    "conclusion": "Using the work-energy theorem: Initial KE of C = Final KE of C + Work done by friction",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initial KE of C = Final KE of C + Work done by friction",
+    "conclusion": "1/2 * m * v_0^2 = 1/2 * m * v_C^2 + μ * m * g * s_0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/2 * m * v_0^2 = 1/2 * m * v_C^2 + μ * m * g * s_0",
+    "conclusion": "v_C = sqrt(v_0^2 - 2 * μ * g * s_0)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When C collides with B, they stick together and move as a combined mass of 2m.",
+    "conclusion": "Using conservation of momentum: mv_C = (m+m)v_{BC}",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mv_C = (m+m)v_{BC}",
+    "conclusion": "v_{BC} = v_C / 2 = sqrt(v_0^2 - 2 * μ * g * s_0) / 2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Energy before collision = 1/2 * m * v_C^2",
+    "conclusion": "Energy after collision = 1/2 * (2m) * (v_{BC})^2 = 1/2 * m * (v_C^2 / 2)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Energy before collision = 1/2 * m * v_C^2 and Energy after collision = 1/2 * m * (v_C^2 / 2)",
+    "conclusion": "Mechanical energy loss = 1/2 * m * v_C^2 - 1/4 * m * v_C^2 = 1/4 * m * v_C^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Mechanical energy loss = 1/4 * m * v_C^2",
+    "conclusion": "Mechanical energy loss = 1/4 * m * (v_0^2 - 2 * μ * g * s_0) = 1/4 * m * v_0^2 - 1/2 * m * μ * g * s_0",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

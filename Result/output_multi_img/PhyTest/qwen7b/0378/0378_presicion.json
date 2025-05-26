@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A fixed smooth curved track smoothly connects with a smooth horizontal ground at point O.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A smooth inclined plane C with mass 3m is placed stationary on the ground.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A small block A with mass m starts from rest at a height h and slides down the track.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "At point O, block A collides with a stationary small block B with mass 2m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After the collision, A and B immediately stick together and move to the right, smoothly sliding onto the inclined plane and rising to a height less than the height of the inclined plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The task is to determine how much heat is generated during the collision of A and B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A starts from rest at a height h. At the bottom of the track, its potential energy is converted into kinetic energy. Using the conservation of energy, we have: mgh = 1/2 mv_0^2.",
+    "conclusion": "v_0 = sqrt(2gh)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the collision, the system of blocks A and B has no external horizontal forces acting on it, so momentum is conserved horizontally. The initial momentum of the system is just the momentum of block A because block B is initially at rest. Therefore, the equation for conservation of momentum is: mv_0 = (m + 2m)v_1.",
+    "conclusion": "v_1 = v_0/3 = sqrt(2gh)/3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the collision, blocks A and B slide together up the inclined plane and rise to a certain height. Let h' be the height that they reach. The total mechanical energy at the top of the inclined plane is purely gravitational potential energy: (m + 2m)gh' = 1/2(3m)v_1^2.",
+    "conclusion": "h' = h/9",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by friction is the difference between the initial kinetic energy and the final kinetic energy plus the final potential energy: W_friction = 1/2(3m)v_1^2 - 3mgh'.",
+    "conclusion": "W_friction = 2mgh/3",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

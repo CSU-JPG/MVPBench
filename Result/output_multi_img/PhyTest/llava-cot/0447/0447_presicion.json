@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A semicircle brick with a radius of R is made of a special transparent material. A beam of laser mixed with red and green light is injected perpendicular to the edge of the brick diameter MN at the center point O of R/2. When the laser beam shifts to the left from point O, only monochromatic light is emitted from the semicircle surface, and the angle between the emitted light and the incident direction is 30°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a semicircular brick with a radius of R. A laser beam is injected perpendicular to the diameter MN at the center point O. The beam shifts to the left from O, and monochromatic light is emitted at an angle of 30° from the incident direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The laser beam is incident at the center O of the semicircle and shifts to the left, creating a path of light through the transparent material.",
+    "conclusion": "Identify the path of light.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given the angle of refraction is 30°, apply Snell's law: n1 sin θ1 = n2 sin θ2. Here, n1 is the refractive index of air (approximately 1), and n2 is the refractive index of the material.",
+    "conclusion": "Use Snell's Law.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the beam is perpendicular to the diameter, the angle of incidence is 90°. The angle of refraction is 30°, as given.",
+    "conclusion": "Determine the angle of incidence.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute the known angles into Snell's law: sin 90° = sin 30° = 1/2. Thus: 1 * 1/2 = n2 * 1/2. Solving for n2: n2 = 2.",
+    "conclusion": "Calculate the refractive index.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The same calculation applies to both red and green light, as the angle of refraction is the same.",
+    "conclusion": "Apply the same calculation for both colors.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index of the transparent material for both red and green light is 2.",
+    "conclusion": "Conclusion",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

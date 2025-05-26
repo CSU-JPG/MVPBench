@@ -1,0 +1,72 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves analyzing a circuit with a power supply (E = 10V), two capacitors (C1 = C2 = 30μF), two resistors (R1 = 4.0Ω, R2 = 6.0Ω), and a switch (S). The task is to calculate the amount of charge passing through R1 after S is opened.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The circuit consists of a power supply connected in series with R1 and R2. C1 and C2 are connected in parallel with R1 and R2, respectively. The switch S is in parallel with R2 and C2.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "When the switch S is closed, the circuit forms a single loop with R1 and R2 in series. When the switch S is opened, the capacitors discharge through the resistors.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 10V, R1 = 4.0Ω, R2 = 6.0Ω",
+    "conclusion": "The total resistance in the circuit when S is closed is R1 + R2 = 4.0Ω + 6.0Ω = 10.0Ω.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 10V, Total resistance = 10.0Ω",
+    "conclusion": "The current in the circuit when S is closed is I = E / (R1 + R2) = 10V / 10.0Ω = 1A.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = 1A, R2 = 6.0Ω",
+    "conclusion": "The voltage across R2 is U = I × R2 = 1A × 6.0Ω = 6V.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Voltage across R2 = 6V, C1 = 30μF",
+    "conclusion": "The charge on capacitor C1 when S is closed is Q1 = C1 × U = 30μF × 6V = 1.8 × 10⁻⁴C.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "After the switch S is opened, the capacitors are directly connected to the power supply, and the voltage across each capacitor equals the electromotive force of the power supply.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 10V, C1 = C2 = 30μF",
+    "conclusion": "The charge on each capacitor after S is opened is Q2 = C × E = 30μF × 10V = 3.0 × 10⁻⁴C.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Charge on each capacitor after S is opened = Q2 = 3.0 × 10⁻⁴C, Charge on C1 when S was closed = Q1 = 1.8 × 10⁻⁴C",
+    "conclusion": "The amount of charge flowing through R1 after S is opened is ΔQ = 2 × Q2 - Q1 = 2 × 3.0 × 10⁻⁴C - 1.8 × 10⁻⁴C = 4.2 × 10⁻⁴C.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

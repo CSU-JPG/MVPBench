@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A point charge +q is located at A(0, 0, h). The region z ≤ 0 is filled with an infinite conductor. The electric field inside the conductor is zero in electrostatic equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A point charge +q is located at A(0, 0, h). The region z ≤ 0 is filled with an infinite conductor.",
+    "conclusion": "To simplify the problem, use the method of images by placing an image charge -q at (0, 0, -h) to ensure the boundary condition of zero electric field inside the conductor.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The electric field due to a point charge q at a distance r is given by E = kq/r^2, where k is the electrostatic force constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The point charge +q is at (0, 0, h).",
+    "conclusion": "Distance from +q at (0, 0, h) to (h, h, -h) is r1 = h√6.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The image charge -q is at (0, 0, -h).",
+    "conclusion": "Distance from -q at (0, 0, -h) to (h, h, -h) is r2 = h√2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance r1 = h√6.",
+    "conclusion": "Electric field due to +q at (h, h, -h) is E1 = kq/(6h^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance r2 = h√2.",
+    "conclusion": "Electric field due to -q at (h, h, -h) is E2 = -kq/(2h^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E1 = kq/(6h^2) and E2 = -kq/(2h^2).",
+    "conclusion": "Net electric field at (h, h, -h) is E_net = -kq/(3h^2).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net electric field at (h, h, -h) is E_net = -kq/(3h^2).",
+    "conclusion": "Magnitude of the electric field is |E_net| = kq/(3h^2).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

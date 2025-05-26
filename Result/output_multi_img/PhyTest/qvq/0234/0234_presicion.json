@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves an equilateral triangle loop of wire entering a magnetic field to find the maximum induced electromotive force (EMF).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There is an equilateral triangle loop with side length 'a' moving to the right with velocity 'v' into a uniform magnetic field 'B' perpendicular to the plane of the loop.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The magnetic field is to the right of the dotted line MN, and side CD is always perpendicular to MN.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF in a conductor moving in a magnetic field is given by ε = B * l * v, where B is the magnetic field strength, l is the length of the conductor, and v is the velocity of the conductor perpendicular to the field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The triangle is moving to the right, and point D is the first point to reach the boundary MN.",
+    "conclusion": "As point D crosses MN, side CD starts entering the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Side CD is always perpendicular to MN.",
+    "conclusion": "As the triangle moves to the right, side CD is crossing MN, and the length of side CD in the magnetic field changes over time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The triangle is equilateral, so side CD has length a.",
+    "conclusion": "The length of side CD in the magnetic field increases from 0 to a as the triangle moves.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF ε is given by ε = B * l * v, where l is the length of side CD in the magnetic field.",
+    "conclusion": "The induced EMF starts at 0 and increases to B * a * v.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective cutting length is the red-colored line with a maximum length of $\\frac{\\sqrt{3}}{2}a$.",
+    "conclusion": "The maximum induced EMF is $\\frac{\\sqrt{3}}{2}Bav$.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

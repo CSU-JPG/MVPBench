@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the amount of charge passing through R1 after the switch S is opened, analyze the circuit in two stages: when the switch is closed and when it is opened.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The switch S is closed, capacitors C1 and C2 are in parallel, and resistors R1 and R2 are in series.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltage across each capacitor is the same as the power supply, E = 10V.",
+    "conclusion": "The charge stored on each capacitor when the switch is closed is Q_initial = C * V = 300 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "There are two capacitors.",
+    "conclusion": "The total initial charge is Q_total initial = 2 * 300 μC = 600 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The switch S is opened, capacitors C1 and C2 are now in series.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C1 = C2 = 30 μF.",
+    "conclusion": "The equivalent capacitance C_eq of two capacitors in series is C_eq = 15 μF.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Charge is conserved.",
+    "conclusion": "The total charge Q_total final = Q_total initial = 600 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q_total final = 600 μC, C_eq = 15 μF.",
+    "conclusion": "The voltage across the equivalent capacitance V_final = 40 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially, each capacitor had a charge of 300 μC.",
+    "conclusion": "The final charge on each capacitor Q_final = 1200 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Capacitors are in series, charge on each must be the same.",
+    "conclusion": "The charge on each capacitor is Q_final on each = 300 μC.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q_initial = 300 μC, Q_final on each = 300 μC.",
+    "conclusion": "The charge passing through R1 is ΔQ = 0 μC.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

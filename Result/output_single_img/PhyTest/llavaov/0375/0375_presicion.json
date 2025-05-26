@@ -1,0 +1,55 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two metal rails are placed parallel to each other on the same horizontal plane, separated by a distance of l = 0.6 m. The left and right ends of the rails are connected to lamps L1 and L2 with specifications '3V, 3W' and '6V, 6W' respectively. A conductor rod ab with resistance r = 1 Ω is placed on the rails and is perpendicular to them. A uniform magnetic field with magnetic induction B = 1 T passes vertically through the plane of the rails. When the conductor rod moves to the right at a constant speed under the action of an external force, lamp L1 just lights up normally. The resistance of the rails is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The actual power P2 of the lamp L2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that lamp L1 lights up normally, its voltage is 3V.",
+    "conclusion": "Since the voltage across the rod is the sum of the voltages across L1 and L2, and the total voltage across the rod is V, we have: V = 3V + P2 / I",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I can be calculated using Ohm's law: I = V / (r + R1 + R2)",
+    "conclusion": "Since the power of L1 is 3W and its voltage is 3V, its resistance is: R1 = 3V / 3W = 1Ω",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Similarly, the resistance of L2 is: R2 = 6V / 6W = 1Ω",
+    "conclusion": "Substituting these values into the equation for I, we get: I = V / (1Ω + 1Ω + 1Ω) = V / 3Ω",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting this value of I into the equation for V, we get: V = 3V + P2 / (V / 3Ω)",
+    "conclusion": "Simplifying this equation, we get: V^2 = 9V + 3P2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the voltage across the rod is also equal to the induced emf, we have: V = Blv",
+    "conclusion": "Substituting this value of V into the equation for V^2, we get: (Blv)^2 = 9Blv + 3P2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying this equation, we get: B^2l^2v^2 = 9B^2lv + 3P2",
+    "conclusion": "Since the velocity of the rod is constant, we can divide both sides of the equation by B^2lv to get: lv = 9 + 3P2 / (B^2l^2v)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solving for P2, we get: P2 = (B^2l^2v^2 - 9B^2lv) / 3",
+    "conclusion": "Substituting the given values of B, l, and v, we get: P2 = (1T^2 * 0.6m^2 * v^2 - 9 * 1T^2 * 0.6m * v) / 3",
+    "judgment": "Wrong"
+  }]

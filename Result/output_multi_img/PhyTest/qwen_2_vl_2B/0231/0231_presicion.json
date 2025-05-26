@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a trapezoidal wire frame with resistivity ρ, cross-sectional area S, and side lengths ab = bc = cd = L. The frame is connected to a power source with electromotive force E and negligible internal resistance. A uniform magnetic field B is perpendicular to the plane of the frame and directed horizontally inward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The goal is to find the magnitude and direction of the resultant Ampere force acting on the frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The trapezoidal frame has sides ab, bc, and cd of equal length L, and side ad is longer. Sides ab and cd form a 60° angle with side ad. The frame is connected to a power source at points a and d, and the magnetic field is represented by inward-pointing crosses.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of the circuit abcd is 3r, and the length of segment ad is 2L.",
+    "conclusion": "The resistance of segment ad is 2r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance of the circuit is 3r, and the electromotive force is E.",
+    "conclusion": "The current in the circuit abcd is I₁ = E / 3r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of segment ad is 2r, and the electromotive force is E.",
+    "conclusion": "The current in segment ad is I₂ = E / 2r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is perpendicular to the plane of the frame, and the current in segment ab is I₁ = E / 3r.",
+    "conclusion": "The Ampere force on segment ab is F₁ = B * I₁ * L = (B * E * L) / (3r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is perpendicular to the plane of the frame, and the current in segment bc is I₁ = E / 3r.",
+    "conclusion": "The Ampere force on segment bc is F₂ = B * I₁ * L = (B * E * L) / (3r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is perpendicular to the plane of the frame, and the current in segment cd is I₁ = E / 3r.",
+    "conclusion": "The Ampere force on segment cd is F₃ = B * I₁ * L = (B * E * L) / (3r).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is perpendicular to the plane of the frame, and the current in segment ad is I₂ = E / 2r.",
+    "conclusion": "The Ampere force on segment ad is F₄ = B * I₂ * 2L = (B * E * L) / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces F₁ and F₃ act on segments ab and cd, respectively, and are equal in magnitude but opposite in direction along the left-right axis.",
+    "conclusion": "The left-right components of F₁ and F₃ cancel each other out.",
+    "judgment": "Match"
+  }]

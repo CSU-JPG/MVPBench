@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism has an equilateral triangular cross-section (all angles = 60°).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Incident angle α = 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index for red light is n = √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law at the first interface: n_1 sin(α) = n_2 sin(r_1), where n_1 = 1, n_2 = √3, α = 60°.",
+    "conclusion": "Solving for r_1: sin(r_1) = 1/2, therefore, r_1 = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The internal angle of the prism is 60°, and the refracted ray makes an angle of 30° with the normal to the first interface.",
+    "conclusion": "The angle of incidence at the second interface is α_2 = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's law at the second interface: n_2 sin(α_2) = n_1 sin(r_2), where n_2 = √3, n_1 = 1, α_2 = 30°.",
+    "conclusion": "Solving for r_2: sin(r_2) = √3/2, therefore, r_2 = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of deviation (δ) is the angle between the incident and emergent rays. δ = α + r_2 - 60°.",
+    "conclusion": "The angle of deviation is δ = 60°.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

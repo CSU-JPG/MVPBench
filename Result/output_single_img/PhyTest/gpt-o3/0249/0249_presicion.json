@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let the square lie in the y–z plane (the plane of the paper).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The axis OO′ is the z-axis (vertical, in the plane of the coil).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Side ab is parallel to the z-axis and situated at y = –L⁄4; side cd is parallel to the z-axis at y = –L⁄4 + L = 3L⁄4.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The uniform magnetic field B is along the +y direction (→).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A rigid body that rotates with constant angular speed ω about the z-axis has, at position vector r, a linear velocity v = ω k × r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For any point of the coil, r = (0, y, 0); hence v = ω k × r.",
+    "conclusion": "v = –ωy i (directed perpendicular to the page).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The motional electric field in a conductor is E = v × B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "With v = –ωy i and B = +B j, E = v × B.",
+    "conclusion": "E = ( –ωy i ) × ( B j ) = –ωyB k (along ±z).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Only the two vertical sides (ab and cd) contribute, because on the horizontal sides dl is along y while E is along z (E·dl = 0 there).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Side ab (y = –L⁄4, length L, dl along +z): ε_ab = ∫ E·dl = (ωB|y|)L.",
+    "conclusion": "ε_ab = ωB(L⁄4)L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Side cd (y = 3L⁄4, length L, dl along –z, E along –z): ε_cd = (ωB|y|)L.",
+    "conclusion": "ε_cd = ωB(3L⁄4)L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε = ε_ab + ε_cd = ωB L (|y_ab| + |y_cd|).",
+    "conclusion": "ε = ωB L (L⁄4 + 3L⁄4) = ωB L².",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ε_single-turn = ωB L².",
+    "conclusion": "ε_N = NωB L².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The result is independent of time (the same magnitude and polarity at every instant), so the instantaneous emf is constant.",
+    "conclusion": "ε_rms = ε_peak = N ω B L².",
+    "judgment": "Reasonable"
+  }]

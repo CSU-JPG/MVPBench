@@ -1,0 +1,47 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine both the instantaneous value of the induced current when the wire frame rotates through an angle of 60° and the average value of the induced electromotive force (EMF) during this process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The instantaneous EMF in a rotating coil can be given by the formula: \\( \\mathcal{E}(t) = B S \\omega \\sin(\\theta) \\) where \\( \\theta \\) is the angle between the normal to the coil and the magnetic field direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initially, the normal to the coil is perpendicular to the magnetic field (\\( \\theta = 90^\\circ \\) or \\( \\pi/2 \\)), and as it rotates, \\( \\theta \\) changes.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At 60° rotation, the angle \\( \\theta \\) between the normal to the coil and the magnetic field is: \\( \\theta = 90^\\circ - 60^\\circ = 30^\\circ \\).",
+    "conclusion": "\\( \\sin(30^\\circ) = \\frac{1}{2} \\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The instantaneous EMF at 60° rotation is: \\( \\mathcal{E}(t) = B S \\omega \\sin(30^\\circ) = B S \\omega \\cdot \\frac{1}{2} = \\frac{1}{2} B S \\omega \\).",
+    "conclusion": "The instantaneous current \\( I \\) is given by Ohm's law: \\( I = \\frac{\\mathcal{E}}{R} = \\frac{\\frac{1}{2} B S \\omega}{R} = \\frac{B S \\omega}{2 R} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The average EMF over one complete cycle for a sinusoidal function is zero, but for the specific interval from 0° to 60°, we use the formula for the average value of a function: \\( \\langle \\mathcal{E} \\rangle = \\frac{1}{\\Delta t} \\int_0^{\\Delta t} \\mathcal{E}(t) dt \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Here, \\( \\Delta t \\) is the time taken to rotate 60°. Since \\( \\omega = \\frac{d\\theta}{dt} \\), the time \\( \\Delta t \\) to rotate 60° is: \\( \\Delta t = \\frac{60^\\circ}{\\omega} \\cdot \\frac{2\\pi}{360^\\circ} = \\frac{\\pi}{3 \\omega} \\).",
+    "conclusion": "The average EMF is: \\( \\langle \\mathcal{E} \\rangle = \\frac{1}{\\Delta t} \\int_0^{60^\\circ} B S \\omega \\sin(\\theta) \\frac{d\\theta}{\\omega} = \\frac{3 \\omega}{\\pi} \\int_0^{60^\\circ} B S \\sin(\\theta) d\\theta \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\( \\langle \\mathcal{E} \\rangle = \\frac{3 B S \\omega}{\\pi} \\left[ -\\cos(\\theta) \\right]_0^{60^\\circ} = \\frac{3 B S \\omega}{\\pi} \\left( -\\cos(60^\\circ) + \\cos(0) \\right) \\).",
+    "conclusion": "\\( \\langle \\mathcal{E} \\rangle = \\frac{3 B S \\omega}{\\pi} \\left(\right) -\\frac{1}{2}\\)"}]

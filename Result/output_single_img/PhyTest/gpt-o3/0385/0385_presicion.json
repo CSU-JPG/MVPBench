@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The two rods and the rails form one closed circuit because the rails are perfect conductors (resistance ≈ 0) and each rod has resistance R=0.1Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The two rods and the rails form one closed circuit.",
+    "conclusion": "Total circuit resistance Rtot=Ra+Rb=0.2Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rods are moving on the same pair of rails in the same uniform field B.",
+    "conclusion": "The motional emfs are Ea=BLva, Eb=BLvb.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motional emfs are Ea=BLva, Eb=BLvb.",
+    "conclusion": "The net emf that drives the circuit is the difference of the two, so the instantaneous current is I=(Ea−Eb)/Rtot=BL(va−vb)/0.2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The instantaneous current is I=(Ea−Eb)/Rtot=BL(va−vb)/0.2.",
+    "conclusion": "Each rod experiences a magnetic force FB=IBL=B²L²/0.2(va−vb)≡k′(va−vb), k′=B²L²/0.2=0.05 N·s m−1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each rod experiences a magnetic force FB=IBL=B²L²/0.2(va−vb)≡k′(va−vb), k′=B²L²/0.2=0.05 N·s m−1.",
+    "conclusion": "On rod a the force is opposite to va: FBa=−k′(va−vb).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each rod experiences a magnetic force FB=IBL=B²L²/0.2(va−vb)≡k′(va−vb), k′=B²L²/0.2=0.05 N·s m−1.",
+    "conclusion": "On rod b it is equal and opposite: FBb=+k′(va−vb).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The two magnetic forces are an internal action–reaction pair.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pulling force on a is +F=+2N.",
+    "conclusion": "Gravity components (down-slope) on a and b: −(ma+mb)gsinθ=−(0.3+0.1)(10)(1/2)=−2 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pulling force on a is +F=+2N and gravity components on a and b are −(ma+mb)gsinθ=−2 N.",
+    "conclusion": "The net external force on the system is zero at every instant: F−(ma+mb)gsinθ=2N−2N=0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total external impulse is zero, so the momentum along the rail is conserved.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total external impulse is zero, so the momentum along the rail is conserved.",
+    "conclusion": "Starting from rest, mava+mbvb=0 ⟹ vb=−mambva=−0.30/0.10(1.0 m s−1)=−3.0 m s−1.",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a circular wooden board with a radius \\( r \\), a point light source \\( S \\) located at a depth \\( H = \\sqrt{3}r \\) below the center of the board, and a liquid with a refractive index \\( n = \\sqrt{2} \\). The task is to determine how much the point source \\( S \\) should be moved vertically upward so that the light emitted from \\( S \\) is just not visible above the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle is the angle at which light undergoes total internal reflection and does not emerge above the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The relationship between the refractive index \\( n \\), the angle of incidence \\( \\theta \\), and the critical angle \\( C \\) is given by \\( \\sin(C) = \\frac{1}{n} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refractive index \\( n = \\sqrt{2} \\).",
+    "conclusion": "The critical angle \\( C \\) is given by \\( \\sin(C) = \\frac{1}{\\sqrt{2}} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\( C \\) satisfies \\( \\sin(C) = \\frac{1}{\\sqrt{2}} \\).",
+    "conclusion": "The critical angle \\( C = \\sin^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light is just not visible above the water surface when the angle of incidence \\( \\theta \\) equals the critical angle \\( C \\).",
+    "conclusion": "The angle of incidence \\( \\theta \\) must be equal to \\( \\sin^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light is just not visible above the water surface when the angle of incidence \\( \\theta \\) equals the critical angle \\( C \\).",
+    "conclusion": "The distance \\( h \\) to move the light source upward must be calculated such that the angle of incidence equals the critical angle.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The initial depth of the light source is \\( H = \\sqrt{3}r \\).",
+    "conclusion": "The new height \\( H' \\) of the light source after moving it upward is \\( H' = H - h \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The new height \\( H' \\) of the light source is \\( H' = H - h \\), and the light is just not visible when the angle of incidence equals the critical angle.",
+    "conclusion": "The distance \\( h \\) to move the light source upward is determined by solving \\( h = H - H' \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\( C = \\sin^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right) \\), and the initial depth of the light source is \\( H = \\sqrt{3}r \\).",
+    "conclusion": "The light source must be moved upward by \\( 0.73r \\) for the light to be just not visible above the water surface.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

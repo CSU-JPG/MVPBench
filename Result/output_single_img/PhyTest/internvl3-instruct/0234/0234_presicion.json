@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The loop is an equilateral triangle with side length \\(a\\). The magnetic field \\(B\\) is uniform and perpendicular to the plane of the loop. The loop moves to the right with a constant velocity \\(v\\). We are interested in the EMF induced from the moment point \\(D\\) reaches the boundary \\(MN\\) until point \\(C\\) enters the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF in a loop is given by Faraday's Law of Induction: \\(\\mathcal{E} = -\\frac{d\\Phi_B}{dt}\\) where \\(\\Phi_B\\) is the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux \\(\\Phi_B\\) through the loop is given by: \\(\\Phi_B = B \\cdot A \\cdot \\cos(\\theta)\\) where \\(A\\) is the area of the loop and \\(\\theta\\) is the angle between the magnetic field and the normal to the loop. Since the magnetic field is perpendicular to the plane of the loop, \\(\\theta = 0\\) and \\(\\cos(\\theta) = 1\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The area \\(A\\) of the equilateral triangle is: \\(A = \\frac{\\sqrt{3}}{4}a^2\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is the rate of change of the magnetic flux: \\(\\mathcal{E} = -\\frac{d}{dt}(B \\cdot A) = -B \\cdot \\frac{dA}{dt}\\). Since \\(B\\) is constant, the EMF depends on the rate of change of the area of the loop that is in the magnetic field.",
+    "conclusion": "The EMF depends on the rate of change of the area of the loop in the magnetic field.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the loop moves into the magnetic field, the area of the loop in the magnetic field increases. The rate of change of this area is proportional to the velocity \\(v\\) and the length of the side of the triangle that is entering the field, which is \\(a\\).",
+    "conclusion": "The rate of change of area is proportional to \\(v\\) and \\(a\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum EMF occurs when the entire side \\(CD\\) is in the magnetic field, which is when the loop is halfway through the magnetic field. At this point, the rate of change of the area is maximum.",
+    "conclusion": "The maximum EMF occurs when the loop is halfway through the magnetic field.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At maximum EMF, the rate of change of the area is maximum, and the EMF is: \\(\\mathcal{E}_{\\text{max}} = B \\cdot a \\cdot v\\).",
+    "conclusion": "The maximum value of the induced electromotive force during the process is: \\(\\mathcal{E}_{\\text{max}} = B \\cdot a \\cdot v\\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

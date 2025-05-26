@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Liquid flows out from three sources labeled A, B, and C, and there are baffles in the middle of the setup that direct the flow of liquid. At the bottom, there are two containers labeled D (orange) and E (pink).",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid from A flows downward and hits the brown baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from A flows downward and hits the brown baffle.",
+    "conclusion": "The brown baffle directs the liquid to the left.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The brown baffle directs the liquid to the left.",
+    "conclusion": "The liquid continues downward and enters Container D.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid from B flows downward and hits the cyan baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from B flows downward and hits the cyan baffle.",
+    "conclusion": "The cyan baffle directs the liquid to the right.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The cyan baffle directs the liquid to the right.",
+    "conclusion": "The liquid continues downward and enters Container E.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Liquid from C flows downward and hits the orange baffle.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Liquid from C flows downward and hits the orange baffle.",
+    "conclusion": "The orange baffle directs the liquid to the right.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The orange baffle directs the liquid to the right.",
+    "conclusion": "The liquid continues downward and enters Container E.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Container D receives liquid only from A. Container E receives liquid from both B and C.",
+    "conclusion": "Most of the liquids from A, B, and C all flow to the bottom compartment E, and few small droplets reach D.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

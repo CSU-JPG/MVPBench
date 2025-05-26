@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the length of PM, we will use Snell's Law and some trigonometry.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Identify the known quantities and variables: Angle of incidence α = 37°, Refractive index n = 4/3, Width L, Length 2L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(α) = n2 sin(θ), n1 = 1, n2 = 4/3",
+    "conclusion": "1 * sin(37°) = (4/3) * sin(θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(37°) = 3/5",
+    "conclusion": "3/5 = (4/3) * sin(θ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "3/5 = (4/3) * sin(θ)",
+    "conclusion": "sin(θ) = 9/20",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(θ) = 9/20",
+    "conclusion": "θ = sin^(-1)(9/20)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical distance from P to the opposite side is L.",
+    "conclusion": "Use tan(θ) = L/x to find horizontal distance x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ) = sin(θ)/cos(θ)",
+    "conclusion": "tan(θ) = (9/20)/sqrt(1 - (9/20)^2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan(θ) = 9/sqrt(319)",
+    "conclusion": "x = L/(9/sqrt(319)) = L * sqrt(319)/9",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total horizontal distance 2L includes distance from P to M.",
+    "conclusion": "x = 2L - L = L",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "PM = sqrt(L^2 + (L * sqrt(319)/9)^2)",
+    "conclusion": "PM = L * sqrt(400/81) = L * 20/9",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Final calculation of PM",
+    "conclusion": "PM = 20L/9",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

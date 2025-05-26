@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "Two harmonic transverse waves propagate along the positive and negative directions of the x-axis, respectively. The wave sources are located at x = -0.2 m and x = 1.2 m, with both waves having a wave speed of 0.4 m/s and an amplitude of 2 m. The particles P and Q are at equilibrium positions x = 0.2 m and x = 0.8 m, respectively, and just begin to vibrate at t = 0. The equilibrium position of particle M is located at x = 0.5 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "The figure shows two waves propagating in opposite directions. The left wave originates at x = -0.2 m and propagates to the right, while the right wave originates at x = 1.2 m and propagates to the left. The wavefront of the left wave is at point P (x = 0.2 m), and the wavefront of the right wave is at point Q (x = 0.8 m).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The wave speed is given as 0.4 m/s, and the amplitude of the waves is 2 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wave speed is 0.4 m/s.",
+    "conclusion": "The wave period T is given by T = 1/v, where v is the wave speed. For both waves, T = 1/0.4 = 2.5 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The left wave originates at x = -0.2 m and propagates to the right. The right wave originates at x = 1.2 m and propagates to the left.",
+    "conclusion": "At t = 0, the left wave reaches x = 0.2 m (point P), and the right wave reaches x = 0.8 m (point Q).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wavefront of the left wave is at point P (x = 0.2 m), and the wavefront of the right wave is at point Q (x = 0.8 m).",
+    "conclusion": "Let the two wavefronts meet at the point with coordinate x = x₀. The distance traveled by the left wave is x₀ - x_P = vt, and the distance traveled by the right wave is x_Q - x₀ = vt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The distances traveled by the waves are x₀ - x_P = vt and x_Q - x₀ = vt.",
+    "conclusion": "Adding the two equations gives x_Q - x_P = 2vt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x_Q - x_P = 2vt, where x_P = 0.2 m, x_Q = 0.8 m, and v = 0.4 m/s.",
+    "conclusion": "t = (x_Q - x_P) / (2v) = (0.8 - 0.2) / (2 * 0.4) = 0.75 s.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

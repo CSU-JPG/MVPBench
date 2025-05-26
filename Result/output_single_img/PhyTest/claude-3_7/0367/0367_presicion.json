@@ -1,0 +1,83 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a basketball of mass $m$ dropped from height $H$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After collision with the ground, it reaches maximum height $h$ (where $h < H$)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Air resistance is $\\lambda$ times the gravitational force, where $0 < \\lambda < \\frac{H-h}{H+h}$",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ratio of post-collision to pre-collision velocity is constant for each collision",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find this ratio",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Gravitational force downward: $F_g = mg$, Air resistance upward: $F_r = \\lambda mg$",
+    "conclusion": "Net force downward: $F_{net} = mg - \\lambda mg = mg(1-\\lambda)$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force downward: $F_{net} = mg(1-\\lambda)$",
+    "conclusion": "Effective acceleration: $a_{eff} = g(1-\\lambda)$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Effective acceleration: $a_{eff} = g(1-\\lambda)$",
+    "conclusion": "Velocity just before impact: $v_{pre} = \\sqrt{2g(1-\\lambda)H}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Post-collision velocity $v_{post}$, Gravitational force downward: $F_g = mg$, Air resistance downward: $F_r = \\lambda mg$",
+    "conclusion": "Net force downward: $F_{net} = mg + \\lambda mg = mg(1+\\lambda)$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Net force downward: $F_{net} = mg(1+\\lambda)$",
+    "conclusion": "Effective acceleration downward: $a_{eff} = g(1+\\lambda)$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Effective acceleration downward: $a_{eff} = g(1+\\lambda)$, final velocity = 0 at maximum height",
+    "conclusion": "Post-collision velocity: $v_{post} = \\sqrt{2g(1+\\lambda)h}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Post-collision velocity: $v_{post} = \\sqrt{2g(1+\\lambda)h}$, Pre-collision velocity: $v_{pre} = \\sqrt{2g(1-\\lambda)H}$",
+    "conclusion": "Ratio: $\\frac{v_{post}}{v_{pre}} = \\sqrt{\\frac{(1+\\lambda)h}{(1-\\lambda)H}}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ratio: $e = \\sqrt{\\frac{(1+\\lambda)h}{(1-\\lambda)H}}$",
+    "conclusion": "Express $h$ in terms of $H$, $\\lambda$, and $e$: $h = \\frac{e^2(1-\\lambda)H}{1+\\lambda}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Constraint: $0 < \\lambda < \\frac{H-h}{H+h}$",
+    "conclusion": "Substitute expression for $h$: $\\lambda < \\frac{H - \\frac{e^2(1-\\lambda)H}{1+\\lambda}}"}]

@@ -1,0 +1,71 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block P has mass m, Block Q has mass 4m, Initial velocity of P is v_0 up the incline, Initial velocity of Q is 0 (at rest), Incline angle is θ, Coefficient of kinetic friction between Q and incline is tanθ, No friction between P and incline, Collision between P and Q is elastic, Blocks can be treated as point masses.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an elastic collision, we use conservation of momentum and conservation of kinetic energy.",
+    "conclusion": "Conservation of momentum: m v_0 + 4m * 0 = m v_{P_1} + 4m v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Conservation of kinetic energy: 1/2 m v_0^2 + 1/2 * 4m * 0^2 = 1/2 m v_{P_1}^2 + 1/2 * 4m v_{Q_1}^2",
+    "conclusion": "v_0^2 = v_{P_1}^2 + 4v_{Q_1}^2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplifying the conservation of momentum equation: m v_0 = m v_{P_1} + 4m v_{Q_1}",
+    "conclusion": "v_0 = v_{P_1} + 4v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For elastic collisions, the relative velocity after collision equals the negative of the relative velocity before collision.",
+    "conclusion": "v_{P_1} - v_{Q_1} = -v_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From v_{P_1} - v_{Q_1} = -v_0",
+    "conclusion": "v_{P_1} = v_{Q_1} - v_0",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute v_{P_1} = v_{Q_1} - v_0 into v_0 = v_{P_1} + 4v_{Q_1}",
+    "conclusion": "v_0 = (v_{Q_1} - v_0) + 4v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0 = (v_{Q_1} - v_0) + 4v_{Q_1}",
+    "conclusion": "v_0 = v_{Q_1} - v_0 + 4v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_0 = v_{Q_1} - v_0 + 4v_{Q_1}",
+    "conclusion": "2v_0 = 5v_{Q_1}",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2v_0 = 5v_{Q_1}",
+    "conclusion": "v_{Q_1} = 2v_0/5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v_{Q_1} = 2v_0/5",
+    "conclusion": "v_{P_1} = v_{Q_1} - v_0 = 2v_0/5 - v_0 = (2v_0 - 5v_0)/5 = -3v_0/5",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The negative sign indicates that P moves in the opposite direction (down the incline) after the collision.",
+    "conclusion": "The magnitudes of the velocities of P and Q immediately after the first collision are: v_{P_1}"}]

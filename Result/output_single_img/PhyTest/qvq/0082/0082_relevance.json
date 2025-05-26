@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Several identical small steel balls are released every 0.1 seconds without initial velocity on an inclined plane.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "A photograph captures multiple balls at different positions on the incline with AB = 15 cm and BC = 20 cm.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The scale of the photograph is 1:1 with the actual object.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "The task is to find out how many small steel balls are rolling on top of ball A.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Balls are released at regular intervals of 0.1 seconds and roll down the inclined plane under gravity.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Their positions depend on the time since release and the acceleration due to gravity component along the incline.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Distance traveled by an object starting from rest and accelerating uniformly is given by s = 1/2 a t^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Time differences between consecutive balls are 0.1 seconds apart.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Assume ball A was released first, then B, then C.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Time since release of ball B is t - 0.1 seconds, and for ball C, it's t - 0.2 seconds.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Positions of balls can be expressed as s_a = 1/2 a t^2, s_b = 1/2 a (t - 0.1)^2, s_c = 1/2 a (t - 0.2)^2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Using given distances, s_a - s_b = 15 cm and s_b - s_c = 20 cm.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Plug in expressions for s_a, s_b, and s_c: 1/2 a t^2 - 1/2 a (t - 0.1)^2 = 15 and 1/2 a (t - 0.1)^2 - 1/2 a (t - 0.2)^2 = 20.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Factor out 1/2 a: 1/2 a (t^2 - (t - 0.1)^2) = 15 and 1/2 a ((t - 0.1)^2 - (t - 0.2)^2) = 20.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Expand the squares: t^2 - (t^2 - 0.2 t + 0.01) = 0.2 t - 0.01 and (t - 0.1)^2 - (t - 0.2)^2 = 0.2 t - 0.03.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Equations become: 1/2 a (0.2 t - 0.01) = 15 and 1/2 a (0.2 t - 0.03) = 20.",
+    "relevant": "Yes"
+  }]

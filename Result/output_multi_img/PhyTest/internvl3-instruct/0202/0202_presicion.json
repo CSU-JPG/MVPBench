@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the total Ampere force acting on the entire wire frame, given the force acting on the straight part of the wire frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The wire frame consists of a straight part between points M and N and a semi-circular part with radius r connecting points M and N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The total wire frame is in a uniform magnetic field, and the plane of the frame is perpendicular to the magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The force on the straight part (F_straight) is given by the Ampere force formula: F = I L B.",
+    "conclusion": "Given that the force on the straight part is F, we have: F = I (2r) B where 2r is the length of the straight part.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the semi-circular part, the effective length L_arc can be considered as the arc length of the semi-circle, which is: L_arc = π r.",
+    "conclusion": "The force on the semi-circular part (F_arc) is: F_arc = I (π r) B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force (F_total) is the sum of the force on the straight part and the force on the semi-circular part.",
+    "conclusion": "F_total = F_straight + F_arc = I (2r) B + I (π r) B = I r B (2 + π).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We are given that the force on the straight part (F) is: F = I (2r) B.",
+    "conclusion": "Thus, I (2r) B = F. Substitute this into the expression for F_total: F_total = F + I (π r) B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_total = F + I (π r) B.",
+    "conclusion": "F_total = F + (F π / 2) = F (1 + π / 2).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

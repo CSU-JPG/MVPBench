@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Objects A and B are in a state of rest. Object A has a mass of 5 kg, and object B has a mass of 10 kg. OB is horizontal, and OP makes an angle of 45° with the vertical. The goal is to determine the tensions in the ropes OP, OA, and OB.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Object A is suspended by rope OA. Object B is on the ground and connected to rope OB. Rope OP is inclined at 45° with the vertical.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The weight of an object is calculated as mass × gravitational acceleration (g = 10 m/s²).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A has a mass of 5 kg. g = 10 m/s².",
+    "conclusion": "The weight of object A is 50 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object B has a mass of 10 kg. g = 10 m/s².",
+    "conclusion": "The weight of object B is 100 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The tension in rope OP is T_OP. The tension in rope OA is T_OA. The tension in rope OB is T_OB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object A is in equilibrium. Forces acting on A include its weight (50 N downward), tension T_OA at an angle θ with the vertical, and tension T_OP at an angle 45° with the vertical.",
+    "conclusion": "The vertical and horizontal components of the forces on A must balance.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical equilibrium for object A: T_OA cos θ = m_A g = 50 N.",
+    "conclusion": "T_OA cos θ = 50.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal equilibrium for object A: T_OA sin θ = T_OP sin 45°.",
+    "conclusion": "T_OA sin θ = T_OP × (√2 / 2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Object B is in equilibrium. Forces acting on B include its weight (100 N to the right) and tension T_OB to the left.",
+    "conclusion": "The horizontal components of the forces on B must balance: T_OB = m_B g = 100 N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Vertical equilibrium for object A: T_OA cos θ = 50.",
+    "conclusion": "T_OA = 50 / cos θ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Horizontal equilibrium for object A: T_OA sin θ = T_OP × (√2 / 2).",
+    "conclusion": "T_OP = (T_OA sin θ) / (√2 / 2).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_OA = 50 / cos θ and T_OP = (T_OA sin θ) / (√2 / 2).",
+    "conclusion": "T_OP = (50 sin θ) / (√2 cos θ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_OP = (50 sin θ) / (√2 cos θ).",
+    "conclusion": "T_OP = 50√2 when θ = 45°.",
+    "judgment": "Match"
+  }]

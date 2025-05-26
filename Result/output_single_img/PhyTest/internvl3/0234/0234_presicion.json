@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The loop is an equilateral triangle with side length \\(a\\). The magnetic field \\(B\\) is uniform and perpendicular to the plane of the loop. The loop moves with a constant velocity \\(v\\) to the right. We need to find the maximum induced EMF from the moment point \\(D\\) reaches the boundary \\(MN\\) until point \\(C\\) enters the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF in a loop is given by Faraday's Law: \\(\\mathcal{E} = -\\frac{d\\Phi_B}{dt}\\) where \\(\\Phi_B\\) is the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux \\(\\Phi_B\\) through the loop is: \\(\\Phi_B = B \\cdot A \\cdot \\cos(\\theta)\\) where \\(A\\) is the area of the loop inside the magnetic field, and \\(\\theta\\) is the angle between the magnetic field and the normal to the loop. Since the magnetic field is perpendicular to the plane of the loop, \\(\\theta = 0\\) and \\(\\cos(\\theta) = 1\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of an equilateral triangle is: \\(A = \\frac{\\sqrt{3}}{4}a^2\\).",
+    "conclusion": "When half of the loop is inside the field, the area inside the field is: \\(A_{\\text{inside}} = \\frac{\\sqrt{3}}{8}a^2\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of the magnetic flux is: \\(\\frac{d\\Phi_B}{dt} = B \\cdot \\frac{dA_{\\text{inside}}}{dt}\\).",
+    "conclusion": "The area inside the field increases at a rate proportional to the velocity \\(v\\) of the loop. The rate of change of the area is: \\(\\frac{dA_{\\text{inside}}}{dt} = v \\cdot \\frac{a}{2}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the values into Faraday's Law: \\(\\mathcal{E} = -B \\cdot v \\cdot \\frac{a}{2}\\).",
+    "conclusion": "The negative sign indicates the direction of the induced EMF according to Lenz's Law, but we are interested in the magnitude.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum induced EMF occurs when the rate of change of the area is maximum, which is when the entire side \\(CD\\) is entering the field.",
+    "conclusion": "The maximum induced EMF is: \\(\\mathcal{E}_{\\text{max}} = B \\cdot v \\cdot \\frac{a}{2}\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the formula \\(E = BLv\\) for the induced electromotive force generated when a conductor cuts magnetic-induction lines, the effective cutting length is \\(\\frac{\\sqrt{3}}{2}a\\).",
+    "conclusion": "The maximum value of the induced electromotive force is \\(\\frac{\\sqrt{3}}{2}Bav\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

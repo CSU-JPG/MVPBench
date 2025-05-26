@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A plank of length L = 0.60 m and mass M = 0.40 kg is leaning against a smooth vertical wall. A block of mass m = 0.80 kg is at the lower right end of the plank. Force F₁ is applied horizontally to the left on the block, and force F₂ is applied vertically upward on the plank. The coefficient of friction μ = 0.20 between the block and plank. Gravity g = 10 m/s².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The plank is leaning against a smooth vertical wall, and a block is at the lower right end of the plank. Force F₁ is applied horizontally to the left on the block, and force F₂ is applied vertically upward on the plank.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The wall is smooth (frictionless).",
+    "conclusion": "There is no resistance to the plank's upward motion along the wall.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Coordinate system is set with x-axis horizontal (positive to the right) and y-axis vertical (positive upward).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Forces on the block: Weight mg downward, Force F₁ to the left, Normal force N from the plank perpendicular to the plank, Frictional force f parallel to the plank.",
+    "conclusion": "The normal force must be perpendicular to the plank for the block to move up the plank.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force acts at angle θ from the vertical.",
+    "conclusion": "The components of the normal force are N·sin(θ) in the x-direction and N·cos(θ) in the y-direction.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the block to remain on the plank, the normal force must balance forces perpendicular to the plank.",
+    "conclusion": "N = mg·cos(θ) + F₁·sin(θ)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum static friction is equal to the kinetic friction: f = μN.",
+    "conclusion": "f = μ(mg·cos(θ) + F₁·sin(θ))",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the plank to move upward, the upward force must overcome the combined weight of the plank and block, plus any downward component of F₁.",
+    "conclusion": "F₂ + f·sin(θ) − Mg − mg + F₁·cos(θ) > 0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting for f: F₂ + μ(mg·cos(θ) + F₁·sin(θ))·sin(θ) − Mg − mg + F₁·cos(θ) > 0",
+    "conclusion": "F₂ + μ(mg·cos(θ) + F₁·sin(θ))·sin(θ) − Mg − mg + F₁·cos(θ) > 0",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The plank has length L = 0.60 m and is leaning against the wall.",
+    "conclusion": "θ = tan⁻¹(L/L) = tan⁻¹(1) = 45°",
+    "judgment": "Reasonable"
+  }]

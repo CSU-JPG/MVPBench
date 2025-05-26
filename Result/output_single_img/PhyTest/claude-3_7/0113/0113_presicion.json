@@ -1,0 +1,99 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Four identical wooden blocks (A, B, C, D) are on a smooth horizontal surface, blocks B and C are connected by a spring, and a force F is applied to block B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "All blocks accelerate together with the same acceleration a.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The surface is smooth (no friction with the surface).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the static friction force on block D.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "All blocks accelerate together with the same acceleration a.",
+    "conclusion": "Blocks C and D must remain in contact, and blocks A and B must remain in contact.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block B has forces acting: F (pulling force), spring force (to the left), and possibly contact force from block A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block B has forces acting: F (pulling force), spring force (to the left), and possibly contact force from block A.",
+    "conclusion": "Equation for block B: F - F_spring = m·a.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block C has forces acting: F_spring (to the right), and static friction from block D.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block C has forces acting: F_spring (to the right), and static friction from block D.",
+    "conclusion": "Equation for block C: F_spring - F_frictionDC = m·a.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block D has forces acting: Static friction from block C.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block D has forces acting: Static friction from block C.",
+    "conclusion": "Equation for block D: F_frictionDC = m·a.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Block A has forces acting: Contact force from block B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Block A has forces acting: Contact force from block B.",
+    "conclusion": "Equation for block A: F_contactBA = m·a.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total external force on the system is F, and the total mass is 4m.",
+    "conclusion": "F = 4m·a, which means a = F/(4m).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation for block D: F_frictionDC = m·a and a = F/(4m).",
+    "conclusion": "F_frictionDC = m·F/(4m) = F/4.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_frictionDC = F/4.",
+    "conclusion": "The static friction force acting on block D is F/4.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

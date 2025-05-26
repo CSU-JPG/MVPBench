@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A wire is folded into a closed equilateral triangle loop with a side length of a. To the right of the dotted line MN, there is a uniform magnetic field with a magnetic induction intensity of B, perpendicular to the plane of the loop. The loop enters the magnetic field uniformly at a speed of v to the right, and the side CD is always perpendicular to MN.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image depicts a folded wire equilateral triangle loop, labeled as CDE, moving into a uniform magnetic field. The magnetic induction intensity is B, and the field is perpendicular to the plane of the loop. The loop enters the field at a speed v. The side CD remains perpendicular to the dotted line MN.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The loop is an equilateral triangle with side length a.",
+    "conclusion": "The area S of the triangle loop can be calculated using the formula for the area of a triangle: S = (sqrt(3)/4) a^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced electromotive force E is given by Faraday's law: E = -dΦB/dt.",
+    "conclusion": "Here, ΦB = BS is the magnetic flux through the loop.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΦB = BS is the magnetic flux through the loop.",
+    "conclusion": "The rate of change of the magnetic flux is: dΦB/dt = B dS/dt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The loop is moving with a constant speed v to the right.",
+    "conclusion": "The area change rate is: dS/dt = (sqrt(3)/4) a v.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦB/dt = B dS/dt and dS/dt = (sqrt(3)/4) a v.",
+    "conclusion": "Substitute the rate of change of area into the expression for the induced electromotive force: E = B (sqrt(3)/4) a v.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The effective cutting length is the red-colored line, and the maximum length is (sqrt(3)/2)a.",
+    "conclusion": "According to the formula E = BLv for the induced electromotive force generated when a conductor cuts magnetic-induction lines, we have (sqrt(3)/2)Bav.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

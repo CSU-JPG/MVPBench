@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle starts from rest at point A and exits the field at point C with a speed v0. The angle θ = 60° between AC and AB. The electric field is uniform and directed along the diameter AB.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AB is the diameter of the circle, the length AB = 2R.",
+    "conclusion": "The distance AC can be found using the geometry of the circle. In a circle, if θ = 60°, then the chord AC forms an equilateral triangle with the radius OA and OC. Therefore, AC = R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The work done by the electric field on the particle is equal to the change in kinetic energy of the particle. The initial kinetic energy of the particle is zero since it starts from rest. The final kinetic energy of the particle is 1/2 mv0^2.",
+    "conclusion": "The work done by the electric field is W = qE ⋅ d, where d is the component of the distance AC along the direction of the electric field.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The component of AC along AB is R cos 60° = R ⋅ 1/2 = R/2.",
+    "conclusion": "Set up the equation for the work done: qE ⋅ R/2 = 1/2 mv0^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "qE ⋅ R/2 = 1/2 mv0^2.",
+    "conclusion": "Solving for E: E = mv0^2 / qR.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

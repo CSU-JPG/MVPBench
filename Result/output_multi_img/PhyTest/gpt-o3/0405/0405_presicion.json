@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A transparent semi-cylindrical body has a refractive index n = 2, radius R, and length L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Parallel light beams enter vertically through the rectangular surface of the semi-cylindrical body.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Some light exits through the curved surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light enters the flat top surface normally (the light is vertical), so it is not refracted at entry.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the flat top surface normally.",
+    "conclusion": "Inside the material, the ray travels straight downward until it strikes the semicircular cylindrical surface.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let θ be the polar angle (measured from the vertical diameter) at which the ray meets the curved surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ray meets the curved surface at angle θ.",
+    "conclusion": "The angle of incidence on the curved surface equals θ (measured from the radius, which is the normal).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence on the curved surface equals θ.",
+    "conclusion": "The ray will emerge (refract out) provided Snell’s law allows refraction rather than total internal reflection: n sin θc = 1 → sin θc = 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n sin θc = 1 → sin θc = 1/n and n = 2.",
+    "conclusion": "For n = 2 we obtain θc = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θc = 30°.",
+    "conclusion": "All rays that meet the curved surface with θ ≤ θc refract out; rays with θ > θc are totally internally reflected and do not emerge.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ ≤ θc refract out.",
+    "conclusion": "Only the “cap” of the semicircle between θ = 0 and θ = 30° on each side of the central axis contributes to the emitting area.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θ = 0 and θ = 30° contribute to the emitting area.",
+    "conclusion": "The corresponding arc length on one side is R θc; on both sides it is 2 R θc.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Arc length on both sides is 2 R θc.",
+    "conclusion": "The cylindrical surface area that emits light is that arc length times the length L of the cylinder: S = (2 R θc) L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "θc = 30° = π/6 radians.",
+    "conclusion": "Substituting θc = 30° = π/6 radians: S = 2 R (π/6) L = (πRL)/3.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

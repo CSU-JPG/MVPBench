@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have three logs, A, B, and C, each with mass m and radius R. Logs B and C are on the ground, and log A is resting on top of them. The centers of the logs form an isosceles triangle with a top angle of ∠O1 = 120°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gravitational force acting on each log is mg. The normal force from the ground acts on logs B and C. The static friction force prevents logs B and C from sliding.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The logs are about to slide, meaning the maximum static friction is equal to the dynamic friction. The friction force f is given by f = μd N, where μd is the dynamic friction factor and N is the normal force.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Log A is supported by logs B and C. The weight of log A is distributed equally between logs B and C due to symmetry.",
+    "conclusion": "Each log (B and C) supports half the weight of log A, i.e., mg/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Each log (B and C) has its own weight mg and supports half the weight of log A.",
+    "conclusion": "The normal force N on each log is N = mg + mg/2 = 3mg/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum static friction force is equal to the dynamic friction force.",
+    "conclusion": "f = μd N = μd 3mg/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the logs to be on the verge of sliding, the horizontal component of the forces due to log A must equal the friction force.",
+    "conclusion": "The horizontal component of the force due to log A is mg/2 sin(60°). Therefore, mg/2 sin(60°) = μd 3mg/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg/2 sin(60°) = μd 3mg/2.",
+    "conclusion": "Simplify the equation: mg/2 * √3/2 = μd 3mg/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg/2 * √3/2 = μd 3mg/2.",
+    "conclusion": "Cancel mg from both sides: √3/4 = μd * 3/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "√3/4 = μd * 3/2.",
+    "conclusion": "Solve for μd: μd = √3/4 * 2/3 = √3/6.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

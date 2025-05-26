@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rails AB and CD are placed vertically, connected at one end with DE. The region BDE forms an isosceles right triangle. A uniform magnetic field of magnitude B exists in the space, directed perpendicularly into the plane of the rails. The distance between AB and CD is l. The conductor rod MN has a mass of m and a resistance per unit length of r. The height difference between MN and BD is also l. The conductor rod MN is released from rest and reaches a constant speed before it arrives at BD. During its descent, the rod remains horizontal and maintains good contact with the rails. The resistance and friction of the rails are negligible, and the acceleration due to gravity is g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem asks for the velocity v of the conductor rod MN when it is moving at a constant speed.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows two vertical rails AB and CD connected at one end by DE, forming an isosceles right triangle BDE. The conductor rod MN is positioned horizontally between the rails.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A uniform magnetic field is depicted as crosses, indicating it is directed perpendicularly into the plane of the rails.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the rod MN is moving downward at constant velocity, there are three forces acting on it: gravitational force (downward), magnetic force (upward), and normal force from the rails (horizontal).",
+    "conclusion": "The gravitational force acting on the rod is F_g = mg.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the rod moves through the magnetic field, an EMF is induced in the rod.",
+    "conclusion": "The induced EMF is given by the formula: E = Blv.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The resistance of the rod is R = rl where r is the resistance per unit length.",
+    "conclusion": "The current in the rod is I = E/R = Blv/rl = Bv/r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force on a current-carrying conductor in a magnetic field is given by F_B = IlB.",
+    "conclusion": "The magnetic force is F_B = (Bv/r) * l * B = B^2lv/r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the rod moves at constant velocity, the net force must be zero: F_g - F_B = 0.",
+    "conclusion": "The equation for equilibrium is mg - B^2lv/r = 0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "mg - B^2lv/r = 0",
+    "conclusion": "Solving for v gives v = mgr/B^2l.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

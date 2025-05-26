@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The outer diameter of the sphere is twice the inner diameter. The light enters the sphere at an angle of 45° with the normal. The light just grazes the inner surface of the sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let the inner radius of the sphere be R. The outer radius of the sphere is 2R. The angle of incidence i is 45°. The angle of refraction r is the angle we need to find.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law states: n1 sin(i) = n2 sin(r). Here, n1 is the refractive index of the vacuum (which is 1), and n2 is the refractive index of the transparent material.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin(i) = n2 sin(r)",
+    "conclusion": "sin(45°) = n2 sin(r)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light ray travels from the outer surface to the inner surface. The light ray just grazes the inner surface, meaning it travels along a tangent to the inner sphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Geometry of the sphere and path of light",
+    "conclusion": "The path of the light ray forms a right triangle with the radii of the sphere. The distance from the center of the sphere to the point where the light ray grazes the inner surface is R. The distance from the center of the sphere to the point where the light ray enters the outer surface is 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Right triangle formed by the radii and the path of the light ray",
+    "conclusion": "sin(r) = R/2R = 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(r) = 1/2",
+    "conclusion": "r = 30°",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(45°) = n2 sin(30°)",
+    "conclusion": "sqrt(2)/2 = n2 * 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sqrt(2)/2 = n2 * 1/2",
+    "conclusion": "n2 = sqrt(2)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

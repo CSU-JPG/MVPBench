@@ -1,0 +1,103 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to analyze the motion of the missile in two phases: the vertical ascent and the subsequent curved trajectory.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial velocity, v0 = 0",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Acceleration, a = 10g = 100 m/s^2",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Height reached, h1 = 5000 m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v^2 = v0^2 + 2ah1",
+    "conclusion": "v^2 = 0 + 2 * 100 * 5000",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v^2 = 1,000,000",
+    "conclusion": "v = 1000 m/s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v = at",
+    "conclusion": "1000 = 100t",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1000 = 100t",
+    "conclusion": "t = 10 s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The thrust angle is given by cos θ = 1/11.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos θ = 1/11",
+    "conclusion": "sin θ = sqrt(1 - (1/11)^2) = sqrt(120/121)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a_y = a * cos θ",
+    "conclusion": "a_y = 100 * 1/11 = 100/11 m/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "a_x = a * sin θ",
+    "conclusion": "a_x = 100 * sqrt(120/121) = 100 * sqrt(120)/11 m/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial vertical velocity, v_y0 = 1000 m/s",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Vertical displacement to reach the aircraft, h2 = 15000 m",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h2 = v_y0 * t + 1/2 * a_y * t^2",
+    "conclusion": "15000 = 1000t + 1/2 * (100/11) * t^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "15000 = 1000t + 50/11 * t^2",
+    "conclusion": "165000 = 11000t + 50t^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "165000 = 11000t + 50t^2",
+    "conclusion": "50t^2 + 11000t - 165000 = 0",
+    "judgment": "Reasonable"
+  }]

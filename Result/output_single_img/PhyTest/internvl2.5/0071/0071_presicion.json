@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the input current in the primary coil of the transformer, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Primary voltage, U1 = 220 V",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Primary turns, n1 = 100",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the first secondary coil: Appliance voltage, U2 = 6 V, Appliance power, P2 = 20 W",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For the second secondary coil: Appliance voltage, U3 = 110 V, Appliance power, P3 = 60 W",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the power formula P = U × I",
+    "conclusion": "I2 = P2 / U2 = 20 W / 6 V = 20/6 ≈ 3.33 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the power formula P = U × I",
+    "conclusion": "I3 = P3 / U3 = 60 W / 110 V ≈ 0.545 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The turns ratio for a transformer is given by: U1/U2 = n1/n2 and U1/U3 = n1/n3",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the turns ratio U1/U2 = n1/n2",
+    "conclusion": "n2 = (100 × 6) / 220 ≈ 2.73",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the turns ratio U1/U3 = n1/n3",
+    "conclusion": "n3 = (100 × 110) / 220 = 50",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power in the primary coil must equal the sum of the powers in the secondary coils (assuming an ideal transformer with no losses)",
+    "conclusion": "P1 = P2 + P3 = 20 W + 60 W = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the power formula for the primary coil: P1 = U1 × I1",
+    "conclusion": "I1 = P1 / U1 = 80 W / 220 V ≈ 0.364 A",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

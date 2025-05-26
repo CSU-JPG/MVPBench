@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Need to find the mass of block B given that block A is stationary on a slope with a system of pulleys connecting them.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "There's a smooth slope with an inclination of 30 degrees. Block A is on this slope, connected via a light rope that passes through two pulleys. One pulley is at the top of the slope, and another forms a 90-degree angle with the rope. The other end of the rope is fixed to the ceiling. Block B is hanging from one of these pulleys.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The slope is smooth, meaning no friction between the blocks and the slope. The rope is light, meaning its mass is negligible, and there's no friction in the pulleys.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Block A has a mass of m, and we need to find the mass of block B such that both blocks remain stationary.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For block A: The weight of A is m g, acting downward. The component of the weight of A parallel to the slope is m g sin(30°). Since the block is stationary, the tension T must balance this component.",
+    "conclusion": "T = m g sin(30°)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For block B: The weight of B is m_b g, acting downward. The tension in the rope, T, acts upward. Since block B is also stationary, T must equal m_b g.",
+    "conclusion": "T = m_b g",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From block A, T = m g sin(30°). From block B, T = m_b g.",
+    "conclusion": "m_b g = m g sin(30°)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "m_b g = m g sin(30°)",
+    "conclusion": "m_b = m sin(30°)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(30°) = 0.5",
+    "conclusion": "m_b = m / 2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider the pulley system and the 90-degree turn in the rope.",
+    "conclusion": "m_Bg = √2 F_T, m_B = (√2/2)m",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

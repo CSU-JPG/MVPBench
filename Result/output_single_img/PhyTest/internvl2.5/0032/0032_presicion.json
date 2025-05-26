@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine when particles A and B are the farthest apart, we need to analyze their velocity-time (v-t) graph. The distance between the two particles at any given time is the difference in the areas under their respective velocity-time curves up to that time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle A starts from rest and accelerates to a velocity of 2v_0 in time t_0, then decelerates to zero velocity at 2t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Particle B starts from rest and accelerates to a velocity of v_0 in time 2t_0, then continues to accelerate to a velocity of 2v_0 at 5t_0, and finally decelerates to zero velocity at 6t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under the curve for particle A from 0 to t_0 is a triangle with base t_0 and height 2v_0.",
+    "conclusion": "The area (distance) is 1/2 * t_0 * 2v_0 = v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under the curve for particle A from t_0 to 2t_0 is a triangle with base t_0 and height 2v_0.",
+    "conclusion": "The area (distance) is 1/2 * t_0 * 2v_0 = v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total distance traveled by A by 2t_0 is v_0 t_0 + v_0 t_0.",
+    "conclusion": "Total distance is 2v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under the curve for particle B from 0 to 2t_0 is a triangle with base 2t_0 and height v_0.",
+    "conclusion": "The area (distance) is 1/2 * 2t_0 * v_0 = v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under the curve for particle B from 2t_0 to 5t_0 is a trapezoid with bases v_0 and 2v_0 and height 3t_0.",
+    "conclusion": "The area (distance) is 1/2 * (v_0 + 2v_0) * 3t_0 = 3/2 v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total distance traveled by B by 5t_0 is v_0 t_0 + 3/2 v_0 t_0.",
+    "conclusion": "Total distance is 5/2 v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At 2t_0, particle A has traveled 2v_0 t_0 and particle B has traveled v_0 t_0.",
+    "conclusion": "The distance between them is 2v_0 t_0 - v_0 t_0 = v_0 t_0.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At 5t_0, particle A has stopped (total distance 2v_0 t_0) and particle B has traveled 5/2 v_0 t_0.",
+    "conclusion": "The distance between them is 5/2 v_0 t_0 - 2v_0 t_0 = 1/2 v_0 t_0.",
+    "judgment": "Match"
+  }]

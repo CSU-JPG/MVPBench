@@ -1,0 +1,74 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the van der Waals constants $a$ and $b$ in terms of $T_c$ and $P_c$, we need to solve the given equation: \\[ \\left( P + \\frac{a}{V^2} \\right) (V - b) = RT \\]",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given equation: \\[ \\left( P + \\frac{a}{V^2} \\right) (V - b) = RT \\]",
+    "conclusion": "Rearrange the equation to isolate the terms involving $V$: \\[ \\left( P + \\frac{a}{V^2} \\right) V - b P = RT \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearranged equation: \\[ \\left( P + \\frac{a}{V^2} \\right) V - b P = RT \\]",
+    "conclusion": "Expand the equation: \\[ P V + \\frac{a}{V^2} V^2 - b P = RT \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Expanded equation: \\[ P V + \\frac{a}{V^2} V^2 - b P = RT \\]",
+    "conclusion": "Further expand: \\[ PV^3 + \\frac{a}{V^2} V^2 - b PV = RT \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Further expanded equation: \\[ PV^3 + \\frac{a}{V^2} V^2 - b PV = RT \\]",
+    "conclusion": "Rearrange to form a cubic equation: \\[ PV^3 + \\frac{a}{V^2} V^2 - b PV - RT = 0 \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cubic equation: \\[ PV^3 + \\frac{a}{V^2} V^2 - b PV - RT = 0 \\]",
+    "conclusion": "Consider behavior as $V \\to \\infty$: \\[ PV^3 - b PV = RT \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation as $V \\to \\infty$: \\[ PV^3 - b PV = RT \\]",
+    "conclusion": "Simplify to: \\[ PV(P - b) = RT \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplified equation: \\[ PV(P - b) = RT \\]",
+    "conclusion": "Solve for $V$: \\[ V = \\frac{RT}{P - b} \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Consider behavior as $V \\to 0$: \\[ PV^3 - RT = 0 \\]",
+    "conclusion": "Simplify to: \\[ PV^3 = RT \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplified equation: \\[ PV^3 = RT \\]",
+    "conclusion": "Solve for $V$: \\[ V = \\sqrt[3]{\\frac{RT}{P}} \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation: \\[ PV^3 = RT \\]",
+    "conclusion": "Solve for $P$: \\[ P = \\frac{RT}{V^3} \\]",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation for $P$: \\[ P = \\frac{RT}{V^3} \\] and $V = \\sqrt[3]{\\frac{RT}{P}}$",
+    "conclusion": "Substitute $V$ into $P$: \\[ P = \\frac{RT}{\\left( \\sqrt[3]{\\frac{RT}{P}} \\right)^3} \\]",
+    "judgment": "Reasonable"
+  }]
+

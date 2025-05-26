@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a cross-sectional view of a material brick that consists of a semicircle on the left and a right triangle on the right. The semicircle has diameter BC, with O as the center, and radius R. The right triangle is ABC, with angle at A being 30 degrees, and side AB is horizontal. There's a screen MN perpendicular to the horizontal plane at point A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A beam of red light is directed at the center O of the semicircular brick. The refractive index of the brick for red light is √3, and the speed of red light in vacuum is C. The angle between the incident direction and BC is 60 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light is directed at point O, the center of the semicircle. The semicircle has diameter BC, so O is the midpoint of BC. The angle between the incident direction and BC is 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle between the incident direction and BC is 60 degrees. BC is horizontal, and the tangent at O is vertical.",
+    "conclusion": "The angle between the incident ray and the vertical tangent is 90 - 60 = 30 degrees. Therefore, the angle of incidence i is 30 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence i is 30 degrees. The refractive index n = √3.",
+    "conclusion": "Using Snell's law: n1 * sin i = n2 * sin r. Solve for r: r = 60 degrees.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The outgoing light DP and AB are parallel. AD = AC - CD = (2R/sin30) - R = 3R.",
+    "conclusion": "The distance AD is 3R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "AD = 3R. The distance between the position where the red light hits the screen and point A is PA = AD * sin30.",
+    "conclusion": "PA = (3/2)R",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

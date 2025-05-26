@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the refraction angle when the light enters the Dawes prism and whether the light can exit from edge CD.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism glass has a refractive index \\( n = \\sqrt{2} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The light ray is incident parallel to the base CD, which means the angle of incidence \\( \\theta_i \\) is 45°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: \\( n_1 \\sin(\\theta_i) = n_2 \\sin(\\theta_r) \\), where \\( n_1 \\) is the refractive index of air (approximately 1), \\( \\theta_i \\) is the angle of incidence, \\( n_2 \\) is the refractive index of the prism glass (\\( \\sqrt{2} \\)), and \\( \\theta_r \\) is the angle of refraction.",
+    "conclusion": "1 * \\sin(45°) = \\sqrt{2} * \\sin(\\theta_r)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since \\( \\sin(45°) = \\frac{\\sqrt{2}}{2} \\), \\(\\frac{\\sqrt{2}}{2} = \\sqrt{2} \\cdot \\sin(\\theta_r)\\).",
+    "conclusion": "\\(\\sin(\\theta_r) = \\frac{1}{2}\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin(\\theta_r) = \\frac{1}{2}\\)",
+    "conclusion": "\\(\\theta_r = \\sin^{-1}\\left(\\frac{1}{2}\\right) = 30°\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine if the light can exit from edge CD, check if the light undergoes total internal reflection (TIR) at the interface between the prism glass and air.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\( \\theta_c \\) for TIR is given by: \\(\\sin(\\theta_c) = \\frac{n_1}{n_2}\\).",
+    "conclusion": "\\(\\sin(\\theta_c) = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin(\\theta_c) = \\frac{\\sqrt{2}}{2}\\)",
+    "conclusion": "\\(\\theta_c = \\sin^{-1}\\left(\\frac{\\sqrt{2}}{2}\\right) = 45°\\)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the angle of incidence at edge CD is 45°, which is equal to the critical angle.",
+    "conclusion": "The light will undergo total internal reflection and will not exit from edge CD.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As shown in the diagram, the incidence angle θ when the light reaches edge CD is θ = 75° > C.",
+    "conclusion": "Cannot exit from edge CD.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

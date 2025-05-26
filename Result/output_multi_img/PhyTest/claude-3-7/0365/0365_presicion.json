@@ -1,0 +1,61 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The motorcycle (vehicle 1) and car (vehicle 2) are initially traveling in the same direction. They are separated by distance L = 1.5 m when they both begin braking. The motorcycle's velocity-time graph shows it starts at 4 m/s and decreases linearly to 0 m/s after 8 seconds. The car's velocity is given by v₂ = 3 - 0.25t (m/s).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The motorcycle's velocity-time graph is a straight line starting at 4 m/s and reaching 0 m/s at t = 8 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The motorcycle's velocity-time graph is a straight line starting at 4 m/s and reaching 0 m/s at t = 8 s.",
+    "conclusion": "v₁(t) = 4 - 0.5t (m/s)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v₁(t) = 4 - 0.5t (m/s) and v₂(t) = 3 - 0.25t (m/s)",
+    "conclusion": "v₁(t') = v₂(t') leads to 4 - 0.5t' = 3 - 0.25t' and t' = 4 seconds",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area under the motorcycle's v-t graph is a trapezoid with height = 4 m/s at t = 0, height = 0 m/s at t = 8 s, and base = 8 s.",
+    "conclusion": "s₁ = (1/2) × (4 + 0) × 8 = 16 meters",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "s₁ = ∫₀^8 (4 - 0.5t) dt",
+    "conclusion": "s₁ = [4t - 0.25t²]₀^8 = (32 - 16) - 0 = 16 meters",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "s₂ = ∫₀^8 (3 - 0.25t) dt",
+    "conclusion": "s₂ = [3t - 0.125t²]₀^8 = (24 - 8) - 0 = 16 meters",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "d₀ = initial safe distance we're looking for, L = 1.5 m (distance when braking begins). When braking begins, the motorcycle is L = 1.5 m behind the car.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Both vehicles travel the same total distance (16 m) during the braking period.",
+    "conclusion": "They would end up separated by the same distance L = 1.5 m if they started braking when separated by L.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "x₁(t) = ∫₀^t (4 - 0.5τ) dτ = 4t - 0.25t² and x₂(t) = L + ∫₀^t (3 - 0.25τ) dτ = L + 3t - 0.125t²",
+    "conclusion": "d(t) = x₂(t) - x₁(t) = L + (3t - 0.125t²) - (4t - 0.25t²) = L - t + 0.125t²",
+    "judgment": "Reasonable"
+  }]

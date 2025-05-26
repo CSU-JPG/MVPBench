@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The radar emits radio waves for 1 μs. The interval between two emissions is 100 μs. The speed of light in a vacuum is c = 3.0 × 10^8 m/s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The figure shows that the time intervals ab and bc are equal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The time intervals ab and bc are equal.",
+    "conclusion": "The time taken for the radar wave to travel to the obstacle and back is the same for both intervals.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ab = bc",
+    "conclusion": "The total time for the round trip of the radar wave is 2 × ab.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The interval between emissions is 100 μs.",
+    "conclusion": "The total time for one round trip is 100 μs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total time for one round trip is 100 μs.",
+    "conclusion": "The one-way travel time is half of the round trip time: t_one-way = 100 μs / 2 = 50 μs.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "50 μs",
+    "conclusion": "50 μs = 50 × 10^-6 s = 5 × 10^-5 s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the formula d = c × t, where d is the distance, c is the speed of light, and t is the one-way travel time.",
+    "conclusion": "d = 3.0 × 10^8 m/s × 5 × 10^-5 s",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "d = 3.0 × 10^8 m/s × 5 × 10^-5 s",
+    "conclusion": "d = 1.5 × 10^4 m",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

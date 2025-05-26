@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A hollow sphere with an inner radius R and outer radius 2R is given.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A light ray enters at point A on the outer surface, making an angle of 45° with the normal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After refraction, the light ray just grazes the inner surface, becoming tangent to the inner sphere.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the boundary between vacuum (n₁ = 1) and the transparent material (n₂ = n), Snell's law gives: n₁ sin i = n₂ sin r, where i = 45°.",
+    "conclusion": "sin(45°) = n × sin(r)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(45°) = n × sin(r)",
+    "conclusion": "sin(r) = 1/(n√2)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "O is the center of both spheres, A is the point where the light enters the outer sphere, and B is where the refracted ray touches the inner sphere.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the ray is tangent to the inner sphere at point B, the line from O to B is perpendicular to the ray at that point, creating a right triangle OBA.",
+    "conclusion": "The angle OBA is 90°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In triangle OBA, using the law of sines: OA/sin(OBA) = OB/sin(OAB), where OA = 2R, OB = R, and angle OBA = 90°.",
+    "conclusion": "2R/1 = R/sin(r)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "2R = R/sin(r)",
+    "conclusion": "sin(r) = 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equating sin(r) = 1/(n√2) and sin(r) = 1/2.",
+    "conclusion": "1/(n√2) = 1/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "1/(n√2) = 1/2",
+    "conclusion": "n√2 = 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n√2 = 2",
+    "conclusion": "n = √2",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

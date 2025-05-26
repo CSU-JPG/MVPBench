@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a circuit with fixed resistors R₁ = 50Ω and R₂ (unknown), a variable resistor R₃ with sliding contact P, and a capacitor C = 2×10⁻⁶ F. When P moves from left to right, the terminal voltage (U) vs. current (I) relationship is shown in the graph. Points A and B on the graph correspond to the endpoints of the variable resistor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, point A has U = 4V and I = 0.2A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, point B has U = 1V and I = 0.8A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For a power supply with EMF (E) and internal resistance (r), the terminal voltage is given by U = E - Ir.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = E - Ir",
+    "conclusion": "For point A: 4 = E - 0.2r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "U = E - Ir",
+    "conclusion": "For point B: 1 = E - 0.8r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4 = E - 0.2r and 1 = E - 0.8r",
+    "conclusion": "Subtracting equation 2 from equation 1 gives 3 = 0.6r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "3 = 0.6r",
+    "conclusion": "r = 5Ω",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4 = E - 0.2 × 5",
+    "conclusion": "4 = E - 1",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "4 = E - 1",
+    "conclusion": "E = 5V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 5V and r = 5Ω",
+    "conclusion": "For point A: U = 5 - 0.2 × 5 = 4V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 5V and r = 5Ω",
+    "conclusion": "For point B: U = 5 - 0.8 × 5 = 1V",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = 5V and r = 5Ω",
+    "conclusion": "The electromotive force (EMF) of the power supply is E = 5V, and its internal resistance is r = 5Ω.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

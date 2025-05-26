@@ -1,0 +1,78 @@
+[
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The problem involves a charged particle with mass m and charge q (q > 0) launched horizontally with velocity v0 in a uniform electric field (E) directed vertically downward and a uniform magnetic field (B) perpendicular to the paper and outwards. The particle enters the magnetic field at point P and exits between the lower edges Q and N of the baffles without colliding with them. The angle between the particle's velocity direction when entering the magnetic field and PQ is 60°. Gravity is neglected.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "image description",
+    "premise": null,
+    "conclusion": "Two vertical baffles of length l are placed opposite each other with a spacing of l. The upper edges P and M are at the same horizontal level, and the lower edges Q and N are also at the same horizontal level. A uniform electric field E is directed vertically downward above the horizontal level of P and M. A uniform magnetic field B is perpendicular to the paper and directed outwards between the baffles.",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "background information",
+    "premise": null,
+    "conclusion": "The Lorentz force acts on a charged particle moving in a magnetic field and is given by F_L = qv × B. The motion of the particle is influenced by both the electric field and the magnetic field.",
+    "judgment": "N/A",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle moves in a magnetic field, and the Lorentz force is given by F_L = qv × B.",
+    "conclusion": "The vertical component of the Lorentz force is F_y = qv × B · sin(60°).",
+    "judgment": "Match",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of the Lorentz force is F_y = qv × B · sin(60°).",
+    "conclusion": "The vertical component of the gravitational force is F_g = mg.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle does not collide with the baffles, so the net force must be zero.",
+    "conclusion": "F_L = F_g.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_L = F_g and F_y = qv × B · sin(60°).",
+    "conclusion": "qv × B · sin(60°) = mg.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "qv × B · sin(60°) = mg.",
+    "conclusion": "Substitute the known values: (√3/2) qv × l = mg.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle moves horizontally, and the horizontal distance x is proportional to the Lorentz force.",
+    "conclusion": "x = (√3/2) l.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The particle moves vertically, and the vertical distance y is proportional to the Lorentz force.",
+    "conclusion": "y = (1/2) l.",
+    "judgment": "Wrong",
+    "final_answer": null
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total distance from the launch position to point P is the sum of the horizontal and vertical distances.",
+    "conclusion": "x + y = (√3/2) l + (1/2) l = (3/2) l.",
+    "judgment": "Wrong",
+    "final_answer": null
+  }]

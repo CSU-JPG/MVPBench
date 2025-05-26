@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The question asks for the new angular velocity of the rotation of $OO'$ when the magnetic field is changed to $nB_{0}$ and the voltmeter reading is $mU_{0}$.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "According to Faraday's Law of Electromagnetic Induction, the induced electromotive force (EMF) in a circuit is equal to the rate of change of magnetic flux through the circuit.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic flux $\\Phi$ is given by $\\Phi = B \\cdot A$, where $A$ is the area of the loop.",
+    "conclusion": "The induced EMF $\\epsilon$ is given by $\\epsilon = -\\frac{d\\Phi}{dt} = -\\frac{d(B \\cdot A)}{dt} = -B \\cdot \\frac{dA}{dt}$.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the area of the loop is changing due to the rotation of $OO'$, we have $\\frac{dA}{dt} = \\omega \\cdot r^2$, where $r$ is the radius of the loop.",
+    "conclusion": "The induced EMF is $\\epsilon = -B \\cdot \\omega \\cdot r^2$.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The voltmeter reading $U$ is equal to the induced EMF $\\epsilon$.",
+    "conclusion": "We have $U = B \\cdot \\omega \\cdot r^2$.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the angular velocity is $\\omega_0$, the voltmeter reading is $U_0$. Therefore, $U_0 = B_0 \\cdot \\omega_0 \\cdot r^2$.",
+    "conclusion": "We have $U_0 = B_0 \\cdot \\omega_0 \\cdot r^2$.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When the magnetic field is changed to $nB_0$, the voltmeter reading is $mU_0$. Therefore, $mU_0 = nB_0 \\cdot \\omega \\cdot r^2$.",
+    "conclusion": "We have $mU_0 = nB_0 \\cdot \\omega \\cdot r^2$.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Dividing the two equations $U_0 = B_0 \\cdot \\omega_0 \\cdot r^2$ and $mU_0 = nB_0 \\cdot \\omega \\cdot r^2$.",
+    "conclusion": "$m = \\frac{n \\cdot \\omega}{\\omega_0}$",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "$m = \\frac{n \\cdot \\omega}{\\omega_0}$",
+    "conclusion": "$\\omega = \\frac{m \\cdot \\omega_0}{n}$",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

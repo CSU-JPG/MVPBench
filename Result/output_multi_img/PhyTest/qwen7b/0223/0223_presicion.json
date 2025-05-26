@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the potential difference between points a and b in the wire frame, we need to follow these steps:",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side-length of the square is 0.2 m.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The side-length of the square is 0.2 m.",
+    "conclusion": "The area A of the entire square is 0.04 m^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area of the entire square is 0.04 m^2.",
+    "conclusion": "The area of the region with the magnetic field is 0.02 m^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Faraday's Law states that the induced emf (E) in a loop is equal to the negative rate of change of the flux (ΦB) through the loop: E = -dΦB/dt.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The flux ΦB through the area with the magnetic field is given by ΦB = B * Area with magnetic field.",
+    "conclusion": "Since the magnetic field is increasing at a rate of 10 T/s, dB/dt = 10 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area with the magnetic field does not change over time.",
+    "conclusion": "The rate of change of the flux is dΦB/dt = Area with magnetic field * dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Area with magnetic field = 0.02 m^2 and dB/dt = 10 T/s.",
+    "conclusion": "dΦB/dt = 0.02 m^2 * 10 T/s = 0.2 T·m^2/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "dΦB/dt = 0.2 T·m^2/s.",
+    "conclusion": "The induced emf E = -dΦB/dt = -0.2 T·m^2/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In a closed wire loop, the potential difference between any two points is equal to the induced emf.",
+    "conclusion": "The potential difference ΔV between points a and b is 0.2 V.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

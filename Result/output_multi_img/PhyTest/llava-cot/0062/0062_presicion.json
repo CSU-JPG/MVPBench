@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A smooth insulating inclined plane is fixed on a horizontal ground, with the angle between the inclined plane and the horizontal plane being θ. One end of a light insulating thin wire is fixed at the top of the inclined plane, and the other end is attached to a charged small sphere A, with the wire parallel to the inclined plane. The mass of sphere A is m, and its charge is +q. To the right of sphere A, another small sphere B with an equal charge is fixed, with the centers of the two spheres at the same height and separated by a distance d. The electrostatic force constant is k, the gravitational acceleration is g, and the two charged spheres can be treated as point charges. Sphere A is stationary on the inclined plane, and the tension in the thin wire is 0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows an inclined plane with angle θ. A charged sphere A with mass m is placed on the inclined plane. Another charged sphere B, with the same charge as sphere A, is positioned to the right, maintaining the same height and separated by a distance d. The tension in the wire supporting sphere A is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The electrostatic force between the two spheres is given by Coulomb's Law: F_electrostatic = (k * q^2) / d^2.",
+    "conclusion": "The electrostatic force between the two spheres is F_electrostatic = (k * q^2) / d^2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The gravitational force acting on sphere A is: F_gravitational = m * g.",
+    "conclusion": "The gravitational force acting on sphere A is F_gravitational = m * g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since sphere A is stationary, the electrostatic force must balance the gravitational force: F_electrostatic = F_gravitational.",
+    "conclusion": "The electrostatic force equals the gravitational force: (k * q^2) / d^2 = m * g.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(k * q^2) / d^2 = m * g.",
+    "conclusion": "Solving for q/d: q/d = sqrt((m * g * d^2) / (k * q)).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given that the problem asks for q/d and not q^2/d^2, the correct interpretation is: q/d = sqrt(m * g / k).",
+    "conclusion": "The correct expression for q/d is q/d = sqrt(m * g / k).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The correct expression for q/d is q/d = sqrt(m * g / k).",
+    "conclusion": "The final answer is q/d = sqrt(m * g / k).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

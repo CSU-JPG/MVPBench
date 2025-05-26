@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "I'll solve this step-by-step by analyzing the p-V diagram and calculating the heat transferred during this thermodynamic process.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: (V = 8×10⁻³ m³, p = 1×10⁵ Pa)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: (V = 8×10⁻³ m³, p = 2×10⁵ Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: (V = 3×10⁻³ m³, p = 3×10⁵ Pa)",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State A: (V = 8×10⁻³ m³, p = 1×10⁵ Pa), State B: (V = 8×10⁻³ m³, p = 2×10⁵ Pa)",
+    "conclusion": "Process A→B: Isochoric (constant volume) process",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "State B: (V = 8×10⁻³ m³, p = 2×10⁵ Pa), State C: (V = 3×10⁻³ m³, p = 3×10⁵ Pa)",
+    "conclusion": "Process B→C: The gas undergoes a process where both pressure and volume change",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: T₁ = 27°C = 300 K (converting to Kelvin by adding 273)",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p₁V₁ = nRT₁, p₂V₂ = nRT₂, T₁ = 300K, p₂ = 2×10⁵ Pa, p₁ = 1×10⁵ Pa",
+    "conclusion": "T₂ = T₁ × (p₂/p₁) = 300K × (2×10⁵/1×10⁵) = 600K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p₁V₁ = nRT₁, p₃V₃ = nRT₃, T₁ = 300K, p₃ = 3×10⁵ Pa, V₃ = 3×10⁻³ m³, V₁ = 8×10⁻³ m³",
+    "conclusion": "T₃ = T₁ × (p₃V₃/p₁V₁) = 300K × (3×10⁵×3×10⁻³)/(1×10⁵×8×10⁻³) = 337.5K",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T₂ = 600K, T₁ = 300K",
+    "conclusion": "Q₁→₂ = (3/2)nR(T₂-T₁) = 300nR",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "p₂ = 2×10⁵ Pa, p₃ = 3×10⁵ Pa, V₂ = 8×10⁻³ m³, V₃ = 3×10⁻³ m³",
+    "conclusion": "W₂→₃ = (p₂+p₃)/2 × (V₃-V₂) = -1250 J",
+    "judgment": "Wrong"
+  }]

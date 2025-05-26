@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves a missile launched to intercept an enemy aircraft flying horizontally at a constant speed at an altitude of 20000m. The missile accelerates upward with an acceleration of 10g until it reaches an altitude of 5000m, after which the thrust direction changes to an angle θ (cosθ = 1/11) downward and to the right. The thrust remains constant, and air resistance is negligible.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows an enemy aircraft flying horizontally at a constant altitude of 20000m. A missile is launched from the ground, initially moving vertically upward, and then follows a curved trajectory to intercept the aircraft.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Newton's second law states that the net force acting on an object is equal to the product of its mass and acceleration: F = ma.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The missile's initial upward acceleration is given as 10g, where g = 10m/s².",
+    "conclusion": "The initial upward acceleration of the missile is 100m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The thrust force F is responsible for the missile's upward acceleration. Using F = m(g + a), where m = 100kg, g = 10m/s², and a = 100m/s².",
+    "conclusion": "The thrust force F is calculated as F = 100 × (10 + 100) = 11000N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The thrust direction changes to an angle θ with the vertical, where cosθ = 1/11.",
+    "conclusion": "The thrust direction is slanted downward and to the right, forming an angle θ with the vertical.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal component of the thrust force is Fsinθ, where sinθ = √(1 - cos²θ) = √(1 - (1/11)²) = 10/11.",
+    "conclusion": "The horizontal component of the thrust force is Fsinθ = 11000 × (10/11) = 10000N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The horizontal acceleration of the missile is given by ax = Fsinθ/m, where Fsinθ = 10000N and m = 100kg.",
+    "conclusion": "The horizontal acceleration of the missile is ax = 10000/100 = 100m/s².",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of the thrust force is Fcosθ, where cosθ = 1/11.",
+    "conclusion": "The vertical component of the thrust force is Fcosθ = 11000 × (1/11) = 1000N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net vertical force acting on the missile is Fcosθ - mg, where Fcosθ = 1000N, m = 100kg, and g = 10m/s².",
+    "conclusion": "The net vertical force is Fcosθ - mg = 1000 - 1000 = 0N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical acceleration of the missile is given by ay = (Fcosθ - mg)/m, where Fcosθ - mg = 0N and m = 100kg.",
+    "conclusion": "The vertical acceleration of the missile is ay = 0/100 = 0m/s².",
+    "judgment": "Match"
+  }]

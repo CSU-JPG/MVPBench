@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A particle starts from rest, and its acceleration over time follows a triangular wave pattern shown in the graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The particle's initial velocity is zero.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Acceleration is the derivative of velocity with respect to time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Velocity is the derivative of position with respect to time.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The acceleration graph is a triangular wave: increasing linearly from 0 to \\( a_0 \\) until \\( t = \\frac{t_0}{2} \\), then decreasing to 0 at \\( t = t_0 \\), decreasing to \\( -a_0 \\) at \\( t = \\frac{3t_0}{2} \\), and back to 0 at \\( t = 2t_0 \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration graph description",
+    "conclusion": "The acceleration \\( a(t) \\) can be expressed piecewise for different intervals of time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Acceleration function",
+    "conclusion": "Integrate \\( a(t) \\) to find the velocity function \\( v(t) \\) for each interval.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity function integration",
+    "conclusion": "For \\( 0 \\leq t \\leq \\frac{t_0}{2} \\), \\( v(t) = \\frac{a_0 t^2}{t_0} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity function integration",
+    "conclusion": "For \\( \\frac{t_0}{2} < t \\leq t_0 \\), integrate \\( a(t) = -\\frac{2a_0}{t_0} (t - t_0) + a_0 \\) to find \\( v(t) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity function integration",
+    "conclusion": "For \\( t_0 < t \\leq \\frac{3t_0}{2} \\), integrate \\( a(t) = -\\frac{2a_0}{t_0} (t - t_0) \\) to find \\( v(t) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity function integration",
+    "conclusion": "For \\( \\frac{3t_0}{2} < t \\leq 2t_0 \\), integrate \\( a(t) = \\frac{2a_0}{t_0} (t - 2t_0) + (-a_0) \\) to find \\( v(t) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity-time graph analysis",
+    "conclusion": "The particle always moves in the positive direction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Velocity-time graph analysis",
+    "conclusion": "At \\( t=2t_0 \\), the particle is farthest from the starting point.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

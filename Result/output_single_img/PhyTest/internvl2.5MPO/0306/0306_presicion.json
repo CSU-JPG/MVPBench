@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gas is an ideal gas.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature at state C is \\( T_C = 300 \\, \\text{K} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The pressure and volume at state C are \\( p_C = 4 \\times 10^3 \\, \\text{Pa} \\) and \\( V_C = 2 \\times 10^{-3} \\, \\text{m}^3 \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by \\( pV = nRT \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at state C: \\( p_C V_C = nR T_C \\).",
+    "conclusion": "Calculate \\( nR \\) using state C: \\( nR = \\frac{8}{300} = \\frac{4}{150} = \\frac{2}{75} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At state B: \\( p_B = 2 \\times 10^3 \\, \\text{Pa} \\) and \\( V_B = 4 \\times 10^{-3} \\, \\text{m}^3 \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law at state B: \\( p_B V_B = nR T_B \\).",
+    "conclusion": "Calculate \\( T_B \\): \\( T_B = 8 \\times \\frac{75}{2} = 300 \\, \\text{K} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The calculated temperature at state B is 300 K.",
+    "conclusion": "The temperature of the gas in state B is \\( 300 \\, \\text{K} \\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

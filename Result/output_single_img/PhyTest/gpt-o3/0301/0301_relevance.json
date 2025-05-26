@@ -1,0 +1,52 @@
+[
+  {
+    "step_type": "image description",
+    "conclusion": "State A: p = 3 × 10⁵ Pa, V = 1 × 10⁻³ m³; State C: p = 1 × 10⁵ Pa, V = 4 × 10⁻³ m³",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Temperature at state A is −73 °C = 200 K",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Use the ideal-gas equation n = pV/RT at A to find the amount of gas (number of moles)",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Internal energy change from A to C is ΔU = +200 J",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "cᵥ for a mono-atomic ideal gas is (3/2)R",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solve ΔT = ΔU / (n cᵥ) and add to Tₐ to obtain T𝒞",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate n = pₐVₐ / (R Tₐ) = (3.0 × 10⁵ Pa)(1.0 × 10⁻³ m³) / (8.31 J mol⁻¹ K⁻¹ · 200 K) ≈ 1.8 × 10⁻¹ mol",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate ΔT = 200 J / ( n · (3/2)R ) = 200 / [ (0.18 mol) · (1.5)(8.31) ] ≈ 90 K",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate T𝒞 = Tₐ + ΔT = 200 K + 90 K = 290 K",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Temperature at state C: ≈ 2.9 × 10² K (about 17 °C)",
+    "relevant": "Yes"
+  }
+]

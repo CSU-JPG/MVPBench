@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the voltage induced across the conductor rod MN and the direction of the induced current through the fixed resistor R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The conductor rod MN moves with velocity v in a uniform magnetic field B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The conductor rod MN moves with velocity v in a uniform magnetic field B.",
+    "conclusion": "The magnetic flux (Φ) through the area enclosed by the loop changes as the rod moves, inducing an electromotive force (EMF) in the loop according to Faraday's Law of Induction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The area enclosed by the loop changes as the rod moves.",
+    "conclusion": "The change in area per unit time (dA/dt) is equal to the length of the rod (l) multiplied by the velocity (v) of the rod: dA/dt = l · v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in area per unit time is dA/dt = l · v.",
+    "conclusion": "The induced EMF (ℰ) in the loop is proportional to the rate of change of the magnetic flux: ℰ = -dΦ/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field B is constant.",
+    "conclusion": "The change in magnetic flux is given by dΦ/dt = B · dA/dt = B · l · v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The change in magnetic flux is dΦ/dt = B · l · v.",
+    "conclusion": "The induced EMF is ℰ = -B · l · v. The magnitude is |ℰ| = B · l · v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF drives a current through the circuit consisting of the two resistors R.",
+    "conclusion": "Since both resistors R are in series, the total resistance R_total = R + R = 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance is R_total = 2R.",
+    "conclusion": "The current I through the circuit is given by Ohm's Law: I = ℰ/R_total = B · l · v / 2R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I through the circuit is I = B · l · v / 2R.",
+    "conclusion": "The voltage U across the rod MN is the voltage drop across one of the resistors R: U = I · R = B · l · v / 2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "To determine the direction of the induced current, we use the right-hand rule for the motion of the conductor in the magnetic field.",
+    "conclusion": "The induced current flows from N to M through the rod, and through the resistor from d to b.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitude of the voltage U across MN is U = B · l · v / 2.",
+    "conclusion": "The magnitude of the voltage U across MN is U = 1/2 BLv.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

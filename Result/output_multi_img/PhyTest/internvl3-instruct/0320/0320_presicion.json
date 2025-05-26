@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by PV = nRT where P is the pressure, V is the volume, n is the number of moles, R is the ideal gas constant, and T is the temperature in Kelvin.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The temperature at state A is given as 27°C.",
+    "conclusion": "Convert temperature from Celsius to Kelvin: T_A = 273.15 + 27 = 300.15 K ≈ 300 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph: State A: P_A = 1 × 10^5 Pa, V_A = 6 × 10^-3 m^3; State B: P_B = 2 × 10^5 Pa, V_B = 4 × 10^-3 m^3; State C: P_C = 3 × 10^5 Pa, V_C = 2 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law for state A: P_AV_A = nRT_A",
+    "conclusion": "nR = 2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For state C: P_CV_C = nRT_C",
+    "conclusion": "T_C = 300 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Convert T_C from Kelvin to Celsius: T_C = 300 - 273.15",
+    "conclusion": "T_C ≈ 27 °C",
+    "judgment": "Wrong"
+  }
+]

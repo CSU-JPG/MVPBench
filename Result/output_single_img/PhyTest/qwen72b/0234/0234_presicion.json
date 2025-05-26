@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve the problem, we need to determine the maximum value of the induced electromotive force (EMF) as the equilateral triangle loop enters the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side length of the equilateral triangle is \\(a\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The loop moves to the right with a constant velocity \\(v\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The side \\(CD\\) is always perpendicular to the boundary \\(MN\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When point \\(D\\) reaches the boundary \\(MN\\), the side \\(CD\\) starts entering the magnetic field.",
+    "conclusion": "The area of the triangle that is inside the magnetic field increases linearly with time until point \\(C\\) enters the magnetic field.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF \\(\\mathcal{E}\\) is given by Faraday's law of induction: \\(\\mathcal{E} = -\\frac{d\\Phi}{dt}\\), where \\(\\Phi\\) is the magnetic flux through the loop.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The magnetic flux \\(\\Phi\\) is given by \\(\\Phi = B \\cdot A\\), where \\(A\\) is the area of the loop inside the magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of the area \\(A\\) with respect to time \\(t\\) is the product of the velocity \\(v\\) and the length of the side of the triangle that is entering the magnetic field.",
+    "conclusion": "The rate of change of the area with respect to time is \\(v \\times a \\times \\sin(60^\\circ) = v \\times a \\times \\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}}{2}av\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "When point \\(C\\) is just about to enter the magnetic field, the entire side \\(CD\\) and part of the other two sides are inside the magnetic field.",
+    "conclusion": "The maximum area inside the magnetic field is half the area of the equilateral triangle because the triangle is symmetric and the side \\(CD\\) is perpendicular to the boundary \\(MN\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The area of an equilateral triangle with side length \\(a\\) is \\(\\frac{\\sqrt{3}}{4}a^2\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The maximum area inside the magnetic field is half the area of the equilateral triangle.",
+    "conclusion": "The maximum area inside the magnetic field is \\(\\frac{1}{2} \\times \\frac{\\sqrt{3}}{4}a^2 = \\frac{\\sqrt{3}}{8}a^2\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of the area with respect to time is \\(\\frac{\\sqrt{3}}{2}av\\).",
+    "conclusion": "The maximum induced EMF is \\(\\mathcal{E} = B \\times \\frac{\\sqrt{3}}{2}av = \\frac{\\sqrt{3}}{2}Bav\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

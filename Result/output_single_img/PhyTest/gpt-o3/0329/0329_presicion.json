@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas of definite quality begins at state A, and after undergoing three processes A→B, B→C, and C→A, it returns to its initial state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature of the gas at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: Pₐ = 1 × 10⁵ Pa, Vₐ = 2 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: P꜀ = 1 × 10⁵ Pa, V꜀ = 5 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For an ideal gas in a closed system the mole number n is fixed, and P V = n R T ⟹ P V ⁄ T = constant along the entire cycle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P V ⁄ T = constant along the entire cycle.",
+    "conclusion": "Equate the ratios for states A and C: (Pₐ Vₐ)/Tₐ = (P꜀ V꜀)/T꜀.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "(Pₐ Vₐ)/Tₐ = (P꜀ V꜀)/T꜀.",
+    "conclusion": "T꜀ = Tₐ (P꜀ V꜀)/(Pₐ Vₐ).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T꜀ = Tₐ (P꜀ V꜀)/(Pₐ Vₐ).",
+    "conclusion": "T꜀ = 200 K × (1 × 10⁵ Pa × 5 L)/(1 × 10⁵ Pa × 2 L).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T꜀ = 200 K × (1 × 10⁵ Pa × 5 L)/(1 × 10⁵ Pa × 2 L).",
+    "conclusion": "T꜀ = 200 K × 5/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T꜀ = 200 K × 5/2.",
+    "conclusion": "T꜀ = 500 K.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

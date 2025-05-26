@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The hemispherical transparent medium has a radius R and a refractive index \\( \\frac{\\sqrt{2410}}{30} \\). The isosceles right triangle glass brick \\( \\triangle SMN \\) has its hypotenuse \\( BO = \\frac{R}{4} \\). Light travels from point \\( A \\) (midpoint of \\( SM \\)) to points \\( B, C, \\) and \\( D \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A beam of monochromatic light enters the glass brick from the midpoint A of the SM side and reaches points B, C, and D in turn.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since A is the midpoint of SM, the light enters normally into the glass brick because AB is perpendicular to SM.",
+    "conclusion": "There is no refraction at point A.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point B, the light ray makes an angle of 45° with the normal (since \\( \\triangle SMN \\) is an isosceles right triangle).",
+    "conclusion": "The angle of incidence at point B is 45°.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's law at point B: \\( n_{\\text{air}} \\sin \\theta_i = n_{\\text{brick}} \\sin \\theta_r \\) where \\( \\theta_i = 45° \\) and \\( n_{\\text{air}} = 1 \\).",
+    "conclusion": "\\( \\sin 45° = \\frac{1}{\\sqrt{2}} \\) and \\( \\sin \\alpha = \\frac{1}{\\sqrt{2} \\cdot n_{\\text{brick}}} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Given OC = \\( \\frac{3R}{4} \\), the geometry suggests that the angle \\( \\beta \\) is related to the angles in the triangle.",
+    "conclusion": "\\( \\sin \\beta = \\frac{OB}{OC} = \\frac{\\frac{R}{4}}{\\frac{3R}{4}} = \\frac{1}{3} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At point C, the light ray refracts again: \\( n_{\\text{brick}} \\sin \\beta = n_{\\text{air}} \\sin \\gamma \\) where \\( \\sin \\beta = \\frac{1}{3} \\) and \\( n_{\\text{air}} = 1 \\).",
+    "conclusion": "\\( \\sin \\gamma = \\frac{n_{\\text{brick}}}{3} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the initial Snell's law equation at point B: \\( \\sin \\alpha = \\frac{1}{\\sqrt{2} \\cdot n_{\\text{brick}}} \\).",
+    "conclusion": "Solving for \\( n_{\\text{brick}} \\): \\( n_{\\text{brick}} = \\frac{3}{\\sqrt{2}} = \\frac{3\\sqrt{2}}{2} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The refractive index of the glass brick is \\( \\frac{3\\sqrt{2}}{2} \\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

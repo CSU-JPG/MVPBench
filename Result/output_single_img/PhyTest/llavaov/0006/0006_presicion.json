@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Cars A and B are traveling in the same direction on a straight road. Their v-t graphs are shown in the figure. It is known that the two cars are side by side at t=30 s.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, the cars are side by side at t = 0 s and t = 30 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t = 10 s, Car A is traveling at a constant speed of 40 m/s, while Car B is accelerating.",
+    "conclusion": "Distance traveled by Car A = 40 m/s * 10 s = 400 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car B is accelerating from 0 m/s to 20 m/s over 10 s.",
+    "conclusion": "Distance traveled by Car B = 1/2 * (0 m/s + 20 m/s) * 10 s = 100 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance traveled by Car A = 400 m, Distance traveled by Car B = 100 m",
+    "conclusion": "Distance between the cars at t = 10 s = 400 m - 100 m = 300 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At t = 20 s, Car A is traveling at a constant speed of 40 m/s.",
+    "conclusion": "Distance traveled by Car A = 40 m/s * 20 s = 800 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Car B is accelerating from 0 m/s to 40 m/s over 20 s.",
+    "conclusion": "Distance traveled by Car B = 1/2 * (0 m/s + 40 m/s) * 20 s = 400 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance traveled by Car A = 800 m, Distance traveled by Car B = 400 m",
+    "conclusion": "Distance between the cars at t = 20 s = 800 m - 400 m = 400 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distances between the cars at t = 10 s and t = 20 s are 300 m and 400 m respectively.",
+    "conclusion": "The maximum distance between the cars is 400 m",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem involves calculating the magnitude and direction of the resultant Ampere force acting on a trapezoidal wire frame in a magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The trapezoidal frame has sides AB and CD forming an angle of 60 degrees with side AD, and ab = bc = cd = L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The frame is connected to a power source with electromotive force E and negligible internal resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "There is a uniform magnetic field with magnetic induction intensity B perpendicular to the vertical plane of the frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ab = bc = cd = L and angles are 60 degrees",
+    "conclusion": "The length of AD is 2L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ab = bc = cd = L and AD = 2L",
+    "conclusion": "The total length of the wire is (3 + sqrt(3))L.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total length of wire is (3 + sqrt(3))L",
+    "conclusion": "The resistance R of the wire is rho * (3 + sqrt(3))L / S.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Resistance R = rho * (3 + sqrt(3))L / S",
+    "conclusion": "The current I in the circuit is ES / (rho * (3 + sqrt(3))L).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = ES / (rho * (3 + sqrt(3))L)",
+    "conclusion": "The magnetic force on segment AB is BES sqrt(3) / (2 rho (3 + sqrt(3))).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = ES / (rho * (3 + sqrt(3))L)",
+    "conclusion": "The magnetic force on segment BC is BES / (2 rho (3 + sqrt(3))).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = ES / (rho * (3 + sqrt(3))L)",
+    "conclusion": "The magnetic force on segment CD is BES / (2 rho (3 + sqrt(3))).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Current I = ES / (rho * (3 + sqrt(3))L)",
+    "conclusion": "The magnetic force on segment AD is BES sqrt(3) / (rho (3 + sqrt(3))).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Forces on segments AB, BC, CD, and AD",
+    "conclusion": "The magnitude of the resultant Ampere force is 5BSE / (3rho), and the direction is vertically upward.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

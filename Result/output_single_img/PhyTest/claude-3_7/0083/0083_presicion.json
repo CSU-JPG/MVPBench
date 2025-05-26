@@ -1,0 +1,91 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A concealed lock is commonly installed on classroom doors. This lock consists of a housing A, a frame B, a spring C (with a stiffness coefficient of k), a latch D (with an inclination angle θ=30°), a lock groove E, as well as connecting rods, lock heads, and other components.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dynamic friction coefficient between the side of the latch D and the housing A and the lock groove E is μ. The maximum static friction force F_fm is given by F_fm=μF_N (where F_N is the normal force).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "When a student tried to close the door, no matter how much force was applied, the door could not be closed (a phenomenon known as self-locking).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Figure A shows the lock mechanism with components labeled A, B, C, D, and E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Figure B shows the top view of the lock's state during self-locking, where P is the contact point between the latch D and the lock groove E, and the spring is compressed by a distance x.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The problem asks to find the magnitude of the normal force between the locking tongue D and the locking groove E at the moment of self-locking.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The latch D has an inclination angle θ = 30°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The spring C is compressed by distance x when self-locking occurs.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The spring force is given by F_s = kx.",
+    "conclusion": "The spring force acting on the latch D is F_s = kx.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The normal force F_N acts at point P.",
+    "conclusion": "The normal force F_N from the lock groove E acts at point P.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The friction force is given by F_f = μF_N.",
+    "conclusion": "The friction force at the contact point P is F_f = μF_N.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For self-locking, the horizontal components of forces preventing retraction must overcome the spring force.",
+    "conclusion": "F_N sinθ + μF_N cosθ ≥ kx",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At the exact point of self-locking, F_N sinθ + μF_N cosθ = kx.",
+    "conclusion": "F_N(sinθ + μcosθ) = kx",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_N(sinθ + μcosθ) = kx",
+    "conclusion": "F_N = kx / (sinθ + μcosθ)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(30°) = 0.5 and cos(30°) = 0.866",
+    "conclusion": "F_N = kx / (0.5 + μ * 0.866)",
+    "judgment": "Match"
+  }]

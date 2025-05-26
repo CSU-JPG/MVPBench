@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To ensure total internal reflection (TIR) within the optical fiber, consider the conditions for TIR, which occurs when light in a medium with a higher refractive index hits a boundary with a lower refractive index at an angle greater than the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The critical angle \\(\\theta_c\\) is given by \\(\\sin \\theta_c = \\frac{1}{N}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The optical fiber is bent into a semicircle with a radius \\(r\\). The diameter of the fiber is \\(D\\), so the radius of the fiber is \\(\\frac{D}{2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For TIR to occur, the light must hit the boundary at an angle greater than the critical angle.",
+    "conclusion": "The light will be incident on the inner boundary of the fiber at an angle \\(\\theta\\) with respect to the normal.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light must travel along the fiber such that the angle of incidence at the boundary is at least the critical angle.",
+    "conclusion": "The maximum angle of incidence occurs when the light is just grazing the inner boundary of the fiber.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light travels along the fiber, and the maximum angle of incidence is related to the radius \\(r\\) and the diameter \\(D\\).",
+    "conclusion": "The condition for TIR can be expressed as \\(\\sin \\theta = \\frac{\\frac{D}{2}}{r}\\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For TIR, \\(\\sin \\theta \\geq \\sin \\theta_c\\). Using \\(\\sin \\theta_c = \\frac{1}{N}\\).",
+    "conclusion": "\\(\\frac{\\frac{D}{2}}{r} \\leq \\frac{1}{N}\\)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange the inequality to solve for \\(r\\).",
+    "conclusion": "\\(r \\geq \\frac{ND}{2}\\)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "In the circuit shown, R1 and R2 are fixed resistors, with R1=50Ω, and the resistance of R2 is unknown. R3 is a variable resistor with an unknown resistance, and C is a capacitor with a capacitance of C=2×10⁻⁶F.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The terminal voltage of the power supply varies with the current in the main circuit as shown in Figure 2, where points A and B correspond to the two endpoints of the variable resistor.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The task is to find the electromotive force and internal resistance of the power supply.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows a straight-line relation between the terminal voltage U and the circuit current I.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The straight-line relation between the terminal voltage U and the circuit current I (U = E – r I).",
+    "conclusion": "The slope of the line equals –r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔU / ΔI = (1 V – 4 V)/(0.8 A – 0.2 A) = –3 V / 0.6 A",
+    "conclusion": "The slope is –5 V A⁻¹, therefore r = 5 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Extrapolating the straight line to I = 0 gives the emf E.",
+    "conclusion": "U = 4 V at I = 0.2 A, so E = 4 V + r (0.2 A) = 4 V + (5 Ω)(0.2 A) = 5 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The calculated values from the graph and equations.",
+    "conclusion": "Emf of the source: E = 5 V, Internal resistance: r = 5 Ω",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

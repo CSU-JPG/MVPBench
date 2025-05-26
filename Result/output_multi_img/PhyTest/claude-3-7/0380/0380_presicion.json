@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Ball P: Mass M = 4m, no charge, initial velocity v₀ = mg/(qB) to the right. Ball Q: Mass m, charge -q, initially at rest. Magnetic field: Strength B, perpendicular outward from the paper (on right side only). Collision is elastic (no mechanical energy loss). No transfer of charge during collision.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an elastic collision, both momentum and kinetic energy are conserved.",
+    "conclusion": "Initially: Ball P momentum: 4m × v₀. Ball Q momentum: 0. Total momentum: 4m × v₀.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By conservation of momentum: 4m × v₀ = 4m × v₁ + m × v₂",
+    "conclusion": "4v₀ = 4v₁ + v₂",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Initially: Kinetic energy of P: ½ × 4m × v₀² = 2mv₀². Kinetic energy of Q: 0. Total kinetic energy: 2mv₀².",
+    "conclusion": "After collision: Kinetic energy of P: ½ × 4m × v₁² = 2mv₁². Kinetic energy of Q: ½ × m × v₂² = ½mv₂². Total kinetic energy: 2mv₁² + ½mv₂².",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "By conservation of kinetic energy: 2mv₀² = 2mv₁² + ½mv₂²",
+    "conclusion": "v₀² = v₁² + ¼v₂²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From equation 1: 4v₀ = 4v₁ + v₂",
+    "conclusion": "v₂ = 4(v₀ - v₁)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting v₂ = 4(v₀ - v₁) into v₀² = v₁² + ¼v₂²",
+    "conclusion": "v₀² = v₁² + ¼ × 16 × (v₀ - v₁)²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v₀² = v₁² + ¼ × 16 × (v₀ - v₁)²",
+    "conclusion": "v₀² = v₁² + 4(v₀ - v₁)²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v₀² = v₁² + 4(v₀ - v₁)²",
+    "conclusion": "v₀² = v₁² + 4v₀² - 8v₀v₁ + 4v₁²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v₀² = v₁² + 4v₀² - 8v₀v₁ + 4v₁²",
+    "conclusion": "v₀² = 5v₁² + 4v₀² - 8v₀v₁",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "v₀² = 5v₁² + 4v₀² - 8v₀v₁",
+    "conclusion": "v₀² - 4v₀² = 5v₁² - 8v₀v₁",
+    "judgment": "Match"
+  }]

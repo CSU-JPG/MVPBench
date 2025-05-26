@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rods a and b are moving on inclined rails with an angle θ = 30°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A uniform magnetic field B = 0.2 T is directed vertically upward.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod a is subjected to a constant force F = 2 N parallel to the rails.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Rod a has mass m_a = 0.3 kg and rod b has mass m_b = 0.1 kg.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Both rods have resistance R = 0.1 Ω.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "As the rods move, they cut through the magnetic field lines, inducing an electromotive force (EMF).",
+    "conclusion": "The EMF induced in each rod is given by 𝓔 = B ⋅ L ⋅ v, where v is the velocity of the rod.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power dissipated as Joule heat in rod a is P_a = 𝓔_a^2 / R.",
+    "conclusion": "P_a = (0.2)^2 (0.5)^2 (1.0)^2 / 0.1 = 0.1 W",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Q_a = P_a ⋅ t and Q_a = 0.12 J",
+    "conclusion": "t = 1.2 s",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The forces acting on rod a are the applied force F, gravitational force m_a g sin θ, and the magnetic force due to the induced current.",
+    "conclusion": "The net force F_net,a on rod a is F_net,a = F - m_a g sin θ - B I_a L",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced current I_a = 𝓔_a / R = B L v_a / R",
+    "conclusion": "I_a = 0.2 ⋅ 0.5 ⋅ 1.0 / 0.1 = 1 A",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rod b is not subjected to any external force like F, but it experiences gravitational force and magnetic force due to the induced current.",
+    "conclusion": "The net force F_net,b on rod b is F_net,b = m_b g sin θ - B I_b L",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced current I_b = 𝓔_b / R = B L v_b / R",
+    "conclusion": "I_b = 0.2 ⋅ 0.5 ⋅ v_b / 0.1",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the rods are connected electrically, the induced EMF and currents are related.",
+    "conclusion": "The velocities v_a and v_b are related due to the conservation of energy and the fact that they are part of the same circuit.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The energy conservation principle implies that the mechanical energy lost by rod a due to the applied force and gravitational force is converted into kinetic energy of both rods and Joule heating.",
+    "conclusion": "The velocities are such that the induced EMFs are equal: B L v_a = B L v_b",
+    "judgment": "Reasonable"
+  }

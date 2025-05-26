@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Initial speed, v = 20 m/s; Distance to puppy, x = 45 m; Reaction time, Δt = 0.5 s",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The bus travels at a constant speed for Δt = 0.5 s.",
+    "conclusion": "Distance during reaction time = v × Δt = 20 m/s × 0.5 s = 10 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance to puppy is 45 m and distance during reaction time is 10 m.",
+    "conclusion": "Remaining distance = x - 10 m = 45 m - 10 m = 35 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the velocity-time graph, the bus decelerates uniformly until it stops.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity decreases from 20 m/s to 0 m/s over 4.5 s.",
+    "conclusion": "a = (0 m/s - 20 m/s) / 4.5 s = -4.44 m/s²",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using v² = u² + 2as with v = 0 m/s, u = 20 m/s, a = -4.44 m/s².",
+    "conclusion": "s = 45 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Distance during reaction time is 10 m and stopping distance during deceleration is 45 m.",
+    "conclusion": "Total stopping distance = 10 m + 45 m = 55 m",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total stopping distance is 55 meters, which is greater than the 45-meter distance to the puppy.",
+    "conclusion": "The puppy is not safe.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

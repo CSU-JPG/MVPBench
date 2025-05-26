@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A basketball is dropped from a height H and rebounds to a height h after an inelastic collision with the ground. Air resistance is proportional to gravitational force with constant λ, where 0 < λ < (H-h)/(H+h). We need to find the ratio of post-collision velocity to pre-collision velocity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The basketball is dropped from rest at height H, accelerates due to gravity, and experiences air resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The collision with the ground is inelastic, meaning some kinetic energy is lost. The ratio of post-collision velocity to pre-collision velocity is constant, denoted as e.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After collision, the basketball rises to height h, decelerating due to gravity and air resistance.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "m = mass of the basketball, g = gravitational acceleration, λ = constant such that air resistance f = λ * m * g.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Our goal is to find e = v_final/v_initial for the collision.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force during descent is m * g - λ * m * g = m * g * (1 - λ).",
+    "conclusion": "The acceleration during descent is g * (1 - λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The basketball starts from rest.",
+    "conclusion": "The velocity just before impact is v_before = sqrt(2 * g * (1 - λ) * H).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After the collision, the velocity is reduced by a factor e.",
+    "conclusion": "v_after = e * sqrt(2 * g * (1 - λ) * H).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The net force during ascent is m * g + λ * m * g = m * g * (1 + λ).",
+    "conclusion": "The acceleration during ascent is g * (1 + λ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The height reached after the collision is given by v_after^2 = 2 * g * (1 + λ) * h.",
+    "conclusion": "(e * sqrt(2 * g * (1 - λ) * H))^2 = 2 * g * (1 + λ) * h.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Simplify the equation (e * sqrt(2 * g * (1 - λ) * H))^2 = 2 * g * (1 + λ) * h.",
+    "conclusion": "e^2 * 2 * g * (1 - λ) * H = 2 * g * (1 + λ) * h.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Cancel 2 * g from both sides of the equation.",
+    "conclusion": "e^2 * (1 - λ) * H = (1 + λ) * h.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Solve for e^2.",
+    "conclusion": "e^2 = (1 + λ) * h / ((1 - λ) * H).",
+    "judgment": "Reasonable"
+  }]

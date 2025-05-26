@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the pressure of the gas at 600 K, we can analyze the given p-T graph.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The graph shows a linear relationship between pressure (p) and temperature (T).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, at 200 K, the pressure is 0.5 × 10⁵ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "At 400 K, the pressure is 1.0 × 10⁵ Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure at 200 K is 0.5 × 10⁵ Pa and at 400 K is 1.0 × 10⁵ Pa.",
+    "conclusion": "The slope (m) can be calculated as m = (1.0 × 10⁵ Pa - 0.5 × 10⁵ Pa) / (400 K - 200 K) = 0.25 × 10³ Pa/K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope is 0.25 × 10³ Pa/K and using the point (200 K, 0.5 × 10⁵ Pa).",
+    "conclusion": "Using the point-slope form of a line, p = mT + c, c = 0, so the equation is p = 0.25 × 10³ × T.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The equation is p = 0.25 × 10³ × T.",
+    "conclusion": "Substitute T = 600 K into the equation: p = 0.25 × 10³ × 600 = 1.5 × 10⁵ Pa.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

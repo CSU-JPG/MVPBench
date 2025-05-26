@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The vertex angle of the cone is \\(\\alpha\\). The speed of light in a vacuum is \\(c\\). We need to find the speed of light in water, denoted as \\(v\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index \\(n\\) of a medium is defined as the ratio of the speed of light in a vacuum to the speed of light in the medium: \\(n = \\frac{c}{v}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The refractive index \\(n\\) of a medium is defined as the ratio of the speed of light in a vacuum to the speed of light in the medium: \\(n = \\frac{c}{v}\\).",
+    "conclusion": "Rearranging gives \\(v = \\frac{c}{n}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Snell's Law relates the angles of incidence and refraction to the refractive indices of the two media: \\(n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "For light traveling from air (refractive index \\(n_1 \\approx 1\\)) into water (refractive index \\(n_2 = n\\)), and considering the critical angle \\(\\theta_c\\) where total internal reflection occurs, we have \\(\\sin \\theta_c = \\frac{1}{n}\\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle \\(\\theta_c\\) is related to the vertex angle \\(\\alpha\\) of the cone. The vertex angle \\(\\alpha\\) is the angle at the tip of the cone, and it is twice the critical angle: \\(\\alpha = 2 \\theta_c\\).",
+    "conclusion": "Therefore, \\(\\theta_c = \\frac{\\alpha}{2}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the relationship \\(\\sin \\theta_c = \\frac{1}{n}\\) and substituting \\(\\theta_c = \\frac{\\alpha}{2}\\).",
+    "conclusion": "\\(\\sin \\left( \\frac{\\alpha}{2} \\right) = \\frac{1}{n}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "\\(\\sin \\left( \\frac{\\alpha}{2} \\right) = \\frac{1}{n}\\).",
+    "conclusion": "Solving for \\(n\\): \\(n = \\frac{1}{\\sin \\left( \\frac{\\alpha}{2} \\right)}\\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the refractive index \\(n\\) to find the speed of light in water \\(v = \\frac{c}{n}\\).",
+    "conclusion": "The propagation speed of light in water is \\(v = c \\sin \\left( \\frac{\\alpha}{2} \\right)\\).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

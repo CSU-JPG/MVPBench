@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A metal rod with resistance R slides on a smooth horizontal rail. The rod moves from position ab to a'b' at speeds v1 and v2 respectively. The ratio of the speeds is given as v1:v2 = 1:2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The rod moves through a magnetic field.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rod moves through a magnetic field.",
+    "conclusion": "The rod induces an electromotive force (EMF) ε.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced EMF is given by ε = B * L * v, where B is the magnetic field strength, L is the length of the rod, and v is the velocity of the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF is given by ε = B * L * v.",
+    "conclusion": "The current I in the loop is given by Ohm's Law: I = ε / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = ε / R and ε = B * L * v.",
+    "conclusion": "I = (B * L * v) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I = (B * L * v) / R.",
+    "conclusion": "For speeds v1 and v2, the currents are I1 = (B * L * v1) / R and I2 = (B * L * v2) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I1 = (B * L * v1) / R and I2 = (B * L * v2) / R.",
+    "conclusion": "The ratio of the currents is I1/I2 = v1/v2 = 1/2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power P of the external force is given by P = F * v.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The force F is equal to the magnetic force on the rod, which is F = B * I * L.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F = B * I * L and I = (B * L * v) / R.",
+    "conclusion": "P = B * (B * L * v / R) * L * v = (B^2 * L^2 * v^2) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = (B^2 * L^2 * v^2) / R.",
+    "conclusion": "For speeds v1 and v2, the powers are P1 = (B^2 * L^2 * v1^2) / R and P2 = (B^2 * L^2 * v2^2) / R.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P1 = (B^2 * L^2 * v1^2) / R and P2 = (B^2 * L^2 * v2^2) / R.",
+    "conclusion": "The ratio of the powers is P1/P2 = (v1^2)/(v2^2) = (1/2)^2 = 1/4.",
+    "judgment": "Match"
+  }]

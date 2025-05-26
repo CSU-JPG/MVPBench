@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The circuit consists of a square wire frame, a capacitor, and a battery. The side length of the square wire frame is L. The capacitance of the capacitor is C. The magnetic field weakens uniformly at a rate of change k.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The battery provides the potential difference across the capacitor. The capacitor stores energy due to the potential difference. The magnetic field affects the current in the wire frame.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference across the capacitor is V = Q/C, where Q is the charge stored in the capacitor.",
+    "conclusion": "The charge stored in the capacitor is Q = CV, where C is the capacitance and V is the potential difference.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The charge stored in the capacitor is Q = CV, where C is the capacitance and V is the potential difference.",
+    "conclusion": "The potential difference across the capacitor is V = Q/C = CV/C = V.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference across the capacitor is V = Q/C = CV/C = V.",
+    "conclusion": "The current in the wire frame is I = V/R.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF in the wire frame is given by the formula: E = -dQ/dt.",
+    "conclusion": "The rate of change of the charge stored in the capacitor is dQ/dt = CV * dV/dt, where dV/dt is the rate of change of the potential difference across the capacitor.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential difference across the capacitor is V = Q/C, so dV/dt = dQ/dt * C/V.",
+    "conclusion": "Therefore, the rate of change of the charge stored in the capacitor is dQ/dt = CV * dQ/dt * C/V = CV^2 * dQ/dt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The rate of change of the charge stored in the capacitor is dQ/dt = CV^2 * dQ/dt.",
+    "conclusion": "Substituting this into the formula for the induced EMF gives: E = -dQ/dt = -CV^2 * dQ/dt.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "E = -dQ/dt = -CV^2 * dQ/dt.",
+    "conclusion": "Simplifying, we get: E = -CV^3.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the wire frame is I = V/R. The magnitude of the induced electromotive force generated in the wire frame is E = -CV^3.",
+    "conclusion": "The current in the wire frame is I = V/R. The magnitude of the induced electromotive force generated in the wire frame is -CV^3.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

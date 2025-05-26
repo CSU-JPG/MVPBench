@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The wire frame consists of a semi-circular arc and a straight line segment. The plane of the wire frame is perpendicular to the magnetic field. The straight part of the wire frame experiences a force F.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The force on a straight conductor of length L carrying current I in a magnetic field B is given by: F = I L B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the straight part of the wire frame, let L = 2r (the diameter of the semi-circle).",
+    "conclusion": "F = I (2r) B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "For the semi-circular arc, the length of the wire is πr.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The force on a curved conductor in a uniform magnetic field can be found by integrating the force over the length of the conductor. However, due to symmetry and the perpendicular orientation, the effective force can be considered as if it were acting along the diameter.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the semi-circular arc, the length of the wire is πr.",
+    "conclusion": "The force on the semi-circular arc is: F_arc = I (πr) B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total force is the vector sum of the forces on the straight and curved parts.",
+    "conclusion": "F_total = F + F_arc",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substituting the expressions for F and F_arc: F_total = I (2r) B + I (πr) B",
+    "conclusion": "F_total = I r B (2 + π)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "We know F = I (2r) B.",
+    "conclusion": "I r B = F/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute I r B into the total force equation: F_total = (F/2) (2 + π)",
+    "conclusion": "F_total = F (1 + π/2)",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

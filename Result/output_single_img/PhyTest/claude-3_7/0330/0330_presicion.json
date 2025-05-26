@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas of definite quality begins at state A, and after undergoing three processes A→B, B→C, and C→A, it returns to its initial state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature of the gas at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: (2 L, 1×10⁵ Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: (2 L, 4×10⁵ Pa)",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State C: (5 L, 1×10⁵ Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Process C→A is represented by a horizontal line from C to A (constant pressure)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The gas is ideal.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Temperature at state A is 200 K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Process C→A occurs at constant pressure (1×10⁵ Pa).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a constant pressure process, work is given by: W = P × ΔV",
+    "conclusion": "The volume change from C to A is ΔV = V_A - V_C = 2 L - 5 L = -3 L = -3×10⁻³ m³",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure during this process is constant at 1×10⁵ Pa.",
+    "conclusion": "Therefore, the work done by the external environment on the gas is: W = P × ΔV = (1×10⁵ Pa) × (-3×10⁻³ m³) = -300 J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the work is negative, and we want the work done BY the external environment (not BY the gas), we need to change the sign.",
+    "conclusion": "Work done by external environment = +300 J",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "During C→A, the gas is being compressed (volume decreases), so the external environment is doing work ON the gas.",
+    "conclusion": "This confirms our positive answer makes sense.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "",
+    "conclusion": "The work done by the external environment on the gas during the process from C to A is 300 J.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

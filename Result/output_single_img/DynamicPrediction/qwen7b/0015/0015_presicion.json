@@ -1,0 +1,105 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The liquid flows from left to right across the image.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffles A, B, and C are placed in such a way that they block the direct path of the liquid.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle A is positioned horizontally near the top left corner.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle A is positioned horizontally near the top left corner.",
+    "conclusion": "It blocks the liquid from flowing directly downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It blocks the liquid from flowing directly downward.",
+    "conclusion": "The liquid will likely flow to the right, bypassing the area below Baffle A.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle B is positioned vertically near the top center.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle B is positioned vertically near the top center.",
+    "conclusion": "It blocks the liquid from flowing directly downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It blocks the liquid from flowing directly downward.",
+    "conclusion": "The liquid will likely flow to the right, bypassing the area below Baffle B.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Baffle C is positioned horizontally near the top right corner.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Baffle C is positioned horizontally near the top right corner.",
+    "conclusion": "It blocks the liquid from flowing directly downward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "It blocks the liquid from flowing directly downward.",
+    "conclusion": "The liquid will likely flow to the left, bypassing the area below Baffle C.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After passing through Baffle A, the liquid will flow to the right.",
+    "conclusion": "After passing through Baffle B, the liquid will continue to flow to the right.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "After passing through Baffle B, the liquid will continue to flow to the right.",
+    "conclusion": "After passing through Baffle C, the liquid will flow to the left.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the liquid flows to the right after Baffle A and Baffle B, it will eventually reach Container D.",
+    "conclusion": "The liquid does not pass through Baffle C, so it does not reach Container E.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The liquid does not pass through Baffle C, so it does not reach Container E.",
+    "conclusion": "The liquid will flow into Container D after passing through baffles A, B, and C.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

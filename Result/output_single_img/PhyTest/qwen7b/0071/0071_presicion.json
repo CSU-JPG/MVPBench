@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The transformer ratio between the primary and secondary coils is given by: n1/n2 = U1/U2 and n1/n3 = U1/U3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: n1 = 100 turns, U1 = 220 V, U2 = 6 V, U3 = 110 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 100 turns, U1 = 220 V, U2 = 6 V",
+    "conclusion": "n1/n2 = 220/6 = 110/3 ≈ 36.67",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 100 turns, U1 = 220 V, U3 = 110 V",
+    "conclusion": "n1/n3 = 220/110 = 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 100 turns, U2 = 6 V, U1 = 220 V",
+    "conclusion": "n2 = (n1 * U2) / U1 = (100 * 6) / 220 = 600/220 ≈ 2.73 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n1 = 100 turns, U3 = 110 V, U1 = 220 V",
+    "conclusion": "n3 = (n1 * U3) / U1 = (100 * 110) / 220 = 11000/220 = 50 turns",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power in the primary coil must equal the sum of the powers in the secondary coils because there is no power loss in an ideal transformer.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Given: P_secondary_2 = 20 W, P_secondary_3 = 60 W.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_secondary_2 = 20 W, P_secondary_3 = 60 W",
+    "conclusion": "P_primary = 20 + 60 = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The power in the primary coil is given by: P_primary = U1 * I1.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_primary = 80 W, U1 = 220 V",
+    "conclusion": "I1 = P_primary / U1 = 80 / 220 ≈ 0.36 A",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

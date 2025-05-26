@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve this problem, we need to determine the constant velocity v of the conductor rod MN as it moves down the rails AB and CD in the presence of a magnetic field.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The rod reaches a constant speed due to the balance between gravitational force and the electromagnetic force (Lorentz force) acting on it.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Gravitational Force: The gravitational force acting on the rod is F_gravity = mg, where m is the mass of the rod and g is the acceleration due to gravity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Magnetic Force (Lorentz Force): When the rod moves through the magnetic field, an electromotive force (emf) is induced, which causes a current to flow through the rod. This current interacts with the magnetic field to produce a magnetic force that opposes the motion of the rod.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced emf (E) in the rod is given by Faraday's law of electromagnetic induction: E = B * l * v.",
+    "conclusion": "The induced emf is E = B * l * v.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The resistance of the rod is R = r * l, where r is the resistance per unit length.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current I flowing through the rod is given by Ohm's law: I = E / R = (B * l * v) / (r * l) = (B * v) / r.",
+    "conclusion": "The current in the rod is I = (B * v) / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic force F_magnetic acting on the rod is given by: F_magnetic = I * l * B = ((B * v) / r) * l * B = (B^2 * l * v) / r.",
+    "conclusion": "The magnetic force is F_magnetic = (B^2 * l * v) / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "At constant velocity, the magnetic force balances the gravitational force: F_gravity = F_magnetic.",
+    "conclusion": "At constant velocity, mg = (B^2 * l * v) / r.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Rearrange the equation mg = (B^2 * l * v) / r to solve for v.",
+    "conclusion": "v = (mg * r) / (B^2 * l)",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

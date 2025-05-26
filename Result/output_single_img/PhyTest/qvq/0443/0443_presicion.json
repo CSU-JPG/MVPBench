@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We have a point light source S in a pool emitting two types of monochromatic light: A and B, forming an illuminated circular area on the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The inner circle is illuminated by polychromatic light, and the outer ring is illuminated only by monochromatic light B.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Refractive indices of water for monochromatic lights A and B are \\( n_1 \\) and \\( n_2 \\) respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "We need to find the sine value of the refraction angle of monochromatic light B at the boundary of the small circle area.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Point light source S is underwater, emitting lights A and B from water to air.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light travels from water (higher refractive index) to air (lower refractive index).",
+    "conclusion": "As they emerge from the water surface, they will bend away from the normal due to refraction.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Circular illuminated area on the water surface with an inner circle illuminated by polychromatic light and an outer ring by light B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Critical angle \\( \\theta_c \\) for total internal reflection is given by \\( \\theta_c = \\arcsin\\left(\\frac{1}{n}\\right) \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refractive indices are \\( n_1 \\) for light A and \\( n_2 \\) for light B.",
+    "conclusion": "Critical angles are \\( \\theta_{c,A} = \\arcsin\\left(\\frac{1}{n_1}\\right) \\) and \\( \\theta_{c,B} = \\arcsin\\left(\\frac{1}{n_2}\\right) \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Light A has a refractive index \\( n_1 \\) and light B has \\( n_2 \\).",
+    "conclusion": "Rays incident at angles less than \\( \\theta_{c,A} \\) for light A and \\( \\theta_{c,B} \\) for light B will pass into the air.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inner circle is illuminated by polychromatic light.",
+    "conclusion": "Inner area corresponds to the region where both lights A and B are passing through.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Outer ring is illuminated only by light B.",
+    "conclusion": "Outer ring is where only light B is passing through, and A is undergoing total internal reflection.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If \\( n_1 > n_2 \\), then \\( \\theta_{c,A} < \\theta_{c,B} \\).",
+    "conclusion": "Light A would start undergoing total internal reflection at a smaller angle compared to light B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Monochromatic light A is totally reflected at the boundary of the small circle area.",
+    "conclusion": "For light A, \\( \\sin i = \\sin C_a = \\frac{1}{n_1} \\).",
+    "judgment": "Match"
+  }]

@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "An ideal gas of definite quality begins at state A, and after undergoing three processes A→B, B→C, and C→A, it returns to its initial state A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The temperature of the gas at state A is 200K.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The gas undergoes three processes: A→B, B→C, and C→A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state A, P_A = 1 × 10^5 Pa and V_A = 2L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state C, P_C = 1 × 10^5 Pa and V_C = 5L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ideal gas law PV = nRT applies.",
+    "conclusion": "The ratio of pressure to volume is constant for each process.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The pressure at state A is 4 × 10^5 Pa.",
+    "conclusion": "The ratio of initial to final pressure is 1:4.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The ratio of initial to final pressure is 1:4.",
+    "conclusion": "The final pressure at state C is 1 × 10^5 Pa.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The final pressure is 1 × 10^5 Pa and the initial temperature is 200K.",
+    "conclusion": "V = 4 × 10^2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the temperature at state C is the same as the initial temperature at state A.",
+    "conclusion": "The temperature at state C is also 200K.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "According to the ideal gas equation of state (P_A V_A / T_A = P_C V_C / T_C).",
+    "conclusion": "T_C = 1000K can be obtained.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

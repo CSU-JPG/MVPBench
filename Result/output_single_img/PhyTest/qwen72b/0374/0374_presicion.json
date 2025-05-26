@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The missile accelerates uniformly upward from rest with an acceleration of 10g = 100 m/s^2 until it reaches an altitude of 5000 m.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "u = 0 m/s, a = 100 m/s^2, s = 5000 m",
+    "conclusion": "Using the kinematic equation v^2 = u^2 + 2as, we find v^2 = 0 + 2 * 100 * 5000 = 1000000, so v = sqrt(1000000) = 1000 m/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The velocity of the missile when it reaches 5000 m is 1000 m/s vertically upward.",
+    "conclusion": "The initial velocity of the missile after reaching 5000 m is 1000 m/s vertically upward.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "After reaching 5000 m, the direction of the gas expulsion changes to an angle θ such that cos θ = 1/11.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "cos θ = 1/11",
+    "conclusion": "sin θ = sqrt(1 - (1/11)^2) = sqrt(120/121) = 2sqrt(30)/11",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The total acceleration due to the rocket thrust is still 10g = 100 m/s^2.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total acceleration = 100 m/s^2, sin θ = 2sqrt(30)/11",
+    "conclusion": "a_x = 100 * sin θ = 100 * 2sqrt(30)/11 = 200sqrt(30)/11 m/s^2",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Total acceleration = 100 m/s^2, cos θ = 1/11, g = 10 m/s^2",
+    "conclusion": "a_y = 100 * cos θ - g = 100 * 1/11 - 10 = -10/11 m/s^2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnitudes of the horizontal and vertical accelerations are a_x = 200sqrt(30)/11 m/s^2 and a_y = -10/11 m/s^2.",
+    "conclusion": "The final answer is 200sqrt(30)/11 m/s^2 and -10/11 m/s^2.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

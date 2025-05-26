@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The semicircular glass brick has a radius R. The light rays strike the flat base at an angle π - γ relative to the horizontal plane. The critical angle for total internal reflection within the glass is γ.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle for total internal reflection within the glass is γ.",
+    "conclusion": "For light to pass through the semicircular surface without being reflected back into the glass, it must enter the semicircular surface at an angle less than or equal to the critical angle γ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light rays strike the flat base at an angle π - γ.",
+    "conclusion": "The angle of incidence on the curved surface will be π - γ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence on the curved surface is π - γ.",
+    "conclusion": "The condition for refraction is sin(θ_i) ≤ sin(γ) where θ_i = π - γ.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin(π - γ) = sin(γ)",
+    "conclusion": "The inequality sin(π - γ) ≤ sin(γ) is always true.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle γ is the maximum angle of incidence for total internal reflection.",
+    "conclusion": "The angle subtended by the points where the light rays just pass through the semicircular surface is 2γ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle subtended by the points is 2γ.",
+    "conclusion": "The width of the portion of the base through which light passes is 2R sin(γ).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the temperature of the gas in state B, we can use the ideal gas law and the fact that the process from A to B is isochoric (constant volume).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State A: P_A = 1.0 × 10^5 Pa, V_A = 6 × 10^-3 m^3, T_A = 27°C = 300 K",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "State B: P_B = 2.0 × 10^5 Pa, V_B = 6 × 10^-3 m^3",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The ideal gas law is given by: PV = nRT where n is the number of moles and R is the universal gas constant.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the volume is constant (V_A = V_B),",
+    "conclusion": "We can write: P_A/T_A = P_B/T_B",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_A/T_A = P_B/T_B",
+    "conclusion": "Rearrange the equation to solve for T_B: T_B = T_A × (P_B/P_A)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = T_A × (P_B/P_A)",
+    "conclusion": "Substitute the known values: T_B = 300 K × (2.0 × 10^5 Pa / 1.0 × 10^5 Pa)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = 300 K × (2.0 × 10^5 Pa / 1.0 × 10^5 Pa)",
+    "conclusion": "T_B = 300 K × 2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = 300 K × 2",
+    "conclusion": "T_B = 600 K",
+    "judgment": "Match",
+    "final_answer": "1"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "T_B = 600 K",
+    "conclusion": "Convert to Celsius (if needed): T_B = 600 K - 273 = 327°C",
+    "judgment": "Reasonable"
+  }
+]

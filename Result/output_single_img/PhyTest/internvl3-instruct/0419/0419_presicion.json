@@ -1,0 +1,33 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism is an equilateral triangle. The incident angle α = 60°. The refractive index for red light n = √3.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n1 sin θ1 = n2 sin θ2. n1 = 1 (air), θ1 = 60°, n2 = √3.",
+    "conclusion": "sin θ2 = (1 * sin 60°) / √3 = (√3/2) / √3 = 1/2, θ2 = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of refraction at the first surface is 30°.",
+    "conclusion": "The angle of incidence at the second surface is 60° - 30° = 30°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Snell's Law: n2 sin θ3 = n1 sin θ4. n2 = √3, θ3 = 30°, n1 = 1.",
+    "conclusion": "sin θ4 = √3 * sin 30° = √3 * 1/2 = √3/2, θ4 = 60°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incident light was at 60° and the emergent light is also at 60° but on the opposite side.",
+    "conclusion": "The total deviation is 60° + 60° = 120°.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

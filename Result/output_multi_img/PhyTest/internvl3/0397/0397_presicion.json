@@ -1,0 +1,79 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole consists of two masses, m, each with charges +q and -q.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole is initially aligned along the X-axis with an initial angular velocity ω0.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The dipole is placed in a uniform magnetic field B perpendicular to the XY-plane.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field exerts a magnetic torque on the dipole due to the charges.",
+    "conclusion": "The torque τ on the dipole in the magnetic field is given by τ = m × B where m is the magnetic moment of the dipole.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic moment m of the dipole is q · d where d is the vector from the negative charge to the positive charge.",
+    "conclusion": "The magnetic moment m is qd.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque due to the magnetic field is τ = qd B sin(θ) where θ is the angle between the dipole moment m and the magnetic field B.",
+    "conclusion": "The torque is τ = qd B sin(θ).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The torque provides the angular acceleration α of the dipole: τ = I α where I is the moment of inertia of the dipole about its center of mass.",
+    "conclusion": "The angular acceleration α is given by α = τ / I.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For a rod of length d with masses at each end, the moment of inertia I is I = 2m (d/2)^2 = 1/2 md^2.",
+    "conclusion": "The moment of inertia I is 1/2 md^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Combining the expressions for torque and moment of inertia: qd B sin(θ) = 1/2 md^2 α.",
+    "conclusion": "The angular acceleration α is α = 2qd B sin(θ) / md^2 = 2qB sin(θ) / md.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The dipole will reverse its orientation if the initial kinetic energy due to rotation is sufficient to overcome the potential energy barrier in the magnetic field.",
+    "conclusion": "The initial rotational kinetic energy is E_initial = 1/4 md^2 ω0^2.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential energy in the magnetic field when the dipole is aligned with the field is zero, and at θ = π (opposite orientation), it is E_potential = -m · B = -qd B cos(θ).",
+    "conclusion": "At θ = π, E_potential = qd B.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the dipole to reverse, the initial kinetic energy must be at least equal to the potential energy at θ = π: 1/4 md^2 ω0^2 ≥ qd B.",
+    "conclusion": "Solving for ω0: ω0^2 ≥ 4qd B / md^2 = 4qB / md.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ω0^2 ≥ 4qB / md.",
+    "conclusion": "ω0 ≥ sqrt(4qB / md) = 2sqrt(qB / md).",
+    "judgment": "Reasonable"
+  }

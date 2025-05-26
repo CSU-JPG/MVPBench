@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "image description",
+    "conclusion": "Charge 1: 2q is fixed at the lower left-front corner of the cube.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Charge 2: –q is fixed at the upper right-back corner (the body-diagonal opposite the first).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Denote O as the midpoint of the body-diagonal connecting those two charges.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Let k = 1/(4π ε₀). For any point P, the electric field magnitude due to a point charge Q at distance r is |E| = k|Q|/r².",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The full body-diagonal of the cube = L√3.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The midpoint O is a distance L√3/2 from each charge.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Vertex A is one of the other six vertices.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Vertex A is a body-diagonal neighbor of neither charge, so the distances are: From A to the 2q charge: r₁ = L√2. From A to the –q charge: r₂ = L√2.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Field magnitude at O (given): E = k(2q)/(L√3/2)² + k(q)/(L√3/2)² (magnitudes add because both individual magnitudes are evaluated; this simplifies to) E = 12kq/(L²).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Field magnitude at A: |E_A| = √[ (k·2q / r₁²)² + (k·q / r₂²)² – 2( k·2q / r₁² )( k·q / r₂² ) cosθ ], where θ is the angle between the two radius vectors from A to the charges.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Geometry of the cube shows cosθ = –½.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute r₁ = r₂ = L√2 and cosθ = –½, simplify, and compare with the earlier expression for E.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The algebra yields: |E_A| = (E / 2).",
+    "relevant": "Yes"
+  }
+]

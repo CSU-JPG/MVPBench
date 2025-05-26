@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the work done by the external environment on the gas during the process from C to A, we need to analyze the given PV diagram and apply the principles of thermodynamics.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "A→B is an isochoric (constant volume) process since the volume remains at 2 L.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "B→C is an isobaric (constant pressure) process since the pressure remains at 4 × 10^5 Pa.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "C→A is an isothermal (constant temperature) process since the gas returns to its initial state A, which has a temperature of 200 K.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the volume does not change in an isochoric process.",
+    "conclusion": "The work done W_AB is zero.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Work done in an isobaric process is given by W = P ΔV.",
+    "conclusion": "W_BC = 4 × 10^5 Pa × 3 × 10^-3 m^3 = 1200 J.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For an isothermal process, the work done W_CA is given by W = nRT ln(V_A/V_C).",
+    "conclusion": "W_CA = -nRT ln(V_C/V_A).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law PV = nRT to find n.",
+    "conclusion": "n = 0.120 mol.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Calculate W_CA using n = 0.120 mol, R = 8.314, T = 200 K, ln(2.5).",
+    "conclusion": "W_CA ≈ -180.5 J.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total work done by the external environment is the sum of work done in each process.",
+    "conclusion": "W_total = 0 + 1200 - 180.5 = 1019.5 J.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The process of state C→A is isopressure change, and the external work on the gas W_CA = pΔV = 300 J.",
+    "conclusion": "The work done by the external environment on the gas during the process from C to A is 300 J.",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

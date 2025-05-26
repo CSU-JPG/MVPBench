@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To solve for the temperature of the gas in state A, we need to use the ideal gas law and the relationship \\( \\frac{pV}{T} = \\text{constant} \\).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state C: Pressure \\( p_C = 5 \\times 10^5 \\) Pa, Volume \\( V_C = 2 \\times 10^{-3} \\) m\\(^3\\), Temperature \\( T_C = 300 \\) K.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "In state A: Pressure \\( p_A = 3 \\times 10^5 \\) Pa, Volume \\( V_A = 5 \\times 10^{-3} \\) m\\(^3\\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using the ideal gas law \\( \\frac{pV}{T} = \\text{constant} \\).",
+    "conclusion": "The equation \\( \\frac{p_C V_C}{T_C} = \\frac{p_A V_A}{T_A} \\) is established.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation \\( \\frac{p_C V_C}{T_C} = \\frac{p_A V_A}{T_A} \\).",
+    "conclusion": "Substitute the values: \\( \\frac{(5 \\times 10^5) \\times (2 \\times 10^{-3})}{300} = \\frac{(3 \\times 10^5) \\times (5 \\times 10^{-3})}{T_A} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation \\( \\frac{(5 \\times 10^5) \\times (2 \\times 10^{-3})}{300} = \\frac{(3 \\times 10^5) \\times (5 \\times 10^{-3})}{T_A} \\).",
+    "conclusion": "Simplify the left-hand side: \\( \\frac{10 \\times 10^2}{300} = \\frac{1000}{300} = \\frac{1}{30} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equation \\( \\frac{(5 \\times 10^5) \\times (2 \\times 10^{-3})}{300} = \\frac{(3 \\times 10^5) \\times (5 \\times 10^{-3})}{T_A} \\).",
+    "conclusion": "Simplify the right-hand side: \\( \\frac{15 \\times 10^2}{T_A} = \\frac{1500}{T_A} = \\frac{15}{T_A} \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Equate both sides: \\( \\frac{1}{30} = \\frac{15}{T_A} \\).",
+    "conclusion": "Solve for \\( T_A \\): \\( T_A = 15 \\times 30 = 450 \\) K.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The coil is placed in a uniform magnetic field B, which is perpendicular to the plane of the coil. The magnetic induction B varies with time t as shown in the graph. The coil has: N = 200 turns, Area S = 1 m^2, Internal resistance r = 10 Ω, Connected to an external resistor R = 50 Ω. The goal is to find the maximum power consumed by R.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The induced electromotive force (EMF) in the coil is given by Faraday's law: E = -N dΦ/dt, where Φ = B ⋅ S is the magnetic flux through the coil.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since S = 1 m^2, the flux becomes: Φ = B ⋅ S = B.",
+    "conclusion": "The induced EMF is: E = -N dB/dt.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "From the graph, B increases linearly with time.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The slope of the graph gives dB/dt: dB/dt = slope of the line = ΔB/Δt.",
+    "conclusion": "ΔB = 0.4 T - 0.2 T = 0.2 T, Δt = 4 s - 2 s = 2 s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "ΔB = 0.2 T, Δt = 2 s.",
+    "conclusion": "dB/dt = 0.1 T/s.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using E = -N dB/dt, N = 200, dB/dt = 0.1 T/s.",
+    "conclusion": "E = -200 ⋅ 0.1 = -20 V. The magnitude of the induced EMF is: |E| = 20 V.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total resistance in the circuit is the sum of the internal resistance r and the external resistor R: r = 10 Ω, R = 50 Ω.",
+    "conclusion": "R_total = r + R = 10 Ω + 50 Ω = 60 Ω.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The current in the circuit is given by Ohm's law: I = E/R_total. E = 20 V, R_total = 60 Ω.",
+    "conclusion": "I = 20/60 = 1/3 A.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The power consumed by the external resistor R is given by: P = I^2 R. I = 1/3 A, R = 50 Ω.",
+    "conclusion": "P = (1/3)^2 ⋅ 50 = 1/9 ⋅ 50 = 50/9 W.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P = 50/9 W.",
+    "conclusion": "The maximum power consumed by R is: 50/9 W ≈ 5.56 W.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

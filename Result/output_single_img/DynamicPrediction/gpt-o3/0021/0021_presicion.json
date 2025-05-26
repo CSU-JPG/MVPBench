@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Liquid will flow out from A, B and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Predict which container (D or E) it will flow into after passing through baffles.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream A is yellow.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream B is cyan.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream C is orange.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream A hits the brown slanted barrier.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Stream B and C hit the blue slanted barrier.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream A hits the brown slanted barrier.",
+    "conclusion": "Stream A changes its flow direction to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream B and C hit the blue slanted barrier.",
+    "conclusion": "Stream B and C merge and change their flow direction to the left.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The incoming streams from A, B and C converge at the gap between the purple and grey baffles and undergo multiple reflections within the confined space.",
+    "conclusion": "The streams finally get deflected to the right.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream A changes its flow direction to the right.",
+    "conclusion": "Stream A will be directed to container D.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream B and C merge and change their flow direction to the left.",
+    "conclusion": "Stream B will be directed to container E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Stream B and C merge and change their flow direction to the left.",
+    "conclusion": "Stream C will be directed to container E.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The streams finally get deflected to the right.",
+    "conclusion": "Most of the liquids from A, B and C all flows to the bottom compartment E, and few small droplets reach D.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

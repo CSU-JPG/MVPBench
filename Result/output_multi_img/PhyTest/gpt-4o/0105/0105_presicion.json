@@ -1,0 +1,85 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Four homogeneous spheres of radius r are stacked in a cone-like arrangement.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The bottom three spheres A, B, and C are tied with a rope in the same horizontal plane, forming an equilateral triangle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Sphere D is placed on top of the three spheres in a static equilibrium.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Sphere D has a mass m, and the force due to gravity acting on it is its weight: F_gravity = mg, where g is the acceleration due to gravity.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Since sphere D is in static equilibrium, the weight of sphere D is supported by the normal forces exerted by the three bottom spheres A, B, and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The arrangement is symmetric: The centers of spheres A, B, and C form an equilateral triangle. Sphere D is placed directly above the centroid of the equilateral triangle formed by A, B, and C.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Due to symmetry, the normal forces exerted by spheres A, B, and C on sphere D are equal in magnitude.",
+    "conclusion": "Let the normal force exerted by each sphere be F_normal.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The normal forces F_normal from spheres A, B, and C act at an angle θ with the vertical direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical component of these forces must balance the weight of sphere D, since sphere D is in static equilibrium.",
+    "conclusion": "The vertical component of the normal force from each sphere is: F_vertical = F_normal cosθ",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since there are three spheres, the total vertical force is: F_total vertical = 3 F_normal cosθ",
+    "conclusion": "For equilibrium, this total vertical force must equal the weight of sphere D: 3 F_normal cosθ = mg",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "From the geometry of the arrangement: The centers of spheres A, B, and C form an equilateral triangle. Sphere D is placed directly above the centroid of this triangle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The angle θ is the angle between the line connecting the center of sphere D to the center of sphere A and the vertical direction.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The vertical distance between the center of sphere D and the plane containing the centers of spheres A, B, and C is r, the radius of the spheres. The horizontal distance from the center of sphere D to the center of sphere A is also r, due to the geometry of the arrangement.",
+    "conclusion": "Using trigonometry: cosθ = r/√(r^2 + r^2) = r/√(2)r = 1/√2",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute cosθ = 1/√2 into the equilibrium equation: 3 F_normal cosθ = mg",
+    "conclusion": "3 F_normal (1/√2) = mg",
+    "judgment": "Wrong"
+  }]

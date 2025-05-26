@@ -1,0 +1,96 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyzing the heat exchange in the cyclic process A→B→C→D→A for the ideal gas.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "A cyclic process with 4 states (A, B, C, D) connected by paths; y-axis represents pressure (p) in units of 10⁵ Pa; x-axis represents volume ratio (V/L).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "TA = 27°C = 300 K (converting to Kelvin).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "State A: p = 1×10⁵ Pa, V/L = 3.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "State B: p = 1×10⁵ Pa, V/L = 4.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "State C: p = 0.75×10⁵ Pa, V/L = 4.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "State D: p = 0.75×10⁵ Pa, V/L = 3.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "A→B is an isobaric (constant pressure) expansion.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "B→C is an isochoric (constant volume) cooling.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "C→D is an isobaric compression.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "D→A is an isochoric heating.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "For an ideal gas, the first law of thermodynamics states: Q = ΔU + W.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "ΔU is change in internal energy = nCvΔT for an ideal gas; W is work done by the gas = ∫p dV.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For process A→B, TB = TA·(VB/VA) = 300K·(4/3) = 400K using ideal gas law.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "QAB = nCp(TB - TA) = nCp(400K - 300K) = 100nCp for process A→B.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For process B→C, TC = TB·(pC/pB) = 400K·0.75 = 300K using ideal gas law.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "QBC = nCv(TC - TB) = nCv(300K - 400K) = -100nCv for process B→C.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For process C→D, TD = TC·(VD/VC) = 300K·0.75 = 225K using ideal gas law.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "QCD = nCp(TD - TC) = nCp(225K - 300K) = -75nCp for process C→D.",
+    "relevant": "Yes"
+  }]

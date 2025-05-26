@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The field between two parallel plates is uniform: E = V/d.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The voltage between the two plates is 4 V and the distance between them is 10 mm.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The field between two parallel plates is uniform: E = V/d. Here V = 4 V and d = 10 mm = 0.01 m.",
+    "conclusion": "E = 4 / 0.01 = 400 V m⁻¹.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Point M is 2 mm (0.002 m) from the upper plate A.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Point M is 2 mm (0.002 m) from the upper plate A; with a linear potential drop, ΔV = E·Δx = 400 × 0.002.",
+    "conclusion": "ΔV = 0.8 V.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "If plate B is grounded (0 V) and plate A is at +4 V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "If plate B is grounded (0 V) and plate A is at +4 V, the potential at M is VM = 4 V – 0.8 V.",
+    "conclusion": "VM = 3.2 V.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The potential at M is VM = 4 V – 0.8 V.",
+    "conclusion": "VM = -3.2 V.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

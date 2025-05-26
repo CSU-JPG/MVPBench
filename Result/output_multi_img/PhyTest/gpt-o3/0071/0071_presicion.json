@@ -1,0 +1,45 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A transformer with two secondary coils has a primary coil with n1 = 100 turns, connected to a circuit with a voltage of U1 = 220V.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Two appliances, '6 V 20 W' and '110 V 60 W,' are connected to the two secondary coils respectively.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "6 V appliance: I₂ = P₂ / U₂ = 20 W / 6 V",
+    "conclusion": "I₂ ≈ 3.33 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "110 V appliance: I₃ = P₃ / U₃ = 60 W / 110 V",
+    "conclusion": "I₃ ≈ 0.545 A",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "P_out = P₂ + P₃ = 20 W + 60 W",
+    "conclusion": "P_out = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Ideal-transformer power balance (neglecting losses) P_in = P_out = 80 W",
+    "conclusion": "P_in = 80 W",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "I₁ = P_in / U₁ = 80 W / 220 V",
+    "conclusion": "I₁ ≈ 0.36 A",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

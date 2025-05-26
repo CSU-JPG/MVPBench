@@ -1,0 +1,57 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Square wire frame with side length $L$, capacitor with capacitance $C$ in the circuit, only half of the square frame is in a uniform magnetic field (directed into the page), the magnetic field is weakening uniformly at a rate $k$ (i.e., $\\frac{dB}{dt} = -k$), need to find the induced EMF and current",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Half of the square frame is in the magnetic field (marked by the x's)",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The total area of the square is $L^2$",
+    "conclusion": "The area exposed to the magnetic field is $\\frac{1}{2}L^2$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Magnetic flux $\\Phi$ through the loop is $\\Phi = B \\cdot \\frac{1}{2}L^2$",
+    "conclusion": "Magnetic flux $\\Phi = B \\cdot \\frac{1}{2}L^2$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Faraday's Law states that the induced EMF is equal to the negative rate of change of magnetic flux: $\\mathcal{E} = -\\frac{d\\Phi}{dt}$",
+    "conclusion": "$\\mathcal{E} = -\\frac{d}{dt}(B \\cdot \\frac{1}{2}L^2)$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Only the magnetic field $B$ is changing at rate $\\frac{dB}{dt} = -k$ and the area remains constant",
+    "conclusion": "$\\mathcal{E} = -\\frac{1}{2}L^2 \\cdot \\frac{dB}{dt} = -\\frac{1}{2}L^2 \\cdot (-k) = \\frac{1}{2}kL^2$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To find the current, we need to consider the circuit's properties. This circuit contains a capacitor, so we need to apply Kirchhoff's laws.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The induced EMF drives a current through the circuit. In a circuit with a capacitor $C$, the relationship between voltage across the capacitor and current is $I = C\\frac{dV}{dt}$",
+    "conclusion": "The voltage across the capacitor equals the induced EMF: $V = \\mathcal{E} = \\frac{1}{2}kL^2$",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The magnetic field is weakening uniformly at rate $k$, the EMF is constant, making $\\frac{dV}{dt} = 0$",
+    "conclusion": "The current in the circuit is $I = C\\frac{dV}{dt} = 0$",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

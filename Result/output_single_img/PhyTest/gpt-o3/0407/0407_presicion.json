@@ -1,0 +1,39 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Let O be the centre of the semicircle, A the left-hand end of the flat base, and B the right-hand end (AB is a diameter of length 2R).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "A ray in air is incident on the curved surface at some point P making an angle γ (measured inside the glass) with the radius OP.",
+    "conclusion": "This ray enters the glass along OP (because the curved surface is normal to OP).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Inside the glass it therefore travels along OP towards the base, strikes the base at point Q directly below P, and meets the base at an angle γ (inside the glass).",
+    "conclusion": "Only those rays for which γ is smaller than the critical angle γc can emerge from the base.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The extreme ray that still emerges satisfies γ = γc (given in the statement as γ).",
+    "conclusion": "P is the point on the semicircle where the radius OP makes the angle γ with the vertical radius OC (C is the midpoint of AB).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The geometry gives the horizontal distance CQ = R sin γ from the midpoint of the base to the extreme emergent point Q.",
+    "conclusion": "Therefore rays that reach the base between C − R sin γ and C + R sin γ (i.e. a total width 2R sin γ) leave the glass.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Beyond that range they meet the base at angles greater than γ and suffer total internal reflection.",
+    "conclusion": "The width of the portion of the base through which light emerges is Δx = 2 R sin γ.",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

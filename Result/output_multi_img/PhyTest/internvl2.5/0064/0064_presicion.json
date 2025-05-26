@@ -1,0 +1,87 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Determine the distance h that the point source S should be moved vertically upward so that the light emitted from S is just not visible above the water surface.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The refractive index of the liquid is n = sqrt(2).",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "n = sqrt(2)",
+    "conclusion": "The critical angle C can be found using Snell's law: sqrt(2) sin C = 1.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sqrt(2) sin C = 1",
+    "conclusion": "sin C = 1/sqrt(2) = sqrt(2)/2",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "sin C = sqrt(2)/2",
+    "conclusion": "C = 45 degrees",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Set up the right triangle with C = 45 degrees.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "C = 45 degrees",
+    "conclusion": "In the right triangle triangle OCF, tan 45 degrees = 1 = OC/CF.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "tan 45 degrees = OC/CF",
+    "conclusion": "OC = CF",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "OC is the vertical distance from O to S, and CF is the horizontal distance r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "OC = CF and CF = r",
+    "conclusion": "OC = r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The original depth H is sqrt(3)r.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "OC = H - h and OC = r",
+    "conclusion": "r = sqrt(3)r - h",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "r = sqrt(3)r - h",
+    "conclusion": "h = sqrt(3)r - r",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "h = sqrt(3)r - r",
+    "conclusion": "h = (sqrt(3) - 1)r",
+    "judgment": "Match",
+    "final_answer": "0"
+  }
+]

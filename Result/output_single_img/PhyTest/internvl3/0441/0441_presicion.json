@@ -1,0 +1,63 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To ensure total internal reflection within the optical fiber, determine the minimum turning radius \\( r \\) of the central axis.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Total internal reflection occurs when light in a medium with a higher refractive index hits a boundary with a lower refractive index at an angle greater than the critical angle.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The critical angle \\( \\theta_c \\) is given by \\( \\sin(\\theta_c) = \\frac{1}{N} \\), where \\( N \\) is the refractive index of the optical fiber.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The optical fiber is bent into a semicircle with radius \\( r \\).",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "Light enters perpendicularly at face A and exits perpendicularly at face B.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For TIR to occur at every point along the curved path, the angle of incidence at the fiber's inner boundary must be greater than or equal to the critical angle.",
+    "conclusion": "The angle of incidence \\( \\theta_i \\) at the inner boundary is related to the radius of curvature \\( r \\) and the diameter \\( D \\) of the fiber.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The relationship between the radius of curvature \\( r \\) and the critical angle can be derived from the geometry of the semicircle.",
+    "conclusion": "The light ray inside the fiber will hit the inner wall at an angle determined by the radius \\( r \\) and the fiber's diameter \\( D \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The condition for TIR is \\( \\sin(\\theta_i) \\geq \\sin(\\theta_c) \\).",
+    "conclusion": "The angle \\( \\theta_i \\) can be approximated by the geometry of the semicircle: \\( \\sin(\\theta_i) = \\frac{D/2}{r} \\).",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Setting \\( \\sin(\\theta_i) = \\frac{D/2}{r} \\) equal to the critical angle condition \\( \\frac{1}{N} \\).",
+    "conclusion": "Solving for \\( r \\): \\( r = \\frac{ND}{2} \\).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The turning radius \\( r \\) of the central axis of the optical fiber should be not less than \\( \\frac{ND}{2} \\) to ensure total internal reflection.",
+    "conclusion": "The turning radius \\( r \\) of the central axis of the optical fiber should be not less than \\( \\frac{ND}{2} \\).",
+    "judgment": "Wrong",
+    "final_answer": "0"
+  }
+]

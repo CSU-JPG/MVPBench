@@ -1,0 +1,82 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "Analyze energy exchanges during melting and freezing processes to determine mass fraction of droplet that freezes.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "image description",
+    "conclusion": "Area between temperature curve and height-axis in melting region is A = 5.0 km °C; area in freezing region is A' = 4.0 km °C.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Energy required to melt droplet fraction in warmer layer is proportional to area A; energy released when droplet fraction freezes in colder layer is proportional to area A'.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Energy required to melt mass m_m is Q_melt = m_m L, where L is specific latent heat of fusion for ice.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Energy released when mass m_f freezes is Q_freeze = m_f L.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Area A represents energy required to melt droplet: A = Q_melt / (c_water ΔT), where c_water is specific heat of water and ΔT is temperature change in melting region.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Area A' represents energy released when droplet freezes: A' = Q_freeze / (c_ice ΔT'), where c_ice is specific heat of ice and ΔT' is temperature change in freezing region.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Since temperature changes ΔT and ΔT' are the same, we can write: A = m_m L / (c_water ΔT) and A' = m_f L / (c_ice ΔT).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Express masses m_m and m_f in terms of areas: m_m = A c_water ΔT / L and m_f = A' c_ice ΔT / L.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Mass fraction of droplet that freezes is m_f / m, where m = m_m + m_f.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Mass fraction that freezes = m_f / (m_m + m_f).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute expressions for m_m and m_f: Mass fraction that freezes = (A' c_ice ΔT / L) / (A c_water ΔT / L + A' c_ice ΔT / L).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Simplify expression: Mass fraction that freezes = A' c_ice / (A c_water + A' c_ice).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Plug in given values: A = 5.0 km °C, A' = 4.0 km °C, c_water = 4.2 kJ kg⁻¹ K⁻¹, c_ice = 2.1 kJ kg⁻¹ K⁻¹.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Calculate final value: Mass fraction that freezes = (4.0 × 2.1) / (5.0 × 4.2 + 4.0 × 2.1).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Mass fraction that freezes = 8.4 / (21.0 + 8.4) = 8.4 / 29.4 ≈ 0.2857.",
+    "relevant": "Yes"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "The prism is a right triangular prism with cross-section ABCD. A beam of light enters perpendicularly from O along AD. Refractive index of the prism, n = √2. AB = BC = 8 cm. OA = 2 cm. ∠OAB = 60°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light enters the prism at point A perpendicularly.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light enters the prism at point A perpendicularly.",
+    "conclusion": "There is no refraction at point A because the angle of incidence is 0°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The light travels inside the prism until it hits face AB.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light travels inside the prism until it hits face AB.",
+    "conclusion": "At point E on face AB, the light ray will refract.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "Using Snell's Law: n1 sin θ1 = n2 sin θ2. Here, n1 = 1 (air), n2 = √2 (prism), and θ1 = 0°.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using Snell's Law: n1 sin θ1 = n2 sin θ2. Here, n1 = 1 (air), n2 = √2 (prism), and θ1 = 0°.",
+    "conclusion": "The critical angle θc for total internal reflection is given by sin θc = 1/n.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The critical angle θc for total internal reflection is given by sin θc = 1/n.",
+    "conclusion": "sin θc = 1/√2 ≈ 0.707, θc = sin⁻¹(0.707) ≈ 45°.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray inside the prism will hit face AB at an angle greater than the critical angle 45°.",
+    "conclusion": "This causes total internal reflection, and it will reflect off the face AB and continue towards face BC.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light reflects off the face AB and continues towards face BC.",
+    "conclusion": "At face BC, the light ray will exit the prism.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light ray will exit the prism at face BC.",
+    "conclusion": "The angle of incidence at BC is determined by the geometry of the prism and the path of the light inside.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The light exits the prism at face BC.",
+    "conclusion": "The light ray exits CD at an angle of 45° towards the lower left.",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]

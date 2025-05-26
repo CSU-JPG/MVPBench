@@ -1,0 +1,73 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "To determine the condition that F_1 must satisfy for the wooden board to move upward, we need to analyze the forces acting on both the block and the plank.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The block experiences the following forces: Gravitational force mg downward, Normal force N from the plank, Frictional force f from the plank, Horizontal force F_1, Vertical force F_2.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the block is moving upward, the frictional force f acts downward. The maximum static friction is given by f_max = μN.",
+    "conclusion": "For the block to move upward, the net force in the vertical direction must be positive: F_2 - mg - f = ma_y.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the block to just start moving upward, a_y ≥ 0, so F_2 - mg - f ≥ 0.",
+    "conclusion": "F_2 ≥ mg + f.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "In the horizontal direction, the net force is: F_1 - N = ma_x.",
+    "conclusion": "Assume the block moves horizontally with some acceleration, so F_1 = N.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The plank experiences the following forces: Gravitational force Mg downward, Normal force N' from the wall, Frictional force f' from the wall, Normal force N from the block, Frictional force f from the block.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "For the plank to move upward, the net force in the vertical direction must be positive: N sin θ + f' - Mg - f cos θ = Ma_y'.",
+    "conclusion": "For the plank to just start moving upward, a_y' ≥ 0, so N sin θ + f' ≥ Mg + f cos θ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle θ can be found using the geometry of the problem. Since the plank is leaning against a smooth vertical wall, the normal force N' from the wall is horizontal and equal to the horizontal component of the normal force from the block: N' = N cos θ.",
+    "conclusion": "The frictional force f' from the wall is: f' = μ' N'.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Since the wall is smooth, μ' = 0, so f' = 0.",
+    "conclusion": "Thus, the equation simplifies to: N sin θ ≥ Mg + f cos θ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Using N = F_1 and f = μ F_1.",
+    "conclusion": "F_1 sin θ ≥ Mg + μ F_1 cos θ.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_1 sin θ ≥ Mg + μ F_1 cos θ.",
+    "conclusion": "F_1 (sin θ - μ cos θ) ≥ Mg.",
+    "judgment": "Reasonable"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "F_1 (sin θ - μ cos θ) ≥ Mg.",
+    "conclusion": "F_1 ≥ Mg / (sin θ - μ cos θ).",
+    "judgment": "Reasonable"
+  }]

@@ -1,0 +1,67 @@
+[
+  {
+    "step_type": "background information",
+    "conclusion": "The cylinder is divided into two chambers, each with volume V, pressure p, and temperature T; diaphragm has mass m and rests on a ledge.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "The diaphragm is in equilibrium under gravity and pressure difference; force due to gravity is mg; pressure difference must balance this force.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Pressure difference is p1 - p2 = mg/A, where A is the cross-sectional area of the cylinder.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Total volume of the cylinder is 2V; V0 is the volume of the lower chamber when gas starts to leak; upper chamber volume is 2V - V0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "For the lower chamber, p1 V0 = n1 RT; for the upper chamber, p2 (2V - V0) = n2 RT; assume n1 = n2 = n.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "From ideal gas law, p1 = nRT/V0 and p2 = nRT/(2V - V0); substitute into pressure difference equation.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Factor out nRT: nRT (1/V0 - 1/(2V - V0)) = mg/A; combine fractions: nRT (2V - 2V0)/(V0 (2V - V0)) = mg/A.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Rearrange equation: 2nRT(V - V0)/(V0 (2V - V0)) = mg/A; multiply both sides by V0 (2V - V0).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "background information",
+    "conclusion": "Let x = mgH/pV; note H = V/A, so x = mg/(pA).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Substitute x into equation: V - V0 = x V0 (2V - V0); expand and rearrange: xV0^2 - (2xV + 1)V0 + V = 0.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Quadratic equation in V0: xV0^2 - (2xV + 1)V0 + V = 0; solve using quadratic formula.",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Solve quadratic: V0 = ((2xV + 1) ± √(4x^2V^2 + 1))/(2x).",
+    "relevant": "Yes"
+  },
+  {
+    "step_type": "logical inference",
+    "conclusion": "Select physically meaningful root: V0 = ((2xV + 1) - √(4x^2V^2 + 1))/(2x).",
+    "relevant": "Yes"
+  }
+]

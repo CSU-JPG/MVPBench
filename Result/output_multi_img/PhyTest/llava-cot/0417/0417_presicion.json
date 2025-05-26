@@ -1,0 +1,51 @@
+[
+  {
+    "step_type": "background information",
+    "premise": "",
+    "conclusion": "A liquid tank has a height of H. A flashlight shines into an empty tank, and the light spot falls at point a on the left wall, distance h from the bottom. When filled with liquid, the light spot falls at the outlet, distance L from the left wall.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "image description",
+    "premise": "",
+    "conclusion": "The image shows a rectangular tank with height H and a base height h. A light beam hits point a on the left wall, distance h from the bottom. When filled, the light spot reaches the outlet, distance L from the left wall.",
+    "judgment": "Match"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Known: h, H, L. Unknown: Refractive index n.",
+    "conclusion": "Identify knowns and unknowns.",
+    "judgment": "N/A"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "The angle of incidence α equals the angle of refraction β in the same medium.",
+    "conclusion": "Apply refraction principles: α = β.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Triangles BOC and AOE are similar because they share angle α and both have a right angle.",
+    "conclusion": "Use similar triangles: OC/OE = BC/AE.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Refractive index n is given by the ratio of the heights OC/OE = n.",
+    "conclusion": "Calculate refractive index: n = H/(H - h).",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "Substitute known values.",
+    "conclusion": "n = 3/2.",
+    "judgment": "Wrong"
+  },
+  {
+    "step_type": "logical inference",
+    "premise": "From the problem statement, sin i = L/sqrt((H - h)^2 + L^2) and sin r = L/sqrt(H^2 + L^2). By Snell's law, n = sin i/sin r.",
+    "conclusion": "n = sqrt(H^2 + L^2)/sqrt((H - h)^2 + L^2).",
+    "judgment": "Match",
+    "final_answer": "1"
+  }
+]
