@@ -43,11 +43,10 @@ pip install -r requirements.txt
 
 ## 📂 Accessing Datasets
 
-TextAtlas was meticulously designed to challenge and evaluate text-rich image generation.  
+MVPBench was meticulously designed to challenge and evaluate visual physical reasoning through the lens of visual chain-of-thought (CoT) 
 For more detailed information and accessing our dataset, please refer to our Huggingface page:
 
 - 🧑‍🔬 [MVPBench](https://huggingface.co/datasets/CSU-JPG/MVPBench)
-- 🧑‍🔬 [TextAtlasEval](https://huggingface.co/datasets/naver-ai/TextAtlasEval)
 
 ---
 
@@ -61,34 +60,49 @@ Please refer to our evaluation folders for detailed information on evaluating wi
 
 ## 🗂 Data Format
 
-The TextAtlas annotation documentation is available on Huggingface:
-
-- **Main version**: Contains image paths and pre-integrated prompts, making it suitable for direct training or evaluation.
-- **Meta data**: Includes all the data from the main version, along with additional intermediate results such as bounding boxes (`bbox`), font size, and other related information.
-
-### 📌 Example
+- The dataset is provided in jsonl format and contains the following attributes:
 
 ```json
-{
-  "image_path": "0000089b-f1ce-41cf-9cd8-688856822244.png",
-  "annotation": "In an opulent boutique, a sleek white digital display contrasts sharply with meticulously arranged merchandise and luxurious decor, creating a striking visual focal point. digital display with the text : 'Amidst the opulent ambiance of the upscale boutique, a sleek white digital display stands out as a striking contrast to the meticulously arranged merchandise and sumptuous luxury decor'"
-}
+[
+    {
+        "id": [string] Problem ID, e.g.,"PhyTest_0001",
+        "query": [string] The question text,
+        "original_scene": {
+            "id": [string] original scene ID,
+            "path": [string] The original image path of the question,
+            "description": [string] Description of the original image content,
+        },
+        "key_step_1": {
+            "id": [string] The first reasoning step ID,
+            "path": [string] The first reasoning step image path of the question,
+            "conclusion": [string] The textual content of the first reasoning step,
+        },
+        "key_step_2": {
+            "id": [string] The second reasoning step ID,
+            "path": [string] The second reasoning step image path of the question,
+            "conclusion": [string] The textual content of the second reasoning step,
+        },
+		...
+		"key_step_n": {
+            "id": [string] The nth reasoning step ID,
+            "path": [string] The nth reasoning step image path of the question,
+            "conclusion": [string] The textual content of the nth reasoning step,
+        },
+        "final_scene": {
+            "id": [string] The final answer ID,
+            "path": The final answer image path of the question,
+            "annotation": The textual content of the final answer,
+        },
+        "subject": [string] The subject of subset of data(Physics problems,Physics experiments, Spatial relations and Dynamic prediction,
+        "possible_chains": [string] all possible reasoning paths, e.g., [
+            [ "key_step_1","key_step_2"]
+        ],
+        "json_path": [string] The path of the json file,
+    }
+]
 ```
 
-### 📝 Field Description
 
-- **`image_path`** (`str`): The image file name  
-- **`annotation`** (`str`): A richly descriptive caption that includes embedded text
-
-### 📊 Metadata Format
-
-In addition to the fields above, the meta version includes:
-
-- Bounding boxes (`bbox`)
-- Font sizes
-- Layout meta data
-
-For more information, see the full [Detailed Annotation Guide](detialed_annotation/README.md)
 
 ---
 
@@ -111,5 +125,4 @@ If you find our work useful, please cite us:
 For questions, suggestions or issues, feel free to open an [issue](https://github.com/CSU-JPG/MVPBench/issues) on GitHub.
 
 ---
-
 
