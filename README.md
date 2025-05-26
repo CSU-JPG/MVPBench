@@ -62,7 +62,7 @@ Please refer to our evaluation folders for detailed information on evaluating wi
 
 - The dataset is provided in jsonl format and contains the following attributes:
 
-```json
+```
 [
     {
         "id": [string] Problem ID, e.g.,"PhyTest_0001",
