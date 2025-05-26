@@ -139,7 +139,7 @@
                             <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiangxi Zheng</a><sup>4</sup>,</span>
                              <br>
                               <span class="author-block">
-                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Alex Jinpeng Wang</a><sup>1 &dagger;</sup>,</span>
+                                <a href="https://fingerrec.github.io/" target="_blank">Alex Jinpeng Wang</a><sup>1 &dagger;</sup>,</span>
                                   <span class="author-block">
                                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fangming Liu</a><sup>3</sup>,</span>
                                       <span class="author-block">
@@ -154,8 +154,15 @@
 
             <!-- Logos -->
             <div class="logos">
-              <img src="static/images/csu.jpg" alt="csu Logo" class="csu-logo" width="200">
-              <img src="static/images/dianzi.png" alt="dianzi Logo" class="dianzi-logo" width="200">
+              <img src="static/images/csu.jpg" alt="csu Logo" class="csu-logo" width="100">
+              &nbsp;
+              <img src="static/images/dianzi.png" alt="dianzi Logo" class="dianzi-logo" width="95">
+              &nbsp;
+              <img src="static/images/pengcheng.jpg" alt="pengcheng Logo" class="pengcheng" width="100">
+              &nbsp;
+              <img src="static/images/nanjing.png" alt="nanjing Logo" class="nanjing" width="72">
+              &nbsp;
+              <img src="static/images/microsoft.jpg" alt="microsoft Logo" class="microsoft" width="150">
             </div>
 
             <div class="column has-text-centered">
@@ -164,7 +171,7 @@
 
             <!-- Arxiv PDF link -->
             <span class="link-block">
-            <a href="https://arxiv.org/abs/2501.08326" class="external-link button is-normal is-rounded is-dark">
+            <a href="https://arxiv.org/abs" class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
                 <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
             </span>
@@ -183,7 +190,35 @@
               <span>Code</span>
               </a>
               </span>
-              
+            
+            &nbsp;
+            
+            <!-- Hugging Face PNG Button -->
+            <span class="link-block">
+              <a href="https://huggingface.co/datasets/CSU-JPG/MVPBench" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="static/images/huggingface.png" alt="Hugging Face" style="height: 1em; vertical-align: middle;">
+                </span>
+                <span>Data</span>
+              </a>
+            </span>
+
+
+            
+            <!-- Hugging Face PDF link -->
+            <!-- <span class="link-block">
+              <a href="https://arxiv.org/abs" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="1em" height="1em">
+                    <circle cx="128" cy="128" r="120" fill="#FFD21F"/>
+                    <path d="M80 160a16 16 0 0 0 32 0h32a16 16 0 0 0 32 0" fill="#000"/>
+                    <circle cx="96" cy="112" r="12" fill="#000"/>
+                    <circle cx="160" cy="112" r="12" fill="#000"/>
+                  </svg>
+                </span>
+                <span>Data</span>
+              </a>
+            </span> -->
             </div>
           </div>
         </div>
@@ -254,8 +289,7 @@
   <div class="zoomcaption">Dataset Overview</div>
   <img class="static-image" src="./static/images/dataset.png">
   <figcaption><br> <b>Figure 2: Examples from MVPBench across four major categories.</b> 
-    MVPBench introduces a comprehensive protocol to evaluate CoT reasoning from three perspectives: quality, diversity, and efficiency.
-    For CoT diversity, we propose a graph-based multi-path evaluation method that quantifies the ability of a model to explore alternative reasoning routes via Path Validity Rate (PVR) and Path Coverage Score (PCS), advancing beyond prior single-path metrics.
+    Each example includes an initial scene followed by multiple reasoning steps. Target objects are marked with red arrows and labeled with letters to reduce textual bias.
   </figcaption>
 </figure>
 </div>
@@ -278,8 +312,18 @@
 <section class="section hero is-small">
 <div class="container is-max-desktop is-max-mobile">
 <figure class="image-container">
-  <div class="zoomcaption">Performance comparison between single-image and multi-image inputs on CoT evaluation. </div>
+  <div class="zoomcaption">Performance comparison between single-image and multi-image inputs on CoT evaluation </div>
   <img class="static-image" src="./static/images/single_multi.png">
+</figure>
+</div>
+</section>
+
+<!-- Image with caption -->
+<section class="section hero is-small">
+<div class="container is-max-desktop is-max-mobile">
+<figure class="image-container">
+  <div class="zoomcaption">CoT Performance of MLLMs with post training versus without post-training. </div>
+  <img class="static-image" src="./static/images/post_train.png">
 </figure>
 </div>
 </section>
@@ -308,7 +352,7 @@
 </section> -->
 
 <!-- Acknowledgements Section -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop is-max-mobile">
     <div class="columns is-centered">
       <div class="column is-three-quarters">
@@ -322,7 +366,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- BibTeX Citation Section -->
 <section class="section hero is-light" style="padding-top: 1rem; padding-bottom: 1rem;">
@@ -332,12 +376,11 @@
         <div class="content has-text-centered">
           <h2 class="title is-4">BibTeX</h2>
           <div class="bibtex-container" style="background-color: #f5f5f5; padding: 1.5rem; border-radius: 8px; display: inline-block; text-align: left; font-size: 1rem; overflow-x: auto; width: 100%; max-width: 800px; margin: 0 auto;">
-            <pre class="is-family-monospace" style="margin: 0;">@article{OmniRGPT,
-  title={Omni-RGPT: Unifying Image and Video Region-level Understanding via Token Marks},
-  author={Heo, Miran and Chen, Min-Hung and Huang, De-An and Liu, Sifei and Radhakrishnan, Subhashree and Kim, Seon Joo and Wang, Yu-Chiang Frank and Hachiuma, Ryo},
-  journal={arXiv preprint arXiv:2501.08326},
-  year={2025}
-}
+            <pre class="is-family-monospace" style="margin: 0;">@article{dong2025mvpbench,
+              title={Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT},
+              author={Dong, Zhuobai and Yi, Junchao and Zheng, Ziyuan and Han, haochen and Zheng, Xiangxi and Wang, Alex Jinpeng and Liu, Fangming and Li, Linjie and others},
+              year={2025}
+            }
             </pre>
             <button onclick="copyBibtex()" style="margin-top: 1rem; background-color: #4CAF50; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-size: 0.875rem;">Copy</button>
           </div>
@@ -350,11 +393,9 @@
 
 <script>
   function copyBibtex() {
-    const bibtex = `@article{OmniRGPT,
-  title={Omni-RGPT: Unifying Image and Video Region-level Understanding via Token Marks},
-  author={Heo, Miran and Chen, Min-Hung and Huang, De-An and Liu, Sifei and Radhakrishnan, Subhashree 
-          and Kim, Seon Joo and Wang, Yu-Chiang Frank and Hachiuma, Ryo},
-  journal={arXiv preprint arXiv:2501.08326},
+    const bibtex = `@article{dong2025mvpbench,
+  title={Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT},
+  author={Dong, Zhuobai and Yi, Junchao and Zheng, Ziyuan and Han, haochen and Zheng, Xiangxi and Wang, Alex Jinpeng and Liu, Fangming and Li, Linjie and others},
   year={2025}
 }`;
     navigator.clipboard.writeText(bibtex).then(() => {
