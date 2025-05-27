@@ -49,14 +49,14 @@ def compute_overall_metrics(model_paths: List[List[str]], possible_chains: List[
     avg_precision = sum(precisions) / len(precisions)
     avg_recall = sum(recalls) / len(recalls)
 
-    # 惩罚策略
+    # Penalty strategy
     n_model = len(model_paths)
     n_gt = len(possible_chains)
 
     precision_penalty = min(n_model, n_gt) / n_gt
     recall_penalty = exp(-alpha * abs(n_model / n_gt - 1))
 
-    # 只在模型生成路径多于GT时惩罚
+    # Only apply penalty when model generates more paths than GT
     if n_model > n_gt:
         precision_penalty = n_gt / n_model
         recall_penalty = 1 / (1 + beta * (n_model / n_gt - 1))
@@ -78,30 +78,30 @@ def batch_evaluate(possible_dir: str, solu_dir: str, alpha=1.5):
         if not os.path.isdir(possible_subfolder_path) or not os.path.isdir(solu_subfolder_path):
             continue
 
-        # 在可能路径文件夹中找 possible json
+        # Find possible json in the possible paths folder
         possible_json_file = next((
             f for f in os.listdir(possible_subfolder_path)
             if f.endswith('.json') 
         ), None)
 
-        # 在这里修改后缀
+        # Modify suffix here
         solu_json_file = f"{subfolder}_solu_claude.json"
 
         possible_json_path = os.path.join(possible_subfolder_path, possible_json_file) if possible_json_file else None
         solu_json_path = os.path.join(solu_subfolder_path, solu_json_file)
 
         if not possible_json_path or not os.path.exists(possible_json_path) or not os.path.exists(solu_json_path):
-            print(f"跳过 {subfolder}，缺少 json 文件")
+            print(f"Skipping {subfolder}, missing json files")
             continue
 
         try:
             with open(possible_json_path, 'r', encoding='utf-8') as f:
                 possible_content = f.read().strip()
                 if not possible_content:
-                    raise ValueError("文件为空")
+                    raise ValueError("File is empty")
                 possible_data = json.loads(possible_content)
         except Exception as e:
-            print(f"跳过 {subfolder}，读取 possible_json 出错: {e}")
+            print(f"Skipping {subfolder}, error reading possible_json: {e}")
             precision = recall = f1 = 0.0
             results.append({
                 "folder": subfolder,
@@ -118,10 +118,10 @@ def batch_evaluate(possible_dir: str, solu_dir: str, alpha=1.5):
             with open(solu_json_path, 'r', encoding='utf-8') as f:
                 solu_content = f.read().strip()
                 if not solu_content:
-                    raise ValueError("文件为空")
+                    raise ValueError("File is empty")
                 solu_data = json.loads(solu_content)
         except Exception as e:
-            print(f"跳过 {subfolder}，读取 solu_json 出错: {e}")
+            print(f"Skipping {subfolder}, error reading solu_json: {e}")
             precision = recall = f1 = 0.0
             results.append({
                 "folder": subfolder,
@@ -136,7 +136,7 @@ def batch_evaluate(possible_dir: str, solu_dir: str, alpha=1.5):
 
         possible_chains = possible_data[0].get("possible_chains", [])
         
-        # 检查 solu_data 是否为合法 key_step 风格路径
+        # Check if solu_data is a valid key_step style path
         def is_valid_key_step_path(path_list: List[List[str]]) -> bool:
             return all(
                 isinstance(step, str) and step.startswith("key_step")
@@ -145,10 +145,10 @@ def batch_evaluate(possible_dir: str, solu_dir: str, alpha=1.5):
             )
 
         if not isinstance(possible_chains, list) or not isinstance(solu_data, list):
-            print(f"格式错误，跳过 {subfolder}")
+            print(f"Format error, skipping {subfolder}")
             precision = recall = f1 = 0.0
         elif not is_valid_key_step_path(solu_data):
-            print(f"{subfolder} 包含非 key_step 路径，指标设为 0")
+            print(f"{subfolder} contains non-key_step paths, metrics set to 0")
             precision = recall = f1 = 0.0
         else:
             G = build_reasoning_graph(possible_chains)
@@ -172,15 +172,15 @@ def batch_evaluate(possible_dir: str, solu_dir: str, alpha=1.5):
     avg_recall = round(total_recall / count, 4) if count else 0.0
     avg_f1 = round(total_f1 / count, 4) if count else 0.0
 
-    print("=== 全部平均指标 ===")
-    print(f"平均 Precision: {avg_precision}")
-    print(f"平均 Recall: {avg_recall}")
-    print(f"平均 F1: {avg_f1}")
+    print("=== Overall Average Metrics ===")
+    print(f"Average Precision: {avg_precision}")
+    print(f"Average Recall: {avg_recall}")
+    print(f"Average F1: {avg_f1}")
 
     return results, avg_precision, avg_recall, avg_f1
 
 
-# 示例用法
+# Example usage
 if __name__ == "__main__":
     possible_dir = r"C:\NeurIPS_Ben\data\data_PhySpatial"
     solu_dir = r"C:\NeurIPS_Ben\output\output_PhySpatial\solu\claude"

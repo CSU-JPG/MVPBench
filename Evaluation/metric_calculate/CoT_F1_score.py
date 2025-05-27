@@ -2,14 +2,14 @@ import os
 import json
 
 def calculate_judgment_ratio(json_data, target_judgment="Matched"):
-    """计算 recall.json 中 judgment 符合 target_judgment 的比例"""
+    """Calculate the ratio of judgments matching target_judgment in recall.json"""
     if not json_data:
         return 0.0
     matched_count = sum(1 for item in json_data if item.get("judgment") == target_judgment)
     return matched_count / len(json_data)
 
 def calculate_match_ratio_and_final_score(data):
-    """计算 precision.json 中 Match 的比例和 final_score """
+    """Calculate the ratio of 'Match' judgments and final_score in precision.json"""
     logical_inferences = [item for item in data if item.get("step_type") in ("logical inference", "image description")]
     # logical_inferences = [item for item in data if item.get("step_type") in ("logical inference")]
     total = len(logical_inferences)
@@ -32,7 +32,7 @@ def analyze_combined_metrics(base_dir, a=0.7):
         if not os.path.isdir(folder_path):
             continue
 
-        # 找 recall.json
+        # Find recall.json
         recall_file = next((f for f in os.listdir(folder_path) if f.endswith("recall.json")), None)
         if recall_file:
             try:
@@ -40,13 +40,13 @@ def analyze_combined_metrics(base_dir, a=0.7):
                     recall_data = json.load(f)
                 recall_ratio = calculate_judgment_ratio(recall_data, "Matched")
                 recall_ratios.append(recall_ratio)
-                print(f"[{folder}] Recall (Matched比例) = {recall_ratio:.2%}")
+                print(f"[{folder}] Recall (Matched ratio) = {recall_ratio:.2%}")
             except Exception as e:
-                print(f"处理 {folder}/recall.json 出错: {e}")
+                print(f"Error processing {folder}/recall.json: {e}")
         else:
-            print(f"警告：{folder} 中未找到 recall.json")
+            print(f"Warning: recall.json not found in {folder}")
 
-        # 找 precision.json
+        # Find precision.json
         precision_file = next((f for f in os.listdir(folder_path) if f.endswith("presicion.json")), None)
         if precision_file:
             try:
@@ -55,11 +55,11 @@ def analyze_combined_metrics(base_dir, a=0.7):
                 precision_ratio, final_score = calculate_match_ratio_and_final_score(precision_data)
                 precision_ratios.append(precision_ratio)
                 final_scores.append(final_score)
-                print(f"[{folder}] Precision (Match比例) = {precision_ratio:.2%}, Final Score = {final_score}")
+                print(f"[{folder}] Precision (Match ratio) = {precision_ratio:.2%}, Final Score = {final_score}")
             except Exception as e:
-                print(f"处理 {folder}/presicion.json 出错: {e}")
+                print(f"Error processing {folder}/presicion.json: {e}")
         else:
-            print(f"警告：{folder} 中未找到 presicion.json")
+            print(f"Warning: presicion.json not found in {folder}")
 
     if recall_ratios and precision_ratios:
         avg_recall = sum(recall_ratios) / len(recall_ratios)
@@ -67,21 +67,21 @@ def analyze_combined_metrics(base_dir, a=0.7):
         avg_final_score = sum(final_scores) / len(final_scores) if final_scores else 0.0
         f1_score = 2 * (avg_precision * avg_recall) / (avg_precision + avg_recall) if (avg_precision + avg_recall) > 0 else 0.0
 
-        # 新的综合评分
+        # New combined score
         Combined_pre = avg_precision * a + avg_final_score * (1 - a)
 
         combined_f1_score = 2 * (Combined_pre * avg_recall) / (Combined_pre + avg_recall) if (Combined_pre + avg_recall) > 0 else 0.0
 
-        print("\n========= 总结 =========")
-        print(f"平均 Recall = {avg_recall:.2%}")
-        print(f"平均 Precision = {avg_precision:.2%}")
-        print(f"平均 Final Score = {avg_final_score:.2f}")
+        print("\n========= Summary =========")
+        print(f"Average Recall = {avg_recall:.2%}")
+        print(f"Average Precision = {avg_precision:.2%}")
+        print(f"Average Final Score = {avg_final_score:.2f}")
         print(f"F1-score = {f1_score:.4f}")
-        print(f"综合 F1-Score (a = {a}) = {combined_f1_score:.4f}")
+        print(f"Combined F1-Score (a = {a}) = {combined_f1_score:.4f}")
     else:
-        print("缺少有效的 recall 或 precision 数据，无法计算综合评分")
+        print("Insufficient valid recall or precision data, cannot calculate combined score")
 
-# 使用示例
-base_dir = r"C:\NeurIPS_Ben\output\output_PhysExperiment\multi_image\output_o3" # 替换为你的路径
-a = 0.7  # 设置权重因子，可根据需要调整
+# Usage example
+base_dir = r"C:\NeurIPS_Ben\output\output_PhysExperiment\multi_image\output_o3" # Replace with your path
+a = 0.7  # Set weight factor, can be adjusted as needed
 analyze_combined_metrics(base_dir, a)

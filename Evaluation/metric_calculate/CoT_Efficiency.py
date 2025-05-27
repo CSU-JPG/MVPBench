@@ -2,7 +2,7 @@ import os
 import json
 
 def calculate_relevant_ratio(data):
-    """计算'relevant'为'Yes'的比例"""
+    """Calculate the ratio of items with 'relevant' set to 'Yes'"""
     total = len(data)
     if total == 0:
         return 0.0
@@ -10,7 +10,7 @@ def calculate_relevant_ratio(data):
     return yes_count / total
 
 def calculate_correct_ratio(data):
-    """计算'judgment'为'Correct'的比例"""
+    """Calculate the ratio of items with 'judgment' set to 'Correct'"""
     total = len(data)
     if total == 0:
         return 0.0
@@ -37,11 +37,11 @@ def analyze_relevance_and_reflection(base_dir):
                 ratio = calculate_relevant_ratio(data)
                 relevance_ratios.append(ratio)
                 relevance_count += 1
-                print(f"[{folder}] relevance.json: 'Yes'比例 = {ratio:.2%}")
+                print(f"[{folder}] relevance.json: 'Yes' ratio = {ratio:.2%}")
             except Exception as e:
-                print(f"[{folder}] 处理 relevance.json 出错: {e}")
+                print(f"[{folder}] Error processing relevance.json: {e}")
         else:
-            print(f"警告：{folder} 中未找到 relevance.json")
+            print(f"Warning: relevance.json not found in {folder}")
 
         # --- reflection.json ---
         reflection_file = next((f for f in os.listdir(folder_path) if f.endswith('reflection.json')), None)
@@ -52,32 +52,32 @@ def analyze_relevance_and_reflection(base_dir):
                 ratio = calculate_correct_ratio(data)
                 reflection_ratios.append(ratio)
                 reflection_count += 1
-                print(f"[{folder}] reflection.json: 'Correct'比例 = {ratio:.2%} (共{len(data)}条)")
+                print(f"[{folder}] reflection.json: 'Correct' ratio = {ratio:.2%} (total: {len(data)} items)")
             except Exception as e:
-                print(f"[{folder}] 处理 reflection.json 出错: {e}")
+                print(f"[{folder}] Error processing reflection.json: {e}")
         else:
-            print(f"警告：{folder} 中未找到 reflection.json")
+            print(f"Warning: reflection.json not found in {folder}")
 
-    # --- 汇总输出 ---
-    print("\n========== 统计结果 ==========")
+    # --- Summary output ---
+    print("\n========== Statistics ==========")
     if relevance_ratios:
         avg_relevance = sum(relevance_ratios) / len(relevance_ratios)
         avg_relevance = (avg_relevance-0.8) * 5
-        print(f"处理了 {relevance_count} 个 relevance.json 文件")
-        print(f"平均 'Yes' 比例：{avg_relevance:.2%}")
+        print(f"Processed {relevance_count} relevance.json files")
+        print(f"Average 'Yes' ratio: {avg_relevance:.2%}")
     else:
-        print("未找到有效的 relevance.json 文件")
+        print("No valid relevance.json files found")
     average=0.00
     if reflection_ratios:
         avg_reflection = sum(reflection_ratios) / len(reflection_ratios)
         avg_reflection = 1 - avg_reflection
         average = (avg_reflection+avg_relevance) / 2
-        print(f"\n处理了 {reflection_count} 个 reflection.json 文件")
-        print(f"平均 'Correct' 比例：{avg_reflection:.2%}")
-        print(f"relevance 和 reflection 的平均值为:{average:.2%}")
+        print(f"\nProcessed {reflection_count} reflection.json files")
+        print(f"Average 'Correct' ratio: {avg_reflection:.2%}")
+        print(f"Average of relevance and reflection: {average:.2%}")
     else:
-        print("未找到有效的 reflection.json 文件")
+        print("No valid reflection.json files found")
 
-# 使用示例
-base_dir = r"C:\NeurIPS_Ben\output\output_PhysExperiment\multi_image\output_gpt4o"  # 替换为你的文件夹路径
+# Usage example
+base_dir = r"C:\NeurIPS_Ben\output\output_PhysExperiment\multi_image\output_gpt4o"  # Replace with your folder path
 analyze_relevance_and_reflection(base_dir)

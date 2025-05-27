@@ -1,10 +1,10 @@
 # MVPBench
 
+<img src="asserts/logo.png" alt="logo" style="zoom:25%;" />
+
 ## Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT
 
-![logo](https://github.com/naver-ai/TextAtlas5M/raw/main/assets/logo.png)
-
-📘 [Homepage](https://csu-jpg.github.io/MVPBench/) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/CSU-JPG/MVPBench) | 🧑‍🔬 [MVPBenchEval](https://huggingface.co/datasets/naver-ai/TextAtlasEval) | 📄 [MVPBench arXiv](https://arxiv.org/abs/2402.12345)
+📘 [Homepage](https://csu-jpg.github.io/MVPBench/) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/CSU-JPG/MVPBench) |  📄 [MVPBench arXiv](https://arxiv.org/abs/2402.12345)
 
 This repo contains the evaluation code for the paper:  
 ["TextAtlas5M: A Large-scale Dataset for Dense Text Image Generation"](https://arxiv.org/abs/2402.12345)
@@ -13,29 +13,35 @@ This repo contains the evaluation code for the paper:
 
 ## 🔔 Updates
 
-- **[2025-5-22]**: Our evaluation code is now available! 🌟  
+- **[2025-5-27]**: Our evaluation code is now available! 🌟  
 - **[2025-5-22]**: Released MVPBench version 1.0 🔥
+
+---
+## 👁About MVPBench
+Understanding the physical world—governed by laws of motion, spatial relations, and causality—poses a fundamental challenge for multimodal large language models (MLLMs). While recent advances such as OpenAI o3 and GPT-4o demonstrate impressive perceptual and reasoning capabilities, our investigation reveals these models struggle profoundly with visual physical reasoning, failing to grasp basic physical laws, spatial interactions, and causal effects in complex scenes. More importantly, they often fail to follow coherent reasoning chains grounded in visual evidence, especially when multiple steps are needed to arrive at the correct answer. To rigorously evaluate this capability, we introduce MVPBench, a curated benchmark designed to rigorously evaluate visual physical reasoning through the lens of visual chain-of-thought (CoT). Each example features interleaved multi-image inputs and demands not only the correct final answer but also a coherent, step-by-step reasoning path grounded in evolving visual cues. This setup mirrors how humans reason through real-world physical processes over time. To ensure fine-grained evaluation, we introduce a graph-based CoT consistency metric that verifies whether the reasoning path of model adheres to valid physical logic. Additionally, we minimize shortcut exploitation from text priors, encouraging models to rely on visual understanding.
+
+<img src="asserts/overview.png" alt="logo" style="zoom:70%;" />
+<center><b>Overview of MVPBench.</b></center>
+MVPBench consists of 1211 samples with a total of 4,701 images, covering both unique and repeated images. Each question and corresponding answer is distinct, underscoring the  broad range and depth of dataset across various physical reasoning scenarios.
 
 ---
 
 ## 📑 Table of Contents
-
 - [Setup](#️-setup)
 - [Accessing Datasets](#-accessing-datasets)
-- [Evaluation](#-evaluation)
 - [Data Format](#-data-format)
+- [Evaluation](#-evaluation)
 - [Citation](#-citation)
 - [Contact](#-contact)
 
----
 
 ## ⚙️ Setup
 
 To set up the environment for evaluation:
 
 ```bash
-conda create -n TextAtlasEval python=3.9
-conda activate TextAtlasEval
+conda create -n MVPBenchEval python=3.10
+conda activate MVPBenchEval
 pip install -r requirements.txt
 ```
 
@@ -47,16 +53,6 @@ MVPBench was meticulously designed to challenge and evaluate visual physical rea
 For more detailed information and accessing our dataset, please refer to our Huggingface page:
 
 - 🧑‍🔬 [MVPBench](https://huggingface.co/datasets/CSU-JPG/MVPBench)
-
----
-
-## 🧪 Evaluation
-
-Please refer to our evaluation folders for detailed information on evaluating with the TextAtlasEval benchmark:
-
-- 🔍 [TextAtlas Evaluation](evaluation/README.md)
-
----
 
 ## 🗂 Data Format
 
@@ -94,7 +90,8 @@ Please refer to our evaluation folders for detailed information on evaluating wi
             "annotation": The textual content of the final answer,
         },
         "subject": [string] The subject of subset of data(Physics problems,Physics experiments, Spatial relations and Dynamic prediction,
-        "possible_chains": [string] all possible reasoning paths, e.g., [
+        "possible_chains": [string] all possible reasoning paths, e.g., 
+        [
             [ "key_step_1","key_step_2"]
         ],
         "json_path": [string] The path of the json file,
@@ -102,7 +99,15 @@ Please refer to our evaluation folders for detailed information on evaluating wi
 ]
 ```
 
+---
 
+## 🧪 Evaluation
+
+Please refer to our evaluation folders for detailed information on evaluating with the MVPBench:
+
+- 🔍 [MVPBench Evaluation](Evaluation/README.md)
+
+---
 
 ---
 

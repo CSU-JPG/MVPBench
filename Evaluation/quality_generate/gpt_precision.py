@@ -7,18 +7,18 @@ import httpx
 
 os.environ["http_proxy"] = "http://localhost:7897"
 os.environ["https_proxy"] = "http://localhost:7897"
-# 使用环境变量中的 API 密钥（建议方式）
-client = OpenAI(base_url='https://api.nuwaapi.com/v1',
+# Use API key from environment variables (recommended method)
+client = OpenAI(base_url='',
                 http_client=httpx.Client(verify=False, timeout=60.0),
-                api_key='sk-rl9sIDYarvkfKRV5kOB3ZfVUoZCwS43IbEawR6JHKtzznBmO')  
+                api_key='')  
 
 def image_to_base64(image_path):
-    """将图片转为base64字符串（GPT-4o需要）"""
+    """Convert image to base64 string (required for GPT-4o)"""
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
 
 def single_image_inference_gpt4o(image_path, input_text):
-    # 加载图片并转为 base64
+    # Load image and convert to base64
     base64_image = image_to_base64(image_path)
 
     response = client.chat.completions.create(
@@ -44,7 +44,7 @@ def single_image_inference_gpt4o(image_path, input_text):
     return response.choices[0].message.content
 
 def extract_step_conclusions(item):
-    """提取所有key_step的conclusion"""
+    """Extract conclusions from all key_steps"""
     conclusions = []
     i = 1
     while True:
@@ -59,31 +59,31 @@ def extract_step_conclusions(item):
 
 def clean_model_response(response):
 
-    # 1. 去除首尾空白字符和BOM标记
+    # 1. Remove leading/trailing whitespace and BOM marker
     response = response.strip().replace('\ufeff', '')
 
-    # 2. 去除开头的非JSON字符（直到第一个 [ 或 {）
+    # 2. Remove non-JSON characters at the beginning (until the first [ or {)
     response = re.sub(r'^[^{[]*', '', response)
 
-    # 3. 去除结尾的非JSON字符（从最后一个 ] 或 } 之后的所有内容）
+    # 3. Remove non-JSON characters at the end (after the last ] or })
     response = re.sub(r'[^}\]]*$', '', response)
 
-    # 4. 特别处理常见的代码标记（如 ```json 和 ```）
+    # 4. Special handling for common code markers (like ```json and ```)
     response = response.replace('```json', '').replace('```', '')
 
-    # 5. 再次去除首尾空白字符
+    # 5. Remove leading/trailing whitespace again
     return response.strip()
 
 def process_experiment_folders(data_dir, output_dir, md_name, max_folders=1):
     """
-    处理实验文件夹（最多处理指定数量）
+    Process experiment folders (up to the specified number)
     
     Args:
-        data_dir: 实验文件夹根目录
-        model_path: 模型路径
-        output_dir: 输出目录
-        md_name: 模型名称（用于查找.md文件）
-        max_folders: 最大处理数量（默认10）
+        data_dir: Root directory of experiment folders
+        model_path: Model path
+        output_dir: Output directory
+        md_name: Model name (used to find .md files)
+        max_folders: Maximum number to process (default 10)
     """
     os.makedirs(output_dir, exist_ok=True)
     processed_count = 0
@@ -97,28 +97,28 @@ def process_experiment_folders(data_dir, output_dir, md_name, max_folders=1):
             continue
 
         output_subdir = os.path.join(output_dir, folder_name)
-        os.makedirs(output_subdir, exist_ok=True)  # 添加这一行
+        os.makedirs(output_subdir, exist_ok=True)  # Add this line
 
-        # 查找JSON和图片文件
+        # Find JSON and image files
         json_file = next((f for f in os.listdir(folder_path) if f.endswith('.json')), None)
         
-        # 使用大小写不敏感的方式匹配MD文件
+        # Match MD files case-insensitively
         md_file = next((f for f in os.listdir(folder_path) if f.lower().endswith(f'{md_name.lower()}.md')), None)
         raw_image = next((f for f in os.listdir(folder_path) if f.endswith('_raw.jpg') or f.endswith('_raw.png')), None)
         
         if not (json_file and raw_image and md_file):
-            print(f"跳过 {folder_name}：缺少JSON、图片或MD文件")
-            # 输出更详细的信息，帮助调试
+            print(f"Skipping {folder_name}: Missing JSON, image, or MD file")
+            # Output more detailed information for debugging
             if not json_file:
-                print(f"  - 缺少JSON文件")
+                print(f"  - Missing JSON file")
             if not raw_image:
-                print(f"  - 缺少原始图片文件")
+                print(f"  - Missing raw image file")
             if not md_file:
-                print(f"  - 缺少MD文件 ({md_name}.md)")
-                # 列出所有的md文件进行对比
+                print(f"  - Missing MD file ({md_name}.md)")
+                # List all md files for comparison
                 md_files = [f for f in os.listdir(folder_path) if f.endswith('.md')]
                 if md_files:
-                    print(f"  - 文件夹中存在的MD文件: {md_files}")
+                    print(f"  - MD files in folder: {md_files}")
             processed_count += 1
             continue
 
@@ -127,7 +127,7 @@ def process_experiment_folders(data_dir, output_dir, md_name, max_folders=1):
             md_path = os.path.join(folder_path, md_file)
             image_path = os.path.join(folder_path, raw_image)
 
-            # 检查输出文件是否已存在且非空
+            # Check if output file already exists and is not empty
             output_file = os.path.join(
                 output_dir, 
                 folder_name,
@@ -135,7 +135,7 @@ def process_experiment_folders(data_dir, output_dir, md_name, max_folders=1):
             )
             
             if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
-                print(f"跳过 {folder_name}：输出文件已存在且非空")
+                print(f"Skipping {folder_name}: Output file already exists and is not empty")
                 continue
 
             with open(json_path, 'r', encoding='utf-8') as f_json:
@@ -143,17 +143,17 @@ def process_experiment_folders(data_dir, output_dir, md_name, max_folders=1):
                 with open(md_path, 'r', encoding='utf-8') as f_md:
                     md_content = f_md.read().strip()
 
-                    # 处理数组情况
+                    # Handle array case
                     if isinstance(json_content, list):
                         for item in json_content:
                             if not (isinstance(item, dict) and 'query' in item):
                                 continue
                     
                         conclusions = extract_step_conclusions(item)
-                        # 使用正则表达式同时匹配英文逗号 `,` 和中文逗号 `，`
-                        sentences = re.split(r'[,，.]', item['original_scene']['description'])  # 同时匹配英文和中文逗号
-                        sentences = [s.strip() for s in sentences if s.strip()]  # 去除空白并过滤空字符串
-                        # 构建输入文本
+                        # Use regex to match both English commas `,` and Chinese commas `，`
+                        sentences = re.split(r'[,，.]', item['original_scene']['description'])  # Match both English and Chinese commas
+                        sentences = [s.strip() for s in sentences if s.strip()]  # Remove whitespace and filter empty strings
+                        # Build input text
                         input_text = (
                                 "# Task Overview\n"
                                 "Given a solution with multiple reasoning steps for an image-based problem, reformat it into well-structured steps and evaluate their correctness.\n"
@@ -263,20 +263,20 @@ def process_experiment_folders(data_dir, output_dir, md_name, max_folders=1):
                         response = single_image_inference_gpt4o(image_path, input_text)
                         response=clean_model_response(response)
 
-                        # 保存结果
+                        # Save results
                         with open(output_file, 'w', encoding='utf-8') as f_out:
                              f_out.write(response)
                         
-                        print("已处理"+ str(processed_count+1)+"个数据")
+                        print("Processed " + str(processed_count+1) + " data items")
 
                         processed_count += 1
                         
                         if processed_count >= max_folders:
                             break
                     else:
-                        print(f"{json_path} 不是有效的数组格式")
+                        print(f"{json_path} is not a valid array format")
         except Exception as e:
-            print(f"处理 {folder_name} 时出错: {str(e)}")
+            print(f"Error processing {folder_name}: {str(e)}")
 
 if __name__ == "__main__":
    
@@ -293,7 +293,7 @@ if __name__ == "__main__":
 
     print("start!")
     
-    # 执行处理（默认最多1个）
+    # Execute processing (default max 1)
     process_experiment_folders(
         data_dir=data_directory,
         output_dir=output_directory,
