@@ -1,6 +1,8 @@
 # MVPBench
 
-<img src="assets/logo.png" alt="logo" width="300"  />
+<p align="center">
+  <img src="assets/logo.png" alt="logo" width="200"/>
+</p>
 
 ## Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT
 
