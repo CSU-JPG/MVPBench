@@ -9,7 +9,7 @@
 📘 [Homepage](https://csu-jpg.github.io/MVPBench/) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/CSU-JPG/MVPBench) |  📄 [MVPBench arXiv](https://arxiv.org/abs/2402.12345)
 
 This repo contains the evaluation code for the paper:  
-["TextAtlas5M: A Large-scale Dataset for Dense Text Image Generation"](https://arxiv.org/abs/2402.12345)
+["Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT"](https://arxiv.org/abs/2402.12345)
 
 ---
 
