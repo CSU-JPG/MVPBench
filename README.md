@@ -1,6 +1,6 @@
 # MVPBench
 
-<img src="asserts/logo.png" alt="logo" style="zoom:25%;" />
+<img src="assets/logo.png" alt="logo" width="300"  />
 
 ## Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT
 
@@ -20,8 +20,10 @@ This repo contains the evaluation code for the paper:
 ## 👁About MVPBench
 Understanding the physical world—governed by laws of motion, spatial relations, and causality—poses a fundamental challenge for multimodal large language models (MLLMs). While recent advances such as OpenAI o3 and GPT-4o demonstrate impressive perceptual and reasoning capabilities, our investigation reveals these models struggle profoundly with visual physical reasoning, failing to grasp basic physical laws, spatial interactions, and causal effects in complex scenes. More importantly, they often fail to follow coherent reasoning chains grounded in visual evidence, especially when multiple steps are needed to arrive at the correct answer. To rigorously evaluate this capability, we introduce MVPBench, a curated benchmark designed to rigorously evaluate visual physical reasoning through the lens of visual chain-of-thought (CoT). Each example features interleaved multi-image inputs and demands not only the correct final answer but also a coherent, step-by-step reasoning path grounded in evolving visual cues. This setup mirrors how humans reason through real-world physical processes over time. To ensure fine-grained evaluation, we introduce a graph-based CoT consistency metric that verifies whether the reasoning path of model adheres to valid physical logic. Additionally, we minimize shortcut exploitation from text priors, encouraging models to rely on visual understanding.
 
-<img src="asserts/overview.png" alt="logo" style="zoom:70%;" />
-<center><b>Overview of MVPBench.</b></center>
+<img src="assets/overview.png" alt="logo" style="zoom:70%;" />
+
+<p align="center"><b>Overview of MVPBench.</b></p>
+
 MVPBench consists of 1211 samples with a total of 4,701 images, covering both unique and repeated images. Each question and corresponding answer is distinct, underscoring the  broad range and depth of dataset across various physical reasoning scenarios.
 
 ---
