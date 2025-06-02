@@ -6,10 +6,10 @@
 
 ## Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT
 
-📘 [Homepage](https://csu-jpg.github.io/MVPBench/) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/CSU-JPG/MVPBench) |  📄 [MVPBench arXiv](https://arxiv.org/abs/2402.12345)
+📘 [Homepage](https://csu-jpg.github.io/MVPBench/) | 🏆 Leaderboard | 🧑‍🔬 [Dataset](https://huggingface.co/datasets/CSU-JPG/MVPBench) |  📄 [MVPBench arXiv](https://arxiv.org/abs/2505.24182)
 
 This repo contains the evaluation code for the paper:  
-["Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT"](https://arxiv.org/abs/2402.12345)
+["Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT"](https://arxiv.org/abs/2505.24182)
 
 ---
 
@@ -120,10 +120,14 @@ Please refer to our evaluation folders for detailed information on evaluating wi
 If you find our work useful, please cite us:
 
 ```bibtex
-@article{dong2025mvpbench,
-  title={Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT},
-  author={Dong, Zhuobai and Yi, Junchao and Zheng, Ziyuan and Han, haochen and Zheng, Xiangxi and Wang, Alex Jinpeng and Liu, Fangming and Li, Linjie and others},
-  year={2025}
+@misc{dong2025seeingreasoningmvpbenchgraphbased,
+      title={Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT}, 
+      author={Zhuobai Dong and Junchao Yi and Ziyuan Zheng and Haochen Han and Xiangxi Zheng and Alex Jinpeng Wang and Fangming Liu and Linjie Li},
+      year={2025},
+      eprint={2505.24182},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.24182}, 
 }
 ```
 
