@@ -115,7 +115,7 @@ Please refer to our evaluation folders for detailed information on evaluating wi
 - 🔍 [MVPBench Evaluation](Evaluation/README.md)
 
 ---
-## ✨Update
+## ✨ Update
 
 You can access our updated data [here](https://drive.google.com/drive/folders/1AMeKOpkiQU-Ftphv6aRSZjHteInPbbzO).
 
