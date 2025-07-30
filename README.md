@@ -15,6 +15,8 @@ This repo contains the evaluation code for the paper:
 
 ## 🔔 Updates
 
+- **[2025-7-30]**: We have designed an online update mechanism that regularly introduces new scenarios and evaluation metrics to ensure continuous coverage of the latest visual physical reasoning capabilities.💥
+
 - **[2025-5-27]**: Our evaluation code is now available! 🌟  
 - **[2025-5-22]**: Released MVPBench version 1.0 🔥
 
@@ -35,6 +37,7 @@ MVPBench consists of 1211 samples with a total of 4,701 images, covering both un
 - [Accessing Datasets](#-accessing-datasets)
 - [Data Format](#-data-format)
 - [Evaluation](#-evaluation)
+- [Update](#-update)
 - [Citation](#-citation)
 - [Contact](#-contact)
 
@@ -112,6 +115,16 @@ Please refer to our evaluation folders for detailed information on evaluating wi
 - 🔍 [MVPBench Evaluation](Evaluation/README.md)
 
 ---
+## ✨Update
+
+You can access our updated data [here](https://drive.google.com/drive/folders/1AMeKOpkiQU-Ftphv6aRSZjHteInPbbzO).
+
+| Sub‑Domain (New)      | Items  | Focus of Added Tasks                                         | Purpose / Expected Challenge                                 |
+| --------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Fluid Mechanics**   | **20** | **Real‑world experiments on continuous & turbulent flow behaviors** | **Test models’ understanding of fluid continuity, viscosity effects, and chaotic patterns** |
+| **Atomic Physics**    | **30** | **Questions on atomic structure, interactions, and energy transitions** | **Probe reasoning over electron configurations, ionization, and spectral lines** |
+| **Quantum Mechanics** | **30** | **Abstract reasoning on quantum states & uncertainty principles** | **Assess capability in superposition, entanglement, and probabilistic inference** |
+
 
 ---
 
